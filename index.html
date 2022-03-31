@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+    </head>
+
+<body>
+
+    <div class="row">
+        <div class="column" style="">
+          <h2>ASA Checklist</h2>
+          <p><input type="checkbox" id="myCheck1"  onclick="myFunction1()">
+          <label for="myCheck1">Team Work History is Available</label></p>
+
+          <p><input type="checkbox" id="myCheck2" onclick="myFunction2()">
+          <label for="myCheck2">Registered Company</label></p>
+
+          <p><input type="checkbox" id="myCheck3" onclick="myFunction3()">
+          <label for="myCheck3">VC Partners are Involved</label></p>
+
+          <p><input type="checkbox" id="myCheck4" onclick="myFunction4()">
+          <label for="myCheck4">VC Partners' History is Available</label></p>
+
+          <p><input type="checkbox" id="myCheck5" onclick="myFunction5()">
+          <label for="myCheck5">Departing Team Members will be Replaced before they Leave</label></p>
+
+          <p><input type="checkbox" id="myCheck6" onclick="myFunction6()">
+          <label for="myCheck6">Code Audit if Applicable</label></p>
+
+          <p><input type="checkbox" id="myCheck7" onclick="myFunction7()">
+          <label for="myCheck7">Valid Criticism is Not Dismissed</label></p>
+
+          <p><input type="checkbox" id="myCheck8" onclick="myFunction8()">
+          <label for="myCheck8">Algorand Foundation Approved</label></p>
+
+          <p><input type="checkbox" id="myCheck9" onclick="myFunction9()">
+          <label for="myCheck9">6+ Months Old Project</label></p>
+
+          <p><input type="checkbox" id="myCheck10" onclick="myFunction10()">
+          <label for="myCheck10">Tokenomics Available</label></p>
+
+          <p><input type="checkbox" id="myCheck11" onclick="myFunction11()">
+          <label for="myCheck11">Working Product</label></p>
+
+          <p><input type="checkbox" id="myCheck12" onclick="myFunction12()">
+          <label for="myCheck12">No Clawback/Freeze</label></p>
+
+          <p><input type="checkbox" id="myCheck13" onclick="myFunction13()">
+          <label for="myCheck13">Use Case</label></p>
+
+          <p><input type="checkbox" id="myCheck14" onclick="myFunction14()">
+          <label for="myCheck14">Roadmap/Roadmap Progress</label></p>
+
+          <p><input type="checkbox" id="myCheck15" onclick="myFunction15()">
+          <label for="myCheck15">Doxxed Team</label></p>
+
+        </div>
+        <div class="column" style="">
+          <h2>ASA List</h2>
+          <p id="textwoof1" style="">AlgoStake</p>
+          <p id="textwoof2" style="">Defly</p>
+          <p id="textwoof3" style="">PlanetWatch</p>
+          <p id="textwoof4" style="">BirdBot</p>
+          <p id="textwoof5" style="">Smile Coin</p>
+          <p id="textwoof6" style="">Xfinite</p>
+          <p id="textwoof7" style="">Algomint</p>
+          <p id="textwoof8" style="">Algofi</p>
+          <p id="textwoof9" style="">Dope Panda</p>
+          <p id="textwoof10" style="">Tiny Chart</p>
+          <p id="textwoof11" style="">SockHODLER</p>
+          <p id="textwoof12" style="">Algo Gems</p>
+          <p id="textwoof13" style="">Webblen</p>
+          <p id="textwoof14" style="">Zone</p>
+        </div>
+      </div>
+
+      <script>
+        function myFunction1() {
+          var checkBox1 = document.getElementById("myCheck1");
+          var checkBox15 = document.getElementById("myCheck15");
+          var text = document.getElementById("textwoof9");
+          var text2 = document.getElementById("textwoof11");
+          if (checkBox15.checked == true ){
+            return;
+          }     
+          if (checkBox15.checked != true && checkBox1.checked == true ){
+            text.style.display = "none";
+            text2.style.display = "none";
+          } 
+          else {
+            text.style.display = "block";
+            text2.style.display = "block";
+          } 
+        }
+      </script>
+
+<script>
+  function myFunction3() {
+    var checkBox3 = document.getElementById("myCheck3");
+    var checkBox4 = document.getElementById("myCheck4");
+    var text = document.getElementById("textwoof1");
+    if (checkBox4.checked == true ){
+      return;
+    }     
+    if (checkBox4.checked != true && checkBox3.checked == true ){
+      text.style.display = "none";
+    } 
+    else {
+      text.style.display = "block";
+    } 
+  }
+</script>
+
+<script>
+  function myFunction3() {
+    var checkBox3 = document.getElementById("myCheck3");
+    var checkBox4 = document.getElementById("myCheck4");
+    var text = document.getElementById("textwoof1");
+    if (checkBox4.checked == true ){
+      return;
+    }     
+    if (checkBox4.checked != true && checkBox3.checked == true ){
+      text.style.display = "none";
+    } 
+    else {
+      text.style.display = "block";
+    } 
+  }
+</script>
+
+<script>
+  function myFunction4() {
+    var checkBox3 = document.getElementById("myCheck3");
+    var checkBox4 = document.getElementById("myCheck4");
+    var text = document.getElementById("textwoof1");
+    if (checkBox3.checked == true ){
+      return;
+    }     
+    if (checkBox3.checked != true && checkBox4.checked == true ){
+      text.style.display = "none";
+    } 
+    else {
+      text.style.display = "block";
+    } 
+  }
+</script>
+
+<script>
+  function myFunction8() {
+    var checkBox8 = document.getElementById("myCheck8");
+    var text = document.getElementById("textwoof14");
+    if (checkBox8.checked != true ){
+      text.style.display = "block";
+    }     
+    else {
+      text.style.display = "none";
+    } 
+  }
+</script>
+
+<script>
+  function myFunction12() {
+    var checkBox12 = document.getElementById("myCheck12");
+    var text = document.getElementById("textwoof5");
+    if (checkBox12.checked != true ){
+      text.style.display = "block";
+    }     
+    else {
+      text.style.display = "none";
+    } 
+  }
+</script>
+
+<script>
+  function myFunction15() {
+    var checkBox1 = document.getElementById("myCheck1");
+    var checkBox15 = document.getElementById("myCheck15");
+    var text = document.getElementById("textwoof9");
+    var text2 = document.getElementById("textwoof11");
+    if (checkBox1.checked == true ){
+            return;
+          }     
+          if (checkBox1.checked != true && checkBox15.checked == true ){
+            text.style.display = "none";
+            text2.style.display = "none";
+          } 
+          else {
+            text.style.display = "block";
+            text2.style.display = "block";
+          } 
+        }
+</script>
+
+</body>
+</html>
