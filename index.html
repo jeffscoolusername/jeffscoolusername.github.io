@@ -256,12 +256,57 @@
   
   <label>
       <input type="checkbox" id="toogle2" />
-      hide 2nd column
+      Hide Date Founded
   </label>
 
   <label>
     <input type="checkbox" id="toogle3" />
-    hide 3rd column
+    Hide Algorand Grant Status
+</label>
+
+<label>
+  <input type="checkbox" id="toogle4" />
+  Hide Clawback/Freeze/Metadata
+</label>
+
+<label>
+  <input type="checkbox" id="toogle5" />
+  Hide Founding Team Members Count
+</label>
+
+<label>
+  <input type="checkbox" id="toogle6" />
+  Hide Registered Company Status
+</label>
+
+<label>
+  <input type="checkbox" id="toogle7" />
+  Hide Roadmap
+</label>
+
+<label>
+  <input type="checkbox" id="toogle8" />
+  Hide Team Work History
+</label>
+
+<label>
+  <input type="checkbox" id="toogle9" />
+  Hide Tokenomics
+</label>
+
+<label>
+  <input type="checkbox" id="toogle10" />
+  Hide Use Case
+</label>
+
+<label>
+  <input type="checkbox" id="toogle11" />
+  Hide VC Partners' History
+</label>
+
+<label>
+  <input type="checkbox" id="toogle12" />
+  Hide Wallet Distribution
 </label>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -290,6 +335,177 @@
   
     $("#toogle3").click(function() {
         toggleColumns(3, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle4").click(function() {
+        toggleColumns(4, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle5").click(function() {
+        toggleColumns(5, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle6").click(function() {
+        toggleColumns(6, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle7").click(function() {
+        toggleColumns(7, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle8").click(function() {
+        toggleColumns(8, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle9").click(function() {
+        toggleColumns(9, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle10").click(function() {
+        toggleColumns(10, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle11").click(function() {
+        toggleColumns(11, $(this).is(":checked"));
+    })
+
+    function toggleColumns(column, state) {
+        var cells = $("table").find("th, td").filter(":nth-child(" + column + ")");
+
+        if (state)
+            cells.hide();
+        else
+            cells.show();
+    }
+      
+})    
+</script>
+
+<script>
+  $(function() {
+  
+    $("#toogle12").click(function() {
+        toggleColumns(12, $(this).is(":checked"));
     })
 
     function toggleColumns(column, state) {
