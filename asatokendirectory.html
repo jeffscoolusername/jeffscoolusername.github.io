@@ -8,7 +8,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="A Directory of Tokenized Assets on the Algorand Blockchain."/>  
     <link rel="icon" href="62859-open-book-icon.png" type="image/png" />
-    <link rel="stylesheet" href="style1.css">    
+    <style>
+
+      @media
+        only screen 
+        and (max-width: 760px), (min-device-width: 768px) 
+        and (max-device-width: 1024px)  {
+    
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr {
+          display: block;
+        }
+    
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+    
+        tr {
+          margin: 0 0 1rem 0;
+        }
+    
+        tr:nth-child(odd) {
+          background: #ccc;
+        }
+    
+        td {
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid #eee;
+          position: relative;
+          padding-left: 50%;
+        }
+    
+        td:before {
+          /* Now like a table header */
+          position: absolute;
+          /* Top/left values mimic padding */
+          top: 0;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap;
+        }
+    
+        /*
+        Label the data
+        You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+        */
+        td:nth-of-type(1):before { content: "Name"; }
+        td:nth-of-type(2):before { content: "Token"; }
+        td:nth-of-type(3):before { content: "Date Created"; }
+        td:nth-of-type(4):before { content: "Work History"; }
+        td:nth-of-type(5):before { content: "Algo Grant"; }
+        td:nth-of-type(6):before { content: "Company"; }
+        td:nth-of-type(7):before { content: "Paper"; }
+        td:nth-of-type(8):before { content: "Roadmap"; }
+        td:nth-of-type(9):before { content: "Wallets"; }
+        td:nth-of-type(10):before { content: "Other Links"; }
+      }
+    
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI';
+      font-weight: 400;
+      background-color: #ededed;
+    }
+    
+    .footer {
+      padding: 40px 0;
+      background-color: #ffffff;
+    }
+    
+    .footer .social {
+      text-align: center;
+      padding-bottom: 25px;
+      color: #4b4c4d;
+    }
+    
+    .footer .social a {
+      font-size: 24px;
+      color: inherit;
+      border: 1px solid #ccc;
+      width: 40px;
+      height: 40px;
+      line-height: 38px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      margin: 0 8px;
+      opacity: 0.75;
+    }
+    
+    .footer .social a:hover {
+      opacity: 0.9;
+    }
+    
+    .footer ul {
+      margin-top: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+    
+    .footer ul a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+    
+    .footer ul li {
+      display: inline-block;
+      padding: 0 15px;
+    }
+    
+    .footer ul a:hover {
+      opacity: 1;
+    }
+    
+    .footer .copyright {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+    
+    .footer .normal {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+    }
+    
+    
+        </style>
+    
     
 </head>
 
