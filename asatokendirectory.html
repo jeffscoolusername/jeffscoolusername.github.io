@@ -7,95 +7,23 @@
     <title>ASA Token Directory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="A Directory of Tokenized Assets on the Algorand Blockchain."/>  
-    <link rel="icon" href="62859-open-book-icon.png" type="image/png" />
-    <style>
-
-      @media
-        only screen 
-        and (max-width: 760px), (min-device-width: 768px) 
-        and (max-device-width: 1024px)  {
+    <link rel="icon" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+    <style>    
     
-        /* Force table to not be like tables anymore */
-        table, thead, tbody, th, td, tr {
-          display: block;
-        }
-    
-        /* Hide table headers (but not display: none;, for accessibility) */
-        thead tr {
-          position: absolute;
-          top: -9999px;
-          left: -9999px;
-        }
-    
-        tr {
-          margin: 0 0 1rem 0;
-        }
-    
-        tr:nth-child(odd) {
-          background: #ccc;
-        }
-    
-        td {
-          /* Behave  like a "row" */
-          border: none;
-          border-bottom: 1px solid #eee;
-          position: relative;
-          padding-left: 50%;
-        }
-    
-        td:before {
-          /* Now like a table header */
-          position: absolute;
-          /* Top/left values mimic padding */
-          top: 0;
-          left: 6px;
-          width: 45%;
-          padding-right: 10px;
-          white-space: nowrap;
-        }
-    
-        /*
-        Label the data
-        You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
-        */
-        td:nth-of-type(1):before { content: "Unit Name - ID"; }
-        td:nth-of-type(2):before { content: "Algo Verified"; }
-        td:nth-of-type(3):before { content: "Name"; }
-        td:nth-of-type(4):before { content: "Date Created"; }
-        td:nth-of-type(5):before { content: "Work History"; }
-        td:nth-of-type(6):before { content: "Algo Grant"; }
-        td:nth-of-type(7):before { content: "Company"; }
-        td:nth-of-type(8):before { content: "Paper"; }
-        td:nth-of-type(9):before { content: "Roadmap"; }
-        td:nth-of-type(10):before { content: "Wallets"; }
-        td:nth-of-type(11):before { content: "Other Links"; }
-      }
-    
-      * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Segoe UI';
-      font-weight: 400;
-      background-color: #ededed;
-      text-align: center;
-    }
-    
-    .footer {
+    .footer, .header {
       padding: 40px 0;
       background-color: #ffffff;
     }
     
-    .footer .social {
+    .footer .social, .header .social {
       text-align: center;
       padding-bottom: 25px;
       color: #4b4c4d;
     }
     
-    .footer .social a {
+    .footer .social a, .header .social .a {
       font-size: 24px;
       color: inherit;
       border: 1px solid #ccc;
@@ -109,11 +37,11 @@
       opacity: 0.75;
     }
     
-    .footer .social a:hover {
+    .footer .social a:hover, .header .social a:hover {
       opacity: 0.9;
     }
     
-    .footer ul {
+    .footer ul, .header ul {
       margin-top: 0;
       padding: 0;
       list-style: none;
@@ -123,59 +51,54 @@
       margin-bottom: 0;
     }
     
-    .footer ul a {
+    .footer ul a, .header ul a {
       color: inherit;
       text-decoration: none;
       opacity: 0.8;
     }
     
-    .footer ul li {
+    .footer ul li, .header ul li {
       display: inline-block;
       padding: 0 15px;
     }
     
-    .footer ul a:hover {
+    .footer ul a:hover, .header ul a:hover {
       opacity: 1;
     }
     
-    .footer .copyright {
+    .footer .copyright, .header .tiny {
       margin-top: 15px;
       text-align: center;
       font-size: 13px;
       color: #aaa;
     }
     
-    .footer .normal {
+    .footer .normal, .header .normal {
       margin-top: 15px;
       text-align: center;
       font-size: 13px;
     }
     
     
-        </style>    
+    </style>    
     
 </head>
 
 <body>
 
-  <section class="footer">  
+  <section class="header">  
     <ul class="list">
       <li>
         <a href="./asatokendirectory.html" class="logo">ASA Token Directory</a>
         <p class="normal">A Directory of Tokenized Assets on the Algorand Blockchain</p>
-        <p class="copyright"><del>Strikethrough</del> = Archived on <a href="https://tinychart.org/" target="_blank" rel="noopener noreferrer">TinyChart</a></p>
-        <p class="normal"><label>
-          <input type="checkbox" id="toogle10" class="rowToClick rowToIgnore"/>
-          Hide Unverified Tokens
-        </label></p>
       </li>
     </ul>
   </section>
       
-  <table role="table" class="rowToIgnore">
+  <table id="example" role="table" class="display responsive nowrap" style="width:100%">
 
-    <thead role="rowgroup" class="rowToIgnore">
-      <tr role="row" class="rowToIgnore">        
+    <thead>
+      <tr>        
         <th style="text-align:center">Unit Name - ID</th>
         <th style="text-align:center">Algo Verified</th>
         <th style="text-align:center">Name</th>
@@ -190,27 +113,27 @@
       </tr>
     </thead>
 
-    <tbody role="rowgroup">       
+    <tbody>       
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/353409462" target="_blank" rel="noopener noreferrer"><del>ABSKT-353409462</del></a></td>
-        <td><del>TBD</del></td>
-        <td><a href="https://algobasket.io/" target="_blank" rel="noopener noreferrer"><del>AlgoBasket</del></a></td>
-        <td><a href="https://algoexplorer.io/tx/V34T23MTXFVU5VNBFPWQC7CTQO6563SRR6N2M5OEVM2OYTSNUSVQ" target="_blank" rel="noopener noreferrer"><del>Oct 2, 2021</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/353409462" target="_blank" rel="noopener noreferrer">ABSKT-353409462</a></td>
+        <td>TBD</td>
+        <td><a href="https://algobasket.io/" target="_blank" rel="noopener noreferrer">AlgoBasket</a></td>
+        <td><a href="https://algoexplorer.io/tx/V34T23MTXFVU5VNBFPWQC7CTQO6563SRR6N2M5OEVM2OYTSNUSVQ" target="_blank" rel="noopener noreferrer">Oct 2, 2021</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/Z63TUMFVZB3BEOCA7K4C27DH7P7OQ4LHISLRFXPV4M6AEFNMDAYAQ3BRRA" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/Z63TUMFVZB3BEOCA7K4C27DH7P7OQ4LHISLRFXPV4M6AEFNMDAYAQ3BRRA" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/Z63TUMFVZB3BEOCA7K4C27DH7P7OQ4LHISLRFXPV4M6AEFNMDAYAQ3BRRA" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/Z63TUMFVZB3BEOCA7K4C27DH7P7OQ4LHISLRFXPV4M6AEFNMDAYAQ3BRRA" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/Z63TUMFVZB3BEOCA7K4C27DH7P7OQ4LHISLRFXPV4M6AEFNMDAYAQ3BRRA" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/Z63TUMFVZB3BEOCA7K4C27DH7P7OQ4LHISLRFXPV4M6AEFNMDAYAQ3BRRA" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/353409462" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></a></td>
+        <td><a href="https://tinychart.org/asset/353409462" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>  
       
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/430838314" target="_blank" rel="noopener noreferrer">ACAT-430838314</a></td>
         <td>TBD</td>
         <td><a href="https://www.astrocatasa.com/" target="_blank" rel="noopener noreferrer">Astrocat</a></td>
@@ -234,7 +157,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/226265212" target="_blank" rel="noopener noreferrer">ACORN-226265212</a></td>
         <td>TBD</td>
         <td><a href="https://acorntoken.xyz/" target="_blank" rel="noopener noreferrer">AlgoNuts</a></td>
@@ -257,7 +180,7 @@
         </td>
       </tr>       
       
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/555540865" target="_blank" rel="noopener noreferrer">ACRES-555540865</a></td>
         <td>TBD</td>
         <td><a href="https://www.my80acres.com/" target="_blank" rel="noopener noreferrer">80Acres</a></td>
@@ -275,7 +198,7 @@
         <td><a href="https://tinychart.org/asset/555540865" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/426526699" target="_blank" rel="noopener noreferrer">ADVENTUR-426526699</a></td>
         <td>TBD</td>
         <td><a href="https://myadventure.games/" target="_blank" rel="noopener noreferrer">Adventure Coin</a></td>
@@ -297,7 +220,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="http://thealgofaucet.com/" target="_blank" rel="noopener noreferrer">AFD-393495312</a></td>
         <td>TBD</td>
         <td><a href="http://thealgofaucet.com/" target="_blank" rel="noopener noreferrer">Algorand Faucet Drops</a></td>
@@ -318,7 +241,7 @@
         </td>
       </tr>
 
-      <tr role="row">
+      <tr>
         <td><a href="https://algoexplorer.io/asset/305992851" target="_blank" rel="noopener noreferrer">AGNR-305992851</a></td>
         <td>TBD</td>
         <td><a href="https://www.algoneer.net/" target="_blank" rel="noopener noreferrer">Algoneer</a></td>
@@ -343,7 +266,7 @@
         </td>
       </tr>    
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/453816186" target="_blank" rel="noopener noreferrer">AGR-453816186</a></td>
         <td>TBD</td>
         <td><a href="https://starsightlabs.com/" target="_blank" rel="noopener noreferrer">Aegir</a></td>
@@ -367,31 +290,31 @@
         </td>
       </tr>
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/457205263" target="_blank" rel="noopener noreferrer"><del>AIRSHO-457205263</del></a></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/457205263" target="_blank" rel="noopener noreferrer">AIRSHO-457205263</a></td>
         <td>TBD</td>
-        <td><a href="https://airsho.io/" target="_blank" rel="noopener noreferrer"><del>AIRSHO Coin</del></a></td>
-        <td><a href="https://algoexplorer.io/tx/5L4OEQD24INSCEAZF2ONEKYDLJJQ2BX57D4BLA473OZZWSGK55DQ" target="_blank" rel="noopener noreferrer"><del>Dec 6, 2021</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><a href="https://airsho.io/whitepaper" target="_blank" rel="noopener noreferrer"><del>Yes</del></a></td>
-        <td><a href="https://airsho.io/roadmap" target="_blank" rel="noopener noreferrer"><del>Yes</del></a></td>
+        <td><a href="https://airsho.io/" target="_blank" rel="noopener noreferrer">AIRSHO Coin</a></td>
+        <td><a href="https://algoexplorer.io/tx/5L4OEQD24INSCEAZF2ONEKYDLJJQ2BX57D4BLA473OZZWSGK55DQ" target="_blank" rel="noopener noreferrer">Dec 6, 2021</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td><a href="https://airsho.io/whitepaper" target="_blank" rel="noopener noreferrer">Yes</a></td>
+        <td><a href="https://airsho.io/roadmap" target="_blank" rel="noopener noreferrer">Yes</a></td>
         <td>
-          <a href="https://algoexplorer.io/address/GFYGMWYE26GL7PWOR7ATA7CQL7OMA2HECESZC4N5A3MIA4TMXWW2RXUICI" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/GFYGMWYE26GL7PWOR7ATA7CQL7OMA2HECESZC4N5A3MIA4TMXWW2RXUICI" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/GFYGMWYE26GL7PWOR7ATA7CQL7OMA2HECESZC4N5A3MIA4TMXWW2RXUICI" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/GFYGMWYE26GL7PWOR7ATA7CQL7OMA2HECESZC4N5A3MIA4TMXWW2RXUICI" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/GFYGMWYE26GL7PWOR7ATA7CQL7OMA2HECESZC4N5A3MIA4TMXWW2RXUICI" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/GFYGMWYE26GL7PWOR7ATA7CQL7OMA2HECESZC4N5A3MIA4TMXWW2RXUICI" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
         <td>
-          <a href="https://www.reddit.com/r/airsho/" target="_blank" rel="noopener noreferrer"><del>Discord</del></a>,
-          <a href="https://ecosystem.algorand.com/project/aegir-tactics" target="_blank" rel="noopener noreferrer"><del>Ecosystem</del></a>,
-          <a href="https://www.reddit.com/r/airsho/" target="_blank" rel="noopener noreferrer"><del>Reddit</del></a>,
-          <a href="https://tinychart.org/asset/457205263" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></a>,
-          <a href="https://twitter.com/airshoDOTio" target="_blank" rel="noopener noreferrer"><del>Twitter</del></a>
+          <a href="https://www.reddit.com/r/airsho/" target="_blank" rel="noopener noreferrer">Discord</a>,
+          <a href="https://ecosystem.algorand.com/project/aegir-tactics" target="_blank" rel="noopener noreferrer">Ecosystem</a>,
+          <a href="https://www.reddit.com/r/airsho/" target="_blank" rel="noopener noreferrer">Reddit</a>,
+          <a href="https://tinychart.org/asset/457205263" target="_blank" rel="noopener noreferrer">TinyChart</a>,
+          <a href="https://twitter.com/airshoDOTio" target="_blank" rel="noopener noreferrer">Twitter</a>
         </td>
       </tr>
       
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/523683256" target="_blank" rel="noopener noreferrer">AKTA-523683256</a></td>
         <td>TBD</td>
         <td><a href="https://akita.community/" target="_blank" rel="noopener noreferrer">Akita Inu</a></td>
@@ -415,7 +338,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/447852812" target="_blank" rel="noopener noreferrer">AL-447852812</a></td>
         <td>TBD</td>
         <td><a href="https://algolitetoken.org/" target="_blank" rel="noopener noreferrer">ALGO LITE</a></td>
@@ -433,7 +356,7 @@
         <td><a href="https://tinychart.org/asset/447852812" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/445905873" target="_blank" rel="noopener noreferrer">ALC-445905873</a></td>
         <td>TBD</td>
         <td><a href="https://www.algoleagues.com/" target="_blank" rel="noopener noreferrer">Algo Leagues</a></td>
@@ -454,7 +377,7 @@
         </td>
       </tr>   
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/310014962">ALCH-310014962</a></td>
         <td>TBD</td>
         <td><a href="https://alchemon.net/" target="_blank" rel="noopener noreferrer">AlcheCoin</a></td>
@@ -477,7 +400,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="hhttps://algoexplorer.io/asset/463554836" target="_blank" rel="noopener noreferrer">ALGF-463554836</a></td>
         <td>TBD</td>
         <td><a href="https://algofund.co/" target="_blank" rel="noopener noreferrer">AlgoFund</a></td>
@@ -501,43 +424,43 @@
         </td>
       </tr>
 
-      <tr role="row">
-        <td><a href="https://algoexplorer.io/asset/227358511" target="_blank" rel="noopener noreferrer"><del>ALGR-227358511</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>ALGore</del></td>        
-        <td><a href="https://algoexplorer.io/tx/ZAEUSG2FIT23FBXIJ5P3RKGFXRFBXSN3I2VUKBUBKQJYOCZ566BA" target="_blank" rel="noopener noreferrer"><del>May 25, 2021</del></a></td>        
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>
+        <td><a href="https://algoexplorer.io/asset/227358511" target="_blank" rel="noopener noreferrer">ALGR-227358511</a></td>
+        <td>TBD</td>
+        <td>ALGore</td>        
+        <td><a href="https://algoexplorer.io/tx/ZAEUSG2FIT23FBXIJ5P3RKGFXRFBXSN3I2VUKBUBKQJYOCZ566BA" target="_blank" rel="noopener noreferrer">May 25, 2021</a></td>        
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/4ABSND2XSRA7HXKGXS6B5HKBQKGMWIMYRWZ5SH35AMO5USCPWQGI6NU34U" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/4ABSND2XSRA7HXKGXS6B5HKBQKGMWIMYRWZ5SH35AMO5USCPWQGI6NU34U" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/4ABSND2XSRA7HXKGXS6B5HKBQKGMWIMYRWZ5SH35AMO5USCPWQGI6NU34U" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/4ABSND2XSRA7HXKGXS6B5HKBQKGMWIMYRWZ5SH35AMO5USCPWQGI6NU34U" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/4ABSND2XSRA7HXKGXS6B5HKBQKGMWIMYRWZ5SH35AMO5USCPWQGI6NU34U" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/4ABSND2XSRA7HXKGXS6B5HKBQKGMWIMYRWZ5SH35AMO5USCPWQGI6NU34U" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/227358511" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></a></td>
+        <td><a href="https://tinychart.org/asset/227358511" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/604643747" target="_blank" rel="noopener noreferrer"><del>ANI-604643747</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>Anirand</del></td>
-        <td><a href="https://algoexplorer.io/tx/BL47WHZ4QAOA5LMUSIZSGNP4VK5JZFYLXG7JX6QIAQUCMZGDKPHQ" target="_blank" rel="noopener noreferrer"><del>Feb 14, 2022</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/604643747" target="_blank" rel="noopener noreferrer">ANI-604643747</a></td>
+        <td>TBD</td>
+        <td>Anirand</td>
+        <td><a href="https://algoexplorer.io/tx/BL47WHZ4QAOA5LMUSIZSGNP4VK5JZFYLXG7JX6QIAQUCMZGDKPHQ" target="_blank" rel="noopener noreferrer">Feb 14, 2022</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/WDJG7PTXHKMUULIC4SLPVKDHP2EQHA2PW5G5CSN2LZ2RR43UF2GO4Z26OE" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/WDJG7PTXHKMUULIC4SLPVKDHP2EQHA2PW5G5CSN2LZ2RR43UF2GO4Z26OE" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/WDJG7PTXHKMUULIC4SLPVKDHP2EQHA2PW5G5CSN2LZ2RR43UF2GO4Z26OE" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/WDJG7PTXHKMUULIC4SLPVKDHP2EQHA2PW5G5CSN2LZ2RR43UF2GO4Z26OE" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/WDJG7PTXHKMUULIC4SLPVKDHP2EQHA2PW5G5CSN2LZ2RR43UF2GO4Z26OE" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/WDJG7PTXHKMUULIC4SLPVKDHP2EQHA2PW5G5CSN2LZ2RR43UF2GO4Z26OE" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/604643747" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></td>
+        <td><a href="https://tinychart.org/asset/604643747" target="_blank" rel="noopener noreferrer">TinyChart</td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/446220964" target="_blank" rel="noopener noreferrer">ANML-446220964</a></td>
         <td>TBD</td>
         <td><a href="https://www.anml.style/" target="_blank" rel="noopener noreferrer">Animal Style</a></td>
@@ -554,7 +477,7 @@
         <td><a href="https://tinychart.org/asset/446220964" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr> 
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/409604194" target="_blank" rel="noopener noreferrer">AO-409604194</a></td>
         <td>TBD</td>
         <td><a href="https://www.algocean.org/" target="_blank" rel="noopener noreferrer">AlgOcean</a></td>
@@ -579,7 +502,7 @@
         </td>
       </tr>     
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/466716175" target="_blank" rel="noopener noreferrer">AoA-466716175</a></td>
         <td>TBD</td>
         <td><a href="https://www.angelsofares.xyz/" target="_blank" rel="noopener noreferrer">Angels of Ares</a></td>
@@ -602,7 +525,7 @@
         </td>
       </tr>  
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/542132831" target="_blank" rel="noopener noreferrer">APF-542132831</a></td>
         <td>TBD</td>
         <td><a href="https://www.asaportfolio.org/" target="_blank" rel="noopener noreferrer">ASA Portfolio</a></td>
@@ -626,25 +549,25 @@
         </td>
       </tr>
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/397629052" target="_blank" rel="noopener noreferrer"><del>APPLE-397629052</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>Apple</del></td>
-        <td><a href="https://algoexplorer.io/tx/6OXMJU2QARQFRBMAKJGVUCBRYTZ6DZH3QJOFZLIBUNI2M6FSRSWQ" target="_blank" rel="noopener noreferrer"><del>Nov 4, 2021</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/397629052" target="_blank" rel="noopener noreferrer">APPLE-397629052</a></td>
+        <td>TBD</td>
+        <td>Apple</td>
+        <td><a href="https://algoexplorer.io/tx/6OXMJU2QARQFRBMAKJGVUCBRYTZ6DZH3QJOFZLIBUNI2M6FSRSWQ" target="_blank" rel="noopener noreferrer">Nov 4, 2021</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/SIVY3IURM2VIZECMKJSKRS4QMK7ACBF5GKWDVNYCRWPGJ6MBNAIIZPKJIY" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/5LJJOAD4TUCFVO66NQPNJQOXISS357SHMHQVGTOUZ2S4JA4JCSPQDFXBPU" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/5LJJOAD4TUCFVO66NQPNJQOXISS357SHMHQVGTOUZ2S4JA4JCSPQDFXBPU" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/SIVY3IURM2VIZECMKJSKRS4QMK7ACBF5GKWDVNYCRWPGJ6MBNAIIZPKJIY" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/5LJJOAD4TUCFVO66NQPNJQOXISS357SHMHQVGTOUZ2S4JA4JCSPQDFXBPU" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/5LJJOAD4TUCFVO66NQPNJQOXISS357SHMHQVGTOUZ2S4JA4JCSPQDFXBPU" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/397629052" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></td>
+        <td><a href="https://tinychart.org/asset/397629052" target="_blank" rel="noopener noreferrer">TinyChart</td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/163650" target="_blank" rel="noopener noreferrer">ARCC-163650</a></td>
         <td>TBD</td>
         <td><a href="https://ibmr.io/" target="_blank" rel="noopener noreferrer">Asia Reserve Currency Coin</a></td>
@@ -670,7 +593,7 @@
         </td>
       </tr>  
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/393537671" target="_blank" rel="noopener noreferrer">ASASTATS-393537671</a></td>
         <td>TBD</td>
         <td><a href="https://www.asastats.com/" target="_blank" rel="noopener noreferrer">ASA Stats</a></td>
@@ -697,25 +620,25 @@
         </td>
       </tr>     
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/540605589" target="_blank" rel="noopener noreferrer"><del>AVCT-540605589</del></a></td>
-        <td><del>TBD</del></td>
-        <td><a href="https://algovegas.com/" target="_blank" rel="noopener noreferrer"><del>AlgoVegas Casino Token</del></a></td>
-        <td><a href="https://algoexplorer.io/tx/XD37TMRO2RB63S3IVOEJA7REIG6SPR2EKVPB7EVXMADGVQ4MG46Q" target="_blank" rel="noopener noreferrer"><del>Jan 12, 2022</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><a href="https://algovegas.com/algovegas-whitepaper.pdf" target="_blank" rel="noopener noreferrer"><del>Yes</del></a></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/540605589" target="_blank" rel="noopener noreferrer">AVCT-540605589</a></td>
+        <td>TBD</td>
+        <td><a href="https://algovegas.com/" target="_blank" rel="noopener noreferrer">AlgoVegas Casino Token</a></td>
+        <td><a href="https://algoexplorer.io/tx/XD37TMRO2RB63S3IVOEJA7REIG6SPR2EKVPB7EVXMADGVQ4MG46Q" target="_blank" rel="noopener noreferrer">Jan 12, 2022</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td><a href="https://algovegas.com/algovegas-whitepaper.pdf" target="_blank" rel="noopener noreferrer">Yes</a></td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/VEGASPDWGUX2KTFFJFVZ6IE7TPSY4NVFVOKHXZGBBERXNF3JOWOZB2PZPU" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/VEGASPDWGUX2KTFFJFVZ6IE7TPSY4NVFVOKHXZGBBERXNF3JOWOZB2PZPU" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/VEGASPDWGUX2KTFFJFVZ6IE7TPSY4NVFVOKHXZGBBERXNF3JOWOZB2PZPU" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/VEGASPDWGUX2KTFFJFVZ6IE7TPSY4NVFVOKHXZGBBERXNF3JOWOZB2PZPU" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/540605589" target="_blank" rel="noopener noreferrer"><del>TinyChart</del>,
-          <a href="https://twitter.com/algovegas" target="_blank" rel="noopener noreferrer"><del>Twitter</del></td>
+        <td><a href="https://tinychart.org/asset/540605589" target="_blank" rel="noopener noreferrer">TinyChart,
+          <a href="https://twitter.com/algovegas" target="_blank" rel="noopener noreferrer">Twitter</td>
       </tr>      
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/397111682" target="_blank" rel="noopener noreferrer">$AVO-397111682</a></td>
         <td>TBD</td>
         <td>ALGO AVOCADO</td>
@@ -733,7 +656,7 @@
         <td><a href="https://tinychart.org/asset/397111682" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>        
       
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/233939122" target="_blank" rel="noopener noreferrer">AWT-233939122</a></td>
         <td>TBD</td>
         <td><a href="https://algoworld.io/" target="_blank" rel="noopener noreferrer">AlgoWorld Token</a></td>
@@ -759,27 +682,27 @@
         </td>
       </tr>       
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/470335962" target="_blank" rel="noopener noreferrer"><del>BALGO-470335962</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>balgo</del></td>
-        <td><a href="https://algoexplorer.io/tx/M577QII5EJXNNEZ433M37IYRDMMM7BPN766SS4IQWV6U5WN4CLGA" target="_blank" rel="noopener noreferrer"><del>Dec 17, 2021</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/470335962" target="_blank" rel="noopener noreferrer">BALGO-470335962</a></td>
+        <td>TBD</td>
+        <td>balgo</td>
+        <td><a href="https://algoexplorer.io/tx/M577QII5EJXNNEZ433M37IYRDMMM7BPN766SS4IQWV6U5WN4CLGA" target="_blank" rel="noopener noreferrer">Dec 17, 2021</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer"><del>Clawback</del></a>,
-          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer"><del>Freeze</del></a>,
-          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer">Clawback</a>,
+          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer">Freeze</a>,
+          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/XYDRSAMB4UVSCYWTAQB6BPQSYPKY5FTE6D3ET4BLN525MQILOMNVQH7GBQ" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/470335962" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></a></td>
+        <td><a href="https://tinychart.org/asset/470335962" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/382781470" target="_blank" rel="noopener noreferrer">BANAAN-382781470</a></td>
         <td>TBD</td> 
         <td><a href="Https://banaan.ga" target="_blank" rel="noopener noreferrer">BANAAN</a></td>
@@ -797,7 +720,7 @@
         <td><a href="https://tinychart.org/asset/382781470" target="_blank" rel="noopener noreferrer">Tinychart</a></td>
       </tr>   
 
-      <tr role="row">
+      <tr>
         <td><a href="https://algoexplorer.io/asset/469835031" target="_blank" rel="noopener noreferrer">BANK-469835031</a>, <a href="https://algoexplorer.io/asset/465865291" target="_blank" rel="noopener noreferrer">STBL-465865291</a></td>
         <td>TBD</td>
         <td><a href="https://www.algofi.org/" target="_blank" rel="noopener noreferrer">Algofi</a></td>
@@ -836,27 +759,27 @@
         </td>
       </tr>    
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/615093377" target="_blank" rel="noopener noreferrer"><del>BASIC-615093377</del></a></td>
-        <td><del>TBD</del></td>
-        <td><a href="https://community.algobasics.org/home" target="_blank" rel="noopener noreferrer"><del>AlgoBasics</del></a></td>
-        <td><a href="https://algoexplorer.io/tx/5BED7RGRSE34EGL3RWQGMB4YRMAJW3WDL5NNQJICUUKSTBJDGRAQ" target="_blank" rel="noopener noreferrer"><del>Feb 19, 2022</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/615093377" target="_blank" rel="noopener noreferrer">BASIC-615093377</a></td>
+        <td>TBD</td>
+        <td><a href="https://community.algobasics.org/home" target="_blank" rel="noopener noreferrer">AlgoBasics</a></td>
+        <td><a href="https://algoexplorer.io/tx/5BED7RGRSE34EGL3RWQGMB4YRMAJW3WDL5NNQJICUUKSTBJDGRAQ" target="_blank" rel="noopener noreferrer">Feb 19, 2022</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer"><del>Clawback</del></a>,
-          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer"><del>Freeze</del></a>,
-          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer">Clawback</a>,
+          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer">Freeze</a>,
+          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/B3Q34A2II4FKQSDZ6P523PPBCEY7DKW7XFYD7MZE7R2LOK2BYUEAZY6BLM" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/615093377" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></a></td>
+        <td><a href="https://tinychart.org/asset/615093377" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>  
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/473180477" target="_blank" rel="noopener noreferrer">BEAN-473180477</a></td>
         <td>TBD</td>  
         <td><a href="https://www.coffeedao.dev/" target="_blank" rel="noopener noreferrer">Coffee DAO</a></td>
@@ -878,7 +801,7 @@
         </td>
       </tr>   
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/478549868" target="_blank" rel="noopener noreferrer">BIRDS-478549868</a></td>
         <td>TBD</td>
         <td><a href="https://www.bird.bot/" target="_blank" rel="noopener noreferrer">BirdBot</a></td>
@@ -910,25 +833,25 @@
         </td>
       </tr>   
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/401752010" target="_blank" rel="noopener noreferrer"><del>BLAPU-401752010</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>Blapu</del></td>
-        <td><a href="https://algoexplorer.io/tx/SCGCLMPSV6QLQM3PIZFRP7QEZMHKCUFJEVB3XIMQKFUXMAO2JNOQ" target="_blank" rel="noopener noreferrer"><del>Nov 6, 2021</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/401752010" target="_blank" rel="noopener noreferrer">BLAPU-401752010</a></td>
+        <td>TBD</td>
+        <td>Blapu</td>
+        <td><a href="https://algoexplorer.io/tx/SCGCLMPSV6QLQM3PIZFRP7QEZMHKCUFJEVB3XIMQKFUXMAO2JNOQ" target="_blank" rel="noopener noreferrer">Nov 6, 2021</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/AG5BQ4ZMXOZSPFOUF7YS5QG4XEY5ZN4RKEUGBBPLQALIDO3V5OJWSMAD44" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/AG5BQ4ZMXOZSPFOUF7YS5QG4XEY5ZN4RKEUGBBPLQALIDO3V5OJWSMAD44" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/AG5BQ4ZMXOZSPFOUF7YS5QG4XEY5ZN4RKEUGBBPLQALIDO3V5OJWSMAD44" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/AG5BQ4ZMXOZSPFOUF7YS5QG4XEY5ZN4RKEUGBBPLQALIDO3V5OJWSMAD44" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/AG5BQ4ZMXOZSPFOUF7YS5QG4XEY5ZN4RKEUGBBPLQALIDO3V5OJWSMAD44" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/AG5BQ4ZMXOZSPFOUF7YS5QG4XEY5ZN4RKEUGBBPLQALIDO3V5OJWSMAD44" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/401752010" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></td>
+        <td><a href="https://tinychart.org/asset/401752010" target="_blank" rel="noopener noreferrer">TinyChart</td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/251014570" target="_blank" rel="noopener noreferrer">Block-251014570</a></td>
         <td>TBD</td>
         <td><a href="https://blockcreate.io/" target="_blank" rel="noopener noreferrer">Blocks</a></td>
@@ -955,7 +878,7 @@
         </td>
       </tr>      
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/342889824" target="_blank" rel="noopener noreferrer">BOARD-342889824</a></td>
         <td>TBD</td>
         <td><a href="https://boardofficial.com/" target="_blank" rel="noopener noreferrer">Board</a></td>
@@ -982,7 +905,7 @@
         </td>
       </tr>   
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/251014570" target="_blank" rel="noopener noreferrer">Bones-251014570</a></td>
         <td>TBD</td>
         <td><a href="https://bonesasa.com/" target="_blank" rel="noopener noreferrer">Bones ASA</a></td>
@@ -1004,7 +927,7 @@
         </td>
       </tr>  
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/498684064" target="_blank" rel="noopener noreferrer">BULO-498684064</a></td>
         <td>TBD</td>
         <td><a href="https://bulocoin.site/assets/BULOpaper.pdf" target="_blank" rel="noopener noreferrer">BULO Coin</a></td>
@@ -1021,7 +944,7 @@
         <td><a href="https://tinychart.org/asset/498684064" target="_blank" rel="noopener noreferrer">TinyChart</a></tr>
       </tr>                 
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/137020565" target="_blank" rel="noopener noreferrer">BUY-137020565</a></td>
         <td>TBD</td>
         <td><a href="https://buying.com/" target="_blank" rel="noopener noreferrer">Buy Token</a></td>
@@ -1064,25 +987,25 @@
         </td>
       </tr>
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/402495345" target="_blank" rel="noopener noreferrer"><del>CHEERS-402495345</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>DrinkItWriteIt</del></td>
-        <td><a href="https://algoexplorer.io/tx/W5DPJN2WEFXZBZRTGOPSUR65MJS3VUE2B7L3V2ICSUH4CHC6KKCQ" target="_blank" rel="noopener noreferrer"><del>Nov 7, 2021</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/402495345" target="_blank" rel="noopener noreferrer">CHEERS-402495345</a></td>
+        <td>TBD</td>
+        <td>DrinkItWriteIt</td>
+        <td><a href="https://algoexplorer.io/tx/W5DPJN2WEFXZBZRTGOPSUR65MJS3VUE2B7L3V2ICSUH4CHC6KKCQ" target="_blank" rel="noopener noreferrer">Nov 7, 2021</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
-          <a href="https://algoexplorer.io/address/3Y642KGTDN53Y4S4ATEPXQ3S7JPKH4BTTPMJM3CUB4NHJ5FZYLCNZSA2TE" target="_blank" rel="noopener noreferrer"><del>Creator</del></a>,
-          <a href="https://algoexplorer.io/address/BEERADIKWOC5T4RF3J2UWXBZ2OCGW2TMZGVQWG27VUJFADID6YVKRSUNPM" target="_blank" rel="noopener noreferrer"><del>Manager</del></a>,
-          <a href="https://algoexplorer.io/address/BEERADIKWOC5T4RF3J2UWXBZ2OCGW2TMZGVQWG27VUJFADID6YVKRSUNPM" target="_blank" rel="noopener noreferrer"><del>Reserve</del></a>
+          <a href="https://algoexplorer.io/address/3Y642KGTDN53Y4S4ATEPXQ3S7JPKH4BTTPMJM3CUB4NHJ5FZYLCNZSA2TE" target="_blank" rel="noopener noreferrer">Creator</a>,
+          <a href="https://algoexplorer.io/address/BEERADIKWOC5T4RF3J2UWXBZ2OCGW2TMZGVQWG27VUJFADID6YVKRSUNPM" target="_blank" rel="noopener noreferrer">Manager</a>,
+          <a href="https://algoexplorer.io/address/BEERADIKWOC5T4RF3J2UWXBZ2OCGW2TMZGVQWG27VUJFADID6YVKRSUNPM" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/402495345" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></a></td>
+        <td><a href="https://tinychart.org/asset/402495345" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>  
 
-      <tr role="row" class="rowToIgnore">                        
+      <tr>                        
         <td><a href="https://algoexplorer.io/asset/388592191" target="_blank" rel="noopener noreferrer">Chips-388592191</a></td>
         <td>Yes</td>
         <td><a href="https://algo-casino.com/" target="_blank" rel="noopener noreferrer">Algo-Casino</a></td>
@@ -1116,7 +1039,7 @@
         </td>
       </tr>                
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/297995609" target="_blank" rel="noopener noreferrer">Choice-297995609</a></td>
         <td>TBD</td>
         <td><a href="https://choice-coin.com/" target="_blank" rel="noopener noreferrer">Choice Coin</a></td>
@@ -1142,16 +1065,16 @@
         </td>
       </tr>
 
-      <tr role="row">        
-        <td><a href="https://algoexplorer.io/asset/585221469" target="_blank" rel="noopener noreferrer"><del>CNDL-585221469</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>Candle</del></td>
-        <td><a href="https://algoexplorer.io/tx/WIUWSZI2S6XIYEAT4YZ2A6KOOIT4TNF2X4ML756YVEJ7BV34YC2A" target="_blank" rel="noopener noreferrer"><del>Feb 3, 2022</del></a></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
-        <td><del>TBD</del></td>
+      <tr>        
+        <td><a href="https://algoexplorer.io/asset/585221469" target="_blank" rel="noopener noreferrer">CNDL-585221469</a></td>
+        <td>TBD</td>
+        <td>Candle</td>
+        <td><a href="https://algoexplorer.io/tx/WIUWSZI2S6XIYEAT4YZ2A6KOOIT4TNF2X4ML756YVEJ7BV34YC2A" target="_blank" rel="noopener noreferrer">Feb 3, 2022</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
         <td>
           <a href="https://algoexplorer.io/address/SH54RRCAGA75CLJL4UQCPJR2DVWBN7ZF7JJ5CO6WGEUTKFHML67T2VH35A" target="_blank" rel="noopener noreferrer">Clawback</a>,
           <a href="https://algoexplorer.io/address/SH54RRCAGA75CLJL4UQCPJR2DVWBN7ZF7JJ5CO6WGEUTKFHML67T2VH35A" target="_blank" rel="noopener noreferrer">Creator</a>,
@@ -1159,10 +1082,10 @@
           <a href="https://algoexplorer.io/address/SH54RRCAGA75CLJL4UQCPJR2DVWBN7ZF7JJ5CO6WGEUTKFHML67T2VH35A" target="_blank" rel="noopener noreferrer">Manager</a>,
           <a href="https://algoexplorer.io/address/SH54RRCAGA75CLJL4UQCPJR2DVWBN7ZF7JJ5CO6WGEUTKFHML67T2VH35A" target="_blank" rel="noopener noreferrer">Reserve</a>
         </td>
-        <td><a href="https://tinychart.org/asset/585221469" target="_blank" rel="noopener noreferrer"><del>TinyChart</del></a></td>
+        <td><a href="https://tinychart.org/asset/585221469" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>  
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/498684064" target="_blank" rel="noopener noreferrer">CRSD-435335235</a></td>
         <td>TBD</td>
         <td><a href="https://crescendocrypto.xyz/" target="_blank" rel="noopener noreferrer">Crescendo</a></td>
@@ -1186,7 +1109,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/511491168" target="_blank" rel="noopener noreferrer">Cujo-511491168</a></td>
         <td>TBD</td>
         <td><a href="https://thecujo.com/" target="_blank" rel="noopener noreferrer">Cujo Token</a></td>
@@ -1209,7 +1132,7 @@
         </td>
       </tr>
 
-      <tr role="row">                      
+      <tr>                      
         <td><a href="https://algoexplorer.io/asset/319473667" target="_blank" rel="noopener noreferrer">CURATOR-319473667</a></td>
         <td>TBD</td>
         <td><a href="https://www.algocurator.com/" target="_blank" rel="noopener noreferrer">Algo Curator</a></td>
@@ -1232,7 +1155,7 @@
         </td>
       </tr>     
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/601894079" target="_blank" rel="noopener noreferrer">DC-601894079</a></td>
         <td>TBD</td>
         <td>Dark Coin</td>
@@ -1249,7 +1172,7 @@
         <td><a href="https://tinychart.org/asset/601894079" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>
 
-      <tr role="row" class="rowToIgnore">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/470842789" target="_blank" rel="noopener noreferrer">DEFLY-470842789</a></td>
         <td>Yes</td>
         <td><a href="https://defly.app/" target="_blank" rel="noopener noreferrer">Defly</a></td>
@@ -1278,7 +1201,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/391379500" target="_blank" rel="noopener noreferrer">DPANDA-391379500</a></td>
         <td>TBD</td>
         <td><a href="https://dopepanda.org/" target="_blank" rel="noopener noreferrer">Dope Panda</a></td>
@@ -1302,7 +1225,7 @@
         </td>
       </tr>            
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/591601798" target="_blank" rel="noopener noreferrer">FIGHT-591601798</a></td>
         <td>TBD</td>
         <td><a href="https://www.fightingfish.io/" target="_blank" rel="noopener noreferrer">Fight Token</a></td>
@@ -1326,7 +1249,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/393155456" target="_blank" rel="noopener noreferrer">FISH-393155456</a></td>
         <td>TBD</td>
         <td><a href="https://cleanoceantoken.org/" target="_blank" rel="noopener noreferrer">Clean Ocean</a></td>
@@ -1351,7 +1274,7 @@
         </td>
       </tr>      
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/406383570" target="_blank" rel="noopener noreferrer">FLAMINGO-406383570</a></td>
         <td>TBD</td>
         <td>Flamingo Coin</td>
@@ -1373,7 +1296,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/547405153" target="_blank" rel="noopener noreferrer">FMA-547405153</a></td>
         <td>TBD</td>
         <td><a href="https://fairmeme.org/" target="_blank" rel="noopener noreferrer">FairMeme</a></td>
@@ -1400,7 +1323,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td>GARD-TBD</td>
         <td>TBD</td>
         <td><a href="https://www.algogard.com/" target="_blank" rel="noopener noreferrer">GARD</a></td>
@@ -1424,7 +1347,7 @@
         </td>
       </tr>
 
-      <tr role="row" class="rowToIgnore">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/230946361" target="_blank" rel="noopener noreferrer">GEMS-230946361</a></td>
         <td>Yes</td>
         <td><a href="https://algogems.io/" target="_blank" rel="noopener noreferrer">AlgoGems</a></td>
@@ -1452,7 +1375,7 @@
         </td>
       </tr>                 
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/568835243" target="_blank" rel="noopener noreferrer">GoAlgo-568835243</a></td>
         <td>TBD</td>
         <td><a href="https://www.algobrix.life/" target="_blank" rel="noopener noreferrer">LegoMyAlgo</a></td>
@@ -1471,7 +1394,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td>
           <a href="https://algoexplorer.io/asset/386192725" target="_blank" rel="noopener noreferrer">goBTC-386192725</a>,
           <a href="https://algoexplorer.io/asset/386195940" target="_blank" rel="noopener noreferrer">goETH-386195940</a>,
@@ -1516,7 +1439,7 @@
         </td>
       </tr>               
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/403499324" target="_blank" rel="noopener noreferrer">GP-403499324</a></td>
         <td>TBD</td>
         <td><a href="https://www.nexusasa.info/" target="_blank" rel="noopener noreferrer">Nexus</a></td>
@@ -1542,7 +1465,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/137594422" target="_blank" rel="noopener noreferrer">HDL-137594422</a></td>
         <td>TBD</td>
         <td><a href="https://www.headline.dev/" target="_blank" rel="noopener noreferrer">Headline</a></td>
@@ -1571,7 +1494,7 @@
         </td>
       </tr>      
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/567485181" target="_blank" rel="noopener noreferrer">LOUD-567485181</a></td>
         <td>TBD</td>
         <td><a href="https://loudefi.com/" target="_blank" rel="noopener noreferrer">LOUDDeFi</a></td>
@@ -1593,7 +1516,7 @@
         </td>
       </tr>      
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/404044168" target="_blank" rel="noopener noreferrer">Nekos-404044168</a></td>
         <td>TBD</td>
         <td><a href="https://www.nekoin.ai/" target="_blank" rel="noopener noreferrer">NEKOIN</a></td>
@@ -1619,7 +1542,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/455356741" target="_blank" rel="noopener noreferrer">NFT-455356741</a></td>
         <td>TBD</td>
         <td><a href="https://polymeta.co/" target="_blank" rel="noopener noreferrer">NFTrade</a></td>
@@ -1643,7 +1566,7 @@
         </td>
       </tr>     
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/571931588" target="_blank" rel="noopener noreferrer">NTR2-571931588</a></td>
         <td>TBD</td>
         <td><a href="https://superalgorand.com/" target="_blank" rel="noopener noreferrer">Neutral Token</a></td>
@@ -1669,7 +1592,7 @@
         </td>
       </tr>            
       
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/330168845" target="_blank" rel="noopener noreferrer">NURD-330168845</a></td>
         <td>TBD</td>
         <td><a href="https://kryptonurd.com/" target="_blank" rel="noopener noreferrer">KryptoNurd</a></td>
@@ -1692,7 +1615,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/613608234" target="_blank" rel="noopener noreferrer">OGS-613608234</a></td>
         <td>TBD</td>
         <td>Orbital Gnome Strikers</td>
@@ -1715,7 +1638,7 @@
         </td>
       </tr>
 
-      <tr role="row" class="rowToIgnore">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/287867876" target="_blank" rel="noopener noreferrer">OPUL-287867876</a></td>
         <td>Yes</td>
         <td><a href="https://opulous.org/" target="_blank" rel="noopener noreferrer">Opulous</a></td>
@@ -1755,7 +1678,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/461849439" target="_blank" rel="noopener noreferrer">PARI-461849439</a></td>
         <td>TBD</td>
         <td><a href="https://www.paritoken.com/" target="_blank" rel="noopener noreferrer">Pari</a></td>
@@ -1777,7 +1700,7 @@
         </td>
       </tr>
 
-      <tr role="row" class="rowToIgnore">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/27165954" target="_blank" rel="noopener noreferrer">Planets-27165954</a></td>
         <td>Yes</td>
         <td><a href="https://www.planetwatch.io/" target="_blank" rel="noopener noreferrer">PlanetWatch</a></td>
@@ -1811,7 +1734,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/415045633" target="_blank" rel="noopener noreferrer">PRSC-415045633</a></td>
         <td>TBD</td>
         <td><a href="https://prsc.app/" target="_blank" rel="noopener noreferrer">Parsec</a></td>
@@ -1835,7 +1758,7 @@
         </td>
       </tr>      
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/394904431" target="_blank" rel="noopener noreferrer">Pup-394904431</a></td>
         <td>TBD</td>
         <td><a href="https://algoranddoge.com/" target="_blank" rel="noopener noreferrer">AlgorandDoge</a></td>
@@ -1860,7 +1783,7 @@
         </td>
       </tr>              
       
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/444568464" target="_blank" rel="noopener noreferrer">QUACK-444568464</a></td>
         <td>TBD</td>
         <td><a href="https://www.aduckcoin.com/" target="_blank" rel="noopener noreferrer">Duckcoin</a></td>
@@ -1885,7 +1808,7 @@
         </td>
       </tr>      
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/426980914" target="_blank" rel="noopener noreferrer">RCOIN-426980914</a></td>
         <td>TBD</td>
         <td><a href="https://www.raptoreyenft.com/" target="_blank" rel="noopener noreferrer">Raptor Coin</a></td>
@@ -1908,7 +1831,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/575353596" target="_blank" rel="noopener noreferrer">Roo-575353596</a></td>
         <td>TBD</td>
         <td><a href="https://wageroo.org/" target="_blank" rel="noopener noreferrer">Wageroo</a></td>
@@ -1930,7 +1853,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/569120128" target="_blank" rel="noopener noreferrer">SCOUT-569120128</a></td>
         <td>TBD</td>
         <td><a href="https://algoscout.net/" target="_blank" rel="noopener noreferrer">AlgoScout</a></td>
@@ -1954,7 +1877,7 @@
         </td>
       </tr>         
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/523605642" target="_blank" rel="noopener noreferrer">SEEDS-523605642</a></td>
         <td>TBD</td>
         <td><a href="https://www.seed-bomb.com/" target="_blank" rel="noopener noreferrer">SeedBomb</a></td>
@@ -1978,7 +1901,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/300208676" target="_blank" rel="noopener noreferrer">SMILE-300208676</a></td>
         <td>TBD</td>
         <td><a href="https://smilecoin.us/" target="_blank" rel="noopener noreferrer">Smile Coin</a></td>
@@ -2010,7 +1933,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/452047208" target="_blank" rel="noopener noreferrer">SOCKS-452047208</a></td>
         <td>TBD</td>
         <td><a href="https://www.sockhodler.com/" target="_blank" rel="noopener noreferrer">SockHODLER</a></td>
@@ -2037,7 +1960,7 @@
         </td>
       </tr>
 
-      <tr role="row" class="rowToIgnore">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/511484048" target="_blank" rel="noopener noreferrer">STKE-511484048</a></td>
         <td>Yes</td>
         <td><a href="https://algostake.org/" target="_blank" rel="noopener noreferrer">AlgoStake</a></td>
@@ -2061,7 +1984,7 @@
         </td>
       </tr>   
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/433379445" target="_blank" rel="noopener noreferrer">SUPER-433379445</a></td>
         <td>TBD</td>
         <td><a href="https://superalgorand.com/" target="_blank" rel="noopener noreferrer">Super Algo Arcade</a></td>
@@ -2086,7 +2009,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/388502764" target="_blank" rel="noopener noreferrer">SVANSY-388502764</a></td>
         <td>TBD</td>
         <td><a href="https://svansyvonswansea.com/" target="_blank" rel="noopener noreferrer">Svansy Coin</a></td>
@@ -2116,7 +2039,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/329110405" target="_blank" rel="noopener noreferrer">Tacos-329110405</a></td>
         <td>TBD</td>
         <td><a href="https://www.dorastacos.com/" target="_blank" rel="noopener noreferrer">TacoCoin</a></td>
@@ -2140,7 +2063,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/421281844" target="_blank" rel="noopener noreferrer">TBOTS-421281844</a></td>
         <td>TBD</td>
         <td><a href="https://tinybots.app/dapp/" target="_blank" rel="noopener noreferrer">TinyBots</a></td>
@@ -2158,7 +2081,7 @@
         <td><a href="https://tinychart.org/asset/421281844" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
       </tr>
       
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/378382099" target="_blank" rel="noopener noreferrer">TINY-378382099</a></td>
         <td>TBD</td>
         <td><a href="https://tinychart.org/" target="_blank" rel="noopener noreferrer">TinyChart</a></td>
@@ -2189,7 +2112,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/394014424" target="_blank" rel="noopener noreferrer">ToolsX-394014424</a></td>
         <td>TBD</td>
         <td><a href="https://toolsx.org/" target="_blank" rel="noopener noreferrer">ToolsX</a></td>
@@ -2213,7 +2136,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/444108880" target="_blank" rel="noopener noreferrer">TREES-444108880</a></td>
         <td>TBD</td>
         <td><a href="https://cryptotrees.earth/" target="_blank" rel="noopener noreferrer">CryptoTrees</a></td>
@@ -2237,7 +2160,7 @@
         </td>
       </tr>    
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/31566704" target="_blank" rel="noopener noreferrer">USDC-31566704</a></td>
         <td>TBD</td>
         <td><a href="https://www.centre.io/usdc" target="_blank" rel="noopener noreferrer">USD Coin</a></td>
@@ -2272,7 +2195,7 @@
         </td>
       </tr>      
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/509808838" target="_blank" rel="noopener noreferrer">WBLN-509808838</a></td>
         <td>TBD</td>
         <td><a href="https://www.webblen.io/" target="_blank" rel="noopener noreferrer">Webblen</a></td>
@@ -2310,7 +2233,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/283820866" target="_blank" rel="noopener noreferrer">XET-283820866</a></td>
         <td>TBD</td>
         <td><a href="https://www.xfinite.io/" target="_blank" rel="noopener noreferrer">Xfinite</a></td>
@@ -2346,7 +2269,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/607591690" target="_blank" rel="noopener noreferrer">XGLI-607591690</a></td>
         <td>TBD</td>
         <td><a href="https://glitter.finance/" target="_blank" rel="noopener noreferrer">Glitter Finance</a></td>
@@ -2388,7 +2311,7 @@
         </td>
       </tr>
 
-      <tr role="row" class="rowToIgnore">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/226701642" target="_blank" rel="noopener noreferrer">YLDY-226701642</a></td>
         <td>Yes</td>
         <td><a href="https://yieldly.finance/" target="_blank" rel="noopener noreferrer">Yieldly</a></td>
@@ -2422,7 +2345,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/317670428" target="_blank" rel="noopener noreferrer">ZENI-317670428</a></td>
         <td>TBD</td>
         <td><a href="https://zenny.casino/" target="_blank" rel="noopener noreferrer">Zenny</a></td>
@@ -2444,7 +2367,7 @@
         </td>
       </tr>
 
-      <tr role="row">        
+      <tr>        
         <td><a href="https://algoexplorer.io/asset/444035862" target="_blank" rel="noopener noreferrer">ZONE-444035862</a></td>
         <td>TBD</td>
         <td><a href="https://www.zone.game/" target="_blank" rel="noopener noreferrer">Zone</a></td>
@@ -2527,12 +2450,14 @@
   <p class="copyright">ASA Token Directory © 2022</p>
 </section>
 
-<script src="https://code.jquery.com/jquery-1.5.1.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js" type="text/javascript"></script>
+</script>
 <script>
-  $('.rowToClick').click(function ()
- {
-     $('tr:not(.rowToIgnore)').toggle();
- });
+  $(document).ready(function() {
+    $('#example').DataTable();
+} );
 </script>
 
 </body>
