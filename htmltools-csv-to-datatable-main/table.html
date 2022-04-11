@@ -5,11 +5,95 @@
     <meta name="description" content="A Directory of Tokenized Assets on the Algorand Blockchain."/>  
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
-    <style>
+    <style>    
+
+      img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+      }
       
-    </style>
+      .footer, .header {
+        padding: 40px 0;
+        background-color: #ffffff;
+      }
+      
+      .footer .social, .header .social {
+        text-align: center;
+        padding-bottom: 25px;
+        color: #4b4c4d;
+      }
+      
+      .footer .social a, .header .social .a {
+        font-size: 24px;
+        color: inherit;
+        border: 1px solid #ccc;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 8px;
+        opacity: 0.75;
+      }
+      
+      .footer .social a:hover, .header .social a:hover {
+        opacity: 0.9;
+      }
+      
+      .footer ul, .header ul {
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+      
+      .footer ul a, .header ul a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+      
+      .footer ul li, .header ul li {
+        display: inline-block;
+        padding: 0 15px;
+      }
+      
+      .footer ul a:hover, .header ul a:hover {
+        opacity: 1;
+      }
+      
+      .footer .copyright, .header .tiny {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: #aaa;
+      }
+      
+      .footer .normal, .header .normal {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+      }
+      
+      
+      </style>    
 </head>
 <body>
+  <section class="header">  
+    <ul class="list">
+      <li>
+        <a href="./asatokendirectory.html" class="logo">ASA Token Directory</a>
+        <p class="normal">A Directory of Tokenized Assets on the Algorand Blockchain</p>
+      </li>      
+    </ul>
+  </section>
+
   <div id="tableContainer" class="m-5"></div>
   <div id="loaderContainer">
     <div class="d-flex justify-content-center text-secondary" id="loader">
@@ -203,7 +287,7 @@
     ************************/
     function drawDataTable() {
       $("#tableTitle").text(table_title);
-      var $table = $('<table id="example" class="display responsive nowrap" style="width:100%">');
+      var $table = $('<table id="example" roll="table" class="display responsive nowrap" style="width:100%">');
       var $tableContainer = $("#tableContainer");
       $tableContainer.empty().append($table);
       var $tableHtmlHead = $("<thead></thead>");
