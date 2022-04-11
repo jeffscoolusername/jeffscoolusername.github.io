@@ -10,61 +10,6 @@
     </style>
 </head>
 <body>
-  <div id="navbar">
-    <p><a class='btn' href='javascript:history.back()'>Go Back</a></p>
-  </div>
-  <h1 id="tableTitle"></h1>
-  <div id="usage_guide">
-    <p>This is a general purpose tool to render tabular data into resposnive, searchable, and sortable html datatables.</p>
-    <p><strong>Github Repository: </strong><a href="https://github.com/Ghahfarokhi/htmltools-csv-to-datatable">htmltools-csv-to-datatable</a></p>
-    <p><strong>Usage guideline</strong></p>
-    <p>This file contains all html, css, and javascript codes needed to read a set of url parameters listed below 
-      and display the datatable which has been pointed to. Simply let this file to live in the root of your 
-      project folder on any server. All the codes will execute on the client-side. 
-    </p>
-    <p><strong>URL construction</strong></p>
-    <p style="color: gray;">
-      <b>Example:</b> 
-      https://.../table.html<b style="color: red;">&quest;</b>table_name=data/tab_separated_table.tsv<b style="color: red;">&amp;</b>table_title=myTable<b style="color: red;">&amp;</b>style=compact,stripe
-      <br>
-      <br>
-      <b>Demo:</b> <a href="https://amirtaheri.info/htmltools-csv-to-datatable/table.html?table_name=data/tab_separated_table.tsv&table_title=CSV%20to%20Datatable%20Demo">Visit this link for a working example!</a>
-    </p>
-    <p><strong>Parameters</strong></p>
-    <ul>
-      <li><b>table_name</b>: required!</li>
-      <li><b>table_title</b>: optional (values: a cutom title), default=table_name.</li>
-      <li><b>separator</b>: optional  (values: , or ;  or : ), default=tab.</li>
-      <li><b>paging</b>: optional  (values: true or false), default=true</li>
-      <li><b>column_filtering</b>: optional (values: true or false), default=false.</li>
-      <li><b>scroll_x</b>: optional  (values: true or false), default=true</li>
-      <li><b>style</b>: optional (values: none, display, compact, stripe, hover, cell-border, row-border, 
-        order-column), default=display,compact. 
-        Multiple value combinations can be used together, separated using a comma.</li>
-    </ul>
-    <hr>
-    <p><strong>Note 1</strong>: Parameters and their values should follow the pattern shown in the example above 
-      (e.g.,&amp;parameterX=valueX&amp;parameterY=valueY and so on). Order of parameters doesn't matter.
-    </p>
-    <p><strong>Note 2</strong>: If you still see this guideline after providing the url paramaters, 
-      then double check the spelling of "<b style="color: royalblue;">table_name</b>".
-    </p>
-    <p><strong>Note 3</strong>: Table text will be sanitized before its addition to the DOM, meaning any charachter outside
-      of the following white-list will be removed before appending the cell text to the datatable. 
-      The white-list is limited to: <b>A-Z0-9a-z./-_() ,;:*+=!?@'"#€$%&</b>. Developers: consult the <i>generalStringSanitizer</i> function if a 
-      more relaxed sanitizer is needed.
-    </p>
-    <br>
-    <hr>
-    <p><strong>References and dependencies</strong></p>
-    <ul>
-      <li>CSVToArray Function: <a href="https://www.bennadel.com/blog/1504-ask-ben-parsing-csv-strings-with-javascript-exec-regular-expression-command.htm">Ben Nadal's blog</a></li>
-      <li>Datatables: <a href="https://datatables.net/">datatables.net</a></li>
-      <li>Javascript library: <a href="https://jquery.com/">jQuery</a></li>
-      <li>Assembly: <a href="https://amirtaheri.info">Amir Taheri Ghahfarokhi</a></li>
-    </ul>
-  </div>
-  <hr>
   <div id="tableContainer" class="m-5"></div>
   <div id="loaderContainer">
     <div class="d-flex justify-content-center text-secondary" id="loader">
@@ -73,8 +18,8 @@
       </div>
     </div>
   </div>
+
   <div id="footer">
-    <p style="color: gray; text-align: center; padding: 50px;">CSVtoDatatable</p>
   </div>
 
   <!-- Scripts are placed here to help with the page loading faster -->
