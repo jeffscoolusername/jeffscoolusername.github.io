@@ -1,0 +1,34 @@
+{"asset":
+    {
+        "asset-tx-counter":60910,
+        "created-at-round":13984425,
+        "created-at":1621800876,
+        "creation-txid":"GLKUV6RLSBND4JOCZLXIPRULRD5YKLAHECERKTE2U5TCGDELXNOQ",
+        "deleted":false,
+        "index":226265212,
+        "params":{
+            "circulating-supply":677623956,
+            "creator":"KB6GKVGEYDPOCSPKHFOMUFJCXPHEWFPT2KAGWB3QYUMWPLGLMYUUNOVJRA",
+            "creator-url":"https://acorntoken.xyz/",
+            "decimals":0,
+            "default-frozen":false,
+            "manager":"GOGC4QDPXDK3WEVO2BYBS3LGSMTWDMQHDOO5KRJ7HLT6HDMI5FX7MLUMRA",
+            "name":"AlgoNuts",
+            "name-b64":"QWxnb051dHM=",
+            "reserve":"GOGC4QDPXDK3WEVO2BYBS3LGSMTWDMQHDOO5KRJ7HLT6HDMI5FX7MLUMRA",
+            "total":1000000000,
+            "unit-name":"ACORN",
+            "unit-name-b64":"QUNPUk4="},
+        "verification":
+            {"score":100,
+                "reputation":"Verified",
+                "name":"AlgoNuts",
+                "title":"AlgoNuts",
+                "description":
+                "AlgoNuts ($ACORN) is the official ASA token of the AlgoNuts ecosystem and NFTrees DeFi projects. The mission of AlgoNuts is to support wildlife rehabilitation initiatives and promote awareness of Algorand as a carbon negative blockchain through cultivation of a diverse art collective. Let's go nuts!",
+                "unit-name":"ACORN",
+                "url":"https://acorntoken.xyz/",
+                "circulating-supply-hidden":true,
+                "total-supply-hidden":true}},
+        "current-round":20368518
+    }
