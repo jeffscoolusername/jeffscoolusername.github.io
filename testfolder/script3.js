@@ -2,7 +2,7 @@ var editor; // use a global for the submit and return data rendering in the exam
  
 $(document).ready(function() {
     editor = new $.fn.dataTable( {
-        ajax: "/testdata.json",
+        ajax: "https://jeffscoolusername.github.io/testfolder/index.html/testdata.json",
         table: "#example",
         fields: [ {
                 label: "asset-tx-counter:",
