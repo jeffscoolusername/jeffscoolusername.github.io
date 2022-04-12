@@ -1,7 +1,5 @@
-body {
-  font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #fff;
-}
+/* Put your css in here */
+
+h1 {
+    color: red;
+  }
