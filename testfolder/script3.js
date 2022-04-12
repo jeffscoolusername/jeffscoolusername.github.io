@@ -1,6 +1,8 @@
+var editor; // use a global for the submit and return data rendering in the examples
+ 
 $(document).ready(function() {
-    $('#example').DataTable( {
-        ajax: "testdata.json",
+    editor = new $.fn.dataTable( {
+        ajax: "/testdata.json",
         table: "#example",
         fields: [ {
                 label: "asset-tx-counter:",
