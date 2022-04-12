@@ -2,7 +2,7 @@ $(document).ready( function () {
   
     var table = $('#example').DataTable(); 
     var table1 = $('#example1').DataTable({
-          "ajax": "asatdbackupnolinks.json",
+          "ajax": "https://jeffscoolusername.github.io/testfolder/test2/asatdbackupnolinks.json",
           "columns": [
               { "data": "Unit Name" },
               { "data": "ID" },
@@ -14,7 +14,7 @@ $(document).ready( function () {
   
     });
     var table2 = $('#example2').DataTable({
-          ajax: 'asatdbackupnolinks.json',
+          ajax: 'https://jeffscoolusername.github.io/testfolder/test2/asatdbackupnolinks.json',
           "columns": [
               { "data": "Unit Name" },
               { "data": "ID" },
