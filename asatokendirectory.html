@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.6.4/css/keyTable.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.5.5/css/colReorder.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.2/css/fixedHeader.dataTables.min.css">
     <style>    
 
     img {
@@ -2982,13 +2983,15 @@
 <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js" type="text/javascript"></script>
 <script src="https://cdn.datatables.net/keytable/2.6.4/js/dataTables.keyTable.min.js" type="text/javascript"></script>
 <script src="https://cdn.datatables.net/colreorder/1.5.5/js/dataTables.colReorder.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.2.2/js/dataTables.fixedHeader.min.js" type="text/javascript"></script>
 </script>
 <script>
   $(document).ready(function() {
     $('#example').DataTable(
       {
         colReorder: true,
-        keys: true
+        keys: true,
+        fixedHeader: true
       }
     );
 } );
