@@ -1,7 +1,7 @@
 $(document)
 .ready(function() {
     $.ajax({
-        url: 'https://mainnet.analytics.tinyman.org/api/v1/current-asset-prices/',
+        url: 'asatdbackupnolinks.json',
         method: 'get',
         dataType: 'json',
         success: function(data) {
@@ -20,7 +20,18 @@ $(document)
                     keys: true,
                     fixedHeader: true,
                     'columns': [
-                        { 'data': 'price' },
+                        { 'data': 'Unit Name' },
+                        { 'data': 'ID' },
+                        { 'data': 'Algo Verified' },
+                        { 'data': 'Name' },
+                        { 'data': 'Date Created' },
+                        { 'data': 'Work History' },
+                        { 'data': 'Algo Grant' },
+                        { 'data': 'Company' },
+                        { 'data': 'Paper' },
+                        { 'data': 'Roadmap' },
+                        { 'data': 'Wallets' },
+                        { 'data': 'Other Links' },
                     ]
                 });
         }
