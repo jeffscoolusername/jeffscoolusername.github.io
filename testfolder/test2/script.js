@@ -1,7 +1,7 @@
 $(document)
 .ready(function() {
     $.ajax({
-        url: 'https://indexer.algoexplorerapi.io/v2/assets/393537671?include-all=true',
+        url: 'asatdbackupnolinks.json',
         method: 'get',
         dataType: 'json',
         success: function(data) {
@@ -20,9 +20,18 @@ $(document)
                     keys: true,
                     fixedHeader: true,
                     'columns': [
-                        { 'data': 'asset-tx-counter' },
-                        { 'data': 'created-at' },
-                        { 'data': 'creation-txid' }
+                        { 'data': 'Unit Name' },
+                        { 'data': 'ID' },
+                        { 'data': 'Algo Verified' },
+                        { 'data': 'Name' },
+                        { 'data': 'Date Created' },
+                        { 'data': 'Work History' },
+                        { 'data': 'Algo Grant' },
+                        { 'data': 'Company' },
+                        { 'data': 'Paper' },
+                        { 'data': 'Roadmap' },
+                        { 'data': 'Wallets' },
+                        { 'data': 'Other Links' },
                     ]
                 });
         }
