@@ -16,6 +16,10 @@ $(document)
                         { 'width': '25px', 'targets': [0] },
                         { 'sortable': false, 'targets': [0] }
                     ],
+                    colReorder: true,
+                    paging: false,
+                    keys: true,
+                    fixedHeader: true,
                     'columns': [
                         { 'data': 'Unit Name' },
                         { 'data': 'ID' },
