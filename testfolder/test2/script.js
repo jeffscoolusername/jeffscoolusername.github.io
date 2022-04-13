@@ -13,8 +13,7 @@ $(document)
                         "<'row'<'col-md-12't>>" +
                         "<'row'<'col-md-6'i><'col-md-6'p>>",
                     'columnDefs': [
-                        { 'width': '25px', 'targets': [0] },
-                        { 'sortable': false, 'targets': [0] }
+                        { 'width': '25px', 'targets': [0] }
                     ],
                     colReorder: true,
                     paging: false,
