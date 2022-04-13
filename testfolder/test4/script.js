@@ -1,4 +1,4 @@
-$.getJSON( "https://mainnet.analytics.tinyman.org/api/v1/current-asset-prices/", function( data ) {
+$.getJSON( "https://api.myjson.com/bins/un18a", function( data ) {
    //console.log(data);
    jsonArr =data;
    //header
