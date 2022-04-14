@@ -45,17 +45,38 @@ $(document)
                 { 'data': 'Other Links' },
             ]
         });
+
+    let getJSON = function(url, callback) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = 'json';
+        xhr.onload = function() {
+            let status = xhr.status;
+            if (status === 200) {
+                callback(null, xhr.response);
+            } else {
+                callback(status, xhr.response);
+            }
+        };
+        xhr.send();
+    };
+
+    function setName(id, newName) {
+        for (var i = 0; i < jsonObj.length; i++) {
+          if (jsonObj[i].Id === id) {
+            jsonObj[i].Name = newName;
+            return;
+          }
+        }
+      }    
+  
+    getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
+    function(err, data) {
+        if (err !== null) {
+        } else {                
+            setName(3, "Thomas");
+        }
+    });   
        
 });
 
-
-/*function setName(id, newName) {
-    for (var i = 0; i < jsonObj.length; i++) {
-      if (jsonObj[i].Id === id) {
-        jsonObj[i].Name = newName;
-        return;
-      }
-    }
-  }
-
-  setName(3, "Thomas");*/
