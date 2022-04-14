@@ -27,7 +27,7 @@ $(document)
             
             thingie1 = data.asset['asset-tx-counter'];
 
-    var jsonObj = [
+    var jsObj = [
         {"Asdf":"1", "Unit_Name": "ACORN", "ID": "226265212", "Algo Verified": "TBD", "Name": "AlgoNuts", "TX_Counter": thingie1, "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Discord, Email, TinyChart, Twitter"},
@@ -46,7 +46,7 @@ $(document)
             
     var exampleTable = $('#example')
         .DataTable({
-            data: jsonObj,
+            data: jsObj,
             'aaSorting': [[1, 'asc']],
             dom: "<'row'<'col-md-6 text-left'T><'col-md-6 text-right'f>>" +
                 "<'row'<'col-md-12't>>" +
@@ -76,7 +76,7 @@ $(document)
 
     });  
 
-    //alert("New Username: " + jsonObj[1].TX_Counter);
+    //alert("New Username: " + jsObj[1].TX_Counter);
 
     /*var myTable = document.getElementById('example');
     myTable.rows[1].cells[4].innerHTML = thingie1;
