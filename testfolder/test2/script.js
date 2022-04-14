@@ -16,7 +16,7 @@ $(document)
         xhr.send();
     };
 
-    var thingie1 = "";   
+    var thingie1 = '';   
     var thingie2 = '';
     var thingie3 = '';
     var thingie4 = '';
