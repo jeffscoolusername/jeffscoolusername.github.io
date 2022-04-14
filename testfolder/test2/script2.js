@@ -13,35 +13,28 @@ let getJSON = function(url, callback) {
     xhr.send();
 };
 
+var myTable = document.getElementById('example');
+
   getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
     function(err, data) {
         if (err !== null) {
         } else {                
-          fetch('testfolder/test2/asatdbackupnolinks.json', {
-            method: 'POST',
-            body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
-          });
+          myTable.rows[1].cells[4].innerHTML = data.asset['asset-tx-counter'];
         }
     });          
 
   getJSON('https://indexer.algoexplorerapi.io/v2/assets/393537671?include-all=true',
     function(err, data) {
-      if (err !== null) {
-      } else {                
-        fetch('testfolder/test2/asatdbackupnolinks.json', {
-          method: 'POST',
-          body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
-        });
-      }
+        if (err !== null) {
+        } else {                
+          myTable.rows[2].cells[4].innerHTML = data.asset['asset-tx-counter'];
+        }
     });
 
     getJSON('https://indexer.algoexplorerapi.io/v2/assets/511484048?include-all=true',
     function(err, data) {
-      if (err !== null) {
-      } else {                
-        fetch('testfolder/test2/asatdbackupnolinks.json', {
-          method: 'POST',
-          body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
-        });
-      }
+        if (err !== null) {
+        } else {                
+          myTable.rows[3].cells[4].innerHTML = data.asset['asset-tx-counter'];
+        }
     });
