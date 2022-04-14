@@ -61,20 +61,20 @@ $(document)
         xhr.send();
     };
 
-    function setName(id, newName) {
+    function setName(ID, newName) {
         for (var i = 0; i < jsonObj.length; i++) {
-          if (jsonObj[i].Id === id) {
+          if (jsonObj[i].ID === ID) {
             jsonObj[i].Name = newName;
             return;
           }
         }
-      }    
+      } 
   
     getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
     function(err, data) {
         if (err !== null) {
         } else {                
-            setName(3, "Thomas");
+            setName(426526699, "Thomas");
         }
     });   
        
