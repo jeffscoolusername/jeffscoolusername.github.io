@@ -1,5 +1,6 @@
 $(document)
 .ready(function() {
+
     let getJSON = function(url, callback) {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url, true);
@@ -15,41 +16,34 @@ $(document)
         xhr.send();
     };
 
+    var thingie1 = "";   
+    var thingie2 = '';
+    var thingie3 = '';
+    var thingie4 = '';
+    var thingie5 = '';   
+
+    getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212',
+          function(err, data) {      
+            
+            thingie1 = data.asset['asset-tx-counter'];
+
     var jsonObj = [
-        {"Asdf":"1", "Unit_Name": "ACORN", "ID": "226265212", "Algo Verified": "TBD", "Name": "AlgoNuts", "Date Created": "3", "Work History": "TBD",
+        {"Asdf":"1", "Unit_Name": "ACORN", "ID": "226265212", "Algo Verified": "TBD", "Name": "AlgoNuts", "TX_Counter": thingie1, "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Discord, Email, TinyChart, Twitter"},
-        {"Asdf":"2", "Unit_Name": "ACRES", "ID": "555540865", "Algo Verified": "TBD", "Name": "80Acres", "Date Created": "2", "Work History": "TBD",
+        {"Asdf":"2", "Unit_Name": "ACRES", "ID": "555540865", "Algo Verified": "TBD", "Name": "80Acres", "TX_Counter": thingie2, "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Email, Phone, TinyChart"},
-        {"Asdf":"3", "Unit_Name": "ADVENTUR", "ID": "426526699", "Algo Verified": "TBD", "Name": "Adventure Coin", "Date Created": "3", "Work History": "TBD",
+        {"Asdf":"3", "Unit_Name": "ADVENTUR", "ID": "426526699", "Algo Verified": "TBD", "Name": "Adventure Coin", "TX_Counter": thingie3, "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Reddit, TinyChart, Twitter"},
-        {"Asdf":"4", "Unit_Name": "AFD", "ID": "393495312", "Algo Verified": "TBD", "Name": "Algorand Faucet Drops", "Date Created": "4", "Work History": "TBD",
+        {"Asdf":"4", "Unit_Name": "AFD", "ID": "393495312", "Algo Verified": "TBD", "Name": "Algorand Faucet Drops", "TX_Counter": thingie4, "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "Yes", "Roadmap": "TBD", "Wallets": "Creator, Reserve", "Other Links": "Discord, TinyChart, Twitter"},
-        {"Asdf":"5", "Unit_Name": "AGNR", "ID": "305992851", "Algo Verified": "TBD", "Name": "Algoneer", "Date Created": "5", "Work History": "Team (1,2)",
+        {"Asdf":"5", "Unit_Name": "AGNR", "ID": "305992851", "Algo Verified": "TBD", "Name": "Algoneer", "TX_Counter": thingie5, "Work History": "Team (1,2)",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
-        "Other Links": "Discord, Ecosystem, GitHub, Reddit, TinyChart"}];
-    
-    var myTable = document.getElementById('example');
-
-    getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
-        function(err, data) {
-            if (err !== null) {
-            } else {                
-            myTable.rows[1].cells[4].innerHTML = data.asset['asset-tx-counter'];
-            jsonObj[0]['Date Created'] = data.asset['asset-tx-counter'];
-            //alert("New Username: " + jsonObj[0]['Date Created']);
-            }
-        });     
-    
-
-    /*for (var i = 0; i < jsonObj.length; ++i) {
-        if (jsonObj[i]['Asdf'] === '3') {
-            jsonObj[i]['Date Created'] = 'UPDATED TEXT HERE';
-        }
-    }*/
-        
+        "Other Links": "Discord, Ecosystem, GitHub, Reddit, TinyChart"}];            
+     
+            
     var exampleTable = $('#example')
         .DataTable({
             data: jsonObj,
@@ -69,7 +63,7 @@ $(document)
                 { 'data': 'ID' },
                 { 'data': 'Algo Verified' },
                 { 'data': 'Name' },
-                { 'data': 'Date Created' },
+                { 'data': 'TX_Counter' },
                 { 'data': 'Work History' },
                 { 'data': 'Algo Grant' },
                 { 'data': 'Company' },
@@ -80,29 +74,16 @@ $(document)
             ]
         });        
 
-    /*
-    let getJSON = function(url, callback) {
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', url, true);
-        xhr.responseType = 'json';
-        xhr.onload = function() {
-            let status = xhr.status;
-            if (status === 200) {
-                callback(null, xhr.response);
-            } else {
-                callback(status, xhr.response);
-            }
-        };
-        xhr.send();
-    };
-    
-    getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
-    function(err, data) {
-        if (err !== null) {
-        } else {                
-            example.rows[2].cells[4].innerHTML = data.asset['asset-tx-counter'];
-        }
-    });      */
-    
-});
+    });  
 
+    //alert("New Username: " + jsonObj[1].TX_Counter);
+
+    /*var myTable = document.getElementById('example');
+    myTable.rows[1].cells[4].innerHTML = thingie1;
+    myTable.rows[2].cells[4].innerHTML = thingie2;
+    myTable.rows[3].cells[4].innerHTML = thingie3;
+    myTable.rows[4].cells[4].innerHTML = thingie4;
+    myTable.rows[5].cells[4].innerHTML = thingie5;*/
+
+
+    });  
