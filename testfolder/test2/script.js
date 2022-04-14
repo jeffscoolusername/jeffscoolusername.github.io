@@ -53,7 +53,7 @@ $(document)
 });
 
 
-function setName(id, newName) {
+/*function setName(id, newName) {
     for (var i = 0; i < jsonObj.length; i++) {
       if (jsonObj[i].Id === id) {
         jsonObj[i].Name = newName;
@@ -62,4 +62,4 @@ function setName(id, newName) {
     }
   }
 
-  setName(3, "Thomas");
+  setName(3, "Thomas");*/
