@@ -55,3 +55,14 @@ var jsonObj = [
     });
 });
 
+
+function setName(id, newName) {
+    for (var i = 0; i < jsonObj.length; i++) {
+      if (jsonObj[i].Id === id) {
+        jsonObj[i].Name = newName;
+        return;
+      }
+    }
+  }
+
+  setName(3, "Thomas");
