@@ -13,8 +13,6 @@ let getJSON = function(url, callback) {
     xhr.send();
 };
 
-var myTable = document.getElementById('example');
-
   getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
     function(err, data) {
         if (err !== null) {
