@@ -131,7 +131,7 @@
             <img src="https://raw.githubusercontent.com/tinymanorg/asa-list/review/assets/ACORN-226265212/icon.svg" alt="icon" loading="lazy"></a>
         </td>      
         <td>TBD</td>
-        <td>TBD</td>        
+        <td></td>        
         <td><a href="https://acorntoken.xyz/" target="_blank" rel="noopener noreferrer">AlgoNuts</a></td>
         <td><a href="https://algoexplorer.io/tx/GLKUV6RLSBND4JOCZLXIPRULRD5YKLAHECERKTE2U5TCGDELXNOQ" target="_blank" rel="noopener noreferrer">Jun 21, 2021</a></td>
         <td>TBD</td>
@@ -159,7 +159,7 @@
             <img src="https://raw.githubusercontent.com/tinymanorg/asa-list/review/assets/ASASTATS-393537671/icon.svg" alt="icon" loading="lazy"></a>
         </td> 
         <td>TBD</td>
-        <td>TBD</td> 
+        <td></td> 
         <td><a href="https://www.asastats.com/" target="_blank" rel="noopener noreferrer">ASA Stats</a></td>
         <td><a href="https://algoexplorer.io/tx/YSKVZSM3UUTK7BUUZQKIP4AVYC4UZ27J5EX4BRK7GF677OPG6NUA" target="_blank" rel="noopener noreferrer">Nov 2, 2021</a></td>
         <td>
@@ -192,7 +192,7 @@
             <img src="https://raw.githubusercontent.com/tinymanorg/asa-list/review/assets/STKE-511484048/icon.svg" alt="icon" loading="lazy"></a>
         </td> 
         <td>Yes</td> 
-        <td>TBD</td>    
+        <td></td>    
         <td><a href="https://algostake.org/" target="_blank" rel="noopener noreferrer">AlgoStake</a></td>
         <td><a href="https://algoexplorer.io/tx/URKH7L62WEJNHFXPM2AKSZFJW32SJ5LS22NU4JLG36AES55W6WCA" target="_blank" rel="noopener noreferrer">Dec 29, 2021</a></td> 
         <td><a href="https://www.linkedin.com/in/scottnovell/" target="_blank" rel="noopener noreferrer">CEO/Dev/Product</a></td>
@@ -290,7 +290,7 @@
         getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
           function(err, data) {
               if (err !== null) {
-              } else {                
+              } else {         
                 myTable.rows[1].cells[4].innerHTML = data.asset['asset-tx-counter'];
               }
           });          
@@ -298,7 +298,7 @@
         getJSON('https://indexer.algoexplorerapi.io/v2/assets/393537671?include-all=true',
           function(err, data) {
               if (err !== null) {
-              } else {                
+              } else {         
                 myTable.rows[2].cells[4].innerHTML = data.asset['asset-tx-counter'];
               }
           });
@@ -306,7 +306,7 @@
           getJSON('https://indexer.algoexplorerapi.io/v2/assets/511484048?include-all=true',
           function(err, data) {
               if (err !== null) {
-              } else {                
+              } else {            
                 myTable.rows[3].cells[4].innerHTML = data.asset['asset-tx-counter'];
               }
           });
