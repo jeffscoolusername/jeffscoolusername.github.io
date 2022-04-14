@@ -19,7 +19,7 @@ var myTable = document.getElementById('example');
     function(err, data) {
         if (err !== null) {
         } else {                
-          fetch('../asatdbackupnolinks.json', {
+          fetch('https://jeffscoolusername.github.io/testfolder/test2/script2.js', {
             method: 'POST',
             body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
           });
@@ -30,7 +30,7 @@ var myTable = document.getElementById('example');
     function(err, data) {
       if (err !== null) {
       } else {                
-        fetch('../asatdbackupnolinks.json', {
+        fetch('https://jeffscoolusername.github.io/testfolder/test2/script2.js', {
           method: 'POST',
           body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
         });
@@ -41,7 +41,7 @@ var myTable = document.getElementById('example');
     function(err, data) {
       if (err !== null) {
       } else {                
-        fetch('../asatdbackupnolinks.json', {
+        fetch('https://jeffscoolusername.github.io/testfolder/test2/script2.js', {
           method: 'POST',
           body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
         });
