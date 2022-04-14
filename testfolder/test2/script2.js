@@ -17,7 +17,7 @@ let getJSON = function(url, callback) {
     function(err, data) {
         if (err !== null) {
         } else {                
-          fetch('https://jeffscoolusername.github.io/testfolder/test2/asatdbackupnolinks.json', {
+          fetch('testfolder/test2/asatdbackupnolinks.json', {
             method: 'POST',
             body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
           });
@@ -28,7 +28,7 @@ let getJSON = function(url, callback) {
     function(err, data) {
       if (err !== null) {
       } else {                
-        fetch('https://jeffscoolusername.github.io/testfolder/test2/asatdbackupnolinks.json', {
+        fetch('testfolder/test2/asatdbackupnolinks.json', {
           method: 'POST',
           body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
         });
@@ -39,7 +39,7 @@ let getJSON = function(url, callback) {
     function(err, data) {
       if (err !== null) {
       } else {                
-        fetch('https://jeffscoolusername.github.io/testfolder/test2/asatdbackupnolinks.json', {
+        fetch('testfolder/test2/asatdbackupnolinks.json', {
           method: 'POST',
           body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
         });
