@@ -18,7 +18,7 @@ var jsonObj = [
 
 .ready(function() {
     $.ajax({
-        url: jsonObj,
+        data: jsonObj,
         method: 'get',
         dataType: 'json',
         success: function(data) {
