@@ -18,13 +18,12 @@ var jsonObj = [
 
 .ready(function() {
     $.ajax({
-        source: jsonObj,
         method: 'get',
         dataType: 'json',
         success: function(data) {
             var exampleTable = $('#example')
                 .DataTable({
-                    data: data,
+                    data: jsonObj,
                     'aaSorting': [[1, 'asc']],
                     dom: "<'row'<'col-md-6 text-left'T><'col-md-6 text-right'f>>" +
                         "<'row'<'col-md-12't>>" +
