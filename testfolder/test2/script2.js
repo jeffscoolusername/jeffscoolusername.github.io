@@ -19,22 +19,31 @@ var myTable = document.getElementById('example');
     function(err, data) {
         if (err !== null) {
         } else {                
-          myTable.rows[1].cells[4].innerHTML = data.asset['asset-tx-counter'];
+          fetch('asatdbackupnolinks.jsonwhere', {
+            method: 'POST',
+            body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
+          });
         }
     });          
 
   getJSON('https://indexer.algoexplorerapi.io/v2/assets/393537671?include-all=true',
     function(err, data) {
-        if (err !== null) {
-        } else {                
-          myTable.rows[2].cells[4].innerHTML = data.asset['asset-tx-counter'];
-        }
+      if (err !== null) {
+      } else {                
+        fetch('asatdbackupnolinks.jsonwhere', {
+          method: 'POST',
+          body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
+        });
+      }
     });
 
     getJSON('https://indexer.algoexplorerapi.io/v2/assets/511484048?include-all=true',
     function(err, data) {
-        if (err !== null) {
-        } else {                
-          myTable.rows[3].cells[4].innerHTML = data.asset['asset-tx-counter'];
-        }
+      if (err !== null) {
+      } else {                
+        fetch('asatdbackupnolinks.jsonwhere', {
+          method: 'POST',
+          body: new URLSearchParams($.param(data.asset['asset-tx-counter']))
+        });
+      }
     });
