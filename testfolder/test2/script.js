@@ -17,12 +17,12 @@ $(document)
     };
 
     var thingie1 = '';   
-    var thingie2 = '';
+    var thingie2 = '226265212';
     var thingie3 = '';
     var thingie4 = '';
     var thingie5 = '';   
 
-    getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212',
+    getJSON('https://indexer.algoexplorerapi.io/v2/assets/'[thingie2],
           function(err, data) {      
             
             thingie1 = data.asset['asset-tx-counter'];
