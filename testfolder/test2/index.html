@@ -28,6 +28,13 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+    table.dataTable th {
+      font-size: 0.75em;
+    }
+    table.dataTable td {
+      font-size: 0.5em;
+      font-weight: bold;
+    }
     </style>
 
 <script>
@@ -37,7 +44,7 @@
         window.clearInterval(intervalId);
         callback.call(this);
       }
-    }, 13000);
+    }, 13500);
   }
 
   function setVisible(selector, visible) {
@@ -68,6 +75,7 @@
         <tr>
           <th>Unit_Name</th>
           <th>ID</th>
+          <th>Created_at_Round</th>
           <th>Algo Verified</th>
           <th>Name</th>
           <th>TX_Counter</th>
