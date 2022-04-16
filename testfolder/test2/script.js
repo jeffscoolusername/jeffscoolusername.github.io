@@ -15,16 +15,22 @@ $(document)
         };
         xhr.send();
     }; 
+
+    var url0 = 'https://indexer.algoexplorerapi.io/v2/assets/226265212';
+    var url1 = 'https://indexer.algoexplorerapi.io/v2/assets/555540865';
+    var url2 = 'https://indexer.algoexplorerapi.io/v2/assets/426526699';
+    var url3 = 'https://indexer.algoexplorerapi.io/v2/assets/393495312';
+    var url4 = 'https://indexer.algoexplorerapi.io/v2/assets/305992851';
    
-            getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212',
+            getJSON(url0,
           function(err, data0) {                  
-            getJSON('https://indexer.algoexplorerapi.io/v2/assets/555540865',
+            getJSON(url1,
           function(err, data1) {    
-            getJSON('https://indexer.algoexplorerapi.io/v2/assets/426526699',
+            getJSON(url2,
           function(err, data2) {    
-            getJSON('https://indexer.algoexplorerapi.io/v2/assets/393495312',
+            getJSON(url3,
           function(err, data3) {    
-            getJSON('https://indexer.algoexplorerapi.io/v2/assets/305992851',
+            getJSON(url4,
           function(err, data4) {    
 
     var jsObj = [
