@@ -39,7 +39,7 @@ $(document)
         "Other Links": "Reddit, TinyChart, Twitter"},
         {"Element":"3", "Unit_Name": "AFD", "ID": "393495312", "Algo Verified": "TBD", "Name": "Algorand Faucet Drops", "TX_Counter": data3.asset['asset-tx-counter'], "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "Yes", "Roadmap": "TBD", "Wallets": "Creator, Reserve", "Other Links": "Discord, TinyChart, Twitter"},
-        {"Element":"4", "Unit_Name": "AGNR", "ID": "305992851", "Algo Verified": "TBD", "Name": "Algoneer", "TX_Counter": data3.asset['asset-tx-counter'], "Work History": "Team (1,2)",
+        {"Element":"4", "Unit_Name": "AGNR", "ID": "305992851", "Algo Verified": "TBD", "Name": "Algoneer", "TX_Counter": data4.asset['asset-tx-counter'], "Work History": "Team (1,2)",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Discord, Ecosystem, GitHub, Reddit, TinyChart"}];            
             
