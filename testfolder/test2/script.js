@@ -16,62 +16,61 @@ $(document)
         xhr.send();
     }; 
 
-    //var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
-    //var url0 = algoexplorerapi + '397111682';
+    var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
 
-    var url0 = 'https://indexer.algoexplorerapi.io/v2/assets/397111682';
-    var url1 = 'https://indexer.algoexplorerapi.io/v2/assets/353409462';
-    var url2 = 'https://indexer.algoexplorerapi.io/v2/assets/430838314';
-    var url3 = 'https://indexer.algoexplorerapi.io/v2/assets/226265212';
-    var url4 = 'https://indexer.algoexplorerapi.io/v2/assets/555540865';
-    var url5 = 'https://indexer.algoexplorerapi.io/v2/assets/426526699';
-    var url6 = 'https://indexer.algoexplorerapi.io/v2/assets/393495312';
-    var url7 = 'https://indexer.algoexplorerapi.io/v2/assets/305992851';
-    var url8 = 'https://indexer.algoexplorerapi.io/v2/assets/453816186';
-    var url9 = 'https://indexer.algoexplorerapi.io/v2/assets/457205263';
-    var url10 = 'https://indexer.algoexplorerapi.io/v2/assets/523683256';
-    var url11 = 'https://indexer.algoexplorerapi.io/v2/assets/447852812';
-    var url12 = 'https://indexer.algoexplorerapi.io/v2/assets/445905873';
-    var url13 = 'https://indexer.algoexplorerapi.io/v2/assets/310014962';
-    var url14 = 'https://indexer.algoexplorerapi.io/v2/assets/463554836';
-    var url15 = 'https://indexer.algoexplorerapi.io/v2/assets/227358511';
-    var url16 = 'https://indexer.algoexplorerapi.io/v2/assets/604643747';
-    var url17 = 'https://indexer.algoexplorerapi.io/v2/assets/446220964';
-    var url18 = 'https://indexer.algoexplorerapi.io/v2/assets/409604194';
-    var url19 = 'https://indexer.algoexplorerapi.io/v2/assets/466716175';
-    var url20 = 'https://indexer.algoexplorerapi.io/v2/assets/542132831';
-    var url21 = 'https://indexer.algoexplorerapi.io/v2/assets/397629052';
-    var url22 = 'https://indexer.algoexplorerapi.io/v2/assets/163650';
-    var url23 = 'https://indexer.algoexplorerapi.io/v2/assets/393537671';
-    var url24 = 'https://indexer.algoexplorerapi.io/v2/assets/540605589';
-    var url25 = 'https://indexer.algoexplorerapi.io/v2/assets/233939122';
-    var url26 = 'https://indexer.algoexplorerapi.io/v2/assets/470335962';
-    var url27 = 'https://indexer.algoexplorerapi.io/v2/assets/382781470';
-    var url28 = 'https://indexer.algoexplorerapi.io/v2/assets/469835031';
-    var url29 = 'https://indexer.algoexplorerapi.io/v2/assets/615093377';
-    var url30 = 'https://indexer.algoexplorerapi.io/v2/assets/473180477';
-    var url31 = 'https://indexer.algoexplorerapi.io/v2/assets/478549868';
-    var url32 = 'https://indexer.algoexplorerapi.io/v2/assets/401752010';
-    var url33 = 'https://indexer.algoexplorerapi.io/v2/assets/251014570';
-    var url34 = 'https://indexer.algoexplorerapi.io/v2/assets/342889824';
-    var url35 = 'https://indexer.algoexplorerapi.io/v2/assets/251014570';
-    var url36 = 'https://indexer.algoexplorerapi.io/v2/assets/498684064';
-    var url37 = 'https://indexer.algoexplorerapi.io/v2/assets/137020565';
-    var url38 = 'https://indexer.algoexplorerapi.io/v2/assets/402495345';
-    var url39 = 'https://indexer.algoexplorerapi.io/v2/assets/388592191';
-    var url40 = 'https://indexer.algoexplorerapi.io/v2/assets/297995609';
-    var url41 = 'https://indexer.algoexplorerapi.io/v2/assets/585221469';
-    var url42 = 'https://indexer.algoexplorerapi.io/v2/assets/571576867';
-    var url43 = 'https://indexer.algoexplorerapi.io/v2/assets/281003266';
-    var url44 = 'https://indexer.algoexplorerapi.io/v2/assets/435335235';
-    var url45 = 'https://indexer.algoexplorerapi.io/v2/assets/511491168';
-    var url46 = 'https://indexer.algoexplorerapi.io/v2/assets/511491168';
-    var url47 = 'https://indexer.algoexplorerapi.io/v2/assets/319473667';
-    var url48 = 'https://indexer.algoexplorerapi.io/v2/assets/601894079';
-    var url49 = 'https://indexer.algoexplorerapi.io/v2/assets/470842789';
-    var url50 = 'https://indexer.algoexplorerapi.io/v2/assets/391379500';
-    var url51 = 'https://indexer.algoexplorerapi.io/v2/assets/591601798';
-    var url52 = 'https://indexer.algoexplorerapi.io/v2/assets/393155456';
+    var url0 = algoexplorerapi + '397111682';
+    var url1 = algoexplorerapi + '353409462';
+    var url2 = algoexplorerapi + '430838314';
+    var url3 = algoexplorerapi + '226265212';
+    var url4 = algoexplorerapi + '555540865';
+    var url5 = algoexplorerapi + '426526699';
+    var url6 = algoexplorerapi + '393495312';
+    var url7 = algoexplorerapi + '305992851';
+    var url8 = algoexplorerapi + '453816186';
+    var url9 = algoexplorerapi + '457205263';
+    var url10 = algoexplorerapi + '523683256';
+    var url11 = algoexplorerapi + '447852812';
+    var url12 = algoexplorerapi + '445905873';
+    var url13 = algoexplorerapi + '310014962';
+    var url14 = algoexplorerapi + '463554836';
+    var url15 = algoexplorerapi + '227358511';
+    var url16 = algoexplorerapi + '604643747';
+    var url17 = algoexplorerapi + '446220964';
+    var url18 = algoexplorerapi + '409604194';
+    var url19 = algoexplorerapi + '466716175';
+    var url20 = algoexplorerapi + '542132831';
+    var url21 = algoexplorerapi + '397629052';
+    var url22 = algoexplorerapi + '163650';
+    var url23 = algoexplorerapi + '393537671';
+    var url24 = algoexplorerapi + '540605589';
+    var url25 = algoexplorerapi + '233939122';
+    var url26 = algoexplorerapi + '470335962';
+    var url27 = algoexplorerapi + '382781470';
+    var url28 = algoexplorerapi + '469835031';
+    var url29 = algoexplorerapi + '615093377';
+    var url30 = algoexplorerapi + '473180477';
+    var url31 = algoexplorerapi + '478549868';
+    var url32 = algoexplorerapi + '401752010';
+    var url33 = algoexplorerapi + '251014570';
+    var url34 = algoexplorerapi + '342889824';
+    var url35 = algoexplorerapi + '251014570';
+    var url36 = algoexplorerapi + '498684064';
+    var url37 = algoexplorerapi + '137020565';
+    var url38 = algoexplorerapi + '402495345';
+    var url39 = algoexplorerapi + '388592191';
+    var url40 = algoexplorerapi + '297995609';
+    var url41 = algoexplorerapi + '585221469';
+    var url42 = algoexplorerapi + '571576867';
+    var url43 = algoexplorerapi + '281003266';
+    var url44 = algoexplorerapi + '435335235';
+    var url45 = algoexplorerapi + '511491168';
+    var url46 = algoexplorerapi + '511491168';
+    var url47 = algoexplorerapi + '319473667';
+    var url48 = algoexplorerapi + '601894079';
+    var url49 = algoexplorerapi + '470842789';
+    var url50 = algoexplorerapi + '391379500';
+    var url51 = algoexplorerapi + '591601798';
+    var url52 = algoexplorerapi + '393155456';
    
             getJSON(url0,
           function(err, data0) {                  
@@ -179,7 +178,6 @@ $(document)
           function(err, data51) { 
             getJSON(url52,
           function(err, data52) { 
-
 
     var jsObj = [
       {'Element':'0', 'Unit_Name': 'AVO1', 'ID': '397111682', 'Algo Verified': 'TBD', 'Name': 'ALGO AVOCADO', 'TX_Counter': data0.asset['asset-tx-counter'],'Work History': 'TBD', 
