@@ -17,29 +17,29 @@ $(document)
     }; 
    
             getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212',
-          function(err, data) {                  
+          function(err, data0) {                  
             getJSON('https://indexer.algoexplorerapi.io/v2/assets/555540865',
-          function(err, data2) {    
+          function(err, data1) {    
             getJSON('https://indexer.algoexplorerapi.io/v2/assets/426526699',
-          function(err, data3) {    
+          function(err, data2) {    
             getJSON('https://indexer.algoexplorerapi.io/v2/assets/393495312',
-          function(err, data4) {    
+          function(err, data3) {    
             getJSON('https://indexer.algoexplorerapi.io/v2/assets/305992851',
-          function(err, data5) {    
+          function(err, data4) {    
 
     var jsObj = [
-        {"Asdf":"1", "Unit_Name": "ACORN", "ID": "226265212", "Algo Verified": "TBD", "Name": "AlgoNuts", "TX_Counter": data.asset['asset-tx-counter'], "Work History": "TBD",
+        {"Element":"0", "Unit_Name": "ACORN", "ID": "226265212", "Algo Verified": "TBD", "Name": "AlgoNuts", "TX_Counter": data0.asset['asset-tx-counter'], "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Discord, Email, TinyChart, Twitter"},
-        {"Asdf":"2", "Unit_Name": "ACRES", "ID": "555540865", "Algo Verified": "TBD", "Name": "80Acres", "TX_Counter": data2.asset['asset-tx-counter'], "Work History": "TBD",
+        {"Element":"1", "Unit_Name": "ACRES", "ID": "555540865", "Algo Verified": "TBD", "Name": "80Acres", "TX_Counter": data1.asset['asset-tx-counter'], "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Email, Phone, TinyChart"},
-        {"Asdf":"3", "Unit_Name": "ADVENTUR", "ID": "426526699", "Algo Verified": "TBD", "Name": "Adventure Coin", "TX_Counter": data3.asset['asset-tx-counter'], "Work History": "TBD",
+        {"Element":"2", "Unit_Name": "ADVENTUR", "ID": "426526699", "Algo Verified": "TBD", "Name": "Adventure Coin", "TX_Counter": data2.asset['asset-tx-counter'], "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Reddit, TinyChart, Twitter"},
-        {"Asdf":"4", "Unit_Name": "AFD", "ID": "393495312", "Algo Verified": "TBD", "Name": "Algorand Faucet Drops", "TX_Counter": data4.asset['asset-tx-counter'], "Work History": "TBD",
+        {"Element":"3", "Unit_Name": "AFD", "ID": "393495312", "Algo Verified": "TBD", "Name": "Algorand Faucet Drops", "TX_Counter": data3.asset['asset-tx-counter'], "Work History": "TBD",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "Yes", "Roadmap": "TBD", "Wallets": "Creator, Reserve", "Other Links": "Discord, TinyChart, Twitter"},
-        {"Asdf":"5", "Unit_Name": "AGNR", "ID": "305992851", "Algo Verified": "TBD", "Name": "Algoneer", "TX_Counter": data5.asset['asset-tx-counter'], "Work History": "Team (1,2)",
+        {"Element":"4", "Unit_Name": "AGNR", "ID": "305992851", "Algo Verified": "TBD", "Name": "Algoneer", "TX_Counter": data3.asset['asset-tx-counter'], "Work History": "Team (1,2)",
         "Algo Grant": "TBD", "Company": "TBD", "Paper": "TBD", "Roadmap": "TBD", "Wallets": "Creator, Manager, Reserve", 
         "Other Links": "Discord, Ecosystem, GitHub, Reddit, TinyChart"}];            
             
