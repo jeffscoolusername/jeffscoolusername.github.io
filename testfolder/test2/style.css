@@ -3,3 +3,27 @@
 h1 {
     color: red;
   }
+
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*
+    table.dataTable th {
+      font-size: 0.75em;
+    }
+    table.dataTable td {
+      font-size: 0.5em;
+      font-weight: bold;
+    }
+    */
