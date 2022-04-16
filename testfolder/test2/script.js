@@ -344,8 +344,8 @@ $(document)
     var exampleTable = $('#example')
         .DataTable({
             data: jsObj,
-            "columnDefs": [
-              { "width": "2%", "targets": 0 }
+            "columns": [
+              { "width": "20%" }
             ],
             colReorder: true,
             paging: false,
