@@ -220,7 +220,7 @@ $(document)
             colReorder: true,
             paging: false,
             keys: true,
-            fixedHeader: true,
+            //fixedHeader: true,
             'columns': [
                 { 'data': 'Unit Name' },
                 { 'data': 'ID' },
