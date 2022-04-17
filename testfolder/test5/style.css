@@ -1,0 +1,109 @@
+/* Put your css in here */
+
+h1 {
+    color: red;
+  }
+
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  }*/
+  
+  .footer, .header {
+    padding: 40px 0;
+    background-color: #ffffff;
+  }
+  
+  .footer .social, .header .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+  }
+  
+  .footer .social a, .header .social .a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+  }
+  
+  .footer .social a:hover, .header .social a:hover {
+    opacity: 0.9;
+  }
+  
+  .footer ul, .header ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .footer ul a, .header ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer ul li, .header ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .footer ul a:hover, .header ul a:hover {
+    opacity: 1;
+  }
+  
+  .footer .copyright, .header .tiny {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+  }
+  
+  .footer .normal, .header .normal {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  table.dataTable thead .sorting:after,
+  table.dataTable thead .sorting_asc:after,
+  table.dataTable thead .sorting_desc:after {
+      display: none;
+  }
+
+/*
+    table.dataTable th {
+      font-size: 0.75em;
+    }
+    table.dataTable td {
+      font-size: 0.5em;
+      font-weight: bold;
+    }
+    */
