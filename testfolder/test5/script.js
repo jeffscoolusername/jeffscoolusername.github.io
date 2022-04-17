@@ -37,7 +37,7 @@ $(document)
     var p14 = 'loading';
     var p15 = 'loading';
     
-    getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
+    getJSON('https://indexer.algoexplorerapi.io/v2/assets/393537671?include-all=true',
         function(err, data) {
             if (err !== null) {
             } else {         
@@ -52,7 +52,7 @@ $(document)
             }
         });     
     
-    getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
+    getJSON('https://indexer.algoexplorerapi.io/v2/assets/297995609?include-all=true',
     function(err, data) {
         if (err !== null) {
         } else {         
