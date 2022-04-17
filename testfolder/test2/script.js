@@ -45,6 +45,8 @@ $(document)
     var tonybaloney20 = 'loading';var tonybaloney21 = 'loading';var tonybaloney22 = 'loading';var tonybaloney23 = 'loading';
     var tonybaloney24 = 'loading';var tonybaloney25 = 'loading';var tonybaloney26 = 'loading';var tonybaloney27 = 'loading';
     var tonybaloney28 = 'loading';var tonybaloney29 = 'loading';var tonybaloney30 = 'loading';var tonybaloney31 = 'loading';
+    var tonybaloney32 = 'loading';var tonybaloney33 = 'loading';var tonybaloney34 = 'loading';var tonybaloney35 = 'loading';
+    var tonybaloney36 = 'loading';var tonybaloney37 = 'loading';var tonybaloney38 = 'loading';var tonybaloney39 = 'loading';
 
     getJSON(url0,function(err, data0){
     tonybaloney0 = data0.asset.params['unit-name'];tonybaloney1 = data0.asset['index'];tonybaloney2 = data0.asset['created-at-round'];
@@ -61,10 +63,13 @@ $(document)
     getJSON(url3,function(err, data3) {
     tonybaloney24 = data3.asset.params['unit-name'];tonybaloney25 = data3.asset['index'];tonybaloney26 = data3.asset['created-at-round'];
     tonybaloney27 = data3.asset.params['name'];tonybaloney28 = data3.asset['asset-tx-counter'];tonybaloney29 = data3.asset.params['circulating-supply'];
-    tonybaloney30 = data3.asset.params['total'];tonybaloney31 = (data3.asset.params['circulating-supply']/data3.asset.params['total']).toFixed(2);})  
-                    
-                    getJSON(url4,
-    function(err, data4) {getJSON(url5,function(err, data5) {getJSON(url6,function(err, data6) {getJSON(url7,function(err, data7) {getJSON(url8,
+    tonybaloney30 = data3.asset.params['total'];tonybaloney31 = (data3.asset.params['circulating-supply']/data3.asset.params['total']).toFixed(2);})                      
+    getJSON(url4,function(err, data4) {
+    tonybaloney24 = data4.asset.params['unit-name'];tonybaloney25 = data4.asset['index'];tonybaloney26 = data4.asset['created-at-round'];
+    tonybaloney27 = data4.asset.params['name'];tonybaloney28 = data4.asset['asset-tx-counter'];tonybaloney29 = data4.asset.params['circulating-supply'];
+    tonybaloney30 = data4.asset.params['total'];tonybaloney31 = (data4.asset.params['circulating-supply']/data4.asset.params['total']).toFixed(2);})  
+        
+        getJSON(url5,function(err, data5) {getJSON(url6,function(err, data6) {getJSON(url7,function(err, data7) {getJSON(url8,
     function(err, data8) {getJSON(url9,function(err, data9) {getJSON(url10,function(err, data10) {getJSON(url11,function(err, data11) {getJSON(url12,
     function(err, data12) {getJSON(url13,function(err, data13) {getJSON(url14,function(err, data14) {getJSON(url15,function(err, data15) {getJSON(url16,
     function(err, data16) {getJSON(url17,function(err, data17) {getJSON(url18,function(err, data18) {getJSON(url19,function(err, data19) {getJSON(url20,
@@ -91,9 +96,9 @@ $(document)
       {'Element':'3', 'Unit Name': tonybaloney24, 'ID': tonybaloney25, 'Created at Round': tonybaloney26,
       'Name': tonybaloney27, 'Transactions Counter': tonybaloney28, 'Circulating Supply': tonybaloney29,
       'Total Supply': tonybaloney30, '% in Circulation': tonybaloney31 + '%'},
-      {'Element':'4', 'Unit Name': data4.asset.params['unit-name'], 'ID': data4.asset['index'], 'Created at Round': data4.asset['created-at-round'], 
-      'Name': data4.asset.params['name'], 'Transactions Counter': data4.asset['asset-tx-counter'], 'Circulating Supply': data4.asset.params['circulating-supply'],
-      'Total Supply': data4.asset.params['total'], '% in Circulation': (data4.asset.params['circulating-supply']/data4.asset.params['total']).toFixed(2) + '%'},
+      {'Element':'4', 'Unit Name': tonybaloney32, 'ID': tonybaloney33, 'Created at Round': tonybaloney34, 
+      'Name': tonybaloney35, 'Transactions Counter': tonybaloney36, 'Circulating Supply': tonybaloney37,
+      'Total Supply': tonybaloney38, '% in Circulation': tonybaloney39 + '%'},
       {'Element':'5', 'Unit Name': data5.asset.params['unit-name'], 'ID': data5.asset['index'], 'Created at Round': data5.asset['created-at-round'], 
       'Name': data5.asset.params['name'], 'Transactions Counter': data5.asset['asset-tx-counter'], 'Circulating Supply': data5.asset.params['circulating-supply'],
       'Total Supply': data5.asset.params['total'], '% in Circulation': (data5.asset.params['circulating-supply']/data5.asset.params['total']).toFixed(2) + '%'},
@@ -262,6 +267,6 @@ $(document)
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
-      }); }); }); }); }); }); }); }); 
+      }); }); }); }); }); }); }); 
          
     }) })
