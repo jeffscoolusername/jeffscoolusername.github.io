@@ -35,6 +35,7 @@ $(document)
     var p12 = 'loading';
     var p13 = 'loading';
     var p14 = 'loading';
+    var p15 = 'loading';
     
     getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
         function(err, data) {
@@ -49,7 +50,22 @@ $(document)
             p6 = data.asset.params['total'];
             p7 = (data.asset.params['circulating-supply']/data.asset.params['total']).toFixed(2);
             }
-        });       
+        });     
+    
+    getJSON('https://indexer.algoexplorerapi.io/v2/assets/226265212?include-all=true',
+    function(err, data) {
+        if (err !== null) {
+        } else {         
+        p8 = data.asset['unit-name'];
+        p9 = data.asset['asset-tx-counter'];
+        p10 = data.asset['created-at-round'];
+        p11 = data.asset.params['name'];
+        p12 = data.asset['asset-tx-counter'];
+        p13 = data.asset.params['circulating-supply'];
+        p14 = data.asset.params['total'];
+        p15 = (data.asset.params['circulating-supply']/data.asset.params['total']).toFixed(2);
+        }
+    });  
             
     var exampleTable = $('#example')
         .DataTable({
@@ -58,9 +74,9 @@ $(document)
                         {'Element':'0', 'Unit Name': p0, 'ID': p1, 'Created at Round': p2,      
                         'Name': p3, 'Transactions Counter': p4, 'Circulating Supply': p5,
                         'Total Supply': p6, '% in Circulation': p7 + '%'},
-                        {'Element':'1', 'Unit Name': p7, 'ID': p8, 'Created at Round': p9,      
-                        'Name': p10, 'Transactions Counter': p11, 'Circulating Supply': p12,
-                        'Total Supply': p13, '% in Circulation': p14 + '%'}],
+                        {'Element':'1', 'Unit Name': p8, 'ID': p9, 'Created at Round': p10,      
+                        'Name': p11, 'Transactions Counter': p12, 'Circulating Supply': p13,
+                        'Total Supply': p14, '% in Circulation': p15 + '%'}],
                     colReorder: true,
                     paging: false,
                     keys: true,
