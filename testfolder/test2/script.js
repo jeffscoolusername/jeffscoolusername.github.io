@@ -1,6 +1,7 @@
 $(document)
 .ready(function() {
 
+    //Get request for the Algorand API
     let getJSON = function(url, callback) {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url, true);
@@ -14,8 +15,9 @@ $(document)
             }
         };
         xhr.send();
-    }; 
+    };
 
+    //Wall of variables - Todo: Make this more efficient
     var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
 
     var url0 = algoexplorerapi + '397111682';var url1 = algoexplorerapi + '353409462';var url2 = algoexplorerapi + '430838314';
@@ -59,7 +61,7 @@ $(document)
     var tonybaloney76 = 'loading';var tonybaloney77 = 'loading';var tonybaloney78 = 'loading';var tonybaloney79 = 'loading';
 
 
-
+    //Wall of API calls - Todo: Make this more efficient
     getJSON(url0,async function(err, data0){
     tonybaloney0 = data0.asset.params['unit-name'];tonybaloney1 = data0.asset['index'];tonybaloney2 = data0.asset['created-at-round'];
     tonybaloney3 = data0.asset.params['name'];tonybaloney4 = data0.asset['asset-tx-counter'];tonybaloney5 = data0.asset.params['circulating-supply'];
@@ -117,7 +119,7 @@ $(document)
     async function(err, data52) { 
 
 
-        
+    // The array
     var jsObj = [
       {'Element':'0', 'Unit Name': tonybaloney0, 'ID': tonybaloney1, 'Created at Round': tonybaloney2,      
       'Name': tonybaloney3, 'Transactions Counter': tonybaloney4, 'Circulating Supply': tonybaloney5,
@@ -279,6 +281,7 @@ $(document)
       'Name': data52.asset.params['name'], 'Transactions Counter': data52.asset['asset-tx-counter'],'Circulating Supply': data52.asset.params['circulating-supply'],
       'Total Supply': data52.asset.params['total'], '% in Circulation': (data52.asset.params['circulating-supply']/data52.asset.params['total']).toFixed(2) + '%'}];            
             
+    //The table
     var exampleTable = $('#example')
         .DataTable({
             data: jsObj,
