@@ -53,6 +53,8 @@ $(document)
     var tonybaloney52 = 'loading';var tonybaloney53 = 'loading';var tonybaloney54 = 'loading';var tonybaloney55 = 'loading';
     var tonybaloney56 = 'loading';var tonybaloney57 = 'loading';var tonybaloney58 = 'loading';var tonybaloney59 = 'loading';
     var tonybaloney60 = 'loading';var tonybaloney61 = 'loading';var tonybaloney62 = 'loading';var tonybaloney63 = 'loading';
+    var tonybaloney64 = 'loading';var tonybaloney65 = 'loading';var tonybaloney66 = 'loading';var tonybaloney67 = 'loading';
+    var tonybaloney68 = 'loading';var tonybaloney69 = 'loading';var tonybaloney70 = 'loading';var tonybaloney71 = 'loading';
 
 
 
@@ -88,11 +90,13 @@ $(document)
     tonybaloney56 = data7.asset.params['unit-name'];tonybaloney57 = data7.asset['index'];tonybaloney58 = data7.asset['created-at-round'];
     tonybaloney59 = data7.asset.params['name'];tonybaloney60 = data7.asset['asset-tx-counter'];tonybaloney61 = data7.asset.params['circulating-supply'];
     tonybaloney62 = data7.asset.params['total'];tonybaloney63 = (data7.asset.params['circulating-supply']/data7.asset.params['total']).toFixed(2);})
-
-
-
-        getJSON(url8,
-    async function(err, data8) {getJSON(url9,async function(err, data9) {getJSON(url10,async function(err, data10) {getJSON(url11,async function(err, data11) {getJSON(url12,
+    getJSON(url8,async function(err, data8) {
+    tonybaloney64 = data8.asset.params['unit-name'];tonybaloney65 = data8.asset['index'];tonybaloney66 = data8.asset['created-at-round'];
+    tonybaloney67 = data8.asset.params['name'];tonybaloney60 = data8.asset['asset-tx-counter'];tonybaloney69 = data8.asset.params['circulating-supply'];
+    tonybaloney70 = data8.asset.params['total'];tonybaloney71 = (data8.asset.params['circulating-supply']/data8.asset.params['total']).toFixed(2);})
+        
+        
+        getJSON(url9,async function(err, data9) {getJSON(url10,async function(err, data10) {getJSON(url11,async function(err, data11) {getJSON(url12,
     async function(err, data12) {getJSON(url13,async function(err, data13) {getJSON(url14,async function(err, data14) {getJSON(url15,async function(err, data15) {getJSON(url16,
     async function(err, data16) {getJSON(url17,async function(err, data17) {getJSON(url18,async function(err, data18) {getJSON(url19,async function(err, data19) {getJSON(url20,
     async function(err, data20) {getJSON(url21,async function(err, data21) {getJSON(url22,async function(err, data22) {getJSON(url23,async function(err, data23) {getJSON(url24,
@@ -132,9 +136,9 @@ $(document)
       {'Element':'7', 'Unit Name':tonybaloney56, 'ID': tonybaloney57, 'Created at Round': tonybaloney58, 
       'Name': tonybaloney59, 'Transactions Counter': tonybaloney60, 'Circulating Supply': tonybaloney61,
       'Total Supply': tonybaloney62, '% in Circulation': tonybaloney63 + '%'},
-      {'Element':'8', 'Unit Name': data8.asset.params['unit-name'], 'ID': data8.asset['index'], 'Created at Round': data8.asset['created-at-round'], 
-      'Name': data8.asset.params['name'], 'Transactions Counter': data8.asset['asset-tx-counter'], 'Circulating Supply': data8.asset.params['circulating-supply'],
-      'Total Supply': data8.asset.params['total'], '% in Circulation': (data8.asset.params['circulating-supply']/data8.asset.params['total']).toFixed(2) + '%'},
+      {'Element':'8', 'Unit Name': tonybaloney64, 'ID': tonybaloney65, 'Created at Round': tonybaloney66, 
+      'Name': tonybaloney67, 'Transactions Counter': tonybaloney68, 'Circulating Supply': tonybaloney69,
+      'Total Supply': tonybaloney70, '% in Circulation': tonybaloney71 + '%'},
       {'Element':'9', 'Unit Name': data9.asset.params['unit-name'], 'ID': data9.asset['index'], 'Created at Round': data9.asset['created-at-round'], 
       'Name': data9.asset.params['name'], 'Transactions Counter': data9.asset['asset-tx-counter'], 'Circulating Supply': data9.asset.params['circulating-supply'],
       'Total Supply': data9.asset.params['total'], '% in Circulation': (data9.asset.params['circulating-supply']/data9.asset.params['total']).toFixed(2) + '%'},
@@ -291,6 +295,6 @@ $(document)
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
-      }); }); }); }); 
+      }); }); }); 
          
     }) })
