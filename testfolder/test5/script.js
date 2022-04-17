@@ -71,10 +71,10 @@ $(document)
         .DataTable({
             ajax: {
                     data: [
-                        {'Element':'0', 'Unit Name': p0, 'ID': p1, 'Created at Round': p2,      
+                        {'Unit Name': p0, 'ID': p1, 'Created at Round': p2,      
                         'Name': p3, 'Transactions Counter': p4, 'Circulating Supply': p5,
                         'Total Supply': p6, '% in Circulation': p7 + '%'},
-                        {'Element':'1', 'Unit Name': p8, 'ID': p9, 'Created at Round': p10,      
+                        {'Unit Name': p8, 'ID': p9, 'Created at Round': p10,      
                         'Name': p11, 'Transactions Counter': p12, 'Circulating Supply': p13,
                         'Total Supply': p14, '% in Circulation': p15 + '%'}],
                     colReorder: true,
