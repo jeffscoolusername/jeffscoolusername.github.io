@@ -1,7 +1,21 @@
-[        
+[    {
+        "Unit Name": "$AVO1",
+        "ID": "397111682",
+        "Created at Round": "TBD2",
+        "Name": "ALGO AVOCADO2",
+        "Transaction Counter": "Nov 4, 2021",
+        "Circulating Supply": "TBD2",
+        "Total Supply": "TBD2",
+        "% in Circulation": "TBD2"
+    },
     {
-    "Element":"0", "Unit Name": p0, "ID": p1, "Created at Round": p2,      
-    "Name": p3, "Transactions Counter": p4, "Circulating Supply": p5,
-    "Total Supply": p6, "% in Circulation": p7 + "%"
+        "Unit Name": "$AVO2",
+        "ID": "3971116823",
+        "Created at Round": "TBD1",
+        "Name": "ALGO AVOCADO1",
+        "Transaction Counter": "Nov 4, 20211",
+        "Circulating Supply": "TBD1",
+        "Total Supply": "TBD1",
+        "% in Circulation": "TBD1"
     }
   ]
