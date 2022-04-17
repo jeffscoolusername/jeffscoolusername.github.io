@@ -65,7 +65,13 @@ $(document)
     var exampleTable = $('#example')
         .DataTable({
             ajax: {
-                    data: jsObj,
+                    data: [
+                        {'Element':'0', 'Unit Name': p0, 'ID': p1, 'Created at Round': p2,      
+                        'Name': p3, 'Transactions Counter': p4, 'Circulating Supply': p5,
+                        'Total Supply': p6, '% in Circulation': p7 + '%'},
+                        {'Element':'1', 'Unit Name': p7, 'ID': p8, 'Created at Round': p9,      
+                        'Name': p10, 'Transactions Counter': p11, 'Circulating Supply': p12,
+                        'Total Supply': p13, '% in Circulation': p14 + '%'}],
                     colReorder: true,
                     paging: false,
                     keys: true,
