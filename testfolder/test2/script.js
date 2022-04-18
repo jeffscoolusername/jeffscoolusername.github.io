@@ -18,223 +18,204 @@ $(document)
     };
 
     //Wall of variables - Todo: Make this more efficient
-    var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
+    var api = 'https://indexer.algoexplorerapi.io/v2/assets/';
     var loading = 'loading';
 
-    var url0 = algoexplorerapi + '397111682';var url1 = algoexplorerapi + '353409462';var url2 = algoexplorerapi + '430838314';
-    var url3 = algoexplorerapi + '226265212';var url4 = algoexplorerapi + '555540865';var url5 = algoexplorerapi + '426526699';
-    var url6 = algoexplorerapi + '393495312';var url7 = algoexplorerapi + '305992851';var url8 = algoexplorerapi + '453816186';
-    var url9 = algoexplorerapi + '457205263';var url10 = algoexplorerapi + '523683256';var url11 = algoexplorerapi + '447852812';
-    var url12 = algoexplorerapi + '445905873';var url13 = algoexplorerapi + '310014962';var url14 = algoexplorerapi + '463554836';
-    var url15 = algoexplorerapi + '227358511';var url16 = algoexplorerapi + '604643747';var url17 = algoexplorerapi + '446220964';
-    var url18 = algoexplorerapi + '409604194';var url19 = algoexplorerapi + '466716175';var url20 = algoexplorerapi + '542132831';
-    var url21 = algoexplorerapi + '397629052';var url22 = algoexplorerapi + '163650';var url23 = algoexplorerapi + '393537671';
-    var url24 = algoexplorerapi + '540605589';var url25 = algoexplorerapi + '233939122';var url26 = algoexplorerapi + '470335962';
-    var url27 = algoexplorerapi + '382781470';var url28 = algoexplorerapi + '469835031';var url29 = algoexplorerapi + '615093377';
-    var url30 = algoexplorerapi + '473180477';var url31 = algoexplorerapi + '478549868';var url32 = algoexplorerapi + '401752010';
-    var url33 = algoexplorerapi + '251014570';var url34 = algoexplorerapi + '342889824';var url35 = algoexplorerapi + '251014570';
-    var url36 = algoexplorerapi + '498684064';var url37 = algoexplorerapi + '137020565';var url38 = algoexplorerapi + '402495345';
-    var url39 = algoexplorerapi + '388592191';var url40 = algoexplorerapi + '297995609';var url41 = algoexplorerapi + '585221469';
-    var url42 = algoexplorerapi + '571576867';var url43 = algoexplorerapi + '281003266';var url44 = algoexplorerapi + '435335235';
-    var url45 = algoexplorerapi + '511491168';var url46 = algoexplorerapi + '511491168';var url47 = algoexplorerapi + '319473667';
-    var url48 = algoexplorerapi + '601894079';var url49 = algoexplorerapi + '470842789';var url50 = algoexplorerapi + '391379500';
-    var url51 = algoexplorerapi + '591601798';var url52 = algoexplorerapi + '393155456';
+    var url0 = api + '397111682';var url1 = api + '353409462';var url2 = api + '430838314';var url3 = api + '226265212';var url4 = api + '555540865';
+    var url5 = api + '426526699';var url6 = api + '393495312';var url7 = api + '305992851';var url8 = api + '453816186';var url9 = api + '457205263';
+    var url10 = api + '523683256';var url11 = api + '447852812';var url12 = api + '445905873';var url13 = api + '310014962';var url14 = api + '463554836';
+    var url15 = api + '227358511';var url16 = api + '604643747';var url17 = api + '446220964';var url18 = api + '409604194';var url19 = api + '466716175';
+    var url20 = api + '542132831';var url21 = api + '397629052';var url22 = api + '163650';var url23 = api + '393537671';var url24 = api + '540605589';
+    var url25 = api + '233939122';var url26 = api + '470335962';var url27 = api + '382781470';var url28 = api + '469835031';var url29 = api + '615093377';
+    var url30 = api + '473180477';var url31 = api + '478549868';var url32 = api + '401752010';var url33 = api + '251014570';var url34 = api + '342889824';
+    var url35 = api + '251014570';var url36 = api + '498684064';var url37 = api + '137020565';var url38 = api + '402495345';var url39 = api + '388592191';
+    var url40 = api + '297995609';var url41 = api + '585221469';var url42 = api + '571576867';var url43 = api + '281003266';var url44 = api + '435335235';
+    var url45 = api + '511491168';var url46 = api + '511491168';var url47 = api + '319473667';var url48 = api + '601894079';var url49 = api + '470842789';
+    var url50 = api + '391379500';var url51 = api + '591601798';var url52 = api + '393155456';
    
-    var tonybaloney0 = loading;var tonybaloney1 = loading;var tonybaloney2 = loading;var tonybaloney3 = loading;
-    var tonybaloney4 = loading;var tonybaloney5 = loading;var tonybaloney6 = loading;var tonybaloney7 = loading;
-    var tonybaloney8 = loading;var tonybaloney9 = loading;var tonybaloney10 = loading;var tonybaloney11 = loading;
-    var tonybaloney12 = loading;var tonybaloney13 = loading;var tonybaloney14 = loading;var tonybaloney15 = loading;
-    var tonybaloney16 = loading;var tonybaloney17 = loading;var tonybaloney18 = loading;var tonybaloney19 = loading;
-    var tonybaloney20 = loading;var tonybaloney21 = loading;var tonybaloney22 = loading;var tonybaloney23 = loading;
-    var tonybaloney24 = loading;var tonybaloney25 = loading;var tonybaloney26 = loading;var tonybaloney27 = loading;
-    var tonybaloney28 = loading;var tonybaloney29 = loading;var tonybaloney30 = loading;var tonybaloney31 = loading;
-    var tonybaloney32 = loading;var tonybaloney33 = loading;var tonybaloney34 = loading;var tonybaloney35 = loading;
-    var tonybaloney36 = loading;var tonybaloney37 = loading;var tonybaloney38 = loading;var tonybaloney39 = loading;
-    var tonybaloney40 = loading;var tonybaloney41 = loading;var tonybaloney42 = loading;var tonybaloney43 = loading;
-    var tonybaloney44 = loading;var tonybaloney45 = loading;var tonybaloney46 = loading;var tonybaloney47 = loading;
-    var tonybaloney48 = loading;var tonybaloney49 = loading;var tonybaloney50 = loading;var tonybaloney51 = loading;
-    var tonybaloney52 = loading;var tonybaloney53 = loading;var tonybaloney54 = loading;var tonybaloney55 = loading;
-    var tonybaloney56 = loading;var tonybaloney57 = loading;var tonybaloney58 = loading;var tonybaloney59 = loading;
-    var tonybaloney60 = loading;var tonybaloney61 = loading;var tonybaloney62 = loading;var tonybaloney63 = loading;
-    var tonybaloney64 = loading;var tonybaloney65 = loading;var tonybaloney66 = loading;var tonybaloney67 = loading;
-    var tonybaloney68 = loading;var tonybaloney69 = loading;var tonybaloney70 = loading;var tonybaloney71 = loading;
-    var tonybaloney72 = loading;var tonybaloney73 = loading;var tonybaloney74 = loading;var tonybaloney75 = loading;
-    var tonybaloney76 = loading;var tonybaloney77 = loading;var tonybaloney78 = loading;var tonybaloney79 = loading;
-    var tonybaloney80 = loading;var tonybaloney81 = loading;var tonybaloney82 = loading;var tonybaloney83 = loading;
-    var tonybaloney84 = loading;var tonybaloney85 = loading;var tonybaloney86 = loading;var tonybaloney87 = loading;
-    var tonybaloney88 = loading;var tonybaloney89 = loading;var tonybaloney90 = loading;var tonybaloney91 = loading;
-    var tonybaloney92 = loading;var tonybaloney93 = loading;var tonybaloney94 = loading;var tonybaloney95 = loading;
-    var tonybaloney96 = loading;var tonybaloney97 = loading;var tonybaloney98 = loading;var tonybaloney99 = loading;
-    var tonybaloney100 = loading;var tonybaloney101 = loading;var tonybaloney102 = loading;var tonybaloney103 = loading;
-    var tonybaloney104 = loading;var tonybaloney105 = loading;var tonybaloney106 = loading;var tonybaloney107 = loading;
-    var tonybaloney108 = loading;var tonybaloney109 = loading;var tonybaloney110 = loading;var tonybaloney111 = loading;
-    var tonybaloney112 = loading;var tonybaloney113 = loading;var tonybaloney114 = loading;var tonybaloney115 = loading;
-    var tonybaloney116 = loading;var tonybaloney117 = loading;var tonybaloney118 = loading;var tonybaloney119 = loading;
-    var tonybaloney120 = loading;var tonybaloney121 = loading;var tonybaloney122 = loading;var tonybaloney123 = loading;
-    var tonybaloney124 = loading;var tonybaloney125 = loading;var tonybaloney126 = loading;var tonybaloney127 = loading;
-    var tonybaloney128 = loading;var tonybaloney129 = loading;var tonybaloney130 = loading;var tonybaloney131 = loading;
-    var tonybaloney132 = loading;var tonybaloney133 = loading;var tonybaloney134 = loading;var tonybaloney135 = loading;
-    var tonybaloney136 = loading;var tonybaloney137 = loading;var tonybaloney138 = loading;var tonybaloney139 = loading;
-    var tonybaloney140 = loading;var tonybaloney141 = loading;var tonybaloney142 = loading;var tonybaloney143 = loading;
-    var tonybaloney144 = loading;var tonybaloney145 = loading;var tonybaloney146 = loading;var tonybaloney147 = loading;
-    var tonybaloney148 = loading;var tonybaloney149 = loading;var tonybaloney150 = loading;var tonybaloney151 = loading;
-    var tonybaloney152 = loading;var tonybaloney153 = loading;var tonybaloney154 = loading;var tonybaloney155 = loading;
-    var tonybaloney156 = loading;var tonybaloney157 = loading;var tonybaloney158 = loading;var tonybaloney159 = loading;
-    var tonybaloney160 = loading;var tonybaloney161 = loading;var tonybaloney162 = loading;var tonybaloney163 = loading;
-    var tonybaloney164 = loading;var tonybaloney165 = loading;var tonybaloney166 = loading;var tonybaloney167 = loading;
-    var tonybaloney168 = loading;var tonybaloney169 = loading;var tonybaloney170 = loading;var tonybaloney171 = loading;
-    var tonybaloney172 = loading;var tonybaloney173 = loading;var tonybaloney174 = loading;var tonybaloney175 = loading;
-    var tonybaloney176 = loading;var tonybaloney177 = loading;var tonybaloney178 = loading;var tonybaloney179 = loading;
-    var tonybaloney180 = loading;var tonybaloney181 = loading;var tonybaloney182 = loading;var tonybaloney183 = loading;
-    var tonybaloney184 = loading;var tonybaloney185 = loading;var tonybaloney186 = loading;var tonybaloney187 = loading;
-    var tonybaloney188 = loading;var tonybaloney189 = loading;var tonybaloney190 = loading;var tonybaloney191 = loading;
-    var tonybaloney192 = loading;var tonybaloney193 = loading;var tonybaloney194 = loading;var tonybaloney195 = loading;
-    var tonybaloney196 = loading;var tonybaloney197 = loading;var tonybaloney198 = loading;var tonybaloney199 = loading;
-    var tonybaloney200 = loading;var tonybaloney201 = loading;var tonybaloney202 = loading;var tonybaloney203 = loading;
-    var tonybaloney204 = loading;var tonybaloney205 = loading;var tonybaloney206 = loading;var tonybaloney207 = loading;
-    var tonybaloney208 = loading;var tonybaloney209 = loading;var tonybaloney210 = loading;var tonybaloney211 = loading;
-    var tonybaloney212 = loading;var tonybaloney213 = loading;var tonybaloney214 = loading;var tonybaloney215 = loading;
-    var tonybaloney216 = loading;var tonybaloney217 = loading;var tonybaloney218 = loading;var tonybaloney219 = loading;
-    var tonybaloney220 = loading;var tonybaloney221 = loading;var tonybaloney222 = loading;var tonybaloney223 = loading;
-    var tonybaloney224 = loading;var tonybaloney225 = loading;var tonybaloney226 = loading;var tonybaloney227 = loading;
-    var tonybaloney228 = loading;var tonybaloney229 = loading;var tonybaloney230 = loading;var tonybaloney231 = loading;
-    var tonybaloney232 = loading;var tonybaloney233 = loading;var tonybaloney234 = loading;var tonybaloney235 = loading;
-    var tonybaloney236 = loading;var tonybaloney237 = loading;var tonybaloney238 = loading;var tonybaloney239 = loading;
-    var tonybaloney240 = loading;var tonybaloney241 = loading;var tonybaloney242 = loading;var tonybaloney243 = loading;
-    var tonybaloney244 = loading;var tonybaloney245 = loading;var tonybaloney246 = loading;var tonybaloney247 = loading;
-    var tonybaloney248 = loading;var tonybaloney249 = loading;var tonybaloney250 = loading;var tonybaloney251 = loading;
-    var tonybaloney252 = loading;var tonybaloney253 = loading;var tonybaloney254 = loading;var tonybaloney255 = loading;
+    var tb0,tb1,tb2,tb3,tb4,tb5,tb6,tb7,tb8,tb9,tb10,tb11,tb12,tb13,tb14,tb15,tb16,tb17,tb18,tb19,tb20,tb21,tb22,tb23,tb24,tb25,tb26,tb27,tb28,tb29,tb30,tb31, 
+    tb32,tb33,tb34,tb35,tb36,tb37,tb38,tb39,tb40,tb41,tb42,tb43,tb44,tb45,tb46,tb47,tb48,tb49,tb50,tb51,tb52,tb53,tb54,tb55,tb56,tb57,tb58,tb59,tb60,tb61,tb62, 
+    tb63 = loading;
+    
+    var tb64 = loading;var tb65 = loading;var tb66 = loading;var tb67 = loading;
+    var tb68 = loading;var tb69 = loading;var tb70 = loading;var tb71 = loading;
+    var tb72 = loading;var tb73 = loading;var tb74 = loading;var tb75 = loading;
+    var tb76 = loading;var tb77 = loading;var tb78 = loading;var tb79 = loading;
+    var tb80 = loading;var tb81 = loading;var tb82 = loading;var tb83 = loading;
+    var tb84 = loading;var tb85 = loading;var tb86 = loading;var tb87 = loading;
+    var tb88 = loading;var tb89 = loading;var tb90 = loading;var tb91 = loading;
+    var tb92 = loading;var tb93 = loading;var tb94 = loading;var tb95 = loading;
+    var tb96 = loading;var tb97 = loading;var tb98 = loading;var tb99 = loading;
+    var tb100 = loading;var tb101 = loading;var tb102 = loading;var tb103 = loading;
+    var tb104 = loading;var tb105 = loading;var tb106 = loading;var tb107 = loading;
+    var tb108 = loading;var tb109 = loading;var tb110 = loading;var tb111 = loading;
+    var tb112 = loading;var tb113 = loading;var tb114 = loading;var tb115 = loading;
+    var tb116 = loading;var tb117 = loading;var tb118 = loading;var tb119 = loading;
+    var tb120 = loading;var tb121 = loading;var tb122 = loading;var tb123 = loading;
+    var tb124 = loading;var tb125 = loading;var tb126 = loading;var tb127 = loading;
+    var tb128 = loading;var tb129 = loading;var tb130 = loading;var tb131 = loading;
+    var tb132 = loading;var tb133 = loading;var tb134 = loading;var tb135 = loading;
+    var tb136 = loading;var tb137 = loading;var tb138 = loading;var tb139 = loading;
+    var tb140 = loading;var tb141 = loading;var tb142 = loading;var tb143 = loading;
+    var tb144 = loading;var tb145 = loading;var tb146 = loading;var tb147 = loading;
+    var tb148 = loading;var tb149 = loading;var tb150 = loading;var tb151 = loading;
+    var tb152 = loading;var tb153 = loading;var tb154 = loading;var tb155 = loading;
+    var tb156 = loading;var tb157 = loading;var tb158 = loading;var tb159 = loading;
+    var tb160 = loading;var tb161 = loading;var tb162 = loading;var tb163 = loading;
+    var tb164 = loading;var tb165 = loading;var tb166 = loading;var tb167 = loading;
+    var tb168 = loading;var tb169 = loading;var tb170 = loading;var tb171 = loading;
+    var tb172 = loading;var tb173 = loading;var tb174 = loading;var tb175 = loading;
+    var tb176 = loading;var tb177 = loading;var tb178 = loading;var tb179 = loading;
+    var tb180 = loading;var tb181 = loading;var tb182 = loading;var tb183 = loading;
+    var tb184 = loading;var tb185 = loading;var tb186 = loading;var tb187 = loading;
+    var tb188 = loading;var tb189 = loading;var tb190 = loading;var tb191 = loading;
+    var tb192 = loading;var tb193 = loading;var tb194 = loading;var tb195 = loading;
+    var tb196 = loading;var tb197 = loading;var tb198 = loading;var tb199 = loading;
+    var tb200 = loading;var tb201 = loading;var tb202 = loading;var tb203 = loading;
+    var tb204 = loading;var tb205 = loading;var tb206 = loading;var tb207 = loading;
+    var tb208 = loading;var tb209 = loading;var tb210 = loading;var tb211 = loading;
+    var tb212 = loading;var tb213 = loading;var tb214 = loading;var tb215 = loading;
+    var tb216 = loading;var tb217 = loading;var tb218 = loading;var tb219 = loading;
+    var tb220 = loading;var tb221 = loading;var tb222 = loading;var tb223 = loading;
+    var tb224 = loading;var tb225 = loading;var tb226 = loading;var tb227 = loading;
+    var tb228 = loading;var tb229 = loading;var tb230 = loading;var tb231 = loading;
+    var tb232 = loading;var tb233 = loading;var tb234 = loading;var tb235 = loading;
+    var tb236 = loading;var tb237 = loading;var tb238 = loading;var tb239 = loading;
+    var tb240 = loading;var tb241 = loading;var tb242 = loading;var tb243 = loading;
+    var tb244 = loading;var tb245 = loading;var tb246 = loading;var tb247 = loading;
+    var tb248 = loading;var tb249 = loading;var tb250 = loading;var tb251 = loading;
+    var tb252 = loading;var tb253 = loading;var tb254 = loading;var tb255 = loading;
 
 
     //Wall of API calls - Todo: Make this more efficient
     getJSON(url0,async function(err, data0){
-    tonybaloney0 = data0.asset.params['unit-name'];tonybaloney1 = data0.asset['index'];tonybaloney2 = data0.asset['created-at-round'];
-    tonybaloney3 = data0.asset.params['name'];tonybaloney4 = data0.asset['asset-tx-counter'];tonybaloney5 = data0.asset.params['circulating-supply'];
-    tonybaloney6 = data0.asset.params['total'];tonybaloney7 = (data0.asset.params['circulating-supply']/data0.asset.params['total']).toFixed(2);})                
+    tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
+    tb3 = data0.asset.params['name'];tb4 = data0.asset['asset-tx-counter'];tb5 = data0.asset.params['circulating-supply'];
+    tb6 = data0.asset.params['total'];tb7 = (data0.asset.params['circulating-supply']/data0.asset.params['total']).toFixed(2);})                
     getJSON(url1,async function(err, data1){
-    tonybaloney8 = data1.asset.params['unit-name'];tonybaloney9 = data1.asset['index'];tonybaloney10 = data1.asset['created-at-round'];
-    tonybaloney11 = data1.asset.params['name'];tonybaloney12 = data1.asset['asset-tx-counter'];tonybaloney13 = data1.asset.params['circulating-supply'];
-    tonybaloney14 = data1.asset.params['total'];tonybaloney15 = (data1.asset.params['circulating-supply']/data1.asset.params['total']).toFixed(2);})            
+    tb8 = data1.asset.params['unit-name'];tb9 = data1.asset['index'];tb10 = data1.asset['created-at-round'];
+    tb11 = data1.asset.params['name'];tb12 = data1.asset['asset-tx-counter'];tb13 = data1.asset.params['circulating-supply'];
+    tb14 = data1.asset.params['total'];tb15 = (data1.asset.params['circulating-supply']/data1.asset.params['total']).toFixed(2);})            
     getJSON(url2,async function(err, data2){
-    tonybaloney16 = data2.asset.params['unit-name'];tonybaloney17 = data2.asset['index'];tonybaloney18 = data2.asset['created-at-round'];
-    tonybaloney19 = data2.asset.params['name'];tonybaloney20 = data2.asset['asset-tx-counter'];tonybaloney21 = data2.asset.params['circulating-supply'];
-    tonybaloney22 = data2.asset.params['total'];tonybaloney23 = (data2.asset.params['circulating-supply']/data2.asset.params['total']).toFixed(2);})                
+    tb16 = data2.asset.params['unit-name'];tb17 = data2.asset['index'];tb18 = data2.asset['created-at-round'];
+    tb19 = data2.asset.params['name'];tb20 = data2.asset['asset-tx-counter'];tb21 = data2.asset.params['circulating-supply'];
+    tb22 = data2.asset.params['total'];tb23 = (data2.asset.params['circulating-supply']/data2.asset.params['total']).toFixed(2);})                
     getJSON(url3,async function(err, data3) {
-    tonybaloney24 = data3.asset.params['unit-name'];tonybaloney25 = data3.asset['index'];tonybaloney26 = data3.asset['created-at-round'];
-    tonybaloney27 = data3.asset.params['name'];tonybaloney28 = data3.asset['asset-tx-counter'];tonybaloney29 = data3.asset.params['circulating-supply'];
-    tonybaloney30 = data3.asset.params['total'];tonybaloney31 = (data3.asset.params['circulating-supply']/data3.asset.params['total']).toFixed(2);})                      
+    tb24 = data3.asset.params['unit-name'];tb25 = data3.asset['index'];tb26 = data3.asset['created-at-round'];
+    tb27 = data3.asset.params['name'];tb28 = data3.asset['asset-tx-counter'];tb29 = data3.asset.params['circulating-supply'];
+    tb30 = data3.asset.params['total'];tb31 = (data3.asset.params['circulating-supply']/data3.asset.params['total']).toFixed(2);})                      
     getJSON(url4,async function(err, data4) {
-    tonybaloney32 = data4.asset.params['unit-name'];tonybaloney33 = data4.asset['index'];tonybaloney34 = data4.asset['created-at-round'];
-    tonybaloney35 = data4.asset.params['name'];tonybaloney36 = data4.asset['asset-tx-counter'];tonybaloney37 = data4.asset.params['circulating-supply'];
-    tonybaloney38 = data4.asset.params['total'];tonybaloney39 = (data4.asset.params['circulating-supply']/data4.asset.params['total']).toFixed(2);})  
+    tb32 = data4.asset.params['unit-name'];tb33 = data4.asset['index'];tb34 = data4.asset['created-at-round'];
+    tb35 = data4.asset.params['name'];tb36 = data4.asset['asset-tx-counter'];tb37 = data4.asset.params['circulating-supply'];
+    tb38 = data4.asset.params['total'];tb39 = (data4.asset.params['circulating-supply']/data4.asset.params['total']).toFixed(2);})  
     getJSON(url5,async function(err, data5) {
-    tonybaloney40 = data5.asset.params['unit-name'];tonybaloney41 = data5.asset['index'];tonybaloney42 = data5.asset['created-at-round'];
-    tonybaloney43 = data5.asset.params['name'];tonybaloney44 = data5.asset['asset-tx-counter'];tonybaloney45 = data5.asset.params['circulating-supply'];
-    tonybaloney46 = data5.asset.params['total'];tonybaloney47 = (data5.asset.params['circulating-supply']/data5.asset.params['total']).toFixed(2);})          
+    tb40 = data5.asset.params['unit-name'];tb41 = data5.asset['index'];tb42 = data5.asset['created-at-round'];
+    tb43 = data5.asset.params['name'];tb44 = data5.asset['asset-tx-counter'];tb45 = data5.asset.params['circulating-supply'];
+    tb46 = data5.asset.params['total'];tb47 = (data5.asset.params['circulating-supply']/data5.asset.params['total']).toFixed(2);})          
     getJSON(url6,async function(err, data6) {
-    tonybaloney48 = data6.asset.params['unit-name'];tonybaloney49 = data6.asset['index'];tonybaloney50 = data6.asset['created-at-round'];
-    tonybaloney51 = data6.asset.params['name'];tonybaloney52 = data6.asset['asset-tx-counter'];tonybaloney53 = data6.asset.params['circulating-supply'];
-    tonybaloney54 = data6.asset.params['total'];tonybaloney55 = (data6.asset.params['circulating-supply']/data6.asset.params['total']).toFixed(2);})   
+    tb48 = data6.asset.params['unit-name'];tb49 = data6.asset['index'];tb50 = data6.asset['created-at-round'];
+    tb51 = data6.asset.params['name'];tb52 = data6.asset['asset-tx-counter'];tb53 = data6.asset.params['circulating-supply'];
+    tb54 = data6.asset.params['total'];tb55 = (data6.asset.params['circulating-supply']/data6.asset.params['total']).toFixed(2);})   
     getJSON(url7,async function(err, data7) {
-    tonybaloney56 = data7.asset.params['unit-name'];tonybaloney57 = data7.asset['index'];tonybaloney58 = data7.asset['created-at-round'];
-    tonybaloney59 = data7.asset.params['name'];tonybaloney60 = data7.asset['asset-tx-counter'];tonybaloney61 = data7.asset.params['circulating-supply'];
-    tonybaloney62 = data7.asset.params['total'];tonybaloney63 = (data7.asset.params['circulating-supply']/data7.asset.params['total']).toFixed(2);})
+    tb56 = data7.asset.params['unit-name'];tb57 = data7.asset['index'];tb58 = data7.asset['created-at-round'];
+    tb59 = data7.asset.params['name'];tb60 = data7.asset['asset-tx-counter'];tb61 = data7.asset.params['circulating-supply'];
+    tb62 = data7.asset.params['total'];tb63 = (data7.asset.params['circulating-supply']/data7.asset.params['total']).toFixed(2);})
     getJSON(url8,async function(err, data8) {
-    tonybaloney64 = data8.asset.params['unit-name'];tonybaloney65 = data8.asset['index'];tonybaloney66 = data8.asset['created-at-round'];
-    tonybaloney67 = data8.asset.params['name'];tonybaloney60 = data8.asset['asset-tx-counter'];tonybaloney69 = data8.asset.params['circulating-supply'];
-    tonybaloney70 = data8.asset.params['total'];tonybaloney71 = (data8.asset.params['circulating-supply']/data8.asset.params['total']).toFixed(2);})
+    tb64 = data8.asset.params['unit-name'];tb65 = data8.asset['index'];tb66 = data8.asset['created-at-round'];
+    tb67 = data8.asset.params['name'];tb60 = data8.asset['asset-tx-counter'];tb69 = data8.asset.params['circulating-supply'];
+    tb70 = data8.asset.params['total'];tb71 = (data8.asset.params['circulating-supply']/data8.asset.params['total']).toFixed(2);})
     getJSON(url9,async function(err, data9) {
-    tonybaloney72 = data9.asset.params['unit-name'];tonybaloney73 = data9.asset['index'];tonybaloney74 = data9.asset['created-at-round'];
-    tonybaloney75 = data9.asset.params['name'];tonybaloney76 = data9.asset['asset-tx-counter'];tonybaloney77 = data9.asset.params['circulating-supply'];
-    tonybaloney78 = data9.asset.params['total'];tonybaloney79 = (data9.asset.params['circulating-supply']/data9.asset.params['total']).toFixed(2);})
+    tb72 = data9.asset.params['unit-name'];tb73 = data9.asset['index'];tb74 = data9.asset['created-at-round'];
+    tb75 = data9.asset.params['name'];tb76 = data9.asset['asset-tx-counter'];tb77 = data9.asset.params['circulating-supply'];
+    tb78 = data9.asset.params['total'];tb79 = (data9.asset.params['circulating-supply']/data9.asset.params['total']).toFixed(2);})
     getJSON(url10,async function(err, data10) {
-    tonybaloney80 = data10.asset.params['unit-name'];tonybaloney81 = data10.asset['index'];tonybaloney82 = data10.asset['created-at-round'];
-    tonybaloney83 = data10.asset.params['name'];tonybaloney84 = data10.asset['asset-tx-counter'];tonybaloney85 = data10.asset.params['circulating-supply'];
-    tonybaloney86 = data10.asset.params['total'];tonybaloney87 = (data10.asset.params['circulating-supply']/data10.asset.params['total']).toFixed(2);})
+    tb80 = data10.asset.params['unit-name'];tb81 = data10.asset['index'];tb82 = data10.asset['created-at-round'];
+    tb83 = data10.asset.params['name'];tb84 = data10.asset['asset-tx-counter'];tb85 = data10.asset.params['circulating-supply'];
+    tb86 = data10.asset.params['total'];tb87 = (data10.asset.params['circulating-supply']/data10.asset.params['total']).toFixed(2);})
     getJSON(url11,async function(err, data11) {        
-    tonybaloney88 = data11.asset.params['unit-name'];tonybaloney89 = data11.asset['index'];tonybaloney90 = data11.asset['created-at-round'];
-    tonybaloney91 = data11.asset.params['name'];tonybaloney92 = data11.asset['asset-tx-counter'];tonybaloney93 = data11.asset.params['circulating-supply'];
-    tonybaloney94 = data11.asset.params['total'];tonybaloney95 = (data11.asset.params['circulating-supply']/data11.asset.params['total']).toFixed(2);})
+    tb88 = data11.asset.params['unit-name'];tb89 = data11.asset['index'];tb90 = data11.asset['created-at-round'];
+    tb91 = data11.asset.params['name'];tb92 = data11.asset['asset-tx-counter'];tb93 = data11.asset.params['circulating-supply'];
+    tb94 = data11.asset.params['total'];tb95 = (data11.asset.params['circulating-supply']/data11.asset.params['total']).toFixed(2);})
     getJSON(url12,async function(err, data12) {
-    tonybaloney96 = data12.asset.params['unit-name'];tonybaloney97 = data12.asset['index'];tonybaloney98 = data12.asset['created-at-round'];
-    tonybaloney99 = data12.asset.params['name'];tonybaloney100 = data12.asset['asset-tx-counter'];tonybaloney101 = data12.asset.params['circulating-supply'];
-    tonybaloney102 = data12.asset.params['total'];tonybaloney103 = (data12.asset.params['circulating-supply']/data12.asset.params['total']).toFixed(2);})
+    tb96 = data12.asset.params['unit-name'];tb97 = data12.asset['index'];tb98 = data12.asset['created-at-round'];
+    tb99 = data12.asset.params['name'];tb100 = data12.asset['asset-tx-counter'];tb101 = data12.asset.params['circulating-supply'];
+    tb102 = data12.asset.params['total'];tb103 = (data12.asset.params['circulating-supply']/data12.asset.params['total']).toFixed(2);})
     getJSON(url13,async function(err, data13) {
-    tonybaloney104 = data13.asset.params['unit-name'];tonybaloney105 = data13.asset['index'];tonybaloney106 = data13.asset['created-at-round'];
-    tonybaloney107 = data13.asset.params['name'];tonybaloney108 = data13.asset['asset-tx-counter'];tonybaloney109 = data13.asset.params['circulating-supply'];
-    tonybaloney110 = data13.asset.params['total'];tonybaloney111 = (data13.asset.params['circulating-supply']/data13.asset.params['total']).toFixed(2);})
+    tb104 = data13.asset.params['unit-name'];tb105 = data13.asset['index'];tb106 = data13.asset['created-at-round'];
+    tb107 = data13.asset.params['name'];tb108 = data13.asset['asset-tx-counter'];tb109 = data13.asset.params['circulating-supply'];
+    tb110 = data13.asset.params['total'];tb111 = (data13.asset.params['circulating-supply']/data13.asset.params['total']).toFixed(2);})
     getJSON(url14,async function(err, data14) {
-    tonybaloney112 = data14.asset.params['unit-name'];tonybaloney113 = data14.asset['index'];tonybaloney114 = data14.asset['created-at-round'];
-    tonybaloney115 = data14.asset.params['name'];tonybaloney116 = data14.asset['asset-tx-counter'];tonybaloney117 = data14.asset.params['circulating-supply'];
-    tonybaloney118 = data14.asset.params['total'];tonybaloney119 = (data14.asset.params['circulating-supply']/data14.asset.params['total']).toFixed(2);})
+    tb112 = data14.asset.params['unit-name'];tb113 = data14.asset['index'];tb114 = data14.asset['created-at-round'];
+    tb115 = data14.asset.params['name'];tb116 = data14.asset['asset-tx-counter'];tb117 = data14.asset.params['circulating-supply'];
+    tb118 = data14.asset.params['total'];tb119 = (data14.asset.params['circulating-supply']/data14.asset.params['total']).toFixed(2);})
     getJSON(url15,async function(err, data15) {
-    tonybaloney120 = data15.asset.params['unit-name'];tonybaloney121 = data15.asset['index'];tonybaloney122 = data15.asset['created-at-round'];
-    tonybaloney123 = data15.asset.params['name'];tonybaloney124 = data15.asset['asset-tx-counter'];tonybaloney125 = data15.asset.params['circulating-supply'];
-    tonybaloney126 = data15.asset.params['total'];tonybaloney127 = (data15.asset.params['circulating-supply']/data15.asset.params['total']).toFixed(2);})
+    tb120 = data15.asset.params['unit-name'];tb121 = data15.asset['index'];tb122 = data15.asset['created-at-round'];
+    tb123 = data15.asset.params['name'];tb124 = data15.asset['asset-tx-counter'];tb125 = data15.asset.params['circulating-supply'];
+    tb126 = data15.asset.params['total'];tb127 = (data15.asset.params['circulating-supply']/data15.asset.params['total']).toFixed(2);})
     getJSON(url16,async function(err, data16) {
-    tonybaloney128 = data16.asset.params['unit-name'];tonybaloney129 = data16.asset['index'];tonybaloney130 = data16.asset['created-at-round'];
-    tonybaloney131 = data16.asset.params['name'];tonybaloney132 = data16.asset['asset-tx-counter'];tonybaloney133 = data16.asset.params['circulating-supply'];
-    tonybaloney134 = data16.asset.params['total'];tonybaloney135 = (data16.asset.params['circulating-supply']/data16.asset.params['total']).toFixed(2);})
+    tb128 = data16.asset.params['unit-name'];tb129 = data16.asset['index'];tb130 = data16.asset['created-at-round'];
+    tb131 = data16.asset.params['name'];tb132 = data16.asset['asset-tx-counter'];tb133 = data16.asset.params['circulating-supply'];
+    tb134 = data16.asset.params['total'];tb135 = (data16.asset.params['circulating-supply']/data16.asset.params['total']).toFixed(2);})
     getJSON(url17,async function(err, data17) {
-    tonybaloney136 = data17.asset.params['unit-name'];tonybaloney137 = data17.asset['index'];tonybaloney138 = data17.asset['created-at-round'];
-    tonybaloney139 = data17.asset.params['name'];tonybaloney140 = data17.asset['asset-tx-counter'];tonybaloney141 = data17.asset.params['circulating-supply'];
-    tonybaloney142 = data17.asset.params['total'];tonybaloney143 = (data17.asset.params['circulating-supply']/data17.asset.params['total']).toFixed(2);})
+    tb136 = data17.asset.params['unit-name'];tb137 = data17.asset['index'];tb138 = data17.asset['created-at-round'];
+    tb139 = data17.asset.params['name'];tb140 = data17.asset['asset-tx-counter'];tb141 = data17.asset.params['circulating-supply'];
+    tb142 = data17.asset.params['total'];tb143 = (data17.asset.params['circulating-supply']/data17.asset.params['total']).toFixed(2);})
     getJSON(url18,async function(err, data18) {
-    tonybaloney144 = data18.asset.params['unit-name'];tonybaloney145 = data18.asset['index'];tonybaloney146 = data18.asset['created-at-round'];
-    tonybaloney147 = data18.asset.params['name'];tonybaloney148 = data18.asset['asset-tx-counter'];tonybaloney149 = data18.asset.params['circulating-supply'];
-    tonybaloney150 = data18.asset.params['total'];tonybaloney151 = (data18.asset.params['circulating-supply']/data18.asset.params['total']).toFixed(2);})
+    tb144 = data18.asset.params['unit-name'];tb145 = data18.asset['index'];tb146 = data18.asset['created-at-round'];
+    tb147 = data18.asset.params['name'];tb148 = data18.asset['asset-tx-counter'];tb149 = data18.asset.params['circulating-supply'];
+    tb150 = data18.asset.params['total'];tb151 = (data18.asset.params['circulating-supply']/data18.asset.params['total']).toFixed(2);})
     getJSON(url19,async function(err, data19) {
-    tonybaloney152 = data19.asset.params['unit-name'];tonybaloney153 = data19.asset['index'];tonybaloney154 = data19.asset['created-at-round'];
-    tonybaloney155 = data19.asset.params['name'];tonybaloney156 = data19.asset['asset-tx-counter'];tonybaloney157 = data19.asset.params['circulating-supply'];
-    tonybaloney158 = data19.asset.params['total'];tonybaloney159 = (data19.asset.params['circulating-supply']/data19.asset.params['total']).toFixed(2);})
+    tb152 = data19.asset.params['unit-name'];tb153 = data19.asset['index'];tb154 = data19.asset['created-at-round'];
+    tb155 = data19.asset.params['name'];tb156 = data19.asset['asset-tx-counter'];tb157 = data19.asset.params['circulating-supply'];
+    tb158 = data19.asset.params['total'];tb159 = (data19.asset.params['circulating-supply']/data19.asset.params['total']).toFixed(2);})
     getJSON(url20,async function(err, data20) {
-    tonybaloney160 = data20.asset.params['unit-name'];tonybaloney161 = data20.asset['index'];tonybaloney162 = data20.asset['created-at-round'];
-    tonybaloney163 = data20.asset.params['name'];tonybaloney164 = data20.asset['asset-tx-counter'];tonybaloney165 = data20.asset.params['circulating-supply'];
-    tonybaloney166 = data20.asset.params['total'];tonybaloney167 = (data20.asset.params['circulating-supply']/data20.asset.params['total']).toFixed(2);})
+    tb160 = data20.asset.params['unit-name'];tb161 = data20.asset['index'];tb162 = data20.asset['created-at-round'];
+    tb163 = data20.asset.params['name'];tb164 = data20.asset['asset-tx-counter'];tb165 = data20.asset.params['circulating-supply'];
+    tb166 = data20.asset.params['total'];tb167 = (data20.asset.params['circulating-supply']/data20.asset.params['total']).toFixed(2);})
     getJSON(url21,async function(err, data21) {
-    tonybaloney168 = data21.asset.params['unit-name'];tonybaloney169 = data21.asset['index'];tonybaloney170 = data21.asset['created-at-round'];
-    tonybaloney171 = data21.asset.params['name'];tonybaloney172 = data21.asset['asset-tx-counter'];tonybaloney173 = data21.asset.params['circulating-supply'];
-    tonybaloney174 = data21.asset.params['total'];tonybaloney175 = (data21.asset.params['circulating-supply']/data21.asset.params['total']).toFixed(2);})
+    tb168 = data21.asset.params['unit-name'];tb169 = data21.asset['index'];tb170 = data21.asset['created-at-round'];
+    tb171 = data21.asset.params['name'];tb172 = data21.asset['asset-tx-counter'];tb173 = data21.asset.params['circulating-supply'];
+    tb174 = data21.asset.params['total'];tb175 = (data21.asset.params['circulating-supply']/data21.asset.params['total']).toFixed(2);})
     getJSON(url22,async function(err, data22) {
-    tonybaloney176 = data22.asset.params['unit-name'];tonybaloney177 = data22.asset['index'];tonybaloney178 = data22.asset['created-at-round'];
-    tonybaloney179 = data22.asset.params['name'];tonybaloney180 = data22.asset['asset-tx-counter'];tonybaloney181 = data22.asset.params['circulating-supply'];
-    tonybaloney182 = data22.asset.params['total'];tonybaloney183 = (data22.asset.params['circulating-supply']/data22.asset.params['total']).toFixed(2);})
+    tb176 = data22.asset.params['unit-name'];tb177 = data22.asset['index'];tb178 = data22.asset['created-at-round'];
+    tb179 = data22.asset.params['name'];tb180 = data22.asset['asset-tx-counter'];tb181 = data22.asset.params['circulating-supply'];
+    tb182 = data22.asset.params['total'];tb183 = (data22.asset.params['circulating-supply']/data22.asset.params['total']).toFixed(2);})
     getJSON(url23,async function(err, data23) {
-    tonybaloney184 = data23.asset.params['unit-name'];tonybaloney185 = data23.asset['index'];tonybaloney186 = data23.asset['created-at-round'];
-    tonybaloney187 = data23.asset.params['name'];tonybaloney188 = data23.asset['asset-tx-counter'];tonybaloney189 = data23.asset.params['circulating-supply'];
-    tonybaloney190 = data23.asset.params['total'];tonybaloney191 = (data23.asset.params['circulating-supply']/data23.asset.params['total']).toFixed(2);})
+    tb184 = data23.asset.params['unit-name'];tb185 = data23.asset['index'];tb186 = data23.asset['created-at-round'];
+    tb187 = data23.asset.params['name'];tb188 = data23.asset['asset-tx-counter'];tb189 = data23.asset.params['circulating-supply'];
+    tb190 = data23.asset.params['total'];tb191 = (data23.asset.params['circulating-supply']/data23.asset.params['total']).toFixed(2);})
     getJSON(url24,async function(err, data24) {
-    tonybaloney192 = data24.asset.params['unit-name'];tonybaloney193 = data24.asset['index'];tonybaloney194 = data24.asset['created-at-round'];
-    tonybaloney195 = data24.asset.params['name'];tonybaloney196 = data24.asset['asset-tx-counter'];tonybaloney197 = data24.asset.params['circulating-supply'];
-    tonybaloney198 = data24.asset.params['total'];tonybaloney199 = (data24.asset.params['circulating-supply']/data24.asset.params['total']).toFixed(2);})
+    tb192 = data24.asset.params['unit-name'];tb193 = data24.asset['index'];tb194 = data24.asset['created-at-round'];
+    tb195 = data24.asset.params['name'];tb196 = data24.asset['asset-tx-counter'];tb197 = data24.asset.params['circulating-supply'];
+    tb198 = data24.asset.params['total'];tb199 = (data24.asset.params['circulating-supply']/data24.asset.params['total']).toFixed(2);})
     getJSON(url25,async function(err, data25) {
-    tonybaloney200 = data25.asset.params['unit-name'];tonybaloney201 = data25.asset['index'];tonybaloney202 = data25.asset['created-at-round'];
-    tonybaloney203 = data25.asset.params['name'];tonybaloney204 = data25.asset['asset-tx-counter'];tonybaloney205 = data25.asset.params['circulating-supply'];
-    tonybaloney206 = data25.asset.params['total'];tonybaloney207 = (data25.asset.params['circulating-supply']/data25.asset.params['total']).toFixed(2);})
+    tb200 = data25.asset.params['unit-name'];tb201 = data25.asset['index'];tb202 = data25.asset['created-at-round'];
+    tb203 = data25.asset.params['name'];tb204 = data25.asset['asset-tx-counter'];tb205 = data25.asset.params['circulating-supply'];
+    tb206 = data25.asset.params['total'];tb207 = (data25.asset.params['circulating-supply']/data25.asset.params['total']).toFixed(2);})
     getJSON(url26,async function(err, data26) {
-    tonybaloney208 = data26.asset.params['unit-name'];tonybaloney209 = data26.asset['index'];tonybaloney210 = data26.asset['created-at-round'];
-    tonybaloney211 = data26.asset.params['name'];tonybaloney212 = data26.asset['asset-tx-counter'];tonybaloney213 = data26.asset.params['circulating-supply'];
-    tonybaloney214 = data26.asset.params['total'];tonybaloney215 = (data26.asset.params['circulating-supply']/data26.asset.params['total']).toFixed(2);})
+    tb208 = data26.asset.params['unit-name'];tb209 = data26.asset['index'];tb210 = data26.asset['created-at-round'];
+    tb211 = data26.asset.params['name'];tb212 = data26.asset['asset-tx-counter'];tb213 = data26.asset.params['circulating-supply'];
+    tb214 = data26.asset.params['total'];tb215 = (data26.asset.params['circulating-supply']/data26.asset.params['total']).toFixed(2);})
     getJSON(url27,async function(err, data27) {
-    tonybaloney216 = data27.asset.params['unit-name'];tonybaloney217 = data27.asset['index'];tonybaloney218 = data27.asset['created-at-round'];
-    tonybaloney219 = data27.asset.params['name'];tonybaloney220 = data27.asset['asset-tx-counter'];tonybaloney221 = data27.asset.params['circulating-supply'];
-    tonybaloney222 = data27.asset.params['total'];tonybaloney223 = (data27.asset.params['circulating-supply']/data27.asset.params['total']).toFixed(2);})
+    tb216 = data27.asset.params['unit-name'];tb217 = data27.asset['index'];tb218 = data27.asset['created-at-round'];
+    tb219 = data27.asset.params['name'];tb220 = data27.asset['asset-tx-counter'];tb221 = data27.asset.params['circulating-supply'];
+    tb222 = data27.asset.params['total'];tb223 = (data27.asset.params['circulating-supply']/data27.asset.params['total']).toFixed(2);})
     getJSON(url28,async function(err, data28) {
-    tonybaloney224 = data28.asset.params['unit-name'];tonybaloney225 = data28.asset['index'];tonybaloney226 = data28.asset['created-at-round'];
-    tonybaloney227 = data28.asset.params['name'];tonybaloney228 = data28.asset['asset-tx-counter'];tonybaloney229 = data28.asset.params['circulating-supply'];
-    tonybaloney230 = data28.asset.params['total'];tonybaloney231 = (data28.asset.params['circulating-supply']/data28.asset.params['total']).toFixed(2);})
+    tb224 = data28.asset.params['unit-name'];tb225 = data28.asset['index'];tb226 = data28.asset['created-at-round'];
+    tb227 = data28.asset.params['name'];tb228 = data28.asset['asset-tx-counter'];tb229 = data28.asset.params['circulating-supply'];
+    tb230 = data28.asset.params['total'];tb231 = (data28.asset.params['circulating-supply']/data28.asset.params['total']).toFixed(2);})
     getJSON(url29,async function(err, data29) {
-    tonybaloney232 = data29.asset.params['unit-name'];tonybaloney233 = data29.asset['index'];tonybaloney234 = data29.asset['created-at-round'];
-    tonybaloney235 = data29.asset.params['name'];tonybaloney236 = data29.asset['asset-tx-counter'];tonybaloney237 = data29.asset.params['circulating-supply'];
-    tonybaloney238 = data29.asset.params['total'];tonybaloney239 = (data29.asset.params['circulating-supply']/data29.asset.params['total']).toFixed(2);})
+    tb232 = data29.asset.params['unit-name'];tb233 = data29.asset['index'];tb234 = data29.asset['created-at-round'];
+    tb235 = data29.asset.params['name'];tb236 = data29.asset['asset-tx-counter'];tb237 = data29.asset.params['circulating-supply'];
+    tb238 = data29.asset.params['total'];tb239 = (data29.asset.params['circulating-supply']/data29.asset.params['total']).toFixed(2);})
     getJSON(url30,async function(err, data30) {
-    tonybaloney240 = data30.asset.params['unit-name'];tonybaloney241 = data30.asset['index'];tonybaloney242 = data30.asset['created-at-round'];
-    tonybaloney243 = data30.asset.params['name'];tonybaloney244 = data30.asset['asset-tx-counter'];tonybaloney245 = data30.asset.params['circulating-supply'];
-    tonybaloney246 = data30.asset.params['total'];tonybaloney247 = (data30.asset.params['circulating-supply']/data30.asset.params['total']).toFixed(2);})
+    tb240 = data30.asset.params['unit-name'];tb241 = data30.asset['index'];tb242 = data30.asset['created-at-round'];
+    tb243 = data30.asset.params['name'];tb244 = data30.asset['asset-tx-counter'];tb245 = data30.asset.params['circulating-supply'];
+    tb246 = data30.asset.params['total'];tb247 = (data30.asset.params['circulating-supply']/data30.asset.params['total']).toFixed(2);})
     getJSON(url31,async function(err, data31) {
-    tonybaloney248 = data31.asset.params['unit-name'];tonybaloney249 = data31.asset['index'];tonybaloney250 = data31.asset['created-at-round'];
-    tonybaloney251 = data31.asset.params['name'];tonybaloney252 = data31.asset['asset-tx-counter'];tonybaloney253 = data31.asset.params['circulating-supply'];
-    tonybaloney254 = data31.asset.params['total'];tonybaloney255 = (data31.asset.params['circulating-supply']/data31.asset.params['total']).toFixed(2);})
+    tb248 = data31.asset.params['unit-name'];tb249 = data31.asset['index'];tb250 = data31.asset['created-at-round'];
+    tb251 = data31.asset.params['name'];tb252 = data31.asset['asset-tx-counter'];tb253 = data31.asset.params['circulating-supply'];
+    tb254 = data31.asset.params['total'];tb255 = (data31.asset.params['circulating-supply']/data31.asset.params['total']).toFixed(2);})
         
         
         getJSON(url32,
@@ -248,102 +229,102 @@ $(document)
 
     // The array
     var jsObj = [
-      {'Element':'0', 'Unit Name': tonybaloney0, 'ID': tonybaloney1, 'Created at Round': tonybaloney2,      
-      'Name': tonybaloney3, 'Transactions Counter': tonybaloney4, 'Circulating Supply': tonybaloney5,
-      'Total Supply': tonybaloney6, '% in Circulation': tonybaloney7 + '%'},
-      {'Element':'1', 'Unit Name': tonybaloney8, 'ID': tonybaloney9, 'Created at Round':tonybaloney10, 
-      'Name': tonybaloney11, 'Transactions Counter': tonybaloney12, 'Circulating Supply': tonybaloney13,
-      'Total Supply': tonybaloney14, '% in Circulation': tonybaloney15 + '%'},
-      {'Element':'2', 'Unit Name': tonybaloney16, 'ID': tonybaloney17, 'Created at Round': tonybaloney18, 
-      'Name': tonybaloney19, 'Transactions Counter':tonybaloney20, 'Circulating Supply': tonybaloney21,
-      'Total Supply': tonybaloney22, '% in Circulation': tonybaloney23 + '%'},
-      {'Element':'3', 'Unit Name': tonybaloney24, 'ID': tonybaloney25, 'Created at Round': tonybaloney26,
-      'Name': tonybaloney27, 'Transactions Counter': tonybaloney28, 'Circulating Supply': tonybaloney29,
-      'Total Supply': tonybaloney30, '% in Circulation': tonybaloney31 + '%'},
-      {'Element':'4', 'Unit Name': tonybaloney32, 'ID': tonybaloney33, 'Created at Round': tonybaloney34, 
-      'Name': tonybaloney35, 'Transactions Counter': tonybaloney36, 'Circulating Supply': tonybaloney37,
-      'Total Supply': tonybaloney38, '% in Circulation': tonybaloney39 + '%'},
-      {'Element':'5', 'Unit Name': tonybaloney40, 'ID': tonybaloney41, 'Created at Round': tonybaloney42, 
-      'Name': tonybaloney43, 'Transactions Counter': tonybaloney44, 'Circulating Supply': tonybaloney45,
-      'Total Supply': tonybaloney46, '% in Circulation': tonybaloney47 + '%'},
-      {'Element':'6', 'Unit Name': tonybaloney48, 'ID': tonybaloney49, 'Created at Round': tonybaloney50, 
-      'Name': tonybaloney51, 'Transactions Counter': tonybaloney52, 'Circulating Supply': tonybaloney53,
-      'Total Supply': tonybaloney54, '% in Circulation': tonybaloney55 + '%'},
-      {'Element':'7', 'Unit Name':tonybaloney56, 'ID': tonybaloney57, 'Created at Round': tonybaloney58, 
-      'Name': tonybaloney59, 'Transactions Counter': tonybaloney60, 'Circulating Supply': tonybaloney61,
-      'Total Supply': tonybaloney62, '% in Circulation': tonybaloney63 + '%'},
-      {'Element':'8', 'Unit Name': tonybaloney64, 'ID': tonybaloney65, 'Created at Round': tonybaloney66, 
-      'Name': tonybaloney67, 'Transactions Counter': tonybaloney68, 'Circulating Supply': tonybaloney69,
-      'Total Supply': tonybaloney70, '% in Circulation': tonybaloney71 + '%'},
-      {'Element':'9', 'Unit Name': tonybaloney72, 'ID': tonybaloney73, 'Created at Round': tonybaloney74, 
-      'Name': tonybaloney75, 'Transactions Counter': tonybaloney76, 'Circulating Supply': tonybaloney77,
-      'Total Supply': tonybaloney78, '% in Circulation': tonybaloney79 + '%'},
-      {'Element':'10', 'Unit Name': tonybaloney80, 'ID': tonybaloney81, 'Created at Round': tonybaloney82, 
-      'Name': tonybaloney83, 'Transactions Counter': tonybaloney84, 'Circulating Supply': tonybaloney85,
-      'Total Supply':tonybaloney86, '% in Circulation': tonybaloney87 + '%'},
-      {'Element':'11', 'Unit Name': tonybaloney88, 'ID': tonybaloney89, 'Created at Round': tonybaloney90, 
-      'Name': tonybaloney91, 'Transactions Counter': tonybaloney92, 'Circulating Supply': tonybaloney93,
-      'Total Supply': tonybaloney94, '% in Circulation': tonybaloney95 + '%'},
-      {'Element':'12', 'Unit Name': tonybaloney96, 'ID': tonybaloney97, 'Created at Round': tonybaloney98, 
-      'Name': tonybaloney99, 'Transactions Counter': tonybaloney100, 'Circulating Supply': tonybaloney101,
-      'Total Supply': tonybaloney102, '% in Circulation': tonybaloney103 + '%'},
-      {'Element':'13', 'Unit Name': tonybaloney104, 'ID': tonybaloney105, 'Created at Round': tonybaloney106, 
-      'Name': tonybaloney107, 'Transactions Counter': tonybaloney108, 'Circulating Supply': tonybaloney109,
-      'Total Supply': tonybaloney110, '% in Circulation': tonybaloney111 + '%'},
-      {'Element':'14', 'Unit Name': tonybaloney112, 'ID': tonybaloney113, 'Created at Round': tonybaloney114, 
-      'Name': tonybaloney115, 'Transactions Counter': tonybaloney116, 'Circulating Supply': tonybaloney117,
-      'Total Supply': tonybaloney118, '% in Circulation': tonybaloney119 + '%'},
-      {'Element':'15', 'Unit Name': tonybaloney120, 'ID': tonybaloney121, 'Created at Round': tonybaloney122, 
-      'Name': tonybaloney123, 'Transactions Counter': tonybaloney124, 'Circulating Supply': tonybaloney125,
-      'Total Supply': tonybaloney126, '% in Circulation': tonybaloney127 + '%'},
-      {'Element':'16', 'Unit Name': tonybaloney128, 'ID': tonybaloney129, 'Created at Round': tonybaloney130, 
-      'Name': tonybaloney131, 'Transactions Counter': tonybaloney132,'Circulating Supply': tonybaloney133,
-      'Total Supply': tonybaloney134, '% in Circulation': tonybaloney135 + '%'},
-      {'Element':'17', 'Unit Name': tonybaloney136, 'ID': tonybaloney137, 'Created at Round': tonybaloney138, 
-      'Name': tonybaloney139, 'Transactions Counter': tonybaloney140,'Circulating Supply': tonybaloney141,
-      'Total Supply': tonybaloney142, '% in Circulation': tonybaloney143 + '%'},
-      {'Element':'18', 'Unit Name': tonybaloney144, 'ID': tonybaloney145, 'Created at Round': tonybaloney146, 
-      'Name': tonybaloney147, 'Transactions Counter': tonybaloney148,'Circulating Supply': tonybaloney149,
-      'Total Supply': tonybaloney150, '% in Circulation': tonybaloney151 + '%'},
-      {'Element':'19', 'Unit Name': tonybaloney152, 'ID': tonybaloney152, 'Created at Round': tonybaloney153, 
-      'Name': tonybaloney154, 'Transactions Counter': tonybaloney155,'Circulating Supply': tonybaloney156,
-      'Total Supply': tonybaloney157, '% in Circulation': tonybaloney158 + '%'},
-      {'Element':'20', 'Unit Name': tonybaloney159, 'ID': tonybaloney160, 'Created at Round': tonybaloney161, 
-      'Name': tonybaloney162, 'Transactions Counter': tonybaloney163, 'Circulating Supply': tonybaloney164,
-      'Total Supply': tonybaloney165, '% in Circulation': tonybaloney166 + '%'},
-      {'Element':'21', 'Unit Name': tonybaloney167, 'ID': tonybaloney168, 'Created at Round': tonybaloney169, 
-      'Name': tonybaloney170, 'Transactions Counter': tonybaloney171, 'Circulating Supply': tonybaloney172,
-      'Total Supply': tonybaloney173, '% in Circulation': tonybaloney174 + '%'},
-      {'Element':'22', 'Unit Name': tonybaloney175, 'ID': tonybaloney176, 'Created at Round': tonybaloney177, 
-      'Name': tonybaloney178, 'Transactions Counter': tonybaloney179, 'Circulating Supply': tonybaloney180,
-      'Total Supply': tonybaloney181, '% in Circulation': tonybaloney182 + '%'},
-      {'Element':'23', 'Unit Name': tonybaloney183, 'ID': tonybaloney184, 'Created at Round': tonybaloney185, 
-      'Name': tonybaloney186, 'Transactions Counter': tonybaloney187,'Circulating Supply': tonybaloney188,
-      'Total Supply': tonybaloney189, '% in Circulation': tonybaloney190 + '%'},
-      {'Element':'24', 'Unit Name': tonybaloney191, 'ID': tonybaloney192, 'Created at Round': tonybaloney193, 
-      'Name': tonybaloney194, 'Transactions Counter': tonybaloney195,'Circulating Supply': tonybaloney196,
-      'Total Supply': tonybaloney197, '% in Circulation': tonybaloney198 + '%'},
-      {'Element':'25', 'Unit Name': tonybaloney199, 'ID': tonybaloney200, 'Created at Round': tonybaloney201, 
-      'Name': tonybaloney202, 'Transactions Counter': tonybaloney203,'Circulating Supply': tonybaloney204,
-      'Total Supply': tonybaloney205, '% in Circulation': tonybaloney206 + '%'},
-      {'Element':'26', 'Unit Name': tonybaloney207, 'ID': tonybaloney208, 'Created at Round': tonybaloney209, 
-      'Name': tonybaloney210, 'Transactions Counter': tonybaloney211,'Circulating Supply': tonybaloney212,
-      'Total Supply': tonybaloney213, '% in Circulation': tonybaloney214 + '%'},
-      {'Element':'27', 'Unit Name': tonybaloney215, 'ID': tonybaloney216, 'Created at Round': tonybaloney217, 
-      'Name': tonybaloney218, 'Transactions Counter': tonybaloney219,'Circulating Supply': tonybaloney220,
-      'Total Supply': tonybaloney221, '% in Circulation': tonybaloney222 + '%'},
-      {'Element':'28', 'Unit Name': tonybaloney223, 'ID': tonybaloney224, 'Created at Round': tonybaloney225, 
-      'Name': tonybaloney226, 'Transactions Counter': tonybaloney227,'Circulating Supply': tonybaloney228,
-      'Total Supply': tonybaloney229, '% in Circulation': tonybaloney230 + '%'},
-      {'Element':'29', 'Unit Name': tonybaloney231, 'ID': tonybaloney232, 'Created at Round': tonybaloney233, 
-      'Name': tonybaloney234, 'Transactions Counter': tonybaloney235,'Circulating Supply': tonybaloney236,
-      'Total Supply': tonybaloney237, '% in Circulation': tonybaloney238 + '%'},
-      {'Element':'30', 'Unit Name': tonybaloney239, 'ID': tonybaloney240, 'Created at Round': tonybaloney241, 
-      'Name': tonybaloney242, 'Transactions Counter': tonybaloney243,'Circulating Supply': tonybaloney244,
-      'Total Supply': tonybaloney245, '% in Circulation': tonybaloney246 + '%'},
-      {'Element':'31', 'Unit Name': tonybaloney247, 'ID': tonybaloney248, 'Created at Round': tonybaloney249, 
-      'Name': tonybaloney250, 'Transactions Counter': tonybaloney251,'Circulating Supply': tonybaloney252,
-      'Total Supply': tonybaloney253, '% in Circulation': tonybaloney254 + '%'},
+      {'Element':'0', 'Unit Name': tb0, 'ID': tb1, 'Created at Round': tb2,      
+      'Name': tb3, 'Transactions Counter': tb4, 'Circulating Supply': tb5,
+      'Total Supply': tb6, '% in Circulation': tb7 + '%'},
+      {'Element':'1', 'Unit Name': tb8, 'ID': tb9, 'Created at Round':tb10, 
+      'Name': tb11, 'Transactions Counter': tb12, 'Circulating Supply': tb13,
+      'Total Supply': tb14, '% in Circulation': tb15 + '%'},
+      {'Element':'2', 'Unit Name': tb16, 'ID': tb17, 'Created at Round': tb18, 
+      'Name': tb19, 'Transactions Counter':tb20, 'Circulating Supply': tb21,
+      'Total Supply': tb22, '% in Circulation': tb23 + '%'},
+      {'Element':'3', 'Unit Name': tb24, 'ID': tb25, 'Created at Round': tb26,
+      'Name': tb27, 'Transactions Counter': tb28, 'Circulating Supply': tb29,
+      'Total Supply': tb30, '% in Circulation': tb31 + '%'},
+      {'Element':'4', 'Unit Name': tb32, 'ID': tb33, 'Created at Round': tb34, 
+      'Name': tb35, 'Transactions Counter': tb36, 'Circulating Supply': tb37,
+      'Total Supply': tb38, '% in Circulation': tb39 + '%'},
+      {'Element':'5', 'Unit Name': tb40, 'ID': tb41, 'Created at Round': tb42, 
+      'Name': tb43, 'Transactions Counter': tb44, 'Circulating Supply': tb45,
+      'Total Supply': tb46, '% in Circulation': tb47 + '%'},
+      {'Element':'6', 'Unit Name': tb48, 'ID': tb49, 'Created at Round': tb50, 
+      'Name': tb51, 'Transactions Counter': tb52, 'Circulating Supply': tb53,
+      'Total Supply': tb54, '% in Circulation': tb55 + '%'},
+      {'Element':'7', 'Unit Name':tb56, 'ID': tb57, 'Created at Round': tb58, 
+      'Name': tb59, 'Transactions Counter': tb60, 'Circulating Supply': tb61,
+      'Total Supply': tb62, '% in Circulation': tb63 + '%'},
+      {'Element':'8', 'Unit Name': tb64, 'ID': tb65, 'Created at Round': tb66, 
+      'Name': tb67, 'Transactions Counter': tb68, 'Circulating Supply': tb69,
+      'Total Supply': tb70, '% in Circulation': tb71 + '%'},
+      {'Element':'9', 'Unit Name': tb72, 'ID': tb73, 'Created at Round': tb74, 
+      'Name': tb75, 'Transactions Counter': tb76, 'Circulating Supply': tb77,
+      'Total Supply': tb78, '% in Circulation': tb79 + '%'},
+      {'Element':'10', 'Unit Name': tb80, 'ID': tb81, 'Created at Round': tb82, 
+      'Name': tb83, 'Transactions Counter': tb84, 'Circulating Supply': tb85,
+      'Total Supply':tb86, '% in Circulation': tb87 + '%'},
+      {'Element':'11', 'Unit Name': tb88, 'ID': tb89, 'Created at Round': tb90, 
+      'Name': tb91, 'Transactions Counter': tb92, 'Circulating Supply': tb93,
+      'Total Supply': tb94, '% in Circulation': tb95 + '%'},
+      {'Element':'12', 'Unit Name': tb96, 'ID': tb97, 'Created at Round': tb98, 
+      'Name': tb99, 'Transactions Counter': tb100, 'Circulating Supply': tb101,
+      'Total Supply': tb102, '% in Circulation': tb103 + '%'},
+      {'Element':'13', 'Unit Name': tb104, 'ID': tb105, 'Created at Round': tb106, 
+      'Name': tb107, 'Transactions Counter': tb108, 'Circulating Supply': tb109,
+      'Total Supply': tb110, '% in Circulation': tb111 + '%'},
+      {'Element':'14', 'Unit Name': tb112, 'ID': tb113, 'Created at Round': tb114, 
+      'Name': tb115, 'Transactions Counter': tb116, 'Circulating Supply': tb117,
+      'Total Supply': tb118, '% in Circulation': tb119 + '%'},
+      {'Element':'15', 'Unit Name': tb120, 'ID': tb121, 'Created at Round': tb122, 
+      'Name': tb123, 'Transactions Counter': tb124, 'Circulating Supply': tb125,
+      'Total Supply': tb126, '% in Circulation': tb127 + '%'},
+      {'Element':'16', 'Unit Name': tb128, 'ID': tb129, 'Created at Round': tb130, 
+      'Name': tb131, 'Transactions Counter': tb132,'Circulating Supply': tb133,
+      'Total Supply': tb134, '% in Circulation': tb135 + '%'},
+      {'Element':'17', 'Unit Name': tb136, 'ID': tb137, 'Created at Round': tb138, 
+      'Name': tb139, 'Transactions Counter': tb140,'Circulating Supply': tb141,
+      'Total Supply': tb142, '% in Circulation': tb143 + '%'},
+      {'Element':'18', 'Unit Name': tb144, 'ID': tb145, 'Created at Round': tb146, 
+      'Name': tb147, 'Transactions Counter': tb148,'Circulating Supply': tb149,
+      'Total Supply': tb150, '% in Circulation': tb151 + '%'},
+      {'Element':'19', 'Unit Name': tb152, 'ID': tb152, 'Created at Round': tb153, 
+      'Name': tb154, 'Transactions Counter': tb155,'Circulating Supply': tb156,
+      'Total Supply': tb157, '% in Circulation': tb158 + '%'},
+      {'Element':'20', 'Unit Name': tb159, 'ID': tb160, 'Created at Round': tb161, 
+      'Name': tb162, 'Transactions Counter': tb163, 'Circulating Supply': tb164,
+      'Total Supply': tb165, '% in Circulation': tb166 + '%'},
+      {'Element':'21', 'Unit Name': tb167, 'ID': tb168, 'Created at Round': tb169, 
+      'Name': tb170, 'Transactions Counter': tb171, 'Circulating Supply': tb172,
+      'Total Supply': tb173, '% in Circulation': tb174 + '%'},
+      {'Element':'22', 'Unit Name': tb175, 'ID': tb176, 'Created at Round': tb177, 
+      'Name': tb178, 'Transactions Counter': tb179, 'Circulating Supply': tb180,
+      'Total Supply': tb181, '% in Circulation': tb182 + '%'},
+      {'Element':'23', 'Unit Name': tb183, 'ID': tb184, 'Created at Round': tb185, 
+      'Name': tb186, 'Transactions Counter': tb187,'Circulating Supply': tb188,
+      'Total Supply': tb189, '% in Circulation': tb190 + '%'},
+      {'Element':'24', 'Unit Name': tb191, 'ID': tb192, 'Created at Round': tb193, 
+      'Name': tb194, 'Transactions Counter': tb195,'Circulating Supply': tb196,
+      'Total Supply': tb197, '% in Circulation': tb198 + '%'},
+      {'Element':'25', 'Unit Name': tb199, 'ID': tb200, 'Created at Round': tb201, 
+      'Name': tb202, 'Transactions Counter': tb203,'Circulating Supply': tb204,
+      'Total Supply': tb205, '% in Circulation': tb206 + '%'},
+      {'Element':'26', 'Unit Name': tb207, 'ID': tb208, 'Created at Round': tb209, 
+      'Name': tb210, 'Transactions Counter': tb211,'Circulating Supply': tb212,
+      'Total Supply': tb213, '% in Circulation': tb214 + '%'},
+      {'Element':'27', 'Unit Name': tb215, 'ID': tb216, 'Created at Round': tb217, 
+      'Name': tb218, 'Transactions Counter': tb219,'Circulating Supply': tb220,
+      'Total Supply': tb221, '% in Circulation': tb222 + '%'},
+      {'Element':'28', 'Unit Name': tb223, 'ID': tb224, 'Created at Round': tb225, 
+      'Name': tb226, 'Transactions Counter': tb227,'Circulating Supply': tb228,
+      'Total Supply': tb229, '% in Circulation': tb230 + '%'},
+      {'Element':'29', 'Unit Name': tb231, 'ID': tb232, 'Created at Round': tb233, 
+      'Name': tb234, 'Transactions Counter': tb235,'Circulating Supply': tb236,
+      'Total Supply': tb237, '% in Circulation': tb238 + '%'},
+      {'Element':'30', 'Unit Name': tb239, 'ID': tb240, 'Created at Round': tb241, 
+      'Name': tb242, 'Transactions Counter': tb243,'Circulating Supply': tb244,
+      'Total Supply': tb245, '% in Circulation': tb246 + '%'},
+      {'Element':'31', 'Unit Name': tb247, 'ID': tb248, 'Created at Round': tb249, 
+      'Name': tb250, 'Transactions Counter': tb251,'Circulating Supply': tb252,
+      'Total Supply': tb253, '% in Circulation': tb254 + '%'},
       {'Element':'32', 'Unit Name': data32.asset.params['unit-name'], 'ID': data32.asset['index'], 'Created at Round': data32.asset['created-at-round'], 
       'Name': data32.asset.params['name'], 'Transactions Counter': data32.asset['asset-tx-counter'],'Circulating Supply': data32.asset.params['circulating-supply'],
       'Total Supply': data32.asset.params['total'], '% in Circulation': (data32.asset.params['circulating-supply']/data32.asset.params['total']).toFixed(2) + '%'},
