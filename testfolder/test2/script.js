@@ -91,55 +91,55 @@ $(document)
     tb118 = data14.asset.params['total'];tb119 = ((data14.asset.params['circulating-supply']/data14.asset.params['total'])*100).toFixed(6);})
     getJSON(url15,async function(err, data15){tb120 = data15.asset.params['unit-name'];tb121 = data15.asset['index'];tb122 = data15.asset['created-at-round'];
     tb123 = data15.asset.params['name'];tb124 = data15.asset['asset-tx-counter'];tb125 = data15.asset.params['circulating-supply'];
-    tb126 = data15.asset.params['total'];tb127 = (data15.asset.params['circulating-supply']/data15.asset.params['total']).toFixed(6);})
+    tb126 = data15.asset.params['total'];tb127 = ((data15.asset.params['circulating-supply']/data15.asset.params['total'])*100).toFixed(6);})
     getJSON(url16,async function(err, data16){tb128 = data16.asset.params['unit-name'];tb129 = data16.asset['index'];tb130 = data16.asset['created-at-round'];
     tb131 = data16.asset.params['name'];tb132 = data16.asset['asset-tx-counter'];tb133 = data16.asset.params['circulating-supply'];
-    tb134 = data16.asset.params['total'];tb135 = (data16.asset.params['circulating-supply']/data16.asset.params['total']).toFixed(6);})
+    tb134 = data16.asset.params['total'];tb135 = ((data16.asset.params['circulating-supply']/data16.asset.params['total']*100)).toFixed(6);})
     getJSON(url17,async function(err, data17){tb136 = data17.asset.params['unit-name'];tb137 = data17.asset['index'];tb138 = data17.asset['created-at-round'];
     tb139 = data17.asset.params['name'];tb140 = data17.asset['asset-tx-counter'];tb141 = data17.asset.params['circulating-supply'];
-    tb142 = data17.asset.params['total'];tb143 = (data17.asset.params['circulating-supply']/data17.asset.params['total']).toFixed(6);})
+    tb142 = data17.asset.params['total'];tb143 = ((data17.asset.params['circulating-supply']/data17.asset.params['total']*100)).toFixed(6);})
     getJSON(url18,async function(err, data18){tb144 = data18.asset.params['unit-name'];tb145 = data18.asset['index'];tb146 = data18.asset['created-at-round'];
     tb147 = data18.asset.params['name'];tb148 = data18.asset['asset-tx-counter'];tb149 = data18.asset.params['circulating-supply'];
-    tb150 = data18.asset.params['total'];tb151 = (data18.asset.params['circulating-supply']/data18.asset.params['total']).toFixed(6);})
+    tb150 = data18.asset.params['total'];tb151 = ((data18.asset.params['circulating-supply']/data18.asset.params['total']*100)).toFixed(6);})
     getJSON(url19,async function(err, data19){tb152 = data19.asset.params['unit-name'];tb153 = data19.asset['index'];tb154 = data19.asset['created-at-round'];
     tb155 = data19.asset.params['name'];tb156 = data19.asset['asset-tx-counter'];tb157 = data19.asset.params['circulating-supply'];
-    tb158 = data19.asset.params['total'];tb159 = (data19.asset.params['circulating-supply']/data19.asset.params['total']).toFixed(6);})
+    tb158 = data19.asset.params['total'];tb159 = ((data19.asset.params['circulating-supply']/data19.asset.params['total']*100)).toFixed(6);})
     getJSON(url20,async function(err, data20){tb160 = data20.asset.params['unit-name'];tb161 = data20.asset['index'];tb162 = data20.asset['created-at-round'];
     tb163 = data20.asset.params['name'];tb164 = data20.asset['asset-tx-counter'];tb165 = data20.asset.params['circulating-supply'];
-    tb166 = data20.asset.params['total'];tb167 = (data20.asset.params['circulating-supply']/data20.asset.params['total']).toFixed(6);})
+    tb166 = data20.asset.params['total'];tb167 = ((data20.asset.params['circulating-supply']/data20.asset.params['total']*100)).toFixed(6);})
     getJSON(url21,async function(err, data21){tb168 = data21.asset.params['unit-name'];tb169 = data21.asset['index'];tb170 = data21.asset['created-at-round'];
     tb171 = data21.asset.params['name'];tb172 = data21.asset['asset-tx-counter'];tb173 = data21.asset.params['circulating-supply'];
-    tb174 = data21.asset.params['total'];tb175 = (data21.asset.params['circulating-supply']/data21.asset.params['total']).toFixed(6);})
+    tb174 = data21.asset.params['total'];tb175 = ((data21.asset.params['circulating-supply']/data21.asset.params['total']*100)).toFixed(6);})
     getJSON(url22,async function(err, data22){tb176 = data22.asset.params['unit-name'];tb177 = data22.asset['index'];tb178 = data22.asset['created-at-round'];
     tb179 = data22.asset.params['name'];tb180 = data22.asset['asset-tx-counter'];tb181 = data22.asset.params['circulating-supply'];
-    tb182 = data22.asset.params['total'];tb183 = (data22.asset.params['circulating-supply']/data22.asset.params['total']).toFixed(6);})
+    tb182 = data22.asset.params['total'];tb183 = ((data22.asset.params['circulating-supply']/data22.asset.params['total']*100)).toFixed(6);})
     getJSON(url23,async function(err, data23){tb184 = data23.asset.params['unit-name'];tb185 = data23.asset['index'];tb186 = data23.asset['created-at-round'];
     tb187 = data23.asset.params['name'];tb188 = data23.asset['asset-tx-counter'];tb189 = data23.asset.params['circulating-supply'];
-    tb190 = data23.asset.params['total'];tb191 = (data23.asset.params['circulating-supply']/data23.asset.params['total']).toFixed(6);})
+    tb190 = data23.asset.params['total'];tb191 = ((data23.asset.params['circulating-supply']/data23.asset.params['total']*100)).toFixed(6);})
     getJSON(url24,async function(err, data24){tb192 = data24.asset.params['unit-name'];tb193 = data24.asset['index'];tb194 = data24.asset['created-at-round'];
     tb195 = data24.asset.params['name'];tb196 = data24.asset['asset-tx-counter'];tb197 = data24.asset.params['circulating-supply'];
-    tb198 = data24.asset.params['total'];tb199 = (data24.asset.params['circulating-supply']/data24.asset.params['total']).toFixed(6);})
+    tb198 = data24.asset.params['total'];tb199 = ((data24.asset.params['circulating-supply']/data24.asset.params['total']*100)).toFixed(6);})
     getJSON(url25,async function(err, data25){tb200 = data25.asset.params['unit-name'];tb201 = data25.asset['index'];tb202 = data25.asset['created-at-round'];
     tb203 = data25.asset.params['name'];tb204 = data25.asset['asset-tx-counter'];tb205 = data25.asset.params['circulating-supply'];
-    tb206 = data25.asset.params['total'];tb207 = (data25.asset.params['circulating-supply']/data25.asset.params['total']).toFixed(6);})
+    tb206 = data25.asset.params['total'];tb207 = ((data25.asset.params['circulating-supply']/data25.asset.params['total']*100)).toFixed(6);})
     getJSON(url26,async function(err, data26){tb208 = data26.asset.params['unit-name'];tb209 = data26.asset['index'];tb210 = data26.asset['created-at-round'];
     tb211 = data26.asset.params['name'];tb212 = data26.asset['asset-tx-counter'];tb213 = data26.asset.params['circulating-supply'];
-    tb214 = data26.asset.params['total'];tb215 = (data26.asset.params['circulating-supply']/data26.asset.params['total']).toFixed(6);})
+    tb214 = data26.asset.params['total'];tb215 = ((data26.asset.params['circulating-supply']/data26.asset.params['total']*100)).toFixed(6);})
     getJSON(url27,async function(err, data27){tb216 = data27.asset.params['unit-name'];tb217 = data27.asset['index'];tb218 = data27.asset['created-at-round'];
     tb219 = data27.asset.params['name'];tb220 = data27.asset['asset-tx-counter'];tb221 = data27.asset.params['circulating-supply'];
-    tb222 = data27.asset.params['total'];tb223 = (data27.asset.params['circulating-supply']/data27.asset.params['total']).toFixed(6);})
+    tb222 = data27.asset.params['total'];tb223 = ((data27.asset.params['circulating-supply']/data27.asset.params['total']*100)).toFixed(6);})
     getJSON(url28,async function(err, data28){tb224 = data28.asset.params['unit-name'];tb225 = data28.asset['index'];tb226 = data28.asset['created-at-round'];
     tb227 = data28.asset.params['name'];tb228 = data28.asset['asset-tx-counter'];tb229 = data28.asset.params['circulating-supply'];
-    tb230 = data28.asset.params['total'];tb231 = (data28.asset.params['circulating-supply']/data28.asset.params['total']).toFixed(6);})
+    tb230 = data28.asset.params['total'];tb231 = ((data28.asset.params['circulating-supply']/data28.asset.params['total']*100)).toFixed(6);})
     getJSON(url29,async function(err, data29){tb232 = data29.asset.params['unit-name'];tb233 = data29.asset['index'];tb234 = data29.asset['created-at-round'];
     tb235 = data29.asset.params['name'];tb236 = data29.asset['asset-tx-counter'];tb237 = data29.asset.params['circulating-supply'];
-    tb238 = data29.asset.params['total'];tb239 = (data29.asset.params['circulating-supply']/data29.asset.params['total']).toFixed(6);})
+    tb238 = data29.asset.params['total'];tb239 = ((data29.asset.params['circulating-supply']/data29.asset.params['total']*100)).toFixed(6);})
     getJSON(url30,async function(err, data30){tb240 = data30.asset.params['unit-name'];tb241 = data30.asset['index'];tb242 = data30.asset['created-at-round'];
     tb243 = data30.asset.params['name'];tb244 = data30.asset['asset-tx-counter'];tb245 = data30.asset.params['circulating-supply'];
-    tb246 = data30.asset.params['total'];tb247 = (data30.asset.params['circulating-supply']/data30.asset.params['total']).toFixed(6);})
+    tb246 = data30.asset.params['total'];tb247 = ((data30.asset.params['circulating-supply']/data30.asset.params['total']*100)).toFixed(6);})
     getJSON(url31,async function(err, data31){tb248 = data31.asset.params['unit-name'];tb249 = data31.asset['index'];tb250 = data31.asset['created-at-round'];
     tb251 = data31.asset.params['name'];tb252 = data31.asset['asset-tx-counter'];tb253 = data31.asset.params['circulating-supply'];
-    tb254 = data31.asset.params['total'];tb255 = (data31.asset.params['circulating-supply']/data31.asset.params['total']).toFixed(6);})
+    tb254 = data31.asset.params['total'];tb255 = ((data31.asset.params['circulating-supply']/data31.asset.params['total']*100)).toFixed(6);})
     
         
         getJSON(url32,
@@ -185,115 +185,111 @@ $(document)
       'Total Supply': tb118,'% in Circulation': tb119},
       {'Element':'15','Unit Name': tb120,'ID': tb121,'Created at Round': tb122,'Name': tb123,'Transactions Counter': tb124,'Circulating Supply': tb125,
       'Total Supply': tb126,'% in Circulation': tb127},
-      {'Element':'16', 'Unit Name': tb128, 'ID': tb129, 'Created at Round': tb130, 
-      'Name': tb131, 'Transactions Counter': tb132,'Circulating Supply': tb133,
-      'Total Supply': tb134, '% in Circulation': tb135},
-      {'Element':'17', 'Unit Name': tb136, 'ID': tb137, 'Created at Round': tb138, 
-      'Name': tb139, 'Transactions Counter': tb140,'Circulating Supply': tb141,
-      'Total Supply': tb142, '% in Circulation': tb143},
-      {'Element':'18', 'Unit Name': tb144, 'ID': tb145, 'Created at Round': tb146, 
-      'Name': tb147, 'Transactions Counter': tb148,'Circulating Supply': tb149,
-      'Total Supply': tb150, '% in Circulation': tb151},
-      {'Element':'19', 'Unit Name': tb152, 'ID': tb153, 'Created at Round': tb154, 
-      'Name': tb155, 'Transactions Counter': tb156,'Circulating Supply': tb157,
-      'Total Supply': tb158, '% in Circulation': tb159},
-      {'Element':'20', 'Unit Name': tb160, 'ID': tb161, 'Created at Round': tb162, 
+      {'Element':'16','Unit Name': tb128,'ID': tb129,'Created at Round': tb130,'Name': tb131,'Transactions Counter': tb132,'Circulating Supply': tb133,
+      'Total Supply': tb134,'% in Circulation': tb135},
+      {'Element':'17','Unit Name': tb136,'ID': tb137,'Created at Round': tb138,'Name': tb139,'Transactions Counter': tb140,'Circulating Supply': tb141,
+      'Total Supply': tb142,'% in Circulation': tb143},
+      {'Element':'18','Unit Name': tb144,'ID': tb145,'Created at Round': tb146,'Name': tb147,'Transactions Counter': tb148,'Circulating Supply': tb149,
+      'Total Supply': tb150,'% in Circulation': tb151},
+      {'Element':'19','Unit Name': tb152,'ID': tb153,'Created at Round': tb154,'Name': tb155,'Transactions Counter': tb156,'Circulating Supply': tb157,
+      'Total Supply': tb158,'% in Circulation': tb159},
+      {'Element':'20', 'Unit Name': tb160,'ID': tb161,'Created at Round': tb162, 
       'Name': tb163, 'Transactions Counter': tb164, 'Circulating Supply': tb165,
-      'Total Supply': tb166, '% in Circulation': tb167},
-      {'Element':'21', 'Unit Name': tb168, 'ID': tb169, 'Created at Round': tb170, 
+      'Total Supply': tb166,'% in Circulation': tb167},
+      {'Element':'21', 'Unit Name': tb168,'ID': tb169, 'Created at Round': tb170, 
       'Name': tb171, 'Transactions Counter': tb172, 'Circulating Supply': tb173,
-      'Total Supply': tb174, '% in Circulation': tb175},
-      {'Element':'22', 'Unit Name': tb176, 'ID': tb177, 'Created at Round': tb178, 
+      'Total Supply': tb174,'% in Circulation': tb175},
+      {'Element':'22', 'Unit Name': tb176,'ID': tb177, 'Created at Round': tb178, 
       'Name': tb179, 'Transactions Counter': tb180, 'Circulating Supply': tb181,
       'Total Supply': tb182, '% in Circulation': tb183},
-      {'Element':'23', 'Unit Name': tb184, 'ID': tb185, 'Created at Round': tb186, 
+      {'Element':'23', 'Unit Name': tb184,'ID': tb185, 'Created at Round': tb186, 
       'Name': tb187, 'Transactions Counter': tb188,'Circulating Supply': tb189,
       'Total Supply': tb190, '% in Circulation': tb191},
-      {'Element':'24', 'Unit Name': tb192, 'ID': tb193, 'Created at Round': tb194, 
+      {'Element':'24', 'Unit Name': tb192,'ID': tb193, 'Created at Round': tb194, 
       'Name': tb195, 'Transactions Counter': tb196,'Circulating Supply': tb197,
       'Total Supply': tb198, '% in Circulation': tb199},
-      {'Element':'25', 'Unit Name': tb200, 'ID': tb201, 'Created at Round': tb202, 
+      {'Element':'25', 'Unit Name': tb200,'ID': tb201, 'Created at Round': tb202, 
       'Name': tb203, 'Transactions Counter': tb204,'Circulating Supply': tb205,
       'Total Supply': tb206, '% in Circulation': tb207},
-      {'Element':'26', 'Unit Name': tb208, 'ID': tb209, 'Created at Round': tb210, 
+      {'Element':'26', 'Unit Name': tb208,'ID': tb209, 'Created at Round': tb210, 
       'Name': tb211, 'Transactions Counter': tb212,'Circulating Supply': tb213,
       'Total Supply': tb214, '% in Circulation': tb215},
-      {'Element':'27', 'Unit Name': tb216, 'ID': tb217, 'Created at Round': tb218, 
+      {'Element':'27', 'Unit Name': tb216,'ID': tb217, 'Created at Round': tb218, 
       'Name': tb219, 'Transactions Counter': tb220,'Circulating Supply': tb221,
       'Total Supply': tb222, '% in Circulation': tb223},
-      {'Element':'28', 'Unit Name': tb224, 'ID': tb225, 'Created at Round': tb226, 
+      {'Element':'28', 'Unit Name': tb224,'ID': tb225, 'Created at Round': tb226, 
       'Name': tb227, 'Transactions Counter': tb228,'Circulating Supply': tb229,
       'Total Supply': tb230, '% in Circulation': tb231},
-      {'Element':'29', 'Unit Name': tb232, 'ID': tb233, 'Created at Round': tb234, 
+      {'Element':'29', 'Unit Name': tb232,'ID': tb233, 'Created at Round': tb234, 
       'Name': tb235, 'Transactions Counter': tb236,'Circulating Supply': tb237,
       'Total Supply': tb238, '% in Circulation': tb239},
-      {'Element':'30', 'Unit Name': tb240, 'ID': tb241, 'Created at Round': tb242, 
+      {'Element':'30', 'Unit Name': tb240,'ID': tb241, 'Created at Round': tb242, 
       'Name': tb243, 'Transactions Counter': tb244,'Circulating Supply': tb245,
       'Total Supply': tb246, '% in Circulation': tb247},
-      {'Element':'31', 'Unit Name': tb248, 'ID': tb249, 'Created at Round': tb250, 
+      {'Element':'31', 'Unit Name': tb248,'ID': tb249, 'Created at Round': tb250, 
       'Name': tb251, 'Transactions Counter': tb252,'Circulating Supply': tb253,
       'Total Supply': tb254, '% in Circulation': tb255},
-      {'Element':'32', 'Unit Name': data32.asset.params['unit-name'], 'ID': data32.asset['index'], 'Created at Round': data32.asset['created-at-round'], 
+      {'Element':'32', 'Unit Name': data32.asset.params['unit-name'],'ID': data32.asset['index'], 'Created at Round': data32.asset['created-at-round'], 
       'Name': data32.asset.params['name'], 'Transactions Counter': data32.asset['asset-tx-counter'],'Circulating Supply': data32.asset.params['circulating-supply'],
       'Total Supply': data32.asset.params['total'], '% in Circulation': (data32.asset.params['circulating-supply']/data32.asset.params['total']).toFixed(6)},
-      {'Element':'33', 'Unit Name': data33.asset.params['unit-name'], 'ID': data33.asset['index'], 'Created at Round': data33.asset['created-at-round'], 
+      {'Element':'33', 'Unit Name': data33.asset.params['unit-name'],'ID': data33.asset['index'], 'Created at Round': data33.asset['created-at-round'], 
       'Name': data33.asset.params['name'], 'Transactions Counter': data33.asset['asset-tx-counter'],'Circulating Supply': data33.asset.params['circulating-supply'],
       'Total Supply': data33.asset.params['total'], '% in Circulation': (data33.asset.params['circulating-supply']/data33.asset.params['total']).toFixed(6)},
-      {'Element':'34', 'Unit Name': data34.asset.params['unit-name'], 'ID': data34.asset['index'], 'Created at Round': data34.asset['created-at-round'], 
+      {'Element':'34', 'Unit Name': data34.asset.params['unit-name'],'ID': data34.asset['index'], 'Created at Round': data34.asset['created-at-round'], 
       'Name': data34.asset.params['name'], 'Transactions Counter': data34.asset['asset-tx-counter'],'Circulating Supply': data34.asset.params['circulating-supply'],
       'Total Supply': data34.asset.params['total'], '% in Circulation': (data34.asset.params['circulating-supply']/data34.asset.params['total']).toFixed(6)},
-      {'Element':'35', 'Unit Name': data35.asset.params['unit-name'], 'ID': data35.asset['index'], 'Created at Round': data35.asset['created-at-round'], 
+      {'Element':'35', 'Unit Name': data35.asset.params['unit-name'],'ID': data35.asset['index'], 'Created at Round': data35.asset['created-at-round'], 
       'Name': data35.asset.params['name'], 'Transactions Counter': data35.asset['asset-tx-counter'],'Circulating Supply': data35.asset.params['circulating-supply'],
       'Total Supply': data35.asset.params['total'], '% in Circulation': (data35.asset.params['circulating-supply']/data35.asset.params['total']).toFixed(6)},
-      {'Element':'36', 'Unit Name': data36.asset.params['unit-name'], 'ID': data36.asset['index'], 'Created at Round': data36.asset['created-at-round'], 
+      {'Element':'36', 'Unit Name': data36.asset.params['unit-name'],'ID': data36.asset['index'], 'Created at Round': data36.asset['created-at-round'], 
       'Name': data36.asset.params['name'], 'Transactions Counter': data36.asset['asset-tx-counter'],'Circulating Supply': data36.asset.params['circulating-supply'],
       'Total Supply': data36.asset.params['total'], '% in Circulation': (data36.asset.params['circulating-supply']/data36.asset.params['total']).toFixed(6)},
-      {'Element':'37', 'Unit Name': data37.asset.params['unit-name'], 'ID': data37.asset['index'], 'Created at Round': data37.asset['created-at-round'], 
+      {'Element':'37', 'Unit Name': data37.asset.params['unit-name'],'ID': data37.asset['index'], 'Created at Round': data37.asset['created-at-round'], 
       'Name': data37.asset.params['name'], 'Transactions Counter': data37.asset['asset-tx-counter'],'Circulating Supply': data37.asset.params['circulating-supply'],
       'Total Supply': data37.asset.params['total'], '% in Circulation': (data37.asset.params['circulating-supply']/data37.asset.params['total']).toFixed(6)},
-      {'Element':'38', 'Unit Name': data38.asset.params['unit-name'], 'ID': data38.asset['index'], 'Created at Round': data38.asset['created-at-round'], 
+      {'Element':'38', 'Unit Name': data38.asset.params['unit-name'],'ID': data38.asset['index'], 'Created at Round': data38.asset['created-at-round'], 
       'Name': data38.asset.params['name'], 'Transactions Counter': data38.asset['asset-tx-counter'],'Circulating Supply': data38.asset.params['circulating-supply'],
       'Total Supply': data38.asset.params['total'], '% in Circulation': (data38.asset.params['circulating-supply']/data38.asset.params['total']).toFixed(6)},
-      {'Element':'39', 'Unit Name': data39.asset.params['unit-name'], 'ID': data39.asset['index'], 'Created at Round': data39.asset['created-at-round'], 
+      {'Element':'39', 'Unit Name': data39.asset.params['unit-name'],'ID': data39.asset['index'], 'Created at Round': data39.asset['created-at-round'], 
       'Name': data39.asset.params['name'], 'Transactions Counter': data39.asset['asset-tx-counter'],'Circulating Supply': data39.asset.params['circulating-supply'],
       'Total Supply': data39.asset.params['total'], '% in Circulation': (data39.asset.params['circulating-supply']/data39.asset.params['total']).toFixed(6)},
-      {'Element':'40', 'Unit Name': data40.asset.params['unit-name'], 'ID': data40.asset['index'], 'Created at Round': data40.asset['created-at-round'], 
+      {'Element':'40', 'Unit Name': data40.asset.params['unit-name'],'ID': data40.asset['index'], 'Created at Round': data40.asset['created-at-round'], 
       'Name': data40.asset.params['name'], 'Transactions Counter': data40.asset['asset-tx-counter'],'Circulating Supply': data40.asset.params['circulating-supply'],
       'Total Supply': data40.asset.params['total'], '% in Circulation': (data40.asset.params['circulating-supply']/data40.asset.params['total']).toFixed(6)},
-      {'Element':'41', 'Unit Name': data41.asset.params['unit-name'], 'ID': data41.asset['index'], 'Created at Round': data41.asset['created-at-round'], 
+      {'Element':'41', 'Unit Name': data41.asset.params['unit-name'],'ID': data41.asset['index'], 'Created at Round': data41.asset['created-at-round'], 
       'Name': data41.asset.params['name'], 'Transactions Counter': data41.asset['asset-tx-counter'],'Circulating Supply': data41.asset.params['circulating-supply'],
       'Total Supply': data41.asset.params['total'], '% in Circulation': (data41.asset.params['circulating-supply']/data41.asset.params['total']).toFixed(6)},
-      {'Element':'42', 'Unit Name': data42.asset.params['unit-name'], 'ID': data42.asset['index'], 'Created at Round': data42.asset['created-at-round'], 
+      {'Element':'42', 'Unit Name': data42.asset.params['unit-name'],'ID': data42.asset['index'], 'Created at Round': data42.asset['created-at-round'], 
       'Name': data42.asset.params['name'], 'Transactions Counter': data42.asset['asset-tx-counter'],'Circulating Supply': data42.asset.params['circulating-supply'],
       'Total Supply': data42.asset.params['total'], '% in Circulation': (data42.asset.params['circulating-supply']/data42.asset.params['total']).toFixed(6)},
-      {'Element':'43', 'Unit Name': data43.asset.params['unit-name'], 'ID': data43.asset['index'], 'Created at Round': data43.asset['created-at-round'], 
+      {'Element':'43', 'Unit Name': data43.asset.params['unit-name'],'ID': data43.asset['index'], 'Created at Round': data43.asset['created-at-round'], 
       'Name': data43.asset.params['name'], 'Transactions Counter': data43.asset['asset-tx-counter'],'Circulating Supply': data43.asset.params['circulating-supply'],
       'Total Supply': data43.asset.params['total'], '% in Circulation': (data43.asset.params['circulating-supply']/data43.asset.params['total']).toFixed(6)},
-      {'Element':'44', 'Unit Name': data44.asset.params['unit-name'], 'ID': data44.asset['index'], 'Created at Round': data44.asset['created-at-round'], 
+      {'Element':'44', 'Unit Name': data44.asset.params['unit-name'],'ID': data44.asset['index'], 'Created at Round': data44.asset['created-at-round'], 
       'Name': data44.asset.params['name'], 'Transactions Counter': data44.asset['asset-tx-counter'],'Circulating Supply': data44.asset.params['circulating-supply'],
       'Total Supply': data44.asset.params['total'], '% in Circulation': (data44.asset.params['circulating-supply']/data44.asset.params['total']).toFixed(6)},
-      {'Element':'45', 'Unit Name': data45.asset.params['unit-name'], 'ID': data45.asset['index'], 'Created at Round': data45.asset['created-at-round'], 
+      {'Element':'45', 'Unit Name': data45.asset.params['unit-name'],'ID': data45.asset['index'], 'Created at Round': data45.asset['created-at-round'], 
       'Name': data45.asset.params['name'], 'Transactions Counter': data45.asset['asset-tx-counter'],'Circulating Supply': data45.asset.params['circulating-supply'],
       'Total Supply': data45.asset.params['total'], '% in Circulation': (data45.asset.params['circulating-supply']/data45.asset.params['total']).toFixed(6)},
-      {'Element':'46', 'Unit Name': data46.asset.params['unit-name'], 'ID': data46.asset['index'], 'Created at Round': data46.asset['created-at-round'], 
+      {'Element':'46', 'Unit Name': data46.asset.params['unit-name'],'ID': data46.asset['index'], 'Created at Round': data46.asset['created-at-round'], 
       'Name': data46.asset.params['name'], 'Transactions Counter': data46.asset['asset-tx-counter'],'Circulating Supply': data46.asset.params['circulating-supply'],
       'Total Supply': data46.asset.params['total'], '% in Circulation': (data46.asset.params['circulating-supply']/data46.asset.params['total']).toFixed(6)},
-      {'Element':'47', 'Unit Name': data47.asset.params['unit-name'], 'ID': data47.asset['index'], 'Created at Round': data47.asset['created-at-round'], 
+      {'Element':'47', 'Unit Name': data47.asset.params['unit-name'],'ID': data47.asset['index'], 'Created at Round': data47.asset['created-at-round'], 
       'Name': data47.asset.params['name'], 'Transactions Counter': data47.asset['asset-tx-counter'],'Circulating Supply': data47.asset.params['circulating-supply'],
       'Total Supply': data47.asset.params['total'], '% in Circulation': (data47.asset.params['circulating-supply']/data47.asset.params['total']).toFixed(6)},
-      {'Element':'48', 'Unit Name': data48.asset.params['unit-name'], 'ID': data48.asset['index'], 'Created at Round': data48.asset['created-at-round'], 
+      {'Element':'48', 'Unit Name': data48.asset.params['unit-name'],'ID': data48.asset['index'], 'Created at Round': data48.asset['created-at-round'], 
       'Name': data48.asset.params['name'], 'Transactions Counter': data48.asset['asset-tx-counter'],'Circulating Supply': data48.asset.params['circulating-supply'],
       'Total Supply': data48.asset.params['total'], '% in Circulation': (data48.asset.params['circulating-supply']/data48.asset.params['total']).toFixed(6)},
-      {'Element':'49', 'Unit Name': data49.asset.params['unit-name'], 'ID': data49.asset['index'], 'Created at Round': data49.asset['created-at-round'], 
+      {'Element':'49', 'Unit Name': data49.asset.params['unit-name'],'ID': data49.asset['index'], 'Created at Round': data49.asset['created-at-round'], 
       'Name': data49.asset.params['name'], 'Transactions Counter': data49.asset['asset-tx-counter'],'Circulating Supply': data49.asset.params['circulating-supply'],
       'Total Supply': data49.asset.params['total'], '% in Circulation': (data49.asset.params['circulating-supply']/data49.asset.params['total']).toFixed(6)},
-      {'Element':'50', 'Unit Name': data50.asset.params['unit-name'], 'ID': data50.asset['index'], 'Created at Round': data50.asset['created-at-round'], 
+      {'Element':'50', 'Unit Name': data50.asset.params['unit-name'],'ID': data50.asset['index'], 'Created at Round': data50.asset['created-at-round'], 
       'Name': data50.asset.params['name'], 'Transactions Counter': data50.asset['asset-tx-counter'],'Circulating Supply': data50.asset.params['circulating-supply'],
       'Total Supply': data50.asset.params['total'], '% in Circulation': (data50.asset.params['circulating-supply']/data50.asset.params['total']).toFixed(6)},
-      {'Element':'51', 'Unit Name': data51.asset.params['unit-name'], 'ID': data51.asset['index'], 'Created at Round': data51.asset['created-at-round'], 
+      {'Element':'51', 'Unit Name': data51.asset.params['unit-name'],'ID': data51.asset['index'], 'Created at Round': data51.asset['created-at-round'], 
       'Name': data51.asset.params['name'], 'Transactions Counter': data51.asset['asset-tx-counter'],'Circulating Supply': data51.asset.params['circulating-supply'],
       'Total Supply': data51.asset.params['total'], '% in Circulation': (data51.asset.params['circulating-supply']/data51.asset.params['total']).toFixed(6)},
-      {'Element':'52', 'Unit Name': data52.asset.params['unit-name'], 'ID': data52.asset['index'], 'Created at Round': data52.asset['created-at-round'], 
+      {'Element':'52', 'Unit Name': data52.asset.params['unit-name'],'ID': data52.asset['index'], 'Created at Round': data52.asset['created-at-round'], 
       'Name': data52.asset.params['name'], 'Transactions Counter': data52.asset['asset-tx-counter'],'Circulating Supply': data52.asset.params['circulating-supply'],
       'Total Supply': data52.asset.params['total'], '% in Circulation': (data52.asset.params['circulating-supply']/data52.asset.params['total']).toFixed(6)}];            
             
