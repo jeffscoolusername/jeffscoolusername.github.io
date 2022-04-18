@@ -53,22 +53,18 @@ $(document)
     getJSON(url2,async function(err, data2){tb16 = data2.asset.params['unit-name'];tb17 = data2.asset['index'];tb18 = data2.asset['created-at-round'];
     tb19 = data2.asset.params['name'];tb20 = data2.asset['asset-tx-counter'];tb21 = data2.asset.params['circulating-supply'];tb22 = data2.asset.params['total'];
     tb23 = (data2.asset.params['circulating-supply']/data2.asset.params['total']).toFixed(2);})                
-    getJSON(url3,async function(err, data3) {
-    tb24 = data3.asset.params['unit-name'];tb25 = data3.asset['index'];tb26 = data3.asset['created-at-round'];
-    tb27 = data3.asset.params['name'];tb28 = data3.asset['asset-tx-counter'];tb29 = data3.asset.params['circulating-supply'];
-    tb30 = data3.asset.params['total'];tb31 = (data3.asset.params['circulating-supply']/data3.asset.params['total']).toFixed(2);})                      
-    getJSON(url4,async function(err, data4) {
-    tb32 = data4.asset.params['unit-name'];tb33 = data4.asset['index'];tb34 = data4.asset['created-at-round'];
-    tb35 = data4.asset.params['name'];tb36 = data4.asset['asset-tx-counter'];tb37 = data4.asset.params['circulating-supply'];
-    tb38 = data4.asset.params['total'];tb39 = (data4.asset.params['circulating-supply']/data4.asset.params['total']).toFixed(2);})  
-    getJSON(url5,async function(err, data5) {
-    tb40 = data5.asset.params['unit-name'];tb41 = data5.asset['index'];tb42 = data5.asset['created-at-round'];
-    tb43 = data5.asset.params['name'];tb44 = data5.asset['asset-tx-counter'];tb45 = data5.asset.params['circulating-supply'];
-    tb46 = data5.asset.params['total'];tb47 = (data5.asset.params['circulating-supply']/data5.asset.params['total']).toFixed(2);})          
-    getJSON(url6,async function(err, data6) {
-    tb48 = data6.asset.params['unit-name'];tb49 = data6.asset['index'];tb50 = data6.asset['created-at-round'];
-    tb51 = data6.asset.params['name'];tb52 = data6.asset['asset-tx-counter'];tb53 = data6.asset.params['circulating-supply'];
-    tb54 = data6.asset.params['total'];tb55 = (data6.asset.params['circulating-supply']/data6.asset.params['total']).toFixed(2);})   
+    getJSON(url3,async function(err, data3){tb24 = data3.asset.params['unit-name'];tb25 = data3.asset['index'];tb26 = data3.asset['created-at-round'];
+    tb27 = data3.asset.params['name'];tb28 = data3.asset['asset-tx-counter'];tb29 = data3.asset.params['circulating-supply'];tb30 = data3.asset.params['total'];
+    tb31 = (data3.asset.params['circulating-supply']/data3.asset.params['total']).toFixed(2);})                      
+    getJSON(url4,async function(err, data4){tb32 = data4.asset.params['unit-name'];tb33 = data4.asset['index'];tb34 = data4.asset['created-at-round'];
+    tb35 = data4.asset.params['name'];tb36 = data4.asset['asset-tx-counter'];tb37 = data4.asset.params['circulating-supply'];tb38 = data4.asset.params['total'];
+    tb39 = (data4.asset.params['circulating-supply']/data4.asset.params['total']).toFixed(2);})  
+    getJSON(url5,async function(err, data5){tb40 = data5.asset.params['unit-name'];tb41 = data5.asset['index'];tb42 = data5.asset['created-at-round'];
+    tb43 = data5.asset.params['name'];tb44 = data5.asset['asset-tx-counter'];tb45 = data5.asset.params['circulating-supply'];tb46 = data5.asset.params['total'];
+    tb47 = (data5.asset.params['circulating-supply']/data5.asset.params['total']).toFixed(2);})          
+    getJSON(url6,async function(err, data6){tb48 = data6.asset.params['unit-name'];tb49 = data6.asset['index'];tb50 = data6.asset['created-at-round'];
+    tb51 = data6.asset.params['name'];tb52 = data6.asset['asset-tx-counter'];tb53 = data6.asset.params['circulating-supply'];tb54 = data6.asset.params['total'];
+    tb55 = (data6.asset.params['circulating-supply']/data6.asset.params['total']).toFixed(2);})   
     getJSON(url7,async function(err, data7) {
     tb56 = data7.asset.params['unit-name'];tb57 = data7.asset['index'];tb58 = data7.asset['created-at-round'];
     tb59 = data7.asset.params['name'];tb60 = data7.asset['asset-tx-counter'];tb61 = data7.asset.params['circulating-supply'];
