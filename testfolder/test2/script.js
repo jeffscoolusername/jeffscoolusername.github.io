@@ -29,10 +29,10 @@ $(document)
     var url20 = api + '542132831';var url21 = api + '397629052';var url22 = api + '163650';var url23 = api + '393537671';var url24 = api + '540605589';
     var url25 = api + '233939122';var url26 = api + '470335962';var url27 = api + '382781470';var url28 = api + '469835031';var url29 = api + '615093377';
     var url30 = api + '473180477';var url31 = api + '478549868';var url32 = api + '401752010';var url33 = api + '251014570';var url34 = api + '342889824';
-    var url35 = api + '251014570';var url36 = api + '498684064';var url37 = api + '137020565';var url38 = api + '402495345';var url39 = api + '388592191';
-    var url40 = api + '297995609';var url41 = api + '585221469';var url42 = api + '571576867';var url43 = api + '281003266';var url44 = api + '435335235';
-    var url45 = api + '511491168';var url46 = api + '511491168';var url47 = api + '319473667';var url48 = api + '601894079';var url49 = api + '470842789';
-    var url50 = api + '391379500';var url51 = api + '591601798';var url52 = api + '393155456';
+    var url35 = api + '498684064';var url36 = api + '137020565';var url37 = api + '402495345';var url38 = api + '388592191';var url39 = api + '297995609';
+    var url40 = api + '585221469';var url41 = api + '571576867';var url42 = api + '281003266';var url43 = api + '435335235';var url44 = api + '511491168';
+    var url45 = api + '319473667';var url46 = api + '601894079';var url47 = api + '470842789';var url48 = api + '391379500';var url49 = api + '591601798';
+    var url50 = api + '393155456';var url51 = api + '406383570';var url52 = api + '547405153';
    
     var tb0,tb1,tb2,tb3,tb4,tb5,tb6,tb7,tb8,tb9,tb10,tb11,tb12,tb13,tb14,tb15,tb16,tb17,tb18,tb19,tb20,tb21,tb22,tb23,tb24,tb25,tb26,tb27,tb28,tb29,tb30,tb31, 
     tb32,tb33,tb34,tb35,tb36,tb37,tb38,tb39,tb40,tb41,tb42,tb43,tb44,tb45,tb46,tb47,tb48,tb49,tb50,tb51,tb52,tb53,tb54,tb55,tb56,tb57,tb58,tb59,tb60,tb61,tb62, 
