@@ -35,9 +35,8 @@ $(document)
    
     var tb0,tb1,tb2,tb3,tb4,tb5,tb6,tb7,tb8,tb9,tb10,tb11,tb12,tb13,tb14,tb15,tb16,tb17,tb18,tb19,tb20,tb21,tb22,tb23,tb24,tb25,tb26,tb27,tb28,tb29,tb30,tb31, 
     tb32,tb33,tb34,tb35,tb36,tb37,tb38,tb39,tb40,tb41,tb42,tb43,tb44,tb45,tb46,tb47,tb48,tb49,tb50,tb51,tb52,tb53,tb54,tb55,tb56,tb57,tb58,tb59,tb60,tb61,tb62, 
-    tb63 = loading;
+    tb63,tb64,tb65,tb66,tb67 = loading;
     
-    var tb64 = loading;var tb65 = loading;var tb66 = loading;var tb67 = loading;
     var tb68 = loading;var tb69 = loading;var tb70 = loading;var tb71 = loading;
     var tb72 = loading;var tb73 = loading;var tb74 = loading;var tb75 = loading;
     var tb76 = loading;var tb77 = loading;var tb78 = loading;var tb79 = loading;
@@ -89,13 +88,13 @@ $(document)
 
     //Wall of API calls - Todo: Make this more efficient
     getJSON(url0,async function(err, data0){
-    tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
-    tb3 = data0.asset.params['name'];tb4 = data0.asset['asset-tx-counter'];tb5 = data0.asset.params['circulating-supply'];
-    tb6 = data0.asset.params['total'];tb7 = (data0.asset.params['circulating-supply']/data0.asset.params['total']).toFixed(2);})                
+    tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];tb3 = data0.asset.params['name'];
+    tb4 = data0.asset['asset-tx-counter'];tb5 = data0.asset.params['circulating-supply'];tb6 = data0.asset.params['total'];
+    tb7 = (data0.asset.params['circulating-supply']/data0.asset.params['total']).toFixed(2);})                
     getJSON(url1,async function(err, data1){
-    tb8 = data1.asset.params['unit-name'];tb9 = data1.asset['index'];tb10 = data1.asset['created-at-round'];
-    tb11 = data1.asset.params['name'];tb12 = data1.asset['asset-tx-counter'];tb13 = data1.asset.params['circulating-supply'];
-    tb14 = data1.asset.params['total'];tb15 = (data1.asset.params['circulating-supply']/data1.asset.params['total']).toFixed(2);})            
+    tb8 = data1.asset.params['unit-name'];tb9 = data1.asset['index'];tb10 = data1.asset['created-at-round'];tb11 = data1.asset.params['name'];
+    tb12 = data1.asset['asset-tx-counter'];tb13 = data1.asset.params['circulating-supply'];tb14 = data1.asset.params['total'];
+    tb15 = (data1.asset.params['circulating-supply']/data1.asset.params['total']).toFixed(2);})            
     getJSON(url2,async function(err, data2){
     tb16 = data2.asset.params['unit-name'];tb17 = data2.asset['index'];tb18 = data2.asset['created-at-round'];
     tb19 = data2.asset.params['name'];tb20 = data2.asset['asset-tx-counter'];tb21 = data2.asset.params['circulating-supply'];
@@ -122,7 +121,7 @@ $(document)
     tb62 = data7.asset.params['total'];tb63 = (data7.asset.params['circulating-supply']/data7.asset.params['total']).toFixed(2);})
     getJSON(url8,async function(err, data8) {
     tb64 = data8.asset.params['unit-name'];tb65 = data8.asset['index'];tb66 = data8.asset['created-at-round'];
-    tb67 = data8.asset.params['name'];tb60 = data8.asset['asset-tx-counter'];tb69 = data8.asset.params['circulating-supply'];
+    tb67 = data8.asset.params['name'];tb68 = data8.asset['asset-tx-counter'];tb69 = data8.asset.params['circulating-supply'];
     tb70 = data8.asset.params['total'];tb71 = (data8.asset.params['circulating-supply']/data8.asset.params['total']).toFixed(2);})
     getJSON(url9,async function(err, data9) {
     tb72 = data9.asset.params['unit-name'];tb73 = data9.asset['index'];tb74 = data9.asset['created-at-round'];
@@ -287,8 +286,6 @@ $(document)
       {'Element':'19', 'Unit Name': tb152, 'ID': tb153, 'Created at Round': tb154, 
       'Name': tb155, 'Transactions Counter': tb156,'Circulating Supply': tb157,
       'Total Supply': tb158, '% in Circulation': tb159 + '%'},
-
-
       {'Element':'20', 'Unit Name': tb160, 'ID': tb161, 'Created at Round': tb162, 
       'Name': tb163, 'Transactions Counter': tb164, 'Circulating Supply': tb165,
       'Total Supply': tb166, '% in Circulation': tb167 + '%'},
@@ -303,8 +300,6 @@ $(document)
       'Total Supply': tb190, '% in Circulation': tb191 + '%'},
       {'Element':'24', 'Unit Name': tb192, 'ID': tb193, 'Created at Round': tb194, 
       'Name': tb195, 'Transactions Counter': tb196,'Circulating Supply': tb197,
-
-
       'Total Supply': tb198, '% in Circulation': tb199 + '%'},
       {'Element':'25', 'Unit Name': tb200, 'ID': tb201, 'Created at Round': tb202, 
       'Name': tb203, 'Transactions Counter': tb204,'Circulating Supply': tb205,
