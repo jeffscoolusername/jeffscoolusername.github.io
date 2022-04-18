@@ -229,12 +229,10 @@ $(document)
 
     // The array
     var jsObj = [
-      {'Element':'0', 'Unit Name': tb0, 'ID': tb1, 'Created at Round': tb2,      
-      'Name': tb3, 'Transactions Counter': tb4, 'Circulating Supply': tb5,
-      'Total Supply': tb6, '% in Circulation': tb7 + '%'},
-      {'Element':'1', 'Unit Name': tb8, 'ID': tb9, 'Created at Round':tb10, 
-      'Name': tb11, 'Transactions Counter': tb12, 'Circulating Supply': tb13,
-      'Total Supply': tb14, '% in Circulation': tb15 + '%'},
+      {'Element':'0','Unit Name': tb0,'ID': tb1,'Created at Round': tb2,'Name': tb3,'Transactions Counter': tb4,'Circulating Supply': tb5,'Total Supply': tb6,
+      '% in Circulation': tb7 + '%'},
+      {'Element':'1','Unit Name': tb8,'ID': tb9,'Created at Round':tb10,'Name': tb11,'Transactions Counter': tb12,'Circulating Supply': tb13,'Total Supply': tb14,
+      '% in Circulation': tb15 + '%'},
       {'Element':'2', 'Unit Name': tb16, 'ID': tb17, 'Created at Round': tb18, 
       'Name': tb19, 'Transactions Counter':tb20, 'Circulating Supply': tb21,
       'Total Supply': tb22, '% in Circulation': tb23 + '%'},
