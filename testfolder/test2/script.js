@@ -43,7 +43,7 @@ $(document)
     tb173,tb174,tb175,tb176,tb177,tb178,tb179,tb180,tb181,tb182,tb183,tb184,tb185,tb186,tb187,tb188,tb189,tb190,tb191,tb192,tb193,tb194,tb195,tb196,tb197,tb198,
     tb199,tb200,tb201,tb202,tb203,tb204,tb205,tb206,tb207,tb208,tb209,tb210,tb211,tb212,tb213,tb214,tb215,tb216,tb217,tb218,tb219,tb220,tb221,tb222,tb223,tb224,
     tb225,tb226,tb227,tb228,tb229,tb230,tb231,tb232,tb233,tb234,tb235,tb236,tb237,tb238,tb239,tb240,tb241,tb242,tb243,tb244,tb245,tb246,tb247,tb248,tb249,tb250,
-    tb251,tb252,tb253,tb254,tb255,tb256,tb257,tb258,tb259,tb260,tb261,tb262,tb263  = 'loading';
+    tb251,tb252,tb253,tb254,tb255,tb256,tb257,tb258,tb259,tb260,tb261,tb262,tb263 = 'loading';
 
     //Wall of API calls - Todo: Make this more efficient
     getJSON(url0,async function(err, data0){tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
