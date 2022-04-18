@@ -69,6 +69,8 @@ $(document)
     var tonybaloney108 = 'loading';var tonybaloney109 = 'loading';var tonybaloney110 = 'loading';var tonybaloney111 = 'loading';
     var tonybaloney112 = 'loading';var tonybaloney113 = 'loading';var tonybaloney114 = 'loading';var tonybaloney115 = 'loading';
     var tonybaloney116 = 'loading';var tonybaloney117 = 'loading';var tonybaloney118 = 'loading';var tonybaloney119 = 'loading';
+    var tonybaloney120 = 'loading';var tonybaloney121 = 'loading';var tonybaloney122 = 'loading';var tonybaloney123 = 'loading';
+    var tonybaloney124 = 'loading';var tonybaloney125 = 'loading';var tonybaloney126 = 'loading';var tonybaloney127 = 'loading';
 
 
     //Wall of API calls - Todo: Make this more efficient
@@ -132,11 +134,15 @@ $(document)
     tonybaloney112 = data14.asset.params['unit-name'];tonybaloney113 = data14.asset['index'];tonybaloney114 = data14.asset['created-at-round'];
     tonybaloney115 = data14.asset.params['name'];tonybaloney116 = data14.asset['asset-tx-counter'];tonybaloney117 = data14.asset.params['circulating-supply'];
     tonybaloney118 = data14.asset.params['total'];tonybaloney119 = (data14.asset.params['circulating-supply']/data14.asset.params['total']).toFixed(2);})
+    getJSON(url15,async function(err, data15) {
+    tonybaloney120 = data15.asset.params['unit-name'];tonybaloney121 = data15.asset['index'];tonybaloney122 = data15.asset['created-at-round'];
+    tonybaloney123 = data15.asset.params['name'];tonybaloney124 = data15.asset['asset-tx-counter'];tonybaloney125 = data15.asset.params['circulating-supply'];
+    tonybaloney126 = data15.asset.params['total'];tonybaloney127 = (data15.asset.params['circulating-supply']/data15.asset.params['total']).toFixed(2);})
         
         
         
         
-        getJSON(url15,async function(err, data15) {getJSON(url16,
+        getJSON(url16,
     async function(err, data16) {getJSON(url17,async function(err, data17) {getJSON(url18,async function(err, data18) {getJSON(url19,async function(err, data19) {getJSON(url20,
     async function(err, data20) {getJSON(url21,async function(err, data21) {getJSON(url22,async function(err, data22) {getJSON(url23,async function(err, data23) {getJSON(url24,
     async function(err, data24) {getJSON(url25,async function(err, data25) {getJSON(url26,async function(err, data26) {getJSON(url27,async function(err, data27) {getJSON(url28,
@@ -196,9 +202,9 @@ $(document)
       {'Element':'14', 'Unit Name': tonybaloney112, 'ID': tonybaloney113, 'Created at Round': tonybaloney114, 
       'Name': tonybaloney115, 'Transactions Counter': tonybaloney116, 'Circulating Supply': tonybaloney117,
       'Total Supply': tonybaloney118, '% in Circulation': tonybaloney119 + '%'},
-      {'Element':'15', 'Unit Name': data15.asset.params['unit-name'], 'ID': data15.asset['index'], 'Created at Round': data15.asset['created-at-round'], 
-      'Name': data15.asset.params['name'], 'Transactions Counter': data15.asset['asset-tx-counter'], 'Circulating Supply': data15.asset.params['circulating-supply'],
-      'Total Supply': data15.asset.params['total'], '% in Circulation': (data15.asset.params['circulating-supply']/data15.asset.params['total']).toFixed(2) + '%'},
+      {'Element':'15', 'Unit Name': tonybaloney120, 'ID': tonybaloney121, 'Created at Round': tonybaloney122, 
+      'Name': tonybaloney123, 'Transactions Counter': tonybaloney124, 'Circulating Supply': tonybaloney125,
+      'Total Supply': tonybaloney126, '% in Circulation': tonybaloney127 + '%'},
       {'Element':'16', 'Unit Name': data16.asset.params['unit-name'], 'ID': data16.asset['index'], 'Created at Round': data16.asset['created-at-round'], 
       'Name': data16.asset.params['name'], 'Transactions Counter': data16.asset['asset-tx-counter'],'Circulating Supply': data16.asset.params['circulating-supply'],
       'Total Supply': data16.asset.params['total'], '% in Circulation': (data16.asset.params['circulating-supply']/data16.asset.params['total']).toFixed(2) + '%'},
@@ -334,6 +340,6 @@ $(document)
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
-      }); }); }); }); }); }); });
+      }); }); }); }); }); });
          
     }) })
