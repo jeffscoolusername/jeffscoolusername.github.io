@@ -81,9 +81,6 @@ $(document)
     var tb248 = loading;var tb249 = loading;var tb250 = loading;var tb251 = loading;
     var tb252 = loading;var tb253 = loading;var tb254 = loading;var tb255 = loading;
 
-    var unitName = 'Unit Name';
-
-
     //Wall of API calls - Todo: Make this more efficient
     getJSON(url0,async function(err, data0){tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
     tb3 = data0.asset.params['name'];tb4 = data0.asset['asset-tx-counter'];tb5 = data0.asset.params['circulating-supply'];tb6 = data0.asset.params['total'];
