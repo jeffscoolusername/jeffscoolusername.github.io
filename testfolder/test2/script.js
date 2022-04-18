@@ -46,7 +46,7 @@ $(document)
     //Wall of API calls - Todo: Make this more efficient
     getJSON(url0,async function(err, data0){tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
     tb3 = data0.asset.params['name'];tb4 = data0.asset['asset-tx-counter'];tb5 = data0.asset.params['circulating-supply'];
-    tb6 = data0.asset.params['total'];tb7 = (data0.asset.params['circulating-supply']/data0.asset.params['total']).toFixed(2);})                
+    tb6 = data0.asset.params['total'];tb7 = ((data0.asset.params['circulating-supply']/data0.asset.params['total'])*100).toFixed(3);})                
     getJSON(url1,async function(err, data1){tb8 = data1.asset.params['unit-name'];tb9 = data1.asset['index'];tb10 = data1.asset['created-at-round'];
     tb11 = data1.asset.params['name'];tb12 = data1.asset['asset-tx-counter'];tb13 = data1.asset.params['circulating-supply'];
     tb14 = data1.asset.params['total'];tb15 = (data1.asset.params['circulating-supply']/data1.asset.params['total']).toFixed(2);})            
