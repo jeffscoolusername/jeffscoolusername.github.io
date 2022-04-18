@@ -63,6 +63,8 @@ $(document)
     var tonybaloney84 = 'loading';var tonybaloney85 = 'loading';var tonybaloney86 = 'loading';var tonybaloney87 = 'loading';
     var tonybaloney88 = 'loading';var tonybaloney89 = 'loading';var tonybaloney90 = 'loading';var tonybaloney91 = 'loading';
     var tonybaloney92 = 'loading';var tonybaloney93 = 'loading';var tonybaloney94 = 'loading';var tonybaloney95 = 'loading';
+    var tonybaloney96 = 'loading';var tonybaloney97 = 'loading';var tonybaloney98 = 'loading';var tonybaloney99 = 'loading';
+    var tonybaloney100 = 'loading';var tonybaloney101 = 'loading';var tonybaloney102 = 'loading';var tonybaloney103 = 'loading';
 
 
     //Wall of API calls - Todo: Make this more efficient
@@ -114,11 +116,14 @@ $(document)
     tonybaloney88 = data11.asset.params['unit-name'];tonybaloney89 = data11.asset['index'];tonybaloney90 = data11.asset['created-at-round'];
     tonybaloney91 = data11.asset.params['name'];tonybaloney92 = data11.asset['asset-tx-counter'];tonybaloney93 = data11.asset.params['circulating-supply'];
     tonybaloney94 = data11.asset.params['total'];tonybaloney95 = (data11.asset.params['circulating-supply']/data11.asset.params['total']).toFixed(2);})
+    getJSON(url12,async function(err, data12) {
+    tonybaloney96 = data12.asset.params['unit-name'];tonybaloney97 = data12.asset['index'];tonybaloney98 = data12.asset['created-at-round'];
+    tonybaloney99 = data12.asset.params['name'];tonybaloney100 = data12.asset['asset-tx-counter'];tonybaloney101 = data12.asset.params['circulating-supply'];
+    tonybaloney102 = data12.asset.params['total'];tonybaloney103 = (data12.asset.params['circulating-supply']/data12.asset.params['total']).toFixed(2);})
         
         
         
-        getJSON(url12,
-    async function(err, data12) {getJSON(url13,async function(err, data13) {getJSON(url14,async function(err, data14) {getJSON(url15,async function(err, data15) {getJSON(url16,
+        getJSON(url13,async function(err, data13) {getJSON(url14,async function(err, data14) {getJSON(url15,async function(err, data15) {getJSON(url16,
     async function(err, data16) {getJSON(url17,async function(err, data17) {getJSON(url18,async function(err, data18) {getJSON(url19,async function(err, data19) {getJSON(url20,
     async function(err, data20) {getJSON(url21,async function(err, data21) {getJSON(url22,async function(err, data22) {getJSON(url23,async function(err, data23) {getJSON(url24,
     async function(err, data24) {getJSON(url25,async function(err, data25) {getJSON(url26,async function(err, data26) {getJSON(url27,async function(err, data27) {getJSON(url28,
@@ -169,9 +174,9 @@ $(document)
       {'Element':'11', 'Unit Name': tonybaloney88, 'ID': tonybaloney89, 'Created at Round': tonybaloney90, 
       'Name': tonybaloney91, 'Transactions Counter': tonybaloney92, 'Circulating Supply': tonybaloney93,
       'Total Supply': tonybaloney94, '% in Circulation': tonybaloney95 + '%'},
-      {'Element':'12', 'Unit Name': data12.asset.params['unit-name'], 'ID': data12.asset['index'], 'Created at Round': data12.asset['created-at-round'], 
-      'Name': data12.asset.params['name'], 'Transactions Counter': data12.asset['asset-tx-counter'], 'Circulating Supply': data12.asset.params['circulating-supply'],
-      'Total Supply': data12.asset.params['total'], '% in Circulation': (data12.asset.params['circulating-supply']/data12.asset.params['total']).toFixed(2) + '%'},
+      {'Element':'12', 'Unit Name': tonybaloney96, 'ID': tonybaloney97, 'Created at Round': tonybaloney98, 
+      'Name': tonybaloney99, 'Transactions Counter': tonybaloney100, 'Circulating Supply': tonybaloney101,
+      'Total Supply': tonybaloney102, '% in Circulation': tonybaloney103 + '%'},
       {'Element':'13', 'Unit Name': data13.asset.params['unit-name'], 'ID': data13.asset['index'], 'Created at Round': data13.asset['created-at-round'], 
       'Name': data13.asset.params['name'], 'Transactions Counter': data13.asset['asset-tx-counter'], 'Circulating Supply': data13.asset.params['circulating-supply'],
       'Total Supply': data13.asset.params['total'], '% in Circulation': (data13.asset.params['circulating-supply']/data13.asset.params['total']).toFixed(2) + '%'},
@@ -316,6 +321,6 @@ $(document)
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
-      }); }); }); }); }); }); }); }); }); }); 
+      }); }); }); }); }); }); }); }); });
          
     }) })
