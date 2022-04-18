@@ -91,6 +91,8 @@ $(document)
     var tonybaloney196 = 'loading';var tonybaloney197 = 'loading';var tonybaloney198 = 'loading';var tonybaloney199 = 'loading';
     var tonybaloney200 = 'loading';var tonybaloney201 = 'loading';var tonybaloney202 = 'loading';var tonybaloney203 = 'loading';
     var tonybaloney204 = 'loading';var tonybaloney205 = 'loading';var tonybaloney206 = 'loading';var tonybaloney207 = 'loading';
+    var tonybaloney208 = 'loading';var tonybaloney209 = 'loading';var tonybaloney210 = 'loading';var tonybaloney211 = 'loading';
+    var tonybaloney212 = 'loading';var tonybaloney213 = 'loading';var tonybaloney214 = 'loading';var tonybaloney215 = 'loading';
 
 
     //Wall of API calls - Todo: Make this more efficient
@@ -198,10 +200,14 @@ $(document)
     tonybaloney200 = data25.asset.params['unit-name'];tonybaloney201 = data25.asset['index'];tonybaloney202 = data25.asset['created-at-round'];
     tonybaloney203 = data25.asset.params['name'];tonybaloney204 = data25.asset['asset-tx-counter'];tonybaloney205 = data25.asset.params['circulating-supply'];
     tonybaloney206 = data25.asset.params['total'];tonybaloney207 = (data25.asset.params['circulating-supply']/data25.asset.params['total']).toFixed(2);})
+    getJSON(url26,async function(err, data26) {
+    tonybaloney208 = data26.asset.params['unit-name'];tonybaloney209 = data26.asset['index'];tonybaloney210 = data26.asset['created-at-round'];
+    tonybaloney211 = data26.asset.params['name'];tonybaloney212 = data26.asset['asset-tx-counter'];tonybaloney213 = data26.asset.params['circulating-supply'];
+    tonybaloney214 = data26.asset.params['total'];tonybaloney215 = (data26.asset.params['circulating-supply']/data26.asset.params['total']).toFixed(2);})
         
         
         
-        getJSON(url26,async function(err, data26) {getJSON(url27,async function(err, data27) {getJSON(url28,
+        getJSON(url27,async function(err, data27) {getJSON(url28,
     async function(err, data28) {getJSON(url29,async function(err, data29) {getJSON(url30,async function(err, data30) {getJSON(url31,async function(err, data31) {getJSON(url32,
     async function(err, data32) {getJSON(url33,async function(err, data33) {getJSON(url34,async function(err, data34) {getJSON(url35,async function(err, data35) {getJSON(url36,
     async function(err, data36) {getJSON(url37,async function(err, data37) {getJSON(url38,async function(err, data38) {getJSON(url39,async function(err, data39) {getJSON(url40,
@@ -291,9 +297,9 @@ $(document)
       {'Element':'25', 'Unit Name': tonybaloney199, 'ID': tonybaloney200, 'Created at Round': tonybaloney201, 
       'Name': tonybaloney202, 'Transactions Counter': tonybaloney203,'Circulating Supply': tonybaloney204,
       'Total Supply': tonybaloney205, '% in Circulation': tonybaloney206 + '%'},
-      {'Element':'26', 'Unit Name': data26.asset.params['unit-name'], 'ID': data26.asset['index'], 'Created at Round': data26.asset['created-at-round'], 
-      'Name': data26.asset.params['name'], 'Transactions Counter': data26.asset['asset-tx-counter'],'Circulating Supply': data26.asset.params['circulating-supply'],
-      'Total Supply': data26.asset.params['total'], '% in Circulation': (data26.asset.params['circulating-supply']/data26.asset.params['total']).toFixed(2) + '%'},
+      {'Element':'26', 'Unit Name': tonybaloney207, 'ID': tonybaloney208, 'Created at Round': tonybaloney209, 
+      'Name': tonybaloney210, 'Transactions Counter': tonybaloney211,'Circulating Supply': tonybaloney212,
+      'Total Supply': tonybaloney213, '% in Circulation': tonybaloney214 + '%'},
       {'Element':'27', 'Unit Name': data27.asset.params['unit-name'], 'ID': data27.asset['index'], 'Created at Round': data27.asset['created-at-round'], 
       'Name': data27.asset.params['name'], 'Transactions Counter': data27.asset['asset-tx-counter'],'Circulating Supply': data27.asset.params['circulating-supply'],
       'Total Supply': data27.asset.params['total'], '% in Circulation': (data27.asset.params['circulating-supply']/data27.asset.params['total']).toFixed(2) + '%'},
@@ -395,6 +401,6 @@ $(document)
 
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
-      }); }); }); }); }); });
+      }); }); }); }); });
          
     }) })
