@@ -35,12 +35,8 @@ $(document)
    
     var tb0,tb1,tb2,tb3,tb4,tb5,tb6,tb7,tb8,tb9,tb10,tb11,tb12,tb13,tb14,tb15,tb16,tb17,tb18,tb19,tb20,tb21,tb22,tb23,tb24,tb25,tb26,tb27,tb28,tb29,tb30,tb31, 
     tb32,tb33,tb34,tb35,tb36,tb37,tb38,tb39,tb40,tb41,tb42,tb43,tb44,tb45,tb46,tb47,tb48,tb49,tb50,tb51,tb52,tb53,tb54,tb55,tb56,tb57,tb58,tb59,tb60,tb61,tb62, 
-    tb63,tb64,tb65,tb66,tb67 = loading;
+    tb63,tb64,tb65,tb66,tb67,tb68,tb69,tb70,tb71,tb72,tb73,tb74,tb75,tb76,tb77,tb78,tb79,tb80,tb81,tb82,tb83 = loading;
     
-    var tb68 = loading;var tb69 = loading;var tb70 = loading;var tb71 = loading;
-    var tb72 = loading;var tb73 = loading;var tb74 = loading;var tb75 = loading;
-    var tb76 = loading;var tb77 = loading;var tb78 = loading;var tb79 = loading;
-    var tb80 = loading;var tb81 = loading;var tb82 = loading;var tb83 = loading;
     var tb84 = loading;var tb85 = loading;var tb86 = loading;var tb87 = loading;
     var tb88 = loading;var tb89 = loading;var tb90 = loading;var tb91 = loading;
     var tb92 = loading;var tb93 = loading;var tb94 = loading;var tb95 = loading;
@@ -85,20 +81,19 @@ $(document)
     var tb248 = loading;var tb249 = loading;var tb250 = loading;var tb251 = loading;
     var tb252 = loading;var tb253 = loading;var tb254 = loading;var tb255 = loading;
 
+    var unitName = 'Unit Name';
+
 
     //Wall of API calls - Todo: Make this more efficient
-    getJSON(url0,async function(err, data0){
-    tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];tb3 = data0.asset.params['name'];
-    tb4 = data0.asset['asset-tx-counter'];tb5 = data0.asset.params['circulating-supply'];tb6 = data0.asset.params['total'];
+    getJSON(url0,async function(err, data0){tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
+    tb3 = data0.asset.params['name'];tb4 = data0.asset['asset-tx-counter'];tb5 = data0.asset.params['circulating-supply'];tb6 = data0.asset.params['total'];
     tb7 = (data0.asset.params['circulating-supply']/data0.asset.params['total']).toFixed(2);})                
-    getJSON(url1,async function(err, data1){
-    tb8 = data1.asset.params['unit-name'];tb9 = data1.asset['index'];tb10 = data1.asset['created-at-round'];tb11 = data1.asset.params['name'];
-    tb12 = data1.asset['asset-tx-counter'];tb13 = data1.asset.params['circulating-supply'];tb14 = data1.asset.params['total'];
+    getJSON(url1,async function(err, data1){tb8 = data1.asset.params['unit-name'];tb9 = data1.asset['index'];tb10 = data1.asset['created-at-round'];
+    tb11 = data1.asset.params['name'];tb12 = data1.asset['asset-tx-counter'];tb13 = data1.asset.params['circulating-supply'];tb14 = data1.asset.params['total'];
     tb15 = (data1.asset.params['circulating-supply']/data1.asset.params['total']).toFixed(2);})            
-    getJSON(url2,async function(err, data2){
-    tb16 = data2.asset.params['unit-name'];tb17 = data2.asset['index'];tb18 = data2.asset['created-at-round'];
-    tb19 = data2.asset.params['name'];tb20 = data2.asset['asset-tx-counter'];tb21 = data2.asset.params['circulating-supply'];
-    tb22 = data2.asset.params['total'];tb23 = (data2.asset.params['circulating-supply']/data2.asset.params['total']).toFixed(2);})                
+    getJSON(url2,async function(err, data2){tb16 = data2.asset.params['unit-name'];tb17 = data2.asset['index'];tb18 = data2.asset['created-at-round'];
+    tb19 = data2.asset.params['name'];tb20 = data2.asset['asset-tx-counter'];tb21 = data2.asset.params['circulating-supply'];tb22 = data2.asset.params['total'];
+    tb23 = (data2.asset.params['circulating-supply']/data2.asset.params['total']).toFixed(2);})                
     getJSON(url3,async function(err, data3) {
     tb24 = data3.asset.params['unit-name'];tb25 = data3.asset['index'];tb26 = data3.asset['created-at-round'];
     tb27 = data3.asset.params['name'];tb28 = data3.asset['asset-tx-counter'];tb29 = data3.asset.params['circulating-supply'];
@@ -215,7 +210,7 @@ $(document)
     tb248 = data31.asset.params['unit-name'];tb249 = data31.asset['index'];tb250 = data31.asset['created-at-round'];
     tb251 = data31.asset.params['name'];tb252 = data31.asset['asset-tx-counter'];tb253 = data31.asset.params['circulating-supply'];
     tb254 = data31.asset.params['total'];tb255 = (data31.asset.params['circulating-supply']/data31.asset.params['total']).toFixed(2);})
-        
+    
         
         getJSON(url32,
     async function(err, data32) {getJSON(url33,async function(err, data33) {getJSON(url34,async function(err, data34) {getJSON(url35,async function(err, data35) {getJSON(url36,
@@ -228,10 +223,10 @@ $(document)
 
     // The array
     var jsObj = [
-      {'Element':'0','Unit Name': tb0,'ID': tb1,'Created at Round': tb2,'Name': tb3,'Transactions Counter': tb4,'Circulating Supply': tb5,'Total Supply': tb6,
-      '% in Circulation': tb7 + '%'},
-      {'Element':'1','Unit Name': tb8,'ID': tb9,'Created at Round':tb10,'Name': tb11,'Transactions Counter': tb12,'Circulating Supply': tb13,'Total Supply': tb14,
-      '% in Circulation': tb15 + '%'},
+      {'Element':'0','Unit Name': tb0,'ID': tb1,'Created at Round': tb2,'Name': tb3,'Transactions Counter': tb4,'Circulating Supply': tb5,
+      'Total Supply': tb6,'% in Circulation': tb7 + '%'},
+      {'Element':'1','Unit Name': tb8,'ID': tb9,'Created at Round':tb10,'Name': tb11,'Transactions Counter': tb12,'Circulating Supply': tb13,
+      'Total Supply': tb14,'% in Circulation': tb15 + '%'},
       {'Element':'2', 'Unit Name': tb16, 'ID': tb17, 'Created at Round': tb18, 
       'Name': tb19, 'Transactions Counter':tb20, 'Circulating Supply': tb21,
       'Total Supply': tb22, '% in Circulation': tb23 + '%'},
