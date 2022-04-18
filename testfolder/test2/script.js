@@ -37,9 +37,8 @@ $(document)
     tb32,tb33,tb34,tb35,tb36,tb37,tb38,tb39,tb40,tb41,tb42,tb43,tb44,tb45,tb46,tb47,tb48,tb49,tb50,tb51,tb52,tb53,tb54,tb55,tb56,tb57,tb58,tb59,tb60,tb61,tb62, 
     tb63,tb64,tb65,tb66,tb67,tb68,tb69,tb70,tb71,tb72,tb73,tb74,tb75,tb76,tb77,tb78,tb79,tb80,tb81,tb82,tb83,tb84,tb85,tb86,tb87,tb88,tb89,tb90,tb91,tb92,tb93,
     tb94,tb95,tb96,tb97,tb98,tb99,tb100,tb101,tb102,tb103,tb104,tb105,tb106,tb107,tb108,tb109,tb110,tb111,tb112,tb113,tb114,tb115,tb116,tb117,tb118,tb119,tb120,
-    tb121,tb122,tb123,tb124,tb125,tb126,tb127,tb128,tb129,tb130,tb131 = loading;
+    tb121,tb122,tb123,tb124,tb125,tb126,tb127,tb128,tb129,tb130,tb131,tb132,tb133,tb134,tb135 = loading;
 
-    var tb132 = loading;var tb133 = loading;var tb134 = loading;var tb135 = loading;
     var tb136 = loading;var tb137 = loading;var tb138 = loading;var tb139 = loading;
     var tb140 = loading;var tb141 = loading;var tb142 = loading;var tb143 = loading;
     var tb144 = loading;var tb145 = loading;var tb146 = loading;var tb147 = loading;
