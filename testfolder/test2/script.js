@@ -40,13 +40,9 @@ $(document)
     tb121,tb122,tb123,tb124,tb125,tb126,tb127,tb128,tb129,tb130,tb131,tb132,tb133,tb134,tb135,tb136,tb137,tb138,tb139,tb140,tb141,tb142,tb143,tb144,tb145,tb146,
     tb147,tb148,tb149,tb150,tb151,tb152,tb153,tb154,tb155,tb156,tb157,tb158,tb159,tb160,tb161,tb162,tb163,tb164,tb165,tb166,tb167,tb168,tb169,tb170,tb171,tb172,
     tb173,tb174,tb175,tb176,tb177,tb178,tb179,tb180,tb181,tb182,tb183,tb184,tb185,tb186,tb187,tb188,tb189,tb190,tb191,tb192,tb193,tb194,tb195,tb196,tb197,tb198,
-    tb199,tb200,tb201,tb202,tb203,tb204,tb205,tb206,tb207,tb208,tb209,tb210,tb211,tb212,tb213,tb214,tb215 = loading;
+    tb199,tb200,tb201,tb202,tb203,tb204,tb205,tb206,tb207,tb208,tb209,tb210,tb211,tb212,tb213,tb214,tb215,tb216,tb217,tb218,tb219,tb220,tb221,tb222,tb223,tb224,
+    tb225,tb226,tb227,tb228,tb229,tb230,tb231,tb232,tb233,tb234,tb235 = loading;
 
-    var tb216 = loading;var tb217 = loading;var tb218 = loading;var tb219 = loading;
-    var tb220 = loading;var tb221 = loading;var tb222 = loading;var tb223 = loading;
-    var tb224 = loading;var tb225 = loading;var tb226 = loading;var tb227 = loading;
-    var tb228 = loading;var tb229 = loading;var tb230 = loading;var tb231 = loading;
-    var tb232 = loading;var tb233 = loading;var tb234 = loading;var tb235 = loading;
     var tb236 = loading;var tb237 = loading;var tb238 = loading;var tb239 = loading;
     var tb240 = loading;var tb241 = loading;var tb242 = loading;var tb243 = loading;
     var tb244 = loading;var tb245 = loading;var tb246 = loading;var tb247 = loading;
