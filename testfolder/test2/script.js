@@ -41,13 +41,8 @@ $(document)
     tb147,tb148,tb149,tb150,tb151,tb152,tb153,tb154,tb155,tb156,tb157,tb158,tb159,tb160,tb161,tb162,tb163,tb164,tb165,tb166,tb167,tb168,tb169,tb170,tb171,tb172,
     tb173,tb174,tb175,tb176,tb177,tb178,tb179,tb180,tb181,tb182,tb183,tb184,tb185,tb186,tb187,tb188,tb189,tb190,tb191,tb192,tb193,tb194,tb195,tb196,tb197,tb198,
     tb199,tb200,tb201,tb202,tb203,tb204,tb205,tb206,tb207,tb208,tb209,tb210,tb211,tb212,tb213,tb214,tb215,tb216,tb217,tb218,tb219,tb220,tb221,tb222,tb223,tb224,
-    tb225,tb226,tb227,tb228,tb229,tb230,tb231,tb232,tb233,tb234,tb235 = loading;
-
-    var tb236 = loading;var tb237 = loading;var tb238 = loading;var tb239 = loading;
-    var tb240 = loading;var tb241 = loading;var tb242 = loading;var tb243 = loading;
-    var tb244 = loading;var tb245 = loading;var tb246 = loading;var tb247 = loading;
-    var tb248 = loading;var tb249 = loading;var tb250 = loading;var tb251 = loading;
-    var tb252 = loading;var tb253 = loading;var tb254 = loading;var tb255 = loading;
+    tb225,tb226,tb227,tb228,tb229,tb230,tb231,tb232,tb233,tb234,tb235,tb236,tb237,tb238,tb239,tb240,tb241,tb242,tb243,tb244,tb245,tb246,tb247,tb248,tb249,tb250,
+    tb251,tb252,tb253,tb254,tb255  = loading;
 
     //Wall of API calls - Todo: Make this more efficient
     getJSON(url0,async function(err, data0){tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
