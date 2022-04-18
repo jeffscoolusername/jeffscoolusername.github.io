@@ -21,6 +21,8 @@ $(document)
     var api = 'https://indexer.algoexplorerapi.io/v2/assets/';
     //Disable alerts
     window.alert = function() {};
+    //Slow down for the API
+    const delay = ms => new Promise(res => setTimeout(res, ms));
 
     var url0 = api + '397111682';var url1 = api + '353409462';var url2 = api + '430838314';var url3 = api + '226265212';var url4 = api + '555540865';
     var url5 = api + '426526699';var url6 = api + '393495312';var url7 = api + '305992851';var url8 = api + '453816186';var url9 = api + '457205263';
@@ -43,121 +45,121 @@ $(document)
     tb173,tb174,tb175,tb176,tb177,tb178,tb179,tb180,tb181,tb182,tb183,tb184,tb185,tb186,tb187,tb188,tb189,tb190,tb191,tb192,tb193,tb194,tb195,tb196,tb197,tb198,
     tb199,tb200,tb201,tb202,tb203,tb204,tb205,tb206,tb207,tb208,tb209,tb210,tb211,tb212,tb213,tb214,tb215,tb216,tb217,tb218,tb219,tb220,tb221,tb222,tb223,tb224,
     tb225,tb226,tb227,tb228,tb229,tb230,tb231,tb232,tb233,tb234,tb235,tb236,tb237,tb238,tb239,tb240,tb241,tb242,tb243,tb244,tb245,tb246,tb247,tb248,tb249,tb250,
-    tb251,tb252,tb253,tb254,tb255,tb256,tb257,tb258,tb259,tb260,tb261,tb262,tb263 = 'loading';
+    tb251,tb252,tb253,tb254,tb255,tb256,tb257,tb258,tb259,tb260,tb261,tb262,tb263,tb264,tb265,tb266,tb267,tb268,tb269,tb270,tb271 = 'loading';
 
     //Wall of API calls - Todo: Make this more efficient
-    getJSON(url0,function(err, data0){tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
+    getJSON(url0,async function(err, data0){tb0 = data0.asset.params['unit-name'];tb1 = data0.asset['index'];tb2 = data0.asset['created-at-round'];
     tb3 = data0.asset.params['name'];tb4 = data0.asset['asset-tx-counter'];tb5 = data0.asset.params['circulating-supply'];
     tb6 = data0.asset.params['total'];tb7 = ((data0.asset.params['circulating-supply']/data0.asset.params['total'])*100).toFixed(6);})                
-    getJSON(url1,function(err, data1){tb8 = data1.asset.params['unit-name'];tb9 = data1.asset['index'];tb10 = data1.asset['created-at-round'];
+    getJSON(url1,async function(err, data1){tb8 = data1.asset.params['unit-name'];tb9 = data1.asset['index'];tb10 = data1.asset['created-at-round'];
     tb11 = data1.asset.params['name'];tb12 = data1.asset['asset-tx-counter'];tb13 = data1.asset.params['circulating-supply'];
     tb14 = data1.asset.params['total'];tb15 = ((data1.asset.params['circulating-supply']/data1.asset.params['total'])*100).toFixed(6);})            
-    getJSON(url2,function(err, data2){tb16 = data2.asset.params['unit-name'];tb17 = data2.asset['index'];tb18 = data2.asset['created-at-round'];
+    getJSON(url2,async function(err, data2){tb16 = data2.asset.params['unit-name'];tb17 = data2.asset['index'];tb18 = data2.asset['created-at-round'];
     tb19 = data2.asset.params['name'];tb20 = data2.asset['asset-tx-counter'];tb21 = data2.asset.params['circulating-supply'];
     tb22 = data2.asset.params['total'];tb23 = ((data2.asset.params['circulating-supply']/data2.asset.params['total'])*100).toFixed(6);})                
-    getJSON(url3,function(err, data3){tb24 = data3.asset.params['unit-name'];tb25 = data3.asset['index'];tb26 = data3.asset['created-at-round'];
+    getJSON(url3,async function(err, data3){tb24 = data3.asset.params['unit-name'];tb25 = data3.asset['index'];tb26 = data3.asset['created-at-round'];
     tb27 = data3.asset.params['name'];tb28 = data3.asset['asset-tx-counter'];tb29 = data3.asset.params['circulating-supply'];
     tb30 = data3.asset.params['total'];tb31 = ((data3.asset.params['circulating-supply']/data3.asset.params['total'])*100).toFixed(6);})                      
-    getJSON(url4,function(err, data4){tb32 = data4.asset.params['unit-name'];tb33 = data4.asset['index'];tb34 = data4.asset['created-at-round'];
+    getJSON(url4,async function(err, data4){tb32 = data4.asset.params['unit-name'];tb33 = data4.asset['index'];tb34 = data4.asset['created-at-round'];
     tb35 = data4.asset.params['name'];tb36 = data4.asset['asset-tx-counter'];tb37 = data4.asset.params['circulating-supply'];
     tb38 = data4.asset.params['total'];tb39 = ((data4.asset.params['circulating-supply']/data4.asset.params['total'])*100).toFixed(6);})  
-    getJSON(url5,function(err, data5){tb40 = data5.asset.params['unit-name'];tb41 = data5.asset['index'];tb42 = data5.asset['created-at-round'];
+    getJSON(url5,async function(err, data5){tb40 = data5.asset.params['unit-name'];tb41 = data5.asset['index'];tb42 = data5.asset['created-at-round'];
     tb43 = data5.asset.params['name'];tb44 = data5.asset['asset-tx-counter'];tb45 = data5.asset.params['circulating-supply'];
     tb46 = data5.asset.params['total'];tb47 = ((data5.asset.params['circulating-supply']/data5.asset.params['total'])*100).toFixed(6);})          
-    getJSON(url6,function(err, data6){tb48 = data6.asset.params['unit-name'];tb49 = data6.asset['index'];tb50 = data6.asset['created-at-round'];
+    getJSON(url6,async function(err, data6){tb48 = data6.asset.params['unit-name'];tb49 = data6.asset['index'];tb50 = data6.asset['created-at-round'];
     tb51 = data6.asset.params['name'];tb52 = data6.asset['asset-tx-counter'];tb53 = data6.asset.params['circulating-supply'];
     tb54 = data6.asset.params['total'];tb55 = ((data6.asset.params['circulating-supply']/data6.asset.params['total'])*100).toFixed(6);})   
-    getJSON(url7,function(err, data7){tb56 = data7.asset.params['unit-name'];tb57 = data7.asset['index'];tb58 = data7.asset['created-at-round'];
+    getJSON(url7,async function(err, data7){tb56 = data7.asset.params['unit-name'];tb57 = data7.asset['index'];tb58 = data7.asset['created-at-round'];
     tb59 = data7.asset.params['name'];tb60 = data7.asset['asset-tx-counter'];tb61 = data7.asset.params['circulating-supply'];
     tb62 = data7.asset.params['total'];tb63 = ((data7.asset.params['circulating-supply']/data7.asset.params['total'])*100).toFixed(6);})
-    getJSON(url8,function(err, data8){tb64 = data8.asset.params['unit-name'];tb65 = data8.asset['index'];tb66 = data8.asset['created-at-round'];
+    getJSON(url8,async function(err, data8){tb64 = data8.asset.params['unit-name'];tb65 = data8.asset['index'];tb66 = data8.asset['created-at-round'];
     tb67 = data8.asset.params['name'];tb68 = data8.asset['asset-tx-counter'];tb69 = data8.asset.params['circulating-supply'];
     tb70 = data8.asset.params['total'];tb71 = ((data8.asset.params['circulating-supply']/data8.asset.params['total'])*100).toFixed(6);})
-    getJSON(url9,function(err, data9){tb72 = data9.asset.params['unit-name'];tb73 = data9.asset['index'];tb74 = data9.asset['created-at-round'];
+    getJSON(url9,async function(err, data9){tb72 = data9.asset.params['unit-name'];tb73 = data9.asset['index'];tb74 = data9.asset['created-at-round'];
     tb75 = data9.asset.params['name'];tb76 = data9.asset['asset-tx-counter'];tb77 = data9.asset.params['circulating-supply'];
     tb78 = data9.asset.params['total'];tb79 = ((data9.asset.params['circulating-supply']/data9.asset.params['total'])*100).toFixed(6);})
-    getJSON(url10,function(err, data10){tb80 = data10.asset.params['unit-name'];tb81 = data10.asset['index'];tb82 = data10.asset['created-at-round'];
+    getJSON(url10,async function(err, data10){tb80 = data10.asset.params['unit-name'];tb81 = data10.asset['index'];tb82 = data10.asset['created-at-round'];
     tb83 = data10.asset.params['name'];tb84 = data10.asset['asset-tx-counter'];tb85 = data10.asset.params['circulating-supply'];
     tb86 = data10.asset.params['total'];tb87 = ((data10.asset.params['circulating-supply']/data10.asset.params['total'])*100).toFixed(6);})
-    getJSON(url11,function(err, data11){tb88 = data11.asset.params['unit-name'];tb89 = data11.asset['index'];tb90 = data11.asset['created-at-round'];
+    getJSON(url11,async function(err, data11){tb88 = data11.asset.params['unit-name'];tb89 = data11.asset['index'];tb90 = data11.asset['created-at-round'];
     tb91 = data11.asset.params['name'];tb92 = data11.asset['asset-tx-counter'];tb93 = data11.asset.params['circulating-supply'];
     tb94 = data11.asset.params['total'];tb95 = ((data11.asset.params['circulating-supply']/data11.asset.params['total'])*100).toFixed(6);})
-    getJSON(url12,function(err, data12){tb96 = data12.asset.params['unit-name'];tb97 = data12.asset['index'];tb98 = data12.asset['created-at-round'];
+    getJSON(url12,async function(err, data12){tb96 = data12.asset.params['unit-name'];tb97 = data12.asset['index'];tb98 = data12.asset['created-at-round'];
     tb99 = data12.asset.params['name'];tb100 = data12.asset['asset-tx-counter'];tb101 = data12.asset.params['circulating-supply'];
     tb102 = data12.asset.params['total'];tb103 = ((data12.asset.params['circulating-supply']/data12.asset.params['total'])*100).toFixed(6);})
-    getJSON(url13,function(err, data13){tb104 = data13.asset.params['unit-name'];tb105 = data13.asset['index'];tb106 = data13.asset['created-at-round'];
+    getJSON(url13,async function(err, data13){tb104 = data13.asset.params['unit-name'];tb105 = data13.asset['index'];tb106 = data13.asset['created-at-round'];
     tb107 = data13.asset.params['name'];tb108 = data13.asset['asset-tx-counter'];tb109 = data13.asset.params['circulating-supply'];
     tb110 = data13.asset.params['total'];tb111 = ((data13.asset.params['circulating-supply']/data13.asset.params['total'])*100).toFixed(6);})
-    getJSON(url14,function(err, data14){tb112 = data14.asset.params['unit-name'];tb113 = data14.asset['index'];tb114 = data14.asset['created-at-round'];
+    getJSON(url14,async function(err, data14){tb112 = data14.asset.params['unit-name'];tb113 = data14.asset['index'];tb114 = data14.asset['created-at-round'];
     tb115 = data14.asset.params['name'];tb116 = data14.asset['asset-tx-counter'];tb117 = data14.asset.params['circulating-supply'];
     tb118 = data14.asset.params['total'];tb119 = ((data14.asset.params['circulating-supply']/data14.asset.params['total'])*100).toFixed(6);})
-    getJSON(url15,function(err, data15){tb120 = data15.asset.params['unit-name'];tb121 = data15.asset['index'];tb122 = data15.asset['created-at-round'];
+    getJSON(url15,async function(err, data15){tb120 = data15.asset.params['unit-name'];tb121 = data15.asset['index'];tb122 = data15.asset['created-at-round'];
     tb123 = data15.asset.params['name'];tb124 = data15.asset['asset-tx-counter'];tb125 = data15.asset.params['circulating-supply'];
     tb126 = data15.asset.params['total'];tb127 = ((data15.asset.params['circulating-supply']/data15.asset.params['total'])*100).toFixed(6);})
-    getJSON(url16,function(err, data16){tb128 = data16.asset.params['unit-name'];tb129 = data16.asset['index'];tb130 = data16.asset['created-at-round'];
+    getJSON(url16,async function(err, data16){tb128 = data16.asset.params['unit-name'];tb129 = data16.asset['index'];tb130 = data16.asset['created-at-round'];
     tb131 = data16.asset.params['name'];tb132 = data16.asset['asset-tx-counter'];tb133 = data16.asset.params['circulating-supply'];
     tb134 = data16.asset.params['total'];tb135 = ((data16.asset.params['circulating-supply']/data16.asset.params['total']*100)).toFixed(6);})
-    getJSON(url17,function(err, data17){tb136 = data17.asset.params['unit-name'];tb137 = data17.asset['index'];tb138 = data17.asset['created-at-round'];
+    getJSON(url17,async function(err, data17){tb136 = data17.asset.params['unit-name'];tb137 = data17.asset['index'];tb138 = data17.asset['created-at-round'];
     tb139 = data17.asset.params['name'];tb140 = data17.asset['asset-tx-counter'];tb141 = data17.asset.params['circulating-supply'];
     tb142 = data17.asset.params['total'];tb143 = ((data17.asset.params['circulating-supply']/data17.asset.params['total']*100)).toFixed(6);})
-    getJSON(url18,function(err, data18){tb144 = data18.asset.params['unit-name'];tb145 = data18.asset['index'];tb146 = data18.asset['created-at-round'];
+    getJSON(url18,async function(err, data18){tb144 = data18.asset.params['unit-name'];tb145 = data18.asset['index'];tb146 = data18.asset['created-at-round'];
     tb147 = data18.asset.params['name'];tb148 = data18.asset['asset-tx-counter'];tb149 = data18.asset.params['circulating-supply'];
     tb150 = data18.asset.params['total'];tb151 = ((data18.asset.params['circulating-supply']/data18.asset.params['total']*100)).toFixed(6);})
-    getJSON(url19,function(err, data19){tb152 = data19.asset.params['unit-name'];tb153 = data19.asset['index'];tb154 = data19.asset['created-at-round'];
+    getJSON(url19,async function(err, data19){tb152 = data19.asset.params['unit-name'];tb153 = data19.asset['index'];tb154 = data19.asset['created-at-round'];
     tb155 = data19.asset.params['name'];tb156 = data19.asset['asset-tx-counter'];tb157 = data19.asset.params['circulating-supply'];
     tb158 = data19.asset.params['total'];tb159 = ((data19.asset.params['circulating-supply']/data19.asset.params['total']*100)).toFixed(6);})
-    getJSON(url20,function(err, data20){tb160 = data20.asset.params['unit-name'];tb161 = data20.asset['index'];tb162 = data20.asset['created-at-round'];
+    getJSON(url20,async function(err, data20){tb160 = data20.asset.params['unit-name'];tb161 = data20.asset['index'];tb162 = data20.asset['created-at-round'];
     tb163 = data20.asset.params['name'];tb164 = data20.asset['asset-tx-counter'];tb165 = data20.asset.params['circulating-supply'];
     tb166 = data20.asset.params['total'];tb167 = ((data20.asset.params['circulating-supply']/data20.asset.params['total']*100)).toFixed(6);})
-    getJSON(url21,function(err, data21){tb168 = data21.asset.params['unit-name'];tb169 = data21.asset['index'];tb170 = data21.asset['created-at-round'];
+    getJSON(url21,async function(err, data21){tb168 = data21.asset.params['unit-name'];tb169 = data21.asset['index'];tb170 = data21.asset['created-at-round'];
     tb171 = data21.asset.params['name'];tb172 = data21.asset['asset-tx-counter'];tb173 = data21.asset.params['circulating-supply'];
     tb174 = data21.asset.params['total'];tb175 = ((data21.asset.params['circulating-supply']/data21.asset.params['total']*100)).toFixed(6);})
-    getJSON(url22,function(err, data22){tb176 = data22.asset.params['unit-name'];tb177 = data22.asset['index'];tb178 = data22.asset['created-at-round'];
+    getJSON(url22,async function(err, data22){tb176 = data22.asset.params['unit-name'];tb177 = data22.asset['index'];tb178 = data22.asset['created-at-round'];
     tb179 = data22.asset.params['name'];tb180 = data22.asset['asset-tx-counter'];tb181 = data22.asset.params['circulating-supply'];
     tb182 = data22.asset.params['total'];tb183 = ((data22.asset.params['circulating-supply']/data22.asset.params['total']*100)).toFixed(6);})
-    getJSON(url23,function(err, data23){tb184 = data23.asset.params['unit-name'];tb185 = data23.asset['index'];tb186 = data23.asset['created-at-round'];
+    getJSON(url23,async function(err, data23){tb184 = data23.asset.params['unit-name'];tb185 = data23.asset['index'];tb186 = data23.asset['created-at-round'];
     tb187 = data23.asset.params['name'];tb188 = data23.asset['asset-tx-counter'];tb189 = data23.asset.params['circulating-supply'];
     tb190 = data23.asset.params['total'];tb191 = ((data23.asset.params['circulating-supply']/data23.asset.params['total']*100)).toFixed(6);})
-    getJSON(url24,function(err, data24){tb192 = data24.asset.params['unit-name'];tb193 = data24.asset['index'];tb194 = data24.asset['created-at-round'];
+    getJSON(url24,async function(err, data24){tb192 = data24.asset.params['unit-name'];tb193 = data24.asset['index'];tb194 = data24.asset['created-at-round'];
     tb195 = data24.asset.params['name'];tb196 = data24.asset['asset-tx-counter'];tb197 = data24.asset.params['circulating-supply'];
     tb198 = data24.asset.params['total'];tb199 = ((data24.asset.params['circulating-supply']/data24.asset.params['total']*100)).toFixed(6);})
-    getJSON(url25,function(err, data25){tb200 = data25.asset.params['unit-name'];tb201 = data25.asset['index'];tb202 = data25.asset['created-at-round'];
+    getJSON(url25,async function(err, data25){tb200 = data25.asset.params['unit-name'];tb201 = data25.asset['index'];tb202 = data25.asset['created-at-round'];
     tb203 = data25.asset.params['name'];tb204 = data25.asset['asset-tx-counter'];tb205 = data25.asset.params['circulating-supply'];
     tb206 = data25.asset.params['total'];tb207 = ((data25.asset.params['circulating-supply']/data25.asset.params['total']*100)).toFixed(6);})
-    getJSON(url26,function(err, data26){tb208 = data26.asset.params['unit-name'];tb209 = data26.asset['index'];tb210 = data26.asset['created-at-round'];
+    getJSON(url26,async function(err, data26){tb208 = data26.asset.params['unit-name'];tb209 = data26.asset['index'];tb210 = data26.asset['created-at-round'];
     tb211 = data26.asset.params['name'];tb212 = data26.asset['asset-tx-counter'];tb213 = data26.asset.params['circulating-supply'];
     tb214 = data26.asset.params['total'];tb215 = ((data26.asset.params['circulating-supply']/data26.asset.params['total']*100)).toFixed(6);})
-    getJSON(url27,function(err, data27){tb216 = data27.asset.params['unit-name'];tb217 = data27.asset['index'];tb218 = data27.asset['created-at-round'];
+    getJSON(url27,async function(err, data27){tb216 = data27.asset.params['unit-name'];tb217 = data27.asset['index'];tb218 = data27.asset['created-at-round'];
     tb219 = data27.asset.params['name'];tb220 = data27.asset['asset-tx-counter'];tb221 = data27.asset.params['circulating-supply'];
     tb222 = data27.asset.params['total'];tb223 = ((data27.asset.params['circulating-supply']/data27.asset.params['total']*100)).toFixed(6);})
-    getJSON(url28,function(err, data28){tb224 = data28.asset.params['unit-name'];tb225 = data28.asset['index'];tb226 = data28.asset['created-at-round'];
+    getJSON(url28,async function(err, data28){tb224 = data28.asset.params['unit-name'];tb225 = data28.asset['index'];tb226 = data28.asset['created-at-round'];
     tb227 = data28.asset.params['name'];tb228 = data28.asset['asset-tx-counter'];tb229 = data28.asset.params['circulating-supply'];
     tb230 = data28.asset.params['total'];tb231 = ((data28.asset.params['circulating-supply']/data28.asset.params['total']*100)).toFixed(6);})
-    getJSON(url29,function(err, data29){tb232 = data29.asset.params['unit-name'];tb233 = data29.asset['index'];tb234 = data29.asset['created-at-round'];
+    getJSON(url29,async function(err, data29){tb232 = data29.asset.params['unit-name'];tb233 = data29.asset['index'];tb234 = data29.asset['created-at-round'];
     tb235 = data29.asset.params['name'];tb236 = data29.asset['asset-tx-counter'];tb237 = data29.asset.params['circulating-supply'];
     tb238 = data29.asset.params['total'];tb239 = ((data29.asset.params['circulating-supply']/data29.asset.params['total']*100)).toFixed(6);})
-    getJSON(url30,function(err, data30){tb240 = data30.asset.params['unit-name'];tb241 = data30.asset['index'];tb242 = data30.asset['created-at-round'];
+    getJSON(url30,async function(err, data30){tb240 = data30.asset.params['unit-name'];tb241 = data30.asset['index'];tb242 = data30.asset['created-at-round'];
     tb243 = data30.asset.params['name'];tb244 = data30.asset['asset-tx-counter'];tb245 = data30.asset.params['circulating-supply'];
     tb246 = data30.asset.params['total'];tb247 = ((data30.asset.params['circulating-supply']/data30.asset.params['total']*100)).toFixed(6);})
-    getJSON(url31,function(err, data31){tb248 = data31.asset.params['unit-name'];tb249 = data31.asset['index'];tb250 = data31.asset['created-at-round'];
+    getJSON(url31,async function(err, data31){tb248 = data31.asset.params['unit-name'];tb249 = data31.asset['index'];tb250 = data31.asset['created-at-round'];
     tb251 = data31.asset.params['name'];tb252 = data31.asset['asset-tx-counter'];tb253 = data31.asset.params['circulating-supply'];
     tb254 = data31.asset.params['total'];tb255 = ((data31.asset.params['circulating-supply']/data31.asset.params['total']*100)).toFixed(6);})
-    getJSON(url32,function(err, data32) {tb256 = data32.asset.params['unit-name'];tb257 = data32.asset['index'];tb258 = data32.asset['created-at-round'];
+    getJSON(url32,async function(err, data32) {tb256 = data32.asset.params['unit-name'];tb257 = data32.asset['index'];tb258 = data32.asset['created-at-round'];
     tb259 = data32.asset.params['name'];tb260 = data32.asset['asset-tx-counter'];tb261 = data32.asset.params['circulating-supply'];
     tb262 = data32.asset.params['total'];tb263 = ((data32.asset.params['circulating-supply']/data32.asset.params['total']*100)).toFixed(6);})
-    getJSON(url33,function(err, data33) {tb264 = data33.asset.params['unit-name'];tb265 = data33.asset['index'];tb266 = data33.asset['created-at-round'];
+    getJSON(url33,async function(err, data33) {tb264 = data33.asset.params['unit-name'];tb265 = data33.asset['index'];tb266 = data33.asset['created-at-round'];
     tb267 = data33.asset.params['name'];tb268 = data33.asset['asset-tx-counter'];tb269 = data33.asset.params['circulating-supply'];
     tb270 = data33.asset.params['total'];tb271 = ((data33.asset.params['circulating-supply']/data33.asset.params['total']*100)).toFixed(6);})
         
         
         
         
-        getJSON(url34,function(err, data34) {getJSON(url35,function(err, data35) {getJSON(url36,
-    function(err, data36) {getJSON(url37,function(err, data37) {getJSON(url38,function(err, data38) {getJSON(url39,function(err, data39) {getJSON(url40,
-    function(err, data40) {getJSON(url41,function(err, data41) {getJSON(url42,function(err, data42) {getJSON(url43,function(err, data43) {getJSON(url44,
-    function(err, data44) {getJSON(url45,function(err, data45) {getJSON(url46,function(err, data46) {getJSON(url47,function(err, data47) {getJSON(url48,
-    function(err, data48) {getJSON(url49,function(err, data49) {getJSON(url50,function(err, data50) {getJSON(url51,function(err, data51) {getJSON(url52,
-    function(err, data52) { 
+        getJSON(url34,async function(err, data34) {getJSON(url35,async function(err, data35) {getJSON(url36,
+    async function(err, data36) {getJSON(url37,async function(err, data37) {getJSON(url38,async function(err, data38) {getJSON(url39,async function(err, data39) {getJSON(url40,
+    async function(err, data40) {getJSON(url41,async function(err, data41) {getJSON(url42,async function(err, data42) {getJSON(url43,async function(err, data43) {getJSON(url44,
+    async function(err, data44) {getJSON(url45,async function(err, data45) {getJSON(url46,async function(err, data46) {getJSON(url47,async function(err, data47) {getJSON(url48,
+    async function(err, data48) {getJSON(url49,async function(err, data49) {getJSON(url50,async function(err, data50) {getJSON(url51,async function(err, data51) {getJSON(url52,
+    async function(err, data52) { 
 
 
     // The array
@@ -189,7 +191,7 @@ $(document)
       {'Element':'12','Unit Name': tb96,'ID': tb97,'Created at Round': tb98,'Name': tb99,'Transactions Counter': tb100,'Circulating Supply': tb101,
       'Total Supply': tb102,'% in Circulation': tb103},
       {'Element':'13','Unit Name': tb104,'ID': tb105,'Created at Round': tb106,'Name': tb107,'Transactions Counter': tb108,'Circulating Supply': tb109,
-      'Total Supply': tb110,'% in Circulation': tb111},
+      'Total Supply': tb110, '% in Circulation': tb111},
       {'Element':'14','Unit Name': tb112,'ID': tb113,'Created at Round': tb114,'Name': tb115,'Transactions Counter': tb116,'Circulating Supply': tb117,
       'Total Supply': tb118,'% in Circulation': tb119},
       {'Element':'15','Unit Name': tb120,'ID': tb121,'Created at Round': tb122,'Name': tb123,'Transactions Counter': tb124,'Circulating Supply': tb125,
@@ -231,63 +233,65 @@ $(document)
       {'Element':'33','Unit Name': tb264,'ID': tb265,'Created at Round': tb266,'Name': tb267,'Transactions Counter': tb268,'Circulating Supply': tb269,
       'Total Supply': tb270,'% in Circulation': tb271},
       {'Element':'34','Unit Name': data34.asset.params['unit-name'],'ID': data34.asset['index'], 'Created at Round': data34.asset['created-at-round'], 
-      'Name': data34.asset.params['name'],'Transactions Counter': data34.asset['asset-tx-counter'],'Circulating Supply': data34.asset.params['circulating-supply'],
-      'Total Supply': data34.asset.params['total'],'% in Circulation': (data34.asset.params['circulating-supply']/data34.asset.params['total']).toFixed(6)},
+      'Name': data34.asset.params['name'], 'Transactions Counter': data34.asset['asset-tx-counter'],'Circulating Supply': data34.asset.params['circulating-supply'],
+      'Total Supply': data34.asset.params['total'], '% in Circulation': (data34.asset.params['circulating-supply']/data34.asset.params['total']).toFixed(6)},
       {'Element':'35','Unit Name': data35.asset.params['unit-name'],'ID': data35.asset['index'], 'Created at Round': data35.asset['created-at-round'], 
-      'Name': data35.asset.params['name'],'Transactions Counter': data35.asset['asset-tx-counter'],'Circulating Supply': data35.asset.params['circulating-supply'],
-      'Total Supply': data35.asset.params['total'],'% in Circulation': (data35.asset.params['circulating-supply']/data35.asset.params['total']).toFixed(6)},
+      'Name': data35.asset.params['name'], 'Transactions Counter': data35.asset['asset-tx-counter'],'Circulating Supply': data35.asset.params['circulating-supply'],
+      'Total Supply': data35.asset.params['total'], '% in Circulation': (data35.asset.params['circulating-supply']/data35.asset.params['total']).toFixed(6)},
       {'Element':'36','Unit Name': data36.asset.params['unit-name'],'ID': data36.asset['index'], 'Created at Round': data36.asset['created-at-round'], 
-      'Name': data36.asset.params['name'],'Transactions Counter': data36.asset['asset-tx-counter'],'Circulating Supply': data36.asset.params['circulating-supply'],
-      'Total Supply': data36.asset.params['total'],'% in Circulation': (data36.asset.params['circulating-supply']/data36.asset.params['total']).toFixed(6)},
+      'Name': data36.asset.params['name'], 'Transactions Counter': data36.asset['asset-tx-counter'],'Circulating Supply': data36.asset.params['circulating-supply'],
+      'Total Supply': data36.asset.params['total'], '% in Circulation': (data36.asset.params['circulating-supply']/data36.asset.params['total']).toFixed(6)},
       {'Element':'37','Unit Name': data37.asset.params['unit-name'],'ID': data37.asset['index'], 'Created at Round': data37.asset['created-at-round'], 
-      'Name': data37.asset.params['name'],'Transactions Counter': data37.asset['asset-tx-counter'],'Circulating Supply': data37.asset.params['circulating-supply'],
-      'Total Supply': data37.asset.params['total'],'% in Circulation': (data37.asset.params['circulating-supply']/data37.asset.params['total']).toFixed(6)},
+      'Name': data37.asset.params['name'], 'Transactions Counter': data37.asset['asset-tx-counter'],'Circulating Supply': data37.asset.params['circulating-supply'],
+      'Total Supply': data37.asset.params['total'], '% in Circulation': (data37.asset.params['circulating-supply']/data37.asset.params['total']).toFixed(6)},
       {'Element':'38','Unit Name': data38.asset.params['unit-name'],'ID': data38.asset['index'], 'Created at Round': data38.asset['created-at-round'], 
-      'Name': data38.asset.params['name'],'Transactions Counter': data38.asset['asset-tx-counter'],'Circulating Supply': data38.asset.params['circulating-supply'],
-      'Total Supply': data38.asset.params['total'],'% in Circulation': (data38.asset.params['circulating-supply']/data38.asset.params['total']).toFixed(6)},
+      'Name': data38.asset.params['name'], 'Transactions Counter': data38.asset['asset-tx-counter'],'Circulating Supply': data38.asset.params['circulating-supply'],
+      'Total Supply': data38.asset.params['total'], '% in Circulation': (data38.asset.params['circulating-supply']/data38.asset.params['total']).toFixed(6)},
       {'Element':'39','Unit Name': data39.asset.params['unit-name'],'ID': data39.asset['index'], 'Created at Round': data39.asset['created-at-round'], 
-      'Name': data39.asset.params['name'],'Transactions Counter': data39.asset['asset-tx-counter'],'Circulating Supply': data39.asset.params['circulating-supply'],
-      'Total Supply': data39.asset.params['total'],'% in Circulation': (data39.asset.params['circulating-supply']/data39.asset.params['total']).toFixed(6)},
+      'Name': data39.asset.params['name'], 'Transactions Counter': data39.asset['asset-tx-counter'],'Circulating Supply': data39.asset.params['circulating-supply'],
+      'Total Supply': data39.asset.params['total'], '% in Circulation': (data39.asset.params['circulating-supply']/data39.asset.params['total']).toFixed(6)},
       {'Element':'40','Unit Name': data40.asset.params['unit-name'],'ID': data40.asset['index'], 'Created at Round': data40.asset['created-at-round'], 
-      'Name': data40.asset.params['name'],'Transactions Counter': data40.asset['asset-tx-counter'],'Circulating Supply': data40.asset.params['circulating-supply'],
-      'Total Supply': data40.asset.params['total'],'% in Circulation': (data40.asset.params['circulating-supply']/data40.asset.params['total']).toFixed(6)},
+      'Name': data40.asset.params['name'], 'Transactions Counter': data40.asset['asset-tx-counter'],'Circulating Supply': data40.asset.params['circulating-supply'],
+      'Total Supply': data40.asset.params['total'], '% in Circulation': (data40.asset.params['circulating-supply']/data40.asset.params['total']).toFixed(6)},
       {'Element':'41','Unit Name': data41.asset.params['unit-name'],'ID': data41.asset['index'], 'Created at Round': data41.asset['created-at-round'], 
-      'Name': data41.asset.params['name'],'Transactions Counter': data41.asset['asset-tx-counter'],'Circulating Supply': data41.asset.params['circulating-supply'],
-      'Total Supply': data41.asset.params['total'],'% in Circulation': (data41.asset.params['circulating-supply']/data41.asset.params['total']).toFixed(6)},
+      'Name': data41.asset.params['name'], 'Transactions Counter': data41.asset['asset-tx-counter'],'Circulating Supply': data41.asset.params['circulating-supply'],
+      'Total Supply': data41.asset.params['total'], '% in Circulation': (data41.asset.params['circulating-supply']/data41.asset.params['total']).toFixed(6)},
       {'Element':'42','Unit Name': data42.asset.params['unit-name'],'ID': data42.asset['index'], 'Created at Round': data42.asset['created-at-round'], 
-      'Name': data42.asset.params['name'],'Transactions Counter': data42.asset['asset-tx-counter'],'Circulating Supply': data42.asset.params['circulating-supply'],
-      'Total Supply': data42.asset.params['total'],'% in Circulation': (data42.asset.params['circulating-supply']/data42.asset.params['total']).toFixed(6)},
+      'Name': data42.asset.params['name'], 'Transactions Counter': data42.asset['asset-tx-counter'],'Circulating Supply': data42.asset.params['circulating-supply'],
+      'Total Supply': data42.asset.params['total'], '% in Circulation': (data42.asset.params['circulating-supply']/data42.asset.params['total']).toFixed(6)},
       {'Element':'43','Unit Name': data43.asset.params['unit-name'],'ID': data43.asset['index'], 'Created at Round': data43.asset['created-at-round'], 
-      'Name': data43.asset.params['name'],'Transactions Counter': data43.asset['asset-tx-counter'],'Circulating Supply': data43.asset.params['circulating-supply'],
-      'Total Supply': data43.asset.params['total'],'% in Circulation': (data43.asset.params['circulating-supply']/data43.asset.params['total']).toFixed(6)},
+      'Name': data43.asset.params['name'], 'Transactions Counter': data43.asset['asset-tx-counter'],'Circulating Supply': data43.asset.params['circulating-supply'],
+      'Total Supply': data43.asset.params['total'], '% in Circulation': (data43.asset.params['circulating-supply']/data43.asset.params['total']).toFixed(6)},
       {'Element':'44','Unit Name': data44.asset.params['unit-name'],'ID': data44.asset['index'], 'Created at Round': data44.asset['created-at-round'], 
-      'Name': data44.asset.params['name'],'Transactions Counter': data44.asset['asset-tx-counter'],'Circulating Supply': data44.asset.params['circulating-supply'],
-      'Total Supply': data44.asset.params['total'],'% in Circulation': (data44.asset.params['circulating-supply']/data44.asset.params['total']).toFixed(6)},
+      'Name': data44.asset.params['name'], 'Transactions Counter': data44.asset['asset-tx-counter'],'Circulating Supply': data44.asset.params['circulating-supply'],
+      'Total Supply': data44.asset.params['total'], '% in Circulation': (data44.asset.params['circulating-supply']/data44.asset.params['total']).toFixed(6)},
       {'Element':'45','Unit Name': data45.asset.params['unit-name'],'ID': data45.asset['index'], 'Created at Round': data45.asset['created-at-round'], 
-      'Name': data45.asset.params['name'],'Transactions Counter': data45.asset['asset-tx-counter'],'Circulating Supply': data45.asset.params['circulating-supply'],
-      'Total Supply': data45.asset.params['total'],'% in Circulation': (data45.asset.params['circulating-supply']/data45.asset.params['total']).toFixed(6)},
+      'Name': data45.asset.params['name'], 'Transactions Counter': data45.asset['asset-tx-counter'],'Circulating Supply': data45.asset.params['circulating-supply'],
+      'Total Supply': data45.asset.params['total'], '% in Circulation': (data45.asset.params['circulating-supply']/data45.asset.params['total']).toFixed(6)},
       {'Element':'46','Unit Name': data46.asset.params['unit-name'],'ID': data46.asset['index'], 'Created at Round': data46.asset['created-at-round'], 
-      'Name': data46.asset.params['name'],'Transactions Counter': data46.asset['asset-tx-counter'],'Circulating Supply': data46.asset.params['circulating-supply'],
-      'Total Supply': data46.asset.params['total'],'% in Circulation': (data46.asset.params['circulating-supply']/data46.asset.params['total']).toFixed(6)},
+      'Name': data46.asset.params['name'], 'Transactions Counter': data46.asset['asset-tx-counter'],'Circulating Supply': data46.asset.params['circulating-supply'],
+      'Total Supply': data46.asset.params['total'], '% in Circulation': (data46.asset.params['circulating-supply']/data46.asset.params['total']).toFixed(6)},
       {'Element':'47','Unit Name': data47.asset.params['unit-name'],'ID': data47.asset['index'], 'Created at Round': data47.asset['created-at-round'], 
-      'Name': data47.asset.params['name'],'Transactions Counter': data47.asset['asset-tx-counter'],'Circulating Supply': data47.asset.params['circulating-supply'],
-      'Total Supply': data47.asset.params['total'],'% in Circulation': (data47.asset.params['circulating-supply']/data47.asset.params['total']).toFixed(6)},
+      'Name': data47.asset.params['name'], 'Transactions Counter': data47.asset['asset-tx-counter'],'Circulating Supply': data47.asset.params['circulating-supply'],
+      'Total Supply': data47.asset.params['total'], '% in Circulation': (data47.asset.params['circulating-supply']/data47.asset.params['total']).toFixed(6)},
       {'Element':'48','Unit Name': data48.asset.params['unit-name'],'ID': data48.asset['index'], 'Created at Round': data48.asset['created-at-round'], 
-      'Name': data48.asset.params['name'],'Transactions Counter': data48.asset['asset-tx-counter'],'Circulating Supply': data48.asset.params['circulating-supply'],
-      'Total Supply': data48.asset.params['total'],'% in Circulation': (data48.asset.params['circulating-supply']/data48.asset.params['total']).toFixed(6)},
+      'Name': data48.asset.params['name'], 'Transactions Counter': data48.asset['asset-tx-counter'],'Circulating Supply': data48.asset.params['circulating-supply'],
+      'Total Supply': data48.asset.params['total'], '% in Circulation': (data48.asset.params['circulating-supply']/data48.asset.params['total']).toFixed(6)},
       {'Element':'49','Unit Name': data49.asset.params['unit-name'],'ID': data49.asset['index'], 'Created at Round': data49.asset['created-at-round'], 
-      'Name': data49.asset.params['name'],'Transactions Counter': data49.asset['asset-tx-counter'],'Circulating Supply': data49.asset.params['circulating-supply'],
-      'Total Supply': data49.asset.params['total'],'% in Circulation': (data49.asset.params['circulating-supply']/data49.asset.params['total']).toFixed(6)},
+      'Name': data49.asset.params['name'], 'Transactions Counter': data49.asset['asset-tx-counter'],'Circulating Supply': data49.asset.params['circulating-supply'],
+      'Total Supply': data49.asset.params['total'], '% in Circulation': (data49.asset.params['circulating-supply']/data49.asset.params['total']).toFixed(6)},
       {'Element':'50','Unit Name': data50.asset.params['unit-name'],'ID': data50.asset['index'], 'Created at Round': data50.asset['created-at-round'], 
-      'Name': data50.asset.params['name'],'Transactions Counter': data50.asset['asset-tx-counter'],'Circulating Supply': data50.asset.params['circulating-supply'],
-      'Total Supply': data50.asset.params['total'],'% in Circulation': (data50.asset.params['circulating-supply']/data50.asset.params['total']).toFixed(6)},
+      'Name': data50.asset.params['name'], 'Transactions Counter': data50.asset['asset-tx-counter'],'Circulating Supply': data50.asset.params['circulating-supply'],
+      'Total Supply': data50.asset.params['total'], '% in Circulation': (data50.asset.params['circulating-supply']/data50.asset.params['total']).toFixed(6)},
       {'Element':'51','Unit Name': data51.asset.params['unit-name'],'ID': data51.asset['index'], 'Created at Round': data51.asset['created-at-round'], 
-      'Name': data51.asset.params['name'],'Transactions Counter': data51.asset['asset-tx-counter'],'Circulating Supply': data51.asset.params['circulating-supply'],
-      'Total Supply': data51.asset.params['total'],'% in Circulation': (data51.asset.params['circulating-supply']/data51.asset.params['total']).toFixed(6)},
+      'Name': data51.asset.params['name'], 'Transactions Counter': data51.asset['asset-tx-counter'],'Circulating Supply': data51.asset.params['circulating-supply'],
+      'Total Supply': data51.asset.params['total'], '% in Circulation': (data51.asset.params['circulating-supply']/data51.asset.params['total']).toFixed(6)},
       {'Element':'52', 'Unit Name': data52.asset.params['unit-name'],'ID': data52.asset['index'], 'Created at Round': data52.asset['created-at-round'], 
-      'Name': data52.asset.params['name'],'Transactions Counter': data52.asset['asset-tx-counter'],'Circulating Supply': data52.asset.params['circulating-supply'],
-      'Total Supply': data52.asset.params['total'],'% in Circulation': (data52.asset.params['circulating-supply']/data52.asset.params['total']).toFixed(6)}];            
-            
+      'Name': data52.asset.params['name'], 'Transactions Counter': data52.asset['asset-tx-counter'],'Circulating Supply': data52.asset.params['circulating-supply'],
+      'Total Supply': data52.asset.params['total'], '% in Circulation': (data52.asset.params['circulating-supply']/data52.asset.params['total']).toFixed(6)}];            
+
+    //The delay for the table to finish the APi get request
+    await delay(2000);
     //The table
     var exampleTable = $('#example')
         .DataTable({
