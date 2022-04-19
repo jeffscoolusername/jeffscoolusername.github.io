@@ -129,6 +129,96 @@ $(document)
     var total9 = 'loading';
     var circulation9 = 'loading';   
 
+    var unitname10 = 'loading';
+    var index10 = 'loading';
+    var createdatround10 = 'loading';
+    var name10 = 'loading';
+    var txcounter10 = 'loading';
+    var supply10 = 'loading';
+    var total10 = 'loading';
+    var circulation10 = 'loading';  
+
+    var unitname11 = 'loading';
+    var index11 = 'loading';
+    var createdatround11 = 'loading';
+    var name11 = 'loading';
+    var txcounter11 = 'loading';
+    var supply11 = 'loading';
+    var total11 = 'loading';
+    var circulation11 = 'loading';  
+
+    var unitname12 = 'loading';
+    var index12 = 'loading';
+    var createdatround12 = 'loading';
+    var name12 = 'loading';
+    var txcounter12 = 'loading';
+    var supply12 = 'loading';
+    var total12 = 'loading';
+    var circulation12 = 'loading';  
+
+    var unitname13 = 'loading';
+    var index13 = 'loading';
+    var createdatround13 = 'loading';
+    var name13 = 'loading';
+    var txcounter13 = 'loading';
+    var supply13 = 'loading';
+    var total13 = 'loading';
+    var circulation13 = 'loading';  
+
+    var unitname14 = 'loading';
+    var index14 = 'loading';
+    var createdatround14 = 'loading';
+    var name14 = 'loading';
+    var txcounter14 = 'loading';
+    var supply14 = 'loading';
+    var total14 = 'loading';
+    var circulation14 = 'loading';  
+
+    var unitname15 = 'loading';
+    var index15 = 'loading';
+    var createdatround15 = 'loading';
+    var name15 = 'loading';
+    var txcounter15 = 'loading';
+    var supply15 = 'loading';
+    var total15 = 'loading';
+    var circulation15 = 'loading';  
+
+    var unitname16 = 'loading';
+    var index16 = 'loading';
+    var createdatround16 = 'loading';
+    var name16 = 'loading';
+    var txcounter16 = 'loading';
+    var supply16 = 'loading';
+    var total16 = 'loading';
+    var circulation16 = 'loading';  
+
+    var unitname17 = 'loading';
+    var index17 = 'loading';
+    var createdatround17 = 'loading';
+    var name17 = 'loading';
+    var txcounter17 = 'loading';
+    var supply17 = 'loading';
+    var total17 = 'loading';
+    var circulation17 = 'loading';  
+
+    var unitname18 = 'loading';
+    var index18 = 'loading';
+    var createdatround18 = 'loading';
+    var name18 = 'loading';
+    var txcounter18 = 'loading';
+    var supply18 = 'loading';
+    var total18 = 'loading';
+    var circulation18 = 'loading';  
+
+    var unitname19 = 'loading';
+    var index19 = 'loading';
+    var createdatround19 = 'loading';
+    var name19 = 'loading';
+    var txcounter19 = 'loading';
+    var supply19 = 'loading';
+    var total19 = 'loading';
+    var circulation19 = 'loading';  
+
     var counter = 0;
    
     getJSON(url0, async function(err, data0) { 
@@ -281,16 +371,166 @@ $(document)
         counter++;
         }      
     });
+    getJSON(url10, async function(err, data10) { 
+        if (err !== null) {
+            return $.getJSON(url10); 
+        } else {
+        unitname10 = data10.asset.params['unit-name'];
+        index10 = data10.asset['index'];
+        createdatround10 = data10.asset['created-at-round'];
+        name10 = data10.asset.params['name'];
+        txcounter10 = data10.asset['asset-tx-counter'];
+        supply10 = data10.asset.params['circulating-supply'];
+        total10 = data10.asset.params['total'];
+        circulation10 =((data10.asset.params['circulating-supply']/data10.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url11, async function(err, data11) { 
+        if (err !== null) {
+            return $.getJSON(url11); 
+        } else {
+        unitname11 = data11.asset.params['unit-name'];
+        index11 = data11.asset['index'];
+        createdatround11 = data11.asset['created-at-round'];
+        name11 = data11.asset.params['name'];
+        txcounter11 = data11.asset['asset-tx-counter'];
+        supply11 = data11.asset.params['circulating-supply'];
+        total11 = data11.asset.params['total'];
+        circulation11 =((data11.asset.params['circulating-supply']/data11.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url12, async function(err, data12) { 
+        if (err !== null) {
+            return $.getJSON(url12); 
+        } else {
+        unitname12 = data12.asset.params['unit-name'];
+        index12 = data12.asset['index'];
+        createdatround12 = data12.asset['created-at-round'];
+        name12 = data12.asset.params['name'];
+        txcounter12 = data12.asset['asset-tx-counter'];
+        supply12 = data12.asset.params['circulating-supply'];
+        total12 = data12.asset.params['total'];
+        circulation12 =((data12.asset.params['circulating-supply']/data12.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url13, async function(err, data13) { 
+        if (err !== null) {
+            return $.getJSON(url13); 
+        } else {
+        unitname13 = data13.asset.params['unit-name'];
+        index13 = data13.asset['index'];
+        createdatround13 = data13.asset['created-at-round'];
+        name13 = data13.asset.params['name'];
+        txcounter13 = data13.asset['asset-tx-counter'];
+        supply13 = data13.asset.params['circulating-supply'];
+        total13 = data13.asset.params['total'];
+        circulation13 =((data13.asset.params['circulating-supply']/data13.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url14, async function(err, data14) { 
+        if (err !== null) {
+            return $.getJSON(url14); 
+        } else {
+        unitname14 = data14.asset.params['unit-name'];
+        index14 = data14.asset['index'];
+        createdatround14 = data14.asset['created-at-round'];
+        name14 = data14.asset.params['name'];
+        txcounter14 = data14.asset['asset-tx-counter'];
+        supply14 = data14.asset.params['circulating-supply'];
+        total14 = data14.asset.params['total'];
+        circulation14 =((data14.asset.params['circulating-supply']/data14.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url15, async function(err, data15) { 
+        if (err !== null) {
+            return $.getJSON(url15); 
+        } else {
+        unitname15 = data15.asset.params['unit-name'];
+        index15 = data15.asset['index'];
+        createdatround15 = data15.asset['created-at-round'];
+        name15 = data15.asset.params['name'];
+        txcounter15 = data15.asset['asset-tx-counter'];
+        supply15 = data15.asset.params['circulating-supply'];
+        total15 = data15.asset.params['total'];
+        circulation15 =((data15.asset.params['circulating-supply']/data15.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url16, async function(err, data16) { 
+        if (err !== null) {
+            return $.getJSON(url16); 
+        } else {
+        unitname16 = data16.asset.params['unit-name'];
+        index16 = data16.asset['index'];
+        createdatround16 = data16.asset['created-at-round'];
+        name16 = data16.asset.params['name'];
+        txcounter16 = data16.asset['asset-tx-counter'];
+        supply16 = data16.asset.params['circulating-supply'];
+        total16 = data16.asset.params['total'];
+        circulation16 =((data16.asset.params['circulating-supply']/data16.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url17, async function(err, data17) { 
+        if (err !== null) {
+            return $.getJSON(url17); 
+        } else {
+        unitname17 = data17.asset.params['unit-name'];
+        index17 = data17.asset['index'];
+        createdatround17 = data17.asset['created-at-round'];
+        name17 = data17.asset.params['name'];
+        txcounter17 = data17.asset['asset-tx-counter'];
+        supply17 = data17.asset.params['circulating-supply'];
+        total17 = data17.asset.params['total'];
+        circulation17 =((data17.asset.params['circulating-supply']/data17.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url18, async function(err, data18) { 
+        if (err !== null) {
+            return $.getJSON(url18); 
+        } else {
+        unitname18 = data18.asset.params['unit-name'];
+        index18 = data18.asset['index'];
+        createdatround18 = data18.asset['created-at-round'];
+        name18 = data18.asset.params['name'];
+        txcounter18 = data18.asset['asset-tx-counter'];
+        supply18 = data18.asset.params['circulating-supply'];
+        total18 = data18.asset.params['total'];
+        circulation18 =((data18.asset.params['circulating-supply']/data18.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url19, async function(err, data19) { 
+        if (err !== null) {
+            return $.getJSON(url19); 
+        } else {
+        unitname19 = data19.asset.params['unit-name'];
+        index19 = data19.asset['index'];
+        createdatround19 = data19.asset['created-at-round'];
+        name19 = data19.asset.params['name'];
+        txcounter19 = data19.asset['asset-tx-counter'];
+        supply19 = data19.asset.params['circulating-supply'];
+        total19 = data19.asset.params['total'];
+        circulation19 =((data19.asset.params['circulating-supply']/data19.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
 
     /*window.setInterval( function(){
         if (counter == 3) {
             return $.getJSON(url3); 
         }
       },10)*/
-    getJSON(url10, function(err, data10) { 
+    getJSON(url20, function(err, data20) { 
 
         window.setInterval( function(){
-            if (counter == 10) {
+            if (counter == 20) {
         //console.log(counter);
 
     var jsObj = [
@@ -324,9 +564,39 @@ $(document)
       {'Element':'9', 'Unit Name': unitname9, 'ID': index9, 'Created at Round': createdatround9,      
       'Name': name9, 'Transactions Counter': txcounter9, 'Circulating Supply': supply9,
       'Total Supply': total9, '% in Circulation': circulation9 + '%'},
-      {'Element':'10', 'Unit Name': data10.asset.params['unit-name'], 'ID': data10.asset['index'], 'Created at Round': data10.asset['created-at-round'], 
-      'Name': data10.asset.params['name'], 'Transactions Counter': data10.asset['asset-tx-counter'], 'Circulating Supply': data10.asset.params['circulating-supply'],
-      'Total Supply': data10.asset.params['total'], '% in Circulation': ((data10.asset.params['circulating-supply']/data10.asset.params['total'])*100).toFixed(6) + '%'}];            
+      {'Element':'10', 'Unit Name': unitname10, 'ID': index10, 'Created at Round': createdatround10,      
+      'Name': name10, 'Transactions Counter': txcounter10, 'Circulating Supply': supply10,
+      'Total Supply': total10, '% in Circulation': circulation10 + '%'},
+      {'Element':'11', 'Unit Name': unitname11, 'ID': index11, 'Created at Round': createdatround11,      
+      'Name': name11, 'Transactions Counter': txcounter11, 'Circulating Supply': supply11,
+      'Total Supply': total11, '% in Circulation': circulation11 + '%'},
+      {'Element':'12', 'Unit Name': unitname12, 'ID': index12, 'Created at Round': createdatround12,      
+      'Name': name12, 'Transactions Counter': txcounter12, 'Circulating Supply': supply12,
+      'Total Supply': total12, '% in Circulation': circulation12 + '%'},
+      {'Element':'13', 'Unit Name': unitname13, 'ID': index13, 'Created at Round': createdatround13,      
+      'Name': name13, 'Transactions Counter': txcounter13, 'Circulating Supply': supply13,
+      'Total Supply': total13, '% in Circulation': circulation13 + '%'},
+      {'Element':'14', 'Unit Name': unitname14, 'ID': index14, 'Created at Round': createdatround14,      
+      'Name': name14, 'Transactions Counter': txcounter14, 'Circulating Supply': supply14,
+      'Total Supply': total14, '% in Circulation': circulation14 + '%'},
+      {'Element':'15', 'Unit Name': unitname15, 'ID': index15, 'Created at Round': createdatround15,      
+      'Name': name15, 'Transactions Counter': txcounter15, 'Circulating Supply': supply15,
+      'Total Supply': total15, '% in Circulation': circulation15 + '%'},
+      {'Element':'16', 'Unit Name': unitname16, 'ID': index16, 'Created at Round': createdatround16,      
+      'Name': name16, 'Transactions Counter': txcounter16, 'Circulating Supply': supply16,
+      'Total Supply': total16, '% in Circulation': circulation16 + '%'},
+      {'Element':'17', 'Unit Name': unitname17, 'ID': index17, 'Created at Round': createdatround17,      
+      'Name': name17, 'Transactions Counter': txcounter17, 'Circulating Supply': supply17,
+      'Total Supply': total17, '% in Circulation': circulation17 + '%'},
+      {'Element':'18', 'Unit Name': unitname18, 'ID': index18, 'Created at Round': createdatround18,      
+      'Name': name18, 'Transactions Counter': txcounter18, 'Circulating Supply': supply18,
+      'Total Supply': total18, '% in Circulation': circulation18 + '%'},
+      {'Element':'19', 'Unit Name': unitname19, 'ID': index19, 'Created at Round': createdatround19,      
+      'Name': name19, 'Transactions Counter': txcounter19, 'Circulating Supply': supply19,
+      'Total Supply': total19, '% in Circulation': circulation19 + '%'},
+      {'Element':'20', 'Unit Name': data20.asset.params['unit-name'], 'ID': data20.asset['index'], 'Created at Round': data20.asset['created-at-round'], 
+      'Name': data20.asset.params['name'], 'Transactions Counter': data20.asset['asset-tx-counter'], 'Circulating Supply': data20.asset.params['circulating-supply'],
+      'Total Supply': data20.asset.params['total'], '% in Circulation': ((data20.asset.params['circulating-supply']/data20.asset.params['total'])*100).toFixed(6) + '%'}];            
       
       //modified array is accessible here
 
