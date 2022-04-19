@@ -564,6 +564,7 @@ $(document)
                     getJSON(url40, function(err, data40) { 
         
                         if (err !== null) {        
+                            sleep(500)
                             return $.getJSON(url40);                  
                         } 
                         else {
@@ -1133,14 +1134,13 @@ $(document)
         }
       },10)*/
 
-      /*function sleep(milliseconds) {
+      function sleep(milliseconds) {
         const date = Date.now();
         let currentDate = null;
         do {
           currentDate = Date.now();
         } while (currentDate - date < milliseconds);
-      }*/
-      //should this be sync or async...
+      }
 
 
 });
