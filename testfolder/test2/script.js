@@ -52,7 +52,7 @@ $(document)
     async function(err, data44) {getJSON(url45,async function(err, data45) {getJSON(url46,async function(err, data46) {getJSON(url47,async function(err, data47) {getJSON(url48,
     async function(err, data48) {getJSON(url49,async function(err, data49) {getJSON(url50,async function(err, data50) {getJSON(url51,async function(err, data51) {getJSON(url52,
     async function(err, data52) { 
-        //' = ' + (data0.asset.params['circulating-supply']/data0.asset.params['total'])*100).toFixed(6) + '%'
+        
     var jsObj = [
       {'Element':'0', 'Unit Name': data0.asset.params['unit-name'], 'ID': data0.asset['index'], 'Created at Round': data0.asset['created-at-round'],      
       'Name': data0.asset.params['name'], 'Transactions Counter': data0.asset['asset-tx-counter'], 'Circulating Supply': data0.asset.params['circulating-supply'],
@@ -238,4 +238,4 @@ $(document)
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
       }); });   
-    }) })
+    }); });
