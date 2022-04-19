@@ -213,7 +213,9 @@ $(document)
       {'Element':'52', 'Unit Name': data52.asset.params['unit-name'], 'ID': data52.asset['index'], 'Created at Round': data52.asset['created-at-round'], 
       'Name': data52.asset.params['name'], 'Transactions Counter': data52.asset['asset-tx-counter'],'Circulating Supply': data52.asset.params['circulating-supply'],
       'Total Supply': data52.asset.params['total'], '% in Circulation': ((data52.asset.params['circulating-supply']/data52.asset.params['total'])*100).toFixed(6) + '%'}];            
-            
+      
+      //modified array is accessible here
+
     var exampleTable = $('#example')
         .DataTable({
             data: jsObj,
@@ -238,4 +240,6 @@ $(document)
       }); }); }); }); }); }); }); }); }); }); 
       }); }); }); }); }); }); }); }); }); }); 
       }); });   
-    }); });
+    });     
+
+});
