@@ -66,6 +66,69 @@ $(document)
     var total2 = 'loading';
     var circulation2 = 'loading';       
 
+    var unitname3 = 'loading';
+    var index3 = 'loading';
+    var createdatround3 = 'loading';
+    var name3 = 'loading';
+    var txcounter3 = 'loading';
+    var supply3 = 'loading';
+    var total3 = 'loading';
+    var circulation3 = 'loading';   
+
+    var unitname4 = 'loading';
+    var index4 = 'loading';
+    var createdatround4 = 'loading';
+    var name4 = 'loading';
+    var txcounter4 = 'loading';
+    var supply4 = 'loading';
+    var total4 = 'loading';
+    var circulation4 = 'loading';   
+    
+    var unitname5 = 'loading';
+    var index5 = 'loading';
+    var createdatround5 = 'loading';
+    var name5 = 'loading';
+    var txcounter5 = 'loading';
+    var supply5 = 'loading';
+    var total5 = 'loading';
+    var circulation5 = 'loading';   
+
+    var unitname6 = 'loading';
+    var index6 = 'loading';
+    var createdatround6 = 'loading';
+    var name6 = 'loading';
+    var txcounter6 = 'loading';
+    var supply6 = 'loading';
+    var total6 = 'loading';
+    var circulation6 = 'loading';   
+
+    var unitname7 = 'loading';
+    var index7 = 'loading';
+    var createdatround7 = 'loading';
+    var name7 = 'loading';
+    var txcounter7 = 'loading';
+    var supply7 = 'loading';
+    var total7 = 'loading';
+    var circulation7 = 'loading';   
+
+    var unitname8 = 'loading';
+    var index8 = 'loading';
+    var createdatround8 = 'loading';
+    var name8 = 'loading';
+    var txcounter8 = 'loading';
+    var supply8 = 'loading';
+    var total8 = 'loading';
+    var circulation8 = 'loading';   
+
+    var unitname9 = 'loading';
+    var index9 = 'loading';
+    var createdatround9 = 'loading';
+    var name9 = 'loading';
+    var txcounter9 = 'loading';
+    var supply9 = 'loading';
+    var total9 = 'loading';
+    var circulation9 = 'loading';   
+
     var counter = 0;
    
     getJSON(url0, async function(err, data0) { 
@@ -113,16 +176,121 @@ $(document)
         counter++;
         }      
     });
+    getJSON(url3, async function(err, data3) { 
+        if (err !== null) {
+            return $.getJSON(url3); 
+        } else {
+        unitname3 = data3.asset.params['unit-name'];
+        index3 = data3.asset['index'];
+        createdatround3 = data3.asset['created-at-round'];
+        name3 = data3.asset.params['name'];
+        txcounter3 = data3.asset['asset-tx-counter'];
+        supply3 = data3.asset.params['circulating-supply'];
+        total3 = data3.asset.params['total'];
+        circulation3 =((data3.asset.params['circulating-supply']/data3.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url4, async function(err, data4) { 
+        if (err !== null) {
+            return $.getJSON(url4); 
+        } else {
+        unitname4 = data4.asset.params['unit-name'];
+        index4 = data4.asset['index'];
+        createdatround4 = data4.asset['created-at-round'];
+        name4 = data4.asset.params['name'];
+        txcounter4 = data4.asset['asset-tx-counter'];
+        supply4 = data4.asset.params['circulating-supply'];
+        total4 = data4.asset.params['total'];
+        circulation4 =((data4.asset.params['circulating-supply']/data4.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url5, async function(err, data5) { 
+        if (err !== null) {
+            return $.getJSON(url5); 
+        } else {
+        unitname5 = data5.asset.params['unit-name'];
+        index5 = data5.asset['index'];
+        createdatround5 = data5.asset['created-at-round'];
+        name5 = data5.asset.params['name'];
+        txcounter5 = data5.asset['asset-tx-counter'];
+        supply5 = data5.asset.params['circulating-supply'];
+        total5 = data5.asset.params['total'];
+        circulation5 =((data5.asset.params['circulating-supply']/data5.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url6, async function(err, data6) { 
+        if (err !== null) {
+            return $.getJSON(url6); 
+        } else {
+        unitname6 = data6.asset.params['unit-name'];
+        index6 = data6.asset['index'];
+        createdatround6 = data6.asset['created-at-round'];
+        name6 = data6.asset.params['name'];
+        txcounter6 = data6.asset['asset-tx-counter'];
+        supply6 = data6.asset.params['circulating-supply'];
+        total6 = data6.asset.params['total'];
+        circulation6 =((data6.asset.params['circulating-supply']/data6.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url7, async function(err, data7) { 
+        if (err !== null) {
+            return $.getJSON(url7); 
+        } else {
+        unitname7 = data7.asset.params['unit-name'];
+        index7 = data7.asset['index'];
+        createdatround7 = data7.asset['created-at-round'];
+        name7 = data7.asset.params['name'];
+        txcounter7 = data7.asset['asset-tx-counter'];
+        supply7 = data7.asset.params['circulating-supply'];
+        total7 = data7.asset.params['total'];
+        circulation7 =((data7.asset.params['circulating-supply']/data7.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url8, async function(err, data8) { 
+        if (err !== null) {
+            return $.getJSON(url8); 
+        } else {
+        unitname8 = data8.asset.params['unit-name'];
+        index8 = data8.asset['index'];
+        createdatround8 = data8.asset['created-at-round'];
+        name8 = data8.asset.params['name'];
+        txcounter8 = data8.asset['asset-tx-counter'];
+        supply8 = data8.asset.params['circulating-supply'];
+        total8 = data8.asset.params['total'];
+        circulation8 =((data8.asset.params['circulating-supply']/data8.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
+    getJSON(url9, async function(err, data9) { 
+        if (err !== null) {
+            return $.getJSON(url9); 
+        } else {
+        unitname9 = data9.asset.params['unit-name'];
+        index9 = data9.asset['index'];
+        createdatround9 = data9.asset['created-at-round'];
+        name9 = data9.asset.params['name'];
+        txcounter9 = data9.asset['asset-tx-counter'];
+        supply9 = data9.asset.params['circulating-supply'];
+        total9 = data9.asset.params['total'];
+        circulation9 =((data9.asset.params['circulating-supply']/data9.asset.params['total'])*100).toFixed(6);
+        counter++;
+        }      
+    });
 
     /*window.setInterval( function(){
         if (counter == 3) {
             return $.getJSON(url3); 
         }
       },10)*/
-    getJSON(url3, function(err, data3) { 
+    getJSON(url10, function(err, data10) { 
 
         window.setInterval( function(){
-            if (counter == 3) {
+            if (counter == 10) {
         //console.log(counter);
 
     var jsObj = [
@@ -135,9 +303,30 @@ $(document)
       {'Element':'2', 'Unit Name': unitname2, 'ID': index2, 'Created at Round': createdatround2,      
       'Name': name2, 'Transactions Counter': txcounter2, 'Circulating Supply': supply2,
       'Total Supply': total2, '% in Circulation': circulation2 + '%'},
-      {'Element':'3', 'Unit Name': data3.asset.params['unit-name'], 'ID': data3.asset['index'], 'Created at Round': data3.asset['created-at-round'], 
-      'Name': data3.asset.params['name'], 'Transactions Counter': data3.asset['asset-tx-counter'], 'Circulating Supply': data3.asset.params['circulating-supply'],
-      'Total Supply': data3.asset.params['total'], '% in Circulation': ((data3.asset.params['circulating-supply']/data3.asset.params['total'])*100).toFixed(6) + '%'}];            
+      {'Element':'3', 'Unit Name': unitname3, 'ID': index3, 'Created at Round': createdatround3,      
+      'Name': name3, 'Transactions Counter': txcounter3, 'Circulating Supply': supply3,
+      'Total Supply': total3, '% in Circulation': circulation3 + '%'},
+      {'Element':'4', 'Unit Name': unitname4, 'ID': index4, 'Created at Round': createdatround4,      
+      'Name': name4, 'Transactions Counter': txcounter4, 'Circulating Supply': supply4,
+      'Total Supply': total4, '% in Circulation': circulation4 + '%'},
+      {'Element':'5', 'Unit Name': unitname5, 'ID': index5, 'Created at Round': createdatround5,      
+      'Name': name5, 'Transactions Counter': txcounter5, 'Circulating Supply': supply5,
+      'Total Supply': total5, '% in Circulation': circulation5 + '%'},
+      {'Element':'6', 'Unit Name': unitname6, 'ID': index6, 'Created at Round': createdatround6,      
+      'Name': name6, 'Transactions Counter': txcounter6, 'Circulating Supply': supply6,
+      'Total Supply': total6, '% in Circulation': circulation6 + '%'},
+      {'Element':'7', 'Unit Name': unitname7, 'ID': index7, 'Created at Round': createdatround7,      
+      'Name': name7, 'Transactions Counter': txcounter7, 'Circulating Supply': supply7,
+      'Total Supply': total7, '% in Circulation': circulation7 + '%'},
+      {'Element':'8', 'Unit Name': unitname8, 'ID': index8, 'Created at Round': createdatround8,      
+      'Name': name8, 'Transactions Counter': txcounter8, 'Circulating Supply': supply8,
+      'Total Supply': total8, '% in Circulation': circulation8 + '%'},
+      {'Element':'9', 'Unit Name': unitname9, 'ID': index9, 'Created at Round': createdatround9,      
+      'Name': name9, 'Transactions Counter': txcounter9, 'Circulating Supply': supply9,
+      'Total Supply': total9, '% in Circulation': circulation9 + '%'},
+      {'Element':'10', 'Unit Name': data10.asset.params['unit-name'], 'ID': data10.asset['index'], 'Created at Round': data10.asset['created-at-round'], 
+      'Name': data10.asset.params['name'], 'Transactions Counter': data10.asset['asset-tx-counter'], 'Circulating Supply': data10.asset.params['circulating-supply'],
+      'Total Supply': data10.asset.params['total'], '% in Circulation': ((data10.asset.params['circulating-supply']/data10.asset.params['total'])*100).toFixed(6) + '%'}];            
       
       //modified array is accessible here
 
