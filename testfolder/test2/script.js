@@ -652,8 +652,419 @@ $(document)
 
                                                                                 //
                                                                                 //console.log(counter);
+                                                                                var jsObj0 = [{
+                                                                                    'Unit Name': unitname0,
+                                                                                    'ID': index0,
+                                                                                    'Created at Round': createdatround0,
+                                                                                    'Name': name0,
+                                                                                    'Transactions Counter': txcounter0,
+                                                                                    'Circulating Supply': supply0,
+                                                                                    'Total Supply': total0,
+                                                                                    '% in Circulation': circulation0 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname1,
+                                                                                    'ID': index1,
+                                                                                    'Created at Round': createdatround1,
+                                                                                    'Name': name1,
+                                                                                    'Transactions Counter': txcounter1,
+                                                                                    'Circulating Supply': supply1,
+                                                                                    'Total Supply': total1,
+                                                                                    '% in Circulation': circulation1 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname2,
+                                                                                    'ID': index2,
+                                                                                    'Created at Round': createdatround2,
+                                                                                    'Name': name2,
+                                                                                    'Transactions Counter': txcounter2,
+                                                                                    'Circulating Supply': supply2,
+                                                                                    'Total Supply': total2,
+                                                                                    '% in Circulation': circulation2 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname3,
+                                                                                    'ID': index3,
+                                                                                    'Created at Round': createdatround3,
+                                                                                    'Name': name3,
+                                                                                    'Transactions Counter': txcounter3,
+                                                                                    'Circulating Supply': supply3,
+                                                                                    'Total Supply': total3,
+                                                                                    '% in Circulation': circulation3 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname4,
+                                                                                    'ID': index4,
+                                                                                    'Created at Round': createdatround4,
+                                                                                    'Name': name4,
+                                                                                    'Transactions Counter': txcounter4,
+                                                                                    'Circulating Supply': supply4,
+                                                                                    'Total Supply': total4,
+                                                                                    '% in Circulation': circulation4 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname5,
+                                                                                    'ID': index5,
+                                                                                    'Created at Round': createdatround5,
+                                                                                    'Name': name5,
+                                                                                    'Transactions Counter': txcounter5,
+                                                                                    'Circulating Supply': supply5,
+                                                                                    'Total Supply': total5,
+                                                                                    '% in Circulation': circulation5 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname6,
+                                                                                    'ID': index6,
+                                                                                    'Created at Round': createdatround6,
+                                                                                    'Name': name6,
+                                                                                    'Transactions Counter': txcounter6,
+                                                                                    'Circulating Supply': supply6,
+                                                                                    'Total Supply': total6,
+                                                                                    '% in Circulation': circulation6 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname7,
+                                                                                    'ID': index7,
+                                                                                    'Created at Round': createdatround7,
+                                                                                    'Name': name7,
+                                                                                    'Transactions Counter': txcounter7,
+                                                                                    'Circulating Supply': supply7,
+                                                                                    'Total Supply': total7,
+                                                                                    '% in Circulation': circulation7 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname8,
+                                                                                    'ID': index8,
+                                                                                    'Created at Round': createdatround8,
+                                                                                    'Name': name8,
+                                                                                    'Transactions Counter': txcounter8,
+                                                                                    'Circulating Supply': supply8,
+                                                                                    'Total Supply': total8,
+                                                                                    '% in Circulation': circulation8 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname9,
+                                                                                    'ID': index9,
+                                                                                    'Created at Round': createdatround9,
+                                                                                    'Name': name9,
+                                                                                    'Transactions Counter': txcounter9,
+                                                                                    'Circulating Supply': supply9,
+                                                                                    'Total Supply': total9,
+                                                                                    '% in Circulation': circulation9 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname10,
+                                                                                    'ID': index10,
+                                                                                    'Created at Round': createdatround10,
+                                                                                    'Name': name10,
+                                                                                    'Transactions Counter': txcounter10,
+                                                                                    'Circulating Supply': supply10,
+                                                                                    'Total Supply': total10,
+                                                                                    '% in Circulation': circulation10 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname11,
+                                                                                    'ID': index11,
+                                                                                    'Created at Round': createdatround11,
+                                                                                    'Name': name11,
+                                                                                    'Transactions Counter': txcounter11,
+                                                                                    'Circulating Supply': supply11,
+                                                                                    'Total Supply': total11,
+                                                                                    '% in Circulation': circulation11 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname12,
+                                                                                    'ID': index12,
+                                                                                    'Created at Round': createdatround12,
+                                                                                    'Name': name12,
+                                                                                    'Transactions Counter': txcounter12,
+                                                                                    'Circulating Supply': supply12,
+                                                                                    'Total Supply': total12,
+                                                                                    '% in Circulation': circulation12 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname13,
+                                                                                    'ID': index13,
+                                                                                    'Created at Round': createdatround13,
+                                                                                    'Name': name13,
+                                                                                    'Transactions Counter': txcounter13,
+                                                                                    'Circulating Supply': supply13,
+                                                                                    'Total Supply': total13,
+                                                                                    '% in Circulation': circulation13 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname14,
+                                                                                    'ID': index14,
+                                                                                    'Created at Round': createdatround14,
+                                                                                    'Name': name14,
+                                                                                    'Transactions Counter': txcounter14,
+                                                                                    'Circulating Supply': supply14,
+                                                                                    'Total Supply': total14,
+                                                                                    '% in Circulation': circulation14 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname15,
+                                                                                    'ID': index15,
+                                                                                    'Created at Round': createdatround15,
+                                                                                    'Name': name15,
+                                                                                    'Transactions Counter': txcounter15,
+                                                                                    'Circulating Supply': supply15,
+                                                                                    'Total Supply': total15,
+                                                                                    '% in Circulation': circulation15 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname16,
+                                                                                    'ID': index16,
+                                                                                    'Created at Round': createdatround16,
+                                                                                    'Name': name16,
+                                                                                    'Transactions Counter': txcounter16,
+                                                                                    'Circulating Supply': supply16,
+                                                                                    'Total Supply': total16,
+                                                                                    '% in Circulation': circulation16 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname17,
+                                                                                    'ID': index17,
+                                                                                    'Created at Round': createdatround17,
+                                                                                    'Name': name17,
+                                                                                    'Transactions Counter': txcounter17,
+                                                                                    'Circulating Supply': supply17,
+                                                                                    'Total Supply': total17,
+                                                                                    '% in Circulation': circulation17 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname18,
+                                                                                    'ID': index18,
+                                                                                    'Created at Round': createdatround18,
+                                                                                    'Name': name18,
+                                                                                    'Transactions Counter': txcounter18,
+                                                                                    'Circulating Supply': supply18,
+                                                                                    'Total Supply': total18,
+                                                                                    '% in Circulation': circulation18 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname19,
+                                                                                    'ID': index19,
+                                                                                    'Created at Round': createdatround19,
+                                                                                    'Name': name19,
+                                                                                    'Transactions Counter': txcounter19,
+                                                                                    'Circulating Supply': supply19,
+                                                                                    'Total Supply': total19,
+                                                                                    '% in Circulation': circulation19 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname20,
+                                                                                    'ID': index20,
+                                                                                    'Created at Round': createdatround20,
+                                                                                    'Name': name20,
+                                                                                    'Transactions Counter': txcounter20,
+                                                                                    'Circulating Supply': supply20,
+                                                                                    'Total Supply': total20,
+                                                                                    '% in Circulation': circulation20 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname21,
+                                                                                    'ID': index21,
+                                                                                    'Created at Round': createdatround21,
+                                                                                    'Name': name21,
+                                                                                    'Transactions Counter': txcounter21,
+                                                                                    'Circulating Supply': supply21,
+                                                                                    'Total Supply': total21,
+                                                                                    '% in Circulation': circulation21 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname22,
+                                                                                    'ID': index22,
+                                                                                    'Created at Round': createdatround22,
+                                                                                    'Name': name22,
+                                                                                    'Transactions Counter': txcounter22,
+                                                                                    'Circulating Supply': supply22,
+                                                                                    'Total Supply': total22,
+                                                                                    '% in Circulation': circulation22 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname23,
+                                                                                    'ID': index23,
+                                                                                    'Created at Round': createdatround23,
+                                                                                    'Name': name23,
+                                                                                    'Transactions Counter': txcounter23,
+                                                                                    'Circulating Supply': supply23,
+                                                                                    'Total Supply': total23,
+                                                                                    '% in Circulation': circulation23 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname24,
+                                                                                    'ID': index24,
+                                                                                    'Created at Round': createdatround24,
+                                                                                    'Name': name24,
+                                                                                    'Transactions Counter': txcounter24,
+                                                                                    'Circulating Supply': supply24,
+                                                                                    'Total Supply': total24,
+                                                                                    '% in Circulation': circulation24 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname25,
+                                                                                    'ID': index25,
+                                                                                    'Created at Round': createdatround25,
+                                                                                    'Name': name25,
+                                                                                    'Transactions Counter': txcounter25,
+                                                                                    'Circulating Supply': supply25,
+                                                                                    'Total Supply': total25,
+                                                                                    '% in Circulation': circulation25 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname26,
+                                                                                    'ID': index26,
+                                                                                    'Created at Round': createdatround26,
+                                                                                    'Name': name26,
+                                                                                    'Transactions Counter': txcounter26,
+                                                                                    'Circulating Supply': supply26,
+                                                                                    'Total Supply': total26,
+                                                                                    '% in Circulation': circulation26 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname27,
+                                                                                    'ID': index27,
+                                                                                    'Created at Round': createdatround27,
+                                                                                    'Name': name27,
+                                                                                    'Transactions Counter': txcounter27,
+                                                                                    'Circulating Supply': supply27,
+                                                                                    'Total Supply': total27,
+                                                                                    '% in Circulation': circulation27 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname28,
+                                                                                    'ID': index28,
+                                                                                    'Created at Round': createdatround28,
+                                                                                    'Name': name28,
+                                                                                    'Transactions Counter': txcounter28,
+                                                                                    'Circulating Supply': supply28,
+                                                                                    'Total Supply': total28,
+                                                                                    '% in Circulation': circulation28 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname29,
+                                                                                    'ID': index29,
+                                                                                    'Created at Round': createdatround29,
+                                                                                    'Name': name29,
+                                                                                    'Transactions Counter': txcounter29,
+                                                                                    'Circulating Supply': supply29,
+                                                                                    'Total Supply': total29,
+                                                                                    '% in Circulation': circulation29 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname30,
+                                                                                    'ID': index30,
+                                                                                    'Created at Round': createdatround30,
+                                                                                    'Name': name30,
+                                                                                    'Transactions Counter': txcounter30,
+                                                                                    'Circulating Supply': supply30,
+                                                                                    'Total Supply': total30,
+                                                                                    '% in Circulation': circulation30 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname31,
+                                                                                    'ID': index31,
+                                                                                    'Created at Round': createdatround31,
+                                                                                    'Name': name31,
+                                                                                    'Transactions Counter': txcounter31,
+                                                                                    'Circulating Supply': supply31,
+                                                                                    'Total Supply': total31,
+                                                                                    '% in Circulation': circulation31 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname32,
+                                                                                    'ID': index32,
+                                                                                    'Created at Round': createdatround32,
+                                                                                    'Name': name32,
+                                                                                    'Transactions Counter': txcounter32,
+                                                                                    'Circulating Supply': supply32,
+                                                                                    'Total Supply': total32,
+                                                                                    '% in Circulation': circulation32 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname33,
+                                                                                    'ID': index33,
+                                                                                    'Created at Round': createdatround33,
+                                                                                    'Name': name33,
+                                                                                    'Transactions Counter': txcounter33,
+                                                                                    'Circulating Supply': supply33,
+                                                                                    'Total Supply': total33,
+                                                                                    '% in Circulation': circulation33 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname34,
+                                                                                    'ID': index34,
+                                                                                    'Created at Round': createdatround34,
+                                                                                    'Name': name34,
+                                                                                    'Transactions Counter': txcounter34,
+                                                                                    'Circulating Supply': supply34,
+                                                                                    'Total Supply': total34,
+                                                                                    '% in Circulation': circulation34 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname35,
+                                                                                    'ID': index35,
+                                                                                    'Created at Round': createdatround35,
+                                                                                    'Name': name35,
+                                                                                    'Transactions Counter': txcounter35,
+                                                                                    'Circulating Supply': supply35,
+                                                                                    'Total Supply': total35,
+                                                                                    '% in Circulation': circulation35 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname36,
+                                                                                    'ID': index36,
+                                                                                    'Created at Round': createdatround36,
+                                                                                    'Name': name36,
+                                                                                    'Transactions Counter': txcounter36,
+                                                                                    'Circulating Supply': supply36,
+                                                                                    'Total Supply': total36,
+                                                                                    '% in Circulation': circulation36 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname37,
+                                                                                    'ID': index37,
+                                                                                    'Created at Round': createdatround37,
+                                                                                    'Name': name37,
+                                                                                    'Transactions Counter': txcounter37,
+                                                                                    'Circulating Supply': supply37,
+                                                                                    'Total Supply': total37,
+                                                                                    '% in Circulation': circulation37 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname38,
+                                                                                    'ID': index38,
+                                                                                    'Created at Round': createdatround38,
+                                                                                    'Name': name38,
+                                                                                    'Transactions Counter': txcounter38,
+                                                                                    'Circulating Supply': supply38,
+                                                                                    'Total Supply': total38,
+                                                                                    '% in Circulation': circulation38 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': unitname39,
+                                                                                    'ID': index39,
+                                                                                    'Created at Round': createdatround39,
+                                                                                    'Name': name39,
+                                                                                    'Transactions Counter': txcounter39,
+                                                                                    'Circulating Supply': supply39,
+                                                                                    'Total Supply': total39,
+                                                                                    '% in Circulation': circulation39 + '%'
+                                                                                },
+                                                                                {
+                                                                                    'Unit Name': data40.asset.params['unit-name'],
+                                                                                    'ID': data40.asset['index'],
+                                                                                    'Created at Round': data40.asset['created-at-round'],
+                                                                                    'Name': data40.asset.params['name'],
+                                                                                    'Transactions Counter': data40.asset['asset-tx-counter'],
+                                                                                    'Circulating Supply': data40.asset.params['circulating-supply'],
+                                                                                    'Total Supply': data40.asset.params['total'],
+                                                                                    '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6) + '%'
+                                                                                }
+                                                                            ];
 
-                                                                                var jsObj = [{
+                                                                                var jsObj1 = [{
                                                                                         'Unit Name': unitname0,
                                                                                         'ID': index0,
                                                                                         'Created at Round': createdatround0,
@@ -1067,12 +1478,47 @@ $(document)
 
                                                                                 //modified array is accessible here
 
-                                                                                var exampleTable = $('#example')
+                                                                                var exampleTable1 = $('#example1')
                                                                                     .DataTable({
-                                                                                        data: jsObj,
-                                                                                        colReorder: false,
-                                                                                        paging: false,
-                                                                                        keys: false,
+                                                                                        data: jsObj0,
+                                                                                        stateSave: true,
+                                                                                        colReorder: true,
+                                                                                        paging: true,
+                                                                                        keys: true,
+                                                                                        //fixedHeader: true,
+                                                                                        'columns': [{
+                                                                                                'data': 'Unit Name'
+                                                                                            },
+                                                                                            {
+                                                                                                'data': 'ID'
+                                                                                            },
+                                                                                            {
+                                                                                                'data': 'Created at Round'
+                                                                                            },
+                                                                                            {
+                                                                                                'data': 'Name'
+                                                                                            },
+                                                                                            {
+                                                                                                'data': 'Transactions Counter'
+                                                                                            },
+                                                                                            {
+                                                                                                'data': 'Circulating Supply'
+                                                                                            },
+                                                                                            {
+                                                                                                'data': 'Total Supply'
+                                                                                            },
+                                                                                            {
+                                                                                                'data': '% in Circulation'
+                                                                                            }
+                                                                                        ]
+                                                                                    });
+                                                                                    var exampleTable2 = $('#example2')
+                                                                                    .DataTable({
+                                                                                        data: jsObj1,
+                                                                                        stateSave: true,
+                                                                                        colReorder: true,
+                                                                                        paging: true,
+                                                                                        keys: true,
                                                                                         //fixedHeader: true,
                                                                                         'columns': [{
                                                                                                 'data': 'Unit Name'
