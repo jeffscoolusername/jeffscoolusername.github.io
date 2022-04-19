@@ -38,20 +38,20 @@ $(document)
     var url51 = algoexplorerapi + '591601798';var url52 = algoexplorerapi + '393155456';
    
       getJSON(url0,
-    function(err, data0) {getJSON(url1,function(err, data1) {getJSON(url2,function(err, data2) {getJSON(url3,function(err, data3) {getJSON(url4,
-    function(err, data4) {getJSON(url5,function(err, data5) {getJSON(url6,function(err, data6) {getJSON(url7,function(err, data7) {getJSON(url8,
-    function(err, data8) {getJSON(url9,function(err, data9) {getJSON(url10,function(err, data10) {getJSON(url11,function(err, data11) {getJSON(url12,
-    function(err, data12) {getJSON(url13,function(err, data13) {getJSON(url14,function(err, data14) {getJSON(url15,function(err, data15) {getJSON(url16,
-    function(err, data16) {getJSON(url17,function(err, data17) {getJSON(url18,function(err, data18) {getJSON(url19,function(err, data19) {getJSON(url20,
-    function(err, data20) {getJSON(url21,function(err, data21) {getJSON(url22,function(err, data22) {getJSON(url23,function(err, data23) {getJSON(url24,
-    function(err, data24) {getJSON(url25,function(err, data25) {getJSON(url26,function(err, data26) {getJSON(url27,function(err, data27) {getJSON(url28,
-    function(err, data28) {getJSON(url29,function(err, data29) {getJSON(url30,function(err, data30) {getJSON(url31,function(err, data31) {getJSON(url32,
-    function(err, data32) {getJSON(url33,function(err, data33) {getJSON(url34,function(err, data34) {getJSON(url35,function(err, data35) {getJSON(url36,
-    function(err, data36) {getJSON(url37,function(err, data37) {getJSON(url38,function(err, data38) {getJSON(url39,function(err, data39) {getJSON(url40,
-    function(err, data40) {getJSON(url41,function(err, data41) {getJSON(url42,function(err, data42) {getJSON(url43,function(err, data43) {getJSON(url44,
-    function(err, data44) {getJSON(url45,function(err, data45) {getJSON(url46,function(err, data46) {getJSON(url47,function(err, data47) {getJSON(url48,
-    function(err, data48) {getJSON(url49,function(err, data49) {getJSON(url50,function(err, data50) {getJSON(url51,function(err, data51) {getJSON(url52,
-    function(err, data52) { 
+    async function(err, data0) {getJSON(url1,async function(err, data1) {getJSON(url2,async function(err, data2) {getJSON(url3,async function(err, data3) {getJSON(url4,
+    async function(err, data4) {getJSON(url5,async function(err, data5) {getJSON(url6,async function(err, data6) {getJSON(url7,async function(err, data7) {getJSON(url8,
+    async function(err, data8) {getJSON(url9,async function(err, data9) {getJSON(url10,async function(err, data10) {getJSON(url11,async function(err, data11) {getJSON(url12,
+    async function(err, data12) {getJSON(url13,async function(err, data13) {getJSON(url14,async function(err, data14) {getJSON(url15,async function(err, data15) {getJSON(url16,
+    async function(err, data16) {getJSON(url17,async function(err, data17) {getJSON(url18,async function(err, data18) {getJSON(url19,async function(err, data19) {getJSON(url20,
+    async function(err, data20) {getJSON(url21,async function(err, data21) {getJSON(url22,async function(err, data22) {getJSON(url23,async function(err, data23) {getJSON(url24,
+    async function(err, data24) {getJSON(url25,async function(err, data25) {getJSON(url26,async function(err, data26) {getJSON(url27,async function(err, data27) {getJSON(url28,
+    async function(err, data28) {getJSON(url29,async function(err, data29) {getJSON(url30,async function(err, data30) {getJSON(url31,async function(err, data31) {getJSON(url32,
+    async function(err, data32) {getJSON(url33,async function(err, data33) {getJSON(url34,async function(err, data34) {getJSON(url35,async function(err, data35) {getJSON(url36,
+    async function(err, data36) {getJSON(url37,async function(err, data37) {getJSON(url38,async function(err, data38) {getJSON(url39,async function(err, data39) {getJSON(url40,
+    async function(err, data40) {getJSON(url41,async function(err, data41) {getJSON(url42,async function(err, data42) {getJSON(url43,async function(err, data43) {getJSON(url44,
+    async function(err, data44) {getJSON(url45,async function(err, data45) {getJSON(url46,async function(err, data46) {getJSON(url47,async function(err, data47) {getJSON(url48,
+    async function(err, data48) {getJSON(url49,async function(err, data49) {getJSON(url50,async function(err, data50) {getJSON(url51,async function(err, data51) {getJSON(url52,
+    async function(err, data52) { 
         //' = ' + (data0.asset.params['circulating-supply']/data0.asset.params['total'])*100).toFixed(6) + '%'
     var jsObj = [
       {'Element':'0', 'Unit Name': data0.asset.params['unit-name'], 'ID': data0.asset['index'], 'Created at Round': data0.asset['created-at-round'],      
