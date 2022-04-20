@@ -63,6 +63,7 @@ $(document)
         var url38 = algoexplorerapi + '402495345';
         var url39 = algoexplorerapi + '388592191';
         var url40 = algoexplorerapi + '297995609';
+        var urlprice40 = algochartsapi + '297995609' + '&asset_out=0';
         var url41 = algoexplorerapi + '585221469';
         var url42 = algoexplorerapi + '571576867';
         var url43 = algoexplorerapi + '281003266';
@@ -89,174 +90,186 @@ $(document)
         var txcnt0 = 'loading';
         var unitName0 = 'loading';    
 
-        getJSON(urlprice0, async function(err, data01) {
+        var tinymanprice40 = 'loading';
+
+        getJSON(urlprice0, async function(err, data01p) {
             if (err !== null) {
                 return $.getJSON(urlprice0);
             } else {
 
-                tinymanprice0 = data01.data[0].toFixed(6);       
+                tinymanprice0 = data01p.data[0].toFixed(6);      
+                getJSON(urlprice40, async function(err, data40p) {
+                    if (err !== null) {
+                        return $.getJSON(urlprice40);
+                    } else {
+        
+                        tinymanprice40 = data40p.data[0].toFixed(6);     
+                        getJSON(url0, async function(err, data0) {
+                            if (err !== null) {
+                                return $.getJSON(url0);
+                            } else {
+                
+                                circSupply0 = data0.asset.params['circulating-supply'];
+                                crtdAtRound0 = data0.asset['created-at-round'];
+                                creatTxId0 = data0.asset['creation-txid'];
+                                decimals0 = data0.asset.params['decimals'];
+                                defaFroz0 = data0.asset.params['default-frozen'];
+                                index0 = data0.asset['index'];
+                                name0 = data0.asset.params['name'];
+                                percCirc0 = ((data0.asset.params['circulating-supply'] / data0.asset.params['total']) * 100).toFixed(6);
+                                total0 = data0.asset.params['total'];
+                                txcnt0 = data0.asset['asset-tx-counter']; 
+                                unitName0 = data0.asset.params['unit-name'];    
+                                getJSON(url40, function(err, data40) {
+                
+                                    if (err !== null) {
+                                        return $.getJSON(url40);
+                                    } else {
+                        
+                                        //console.log(counter);
+                        
+                                        var jsObj0 = [
+                                            {
+                                                'Name': name0,
+                                                'Tinyman Price' : tinymanprice0,
+                                                '% in Circulation': percCirc0,
+                                                'Transactions Counter': txcnt0,
+                                                'Created at Round': crtdAtRound0
+                                            },
+                                            //put any in between here following 0's format
+                                            {
+                                                'Name': data40.asset.params['name'],
+                                                'Tinyman Price' : tinymanprice40,
+                                                '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
+                                                'Transactions Counter': data40.asset['asset-tx-counter'],
+                                                'Created at Round': data40.asset['created-at-round']
+                                            }
+                                        ];
+                        
+                                        var jsObj1 = [
+                                            {
+                                                'Name': name0,
+                                                'Unit Name': unitName0,
+                                                'Index': index0,
+                                                'Default Frozen': defaFroz0
+                                            },
+                                            {
+                                                'Name': data40.asset.params['name'],
+                                                'Unit Name': data40.asset.params['unit-name'],
+                                                'Index': data40.asset['index'],
+                                                'Default Frozen': data40.asset.params['default-frozen']
+                                            }
+                                        ];
+                        
+                                        var jsObj2 = [
+                                            {
+                                                'Name': name0,                      
+                                                'Circulating Supply': circSupply0,
+                                                'Total': total0,
+                                                'Decimals': decimals0,
+                                                'Creation TX': creatTxId0,
+                                            },
+                                            {
+                                                'Name': data40.asset.params['name'],                      
+                                                'Circulating Supply': data40.asset.params['circulating-supply'],
+                                                'Total': data40.asset.params['total'],
+                                                'Decimals': data40.asset.params['decimals'],
+                                                'Creation TX': data40.asset['creation-txid']
+                                            }
+                                        ];
+                        
+                                        //modified array is accessible here
+                        
+                                        var exampleTable1 = $('#example1')
+                                            .DataTable({
+                                                data: jsObj0,
+                                                stateSave: true,
+                                                colReorder: true,
+                                                paging: true,
+                                                keys: true,
+                                                'columns': [{
+                                                        'data': 'Name'
+                                                    },
+                                                    {
+                                                        'data': 'Tinyman Price'
+                                                    },
+                                                    {
+                                                        'data': '% in Circulation'
+                                                    },
+                                                    {
+                                                        'data': 'Transactions Counter'
+                                                    },
+                                                    {
+                                                        'data': 'Created at Round'
+                                                    }
+                                                ]
+                                            });
+                        
+                                            var exampleTable2 = $('#example2')
+                                            .DataTable({
+                                                data: jsObj1,
+                                                stateSave: true,
+                                                colReorder: true,
+                                                paging: true,
+                                                keys: true,
+                                                'columns': [{
+                                                        'data': 'Name'
+                                                    },
+                                                    {
+                                                        'data': 'Unit Name'
+                                                    },
+                                                    {
+                                                        'data': 'Index'
+                                                    },
+                                                    {
+                                                        'data': 'Default Frozen'
+                                                    }
+                                                ]
+                                            });
+                        
+                                            var exampleTable3 = $('#example3')
+                                            .DataTable({
+                                                data: jsObj2,
+                                                stateSave: true,
+                                                colReorder: true,
+                                                paging: true,
+                                                keys: true,
+                                                'columns': [{
+                                                        'data': 'Name'
+                                                    },
+                                                    {
+                                                        'data': 'Circulating Supply'
+                                                    },
+                                                    {
+                                                        'data': 'Total'
+                                                    },
+                                                    {
+                                                        'data': 'Decimals'
+                                                    },
+                                                    {
+                                                        'data': 'Creation TX'
+                                                    }
+                                                ]
+                                            });
+                                    }
+                        
+                        
+                                }); //ends here
+                                                 
+                            }
+                        });                      
+                
+                        //table stuff ends here ^  
+                                         
+                    }
+        
+                });  
                                  
             }
 
         }); 
         
-        getJSON(url0, async function(err, data0) {
-            if (err !== null) {
-                return $.getJSON(url0);
-            } else {
-
-                circSupply0 = data0.asset.params['circulating-supply'];
-                crtdAtRound0 = data0.asset['created-at-round'];
-                creatTxId0 = data0.asset['creation-txid'];
-                decimals0 = data0.asset.params['decimals'];
-                defaFroz0 = data0.asset.params['default-frozen'];
-                index0 = data0.asset['index'];
-                name0 = data0.asset.params['name'];
-                percCirc0 = ((data0.asset.params['circulating-supply'] / data0.asset.params['total']) * 100).toFixed(6);
-                total0 = data0.asset.params['total'];
-                txcnt0 = data0.asset['asset-tx-counter']; 
-                unitName0 = data0.asset.params['unit-name'];    
-                getJSON(url40, function(err, data40) {
-
-                    if (err !== null) {
-                        return $.getJSON(url40);
-                    } else {
         
-                        //console.log(counter);
-        
-                        var jsObj0 = [
-                            {
-                                'Name': name0,
-                                'Tinyman Price' : tinymanprice0,
-                                '% in Circulation': percCirc0,
-                                'Transactions Counter': txcnt0,
-                                'Created at Round': crtdAtRound0
-                            },
-                            //put any in between here following 0's format
-                            {
-                                'Name': data40.asset.params['name'],
-                                'Tinyman Price' : tinymanprice0,
-                                '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
-                                'Transactions Counter': data40.asset['asset-tx-counter'],
-                                'Created at Round': data40.asset['created-at-round']
-                            }
-                        ];
-        
-                        var jsObj1 = [
-                            {
-                                'Name': name0,
-                                'Unit Name': unitName0,
-                                'Index': index0,
-                                'Default Frozen': defaFroz0
-                            },
-                            {
-                                'Name': data40.asset.params['name'],
-                                'Unit Name': data40.asset.params['unit-name'],
-                                'Index': data40.asset['index'],
-                                'Default Frozen': data40.asset.params['default-frozen']
-                            }
-                        ];
-        
-                        var jsObj2 = [
-                            {
-                                'Name': name0,                      
-                                'Circulating Supply': circSupply0,
-                                'Total': total0,
-                                'Decimals': decimals0,
-                                'Creation TX': creatTxId0,
-                            },
-                            {
-                                'Name': data40.asset.params['name'],                      
-                                'Circulating Supply': data40.asset.params['circulating-supply'],
-                                'Total': data40.asset.params['total'],
-                                'Decimals': data40.asset.params['decimals'],
-                                'Creation TX': data40.asset['creation-txid']
-                            }
-                        ];
-        
-                        //modified array is accessible here
-        
-                        var exampleTable1 = $('#example1')
-                            .DataTable({
-                                data: jsObj0,
-                                stateSave: true,
-                                colReorder: true,
-                                paging: true,
-                                keys: true,
-                                'columns': [{
-                                        'data': 'Name'
-                                    },
-                                    {
-                                        'data': 'Tinyman Price'
-                                    },
-                                    {
-                                        'data': '% in Circulation'
-                                    },
-                                    {
-                                        'data': 'Transactions Counter'
-                                    },
-                                    {
-                                        'data': 'Created at Round'
-                                    }
-                                ]
-                            });
-        
-                            var exampleTable2 = $('#example2')
-                            .DataTable({
-                                data: jsObj1,
-                                stateSave: true,
-                                colReorder: true,
-                                paging: true,
-                                keys: true,
-                                'columns': [{
-                                        'data': 'Name'
-                                    },
-                                    {
-                                        'data': 'Unit Name'
-                                    },
-                                    {
-                                        'data': 'Index'
-                                    },
-                                    {
-                                        'data': 'Default Frozen'
-                                    }
-                                ]
-                            });
-        
-                            var exampleTable3 = $('#example3')
-                            .DataTable({
-                                data: jsObj2,
-                                stateSave: true,
-                                colReorder: true,
-                                paging: true,
-                                keys: true,
-                                'columns': [{
-                                        'data': 'Name'
-                                    },
-                                    {
-                                        'data': 'Circulating Supply'
-                                    },
-                                    {
-                                        'data': 'Total'
-                                    },
-                                    {
-                                        'data': 'Decimals'
-                                    },
-                                    {
-                                        'data': 'Creation TX'
-                                    }
-                                ]
-                            });
-                    }
-        
-        
-                }); //ends here
-                                 
-            }
-        });              
-        
-
-        //table stuff ends here ^
         //unused below
 
         /*function sleep(milliseconds) {
