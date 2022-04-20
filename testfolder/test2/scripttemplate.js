@@ -75,10 +75,20 @@ $(document)
         var url52 = algoexplorerapi + '393155456';
         
         var percCirc0 = 'loading';
+        var circSupply0 = 'loading';
+        var creator0 = 'loading';
         var creatRnd0 = 'loading';
+        var creatTxId0 = 'loading';
+        var crntRound0 = 'loading';
+        var crtdAtRound0 = 'loading';
+        var decimals0 = 'loading';
+        var freeze0 = 'loading';
         var frozen0 = 'loading';
-        var indexNum0 = 'loading';        
+        var indexNum0 = 'loading';     
+        var manager0 = 'loading';   
         var name0 = 'loading';
+        var reserve0 = 'loading';
+        var rndsSinceCreat0 = 'loading';
         var supply0 = 'loading';
         var total0 = 'loading';
         var txcnt0 = 'loading';
@@ -90,8 +100,8 @@ $(document)
             if (err !== null) {
                 return $.getJSON(url0);
             } else {
-                unitname0 = data0.asset.params['unit-name'];
-                index0 = data0.asset['index'];
+                unitName0 = data0.asset.params['unit-name'];
+                indexNum0 = data0.asset['index'];
                 createdatround0 = data0.asset['created-at-round'];
                 name0 = data0.asset.params['name'];
                 txcounter0 = data0.asset['asset-tx-counter'];
@@ -107,8 +117,8 @@ $(document)
                 return $.getJSON(url40);
             } else {
 
-                //
                 //console.log(counter);
+
                 var jsObj0 = [
                     {
                         'Name': name0,
@@ -116,7 +126,6 @@ $(document)
                         'Transactions Counter': txcnt0,
                         'Verification Score': verifscore0,
                         'Verification Reputation': verifrep0,
-                        'Circulating Supply': circsupply0,
                         'Frozen': frozen0
                     },
                     {
@@ -125,21 +134,41 @@ $(document)
                         'Transactions Counter': txcounter1,
                         'Verification Score': verifscore1,
                         'Verification Reputation': verifrep1,
-                        'Circulating Supply': circsupply1,
                         'Frozen': frozen1
                     }
                 ];
 
                 var jsObj1 = [
                     {
-                        'Unit Name': unitName0,
-                        'ID': indexNum0,
-                        'Created at Round': creatRnd0,
                         'Name': name0,
-                        'Transactions Counter': txcounter0,
-                        'Circulating Supply': supply0,
-                        'Total Supply': total0,
-                        '% in Circulation': percCirc0 + '%'
+                        'Creation TX': creatTxId0,
+                        'Creator': creator0,
+                        'Manager': manager0,
+                        'Reserve': reserve0,
+                        'Freeze': freeze0
+                    },
+                    {
+                        'Name': name1,
+                        'Creation TX': creatTxId1,
+                        'Creator': creator1,
+                        'Manager': manager1,
+                        'Reserve': reserve1,
+                        'Freeze': freeze1
+                    }
+                ];
+
+                var jsObj2 = [
+                    {
+                        'Name': name0,
+                        'Rounds since Creation': rndsSinceCreat0,
+                        'Created at Round': crtdAtRound0,
+                        'Current Round': crntRound0,
+                        'Circulating Supply': circSupply0,
+                        'Supply': supply0,
+                        'Decimals': decimals0
+                    },
+                    {
+
                     }
                 ];
 
