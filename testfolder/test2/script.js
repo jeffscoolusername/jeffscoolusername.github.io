@@ -224,7 +224,14 @@ $(document)
                                                         'data': 'Unit Name'
                                                     },
                                                     {
-                                                        'data': 'Index'
+                                                        'data': 'Index',
+                                                        "render": function(data, type, row, meta){
+                                                            if(type === 'display'){
+                                                                data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                                            }
+                                                
+                                                            return data;
+                                                         }
                                                     },
                                                     {
                                                         'data': 'Default Frozen'
@@ -255,7 +262,7 @@ $(document)
                                                         'data': 'Creation TX',
                                                         "render": function(data, type, row, meta){
                                                             if(type === 'display'){
-                                                                data = '<a href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
+                                                                data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
                                                             }
                                                 
                                                             return data;
