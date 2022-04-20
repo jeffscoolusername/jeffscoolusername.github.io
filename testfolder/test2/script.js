@@ -194,7 +194,12 @@ $(document)
                                                         'data': 'Tinyman Price'
                                                     },
                                                     {
-                                                        'data': '% in Circulation'
+                                                        'data': '% in Circulation',
+                                                        render: function(data, type, row, meta) {
+                                                            return type === 'display' ?
+                                                                '<progress value="' + data + '" max="100"></progress>' :
+                                                                data;
+                                                        }
                                                     },
                                                     {
                                                         'data': 'Transactions Counter'
