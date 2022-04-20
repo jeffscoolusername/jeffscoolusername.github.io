@@ -84,7 +84,6 @@ $(document)
         var defaFroz0 = 'loading';
         var descript0 = 'loading;'
         var freeze0 = 'loading';
-        var frozen0 = 'loading';
         var index0 = 'loading';     
         var manager0 = 'loading';   
         var name0 = 'loading';
@@ -94,7 +93,7 @@ $(document)
         var total0 = 'loading';
         var txcnt0 = 'loading';
         var unitName0 = 'loading';    
-        var creatorUrl0 = 'loading';
+        var url0 = 'loading';
         var verifrep0 = 'loading';  
         var verifscore0 = 'loading';     
         
@@ -107,25 +106,24 @@ $(document)
                 creator0 = data0.asset.params['creator'];
                 creatRnd0 = data0.asset['created-at-round'];
                 creatTxId0 = data0.asset['creation-txid'];
-                crntRound0 = '';
-                crtdAtRound0 = '';
-                decimals0 = '';
-                defaFroz0 = '';
-                descript0 = '';
-                freeze0 = '';
-                frozen0 = '';
+                crntRound0 = data0.current-round;
+                crtdAtRound0 = data0.asset['created-at-round'];
+                decimals0 = data0.asset.params['decimals'];
+                defaFroz0 = data0.asset.params['default-frozen'];
+                descript0 = data0.asset.verification['description'];
+                freeze0 = data0.asset.params['freeze'];
                 index0 = data0.asset['index'];
-                manager0 = '';
+                manager0 = freeze0 = data0.asset.params['manager'];
                 name0 = data0.asset.params['name'];
                 percCirc0 = ((data0.asset.params['circulating-supply'] / data0.asset.params['total']) * 100).toFixed(6);
-                reserve0 = '';
-                rndsSinceCreat0 = '';
+                reserve0 = freeze0 = data0.asset.params['reserve'];
+                rndsSinceCreat0 = (data0.asset['created-at-round'] - data0.asset['created-at-round']);
                 total0 = data0.asset.params['total'];
                 txcnt0 = data0.asset['asset-tx-counter']; 
                 unitName0 = data0.asset.params['unit-name'];    
-                creatorUrl0 = '';
-                verifrep0 = '';
-                verifscore0 = '';    
+                url0 = data0.asset.params['url'];
+                verifrep0 = data0.asset.verification['reputation'];
+                verifscore0 = data0.asset.verification['score'];   
                                  
             }
         });       
@@ -145,7 +143,7 @@ $(document)
                         'Transactions Counter': txcnt0,
                         'Verification Score': verifscore0,
                         'Verification Reputation': verifrep0,
-                        'Frozen': frozen0
+                        'Rounds since Creation': rndsSinceCreat0,
                     }
                 ];
 
@@ -166,15 +164,14 @@ $(document)
                         'Unit Name': unitName0,
                         'Index': index0,
                         'Description': descript0,
-                        'Creator URL': creatorUrl0,
+                        'URL': url0,
                         'Default Frozen': defaFroz0
                     }
                 ];
 
                 var jsObj3 = [
                     {
-                        'Name': name0,
-                        'Rounds since Creation': rndsSinceCreat0,
+                        'Name': name0,                        
                         'Created at Round': crtdAtRound0,
                         'Current Round': crntRound0,
                         'Circulating Supply': circSupply0,
