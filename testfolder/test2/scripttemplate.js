@@ -73,8 +73,7 @@ $(document)
         var url50 = algoexplorerapi + '391379500';
         var url51 = algoexplorerapi + '591601798';
         var url52 = algoexplorerapi + '393155456';
-        
-        var percCirc0 = 'loading';
+                
         var circSupply0 = 'loading';
         var creator0 = 'loading';
         var creatRnd0 = 'loading';
@@ -82,17 +81,20 @@ $(document)
         var crntRound0 = 'loading';
         var crtdAtRound0 = 'loading';
         var decimals0 = 'loading';
+        var defaFroz0 = 'loading';
+        var descript0 = 'loading;'
         var freeze0 = 'loading';
         var frozen0 = 'loading';
-        var indexNum0 = 'loading';     
+        var index0 = 'loading';     
         var manager0 = 'loading';   
         var name0 = 'loading';
+        var percCirc0 = 'loading';
         var reserve0 = 'loading';
         var rndsSinceCreat0 = 'loading';
-        var supply0 = 'loading';
         var total0 = 'loading';
         var txcnt0 = 'loading';
         var unitName0 = 'loading';    
+        var creatorUrl0 = 'loading';
         var verifrep0 = 'loading';  
         var verifscore0 = 'loading';     
         
@@ -100,14 +102,31 @@ $(document)
             if (err !== null) {
                 return $.getJSON(url0);
             } else {
-                unitName0 = data0.asset.params['unit-name'];
-                indexNum0 = data0.asset['index'];
-                createdatround0 = data0.asset['created-at-round'];
+
+                circSupply0 = data0.asset.params['circulating-supply'];
+                creator0 = data0.asset.params['creator'];
+                creatRnd0 = data0.asset['created-at-round'];
+                creatTxId0 = data0.asset['creation-txid'];
+                crntRound0 = '';
+                crtdAtRound0 = '';
+                decimals0 = '';
+                defaFroz0 = '';
+                descript0 = '';
+                freeze0 = '';
+                frozen0 = '';
+                index0 = data0.asset['index'];
+                manager0 = '';
                 name0 = data0.asset.params['name'];
-                txcounter0 = data0.asset['asset-tx-counter'];
-                supply0 = data0.asset.params['circulating-supply'];
+                percCirc0 = ((data0.asset.params['circulating-supply'] / data0.asset.params['total']) * 100).toFixed(6);
+                reserve0 = '';
+                rndsSinceCreat0 = '';
                 total0 = data0.asset.params['total'];
-                circulation0 = ((data0.asset.params['circulating-supply'] / data0.asset.params['total']) * 100).toFixed(6);
+                txcnt0 = data0.asset['asset-tx-counter']; 
+                unitName0 = data0.asset.params['unit-name'];    
+                creatorUrl0 = '';
+                verifrep0 = '';
+                verifscore0 = '';    
+                                 
             }
         });       
 
@@ -122,19 +141,11 @@ $(document)
                 var jsObj0 = [
                     {
                         'Name': name0,
-                        '% in Circulation': circulation0 + '%',
+                        '% in Circulation': percCirc0,
                         'Transactions Counter': txcnt0,
                         'Verification Score': verifscore0,
                         'Verification Reputation': verifrep0,
                         'Frozen': frozen0
-                    },
-                    {
-                        'Name': name1,
-                        '% in Circulation': circulation1 + '%',
-                        'Transactions Counter': txcounter1,
-                        'Verification Score': verifscore1,
-                        'Verification Reputation': verifrep1,
-                        'Frozen': frozen1
                     }
                 ];
 
@@ -146,29 +157,29 @@ $(document)
                         'Manager': manager0,
                         'Reserve': reserve0,
                         'Freeze': freeze0
-                    },
-                    {
-                        'Name': name1,
-                        'Creation TX': creatTxId1,
-                        'Creator': creator1,
-                        'Manager': manager1,
-                        'Reserve': reserve1,
-                        'Freeze': freeze1
                     }
                 ];
 
                 var jsObj2 = [
                     {
                         'Name': name0,
+                        'Unit Name': unitName0,
+                        'Index': index0,
+                        'Description': descript0,
+                        'Creator URL': creatorUrl0,
+                        'Default Frozen': defaFroz0
+                    }
+                ];
+
+                var jsObj3 = [
+                    {
+                        'Name': name0,
                         'Rounds since Creation': rndsSinceCreat0,
                         'Created at Round': crtdAtRound0,
                         'Current Round': crntRound0,
                         'Circulating Supply': circSupply0,
-                        'Supply': supply0,
+                        'Total': total0,
                         'Decimals': decimals0
-                    },
-                    {
-
                     }
                 ];
 
@@ -181,7 +192,6 @@ $(document)
                         colReorder: true,
                         paging: true,
                         keys: true,
-                        //fixedHeader: true,
                         'columns': [{
                                 'data': 'Unit Name'
                             },
@@ -216,7 +226,6 @@ $(document)
                         colReorder: true,
                         paging: true,
                         keys: true,
-                        //fixedHeader: true,
                         'columns': [{
                                 'data': 'Unit Name'
                             },
