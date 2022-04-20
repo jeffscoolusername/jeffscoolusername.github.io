@@ -16,7 +16,7 @@ $(document)
             xhr.send();
         };
 
-        window.alert = function() {};
+        //window.alert = function() {};
 
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
 
@@ -75,27 +75,16 @@ $(document)
         var url52 = algoexplorerapi + '393155456';
                 
         var circSupply0 = 'loading';
-        var creator0 = 'loading';
-        var creatRnd0 = 'loading';
-        var creatTxId0 = 'loading';
-        var crntRound0 = 'loading';
         var crtdAtRound0 = 'loading';
+        var creatTxId0 = 'loading';        
         var decimals0 = 'loading';
         var defaFroz0 = 'loading';
-        var descript0 = 'loading;'
-        var freeze0 = 'loading';
         var index0 = 'loading';     
-        var manager0 = 'loading';   
         var name0 = 'loading';
         var percCirc0 = 'loading';
-        var reserve0 = 'loading';
-        var rndsSinceCreat0 = 'loading';
         var total0 = 'loading';
         var txcnt0 = 'loading';
         var unitName0 = 'loading';    
-        var url0 = 'loading';
-        var verifrep0 = 'loading';  
-        var verifscore0 = 'loading';     
         
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
@@ -103,193 +92,162 @@ $(document)
             } else {
 
                 circSupply0 = data0.asset.params['circulating-supply'];
-                creator0 = data0.asset.params['creator'];
-                creatRnd0 = data0.asset['created-at-round'];
-                creatTxId0 = data0.asset['creation-txid'];
                 crtdAtRound0 = data0.asset['created-at-round'];
+                creatTxId0 = data0.asset['creation-txid'];
                 decimals0 = data0.asset.params['decimals'];
                 defaFroz0 = data0.asset.params['default-frozen'];
-                descript0 = data0.asset.verification['description'];
-                freeze0 = data0.asset.params['freeze'];
                 index0 = data0.asset['index'];
-                manager0 = freeze0 = data0.asset.params['manager'];
                 name0 = data0.asset.params['name'];
                 percCirc0 = ((data0.asset.params['circulating-supply'] / data0.asset.params['total']) * 100).toFixed(6);
-                reserve0 = freeze0 = data0.asset.params['reserve'];
                 total0 = data0.asset.params['total'];
                 txcnt0 = data0.asset['asset-tx-counter']; 
                 unitName0 = data0.asset.params['unit-name'];    
-                url0 = data0.asset.params['url'];
-                verifrep0 = data0.asset.verification['reputation'];
-                verifscore0 = data0.asset.verification['score'];   
+                getJSON(url40, function(err, data40) {
+
+                    if (err !== null) {
+                        return $.getJSON(url40);
+                    } else {
+        
+                        //console.log(counter);
+        
+                        var jsObj0 = [
+                            {
+                                'Name': name0,
+                                '% in Circulation': percCirc0,
+                                'Transactions Counter': txcnt0,
+                                'Created at Round': crtdAtRound0
+                            },
+                            //put any in between here following 0's format
+                            {
+                                'Name': data40.asset.params['name'],
+                                '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
+                                'Transactions Counter': data40.asset['asset-tx-counter'],
+                                'Created at Round': data40.asset['created-at-round'],
+                            }
+                        ];
+        
+                        var jsObj1 = [
+                            {
+                                'Name': name0,
+                                'Unit Name': unitName0,
+                                'Index': index0,
+                                'Default Frozen': defaFroz0
+                            },
+                            {
+                                'Name': data40.asset.params['name'],
+                                'Unit Name': data40.asset.params['unit-name'],
+                                'Index': data40.asset['index'],
+                                'Default Frozen': data40.asset.params['default-frozen']
+                            }
+                        ];
+        
+                        var jsObj2 = [
+                            {
+                                'Name': name0,                      
+                                'Circulating Supply': circSupply0,
+                                'Total': total0,
+                                'Decimals': decimals0,
+                                'Creation TX': creatTxId0,
+                            },
+                            {
+                                'Name': data40.asset.params['name'],                      
+                                'Circulating Supply': data40.asset.params['circulating-supply'],
+                                'Total': data40.asset.params['total'],
+                                'Decimals': data40.asset.params['decimals'],
+                                'Creation TX': data40.asset['creation-txid']
+                            }
+                        ];
+        
+                        //modified array is accessible here
+        
+                        var exampleTable1 = $('#example1')
+                            .DataTable({
+                                data: jsObj0,
+                                stateSave: true,
+                                colReorder: true,
+                                paging: true,
+                                keys: true,
+                                'columns': [{
+                                        'data': 'Name'
+                                    },
+                                    {
+                                        'data': '% in Circulation'
+                                    },
+                                    {
+                                        'data': 'Transactions Counter'
+                                    },
+                                    {
+                                        'data': 'Created at Round'
+                                    }
+                                ]
+                            });
+        
+                            var exampleTable2 = $('#example2')
+                            .DataTable({
+                                data: jsObj1,
+                                stateSave: true,
+                                colReorder: true,
+                                paging: true,
+                                keys: true,
+                                'columns': [{
+                                        'data': 'Name'
+                                    },
+                                    {
+                                        'data': 'Unit Name'
+                                    },
+                                    {
+                                        'data': 'Index'
+                                    },
+                                    {
+                                        'data': 'Default Frozen'
+                                    }
+                                ]
+                            });
+        
+                            var exampleTable3 = $('#example3')
+                            .DataTable({
+                                data: jsObj2,
+                                stateSave: true,
+                                colReorder: true,
+                                paging: true,
+                                keys: true,
+                                'columns': [{
+                                        'data': 'Name'
+                                    },
+                                    {
+                                        'data': 'Circulating Supply'
+                                    },
+                                    {
+                                        'data': 'Total'
+                                    },
+                                    {
+                                        'data': 'Decimals'
+                                    },
+                                    {
+                                        'data': 'Creation TX'
+                                    }
+                                ]
+                            });
+                    }
+        
+        
+                }); //ends here
                                  
             }
         });       
 
-        getJSON(url40, function(err, data40) {
+        
 
-            if (err !== null) {
-                return $.getJSON(url40);
-            } else {
+        //table stuff ends here ^
+        //unused below
 
-                //console.log(counter);
-
-                var jsObj0 = [
-                    {
-                        'Name': name0,
-                        '% in Circulation': percCirc0,
-                        'Transactions Counter': txcnt0,
-                        'Verification Score': verifscore0,
-                        'Verification Reputation': verifrep0,
-                        'Created at Round': creatRnd0
-                    },
-                    //put any in between here following 0's format
-                    {
-                        'Name': data40.asset.params['name'],
-                        '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
-                        'Transactions Counter': data40.asset['asset-tx-counter'],
-                        'Verification Score': data40.asset.verification['score'],
-                        'Verification Reputation': data40.asset.verification['reputation'],
-                        'Created at Round': data40.asset['created-at-round'],
-                    }
-                ];
-
-                var jsObj1 = [
-                    {
-                        'Name': name0,
-                        'Creation TX': creatTxId0,
-                        'Creator': creator0,
-                        'Manager': manager0,
-                        'Reserve': reserve0,
-                        'Freeze': freeze0
-                    },
-                    {
-                        'Name': data40.asset.params['name'],
-                        'Creation TX': data40.asset['creation-txid'],
-                        'Creator': data40.asset.params['creator'],
-                        'Manager': data40.asset.params['manager'],
-                        'Reserve': data40.asset.params['reserve'],
-                        'Freeze': data40.asset.params['freeze']
-                    }
-                ];
-
-                var jsObj2 = [
-                    {
-                        'Name': name0,
-                        'Unit Name': unitName0,
-                        'Index': index0,
-                        'Description': descript0,
-                        'URL': url0,
-                        'Default Frozen': defaFroz0
-                    },
-                    {
-                        'Name': data40.asset.params['name'],
-                        'Unit Name': data40.asset.params['unit-name'],
-                        'Index': data40.asset['index'],
-                        'Description': data40.asset.verification['description'],
-                        'URL': data40.asset.params['url'],
-                        'Default Frozen': data40.asset.params['default-frozen']
-                    }
-                ];
-
-                var jsObj3 = [
-                    {
-                        'Name': name0,                      
-                        'Circulating Supply': circSupply0,
-                        'Total': total0,
-                        'Decimals': decimals0
-                    },
-                    {
-                        'Name': data40.asset.params['name'],                      
-                        'Circulating Supply': data40.asset.params['circulating-supply'],
-                        'Total': data40.asset.params['total'],
-                        'Decimals': data40.asset.params['decimals']
-                    }
-                ];
-
-                //modified array is accessible here
-
-                var exampleTable1 = $('#example1')
-                    .DataTable({
-                        data: jsObj0,
-                        stateSave: true,
-                        colReorder: true,
-                        paging: true,
-                        keys: true,
-                        'columns': [{
-                                'data': 'Name'
-                            },
-                            {
-                                'data': 'ID'
-                            },
-                            {
-                                'data': 'Created at Round'
-                            },
-                            {
-                                'data': 'Name'
-                            },
-                            {
-                                'data': 'Transactions Counter'
-                            },
-                            {
-                                'data': 'Circulating Supply'
-                            },
-                            {
-                                'data': 'Total Supply'
-                            },
-                            {
-                                'data': '% in Circulation'
-                            }
-                        ]
-                    });
-
-                    var exampleTable2 = $('#example2')
-                    .DataTable({
-                        data: jsObj1,
-                        stateSave: true,
-                        colReorder: true,
-                        paging: true,
-                        keys: true,
-                        'columns': [{
-                                'data': 'Unit Name'
-                            },
-                            {
-                                'data': 'ID'
-                            },
-                            {
-                                'data': 'Created at Round'
-                            },
-                            {
-                                'data': 'Name'
-                            },
-                            {
-                                'data': 'Transactions Counter'
-                            },
-                            {
-                                'data': 'Circulating Supply'
-                            },
-                            {
-                                'data': 'Total Supply'
-                            },
-                            {
-                                'data': '% in Circulation'
-                            }
-                        ]
-                    });
-            }
-
-
-        }); //30 ends here
-
-        //table stuff ends here
-
-        function sleep(milliseconds) {
+        /*function sleep(milliseconds) {
             const date = Date.now();
             let currentDate = null;
             do {
                 currentDate = Date.now();
             } while (currentDate - date < milliseconds);
-        }
+        }*/
 
 
     });
