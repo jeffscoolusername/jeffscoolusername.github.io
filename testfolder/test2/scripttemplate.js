@@ -19,8 +19,10 @@ $(document)
         //window.alert = function() {};
 
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
+        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
 
         var url0 = algoexplorerapi + '397111682';
+        var urlprice0 = algochartsapi + '397111682' + '&asset_out=0';
         var url1 = algoexplorerapi + '353409462';
         var url2 = algoexplorerapi + '430838314';
         var url3 = algoexplorerapi + '226265212';
@@ -82,9 +84,21 @@ $(document)
         var index0 = 'loading';     
         var name0 = 'loading';
         var percCirc0 = 'loading';
+        var tinymanprice0 = 'loading';
         var total0 = 'loading';
         var txcnt0 = 'loading';
         var unitName0 = 'loading';    
+
+        getJSON(urlprice0, async function(err, data01) {
+            if (err !== null) {
+                return $.getJSON(urlprice0);
+            } else {
+
+                tinymanprice0 = data01.data[0].toFixed(6);       
+                                 
+            }
+
+        }); 
         
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
@@ -113,6 +127,7 @@ $(document)
                         var jsObj0 = [
                             {
                                 'Name': name0,
+                                'Tinyman Price' : tinymanprice0,
                                 '% in Circulation': percCirc0,
                                 'Transactions Counter': txcnt0,
                                 'Created at Round': crtdAtRound0
@@ -120,9 +135,10 @@ $(document)
                             //put any in between here following 0's format
                             {
                                 'Name': data40.asset.params['name'],
+                                'Tinyman Price' : tinymanprice0,
                                 '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
                                 'Transactions Counter': data40.asset['asset-tx-counter'],
-                                'Created at Round': data40.asset['created-at-round'],
+                                'Created at Round': data40.asset['created-at-round']
                             }
                         ];
         
@@ -169,6 +185,9 @@ $(document)
                                 keys: true,
                                 'columns': [{
                                         'data': 'Name'
+                                    },
+                                    {
+                                        'data': 'Tinyman Price'
                                     },
                                     {
                                         'data': '% in Circulation'
@@ -234,8 +253,7 @@ $(document)
                 }); //ends here
                                  
             }
-        });       
-
+        });              
         
 
         //table stuff ends here ^
