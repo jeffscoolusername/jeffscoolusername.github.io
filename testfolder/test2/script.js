@@ -252,7 +252,14 @@ $(document)
                                                         'data': 'Decimals'
                                                     },
                                                     {
-                                                        'data': 'Creation TX'
+                                                        'data': 'Creation TX',
+                                                        "render": function(data, type, row, meta){
+                                                            if(type === 'display'){
+                                                                data = '<a href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
+                                                            }
+                                                
+                                                            return data;
+                                                         }
                                                     }
                                                 ]
                                             });
