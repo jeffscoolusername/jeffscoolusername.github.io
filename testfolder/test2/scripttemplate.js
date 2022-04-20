@@ -106,7 +106,6 @@ $(document)
                 creator0 = data0.asset.params['creator'];
                 creatRnd0 = data0.asset['created-at-round'];
                 creatTxId0 = data0.asset['creation-txid'];
-                crntRound0 = data0.current-round;
                 crtdAtRound0 = data0.asset['created-at-round'];
                 decimals0 = data0.asset.params['decimals'];
                 defaFroz0 = data0.asset.params['default-frozen'];
@@ -117,7 +116,6 @@ $(document)
                 name0 = data0.asset.params['name'];
                 percCirc0 = ((data0.asset.params['circulating-supply'] / data0.asset.params['total']) * 100).toFixed(6);
                 reserve0 = freeze0 = data0.asset.params['reserve'];
-                rndsSinceCreat0 = (data0.asset['created-at-round'] - data0.asset['created-at-round']);
                 total0 = data0.asset.params['total'];
                 txcnt0 = data0.asset['asset-tx-counter']; 
                 unitName0 = data0.asset.params['unit-name'];    
@@ -143,7 +141,16 @@ $(document)
                         'Transactions Counter': txcnt0,
                         'Verification Score': verifscore0,
                         'Verification Reputation': verifrep0,
-                        'Rounds since Creation': rndsSinceCreat0,
+                        'Created at Round': creatRnd0
+                    },
+                    //put any in between here following 0's format
+                    {
+                        'Name': data40.asset.params['name'],
+                        '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
+                        'Transactions Counter': data40.asset['asset-tx-counter'],
+                        'Verification Score': data40.asset.verification['score'],
+                        'Verification Reputation': data40.asset.verification['reputation'],
+                        'Created at Round': data40.asset['created-at-round'],
                     }
                 ];
 
@@ -155,6 +162,14 @@ $(document)
                         'Manager': manager0,
                         'Reserve': reserve0,
                         'Freeze': freeze0
+                    },
+                    {
+                        'Name': data40.asset.params['name'],
+                        'Creation TX': data40.asset['creation-txid'],
+                        'Creator': data40.asset.params['creator'],
+                        'Manager': data40.asset.params['manager'],
+                        'Reserve': data40.asset.params['reserve'],
+                        'Freeze': data40.asset.params['freeze']
                     }
                 ];
 
@@ -166,17 +181,29 @@ $(document)
                         'Description': descript0,
                         'URL': url0,
                         'Default Frozen': defaFroz0
+                    },
+                    {
+                        'Name': data40.asset.params['name'],
+                        'Unit Name': data40.asset.params['unit-name'],
+                        'Index': data40.asset['index'],
+                        'Description': data40.asset.verification['description'],
+                        'URL': data40.asset.params['url'],
+                        'Default Frozen': data40.asset.params['default-frozen']
                     }
                 ];
 
                 var jsObj3 = [
                     {
-                        'Name': name0,                        
-                        'Created at Round': crtdAtRound0,
-                        'Current Round': crntRound0,
+                        'Name': name0,                      
                         'Circulating Supply': circSupply0,
                         'Total': total0,
                         'Decimals': decimals0
+                    },
+                    {
+                        'Name': data40.asset.params['name'],                      
+                        'Circulating Supply': data40.asset.params['circulating-supply'],
+                        'Total': data40.asset.params['total'],
+                        'Decimals': data40.asset.params['decimals']
                     }
                 ];
 
@@ -190,7 +217,7 @@ $(document)
                         paging: true,
                         keys: true,
                         'columns': [{
-                                'data': 'Unit Name'
+                                'data': 'Name'
                             },
                             {
                                 'data': 'ID'
