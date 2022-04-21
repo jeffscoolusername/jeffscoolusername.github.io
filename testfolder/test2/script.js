@@ -147,6 +147,18 @@ $(document)
         var newstitle5 = 'loading';
         var newslink5 = 'loading';
         var newspubDate5 = 'loading';
+        var newstitle6 = 'loading';
+        var newslink6 = 'loading';
+        var newspubDate6 = 'loading';
+        var newstitle7 = 'loading';
+        var newslink7 = 'loading';
+        var newspubDate7 = 'loading';
+        var newstitle8 = 'loading';
+        var newslink8 = 'loading';
+        var newspubDate8 = 'loading';
+        var newstitle9 = 'loading';
+        var newslink9 = 'loading';
+        var newspubDate9 = 'loading';
 
         
         var feedURL = "https://news.google.com/rss/search?q=algorand&hl=en-US&gl=US&ceid=US:en";
@@ -155,7 +167,7 @@ $(document)
         url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
         dataType: 'jsonp',
         success: async function(result) {
-
+            sleep(1200); //very interesting and simple strategy
             newstitle0 = result.items[0].title;
             newspubDate0 = result.items[0].pubDate;
             newslink0 = result.items[0].link;
@@ -174,6 +186,18 @@ $(document)
             newstitle5 = result.items[5].title;
             newspubDate5 = result.items[5].pubDate;
             newslink5 = result.items[5].link;
+            newstitle6 = result.items[6].title;
+            newspubDate6 = result.items[6].pubDate;
+            newslink6 = result.items[6].link;
+            newstitle7 = result.items[7].title;
+            newspubDate7 = result.items[7].pubDate;
+            newslink7 = result.items[7].link;
+            newstitle8 = result.items[8].title;
+            newspubDate8 = result.items[8].pubDate;
+            newslink8 = result.items[8].link;
+            newstitle9 = result.items[9].title;
+            newspubDate9 = result.items[9].pubDate;
+            newslink9 = result.items[9].link;
 
         }
         });
@@ -338,7 +362,28 @@ $(document)
                                                 'News Title': newstitle5,   
                                                 'News Publish Date': newspubDate5,      
                                                 'News Link': newslink5
+                                            },
+                                            {
+                                                'News Title': newstitle6,   
+                                                'News Publish Date': newspubDate6,      
+                                                'News Link': newslink6
+                                            },
+                                            {
+                                                'News Title': newstitle7,   
+                                                'News Publish Date': newspubDate7,      
+                                                'News Link': newslink7
+                                            },
+                                            {
+                                                'News Title': newstitle8,   
+                                                'News Publish Date': newspubDate8,      
+                                                'News Link': newslink8
+                                            },
+                                            {
+                                                'News Title': newstitle9,   
+                                                'News Publish Date': newspubDate9,      
+                                                'News Link': newslink9
                                             }
+
                                         ];                        
                         
                                         //modified array is accessible here
@@ -715,13 +760,13 @@ $(document)
         
         //unused below
 
-        /*function sleep(milliseconds) {
+        function sleep(milliseconds) {
             const date = Date.now();
             let currentDate = null;
             do {
                 currentDate = Date.now();
             } while (currentDate - date < milliseconds);
-        }*/
+        }
 
 
     });
