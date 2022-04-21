@@ -20,9 +20,12 @@ $(document)
 
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
         var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
+        var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
 
         var url0 = algoexplorerapi + '397111682';
         var urlprice0 = algochartsapi + '397111682' + '&asset_out=0';
+        var urlcgprice0 = coingeckoapi + 'algorand';
+        var urlcgprice1 = coingeckoapi + 'bitcoin';
         var url1 = algoexplorerapi + '353409462';
         var url2 = algoexplorerapi + '430838314';
         var url3 = algoexplorerapi + '226265212';
@@ -84,13 +87,42 @@ $(document)
         var defaFroz0 = 'loading';
         var index0 = 'loading';     
         var name0 = 'loading';
-        var percCirc0 = 'loading';
-        var tinymanprice0 = 'loading';
+        var percCirc0 = 'loading';        
         var total0 = 'loading';
         var txcnt0 = 'loading';
         var unitName0 = 'loading';    
 
-        var tinymanprice40 = 'loading';
+        var namecg0 = 'loading';
+        var namecg1 = 'loading';
+        var coingeckoprice0 = 'loading';
+        var coingeckoprice1 = 'loading';
+
+        var tinymanprice0 = 'loading';
+        var tinymanprice40 = 'loading';     
+        
+        getJSON(urlcgprice0, async function(err, data0cgp) {
+            if (err !== null) {
+                return $.getJSON(urlcgprice0);
+            } else {
+
+                namecg0 = data0cgp.name;   
+                coingeckoprice0 = data0cgp.market_data.current_price['usd'];                                                
+                                    
+            }
+
+        });          
+   
+        getJSON(urlcgprice1, async function(err, data01cgp) {
+            if (err !== null) {
+                return $.getJSON(urlcgprice1);
+            } else {
+
+                namecg1 = data01cgp.name;   
+                coingeckoprice1 = (data01cgp.market_data.current_price['usd'] / coingeckoprice0);                                                
+                                    
+            }
+
+        });  
 
         getJSON(urlprice0, async function(err, data01p) {
             if (err !== null) {
@@ -103,7 +135,7 @@ $(document)
                         return $.getJSON(urlprice40);
                     } else {
         
-                        tinymanprice40 = data40p.data[0].toFixed(6);     
+                        tinymanprice40 = data40p.data[0].toFixed(6);    
                         getJSON(url0, async function(err, data0) {
                             if (err !== null) {
                                 return $.getJSON(url0);
@@ -119,9 +151,9 @@ $(document)
                                 percCirc0 = ((data0.asset.params['circulating-supply'] / data0.asset.params['total']) * 100).toFixed(6);
                                 total0 = data0.asset.params['total'];
                                 txcnt0 = data0.asset['asset-tx-counter']; 
-                                unitName0 = data0.asset.params['unit-name'];    
+                                unitName0 = data0.asset.params['unit-name'];          
                                 getJSON(url40, function(err, data40) {
-                
+                                
                                     if (err !== null) {
                                         return $.getJSON(url40);
                                     } else {
@@ -175,6 +207,14 @@ $(document)
                                                 'Total': data40.asset.params['total'],
                                                 'Decimals': data40.asset.params['decimals'],
                                                 'Creation TX': data40.asset['creation-txid']
+                                            }
+                                        ];
+                        
+                                        var jsObj3 = [
+                                            {
+                                                'Name': namecg1,                      
+                                                'Algo Price': coingeckoprice1
+                                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
                                             }
                                         ];
                         
@@ -270,15 +310,29 @@ $(document)
                                                     }
                                                 ]
                                             });
+                        
+                                            var exampleTable4 = $('#example4')
+                                            .DataTable({
+                                                data: jsObj3,
+                                                stateSave: true,
+                                                colReorder: true,
+                                                paging: true,
+                                                keys: true,
+                                                'columns': [{
+                                                        'data': 'Name'
+                                                    },
+                                                    {
+                                                        'data': 'Algo Price'
+                                                    }
+                                                ]
+                                            });
                                     }
                         
                         
-                                }); //ends here
+                                }); //ends here                          
                                                  
                             }
-                        });                      
-                
-                        //table stuff ends here ^  
+                        });                                               
                                          
                     }
         
