@@ -555,6 +555,7 @@ $(document)
                                                     'columnsToggle'
                                                 ],
                                                 colReorder: true,
+                                                "order": [[ 1, "desc" ]],
                                                 paging: false,
                                                 keys: true,
                                                 'columns': [{
