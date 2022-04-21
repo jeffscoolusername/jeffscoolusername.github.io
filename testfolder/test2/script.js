@@ -106,23 +106,23 @@ $(document)
             } else {
 
                 namecg0 = data0cgp.name;   
-                coingeckoprice0 = data0cgp.market_data.current_price['usd'];                                                
+                coingeckoprice0 = data0cgp.market_data.current_price['usd'];              
+                getJSON(urlcgprice1, async function(err, data01cgp) {
+                    if (err !== null) {
+                        return $.getJSON(urlcgprice1);
+                    } else {
+        
+                        namecg1 = data01cgp.name;   
+                        coingeckoprice1 = (data01cgp.market_data.current_price['usd'] / coingeckoprice0);                                                
+                                            
+                    }
+        
+                });                                    
                                     
             }
 
         });          
-   
-        getJSON(urlcgprice1, async function(err, data01cgp) {
-            if (err !== null) {
-                return $.getJSON(urlcgprice1);
-            } else {
-
-                namecg1 = data01cgp.name;   
-                coingeckoprice1 = (data01cgp.market_data.current_price['usd'] / coingeckoprice0);                                                
-                                    
-            }
-
-        });  
+        
 
         getJSON(urlprice0, async function(err, data01p) {
             if (err !== null) {
