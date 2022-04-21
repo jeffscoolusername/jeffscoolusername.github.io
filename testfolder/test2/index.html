@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.6.4/css/keyTable.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.5.5/css/colReorder.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" />
 
     <!-- <script>
   function onReady(callback) {
@@ -41,6 +42,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.colVis.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -2850,9 +2853,13 @@
                 $('#example0').DataTable({
                     //fixedHeader: true,
                     //"columns": [{ "width": "20%" }],
-                    stateSave: true,
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'columnsToggle'
+                    ],
+                    stateSave: true,                    
                     colReorder: true,
-                    paging: true,
+                    paging: false,
                     keys: true
 
                 });
