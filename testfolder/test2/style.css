@@ -99,8 +99,14 @@ h1 {
   }
 
   .dt-button {
-    margin-top: 5px;
-}
+    margin-top: 4px;
+    /*padding: 10px 1px 10px 1px !important*/
+  }
+
+  .input-sm {
+    margin-top: 7px;
+    /*padding: 10px 1px 10px 1px !important*/
+  }
 
 /*
     table.dataTable th {
