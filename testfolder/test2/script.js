@@ -127,7 +127,56 @@ $(document)
         var coingeckopricechange1y1 = 'loading';
 
         var tinymanprice0 = 'loading';
-        var tinymanprice40 = 'loading';               
+        var tinymanprice40 = 'loading';          
+
+        var newstitle0 = 'loading';
+        var newslink0 = 'loading';
+        var newspubDate0 = 'loading';
+        var newstitle1 = 'loading';
+        var newslink1 = 'loading';
+        var newspubDate1 = 'loading';
+        var newstitle2 = 'loading';
+        var newslink2 = 'loading';
+        var newspubDate2 = 'loading';
+        var newstitle3 = 'loading';
+        var newslink3 = 'loading';
+        var newspubDate3 = 'loading';
+        var newstitle4 = 'loading';
+        var newslink4 = 'loading';
+        var newspubDate4 = 'loading';
+        var newstitle5 = 'loading';
+        var newslink5 = 'loading';
+        var newspubDate5 = 'loading';
+
+        
+        var feedURL = "https://news.google.com/rss/search?q=algorand&hl=en-US&gl=US&ceid=US:en";
+        $.ajax({
+        type: 'GET',
+        url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
+        dataType: 'jsonp',
+        success: async function(result) {
+
+            newstitle0 = result.items[0].title;
+            newspubDate0 = result.items[0].pubDate;
+            newslink0 = result.items[0].link;
+            newstitle1 = result.items[1].title;
+            newspubDate1 = result.items[1].pubDate;
+            newslink1 = result.items[1].link;
+            newstitle2 = result.items[2].title;
+            newspubDate2 = result.items[2].pubDate;
+            newslink2 = result.items[2].link;
+            newstitle3 = result.items[3].title;
+            newspubDate3 = result.items[3].pubDate;
+            newslink3 = result.items[3].link;
+            newstitle4 = result.items[4].title;
+            newspubDate4 = result.items[4].pubDate;
+            newslink4 = result.items[4].link;
+            newstitle5 = result.items[5].title;
+            newspubDate5 = result.items[5].pubDate;
+            newslink5 = result.items[5].link;
+
+        }
+        });
 
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
@@ -258,6 +307,39 @@ $(document)
                                                 // ^ for subsequent pieces of the array
                                             }
                                         ];
+
+                                        var jsObj4 = [
+                                            {
+                                                'News Title': newstitle0,   
+                                                'News Publish Date': newspubDate0,      
+                                                'News Link': newslink0
+                                            },
+                                            {
+                                                'News Title': newstitle1,   
+                                                'News Publish Date': newspubDate1,      
+                                                'News Link': newslink1
+                                            },
+                                            {
+                                                'News Title': newstitle2,   
+                                                'News Publish Date': newspubDate2,      
+                                                'News Link': newslink2
+                                            },
+                                            {
+                                                'News Title': newstitle3,   
+                                                'News Publish Date': newspubDate3,      
+                                                'News Link': newslink3
+                                            },
+                                            {
+                                                'News Title': newstitle4,   
+                                                'News Publish Date': newspubDate4,      
+                                                'News Link': newslink4
+                                            },
+                                            {
+                                                'News Title': newstitle5,   
+                                                'News Publish Date': newspubDate5,      
+                                                'News Link': newslink5
+                                            }
+                                        ];                        
                         
                                         //modified array is accessible here
                         
@@ -460,6 +542,36 @@ $(document)
                                                              
                                                             return number;
                                                         }
+                                                    }
+                                                ]
+                                            });
+
+                                            var exampleTable5 = $('#example5')
+                                            .DataTable({
+                                                data: jsObj4,
+                                                stateSave: true,
+                                                dom: 'Bfrtip',
+                                                buttons: [
+                                                    'columnsToggle'
+                                                ],
+                                                colReorder: true,
+                                                paging: false,
+                                                keys: true,
+                                                'columns': [{
+                                                        'data': 'News Title'
+                                                    },
+                                                    {
+                                                        'data': 'News Publish Date'
+                                                    },
+                                                    {
+                                                        'data': 'News Link',
+                                                        "render": function(data, type, row, meta){
+                                                            if(type === 'display'){
+                                                                data = '<a target="_blank" rel="noopener noreferrer" href="' + data + '">' + data + '</a>';
+                                                            }
+                                                
+                                                            return data;
+                                                         }
                                                     }
                                                 ]
                                             });
