@@ -98,6 +98,10 @@ h1 {
       display: none;
   }
 
+  .dt-button {
+    margin-top: 5px;
+}
+
 /*
     table.dataTable th {
       font-size: 0.75em;
