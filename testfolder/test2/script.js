@@ -96,6 +96,14 @@ $(document)
         var namecg1 = 'loading';
         var coingeckoprice0 = 'loading';
         var coingeckoprice1 = 'loading';
+        var coingeckopricechange24h0 = 'loading';
+        var coingeckopricechange24h1 = 'loading';
+        var coingeckopricechange7d0 = 'loading';
+        var coingeckopricechange7d1 = 'loading';
+        var coingeckopricechange30d0 = 'loading';
+        var coingeckopricechange30d1 = 'loading';
+        var coingeckopricechange1y0 = 'loading';
+        var coingeckopricechange1y1 = 'loading';
 
         var tinymanprice0 = 'loading';
         var tinymanprice40 = 'loading';     
@@ -106,7 +114,11 @@ $(document)
             } else {
 
                 namecg0 = data0cgp.name;   
-                coingeckoprice0 = data0cgp.market_data.current_price['usd'];              
+                coingeckoprice0 = data0cgp.market_data.current_price['usd'];     
+                coingeckopricechange24h0 = data0cgp.market_data.price_change_percentage_24h;            
+                coingeckopricechange7d0 = data0cgp.market_data.price_change_percentage_7d;    
+                coingeckopricechange30d0 = data0cgp.market_data.price_change_percentage_30d;  
+                coingeckopricechange1y0 = data0cgp.market_data.price_change_percentage_1y;  
                 getJSON(urlcgprice1, async function(err, data01cgp) {
                     if (err !== null) {
                         return $.getJSON(urlcgprice1);
@@ -114,6 +126,10 @@ $(document)
         
                         namecg1 = data01cgp.name;   
                         coingeckoprice1 = (data01cgp.market_data.current_price['usd'] / coingeckoprice0);      
+                        coingeckopricechange24h1 = data01cgp.market_data.price_change_percentage_24h - coingeckopricechange24h0;   
+                        coingeckopricechange7d1 = data01cgp.market_data.price_change_percentage_7d - coingeckopricechange7d0;   
+                        coingeckopricechange30d1 = data01cgp.market_data.price_change_percentage_30d - coingeckopricechange30d0;   
+                        coingeckopricechange1y1 = data01cgp.market_data.price_change_percentage_1y - coingeckopricechange1y0;  
                         getJSON(urlprice0, async function(err, data01p) {
                             if (err !== null) {
                                 return $.getJSON(urlprice0);
@@ -203,8 +219,13 @@ $(document)
                                                         var jsObj3 = [
                                                             {
                                                                 'Name': namecg1,                      
-                                                                'Algo Price': coingeckoprice1
+                                                                'Algo Price': coingeckoprice1,
+                                                                '24h Change': coingeckopricechange24h1,
+                                                                '7d Change': coingeckopricechange7d1,
+                                                                '30d Change': coingeckopricechange30d1,
+                                                                '1y Change': coingeckopricechange1y1
                                                                 //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                                                // ^ for subsequent pieces of the array
                                                             }
                                                         ];
                                         
@@ -313,6 +334,86 @@ $(document)
                                                                     },
                                                                     {
                                                                         'data': 'Algo Price'
+                                                                    },
+                                                                    {
+                                                                        'data': '24h Change',
+                                                                        render: function(data, type) {
+                                                                            var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                                         
+                                                                            if (type === 'display') {
+                                                                                let color = 'black';
+                                                                                if (data < 0) {
+                                                                                    color = 'red';
+                                                                                }
+                                                                                else if (data >= 0) {
+                                                                                    color = 'green';
+                                                                                }
+                                                         
+                                                                                return '<span style="color:' + color + '">' + number + '</span>';
+                                                                            }
+                                                                             
+                                                                            return number;
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        'data': '7d Change',
+                                                                        render: function(data, type) {
+                                                                            var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                                         
+                                                                            if (type === 'display') {
+                                                                                let color = 'black';
+                                                                                if (data < 0) {
+                                                                                    color = 'red';
+                                                                                }
+                                                                                else if (data >= 0) {
+                                                                                    color = 'green';
+                                                                                }
+                                                         
+                                                                                return '<span style="color:' + color + '">' + number + '</span>';
+                                                                            }
+                                                                             
+                                                                            return number;
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        'data': '30d Change',
+                                                                        render: function(data, type) {
+                                                                            var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                                         
+                                                                            if (type === 'display') {
+                                                                                let color = 'black';
+                                                                                if (data < 0) {
+                                                                                    color = 'red';
+                                                                                }
+                                                                                else if (data >= 0) {
+                                                                                    color = 'green';
+                                                                                }
+                                                         
+                                                                                return '<span style="color:' + color + '">' + number + '</span>';
+                                                                            }
+                                                                             
+                                                                            return number;
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        'data': '1y Change',
+                                                                        render: function(data, type) {
+                                                                            var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                                         
+                                                                            if (type === 'display') {
+                                                                                let color = 'black';
+                                                                                if (data < 0) {
+                                                                                    color = 'red';
+                                                                                }
+                                                                                else if (data >= 0) {
+                                                                                    color = 'green';
+                                                                                }
+                                                         
+                                                                                return '<span style="color:' + color + '">' + number + '</span>';
+                                                                            }
+                                                                             
+                                                                            return number;
+                                                                        }
                                                                     }
                                                                 ]
                                                             });
