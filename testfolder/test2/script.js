@@ -265,8 +265,12 @@ $(document)
                                             .DataTable({
                                                 data: jsObj0,
                                                 stateSave: true,
+                                                dom: 'Bfrtip',
+                                                buttons: [
+                                                    'columnsToggle'
+                                                ],
                                                 colReorder: true,
-                                                paging: true,
+                                                paging: false,
                                                 keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
@@ -295,8 +299,12 @@ $(document)
                                             .DataTable({
                                                 data: jsObj1,
                                                 stateSave: true,
+                                                dom: 'Bfrtip',
+                                                buttons: [
+                                                    'columnsToggle'
+                                                ],
                                                 colReorder: true,
-                                                paging: true,
+                                                paging: false,
                                                 keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
@@ -324,8 +332,12 @@ $(document)
                                             .DataTable({
                                                 data: jsObj2,
                                                 stateSave: true,
+                                                dom: 'Bfrtip',
+                                                buttons: [
+                                                    'columnsToggle'
+                                                ],
                                                 colReorder: true,
-                                                paging: true,
+                                                paging: false,
                                                 keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
@@ -356,8 +368,12 @@ $(document)
                                             .DataTable({
                                                 data: jsObj3,
                                                 stateSave: true,
+                                                dom: 'Bfrtip',
+                                                buttons: [
+                                                    'columnsToggle'
+                                                ],
                                                 colReorder: true,
-                                                paging: true,
+                                                paging: false,
                                                 keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
