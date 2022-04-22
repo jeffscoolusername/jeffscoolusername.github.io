@@ -108,6 +108,12 @@ h1 {
     /*padding: 10px 1px 10px 1px !important*/
   }
 
+  button.dt-button.buttons-print, button.dt-button.buttons-pdf, button.dt-button.buttons-excel, button.dt-button.buttons-csv, button.dt-button.buttons-copy { /* margin-bottom: -7px; */
+    font-size: 14px;
+   }
+
+    
+
   .input-sm {
     margin-top: 7px;
     /*padding: 10px 1px 10px 1px !important*/
