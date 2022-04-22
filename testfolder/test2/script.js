@@ -394,8 +394,12 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-                                                ],
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                    {
+                                                        extend: 'colvis',
+                                                        text: 'Column Visibility'
+                                                    }
+                                                    ],
                                                 colReorder: true,
                                                 paging: false,
                                                 keys: true,
@@ -428,8 +432,12 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-                                                ],
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                    {
+                                                        extend: 'colvis',
+                                                        text: 'Column Visibility'
+                                                    }
+                                                    ],
                                                 colReorder: true,
                                                 paging: false,
                                                 keys: true,
@@ -461,8 +469,12 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-                                                ],
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                    {
+                                                        extend: 'colvis',
+                                                        text: 'Column Visibility'
+                                                    }
+                                                    ],
                                                 colReorder: true,
                                                 paging: false,
                                                 keys: true,
@@ -497,8 +509,12 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-                                                ],
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                    {
+                                                        extend: 'colvis',
+                                                        text: 'Column Visibility'
+                                                    }
+                                                    ],
                                                 colReorder: true,
                                                 paging: false,
                                                 keys: true,
@@ -597,8 +613,12 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-                                                ],
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                    {
+                                                        extend: 'colvis',
+                                                        text: 'Column Visibility'
+                                                    }
+                                                    ],
                                                 colReorder: true,
                                                 "order": [[ 1, "desc" ]],
                                                 paging: false,
