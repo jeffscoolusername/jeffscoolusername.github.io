@@ -394,7 +394,7 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'columnsToggle'
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
                                                 ],
                                                 colReorder: true,
                                                 paging: false,
@@ -428,7 +428,7 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'columnsToggle'
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
                                                 ],
                                                 colReorder: true,
                                                 paging: false,
@@ -461,7 +461,7 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'columnsToggle'
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
                                                 ],
                                                 colReorder: true,
                                                 paging: false,
@@ -497,7 +497,7 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'columnsToggle'
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
                                                 ],
                                                 colReorder: true,
                                                 paging: false,
@@ -597,7 +597,7 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'columnsToggle'
+                                                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
                                                 ],
                                                 colReorder: true,
                                                 "order": [[ 1, "desc" ]],
