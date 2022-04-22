@@ -25,10 +25,10 @@ h1 {
   width: 35%;
   }*/
   
-  table#example0.dataTable tbody tr:hover,table#example1.dataTable tbody tr:hover,table#example2.dataTable tbody tr:hover,
+  /*table#example0.dataTable tbody tr:hover,table#example1.dataTable tbody tr:hover,table#example2.dataTable tbody tr:hover,
   table#example3.dataTable tbody tr:hover,table#example4.dataTable tbody tr:hover,table#example5.dataTable tbody tr:hover {
     background-color: #ddf2ff8d;
-  }
+  }*/ /*doesn't work properly*/
 
   .footer, .header {
     padding: 40px 0;
