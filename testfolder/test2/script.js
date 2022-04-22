@@ -159,9 +159,9 @@ $(document)
         var newstitle9 = 'loading';
         var newslink9 = 'loading';
         var newspubDate9 = 'loading';
-
         
         var feedURL = "https://news.google.com/rss/search?q=algorand&hl=en-US&gl=US&ceid=US:en";
+        
         $.ajax({
         type: 'GET',
         url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
