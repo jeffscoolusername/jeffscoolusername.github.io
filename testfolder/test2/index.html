@@ -2899,7 +2899,11 @@
                     //"columns": [{ "width": "20%" }],
                     dom: 'Bfrtip',
                     buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+                    'copy', 'csv', 'excel', 'pdf', 'print', 
+                    {
+                        extend: 'colvis',
+                        text: 'Column Visibility'
+                    }
                     ],
                     stateSave: true,                    
                     colReorder: true,
