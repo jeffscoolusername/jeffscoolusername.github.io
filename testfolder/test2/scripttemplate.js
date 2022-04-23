@@ -407,13 +407,16 @@ $(document)
                                             data: jsObj0,
                                             'columnDefs': [{
                                                 'targets': 0,
-                                                'searchable':false,
-                                                'orderable':false,
-                                                'className': 'dt-body-center',
-                                                'render': function (data, type, full, meta){
-                                                    return '<input type="checkbox" name="id[]" value="' 
-                                                       + $('<div/>').text(data).html() + '">';
-                                                }
+                                                'checkboxes': {
+                                                    'selectRow': true,
+                                                    'selectCallback': function(nodes, selected){
+                                                        // If "Show all" is not selected
+                                                        if($('#ctrl-show-selected').val() !== 'all'){
+                                                           // Redraw table to include/exclude selected row
+                                                           exampleTable1.draw(false);                  
+                                                        }            
+                                                     }
+                                                 }
                                              }],
                                             'select': 'multi',
                                             'order': [[1, 'asc']],
@@ -456,55 +459,41 @@ $(document)
                                             ]
                                         });
 
-                                        $('#example1-select-all').on('click', function(){
-                                            // Check/uncheck all checkboxes in the table
-                                            var rows = table.rows({ 'search': 'applied' }).nodes();
-                                            $('input[type="checkbox"]', rows).prop('checked', this.checked);
-                                         });
                                         
-                                         // Handle click on checkbox to set state of "Select all" control
-                                         $('#example1 tbody').on('change', 'input[type="checkbox"]', function(){
-                                            // If checkbox is not checked
-                                            if(!this.checked){
-                                               var el = $('#example1-select-all').get(0);
-                                               // If "Select all" control is checked and has 'indeterminate' property
-                                               if(el && el.checked && ('indeterminate' in el)){
-                                                  // Set visual state of "Select all" control 
-                                                  // as 'indeterminate'
-                                                  el.indeterminate = true;
-                                               }
+                                        // Handle change event for "Show selected records" control
+                                        $('#ctrl-show-selected').on('change', function(){
+                                            var val = $(this).val();
+
+                                            // If all records should be displayed
+                                            if(val === 'all'){
+                                            $.fn.dataTable.ext.search.pop();
+                                            exampleTable1.draw();
                                             }
-                                         });
-                                          
-                                         $('#frm-example1').on('submit', function(e){
-                                            var form = this;
-                                        
-                                            // Iterate over all checkboxes in the table
-                                            table.$('input[type="checkbox"]').each(function(){
-                                               // If checkbox doesn't exist in DOM
-                                               if(!$.contains(document, this)){
-                                                  // If checkbox is checked
-                                                  if(this.checked){
-                                                     // Create a hidden element 
-                                                     $(form).append(
-                                                        $('<input>')
-                                                           .attr('type', 'hidden')
-                                                           .attr('name', this.name)
-                                                           .val(this.value)
-                                                     );
-                                                  }
-                                               } 
-                                            });
-                                        
-                                            // FOR TESTING ONLY
                                             
-                                            // Output form data to a console
-                                            $('#example1-console').text($(form).serialize()); 
-                                            console.log("Form submission", $(form).serialize()); 
-                                             
-                                            // Prevent actual form submission
-                                            e.preventDefault();
-                                         });
+                                            // If selected records should be displayed
+                                            if(val === 'selected'){
+                                            $.fn.dataTable.ext.search.pop();
+                                            $.fn.dataTable.ext.search.push(
+                                                function (settings, data, dataIndex){             
+                                                    return ($(exampleTable1.row(dataIndex).node()).hasClass('selected')) ? true : false;
+                                                }
+                                            );
+                                                
+                                            exampleTable1.draw();
+                                            }
+
+                                            // If selected records should not be displayed
+                                            if(val === 'not-selected'){
+                                            $.fn.dataTable.ext.search.pop();
+                                            $.fn.dataTable.ext.search.push(
+                                                function (settings, data, dataIndex){             
+                                                    return ($(exampleTable1.row(dataIndex).node()).hasClass('selected')) ? false : true;
+                                                }
+                                            );
+                                                
+                                            exampleTable1.draw();
+                                            }
+                                        });
                     
                                         var exampleTable2 = $('#example2')
                                         .DataTable({
