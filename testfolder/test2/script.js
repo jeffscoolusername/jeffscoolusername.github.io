@@ -437,6 +437,20 @@ $(document)
                                                     }
                                                 ]
                                             });
+
+                                            $('#example1 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable1.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button').click( function () {
+                                                exampleTable1.row('.selected').remove().draw( false );
+                                            } );
                         
                                             var exampleTable2 = $('#example2')
                                             .DataTable({
@@ -474,6 +488,20 @@ $(document)
                                                     }
                                                 ]
                                             });
+
+                                            $('#example2 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable2.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button').click( function () {
+                                                exampleTable2.row('.selected').remove().draw( false );
+                                            } );
                         
                                             var exampleTable3 = $('#example3')
                                             .DataTable({
@@ -514,6 +542,20 @@ $(document)
                                                     }
                                                 ]
                                             });
+
+                                            $('#example3 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable3.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button').click( function () {
+                                                exampleTable3.row('.selected').remove().draw( false );
+                                            } );
                         
                                             var exampleTable4 = $('#example4')
                                             .DataTable({
@@ -619,6 +661,20 @@ $(document)
                                                 ]
                                             });
 
+                                            $('#example4 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable4.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button').click( function () {
+                                                exampleTable4.row('.selected').remove().draw( false );
+                                            } );
+
                                             var exampleTable5 = $('#example5')
                                             .DataTable({
                                                 data: jsObj4,
@@ -653,6 +709,20 @@ $(document)
                                                     }
                                                 ]
                                             });
+
+                                            $('#example5 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable5.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button').click( function () {
+                                                exampleTable5.row('.selected').remove().draw( false );
+                                            } );
                                     }
                         
                         
