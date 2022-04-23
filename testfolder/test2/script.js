@@ -410,6 +410,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button1' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -462,6 +466,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button2' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -513,6 +521,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button3' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -567,6 +579,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button4' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -685,6 +701,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button5' }
                                                     }
                                                     ],
                                                 colReorder: true,
