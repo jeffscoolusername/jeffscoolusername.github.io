@@ -448,7 +448,7 @@ $(document)
                                                 }
                                             } );
                                          
-                                            $('#button').click( function () {
+                                            $('#button1').click( function () {
                                                 exampleTable1.row('.selected').remove().draw( false );
                                             } );
                         
@@ -499,7 +499,7 @@ $(document)
                                                 }
                                             } );
                                          
-                                            $('#button').click( function () {
+                                            $('#button2').click( function () {
                                                 exampleTable2.row('.selected').remove().draw( false );
                                             } );
                         
@@ -553,7 +553,7 @@ $(document)
                                                 }
                                             } );
                                          
-                                            $('#button').click( function () {
+                                            $('#button3').click( function () {
                                                 exampleTable3.row('.selected').remove().draw( false );
                                             } );
                         
@@ -671,7 +671,7 @@ $(document)
                                                 }
                                             } );
                                          
-                                            $('#button').click( function () {
+                                            $('#button4').click( function () {
                                                 exampleTable4.row('.selected').remove().draw( false );
                                             } );
 
@@ -720,7 +720,7 @@ $(document)
                                                 }
                                             } );
                                          
-                                            $('#button').click( function () {
+                                            $('#button5').click( function () {
                                                 exampleTable5.row('.selected').remove().draw( false );
                                             } );
                                     }
