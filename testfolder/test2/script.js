@@ -202,6 +202,18 @@ $(document)
         }
         });
 
+        /*$.ajax({
+            type: 'GET',
+            url: "https://forum.algorand.org/u/tsachi/summary",
+            dataType: 'jsonp',
+            success: async function(result) {
+                sleep(1200); //very interesting and simple strategy
+                newstitle0 = result.items[0].title;
+                newspubDate0 = result.items[0].pubDate;
+                newslink0 = result.items[0].link;    
+            }
+            });*/
+
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
                 return $.getJSON(url0);
