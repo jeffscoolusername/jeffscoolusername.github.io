@@ -2920,18 +2920,16 @@
                         }
                     },
                     {
-                        text: 'Hide Unselected Rows',
-                        attr: { id: 'button0' },
+                        text: 'Show All Rows',
                         action: function ( e, dt, button, config ) {
-                        if (button.text() == 'Hide Unselected Rows') {
-                                dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                button.text('Show All Rows');
-                            }
-                            else {
-                                exampleTable0.rows().deselect();
-                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                button.text('Hide Unselected Rows');
-                            }
+                            exampleTable0.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                        }
+                    },
+                    {
+                        text: 'Hide Unselected Rows',
+                        action: function ( e, dt, button, config ) {
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
                     },
                     /*{
