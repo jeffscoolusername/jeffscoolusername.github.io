@@ -202,6 +202,17 @@ $(document)
         }
         });
 
+        $.ajax({
+            type: 'GET',
+            url: "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working/",
+            dataType: 'jsonp',
+            success: async function(result2) {
+                sleep(1200); //very interesting and simple strategy
+                console(result2.span.number);
+    
+            }
+            });
+
         /*$.ajax({
             type: 'GET',
             url: "https://forum.algorand.org/u/tsachi/summary",
