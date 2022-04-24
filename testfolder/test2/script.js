@@ -215,6 +215,7 @@ $(document)
     
             }
             });
+            
 
         var feedURL3 = "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working.json?jsonp=?";
 
@@ -227,7 +228,21 @@ $(document)
                 console.log(result[0].data.children[0].data.ups);
     
             }
-            });    
+            });
+
+        /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
+
+        $.ajax({
+            type: 'GET',
+            url: feedURL4,
+            responseType:'application/json',
+            success: async function(result) {
+                sleep(1200); //potential strategy here
+                console.log(result);
+    
+            }
+            });*/
+            
 
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
