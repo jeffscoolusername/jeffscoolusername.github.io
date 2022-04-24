@@ -212,7 +212,7 @@ $(document)
             });
         });*/
 
-        var feedURL2 = "http://www.reddit.com/r/algorand.json";
+        var feedURL2 = "https://www.reddit.com/r/algorand.json";
 
         $.ajax({
             type: 'GET',
