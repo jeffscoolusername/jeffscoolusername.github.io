@@ -202,27 +202,29 @@ $(document)
         }
         });
 
-        /*$.ajax({
-            type: 'GET',
-            url: "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working/",
-            dataType: 'jsonp',
-            success: async function(result2) {
-                sleep(1200); //very interesting and simple strategy
-                console(result2.span.number);
-    
-            }
-            });*/
+
+        /*$.getJSON("http://www.reddit.com/r/algorand/.json?jsonp=?", function (data) {
+            $.each(data.data.children, function (i, item) {
+                console.log(item.data);
+                $('<div/>', {
+                    text: 'Post ' + item.data.permalink + ' has a score of ' + item.data.score
+                }).appendTo('#images');
+            });
+        });*/
+
+        var feedURL2 = "http://www.reddit.com/r/algorand/.json?jsonp=?";
 
         $.ajax({
-            url: "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working/",   
-            success: function( response ) {
+            type: 'GET',
+            url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
+            dataType: 'jsonp',
+            success: async function(result) {
                 sleep(1200); //very interesting and simple strategy
-                element = response.getElementById('_1rZYMD_4xY3gRcSS3p8ODO _25IkBM0rRUqWX5ZojEMAFQ').innerHTML ;
-                var searchThis = element.textContent || element.innerText;
-                console(searchThis);
+                //newstitle0 = result.items[0].title;
+                console.log(result.items[0].title);
+    
             }
-        
-        });
+            });
 
         /*$.ajax({
             type: 'GET',
