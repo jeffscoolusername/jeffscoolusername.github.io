@@ -217,7 +217,7 @@ $(document)
             url: "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working/",   
             success: function( response ) {
                 sleep(1200); //very interesting and simple strategy
-                element = response.getElementById('upvoted');
+                element = response.getElementById('_1rZYMD_4xY3gRcSS3p8ODO _25IkBM0rRUqWX5ZojEMAFQ').innerHTML ;
                 var searchThis = element.textContent || element.innerText;
                 console(searchThis);
             }
