@@ -227,8 +227,7 @@ $(document)
                 console.log(result[0].data.children[0].data.ups);
     
             }
-            });
-    
+            });    
 
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
