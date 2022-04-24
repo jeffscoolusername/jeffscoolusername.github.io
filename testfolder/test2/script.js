@@ -212,7 +212,7 @@ $(document)
             });
         });*/
 
-        var feedURL2 = "https://www.reddit.com/r/algorand.json";
+        var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
 
         $.ajax({
             type: 'GET',
@@ -225,7 +225,7 @@ $(document)
             }
             });
 
-        var feedURL3 = "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working.json";
+        var feedURL3 = "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working.json?jsonp=?";
 
         $.ajax({
             type: 'GET',
@@ -233,7 +233,7 @@ $(document)
             dataType: 'jsonp',
             success: async function(result) {
                 sleep(1200); //very interesting and simple strategy
-                console.log(result.data.children[0].data.ups);
+                //console.log(result.data.children[0].data.ups);
     
             }
             });
