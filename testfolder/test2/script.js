@@ -203,15 +203,6 @@ $(document)
         });
 
 
-        /*$.getJSON("http://www.reddit.com/r/algorand/.json?jsonp=?", function (data) {
-            $.each(data.data.children, function (i, item) {
-                console.log(item.data);
-                $('<div/>', {
-                    text: 'Post ' + item.data.permalink + ' has a score of ' + item.data.score
-                }).appendTo('#images');
-            });
-        });*/
-
         var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
 
         $.ajax({
@@ -219,7 +210,7 @@ $(document)
             url: feedURL2,
             dataType: 'jsonp',
             success: async function(result) {
-                sleep(1200); //very interesting and simple strategy
+                sleep(1200); //potential strategy here
                 console.log(result.data.children[0].data.ups);
     
             }
@@ -232,24 +223,12 @@ $(document)
             url: feedURL3,
             dataType: 'jsonp',
             success: async function(result) {
-                sleep(1200); //very interesting and simple strategy
-                //console.log(result.data.children[0].data.ups);
+                sleep(1200); //potential strategy here
+                console.log(result[0].data.children[0].data.ups);
     
             }
             });
     
-
-        /*$.ajax({
-            type: 'GET',
-            url: "https://forum.algorand.org/u/tsachi/summary",
-            dataType: 'jsonp',
-            success: async function(result) {
-                sleep(1200); //very interesting and simple strategy
-                newstitle0 = result.items[0].title;
-                newspubDate0 = result.items[0].pubDate;
-                newslink0 = result.items[0].link;    
-            }
-            });*/
 
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
