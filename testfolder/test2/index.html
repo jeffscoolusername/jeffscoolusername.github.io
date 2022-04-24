@@ -2854,7 +2854,7 @@
         </div>
         <section class="footer">
             <div class="social">
-                The information given is not guaranteed to be correct (but I tried!) - Last Updated: April 21, 2022
+                The information given is not guaranteed to be correct (but I tried!) - Last Updated: April 23, 2022
             </div>
 
             <ul class="list">
@@ -2898,8 +2898,6 @@
             $(document).ready(function() {
                 var exampleTable0 = $('#example0')
                 .DataTable({
-                    //fixedHeader: true,
-                    //"columns": [{ "width": "20%" }],
                     dom: 'Bfrtip',
                     buttons: [
                     'copy', 'csv', 'excel', 'pdf', 'print', 
@@ -2932,55 +2930,18 @@
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
                     },
-                    /*{
-                        extend: 'selected',
-                        text: 'Show selected rows only',
-                        action: function ( e, dt, button, config ) {
-                            if (button.text() == 'Show selected rows only') {
-                                dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                button.text('Show all');
-                            }
-                            else {
-                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                button.text('Show selected rows only');
-                            }
-                        }
-                    }*/
                     ],
+                    "language": {
+                    "info": "Initial Rows : _TOTAL_",
+                    },
                     stateSave: true,      
                     select: {
                                 style: 'multi'
                             },            
                     colReorder: true,
-                    paging: false//,
-                    //keys: true
+                    paging: false
 
                 });
-
-            /*exampleTable0
-                .on ('select', function ( e, dt, type, indexes) {
-                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                    dt.buttons('showAllButton:name').nodes().css({"display":"inline"});
-                });
-          
-            exampleTable0
-                .on ('init', function ( e, settings, json) {
-                    exampleTable0.buttons('showAllButton:name').nodes().css({"display":"none"});
-                });*/
-
-            /*$('#example0 tbody').on( 'click', 'tr', function () {
-            if ( $(this).hasClass('selected') ) {
-                $(this).removeClass('selected');
-            }
-            else {
-                exampleTable0.$('tr.selected').removeClass('selected');
-                $(this).addClass('selected');
-            }
-            } );
-            
-            $('#button0').click( function () {
-               // exampleTable0.row('.selected').remove().draw( false );              
-            } );*/
 
             });
             
