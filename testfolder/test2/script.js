@@ -216,12 +216,11 @@ $(document)
 
         $.ajax({
             type: 'GET',
-            url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
+            url: feedURL2,
             dataType: 'jsonp',
             success: async function(result) {
                 sleep(1200); //very interesting and simple strategy
-                //newstitle0 = result.items[0].title;
-                console.log(result.items[0].title);
+                console.log(result.data.children[0].data.ups);
     
             }
             });
