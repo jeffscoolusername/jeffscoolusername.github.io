@@ -337,6 +337,7 @@ $(document)
                                         var jsObj0 = [
                                             {
                                                 'Name': name0,
+                                                'Index': index0,
                                                 'Tinyman Price' : tinymanprice0,
                                                 '% in Circulation': percCirc0,
                                                 'Transactions Counter': txcnt0,
@@ -345,6 +346,7 @@ $(document)
                                             //put any in between here following 0's format
                                             {
                                                 'Name': data40.asset.params['name'],
+                                                'Index': data40.asset['index'],
                                                 'Tinyman Price' : tinymanprice40,
                                                 '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
                                                 'Transactions Counter': data40.asset['asset-tx-counter'],
@@ -354,29 +356,31 @@ $(document)
                         
                                         var jsObj1 = [
                                             {
-                                                'Name': name0,
-                                                'Unit Name': unitName0,
+                                                'Name': name0,                                                
                                                 'Index': index0,
+                                                'Unit Name': unitName0,
                                                 'Default Frozen': defaFroz0
                                             },
                                             {
                                                 'Name': data40.asset.params['name'],
-                                                'Unit Name': data40.asset.params['unit-name'],
                                                 'Index': data40.asset['index'],
+                                                'Unit Name': data40.asset.params['unit-name'],                                                
                                                 'Default Frozen': data40.asset.params['default-frozen']
                                             }
                                         ];
                         
                                         var jsObj2 = [
                                             {
-                                                'Name': name0,                      
+                                                'Name': name0,         
+                                                'Index': index0,             
                                                 'Circulating Supply': circSupply0,
                                                 'Total': total0,
                                                 'Decimals': decimals0,
                                                 'Creation TX': creatTxId0,
                                             },
                                             {
-                                                'Name': data40.asset.params['name'],                      
+                                                'Name': data40.asset.params['name'],      
+                                                'Index': data40.asset['index'],                
                                                 'Circulating Supply': data40.asset.params['circulating-supply'],
                                                 'Total': data40.asset.params['total'],
                                                 'Decimals': data40.asset.params['decimals'],
@@ -476,6 +480,16 @@ $(document)
                                                         'data': 'Name'
                                                     },
                                                     {
+                                                        'data': 'Index',
+                                                        "render": function(data, type, row, meta){
+                                                            if(type === 'display'){
+                                                                data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                                            }
+                                                
+                                                            return data;
+                                                         }
+                                                    },
+                                                    {
                                                         'data': 'Tinyman Price'
                                                     },
                                                     {
@@ -532,9 +546,6 @@ $(document)
                                                         'data': 'Name'
                                                     },
                                                     {
-                                                        'data': 'Unit Name'
-                                                    },
-                                                    {
                                                         'data': 'Index',
                                                         "render": function(data, type, row, meta){
                                                             if(type === 'display'){
@@ -543,6 +554,9 @@ $(document)
                                                 
                                                             return data;
                                                          }
+                                                    },
+                                                    {
+                                                        'data': 'Unit Name'
                                                     },
                                                     {
                                                         'data': 'Default Frozen'
@@ -585,6 +599,16 @@ $(document)
                                                 keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
+                                                    },
+                                                    {
+                                                        'data': 'Index',
+                                                        "render": function(data, type, row, meta){
+                                                            if(type === 'display'){
+                                                                data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                                            }
+                                                
+                                                            return data;
+                                                         }
                                                     },
                                                     {
                                                         'data': 'Circulating Supply'
