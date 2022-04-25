@@ -202,17 +202,47 @@ $(document)
         }
         });
 
-        /*$.ajax({
+
+        var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
+
+        $.ajax({
             type: 'GET',
-            url: "https://forum.algorand.org/u/tsachi/summary",
+            url: feedURL2,
             dataType: 'jsonp',
             success: async function(result) {
-                sleep(1200); //very interesting and simple strategy
-                newstitle0 = result.items[0].title;
-                newspubDate0 = result.items[0].pubDate;
-                newslink0 = result.items[0].link;    
+                sleep(1200); //potential strategy here
+                console.log(result.data.children[0].data.ups);
+    
+            }
+            });
+            
+
+        var feedURL3 = "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working.json?jsonp=?";
+
+        $.ajax({
+            type: 'GET',
+            url: feedURL3,
+            dataType: 'jsonp',
+            success: async function(result) {
+                sleep(1200); //potential strategy here
+                console.log(result[0].data.children[0].data.ups);
+    
+            }
+            });
+
+        /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
+
+        $.ajax({
+            type: 'GET',
+            url: feedURL4,
+            responseType:'application/json',
+            success: async function(result) {
+                sleep(1200); //potential strategy here
+                console.log(result);
+    
             }
             });*/
+            
 
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
@@ -410,6 +440,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button1' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -439,17 +473,17 @@ $(document)
                                             });
 
                                             $('#example1 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('active') ) {
-                                                    $(this).removeClass('active');
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
                                                 }
                                                 else {
-                                                    exampleTable1.$('tr.active').removeClass('active');
-                                                    $(this).addClass('active');
+                                                    exampleTable1.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
                                                 }
                                             } );
                                          
-                                            $('#button').click( function () {
-                                                exampleTable1.row('.active').remove().draw( false );
+                                            $('#button1').click( function () {
+                                                exampleTable1.row('.selected').remove().draw( false );
                                             } );
                         
                                             var exampleTable2 = $('#example2')
@@ -462,6 +496,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button2' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -488,6 +526,20 @@ $(document)
                                                     }
                                                 ]
                                             });
+
+                                            $('#example2 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable2.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button2').click( function () {
+                                                exampleTable2.row('.selected').remove().draw( false );
+                                            } );
                         
                                             var exampleTable3 = $('#example3')
                                             .DataTable({
@@ -499,6 +551,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button3' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -528,6 +584,20 @@ $(document)
                                                     }
                                                 ]
                                             });
+
+                                            $('#example3 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable3.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button3').click( function () {
+                                                exampleTable3.row('.selected').remove().draw( false );
+                                            } );
                         
                                             var exampleTable4 = $('#example4')
                                             .DataTable({
@@ -539,6 +609,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button4' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -633,6 +707,20 @@ $(document)
                                                 ]
                                             });
 
+                                            $('#example4 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable4.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button4').click( function () {
+                                                exampleTable4.row('.selected').remove().draw( false );
+                                            } );
+
                                             var exampleTable5 = $('#example5')
                                             .DataTable({
                                                 data: jsObj4,
@@ -643,6 +731,10 @@ $(document)
                                                     {
                                                         extend: 'colvis',
                                                         text: 'Column Visibility'
+                                                    },
+                                                    {
+                                                        text: 'Delete Selected Row',
+                                                        attr: { id: 'button5' }
                                                     }
                                                     ],
                                                 colReorder: true,
@@ -667,6 +759,20 @@ $(document)
                                                     }
                                                 ]
                                             });
+
+                                            $('#example5 tbody').on( 'click', 'tr', function () {
+                                                if ( $(this).hasClass('selected') ) {
+                                                    $(this).removeClass('selected');
+                                                }
+                                                else {
+                                                    exampleTable5.$('tr.selected').removeClass('selected');
+                                                    $(this).addClass('selected');
+                                                }
+                                            } );
+                                         
+                                            $('#button5').click( function () {
+                                                exampleTable5.row('.selected').remove().draw( false );
+                                            } );
                                     }
                         
                         
