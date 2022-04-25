@@ -203,7 +203,7 @@ $(document)
         });
 
 
-        var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
+        /*var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
 
         $.ajax({
             type: 'GET',
@@ -229,8 +229,31 @@ $(document)
     
             }
             });
+            
+        //this is some spicy tech right here
+        
+        var firsturl = 'https://algocharts.net/apiv2/?asset_in=163650';
+        var secondurl = 'https://algocharts.net/apiv2/?asset_in=137594422';
+        var thirdurl = 'https://algocharts.net/apiv2/?asset_in=230946361';
 
-        /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
+        var cheeseburger = [firsturl, secondurl, thirdurl];
+
+        const a = [firsturl, secondurl, thirdurl];
+        for (const element of a) { // You can use `let` instead of `const` if you like
+            console.log(element);
+            getJSON(element, async function(err, data42069) {
+                if (err !== null) {
+                    return $.getJSON(element);
+                } else {
+    
+                    console.log(data42069.data[0].toFixed(6));                                                            
+                                     
+                }
+    
+            });  
+        }
+
+        var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
 
         $.ajax({
             type: 'GET',
