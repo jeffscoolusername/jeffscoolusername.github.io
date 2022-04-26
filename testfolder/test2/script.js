@@ -345,6 +345,34 @@ $(document)
             });  
         }
 
+        /*var ecosystemarray = ['cl0hemd829k5j0biu20r7kky3', 'cl02r9yz21ofp0bn2w95a64n3', 'cl00eb2fccy640b812s9peos7', 'cl08jy4f0ynet0bn27qv7j94x'];
+
+        var ecosystemapi = 'https://ecosystem.algorand.com/api/project/voteCount?id=';
+        
+        var urlecosystem00 = ecosystemapi + ecosystemarray[0];
+        var urlecosystem01 = ecosystemapi + ecosystemarray[1];
+        var urlecosystem02 = ecosystemapi + ecosystemarray[2];
+        var urlecosystem03 = ecosystemapi + ecosystemarray[3];
+        
+        const d = [urlecosystem00, urlecosystem01, urlecosystem02, urlecosystem03];
+
+        var ecosystemvotes = ['loading', 'loading', 'loading', 'loading'];
+
+        for (const element of d) { // You can use `let` instead of `const` if you like
+            //console.log(element);
+            getJSON(element, async function(err, data42072) {
+                if (err !== null) {
+                    return $.getJSON(element);
+                } else {
+    
+                    //ecosystemvotes[0, 1, 2, 3] = data42072;         
+                    //console.log(ecosystemvotes[0, 1, 2, 3]);                                                    
+                                     
+                }
+    
+            });  
+        }*/
+
         /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
 
         $.ajax({
