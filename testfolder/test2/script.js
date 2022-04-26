@@ -228,17 +228,25 @@ $(document)
                 console.log(result[0].data.children[0].data.ups);
     
             }
-            });
+            });*/
             
         //this is some spicy tech right here
+
+        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
+
+        var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];
+
+        var asset0 = '&asset_out=0';
         
-        var firsturl = 'https://algocharts.net/apiv2/?asset_in=163650';
-        var secondurl = 'https://algocharts.net/apiv2/?asset_in=137594422';
-        var thirdurl = 'https://algocharts.net/apiv2/?asset_in=230946361';
+        var url00 = algochartsapi + asatokenarray[0] + asset0;
+        var url01 = algochartsapi + asatokenarray[1] + asset0;
+        var url02 = algochartsapi + asatokenarray[1] + asset0;
+        var url03 = algochartsapi + asatokenarray[2] + asset0;
 
-        var cheeseburger = [firsturl, secondurl, thirdurl];
+        const a = [url00, url01, url02, url03];
 
-        const a = [firsturl, secondurl, thirdurl];
+        var tinymanprice = ['loading', 'loading', 'loading', 'loading'];
+
         for (const element of a) { // You can use `let` instead of `const` if you like
             console.log(element);
             getJSON(element, async function(err, data42069) {
@@ -246,14 +254,15 @@ $(document)
                     return $.getJSON(element);
                 } else {
     
-                    console.log(data42069.data[0].toFixed(6));                                                            
+                    tinymanprice[0, 1, 2, 3] = data42069.data[0].toFixed(6);        
+                    console.log(tinymanprice[0, 1, 2, 3]);                                                    
                                      
                 }
     
             });  
         }
 
-        var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
+        /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
 
         $.ajax({
             type: 'GET',
