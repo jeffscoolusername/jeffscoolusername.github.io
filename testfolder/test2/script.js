@@ -128,39 +128,12 @@ $(document)
 
         var tinymanprice0 = 'loading';
         var tinymanprice40 = 'loading';          
-
-        var newstitle0 = 'loading';
-        var newslink0 = 'loading';
-        var newspubDate0 = 'loading';
-        var newstitle1 = 'loading';
-        var newslink1 = 'loading';
-        var newspubDate1 = 'loading';
-        var newstitle2 = 'loading';
-        var newslink2 = 'loading';
-        var newspubDate2 = 'loading';
-        var newstitle3 = 'loading';
-        var newslink3 = 'loading';
-        var newspubDate3 = 'loading';
-        var newstitle4 = 'loading';
-        var newslink4 = 'loading';
-        var newspubDate4 = 'loading';
-        var newstitle5 = 'loading';
-        var newslink5 = 'loading';
-        var newspubDate5 = 'loading';
-        var newstitle6 = 'loading';
-        var newslink6 = 'loading';
-        var newspubDate6 = 'loading';
-        var newstitle7 = 'loading';
-        var newslink7 = 'loading';
-        var newspubDate7 = 'loading';
-        var newstitle8 = 'loading';
-        var newslink8 = 'loading';
-        var newspubDate8 = 'loading';
-        var newstitle9 = 'loading';
-        var newslink9 = 'loading';
-        var newspubDate9 = 'loading';
         
         var feedURL = "https://news.google.com/rss/search?q=algorand&hl=en-US&gl=US&ceid=US:en";
+
+        var newstitlearray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];
+        var newspubdatarray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];
+        var newslinkarray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];
         
         $.ajax({
         type: 'GET',
@@ -168,36 +141,36 @@ $(document)
         dataType: 'jsonp',
         success: async function(result) {
             sleep(1200); //very interesting and simple strategy
-            newstitle0 = result.items[0].title;
-            newspubDate0 = result.items[0].pubDate;
-            newslink0 = result.items[0].link;
-            newstitle1 = result.items[1].title;
-            newspubDate1 = result.items[1].pubDate;
-            newslink1 = result.items[1].link;
-            newstitle2 = result.items[2].title;
-            newspubDate2 = result.items[2].pubDate;
-            newslink2 = result.items[2].link;
-            newstitle3 = result.items[3].title;
-            newspubDate3 = result.items[3].pubDate;
-            newslink3 = result.items[3].link;
-            newstitle4 = result.items[4].title;
-            newspubDate4 = result.items[4].pubDate;
-            newslink4 = result.items[4].link;
-            newstitle5 = result.items[5].title;
-            newspubDate5 = result.items[5].pubDate;
-            newslink5 = result.items[5].link;
-            newstitle6 = result.items[6].title;
-            newspubDate6 = result.items[6].pubDate;
-            newslink6 = result.items[6].link;
-            newstitle7 = result.items[7].title;
-            newspubDate7 = result.items[7].pubDate;
-            newslink7 = result.items[7].link;
-            newstitle8 = result.items[8].title;
-            newspubDate8 = result.items[8].pubDate;
-            newslink8 = result.items[8].link;
-            newstitle9 = result.items[9].title;
-            newspubDate9 = result.items[9].pubDate;
-            newslink9 = result.items[9].link;
+            newstitlearray[0] = result.items[0].title;
+            newspubdatarray[0] = result.items[0].pubDate;
+            newslinkarray[0] = result.items[0].link;
+            newstitlearray[1] = result.items[1].title;
+            newspubdatarray[1] = result.items[1].pubDate;
+            newslinkarray[1] = result.items[1].link;
+            newstitlearray[2] = result.items[2].title;
+            newspubdatarray[2] = result.items[2].pubDate;
+            newslinkarray[2] = result.items[2].link;
+            newstitlearray[3] = result.items[3].title;
+            newspubdatarray[3] = result.items[3].pubDate;
+            newslinkarray[3] = result.items[3].link;
+            newstitlearray[4] = result.items[4].title;
+            newspubdatarray[4] = result.items[4].pubDate;
+            newslinkarray[4] = result.items[4].link;
+            newstitlearray[5] = result.items[5].title;
+            newspubdatarray[5] = result.items[5].pubDate;
+            newslinkarray[5] = result.items[5].link;
+            newstitlearray[6] = result.items[6].title;
+            newspubdatarray[6] = result.items[6].pubDate;
+            newslinkarray[6] = result.items[6].link;
+            newstitlearray[7] = result.items[7].title;
+            newspubdatarray[7] = result.items[7].pubDate;
+            newslinkarray[7] = result.items[7].link;
+            newstitlearray[8] = result.items[8].title;
+            newspubdatarray[8] = result.items[8].pubDate;
+            newslinkarray[8] = result.items[8].link;
+            newstitlearray[9] = result.items[9].title;
+            newspubdatarray[9] = result.items[9].pubDate;
+            newslinkarray[9] = result.items[9].link;
 
         }
         });
@@ -539,54 +512,54 @@ $(document)
 
                                         var jsObj4 = [
                                             {
-                                                'News Title': newstitle0,   
-                                                'News Publish Date': newspubDate0,      
-                                                'News Link': newslink0
+                                                'News Title': newstitlearray[0],   
+                                                'News Publish Date': newspubdatarray[0],      
+                                                'News Link': newslinkarray[0]
                                             },
                                             {
-                                                'News Title': newstitle1,   
-                                                'News Publish Date': newspubDate1,      
-                                                'News Link': newslink1
+                                                'News Title': newstitlearray[1],   
+                                                'News Publish Date': newspubdatarray[1],      
+                                                'News Link': newslinkarray[1]
                                             },
                                             {
-                                                'News Title': newstitle2,   
-                                                'News Publish Date': newspubDate2,      
-                                                'News Link': newslink2
+                                                'News Title': newstitlearray[2],   
+                                                'News Publish Date': newspubdatarray[2],      
+                                                'News Link': newslinkarray[2]
                                             },
                                             {
-                                                'News Title': newstitle3,   
-                                                'News Publish Date': newspubDate3,      
-                                                'News Link': newslink3
+                                                'News Title': newstitlearray[3],   
+                                                'News Publish Date': newspubdatarray[3],      
+                                                'News Link': newslinkarray[3]
                                             },
                                             {
-                                                'News Title': newstitle4,   
-                                                'News Publish Date': newspubDate4,      
-                                                'News Link': newslink4
+                                                'News Title': newstitlearray[4],   
+                                                'News Publish Date': newspubdatarray[4],      
+                                                'News Link': newslinkarray[4]
                                             },
                                             {
-                                                'News Title': newstitle5,   
-                                                'News Publish Date': newspubDate5,      
-                                                'News Link': newslink5
+                                                'News Title': newstitlearray[5],   
+                                                'News Publish Date': newspubdatarray[5],      
+                                                'News Link': newslinkarray[5]
                                             },
                                             {
-                                                'News Title': newstitle6,   
-                                                'News Publish Date': newspubDate6,      
-                                                'News Link': newslink6
+                                                'News Title': newstitlearray[6],   
+                                                'News Publish Date': newspubdatarray[6],      
+                                                'News Link': newslinkarray[6]
                                             },
                                             {
-                                                'News Title': newstitle7,   
-                                                'News Publish Date': newspubDate7,      
-                                                'News Link': newslink7
+                                                'News Title': newstitlearray[7],   
+                                                'News Publish Date': newspubdatarray[7],      
+                                                'News Link': newslinkarray[7]
                                             },
                                             {
-                                                'News Title': newstitle8,   
-                                                'News Publish Date': newspubDate8,      
-                                                'News Link': newslink8
+                                                'News Title': newstitlearray[8],   
+                                                'News Publish Date': newspubdatarray[8],      
+                                                'News Link': newslinkarray[8]
                                             },
                                             {
-                                                'News Title': newstitle9,   
-                                                'News Publish Date': newspubDate9,      
-                                                'News Link': newslink9
+                                                'News Title': newstitlearray[9],   
+                                                'News Publish Date': newspubdatarray[9],      
+                                                'News Link': newslinkarray[9]
                                             }
 
                                         ];                        
