@@ -140,7 +140,7 @@ $(document)
         url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
         dataType: 'jsonp',
         success: async function(result) {
-            sleep(1200); //very interesting and simple strategy
+            //sleep(1000); //very interesting and simple strategy
             newstitlearray[0] = result.items[0].title;
             newspubdatarray[0] = result.items[0].pubDate;
             newslinkarray[0] = result.items[0].link;
