@@ -373,18 +373,34 @@ $(document)
             });  
         }*/
 
-        /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
+        /*var developerforumarray = ['tsachi', 'ben', 'fabrice', 'jasonw'];
 
-        $.ajax({
-            type: 'GET',
-            url: feedURL4,
-            responseType:'application/json',
-            success: async function(result) {
-                sleep(1200); //potential strategy here
-                console.log(result);
+        var developerforumopeningapi = 'https://forum.algorand.org/u/';
+        var developerforumclosingapi = '/activity/replies.json';
+        
+        var urldeveloperpost00 = developerforumopeningapi + developerforumarray[0] + developerforumclosingapi;
+        var urldeveloperpost01 = developerforumopeningapi + developerforumarray[1] + developerforumclosingapi;
+        var urldeveloperpost02 = developerforumopeningapi + developerforumarray[2] + developerforumclosingapi;
+        var urldeveloperpost03 = developerforumopeningapi + developerforumarray[3] + developerforumclosingapi;
+        
+        const e = [urldeveloperpost00, urldeveloperpost01, urldeveloperpost02, urldeveloperpost03];
+
+        var developerforumbadges = ['loading', 'loading', 'loading', 'loading'];
+
+        for (const element of e) { // You can use `let` instead of `const` if you like
+            //console.log(element);
+            getJSON(element, async function(err, data42073) {
+                if (err !== null) {
+                    return $.getJSON(element);
+                } else {
     
-            }
-            });*/
+                    //developerforumbadges[0, 1, 2, 3] = data42073.user_badges;         
+                    //console.log(ecosystemvotes[0, 1, 2, 3]);                                                    
+                                        
+                }
+    
+            });  
+        }*/            
             
 
         getJSON(url0, async function(err, data0) {
