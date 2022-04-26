@@ -215,25 +215,8 @@ $(document)
         var url01 = algochartsapi + asatokenarray[1] + asset0;
         var url02 = algochartsapi + asatokenarray[2] + asset0;
         var url03 = algochartsapi + asatokenarray[3] + asset0;
-        
-        const a = [url00, url01, url02, url03];
 
         var tinymanprice = ['loading', 'loading', 'loading', 'loading'];
-
-        for (const element of a) { // You can use `let` instead of `const` if you like
-            //console.log(element);
-            getJSON(element, async function(err, data42069) {
-                if (err !== null) {
-                    return $.getJSON(element);
-                } else {
-    
-                    tinymanprice[0, 1, 2, 3] = data42069.data[0].toFixed(6);        
-                    console.log(tinymanprice[0, 1, 2, 3]);                                                    
-                                     
-                }
-    
-            });  
-        }
 
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
         
@@ -242,7 +225,7 @@ $(document)
         var urlalgoexplorer02 = algoexplorerapi + asatokenarray[2];
         var urlalgoexplorer03 = algoexplorerapi + asatokenarray[3];
 
-        const b = [urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03];
+        const b = [url00, url01, url02, url03, urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03];
 
         var algoexplorersupply = ['loading', 'loading', 'loading', 'loading'];
         var algoexplorercreatedatround = ['loading', 'loading', 'loading', 'loading'];
@@ -262,7 +245,14 @@ $(document)
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
-    
+
+                    if([url00,url01,url02,url03].includes(element)) {
+                    tinymanprice[0, 1, 2, 3] = data42070.data[0].toFixed(6);        
+                    console.log(tinymanprice[0, 1, 2, 3]);      
+                    }
+                    else{}
+                    
+                    if([urlalgoexplorer00,urlalgoexplorer01,urlalgoexplorer02,urlalgoexplorer03].includes(element)) {
                     algoexplorersupply[0, 1, 2, 3] = data42070.asset.params['circulating-supply'];      
                     algoexplorercreatedatround[0, 1, 2, 3] = data42070.asset['created-at-round'];    
                     algoexplorercreationtxid[0, 1, 2, 3] = data42070.asset['creation-txid'];  
@@ -286,6 +276,8 @@ $(document)
                     console.log(algoexplorertotal[0, 1, 2, 3]);   
                     console.log(algoexplorerassettxcounter[0, 1, 2, 3]);   
                     console.log(algoexplorerassetunitname[0, 1, 2, 3]);   
+                    }
+                    else{}
 
                 }
     
