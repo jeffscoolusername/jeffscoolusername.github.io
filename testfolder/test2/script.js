@@ -240,15 +240,15 @@ $(document)
         
         var url00 = algochartsapi + asatokenarray[0] + asset0;
         var url01 = algochartsapi + asatokenarray[1] + asset0;
-        var url02 = algochartsapi + asatokenarray[1] + asset0;
-        var url03 = algochartsapi + asatokenarray[2] + asset0;
+        var url02 = algochartsapi + asatokenarray[2] + asset0;
+        var url03 = algochartsapi + asatokenarray[3] + asset0;
 
         const a = [url00, url01, url02, url03];
 
         var tinymanprice = ['loading', 'loading', 'loading', 'loading'];
 
         for (const element of a) { // You can use `let` instead of `const` if you like
-            console.log(element);
+            //console.log(element);
             getJSON(element, async function(err, data42069) {
                 if (err !== null) {
                     return $.getJSON(element);
