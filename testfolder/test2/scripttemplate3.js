@@ -39,16 +39,17 @@ $(document)
         };
         window.alert = function() {};
 
-        var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
-        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
+        var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';        
         var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
-
-        var url0 = algoexplorerapi + '397111682';
+        var urlchoice0 = '397111682';
+        var url0 = algoexplorerapi + urlchoice0;
         var urlprice0 = algochartsapi + '397111682' + '&asset_out=0';
         var urlcgprice0 = coingeckoapi + 'algorand';
         var urlcgprice1 = coingeckoapi + 'bitcoin';
-        var url1 = algoexplorerapi + '353409462';
-        var url2 = algoexplorerapi + '430838314';
+        var urlchoice1 = '353409462';
+        var url1 = algoexplorerapi + urlchoice1;
+        var urlchoice2 = '430838314';
+        var url2 = algoexplorerapi + urlchoice2;
         var url3 = algoexplorerapi + '226265212';
         var url4 = algoexplorerapi + '555540865';
         var url5 = algoexplorerapi + '426526699';
@@ -127,7 +128,12 @@ $(document)
         var coingeckopricechange1y1 = 'loading';
 
         var tinymanprice0 = 'loading';
-        var tinymanprice40 = 'loading';          
+        var tinymanprice1 = 'loading';
+        var tinymanprice2 = 'loading';
+        var tinymanprice40 = 'loading';     
+        var tinymanprice00 = 'loading';
+        var tinymanprice01 = 'loading';
+        var tinymanprice02 = 'loading';          
 
         var newstitle0 = 'loading';
         var newslink0 = 'loading';
@@ -202,8 +208,9 @@ $(document)
         }
         });
 
+        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
 
-        var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
+        /*var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
 
         $.ajax({
             type: 'GET',
@@ -228,7 +235,38 @@ $(document)
                 console.log(result[0].data.children[0].data.ups);
     
             }
-            });
+            });*/
+            
+        //this is some spicy tech right here
+
+        /*var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
+
+        var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];
+
+        var asset0 = '&asset_out=0';
+        
+        var url00 = algochartsapi + asatokenarray[0] + asset0;
+        var url01 = algochartsapi + asatokenarray[1] + asset0;
+        var url02 = algochartsapi + asatokenarray[1] + asset0;
+        var url03 = algochartsapi + asatokenarray[2] + asset0;
+
+        const a = [url00, url01, url02, url03];
+
+        var tinymanprice = ['loading', 'loading', 'loading', 'loading'];
+
+        for (const element of a) { // You can use `let` instead of `const` if you like
+            console.log(element);
+            getJSON(element, async function(err, data42069) {
+                if (err !== null) {
+                    return $.getJSON(element);
+                } else {
+    
+                    tinymanprice[0, 1, 2, 3] = console.log(data42069.data[0].toFixed(6));                                                            
+                                     
+                }
+    
+            });  
+        }*/
 
         /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
 
@@ -314,6 +352,7 @@ $(document)
                                         var jsObj0 = [
                                             {
                                                 'Name': name0,
+                                                'Index': index0,
                                                 'Tinyman Price' : tinymanprice0,
                                                 '% in Circulation': percCirc0,
                                                 'Transactions Counter': txcnt0,
@@ -322,6 +361,7 @@ $(document)
                                             //put any in between here following 0's format
                                             {
                                                 'Name': data40.asset.params['name'],
+                                                'Index': data40.asset['index'],
                                                 'Tinyman Price' : tinymanprice40,
                                                 '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
                                                 'Transactions Counter': data40.asset['asset-tx-counter'],
@@ -331,29 +371,31 @@ $(document)
                         
                                         var jsObj1 = [
                                             {
-                                                'Name': name0,
-                                                'Unit Name': unitName0,
+                                                'Name': name0,                                                
                                                 'Index': index0,
+                                                'Unit Name': unitName0,
                                                 'Default Frozen': defaFroz0
                                             },
                                             {
                                                 'Name': data40.asset.params['name'],
-                                                'Unit Name': data40.asset.params['unit-name'],
                                                 'Index': data40.asset['index'],
+                                                'Unit Name': data40.asset.params['unit-name'],                                                
                                                 'Default Frozen': data40.asset.params['default-frozen']
                                             }
                                         ];
                         
                                         var jsObj2 = [
                                             {
-                                                'Name': name0,                      
+                                                'Name': name0,         
+                                                'Index': index0,             
                                                 'Circulating Supply': circSupply0,
                                                 'Total': total0,
                                                 'Decimals': decimals0,
                                                 'Creation TX': creatTxId0,
                                             },
                                             {
-                                                'Name': data40.asset.params['name'],                      
+                                                'Name': data40.asset.params['name'],      
+                                                'Index': data40.asset['index'],                
                                                 'Circulating Supply': data40.asset.params['circulating-supply'],
                                                 'Total': data40.asset.params['total'],
                                                 'Decimals': data40.asset.params['decimals'],
@@ -436,21 +478,65 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button1' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable1.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable1.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable1.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
+                                                    },
+                                                    {
+                                                        'data': 'Index',
+                                                        "render": function(data, type, row, meta){
+                                                            if(type === 'display'){
+                                                                data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                                            }
+                                                
+                                                            return data;
+                                                         }
                                                     },
                                                     {
                                                         'data': 'Tinyman Price'
@@ -472,44 +558,61 @@ $(document)
                                                 ]
                                             });
 
-                                            $('#example1 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable1.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button1').click( function () {
-                                                exampleTable1.row('.selected').remove().draw( false );
-                                            } );
-                        
                                             var exampleTable2 = $('#example2')
                                             .DataTable({
                                                 data: jsObj1,
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button2' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable2.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable2.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable2.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
-                                                    },
-                                                    {
-                                                        'data': 'Unit Name'
                                                     },
                                                     {
                                                         'data': 'Index',
@@ -522,24 +625,13 @@ $(document)
                                                          }
                                                     },
                                                     {
+                                                        'data': 'Unit Name'
+                                                    },
+                                                    {
                                                         'data': 'Default Frozen'
                                                     }
                                                 ]
                                             });
-
-                                            $('#example2 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable2.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button2').click( function () {
-                                                exampleTable2.row('.selected').remove().draw( false );
-                                            } );
                         
                                             var exampleTable3 = $('#example3')
                                             .DataTable({
@@ -547,21 +639,65 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button3' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable3.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable3.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable3.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
+                                                    },
+                                                    {
+                                                        'data': 'Index',
+                                                        "render": function(data, type, row, meta){
+                                                            if(type === 'display'){
+                                                                data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                                            }
+                                                
+                                                            return data;
+                                                         }
                                                     },
                                                     {
                                                         'data': 'Circulating Supply'
@@ -584,20 +720,6 @@ $(document)
                                                     }
                                                 ]
                                             });
-
-                                            $('#example3 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable3.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button3').click( function () {
-                                                exampleTable3.row('.selected').remove().draw( false );
-                                            } );
                         
                                             var exampleTable4 = $('#example4')
                                             .DataTable({
@@ -605,19 +727,53 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button4' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable4.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable4.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable4.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
                                                     },
@@ -707,40 +863,60 @@ $(document)
                                                 ]
                                             });
 
-                                            $('#example4 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable4.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button4').click( function () {
-                                                exampleTable4.row('.selected').remove().draw( false );
-                                            } );
-
                                             var exampleTable5 = $('#example5')
                                             .DataTable({
                                                 data: jsObj4,
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button5' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable5.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable5.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable5.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 "order": [[ 1, "desc" ]],
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'News Title'
                                                     },
@@ -759,20 +935,7 @@ $(document)
                                                     }
                                                 ]
                                             });
-
-                                            $('#example5 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable5.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button5').click( function () {
-                                                exampleTable5.row('.selected').remove().draw( false );
-                                            } );
+                                            
                                     }
                         
                         
