@@ -262,6 +262,32 @@ $(document)
             });  
         }
 
+        var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
+        
+        var urlalgoexplorer00 = algoexplorerapi + asatokenarray[0];
+        var urlalgoexplorer01 = algoexplorerapi + asatokenarray[1];
+        var urlalgoexplorer02 = algoexplorerapi + asatokenarray[2];
+        var urlalgoexplorer03 = algoexplorerapi + asatokenarray[3];
+
+        const b = [urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03];
+
+        var algoexplorersupply = ['loading', 'loading', 'loading', 'loading'];
+
+        for (const element of b) { // You can use `let` instead of `const` if you like
+            //console.log(element);
+            getJSON(element, async function(err, data42070) {
+                if (err !== null) {
+                    return $.getJSON(element);
+                } else {
+    
+                    algoexplorersupply[0, 1, 2, 3] = data42070.asset.params['circulating-supply'];      
+                    console.log(algoexplorersupply[0, 1, 2, 3]);                                                    
+                                     
+                }
+    
+            });  
+        }
+
         /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
 
         $.ajax({
