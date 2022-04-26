@@ -174,36 +174,7 @@ $(document)
 
         }
         });
-
-
-        /*var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
-
-        $.ajax({
-            type: 'GET',
-            url: feedURL2,
-            dataType: 'jsonp',
-            success: async function(result) {
-                sleep(1200); //potential strategy here
-                console.log(result.data.children[0].data.ups);
-    
-            }
-            });
-            
-
-        var feedURL3 = "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working.json?jsonp=?";
-
-        $.ajax({
-            type: 'GET',
-            url: feedURL3,
-            dataType: 'jsonp',
-            success: async function(result) {
-                sleep(1200); //potential strategy here
-                console.log(result[0].data.children[0].data.ups);
-    
-            }
-            });*/
-            
-        //this is some spicy tech right here
+        
 
         var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];
 
@@ -265,7 +236,7 @@ $(document)
                     algoexplorerassettxcounter[0, 1, 2, 3] = data42070.asset.params['total'];
                     algoexplorerassetunitname[0, 1, 2, 3] = data42070.asset.params['unit-name'];  
 
-                    console.log(algoexplorersupply[0, 1, 2, 3]);          
+                    //console.log(algoexplorersupply[0, 1, 2, 3]);          
                     console.log(algoexplorercreatedatround[0, 1, 2, 3]);          
                     console.log(algoexplorercreationtxid[0, 1, 2, 3]);       
                     console.log(algoexplorerdecimals[0, 1, 2, 3]);         
@@ -309,6 +280,35 @@ $(document)
     
             });  
         }
+
+        /*var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
+
+        $.ajax({
+            type: 'GET',
+            url: feedURL2,
+            dataType: 'jsonp',
+            success: async function(result) {
+                sleep(1200); //potential strategy here
+                console.log(result.data.children[0].data.ups);
+    
+            }
+            });
+            
+
+        var feedURL3 = "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working.json?jsonp=?";
+
+        $.ajax({
+            type: 'GET',
+            url: feedURL3,
+            dataType: 'jsonp',
+            success: async function(result) {
+                sleep(1200); //potential strategy here
+                console.log(result[0].data.children[0].data.ups);
+    
+            }
+            });*/
+            
+        //this is some spicy tech right here
 
         /*var ecosystemarray = ['cl0hemd829k5j0biu20r7kky3', 'cl02r9yz21ofp0bn2w95a64n3', 'cl00eb2fccy640b812s9peos7', 'cl08jy4f0ynet0bn27qv7j94x'];
 
