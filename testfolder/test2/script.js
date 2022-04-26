@@ -462,6 +462,26 @@ $(document)
                                                 'Created at Round': data40.asset['created-at-round']
                                             }
                                         ];
+
+                                        /*var jsObj0 = [
+                                            {
+                                                'Name': algoexplorername[0],
+                                                'Index': algoexplorerindex[0],
+                                                'Tinyman Price' : tinymanprice[0],
+                                                '% in Circulation': algoexplorerpercentcirculation[0],
+                                                'Transactions Counter': algoexplorerassettxcounter[0],
+                                                'Created at Round': algoexplorercreatedatround[0]
+                                            },
+                                            //put any in between here following 0's format
+                                            {
+                                                'Name': algoexplorername[1],
+                                                'Index': algoexplorerindex[1],
+                                                'Tinyman Price' : tinymanprice[1],
+                                                '% in Circulation': algoexplorerpercentcirculation[1],
+                                                'Transactions Counter': algoexplorerassettxcounter[1],
+                                                'Created at Round': algoexplorercreatedatround[1]
+                                            }
+                                        ];*/
                         
                                         var jsObj1 = [
                                             {
