@@ -319,6 +319,32 @@ $(document)
             });  
         }
 
+        var blockchainarray = ['algorand', 'bitcoin', 'cardano', 'solana'];
+
+        var urlcoingecko00 = coingeckoapi + blockchainarray[0];
+        var urlcoingecko01 = coingeckoapi + blockchainarray[1];
+        var urlcoingecko02 = coingeckoapi + blockchainarray[2];
+        var urlcoingecko03 = coingeckoapi + blockchainarray[3];
+        
+        const c = [urlcoingecko00, urlcoingecko01, urlcoingecko02, urlcoingecko03];
+
+        var coingeckoname = ['loading', 'loading', 'loading', 'loading'];
+
+        for (const element2 of c) { // You can use `let` instead of `const` if you like
+            //console.log(element);
+            getJSON(element2, async function(err, data42071) {
+                if (err !== null) {
+                    return $.getJSON(element2);
+                } else {
+    
+                    coingeckoname[0, 1, 2, 3] = data42071.name;         
+                    console.log(coingeckoname[0, 1, 2, 3]);                                                    
+                                     
+                }
+    
+            });  
+        }
+
         /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
 
         $.ajax({
