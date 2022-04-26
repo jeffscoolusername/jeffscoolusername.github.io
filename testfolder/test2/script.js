@@ -236,7 +236,7 @@ $(document)
                     algoexplorerassettxcounter[0, 1, 2, 3] = data42070.asset.params['total'];
                     algoexplorerassetunitname[0, 1, 2, 3] = data42070.asset.params['unit-name'];  
 
-                    //console.log(algoexplorersupply[0, 1, 2, 3]);          
+                    console.log(algoexplorersupply[0, 1, 2, 3]);          
                     console.log(algoexplorercreatedatround[0, 1, 2, 3]);          
                     console.log(algoexplorercreationtxid[0, 1, 2, 3]);       
                     console.log(algoexplorerdecimals[0, 1, 2, 3]);         
