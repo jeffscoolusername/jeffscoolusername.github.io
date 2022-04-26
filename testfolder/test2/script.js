@@ -278,6 +278,7 @@ $(document)
         var algoexplorerdefaultfrozen = ['loading', 'loading', 'loading', 'loading'];
         var algoexplorerindex = ['loading', 'loading', 'loading', 'loading'];
         var algoexplorername = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerpercentcirculation = ['loading', 'loading', 'loading', 'loading'];
 
         for (const element of b) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -293,6 +294,7 @@ $(document)
                     algoexplorerdefaultfrozen[0, 1, 2, 3] = data42070.asset.params['default-frozen'];
                     algoexplorerindex[0, 1, 2, 3] = data42070.asset['index'];
                     algoexplorername[0, 1, 2, 3] = data42070.asset.params['name'];
+                    algoexplorerpercentcirculation[0, 1, 2, 3] = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
 
                     console.log(algoexplorersupply[0, 1, 2, 3]);          
                     console.log(algoexplorercreatedatround[0, 1, 2, 3]);          
@@ -300,7 +302,8 @@ $(document)
                     console.log(algoexplorerdecimals[0, 1, 2, 3]);         
                     console.log(algoexplorerdefaultfrozen[0, 1, 2, 3]);    
                     console.log(algoexplorerindex[0, 1, 2, 3]);           
-                    console.log(algoexplorername[0, 1, 2, 3]);                             
+                    console.log(algoexplorername[0, 1, 2, 3]);              
+                    console.log(algoexplorerpercentcirculation[0, 1, 2, 3]);                    
                                      
                 }
     
