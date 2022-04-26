@@ -494,9 +494,22 @@ $(document)
                                                     }
                                                 },
                                                 ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
                                                     },
