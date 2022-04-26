@@ -232,17 +232,17 @@ $(document)
             
         //this is some spicy tech right here
 
-        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
-
         var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];
 
-        var asset0 = '&asset_out=0';
-        
+        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
+
+        var asset0 = '&asset_out=0';        
+
         var url00 = algochartsapi + asatokenarray[0] + asset0;
         var url01 = algochartsapi + asatokenarray[1] + asset0;
         var url02 = algochartsapi + asatokenarray[2] + asset0;
         var url03 = algochartsapi + asatokenarray[3] + asset0;
-
+        
         const a = [url00, url01, url02, url03];
 
         var tinymanprice = ['loading', 'loading', 'loading', 'loading'];
