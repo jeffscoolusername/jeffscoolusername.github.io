@@ -463,16 +463,37 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button1' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable1.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable1.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable1.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
                                                 colReorder: true,
                                                 paging: false,
                                                 keys: true,
@@ -529,16 +550,37 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button2' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable2.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable2.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable2.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
                                                 colReorder: true,
                                                 paging: false,
                                                 keys: true,
@@ -584,16 +626,37 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button3' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable3.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable3.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable3.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
                                                 colReorder: true,
                                                 paging: false,
                                                 keys: true,
@@ -652,16 +715,37 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button4' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable4.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable4.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable4.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
                                                 colReorder: true,
                                                 paging: false,
                                                 keys: true,
@@ -774,16 +858,37 @@ $(document)
                                                 stateSave: true,
                                                 dom: 'Bfrtip',
                                                 buttons: [
-                                                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                                                    {
-                                                        extend: 'colvis',
-                                                        text: 'Column Visibility'
-                                                    },
-                                                    {
-                                                        text: 'Delete Selected Row',
-                                                        attr: { id: 'button5' }
+                                                'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                {
+                                                    extend: 'colvis',
+                                                    text: 'Column Visibility'
+                                                },
+                                                {
+                                                    text: 'Select All',
+                                                    action: function () {
+                                                        exampleTable5.rows().select();
                                                     }
-                                                    ],
+                                                },
+                                                {
+                                                    text: 'Select None',
+                                                    action: function () {
+                                                        exampleTable5.rows().deselect();
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Show All Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        exampleTable5.rows().deselect();
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                    }
+                                                },
+                                                {
+                                                    text: 'Hide Unselected Rows',
+                                                    action: function ( e, dt, button, config ) {
+                                                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                    }
+                                                },
+                                                ],
                                                 colReorder: true,
                                                 "order": [[ 1, "desc" ]],
                                                 paging: false,
