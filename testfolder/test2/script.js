@@ -253,7 +253,7 @@ $(document)
                 }
     
             });  
-        }
+        };
 
         var blockchainarray = ['algorand', 'bitcoin', 'cardano', 'solana'];
 
@@ -279,7 +279,7 @@ $(document)
                 }
     
             });  
-        }
+        };
 
         /*var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
 
