@@ -330,11 +330,11 @@ $(document)
 
         var coingeckoname = ['loading', 'loading', 'loading', 'loading'];
 
-        for (const element2 of c) { // You can use `let` instead of `const` if you like
+        for (const element of c) { // You can use `let` instead of `const` if you like
             //console.log(element);
-            getJSON(element2, async function(err, data42071) {
+            getJSON(element, async function(err, data42071) {
                 if (err !== null) {
-                    return $.getJSON(element2);
+                    return $.getJSON(element);
                 } else {
     
                     coingeckoname[0, 1, 2, 3] = data42071.name;         
