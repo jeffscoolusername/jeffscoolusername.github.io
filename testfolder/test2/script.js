@@ -280,6 +280,8 @@ $(document)
         var algoexplorername = ['loading', 'loading', 'loading', 'loading'];
         var algoexplorerpercentcirculation = ['loading', 'loading', 'loading', 'loading'];
         var algoexplorertotal = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerassettxcounter = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerassetunitname = ['loading', 'loading', 'loading', 'loading'];
 
         for (const element of b) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -296,7 +298,9 @@ $(document)
                     algoexplorerindex[0, 1, 2, 3] = data42070.asset['index'];
                     algoexplorername[0, 1, 2, 3] = data42070.asset.params['name'];
                     algoexplorerpercentcirculation[0, 1, 2, 3] = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
-                    algoexplorertotal[0, 1, 2, 3] = data42070.asset.params['total'];
+                    algoexplorertotal[0, 1, 2, 3] = data42070.asset['asset-tx-counter']; 
+                    algoexplorerassettxcounter[0, 1, 2, 3] = data42070.asset.params['total'];
+                    algoexplorerassetunitname[0, 1, 2, 3] = data42070.asset.params['unit-name'];  
 
                     console.log(algoexplorersupply[0, 1, 2, 3]);          
                     console.log(algoexplorercreatedatround[0, 1, 2, 3]);          
@@ -307,6 +311,8 @@ $(document)
                     console.log(algoexplorername[0, 1, 2, 3]);              
                     console.log(algoexplorerpercentcirculation[0, 1, 2, 3]);                    
                     console.log(algoexplorertotal[0, 1, 2, 3]);   
+                    console.log(algoexplorerassettxcounter[0, 1, 2, 3]);   
+                    console.log(algoexplorerassetunitname[0, 1, 2, 3]);   
 
                 }
     
