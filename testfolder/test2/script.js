@@ -274,6 +274,7 @@ $(document)
         var algoexplorersupply = ['loading', 'loading', 'loading', 'loading'];
         var algoexplorercreatedatround = ['loading', 'loading', 'loading', 'loading'];
         var algoexplorercreationtxid = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerdecimals = ['loading', 'loading', 'loading', 'loading'];
 
         for (const element of b) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -285,9 +286,11 @@ $(document)
                     algoexplorersupply[0, 1, 2, 3] = data42070.asset.params['circulating-supply'];      
                     algoexplorercreatedatround[0, 1, 2, 3] = data42070.asset['created-at-round'];    
                     algoexplorercreationtxid[0, 1, 2, 3] = data42070.asset['creation-txid'];  
+                    algoexplorerdecimals[0, 1, 2, 3] = data42070.asset.params['decimals'];
                     console.log(algoexplorersupply[0, 1, 2, 3]);          
                     console.log(algoexplorercreatedatround[0, 1, 2, 3]);          
-                    console.log(algoexplorercreationtxid[0, 1, 2, 3]);                                          
+                    console.log(algoexplorercreationtxid[0, 1, 2, 3]);       
+                    console.log(algoexplorerdecimals[0, 1, 2, 3]);                                        
                                      
                 }
     
