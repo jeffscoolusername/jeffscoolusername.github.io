@@ -543,20 +543,6 @@ $(document)
                                                 ]
                                             });
 
-                                            $('#example1 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable1.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button1').click( function () {
-                                                exampleTable1.row('.selected').remove().draw( false );
-                                            } );
-                        
                                             var exampleTable2 = $('#example2')
                                             .DataTable({
                                                 data: jsObj1,
@@ -594,9 +580,22 @@ $(document)
                                                     }
                                                 },
                                                 ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
                                                     },
@@ -618,20 +617,6 @@ $(document)
                                                     }
                                                 ]
                                             });
-
-                                            $('#example2 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable2.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button2').click( function () {
-                                                exampleTable2.row('.selected').remove().draw( false );
-                                            } );
                         
                                             var exampleTable3 = $('#example3')
                                             .DataTable({
@@ -670,9 +655,22 @@ $(document)
                                                     }
                                                 },
                                                 ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
                                                     },
@@ -707,20 +705,6 @@ $(document)
                                                     }
                                                 ]
                                             });
-
-                                            $('#example3 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable3.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button3').click( function () {
-                                                exampleTable3.row('.selected').remove().draw( false );
-                                            } );
                         
                                             var exampleTable4 = $('#example4')
                                             .DataTable({
@@ -759,9 +743,22 @@ $(document)
                                                     }
                                                 },
                                                 ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'Name'
                                                     },
@@ -851,20 +848,6 @@ $(document)
                                                 ]
                                             });
 
-                                            $('#example4 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable4.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button4').click( function () {
-                                                exampleTable4.row('.selected').remove().draw( false );
-                                            } );
-
                                             var exampleTable5 = $('#example5')
                                             .DataTable({
                                                 data: jsObj4,
@@ -902,10 +885,23 @@ $(document)
                                                     }
                                                 },
                                                 ],
+                                                "language": {
+                                                    "info": "Initial Rows : _TOTAL_",
+                                                    select: {
+                                                                rows: {
+                                                                    _: "",
+                                                                    0: "",
+                                                                    1: ""
+                                                                }
+                                                            }
+                                                    },
                                                 colReorder: true,
                                                 "order": [[ 1, "desc" ]],
                                                 paging: false,
-                                                keys: true,
+                                                select: {
+                                                    style: 'multi'
+                                                }, 
+                                                //keys: true,
                                                 'columns': [{
                                                         'data': 'News Title'
                                                     },
@@ -924,20 +920,7 @@ $(document)
                                                     }
                                                 ]
                                             });
-
-                                            $('#example5 tbody').on( 'click', 'tr', function () {
-                                                if ( $(this).hasClass('selected') ) {
-                                                    $(this).removeClass('selected');
-                                                }
-                                                else {
-                                                    exampleTable5.$('tr.selected').removeClass('selected');
-                                                    $(this).addClass('selected');
-                                                }
-                                            } );
-                                         
-                                            $('#button5').click( function () {
-                                                exampleTable5.row('.selected').remove().draw( false );
-                                            } );
+                                            
                                     }
                         
                         
