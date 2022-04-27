@@ -39,68 +39,16 @@ $(document)
         };
         window.alert = function() {};
 
-        var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';        
         var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
-        var urlchoice0 = '397111682';
-        var url0 = algoexplorerapi + urlchoice0;
+        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
+        var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
+
+        var url0 = algoexplorerapi + '397111682';
         var urlprice0 = algochartsapi + '397111682' + '&asset_out=0';
         var urlcgprice0 = coingeckoapi + 'algorand';
         var urlcgprice1 = coingeckoapi + 'bitcoin';
-        var urlchoice1 = '353409462';
-        var url1 = algoexplorerapi + urlchoice1;
-        var urlchoice2 = '430838314';
-        var url2 = algoexplorerapi + urlchoice2;
-        var url3 = algoexplorerapi + '226265212';
-        var url4 = algoexplorerapi + '555540865';
-        var url5 = algoexplorerapi + '426526699';
-        var url6 = algoexplorerapi + '393495312';
-        var url7 = algoexplorerapi + '305992851';
-        var url8 = algoexplorerapi + '453816186';
-        var url9 = algoexplorerapi + '457205263';
-        var url10 = algoexplorerapi + '523683256';
-        var url11 = algoexplorerapi + '447852812';
-        var url12 = algoexplorerapi + '445905873';
-        var url13 = algoexplorerapi + '310014962';
-        var url14 = algoexplorerapi + '463554836';
-        var url15 = algoexplorerapi + '227358511';
-        var url16 = algoexplorerapi + '604643747';
-        var url17 = algoexplorerapi + '446220964';
-        var url18 = algoexplorerapi + '409604194';
-        var url19 = algoexplorerapi + '466716175';
-        var url20 = algoexplorerapi + '542132831';
-        var url21 = algoexplorerapi + '397629052';
-        var url22 = algoexplorerapi + '163650';
-        var url23 = algoexplorerapi + '393537671';
-        var url24 = algoexplorerapi + '540605589';
-        var url25 = algoexplorerapi + '233939122';
-        var url26 = algoexplorerapi + '470335962';
-        var url27 = algoexplorerapi + '382781470';
-        var url28 = algoexplorerapi + '469835031';
-        var url29 = algoexplorerapi + '615093377';
-        var url30 = algoexplorerapi + '473180477';
-        var url31 = algoexplorerapi + '478549868';
-        var url32 = algoexplorerapi + '401752010';
-        var url33 = algoexplorerapi + '251014570';
-        var url34 = algoexplorerapi + '342889824';
-        var url35 = algoexplorerapi + '510337930';
-        var url36 = algoexplorerapi + '498684064';
-        var url37 = algoexplorerapi + '137020565';
-        var url38 = algoexplorerapi + '402495345';
-        var url39 = algoexplorerapi + '388592191';
         var url40 = algoexplorerapi + '297995609';
         var urlprice40 = algochartsapi + '297995609' + '&asset_out=0';
-        var url41 = algoexplorerapi + '585221469';
-        var url42 = algoexplorerapi + '571576867';
-        var url43 = algoexplorerapi + '281003266';
-        var url44 = algoexplorerapi + '435335235';
-        var url45 = algoexplorerapi + '511491168';
-        var url46 = algoexplorerapi + '230946361';
-        var url47 = algoexplorerapi + '319473667';
-        var url48 = algoexplorerapi + '601894079';
-        var url49 = algoexplorerapi + '470842789';
-        var url50 = algoexplorerapi + '391379500';
-        var url51 = algoexplorerapi + '591601798';
-        var url52 = algoexplorerapi + '393155456';
                 
         var circSupply0 = 'loading';
         var crtdAtRound0 = 'loading';
@@ -128,159 +76,154 @@ $(document)
         var coingeckopricechange1y1 = 'loading';
 
         var tinymanprice0 = 'loading';
-        var tinymanprice1 = 'loading';
-        var tinymanprice2 = 'loading';
-        var tinymanprice40 = 'loading';     
-        var tinymanprice00 = 'loading';
-        var tinymanprice01 = 'loading';
-        var tinymanprice02 = 'loading';          
-
-        var newstitle0 = 'loading';
-        var newslink0 = 'loading';
-        var newspubDate0 = 'loading';
-        var newstitle1 = 'loading';
-        var newslink1 = 'loading';
-        var newspubDate1 = 'loading';
-        var newstitle2 = 'loading';
-        var newslink2 = 'loading';
-        var newspubDate2 = 'loading';
-        var newstitle3 = 'loading';
-        var newslink3 = 'loading';
-        var newspubDate3 = 'loading';
-        var newstitle4 = 'loading';
-        var newslink4 = 'loading';
-        var newspubDate4 = 'loading';
-        var newstitle5 = 'loading';
-        var newslink5 = 'loading';
-        var newspubDate5 = 'loading';
-        var newstitle6 = 'loading';
-        var newslink6 = 'loading';
-        var newspubDate6 = 'loading';
-        var newstitle7 = 'loading';
-        var newslink7 = 'loading';
-        var newspubDate7 = 'loading';
-        var newstitle8 = 'loading';
-        var newslink8 = 'loading';
-        var newspubDate8 = 'loading';
-        var newstitle9 = 'loading';
-        var newslink9 = 'loading';
-        var newspubDate9 = 'loading';
+        var tinymanprice40 = 'loading';          
         
         var feedURL = "https://news.google.com/rss/search?q=algorand&hl=en-US&gl=US&ceid=US:en";
-        
-        $.ajax({
-        type: 'GET',
-        url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
-        dataType: 'jsonp',
-        success: async function(result) {
-            sleep(1200); //very interesting and simple strategy
-            newstitle0 = result.items[0].title;
-            newspubDate0 = result.items[0].pubDate;
-            newslink0 = result.items[0].link;
-            newstitle1 = result.items[1].title;
-            newspubDate1 = result.items[1].pubDate;
-            newslink1 = result.items[1].link;
-            newstitle2 = result.items[2].title;
-            newspubDate2 = result.items[2].pubDate;
-            newslink2 = result.items[2].link;
-            newstitle3 = result.items[3].title;
-            newspubDate3 = result.items[3].pubDate;
-            newslink3 = result.items[3].link;
-            newstitle4 = result.items[4].title;
-            newspubDate4 = result.items[4].pubDate;
-            newslink4 = result.items[4].link;
-            newstitle5 = result.items[5].title;
-            newspubDate5 = result.items[5].pubDate;
-            newslink5 = result.items[5].link;
-            newstitle6 = result.items[6].title;
-            newspubDate6 = result.items[6].pubDate;
-            newslink6 = result.items[6].link;
-            newstitle7 = result.items[7].title;
-            newspubDate7 = result.items[7].pubDate;
-            newslink7 = result.items[7].link;
-            newstitle8 = result.items[8].title;
-            newspubDate8 = result.items[8].pubDate;
-            newslink8 = result.items[8].link;
-            newstitle9 = result.items[9].title;
-            newspubDate9 = result.items[9].pubDate;
-            newslink9 = result.items[9].link;
 
-        }
-        });
+        var newstitlearray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];
+        var newspubdatarray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];
+        var newslinkarray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];              
 
-        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
+        var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];       
 
-        /*var feedURL2 = "https://www.reddit.com/r/algorand.json?jsonp=?";
+        var asset0 = '&asset_out=0';        
 
-        $.ajax({
-            type: 'GET',
-            url: feedURL2,
-            dataType: 'jsonp',
-            success: async function(result) {
-                sleep(1200); //potential strategy here
-                console.log(result.data.children[0].data.ups);
-    
-            }
-            });
-            
-
-        var feedURL3 = "https://www.reddit.com/r/algorand/comments/u9rocj/for_those_wondering_if_the_pr_is_working.json?jsonp=?";
-
-        $.ajax({
-            type: 'GET',
-            url: feedURL3,
-            dataType: 'jsonp',
-            success: async function(result) {
-                sleep(1200); //potential strategy here
-                console.log(result[0].data.children[0].data.ups);
-    
-            }
-            });*/
-            
-        //this is some spicy tech right here
-
-        /*var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
-
-        var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];
-
-        var asset0 = '&asset_out=0';
-        
         var url00 = algochartsapi + asatokenarray[0] + asset0;
         var url01 = algochartsapi + asatokenarray[1] + asset0;
-        var url02 = algochartsapi + asatokenarray[1] + asset0;
-        var url03 = algochartsapi + asatokenarray[2] + asset0;
+        var url02 = algochartsapi + asatokenarray[2] + asset0;
+        var url03 = algochartsapi + asatokenarray[3] + asset0;
 
-        const a = [url00, url01, url02, url03];
+        var tinymanprice = ['loading', 'loading', 'loading', 'loading'];        
+        
+        var urlalgoexplorer00 = algoexplorerapi + asatokenarray[0];
+        var urlalgoexplorer01 = algoexplorerapi + asatokenarray[1];
+        var urlalgoexplorer02 = algoexplorerapi + asatokenarray[2];
+        var urlalgoexplorer03 = algoexplorerapi + asatokenarray[3];
 
-        var tinymanprice = ['loading', 'loading', 'loading', 'loading'];
+        const b = [url00, url01, url02, url03, urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03];
 
-        for (const element of a) { // You can use `let` instead of `const` if you like
-            console.log(element);
-            getJSON(element, async function(err, data42069) {
+        var algoexplorersupply = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorercreatedatround = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorercreationtxid = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerdecimals = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerdefaultfrozen = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerindex = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorername = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerpercentcirculation = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorertotal = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerassettxcounter = ['loading', 'loading', 'loading', 'loading'];
+        var algoexplorerassetunitname = ['loading', 'loading', 'loading', 'loading'];
+
+        var blockchainarray = ['algorand', 'bitcoin', 'cardano', 'solana'];
+
+        var urlcoingecko00 = coingeckoapi + blockchainarray[0];
+        var urlcoingecko01 = coingeckoapi + blockchainarray[1];
+        var urlcoingecko02 = coingeckoapi + blockchainarray[2];
+        var urlcoingecko03 = coingeckoapi + blockchainarray[3];
+        
+        const c = [urlcoingecko00, urlcoingecko01, urlcoingecko02, urlcoingecko03];
+
+        var coingeckoname = ['loading', 'loading', 'loading', 'loading'];
+
+        $.ajax({
+            type: 'GET',
+            url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
+            dataType: 'jsonp',
+            success: async function(result) {
+                
+                newstitlearray[0] = result.items[0].title;
+                newspubdatarray[0] = result.items[0].pubDate;
+                newslinkarray[0] = result.items[0].link;
+                newstitlearray[1] = result.items[1].title;
+                newspubdatarray[1] = result.items[1].pubDate;
+                newslinkarray[1] = result.items[1].link;
+                newstitlearray[2] = result.items[2].title;
+                newspubdatarray[2] = result.items[2].pubDate;
+                newslinkarray[2] = result.items[2].link;
+                newstitlearray[3] = result.items[3].title;
+                newspubdatarray[3] = result.items[3].pubDate;
+                newslinkarray[3] = result.items[3].link;
+                newstitlearray[4] = result.items[4].title;
+                newspubdatarray[4] = result.items[4].pubDate;
+                newslinkarray[4] = result.items[4].link;
+                newstitlearray[5] = result.items[5].title;
+                newspubdatarray[5] = result.items[5].pubDate;
+                newslinkarray[5] = result.items[5].link;
+                newstitlearray[6] = result.items[6].title;
+                newspubdatarray[6] = result.items[6].pubDate;
+                newslinkarray[6] = result.items[6].link;
+                newstitlearray[7] = result.items[7].title;
+                newspubdatarray[7] = result.items[7].pubDate;
+                newslinkarray[7] = result.items[7].link;
+                newstitlearray[8] = result.items[8].title;
+                newspubdatarray[8] = result.items[8].pubDate;
+                newslinkarray[8] = result.items[8].link;
+                newstitlearray[9] = result.items[9].title;
+                newspubdatarray[9] = result.items[9].pubDate;
+                newslinkarray[9] = result.items[9].link;
+    
+            }
+            }); 
+
+        for (const element of c) { // You can use `let` instead of `const` if you like
+            //console.log(element);
+            getJSON(element, async function(err, data42071) {
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
     
-                    tinymanprice[0, 1, 2, 3] = console.log(data42069.data[0].toFixed(6));                                                            
-                                     
+                    coingeckoname[0, 1, 2, 3] = data42071.name;         
+                    console.log(coingeckoname[0, 1, 2, 3]);                                                    
+                                        
                 }
     
             });  
-        }*/
+        };   
 
-        /*var feedURL4 = "https://ecosystem.algorand.com/api/project/voteCount?id=cl0hemd829k5j0biu20r7kky3";
+        for (const element of b) { // You can use `let` instead of `const` if you like
+            //console.log(element);
+            getJSON(element, async function(err, data42070) {
+                if (err !== null) {
+                    return $.getJSON(element);
+                } else {
 
-        $.ajax({
-            type: 'GET',
-            url: feedURL4,
-            responseType:'application/json',
-            success: async function(result) {
-                sleep(1200); //potential strategy here
-                console.log(result);
+                    if([url00,url01,url02,url03].includes(element)) {
+                    tinymanprice[0, 1, 2, 3] = data42070.data[0].toFixed(6);        
+                    console.log(tinymanprice[0, 1, 2, 3]);      
+                    }
+                    else{}
+                    
+                    if([urlalgoexplorer00,urlalgoexplorer01,urlalgoexplorer02,urlalgoexplorer03].includes(element)) {
+                    algoexplorersupply[0, 1, 2, 3] = data42070.asset.params['circulating-supply'];      
+                    algoexplorercreatedatround[0, 1, 2, 3] = data42070.asset['created-at-round'];    
+                    algoexplorercreationtxid[0, 1, 2, 3] = data42070.asset['creation-txid'];  
+                    algoexplorerdecimals[0, 1, 2, 3] = data42070.asset.params['decimals'];
+                    algoexplorerdefaultfrozen[0, 1, 2, 3] = data42070.asset.params['default-frozen'];
+                    algoexplorerindex[0, 1, 2, 3] = data42070.asset['index'];
+                    algoexplorername[0, 1, 2, 3] = data42070.asset.params['name'];
+                    algoexplorerpercentcirculation[0, 1, 2, 3] = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
+                    algoexplorertotal[0, 1, 2, 3] = data42070.asset['asset-tx-counter']; 
+                    algoexplorerassettxcounter[0, 1, 2, 3] = data42070.asset.params['total'];
+                    algoexplorerassetunitname[0, 1, 2, 3] = data42070.asset.params['unit-name'];  
+
+                    console.log(algoexplorersupply[0, 1, 2, 3]);          
+                    console.log(algoexplorercreatedatround[0, 1, 2, 3]);          
+                    console.log(algoexplorercreationtxid[0, 1, 2, 3]);       
+                    console.log(algoexplorerdecimals[0, 1, 2, 3]);         
+                    console.log(algoexplorerdefaultfrozen[0, 1, 2, 3]);    
+                    console.log(algoexplorerindex[0, 1, 2, 3]);           
+                    console.log(algoexplorername[0, 1, 2, 3]);              
+                    console.log(algoexplorerpercentcirculation[0, 1, 2, 3]);                    
+                    console.log(algoexplorertotal[0, 1, 2, 3]);   
+                    console.log(algoexplorerassettxcounter[0, 1, 2, 3]);   
+                    console.log(algoexplorerassetunitname[0, 1, 2, 3]);   
+                    }
+                    else{}
+
+                }
     
-            }
-            });*/
-            
+            });  
+        };                 
 
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
@@ -368,6 +311,26 @@ $(document)
                                                 'Created at Round': data40.asset['created-at-round']
                                             }
                                         ];
+
+                                        /*var jsObj0 = [
+                                            {
+                                                'Name': algoexplorername[0],
+                                                'Index': algoexplorerindex[0],
+                                                'Tinyman Price' : tinymanprice[0],
+                                                '% in Circulation': algoexplorerpercentcirculation[0],
+                                                'Transactions Counter': algoexplorerassettxcounter[0],
+                                                'Created at Round': algoexplorercreatedatround[0]
+                                            },
+                                            //put any in between here following 0's format
+                                            {
+                                                'Name': algoexplorername[1],
+                                                'Index': algoexplorerindex[1],
+                                                'Tinyman Price' : tinymanprice[1],
+                                                '% in Circulation': algoexplorerpercentcirculation[1],
+                                                'Transactions Counter': algoexplorerassettxcounter[1],
+                                                'Created at Round': algoexplorercreatedatround[1]
+                                            }
+                                        ];*/
                         
                                         var jsObj1 = [
                                             {
@@ -418,54 +381,54 @@ $(document)
 
                                         var jsObj4 = [
                                             {
-                                                'News Title': newstitle0,   
-                                                'News Publish Date': newspubDate0,      
-                                                'News Link': newslink0
+                                                'News Title': newstitlearray[0],   
+                                                'News Publish Date': newspubdatarray[0],      
+                                                'News Link': newslinkarray[0]
                                             },
                                             {
-                                                'News Title': newstitle1,   
-                                                'News Publish Date': newspubDate1,      
-                                                'News Link': newslink1
+                                                'News Title': newstitlearray[1],   
+                                                'News Publish Date': newspubdatarray[1],      
+                                                'News Link': newslinkarray[1]
                                             },
                                             {
-                                                'News Title': newstitle2,   
-                                                'News Publish Date': newspubDate2,      
-                                                'News Link': newslink2
+                                                'News Title': newstitlearray[2],   
+                                                'News Publish Date': newspubdatarray[2],      
+                                                'News Link': newslinkarray[2]
                                             },
                                             {
-                                                'News Title': newstitle3,   
-                                                'News Publish Date': newspubDate3,      
-                                                'News Link': newslink3
+                                                'News Title': newstitlearray[3],   
+                                                'News Publish Date': newspubdatarray[3],      
+                                                'News Link': newslinkarray[3]
                                             },
                                             {
-                                                'News Title': newstitle4,   
-                                                'News Publish Date': newspubDate4,      
-                                                'News Link': newslink4
+                                                'News Title': newstitlearray[4],   
+                                                'News Publish Date': newspubdatarray[4],      
+                                                'News Link': newslinkarray[4]
                                             },
                                             {
-                                                'News Title': newstitle5,   
-                                                'News Publish Date': newspubDate5,      
-                                                'News Link': newslink5
+                                                'News Title': newstitlearray[5],   
+                                                'News Publish Date': newspubdatarray[5],      
+                                                'News Link': newslinkarray[5]
                                             },
                                             {
-                                                'News Title': newstitle6,   
-                                                'News Publish Date': newspubDate6,      
-                                                'News Link': newslink6
+                                                'News Title': newstitlearray[6],   
+                                                'News Publish Date': newspubdatarray[6],      
+                                                'News Link': newslinkarray[6]
                                             },
                                             {
-                                                'News Title': newstitle7,   
-                                                'News Publish Date': newspubDate7,      
-                                                'News Link': newslink7
+                                                'News Title': newstitlearray[7],   
+                                                'News Publish Date': newspubdatarray[7],      
+                                                'News Link': newslinkarray[7]
                                             },
                                             {
-                                                'News Title': newstitle8,   
-                                                'News Publish Date': newspubDate8,      
-                                                'News Link': newslink8
+                                                'News Title': newstitlearray[8],   
+                                                'News Publish Date': newspubdatarray[8],      
+                                                'News Link': newslinkarray[8]
                                             },
                                             {
-                                                'News Title': newstitle9,   
-                                                'News Publish Date': newspubDate9,      
-                                                'News Link': newslink9
+                                                'News Title': newstitlearray[9],   
+                                                'News Publish Date': newspubdatarray[9],      
+                                                'News Link': newslinkarray[9]
                                             }
 
                                         ];                        
@@ -1042,8 +1005,7 @@ $(document)
               className: 'table-active' // https://datatables.net/reference/option/select.className
             },
             stateSave: true,
-          })
-        
+          })        
                                      
         if (location.hash) {
             $('a[href=\'' + location.hash + '\']').tab('show');
@@ -1072,8 +1034,6 @@ $(document)
               $('a[data-toggle=\'tab\']').first().attr('href');
             $('a[href=\'' + anchor + '\']').tab('show');
           });
-        
-        //unused below
 
         function sleep(milliseconds) {
             const date = Date.now();
