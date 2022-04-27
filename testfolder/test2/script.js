@@ -433,7 +433,7 @@ $(document)
             });  
         };        
         
-        //i realize this method is programatically absurd but i'm just not quite good enough yet to figure out another solution
+        //i realize this part of the code is programatically absurd but i'm just not quite good enough yet to figure out another solution
         //if you know a better way plz help me here and make this less cringe        
 
         getJSON(urlalgoexplorerunused07, async function(err, dataunused7) {
