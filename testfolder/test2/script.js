@@ -1304,7 +1304,7 @@ $(document)
                                                                             ]
                                                                         });    
 
-                                                                        var exampleTable6 = $('#example7')
+                                                                        var exampleTable7 = $('#example7')
                                                                         .DataTable({
                                                                             data: jsObj6,
                                                                             stateSave: true,
@@ -1318,19 +1318,19 @@ $(document)
                                                                             {
                                                                                 text: 'Select All',
                                                                                 action: function () {
-                                                                                    exampleTable6.rows().select();
+                                                                                    exampleTable7.rows().select();
                                                                                 }
                                                                             },
                                                                             {
                                                                                 text: 'Select None',
                                                                                 action: function () {
-                                                                                    exampleTable6.rows().deselect();
+                                                                                    exampleTable7.rows().deselect();
                                                                                 }
                                                                             },
                                                                             {
                                                                                 text: 'Show All Rows',
                                                                                 action: function ( e, dt, button, config ) {
-                                                                                    exampleTable6.rows().deselect();
+                                                                                    exampleTable7.rows().deselect();
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                                                                                 }
                                                                             },
