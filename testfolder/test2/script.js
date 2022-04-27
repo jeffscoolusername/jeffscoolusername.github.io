@@ -152,6 +152,7 @@ $(document)
         var algoexplorerdefaultfrozen0 = 0;
         var algoexplorerindex0 = 0;
         var algoexplorername0 = 0;
+        var algoexplorercirculatingsupply0 = 0;
         var algoexplorerpercentcirculation0 = 0;
         var algoexplorertotal0 = 0;
         var algoexplorerassettxcounter0 = 0;
@@ -164,6 +165,7 @@ $(document)
         var algoexplorerdefaultfrozen1 = 0;
         var algoexplorerindex1 = 0;
         var algoexplorername1 = 0;
+        var algoexplorercirculatingsupply1 = 0;
         var algoexplorerpercentcirculation1 = 0;
         var algoexplorertotal1 = 0;
         var algoexplorerassettxcounter1 = 0;
@@ -175,6 +177,7 @@ $(document)
         var algoexplorerdefaultfrozen2 = 0;
         var algoexplorerindex2 = 0;
         var algoexplorername2 = 0;
+        var algoexplorercirculatingsupply2 = 0;
         var algoexplorerpercentcirculation2 = 0;
         var algoexplorertotal2 = 0;
         var algoexplorerassettxcounter2 = 0;
@@ -186,6 +189,7 @@ $(document)
         var algoexplorerdefaultfrozen3 = 0;
         var algoexplorerindex3 = 0;
         var algoexplorername3 = 0;
+        var algoexplorercirculatingsupply3 = 0;
         var algoexplorerpercentcirculation3 = 0;
         var algoexplorertotal3 = 0;
         var algoexplorerassettxcounter3 = 0;
@@ -265,7 +269,8 @@ $(document)
                         algoexplorerdefaultfrozen0 = data42070.asset.params['default-frozen'];
                         algoexplorerindex0 = data42070.asset['index'];
                         algoexplorername0 = data42070.asset.params['name'];
-                        algoexplorerpercentcirculation0 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 10).toFixed(6);
+                        algoexplorercirculatingsupply0 = data42070.asset.params['circulating-supply'];
+                        algoexplorerpercentcirculation0 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
                         algoexplorertotal0 = data42070.asset.params['total'];
                         algoexplorerassettxcounter0 = data42070.asset['asset-tx-counter']; 
                         algoexplorerassetunitname0 = data42070.asset.params['unit-name'];  
@@ -279,7 +284,8 @@ $(document)
                         algoexplorerdefaultfrozen1 = data42070.asset.params['default-frozen'];
                         algoexplorerindex1 = data42070.asset['index'];
                         algoexplorername1 = data42070.asset.params['name'];
-                        algoexplorerpercentcirculation1 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 11).toFixed(6);
+                        algoexplorercirculatingsupply1 = data42070.asset.params['circulating-supply'];
+                        algoexplorerpercentcirculation1 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
                         algoexplorertotal1 = data42070.asset.params['total'];
                         algoexplorerassettxcounter1 = data42070.asset['asset-tx-counter']; 
                         algoexplorerassetunitname1 = data42070.asset.params['unit-name'];  
@@ -293,7 +299,8 @@ $(document)
                         algoexplorerdefaultfrozen2 = data42070.asset.params['default-frozen'];
                         algoexplorerindex2 = data42070.asset['index'];
                         algoexplorername2 = data42070.asset.params['name'];
-                        algoexplorerpercentcirculation2 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 12).toFixed(6);
+                        algoexplorercirculatingsupply2 = data42070.asset.params['circulating-supply'];
+                        algoexplorerpercentcirculation2 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
                         algoexplorertotal2 = data42070.asset.params['total'];
                         algoexplorerassettxcounter2 = data42070.asset['asset-tx-counter']; 
                         algoexplorerassetunitname2 = data42070.asset.params['unit-name'];  
@@ -307,7 +314,8 @@ $(document)
                         algoexplorerdefaultfrozen3 = data42070.asset.params['default-frozen'];
                         algoexplorerindex3 = data42070.asset['index'];
                         algoexplorername3 = data42070.asset.params['name'];
-                        algoexplorerpercentcirculation3 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 13).toFixed(6);
+                        algoexplorercirculatingsupply3 = data42070.asset.params['circulating-supply'];
+                        algoexplorerpercentcirculation3 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
                         algoexplorertotal3 = data42070.asset.params['total'];
                         algoexplorerassettxcounter3 = data42070.asset['asset-tx-counter']; 
                         algoexplorerassetunitname3 = data42070.asset.params['unit-name'];  
@@ -444,7 +452,6 @@ $(document)
                                                 'Transactions Counter': algoexplorerassettxcounter0,
                                                 'Created at Round': algoexplorercreatedatround0
                                             },
-                                            //put any in between here following 0's format
                                             {
                                                 'Name': algoexplorername1,
                                                 'Index': algoexplorerindex1,
@@ -452,7 +459,24 @@ $(document)
                                                 '% in Circulation': algoexplorerpercentcirculation1,
                                                 'Transactions Counter': algoexplorerassettxcounter1,
                                                 'Created at Round': algoexplorercreatedatround1
-                                            }
+                                            },
+                                            {
+                                                'Name': algoexplorername2,
+                                                'Index': algoexplorerindex2,
+                                                'Tinyman Price' : tinymanwoof422,
+                                                '% in Circulation': algoexplorerpercentcirculation2,
+                                                'Transactions Counter': algoexplorerassettxcounter2,
+                                                'Created at Round': algoexplorercreatedatround2
+                                            },
+                                            {
+                                                'Name': algoexplorername3,
+                                                'Index': algoexplorerindex3,
+                                                'Tinyman Price' : tinymanwoof423,
+                                                '% in Circulation': algoexplorerpercentcirculation3,
+                                                'Transactions Counter': algoexplorerassettxcounter3,
+                                                'Created at Round': algoexplorercreatedatround3
+                                            },
+
                                         ];
 
                                         /*var jsObj0 = [
@@ -483,30 +507,60 @@ $(document)
                                                 'Default Frozen': algoexplorerdefaultfrozen0
                                             },
                                             {
-                                                'Name': algoexplorername1,
+                                                'Name': algoexplorername1,                                                
                                                 'Index': algoexplorerindex1,
-                                                'Unit Name': algoexplorerassetunitname1,                                                
+                                                'Unit Name': algoexplorerassetunitname1,
                                                 'Default Frozen': algoexplorerdefaultfrozen1
+                                            },
+                                            {
+                                                'Name': algoexplorername2,                                                
+                                                'Index': algoexplorerindex2,
+                                                'Unit Name': algoexplorerassetunitname2,
+                                                'Default Frozen': algoexplorerdefaultfrozen2
+                                            },
+                                            {
+                                                'Name': algoexplorername3,                                                
+                                                'Index': algoexplorerindex3,
+                                                'Unit Name': algoexplorerassetunitname3,
+                                                'Default Frozen': algoexplorerdefaultfrozen3
                                             }
+
                                         ];
                         
                                         var jsObj2 = [
                                             {
                                                 'Name': algoexplorername0,         
                                                 'Index': algoexplorerindex0,             
-                                                'Circulating Supply': algoexplorerpercentcirculation0,
+                                                'Circulating Supply': algoexplorercirculatingsupply0,
                                                 'Total': algoexplorertotal0,
                                                 'Decimals': algoexplorerdecimals0,
                                                 'Creation TX': algoexplorercreationtxid0,
                                             },
-                                            {
-                                                'Name': algoexplorername1,      
-                                                'Index': algoexplorerindex1,                
-                                                'Circulating Supply': algoexplorerpercentcirculation1,
+{
+                                                'Name': algoexplorername1,         
+                                                'Index': algoexplorerindex1,             
+                                                'Circulating Supply': algoexplorercirculatingsupply1,
                                                 'Total': algoexplorertotal1,
                                                 'Decimals': algoexplorerdecimals1,
-                                                'Creation TX': algoexplorercreationtxid1
-                                            }
+                                                'Creation TX': algoexplorercreationtxid1,
+                                            },
+{
+                                                'Name': algoexplorername2,         
+                                                'Index': algoexplorerindex2,             
+                                                'Circulating Supply': algoexplorercirculatingsupply2,
+                                                'Total': algoexplorertotal2,
+                                                'Decimals': algoexplorerdecimals2,
+                                                'Creation TX': algoexplorercreationtxid2,
+                                            },
+{
+                                                'Name': algoexplorername3,         
+                                                'Index': algoexplorerindex3,             
+                                                'Circulating Supply': algoexplorercirculatingsupply3,
+                                                'Total': algoexplorertotal3,
+                                                'Decimals': algoexplorerdecimals3,
+                                                'Creation TX': algoexplorercreationtxid3,
+                                            },
+
                                         ];
                         
                                         var jsObj3 = [
