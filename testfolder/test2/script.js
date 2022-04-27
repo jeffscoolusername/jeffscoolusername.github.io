@@ -43,6 +43,7 @@ $(document)
         var algochartsapi = 'https://algocharts.net/api/?asset_in=';
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
         var algowalletexplorerapi = 'https://api.algoexplorer.io/v1/account/';
+        var algowalletamountexplorerapi = 'https://api.algoexplorer.io/v2/accounts/';
 
         var url0 = algoexplorerapi + '397111682';
         var url1 = algoexplorerapi + '511484048';
@@ -139,13 +140,21 @@ $(document)
         var urlalgoexplorerunused07 = algoexplorerapi + unusedasatokenarray[7];
 
         var walletmodifier0 = '/transactions/latest/10';   
+        //var walletamountmodifier0 = 'assets/31566704';   //not necessasry
 
         var urlalgowalletexplorer00 = algowalletexplorerapi + asatokenwalletarray[0] + walletmodifier0; //binance
         var urlalgowalletexplorer01 = algowalletexplorerapi + asatokenwalletarray[1] + walletmodifier0; //algostake
         var urlalgowalletexplorer02 = algowalletexplorerapi + asatokenwalletarray[2] + walletmodifier0;
         var urlalgowalletexplorer03 = algowalletexplorerapi + asatokenwalletarray[3] + walletmodifier0;
 
-        const b = [url00, url01, url02, url03, urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03, urlalgowalletexplorer00, urlalgowalletexplorer01, urlalgowalletexplorer02, urlalgowalletexplorer03];
+        var urlalgowalletamountexplorer00 = algowalletamountexplorerapi + asatokenwalletarray[0]; //binance
+        var urlalgowalletamountexplorer01 = algowalletamountexplorerapi + asatokenwalletarray[1]; //algostake
+        var urlalgowalletamountexplorer02 = algowalletamountexplorerapi + asatokenwalletarray[2];
+        var urlalgowalletamountexplorer03 = algowalletamountexplorerapi + asatokenwalletarray[3];
+
+        const b = [url00, url01, url02, url03, urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03, urlalgowalletexplorer00, 
+            urlalgowalletexplorer01, urlalgowalletexplorer02, urlalgowalletexplorer03, urlalgowalletamountexplorer00, urlalgowalletamountexplorer01,
+            urlalgowalletamountexplorer02, urlalgowalletamountexplorer03];
 
         var blockchainarray = ['algorand', 'bitcoin', 'cardano', 'solana'];
 
@@ -232,6 +241,8 @@ $(document)
         var algoexplorerwalletround3 = 0;  
         var algoexplorerwallettype3 = 0;      
         var algoexplorerwalletTXID3= 0; 
+
+        var algoexplorerwalletamountinside0 = 0;  
 
         for (const element of a) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -382,6 +393,31 @@ $(document)
                             algoexplorerwallettype3 = data42071[0].type;      
                             algoexplorerwalletTXID3 = data42071[0].txid;   
                         }
+
+                    if (urlalgowalletamountexplorer00 === element)
+                    {                
+                        //algoexplorerwalletfrom0 = "Binance";   
+                        algoexplorerwalletamountinside0 = (data42071.amount / 1000000);   
+                        //asatokenwalletarray[0] will be used later for identification                        
+                    }
+                    if (urlalgowalletamountexplorer01 === element)
+                    {                
+                        //algoexplorerwalletfrom1 = "Etc";   
+                        algoexplorerwalletamountinside1 = (data42071.amount / 1000000); 
+                        //asatokenwalletarray[1] will be used later for identification                         
+                    }
+                    if (urlalgowalletamountexplorer02 === element)
+                    {                
+                        //algoexplorerwalletfrom0 = "Etc";   
+                        algoexplorerwalletamountinside2 = (data42071.amount / 1000000);   
+                        //asatokenwalletarray[2] will be used later for identification                        
+                    }
+                    if (urlalgowalletamountexplorer03 === element)
+                    {                
+                        //algoexplorerwalletfrom0 = "Etc";   
+                        algoexplorerwalletamountinside3 = (data42071.amount / 1000000);  
+                        //asatokenwalletarray[3] will be used later for identification                        
+                    }
 
                 }
     
@@ -694,6 +730,29 @@ $(document)
                                                                                 'Round': algoexplorerwalletround3, 
                                                                                 'TX Type': algoexplorerwallettype3,
                                                                                 'TX ID': algoexplorerwalletTXID3                               
+                                                                            }
+                                                                        ];
+
+                                                                        var jsObj6 = [
+                                                                            {
+                                                                                'Wallet Name': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamountinside0,
+                                                                                'Address': asatokenwalletarray[0]                            
+                                                                            },
+{
+                                                                                'Wallet Name': algoexplorerwalletfrom1,    
+                                                                                'Amount': algoexplorerwalletamountinside1,
+                                                                                'Address': asatokenwalletarray[1]                            
+                                                                            },
+{
+                                                                                'Wallet Name': algoexplorerwalletfrom2,    
+                                                                                'Amount': algoexplorerwalletamountinside2,
+                                                                                'Address': asatokenwalletarray[2]                            
+                                                                            },
+{
+                                                                                'Wallet Name': algoexplorerwalletfrom3,    
+                                                                                'Amount': algoexplorerwalletamountinside3,
+                                                                                'Address': asatokenwalletarray[3]                           
                                                                             }
                                                                         ];
                                                                 
@@ -1237,6 +1296,81 @@ $(document)
                                                                                     "render": function(data, type, row, meta){
                                                                                         if(type === 'display'){
                                                                                             data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
+                                                                                        }
+                                                                            
+                                                                                        return data;
+                                                                                        }
+                                                                                }                         
+                                                                            ]
+                                                                        });    
+
+                                                                        var exampleTable6 = $('#example7')
+                                                                        .DataTable({
+                                                                            data: jsObj6,
+                                                                            stateSave: true,
+                                                                            dom: 'Bfrtip',
+                                                                            buttons: [
+                                                                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                                            {
+                                                                                extend: 'colvis',
+                                                                                text: 'Column Visibility'
+                                                                            },
+                                                                            {
+                                                                                text: 'Select All',
+                                                                                action: function () {
+                                                                                    exampleTable6.rows().select();
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                text: 'Select None',
+                                                                                action: function () {
+                                                                                    exampleTable6.rows().deselect();
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                text: 'Show All Rows',
+                                                                                action: function ( e, dt, button, config ) {
+                                                                                    exampleTable6.rows().deselect();
+                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                text: 'Hide Unselected Rows',
+                                                                                action: function ( e, dt, button, config ) {
+                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                                                }
+                                                                            },
+                                                                            ],
+                                                                            "language": {
+                                                                                "info": "Initial Rows : _TOTAL_",
+                                                                                select: {
+                                                                                            rows: {
+                                                                                                _: "",
+                                                                                                0: "",
+                                                                                                1: ""
+                                                                                            }
+                                                                                        }
+                                                                                },
+                                                                            colReorder: true,
+                                                                            "order": [[ 1, "desc" ]],
+                                                                            paging: false,
+                                                                            select: {
+                                                                                style: 'multi'
+                                                                            }, 
+                                                                            //keys: true,
+                                                                            'columns': [
+                                                                                
+                                                                                {
+                                                                                    'data': 'Wallet Name'
+                                                                                },
+                                                                                {
+                                                                                    'data': 'Amount'
+                                                                                },
+                                                                                {
+                                                                                    'data': 'Address',
+                                                                                    "render": function(data, type, row, meta){
+                                                                                        if(type === 'display'){
+                                                                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data + '</a>';
                                                                                         }
                                                                             
                                                                                         return data;
