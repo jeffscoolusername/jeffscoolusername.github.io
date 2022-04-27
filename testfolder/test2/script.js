@@ -40,7 +40,7 @@ $(document)
         window.alert = function() {};
 
         var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
-        var algochartsapi = 'https://algocharts.net/apiv2/?asset_in=';
+        var algochartsapi = 'https://algocharts.net/api/?asset_in=';
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
 
         var url0 = algoexplorerapi + '397111682';
@@ -125,6 +125,60 @@ $(document)
 
         var coingeckoname = ['loading', 'loading', 'loading', 'loading'];
 
+        var tinymanwoof420 = 420;
+        var tinymanwoof421 = 421;
+        var tinymanwoof422 = 422;
+        var tinymanwoof423 = 423;
+
+        var tinymanarray = [tinymanwoof420, tinymanwoof421]
+
+        var algoexplorersupply0 = 0;
+        var algoexplorercreatedatround0 = 0;
+        var algoexplorercreationtxid0 = 0;
+        var algoexplorerdecimals0 = 0;
+        var algoexplorerdefaultfrozen0 = 0;
+        var algoexplorerindex0 = 0;
+        var algoexplorername0 = 0;
+        var algoexplorerpercentcirculation0 = 0;
+        var algoexplorertotal0 = 0;
+        var algoexplorerassettxcounter0 = 0;
+        var algoexplorerassetunitname0 = 0;
+        
+        var algoexplorersupply1 = 0;
+        var algoexplorercreatedatround1 = 0;
+        var algoexplorercreationtxid1 = 0;
+        var algoexplorerdecimals1 = 0;
+        var algoexplorerdefaultfrozen1 = 0;
+        var algoexplorerindex1 = 0;
+        var algoexplorername1 = 0;
+        var algoexplorerpercentcirculation1 = 0;
+        var algoexplorertotal1 = 0;
+        var algoexplorerassettxcounter1 = 0;
+        var algoexplorerassetunitname1 = 0;
+        var algoexplorersupply2 = 0;
+        var algoexplorercreatedatround2 = 0;
+        var algoexplorercreationtxid2 = 0;
+        var algoexplorerdecimals2 = 0;
+        var algoexplorerdefaultfrozen2 = 0;
+        var algoexplorerindex2 = 0;
+        var algoexplorername2 = 0;
+        var algoexplorerpercentcirculation2 = 0;
+        var algoexplorertotal2 = 0;
+        var algoexplorerassettxcounter2 = 0;
+        var algoexplorerassetunitname2 = 0;
+        var algoexplorersupply3 = 0;
+        var algoexplorercreatedatround3 = 0;
+        var algoexplorercreationtxid3 = 0;
+        var algoexplorerdecimals3 = 0;
+        var algoexplorerdefaultfrozen3 = 0;
+        var algoexplorerindex3 = 0;
+        var algoexplorername3 = 0;
+        var algoexplorerpercentcirculation3 = 0;
+        var algoexplorertotal3 = 0;
+        var algoexplorerassettxcounter3 = 0;
+        var algoexplorerassetunitname3 = 0;
+
+
         $.ajax({
             type: 'GET',
             url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
@@ -165,6 +219,94 @@ $(document)
             }
             }); 
 
+        for (const element of b) { // You can use `let` instead of `const` if you like
+            //console.log(element);
+            getJSON(element, async function(err, data42070) {
+                if (err !== null) {
+                    return $.getJSON(element);
+                } else {
+
+                    if([url00,url01,url02,url03].includes(element)) {
+                        if (url00 === element) {
+                            tinymanwoof420 = data42070.data/*.toFixed(6)*/;    
+                        }
+                        if (url01 === element) {
+                            tinymanwoof421 = data42070.data;    
+                        }
+                        if (url02 === element) {
+                            tinymanwoof422 = data42070.data;    
+                        }
+                        if (url03 === element) {
+                            tinymanwoof423 = data42070.data;    
+                        }
+                    }
+                    else{}
+                    
+                    if([urlalgoexplorer00,urlalgoexplorer01,urlalgoexplorer02,urlalgoexplorer03].includes(element)) {
+                        if (urlalgoexplorer00 === element)
+                        {
+                        algoexplorersupply0 = data42070.asset.params['circulating-supply'];      
+                        algoexplorercreatedatround0 = data42070.asset['created-at-round'];    
+                        algoexplorercreationtxid0 = data42070.asset['creation-txid'];  
+                        algoexplorerdecimals0 = data42070.asset.params['decimals'];
+                        algoexplorerdefaultfrozen0 = data42070.asset.params['default-frozen'];
+                        algoexplorerindex0 = data42070.asset['index'];
+                        algoexplorername0 = data42070.asset.params['name'];
+                        algoexplorerpercentcirculation0 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 10).toFixed(6);
+                        algoexplorertotal0 = data42070.asset.params['total'];
+                        algoexplorerassettxcounter0 = data42070.asset['asset-tx-counter']; 
+                        algoexplorerassetunitname0 = data42070.asset.params['unit-name'];  
+                        }
+                        if (urlalgoexplorer01 === element)
+                        {
+                        algoexplorersupply1 = data42070.asset.params['circulating-supply'];      
+                        algoexplorercreatedatround1 = data42070.asset['created-at-round'];    
+                        algoexplorercreationtxid1 = data42070.asset['creation-txid'];  
+                        algoexplorerdecimals1 = data42070.asset.params['decimals'];
+                        algoexplorerdefaultfrozen1 = data42070.asset.params['default-frozen'];
+                        algoexplorerindex1 = data42070.asset['index'];
+                        algoexplorername1 = data42070.asset.params['name'];
+                        algoexplorerpercentcirculation1 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 11).toFixed(6);
+                        algoexplorertotal1 = data42070.asset.params['total'];
+                        algoexplorerassettxcounter1 = data42070.asset['asset-tx-counter']; 
+                        algoexplorerassetunitname1 = data42070.asset.params['unit-name'];  
+                        }
+                        if (urlalgoexplorer02 === element)
+                        {
+                        algoexplorersupply2 = data42070.asset.params['circulating-supply'];      
+                        algoexplorercreatedatround2 = data42070.asset['created-at-round'];    
+                        algoexplorercreationtxid2 = data42070.asset['creation-txid'];  
+                        algoexplorerdecimals2 = data42070.asset.params['decimals'];
+                        algoexplorerdefaultfrozen2 = data42070.asset.params['default-frozen'];
+                        algoexplorerindex2 = data42070.asset['index'];
+                        algoexplorername2 = data42070.asset.params['name'];
+                        algoexplorerpercentcirculation2 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 12).toFixed(6);
+                        algoexplorertotal2 = data42070.asset.params['total'];
+                        algoexplorerassettxcounter2 = data42070.asset['asset-tx-counter']; 
+                        algoexplorerassetunitname2 = data42070.asset.params['unit-name'];  
+                        }
+                        if (urlalgoexplorer03 === element)
+                        {
+                        algoexplorersupply3 = data42070.asset.params['circulating-supply'];      
+                        algoexplorercreatedatround3 = data42070.asset['created-at-round'];    
+                        algoexplorercreationtxid3 = data42070.asset['creation-txid'];  
+                        algoexplorerdecimals3 = data42070.asset.params['decimals'];
+                        algoexplorerdefaultfrozen3 = data42070.asset.params['default-frozen'];
+                        algoexplorerindex3 = data42070.asset['index'];
+                        algoexplorername3 = data42070.asset.params['name'];
+                        algoexplorerpercentcirculation3 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 13).toFixed(6);
+                        algoexplorertotal3 = data42070.asset.params['total'];
+                        algoexplorerassettxcounter3 = data42070.asset['asset-tx-counter']; 
+                        algoexplorerassetunitname3 = data42070.asset.params['unit-name'];  
+                        }
+                    }
+                    else{}
+
+                }
+    
+            });  
+        };   
+
         for (const element of c) { // You can use `let` instead of `const` if you like
             //console.log(element);
             getJSON(element, async function(err, data42071) {
@@ -178,52 +320,7 @@ $(document)
                 }
     
             });  
-        };   
-
-        for (const element of b) { // You can use `let` instead of `const` if you like
-            //console.log(element);
-            getJSON(element, async function(err, data42070) {
-                if (err !== null) {
-                    return $.getJSON(element);
-                } else {
-
-                    if([url00,url01,url02,url03].includes(element)) {
-                    tinymanprice[0, 1, 2, 3] = data42070.data[0].toFixed(6);        
-                    console.log(tinymanprice[0, 1, 2, 3]);      
-                    }
-                    else{}
-                    
-                    if([urlalgoexplorer00,urlalgoexplorer01,urlalgoexplorer02,urlalgoexplorer03].includes(element)) {
-                    algoexplorersupply[0, 1, 2, 3] = data42070.asset.params['circulating-supply'];      
-                    algoexplorercreatedatround[0, 1, 2, 3] = data42070.asset['created-at-round'];    
-                    algoexplorercreationtxid[0, 1, 2, 3] = data42070.asset['creation-txid'];  
-                    algoexplorerdecimals[0, 1, 2, 3] = data42070.asset.params['decimals'];
-                    algoexplorerdefaultfrozen[0, 1, 2, 3] = data42070.asset.params['default-frozen'];
-                    algoexplorerindex[0, 1, 2, 3] = data42070.asset['index'];
-                    algoexplorername[0, 1, 2, 3] = data42070.asset.params['name'];
-                    algoexplorerpercentcirculation[0, 1, 2, 3] = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
-                    algoexplorertotal[0, 1, 2, 3] = data42070.asset['asset-tx-counter']; 
-                    algoexplorerassettxcounter[0, 1, 2, 3] = data42070.asset.params['total'];
-                    algoexplorerassetunitname[0, 1, 2, 3] = data42070.asset.params['unit-name'];  
-
-                    console.log(algoexplorersupply[0, 1, 2, 3]);          
-                    console.log(algoexplorercreatedatround[0, 1, 2, 3]);          
-                    console.log(algoexplorercreationtxid[0, 1, 2, 3]);       
-                    console.log(algoexplorerdecimals[0, 1, 2, 3]);         
-                    console.log(algoexplorerdefaultfrozen[0, 1, 2, 3]);    
-                    console.log(algoexplorerindex[0, 1, 2, 3]);           
-                    console.log(algoexplorername[0, 1, 2, 3]);              
-                    console.log(algoexplorerpercentcirculation[0, 1, 2, 3]);                    
-                    console.log(algoexplorertotal[0, 1, 2, 3]);   
-                    console.log(algoexplorerassettxcounter[0, 1, 2, 3]);   
-                    console.log(algoexplorerassetunitname[0, 1, 2, 3]);   
-                    }
-                    else{}
-
-                }
-    
-            });  
-        };                 
+        };                         
 
         getJSON(url0, async function(err, data0) {
             if (err !== null) {
@@ -257,7 +354,7 @@ $(document)
                                 return $.getJSON(urlprice40);
                             } else {
                 
-                                tinymanprice40 = data40p.data[0].toFixed(6);                                                            
+                                tinymanprice40 = data40p.data/*[0].toFixed(6)*/;                                                            
                                                  
                             }
                 
@@ -271,7 +368,7 @@ $(document)
                         return $.getJSON(urlprice0);
                     } else {
         
-                        tinymanprice0 = data01p.data[0].toFixed(6);       
+                        tinymanprice0 = data01p.data/*[0].toFixed(6)*/;       
                         
                         getJSON(urlcgprice1, async function(err, data01cgp) {
                             if (err !== null) {
@@ -294,21 +391,21 @@ $(document)
                         
                                         var jsObj0 = [
                                             {
-                                                'Name': name0,
-                                                'Index': index0,
-                                                'Tinyman Price' : tinymanprice0,
-                                                '% in Circulation': percCirc0,
-                                                'Transactions Counter': txcnt0,
-                                                'Created at Round': crtdAtRound0
+                                                'Name': algoexplorername0,
+                                                'Index': algoexplorerindex0,
+                                                'Tinyman Price' : tinymanwoof420,
+                                                '% in Circulation': algoexplorerpercentcirculation0,
+                                                'Transactions Counter': algoexplorerassettxcounter0,
+                                                'Created at Round': algoexplorercreatedatround0
                                             },
                                             //put any in between here following 0's format
                                             {
-                                                'Name': data40.asset.params['name'],
-                                                'Index': data40.asset['index'],
-                                                'Tinyman Price' : tinymanprice40,
-                                                '% in Circulation': ((data40.asset.params['circulating-supply'] / data40.asset.params['total']) * 100).toFixed(6),
-                                                'Transactions Counter': data40.asset['asset-tx-counter'],
-                                                'Created at Round': data40.asset['created-at-round']
+                                                'Name': algoexplorername1,
+                                                'Index': algoexplorerindex1,
+                                                'Tinyman Price' : tinymanwoof421,
+                                                '% in Circulation': algoexplorerpercentcirculation1,
+                                                'Transactions Counter': algoexplorerassettxcounter1,
+                                                'Created at Round': algoexplorercreatedatround1
                                             }
                                         ];
 
@@ -334,35 +431,35 @@ $(document)
                         
                                         var jsObj1 = [
                                             {
-                                                'Name': name0,                                                
-                                                'Index': index0,
-                                                'Unit Name': unitName0,
-                                                'Default Frozen': defaFroz0
+                                                'Name': algoexplorername0,                                                
+                                                'Index': algoexplorerindex0,
+                                                'Unit Name': algoexplorerassetunitname0,
+                                                'Default Frozen': algoexplorerdefaultfrozen0
                                             },
                                             {
-                                                'Name': data40.asset.params['name'],
-                                                'Index': data40.asset['index'],
-                                                'Unit Name': data40.asset.params['unit-name'],                                                
-                                                'Default Frozen': data40.asset.params['default-frozen']
+                                                'Name': algoexplorername1,
+                                                'Index': algoexplorerindex1,
+                                                'Unit Name': algoexplorerassetunitname1,                                                
+                                                'Default Frozen': algoexplorerdefaultfrozen1
                                             }
                                         ];
                         
                                         var jsObj2 = [
                                             {
-                                                'Name': name0,         
-                                                'Index': index0,             
-                                                'Circulating Supply': circSupply0,
-                                                'Total': total0,
-                                                'Decimals': decimals0,
-                                                'Creation TX': creatTxId0,
+                                                'Name': algoexplorername0,         
+                                                'Index': algoexplorerindex0,             
+                                                'Circulating Supply': algoexplorerpercentcirculation0,
+                                                'Total': algoexplorertotal0,
+                                                'Decimals': algoexplorerdecimals0,
+                                                'Creation TX': algoexplorercreationtxid0,
                                             },
                                             {
-                                                'Name': data40.asset.params['name'],      
-                                                'Index': data40.asset['index'],                
-                                                'Circulating Supply': data40.asset.params['circulating-supply'],
-                                                'Total': data40.asset.params['total'],
-                                                'Decimals': data40.asset.params['decimals'],
-                                                'Creation TX': data40.asset['creation-txid']
+                                                'Name': algoexplorername1,      
+                                                'Index': algoexplorerindex1,                
+                                                'Circulating Supply': algoexplorerpercentcirculation1,
+                                                'Total': algoexplorertotal1,
+                                                'Decimals': algoexplorerdecimals1,
+                                                'Creation TX': algoexplorercreationtxid1
                                             }
                                         ];
                         
