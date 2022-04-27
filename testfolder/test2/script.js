@@ -42,6 +42,7 @@ $(document)
         var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
         var algochartsapi = 'https://algocharts.net/api/?asset_in=';
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
+        var algowalletexplorerapi = 'https://api.algoexplorer.io/v1/account/';
 
         var url0 = algoexplorerapi + '397111682';
         var url1 = algoexplorerapi + '511484048';
@@ -105,6 +106,8 @@ $(document)
         var newslink9 = 123;            
 
         var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];       
+        var asatokenwalletarray = ['SP745JJR4KPRQEXJZHVIEN736LYTL2T2DFMG3OIIFJBV66K73PHNMDCZVM', '2UEQTE5QDNXPI7M3TU44G6SYKLFWLPQO7EBZM7K7MHMQQMFI4QJPLHQFHM', 
+        'ZG54ZBZ5LVWV3MTGOPDSKCBL5LEQTAPUTN5OQQZUMTAYV3JIICA7G3RJZE', 'MAKF3GL52O5O6ENRRLJSEJRLTR74E323JBZIWMMGLZT5PNZ4NDTEEODN7A'];    
 
         var asset0 = '&asset_out=0';        
 
@@ -118,7 +121,14 @@ $(document)
         var urlalgoexplorer02 = algoexplorerapi + asatokenarray[2];
         var urlalgoexplorer03 = algoexplorerapi + asatokenarray[3];
 
-        const b = [url00, url01, url02, url03, urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03];
+        var walletmodifier0 = '/transactions/latest/10';   
+
+        var urlalgowalletexplorer00 = algowalletexplorerapi + asatokenwalletarray[0] + walletmodifier0;
+        var urlalgowalletexplorer01 = algowalletexplorerapi + asatokenwalletarray[1] + walletmodifier0;
+        var urlalgowalletexplorer02 = algowalletexplorerapi + asatokenwalletarray[2] + walletmodifier0;
+        var urlalgowalletexplorer03 = algowalletexplorerapi + asatokenwalletarray[3] + walletmodifier0;
+
+        const b = [url00, url01, url02, url03, urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03, urlalgowalletexplorer00, urlalgowalletexplorer01, urlalgowalletexplorer02, urlalgowalletexplorer03];
 
         var blockchainarray = ['algorand', 'bitcoin', 'cardano', 'solana'];
 
@@ -232,25 +242,20 @@ $(document)
                     return $.getJSON(element);
                 } else {
 
-                    if([url00,url01,url02,url03].includes(element)) {
-                        if (url00 === element) {
-                            tinymanwoof420 = data42070.data/*.toFixed(6)*/;    
-                        }
-                        if (url01 === element) {
-                            tinymanwoof421 = data42070.data;    
-                        }
-                        if (url02 === element) {
-                            tinymanwoof422 = data42070.data;    
-                        }
-                        if (url03 === element) {
-                            tinymanwoof423 = data42070.data;    
-                        }
+                    if (url00 === element) {
+                        tinymanwoof420 = data42070.data/*.toFixed(6)*/;    
                     }
-                    else{}
+                    if (url01 === element) {
+                        tinymanwoof421 = data42070.data;    
+                    }
+                    if (url02 === element) {
+                        tinymanwoof422 = data42070.data;    
+                    }
+                    if (url03 === element) {
+                        tinymanwoof423 = data42070.data;    
+                    }                    
                     
-                    if([urlalgoexplorer00,urlalgoexplorer01,urlalgoexplorer02,urlalgoexplorer03].includes(element)) {
-                        if (urlalgoexplorer00 === element)
-                        {
+                    if (urlalgoexplorer00 === element) {
                         algoexplorercreatedatround0 = data42070.asset['created-at-round'];    
                         algoexplorercreationtxid0 = data42070.asset['creation-txid'];  
                         algoexplorerdecimals0 = data42070.asset.params['decimals'];
@@ -263,8 +268,7 @@ $(document)
                         algoexplorerassettxcounter0 = data42070.asset['asset-tx-counter']; 
                         algoexplorerassetunitname0 = data42070.asset.params['unit-name'];  
                         }
-                        if (urlalgoexplorer01 === element)
-                        {
+                    if (urlalgoexplorer01 === element) {
                         algoexplorercreatedatround1 = data42070.asset['created-at-round'];    
                         algoexplorercreationtxid1 = data42070.asset['creation-txid'];  
                         algoexplorerdecimals1 = data42070.asset.params['decimals'];
@@ -277,8 +281,7 @@ $(document)
                         algoexplorerassettxcounter1 = data42070.asset['asset-tx-counter']; 
                         algoexplorerassetunitname1 = data42070.asset.params['unit-name'];  
                         }
-                        if (urlalgoexplorer02 === element)
-                        {  
+                    if (urlalgoexplorer02 === element) {  
                         algoexplorercreatedatround2 = data42070.asset['created-at-round'];    
                         algoexplorercreationtxid2 = data42070.asset['creation-txid'];  
                         algoexplorerdecimals2 = data42070.asset.params['decimals'];
@@ -291,8 +294,7 @@ $(document)
                         algoexplorerassettxcounter2 = data42070.asset['asset-tx-counter']; 
                         algoexplorerassetunitname2 = data42070.asset.params['unit-name'];  
                         }
-                        if (urlalgoexplorer03 === element)
-                        {  
+                    if (urlalgoexplorer03 === element) {  
                         algoexplorercreatedatround3 = data42070.asset['created-at-round'];    
                         algoexplorercreationtxid3 = data42070.asset['creation-txid'];  
                         algoexplorerdecimals3 = data42070.asset.params['decimals'];
@@ -304,9 +306,24 @@ $(document)
                         algoexplorertotal3 = data42070.asset.params['total'];
                         algoexplorerassettxcounter3 = data42070.asset['asset-tx-counter']; 
                         algoexplorerassetunitname3 = data42070.asset.params['unit-name'];  
+                        }                
+
+                    if (urlalgowalletexplorer00 === element)
+                        {
+                            console.log(data42070);
                         }
-                    }
-                    else{}
+                    if (urlalgowalletexplorer01 === element)
+                        {
+                            console.log('feesh 1!');
+                        }
+                    if (urlalgowalletexplorer02 === element)
+                        {  
+                            console.log('feesh 2!');
+                        }
+                    if (urlalgowalletexplorer03 === element)
+                        {  
+                            console.log('feesh 3!');
+                        }
 
                 }
     
