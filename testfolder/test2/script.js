@@ -235,41 +235,41 @@ $(document)
 
         for (const element of a) { // You can use `let` instead of `const` if you like
             //console.log(element);
-            getJSON(element, async function(err, data42071) {
+            getJSON(element, async function(err, data42070) {
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
                     
-                    newstitle0 = data42071.items[0].title;
-                    newspubdat0 = data42071.items[0].pubDate;
-                    newslink0 = data42071.items[0].link;
-                    newstitle1 = data42071.items[1].title;
-                    newspubdat1 = data42071.items[1].pubDate;
-                    newslink1 = data42071.items[1].link;
-                    newstitle2 = data42071.items[2].title;
-                    newspubdat2 = data42071.items[2].pubDate;
-                    newslink2 = data42071.items[2].link;
-                    newstitle3 = data42071.items[3].title;
-                    newspubdat3 = data42071.items[3].pubDate;
-                    newslink3 = data42071.items[3].link;
-                    newstitle4 = data42071.items[4].title;
-                    newspubdat4 = data42071.items[4].pubDate;
-                    newslink4 = data42071.items[4].link;
-                    newstitle5 = data42071.items[5].title;
-                    newspubdat5 = data42071.items[5].pubDate;
-                    newslink5 = data42071.items[5].link;
-                    newstitle6 = data42071.items[6].title;
-                    newspubdat6 = data42071.items[6].pubDate;
-                    newslink6 = data42071.items[6].link;
-                    newstitle7 = data42071.items[7].title;
-                    newspubdat7 = data42071.items[7].pubDate;
-                    newslink7 = data42071.items[7].link;
-                    newstitle8 = data42071.items[8].title;
-                    newspubdat8 = data42071.items[8].pubDate;
-                    newslink8 = data42071.items[8].link;
-                    newstitle9 = data42071.items[9].title;
-                    newspubdat9 = data42071.items[9].pubDate;
-                    newslink9 = data42071.items[9].link;                                              
+                    newstitle0 = data42070.items[0].title;
+                    newspubdat0 = data42070.items[0].pubDate;
+                    newslink0 = data42070.items[0].link;
+                    newstitle1 = data42070.items[1].title;
+                    newspubdat1 = data42070.items[1].pubDate;
+                    newslink1 = data42070.items[1].link;
+                    newstitle2 = data42070.items[2].title;
+                    newspubdat2 = data42070.items[2].pubDate;
+                    newslink2 = data42070.items[2].link;
+                    newstitle3 = data42070.items[3].title;
+                    newspubdat3 = data42070.items[3].pubDate;
+                    newslink3 = data42070.items[3].link;
+                    newstitle4 = data42070.items[4].title;
+                    newspubdat4 = data42070.items[4].pubDate;
+                    newslink4 = data42070.items[4].link;
+                    newstitle5 = data42070.items[5].title;
+                    newspubdat5 = data42070.items[5].pubDate;
+                    newslink5 = data42070.items[5].link;
+                    newstitle6 = data42070.items[6].title;
+                    newspubdat6 = data42070.items[6].pubDate;
+                    newslink6 = data42070.items[6].link;
+                    newstitle7 = data42070.items[7].title;
+                    newspubdat7 = data42070.items[7].pubDate;
+                    newslink7 = data42070.items[7].link;
+                    newstitle8 = data42070.items[8].title;
+                    newspubdat8 = data42070.items[8].pubDate;
+                    newslink8 = data42070.items[8].link;
+                    newstitle9 = data42070.items[9].title;
+                    newspubdat9 = data42070.items[9].pubDate;
+                    newslink9 = data42070.items[9].link;                                              
                                         
                 }
     
@@ -278,109 +278,109 @@ $(document)
 
         for (const element of b) { // You can use `let` instead of `const` if you like
             //console.log(element);
-            getJSON(element, async function(err, data42070) {
+            getJSON(element, async function(err, data42071) {
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
 
                     if (url00 === element) {
-                        tinymanwoof420 = data42070.data/*.toFixed(6)*/;    
+                        tinymanwoof420 = data42071.data/*.toFixed(6)*/;    
                     }
                     if (url01 === element) {
-                        tinymanwoof421 = data42070.data;    
+                        tinymanwoof421 = data42071.data;    
                     }
                     if (url02 === element) {
-                        tinymanwoof422 = data42070.data;    
+                        tinymanwoof422 = data42071.data;    
                     }
                     if (url03 === element) {
-                        tinymanwoof423 = data42070.data;    
+                        tinymanwoof423 = data42071.data;    
                     }                    
                     
                     if (urlalgoexplorer00 === element) {
-                        algoexplorercreatedatround0 = data42070.asset['created-at-round'];    
-                        algoexplorercreationtxid0 = data42070.asset['creation-txid'];  
-                        algoexplorerdecimals0 = data42070.asset.params['decimals'];
-                        algoexplorerdefaultfrozen0 = data42070.asset.params['default-frozen'];
-                        algoexplorerindex0 = data42070.asset['index'];
-                        algoexplorername0 = data42070.asset.params['name'];
-                        algoexplorercirculatingsupply0 = data42070.asset.params['circulating-supply'];
-                        algoexplorerpercentcirculation0 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
-                        algoexplorertotal0 = data42070.asset.params['total'];
-                        algoexplorerassettxcounter0 = data42070.asset['asset-tx-counter']; 
-                        algoexplorerassetunitname0 = data42070.asset.params['unit-name'];  
+                        algoexplorercreatedatround0 = data42071.asset['created-at-round'];    
+                        algoexplorercreationtxid0 = data42071.asset['creation-txid'];  
+                        algoexplorerdecimals0 = data42071.asset.params['decimals'];
+                        algoexplorerdefaultfrozen0 = data42071.asset.params['default-frozen'];
+                        algoexplorerindex0 = data42071.asset['index'];
+                        algoexplorername0 = data42071.asset.params['name'];
+                        algoexplorercirculatingsupply0 = data42071.asset.params['circulating-supply'];
+                        algoexplorerpercentcirculation0 = ((data42071.asset.params['circulating-supply'] / data42071.asset.params['total']) * 100).toFixed(6);
+                        algoexplorertotal0 = data42071.asset.params['total'];
+                        algoexplorerassettxcounter0 = data42071.asset['asset-tx-counter']; 
+                        algoexplorerassetunitname0 = data42071.asset.params['unit-name'];  
                         }
                     if (urlalgoexplorer01 === element) {
-                        algoexplorercreatedatround1 = data42070.asset['created-at-round'];    
-                        algoexplorercreationtxid1 = data42070.asset['creation-txid'];  
-                        algoexplorerdecimals1 = data42070.asset.params['decimals'];
-                        algoexplorerdefaultfrozen1 = data42070.asset.params['default-frozen'];
-                        algoexplorerindex1 = data42070.asset['index'];
-                        algoexplorername1 = data42070.asset.params['name'];
-                        algoexplorercirculatingsupply1 = data42070.asset.params['circulating-supply'];
-                        algoexplorerpercentcirculation1 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
-                        algoexplorertotal1 = data42070.asset.params['total'];
-                        algoexplorerassettxcounter1 = data42070.asset['asset-tx-counter']; 
-                        algoexplorerassetunitname1 = data42070.asset.params['unit-name'];  
+                        algoexplorercreatedatround1 = data42071.asset['created-at-round'];    
+                        algoexplorercreationtxid1 = data42071.asset['creation-txid'];  
+                        algoexplorerdecimals1 = data42071.asset.params['decimals'];
+                        algoexplorerdefaultfrozen1 = data42071.asset.params['default-frozen'];
+                        algoexplorerindex1 = data42071.asset['index'];
+                        algoexplorername1 = data42071.asset.params['name'];
+                        algoexplorercirculatingsupply1 = data42071.asset.params['circulating-supply'];
+                        algoexplorerpercentcirculation1 = ((data42071.asset.params['circulating-supply'] / data42071.asset.params['total']) * 100).toFixed(6);
+                        algoexplorertotal1 = data42071.asset.params['total'];
+                        algoexplorerassettxcounter1 = data42071.asset['asset-tx-counter']; 
+                        algoexplorerassetunitname1 = data42071.asset.params['unit-name'];  
                         }
                     if (urlalgoexplorer02 === element) {  
-                        algoexplorercreatedatround2 = data42070.asset['created-at-round'];    
-                        algoexplorercreationtxid2 = data42070.asset['creation-txid'];  
-                        algoexplorerdecimals2 = data42070.asset.params['decimals'];
-                        algoexplorerdefaultfrozen2 = data42070.asset.params['default-frozen'];
-                        algoexplorerindex2 = data42070.asset['index'];
-                        algoexplorername2 = data42070.asset.params['name'];
-                        algoexplorercirculatingsupply2 = data42070.asset.params['circulating-supply'];
-                        algoexplorerpercentcirculation2 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
-                        algoexplorertotal2 = data42070.asset.params['total'];
-                        algoexplorerassettxcounter2 = data42070.asset['asset-tx-counter']; 
-                        algoexplorerassetunitname2 = data42070.asset.params['unit-name'];  
+                        algoexplorercreatedatround2 = data42071.asset['created-at-round'];    
+                        algoexplorercreationtxid2 = data42071.asset['creation-txid'];  
+                        algoexplorerdecimals2 = data42071.asset.params['decimals'];
+                        algoexplorerdefaultfrozen2 = data42071.asset.params['default-frozen'];
+                        algoexplorerindex2 = data42071.asset['index'];
+                        algoexplorername2 = data42071.asset.params['name'];
+                        algoexplorercirculatingsupply2 = data42071.asset.params['circulating-supply'];
+                        algoexplorerpercentcirculation2 = ((data42071.asset.params['circulating-supply'] / data42071.asset.params['total']) * 100).toFixed(6);
+                        algoexplorertotal2 = data42071.asset.params['total'];
+                        algoexplorerassettxcounter2 = data42071.asset['asset-tx-counter']; 
+                        algoexplorerassetunitname2 = data42071.asset.params['unit-name'];  
                         }
                     if (urlalgoexplorer03 === element) {  
-                        algoexplorercreatedatround3 = data42070.asset['created-at-round'];    
-                        algoexplorercreationtxid3 = data42070.asset['creation-txid'];  
-                        algoexplorerdecimals3 = data42070.asset.params['decimals'];
-                        algoexplorerdefaultfrozen3 = data42070.asset.params['default-frozen'];
-                        algoexplorerindex3 = data42070.asset['index'];
-                        algoexplorername3 = data42070.asset.params['name'];
-                        algoexplorercirculatingsupply3 = data42070.asset.params['circulating-supply'];
-                        algoexplorerpercentcirculation3 = ((data42070.asset.params['circulating-supply'] / data42070.asset.params['total']) * 100).toFixed(6);
-                        algoexplorertotal3 = data42070.asset.params['total'];
-                        algoexplorerassettxcounter3 = data42070.asset['asset-tx-counter']; 
-                        algoexplorerassetunitname3 = data42070.asset.params['unit-name'];  
+                        algoexplorercreatedatround3 = data42071.asset['created-at-round'];    
+                        algoexplorercreationtxid3 = data42071.asset['creation-txid'];  
+                        algoexplorerdecimals3 = data42071.asset.params['decimals'];
+                        algoexplorerdefaultfrozen3 = data42071.asset.params['default-frozen'];
+                        algoexplorerindex3 = data42071.asset['index'];
+                        algoexplorername3 = data42071.asset.params['name'];
+                        algoexplorercirculatingsupply3 = data42071.asset.params['circulating-supply'];
+                        algoexplorerpercentcirculation3 = ((data42071.asset.params['circulating-supply'] / data42071.asset.params['total']) * 100).toFixed(6);
+                        algoexplorertotal3 = data42071.asset.params['total'];
+                        algoexplorerassettxcounter3 = data42071.asset['asset-tx-counter']; 
+                        algoexplorerassetunitname3 = data42071.asset.params['unit-name'];  
                         }                
 
                     if (urlalgowalletexplorer00 === element)
                         {                
                             algoexplorerwalletfrom0 = "Binance";   
-                            algoexplorerwalletamount0 = (data42070[0].amount / 1000000);   
-                            algoexplorerwalletround0 = data42070[0].round; 
-                            algoexplorerwallettype0 = data42070[0].type;      
-                            algoexplorerwalletTXID0 = data42070[0].txid;   
+                            algoexplorerwalletamount0 = (data42071[0].amount / 1000000);   
+                            algoexplorerwalletround0 = data42071[0].round; 
+                            algoexplorerwallettype0 = data42071[0].type;      
+                            algoexplorerwalletTXID0 = data42071[0].txid;   
                         }
                     if (urlalgowalletexplorer01 === element)
                         {
-                            //console.log(data42070);
+                            //console.log(data42071);
                             algoexplorerwalletfrom1 = "AlgoStake - Creator, Manager, Reserve";   
-                            algoexplorerwalletamount1 = (data42070[0].amount / 1000000);   
-                            algoexplorerwalletround1 = data42070[0].round; 
-                            algoexplorerwallettype1 = data42070[0].type;      
-                            algoexplorerwalletTXID1 = data42070[0].txid;   
+                            algoexplorerwalletamount1 = (data42071[0].amount / 1000000);   
+                            algoexplorerwalletround1 = data42071[0].round; 
+                            algoexplorerwallettype1 = data42071[0].type;      
+                            algoexplorerwalletTXID1 = data42071[0].txid;   
                         }
                     if (urlalgowalletexplorer02 === element)
                         {  
                             algoexplorerwalletfrom2 = "PlanetWatch - Creator, Manager, Reserve";   
-                            algoexplorerwalletamount2 = (data42070[0].amount / 1000000);   
-                            algoexplorerwalletround2 = data42070[0].round; 
-                            algoexplorerwallettype2 = data42070[0].type;      
-                            algoexplorerwalletTXID2 = data42070[0].txid;   
+                            algoexplorerwalletamount2 = (data42071[0].amount / 1000000);   
+                            algoexplorerwalletround2 = data42071[0].round; 
+                            algoexplorerwallettype2 = data42071[0].type;      
+                            algoexplorerwalletTXID2 = data42071[0].txid;   
                         }
                     if (urlalgowalletexplorer03 === element)
                         {  
                             algoexplorerwalletfrom3 = "BirdBot - Creator, Manager, Reserve";   
-                            algoexplorerwalletamount3 = (data42070[0].amount / 1000000);   
-                            algoexplorerwalletround3 = data42070[0].round; 
-                            algoexplorerwallettype3 = data42070[0].type;      
-                            algoexplorerwalletTXID3 = data42070[0].txid;   
+                            algoexplorerwalletamount3 = (data42071[0].amount / 1000000);   
+                            algoexplorerwalletround3 = data42071[0].round; 
+                            algoexplorerwallettype3 = data42071[0].type;      
+                            algoexplorerwalletTXID3 = data42071[0].txid;   
                         }
 
                 }
@@ -390,41 +390,41 @@ $(document)
 
         for (const element of c) { // You can use `let` instead of `const` if you like
             //console.log(element);
-            getJSON(element, async function(err, data42071) {
+            getJSON(element, async function(err, data42072) {
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
                     if (urlcoingecko00 === element) {
-                        coingeckoname0 = data42071.name;   
-                        coingeckoprice0 = data42071.market_data.current_price['usd'];     
-                        coingeckopricechange24h0 = data42071.market_data.price_change_percentage_24h;            
-                        coingeckopricechange7d0 = data42071.market_data.price_change_percentage_7d;    
-                        coingeckopricechange30d0 = data42071.market_data.price_change_percentage_30d;  
-                        coingeckopricechange1y0 = data42071.market_data.price_change_percentage_1y;   
+                        coingeckoname0 = data42072.name;   
+                        coingeckoprice0 = data42072.market_data.current_price['usd'];     
+                        coingeckopricechange24h0 = data42072.market_data.price_change_percentage_24h;            
+                        coingeckopricechange7d0 = data42072.market_data.price_change_percentage_7d;    
+                        coingeckopricechange30d0 = data42072.market_data.price_change_percentage_30d;  
+                        coingeckopricechange1y0 = data42072.market_data.price_change_percentage_1y;   
                     }
                     if (urlcoingecko01 === element) {
-                        coingeckoname1 = data42071.name;   
-                        coingeckoprice1 = data42071.market_data.current_price['usd'];     
-                        coingeckopricechange24h1 = data42071.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
-                        coingeckopricechange7d1 = data42071.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
-                        coingeckopricechange30d1 = data42071.market_data.price_change_percentage_30d - coingeckopricechange30d0;  
-                        coingeckopricechange1y1 = data42071.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
+                        coingeckoname1 = data42072.name;   
+                        coingeckoprice1 = data42072.market_data.current_price['usd'];     
+                        coingeckopricechange24h1 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
+                        coingeckopricechange7d1 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
+                        coingeckopricechange30d1 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0;  
+                        coingeckopricechange1y1 = data42072.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
                     }
                     if (urlcoingecko02 === element) {
-                        coingeckoname2 = data42071.name;   
-                        coingeckoprice2 = data42071.market_data.current_price['usd'];     
-                        coingeckopricechange24h2 = data42071.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
-                        coingeckopricechange7d2 = data42071.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
-                        coingeckopricechange30d2 = data42071.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
-                        coingeckopricechange1y2 = data42071.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
+                        coingeckoname2 = data42072.name;   
+                        coingeckoprice2 = data42072.market_data.current_price['usd'];     
+                        coingeckopricechange24h2 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
+                        coingeckopricechange7d2 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
+                        coingeckopricechange30d2 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
+                        coingeckopricechange1y2 = data42072.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
                     }
                     if (urlcoingecko03 === element) {
-                        coingeckoname3 = data42071.name;   
-                        coingeckoprice3 = data42071.market_data.current_price['usd'];     
-                        coingeckopricechange24h3 = data42071.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
-                        coingeckopricechange7d3 = data42071.market_data.price_change_percentage_7d - coingeckopricechange7d0;     
-                        coingeckopricechange30d3 = data42071.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
-                        coingeckopricechange1y3 = data42071.market_data.price_change_percentage_1y - coingeckopricechange1y0;    
+                        coingeckoname3 = data42072.name;   
+                        coingeckoprice3 = data42072.market_data.current_price['usd'];     
+                        coingeckopricechange24h3 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
+                        coingeckopricechange7d3 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;     
+                        coingeckopricechange30d3 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
+                        coingeckopricechange1y3 = data42072.market_data.price_change_percentage_1y - coingeckopricechange1y0;    
                     }
                                                  
                                         
