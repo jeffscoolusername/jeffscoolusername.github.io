@@ -107,8 +107,8 @@ $(document)
         var newslink9 = 123;            
 
         var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];       
-        var asatokenwalletarray = ['SP745JJR4KPRQEXJZHVIEN736LYTL2T2DFMG3OIIFJBV66K73PHNMDCZVM', '2UEQTE5QDNXPI7M3TU44G6SYKLFWLPQO7EBZM7K7MHMQQMFI4QJPLHQFHM', 
-        'ZG54ZBZ5LVWV3MTGOPDSKCBL5LEQTAPUTN5OQQZUMTAYV3JIICA7G3RJZE', 'MAKF3GL52O5O6ENRRLJSEJRLTR74E323JBZIWMMGLZT5PNZ4NDTEEODN7A'];    
+        var asatokenwalletarray = ['SP745JJR4KPRQEXJZHVIEN736LYTL2T2DFMG3OIIFJBV66K73PHNMDCZVM', 'SSV6SKTMN3IOJO6SWUAT5ERZOBC5K44CQPOH5O7NSXJLGFGU73WUQ7DPGA', 
+        'BY6UJNZ2MD3AZC2K2KQJW7W7OWPGGIBNOSZGFZQ6L426BTGO5G2FOI6VPI', 'I6OCQ7C2KVDVT6ARZAG5JNWBJLVVF6PLEBTCJP7CCK3DKTLSNUFXDMWTCQ'];    
 
         var asset0 = '&asset_out=0';        
 
@@ -124,8 +124,8 @@ $(document)
 
         var walletmodifier0 = '/transactions/latest/10';   
 
-        var urlalgowalletexplorer00 = algowalletexplorerapi + asatokenwalletarray[0] + walletmodifier0;
-        var urlalgowalletexplorer01 = algowalletexplorerapi + asatokenwalletarray[1] + walletmodifier0;
+        var urlalgowalletexplorer00 = algowalletexplorerapi + asatokenwalletarray[0] + walletmodifier0; //binance
+        var urlalgowalletexplorer01 = algowalletexplorerapi + asatokenwalletarray[1] + walletmodifier0; //algostake
         var urlalgowalletexplorer02 = algowalletexplorerapi + asatokenwalletarray[2] + walletmodifier0;
         var urlalgowalletexplorer03 = algowalletexplorerapi + asatokenwalletarray[3] + walletmodifier0;
 
@@ -196,9 +196,26 @@ $(document)
         var algoexplorerwalletfrom0 = 0;
         var algoexplorerwalletamount0 = 0;  
         var algoexplorerwalletround0 = 0;  
-        //var algoexplorerwallettxtype0 = 0;   
         var algoexplorerwallettype0 = 0;      
         var algoexplorerwalletTXID0 = 0; 
+
+        var algoexplorerwalletfrom1 = 0;
+        var algoexplorerwalletamount1 = 0;  
+        var algoexplorerwalletround1 = 0;  
+        var algoexplorerwallettype1 = 0;      
+        var algoexplorerwalletTXID1= 0; 
+
+        var algoexplorerwalletfrom2 = 0;
+        var algoexplorerwalletamount2 = 0;  
+        var algoexplorerwalletround2 = 0;  
+        var algoexplorerwallettype2 = 0;      
+        var algoexplorerwalletTXID2= 0; 
+
+        var algoexplorerwalletfrom3 = 0;
+        var algoexplorerwalletamount3 = 0;  
+        var algoexplorerwalletround3 = 0;  
+        var algoexplorerwallettype3 = 0;      
+        var algoexplorerwalletTXID3= 0; 
 
         for (const element of a) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -318,25 +335,36 @@ $(document)
 
                     if (urlalgowalletexplorer00 === element)
                         {                
-                            //console.log(data42070[0]);
                             algoexplorerwalletfrom0 = "Binance";   
                             algoexplorerwalletamount0 = (data42070[0].amount / 1000000);   
-                            //algoexplorerwalletassetID0 = data42070[0].assetID; 
                             algoexplorerwalletround0 = data42070[0].round; 
                             algoexplorerwallettype0 = data42070[0].type;      
                             algoexplorerwalletTXID0 = data42070[0].txid;   
                         }
                     if (urlalgowalletexplorer01 === element)
                         {
-                           // console.log('feesh 1!');
+                            //console.log(data42070);
+                            algoexplorerwalletfrom1 = "AlgoStake - Creator, Manager, Reserve";   
+                            algoexplorerwalletamount1 = (data42070[0].amount / 1000000);   
+                            algoexplorerwalletround1 = data42070[0].round; 
+                            algoexplorerwallettype1 = data42070[0].type;      
+                            algoexplorerwalletTXID1 = data42070[0].txid;   
                         }
                     if (urlalgowalletexplorer02 === element)
                         {  
-                           // console.log('feesh 2!');
+                            algoexplorerwalletfrom2 = "PlanetWatch - Creator, Manager, Reserve";   
+                            algoexplorerwalletamount2 = (data42070[0].amount / 1000000);   
+                            algoexplorerwalletround2 = data42070[0].round; 
+                            algoexplorerwallettype2 = data42070[0].type;      
+                            algoexplorerwalletTXID2 = data42070[0].txid;   
                         }
                     if (urlalgowalletexplorer03 === element)
                         {  
-                           // console.log('feesh 3!');
+                            algoexplorerwalletfrom3 = "BirdBot - Creator, Manager, Reserve";   
+                            algoexplorerwalletamount3 = (data42070[0].amount / 1000000);   
+                            algoexplorerwalletround3 = data42070[0].round; 
+                            algoexplorerwallettype3 = data42070[0].type;      
+                            algoexplorerwalletTXID3 = data42070[0].txid;   
                         }
 
                 }
@@ -474,7 +502,7 @@ $(document)
                                         'Circulating Supply': algoexplorercirculatingsupply0,
                                         'Total': algoexplorertotal0,
                                         'Decimals': algoexplorerdecimals0,
-                                        'Creation TX': algoexplorercreationtxid0,
+                                        'Creation TX': algoexplorercreationtxid0
                                     },
                                     {
                                         'Name': algoexplorername1,         
@@ -482,7 +510,7 @@ $(document)
                                         'Circulating Supply': algoexplorercirculatingsupply1,
                                         'Total': algoexplorertotal1,
                                         'Decimals': algoexplorerdecimals1,
-                                        'Creation TX': algoexplorercreationtxid1,
+                                        'Creation TX': algoexplorercreationtxid1
                                     },
                                     {
                                         'Name': algoexplorername2,         
@@ -490,7 +518,7 @@ $(document)
                                         'Circulating Supply': algoexplorercirculatingsupply2,
                                         'Total': algoexplorertotal2,
                                         'Decimals': algoexplorerdecimals2,
-                                        'Creation TX': algoexplorercreationtxid2,
+                                        'Creation TX': algoexplorercreationtxid2
                                     },
                                     {
                                         'Name': algoexplorername3,         
@@ -498,7 +526,7 @@ $(document)
                                         'Circulating Supply': algoexplorercirculatingsupply3,
                                         'Total': algoexplorertotal3,
                                         'Decimals': algoexplorerdecimals3,
-                                        'Creation TX': algoexplorercreationtxid3,
+                                        'Creation TX': algoexplorercreationtxid3
                                     }
                                 ];
                         
@@ -606,7 +634,31 @@ $(document)
                                         //'Asset ID': algoexplorerwalletassetID0, 
                                         'Round': algoexplorerwalletround0, 
                                         'TX Type': algoexplorerwallettype0,
-                                        'TX ID': algoexplorerwalletTXID0,                               
+                                        'TX ID': algoexplorerwalletTXID0                               
+                                    },
+                                    {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1,
+                                        //'Asset ID': algoexplorerwalletassetID0, 
+                                        'Round': algoexplorerwalletround1, 
+                                        'TX Type': algoexplorerwallettype1,
+                                        'TX ID': algoexplorerwalletTXID1                               
+                                    },
+                                    {
+                                        'Wallet From': algoexplorerwalletfrom2,    
+                                        'Amount': algoexplorerwalletamount2,
+                                        //'Asset ID': algoexplorerwalletassetID0, 
+                                        'Round': algoexplorerwalletround2, 
+                                        'TX Type': algoexplorerwallettype2,
+                                        'TX ID': algoexplorerwalletTXID2                               
+                                    },
+                                    {
+                                        'Wallet From': algoexplorerwalletfrom3,    
+                                        'Amount': algoexplorerwalletamount3,
+                                        //'Asset ID': algoexplorerwalletassetID0, 
+                                        'Round': algoexplorerwalletround3, 
+                                        'TX Type': algoexplorerwallettype3,
+                                        'TX ID': algoexplorerwalletTXID3                               
                                     }
                                 ];
                     
