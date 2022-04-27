@@ -193,6 +193,12 @@ $(document)
         var algoexplorerassettxcounter3 = 0;
         var algoexplorerassetunitname3 = 0;
 
+        var algoexplorerwalletfrom0 = 0;
+        var algoexplorerwalletamount0 = 0;  
+        var algoexplorerwalletround0 = 0;  
+        //var algoexplorerwallettxtype0 = 0;   
+        var algoexplorerwallettype0 = 0;      
+
         for (const element of a) { // You can use `let` instead of `const` if you like
             //console.log(element);
             getJSON(element, async function(err, data42071) {
@@ -310,8 +316,13 @@ $(document)
                         }                
 
                     if (urlalgowalletexplorer00 === element)
-                        {
-                            console.log(data42070);
+                        {                
+                            //console.log(data42070[0]);
+                            algoexplorerwalletfrom0 = "Binance";   
+                            algoexplorerwalletamount0 = data42070[0].amount;   
+                            //algoexplorerwalletassetID0 = data42070[0].assetID; 
+                            algoexplorerwalletround0 = data42070[0].round; 
+                            algoexplorerwallettype0 = data42070[0].type;      
                         }
                     if (urlalgowalletexplorer01 === element)
                         {
@@ -584,7 +595,17 @@ $(document)
                                         'News Link': newslink9
                                     },
                 
-                                ];              
+                                ];           
+                                
+                                var jsObj5 = [
+                                    {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0,
+                                        //'Asset ID': algoexplorerwalletassetID0, 
+                                        'Round': algoexplorerwalletround0, 
+                                        'TX Type': algoexplorerwallettype0                                   
+                                    }
+                                ];
                     
                                 var exampleTable1 = $('#example1')
                                 .DataTable({
@@ -1049,6 +1070,80 @@ $(document)
                                         }
                                     ]
                                 });    
+
+                                var exampleTable6 = $('#example6')
+                                .DataTable({
+                                    data: jsObj5,
+                                    stateSave: true,
+                                    dom: 'Bfrtip',
+                                    buttons: [
+                                    'copy', 'csv', 'excel', 'pdf', 'print', 
+                                    {
+                                        extend: 'colvis',
+                                        text: 'Column Visibility'
+                                    },
+                                    {
+                                        text: 'Select All',
+                                        action: function () {
+                                            exampleTable6.rows().select();
+                                        }
+                                    },
+                                    {
+                                        text: 'Select None',
+                                        action: function () {
+                                            exampleTable6.rows().deselect();
+                                        }
+                                    },
+                                    {
+                                        text: 'Show All Rows',
+                                        action: function ( e, dt, button, config ) {
+                                            exampleTable6.rows().deselect();
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                        }
+                                    },
+                                    {
+                                        text: 'Hide Unselected Rows',
+                                        action: function ( e, dt, button, config ) {
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                        }
+                                    },
+                                    ],
+                                    "language": {
+                                        "info": "Initial Rows : _TOTAL_",
+                                        select: {
+                                                    rows: {
+                                                        _: "",
+                                                        0: "",
+                                                        1: ""
+                                                    }
+                                                }
+                                        },
+                                    colReorder: true,
+                                    "order": [[ 1, "desc" ]],
+                                    paging: false,
+                                    select: {
+                                        style: 'multi'
+                                    }, 
+                                    //keys: true,
+                                    'columns': [
+                                        
+                                        {
+                                            'data': 'Wallet From'
+                                        },
+                                        {
+                                            'data': 'Amount'
+                                        }/*,
+                                        {
+                                            'data': 'Asset ID'
+                                        }*/,
+                                        {
+                                            'data': 'Round'
+                                        },
+                                        {
+                                            'data': 'TX Type'
+                                        }                           
+                                    ]
+                                }); 
                                                  
                             }
                         });
