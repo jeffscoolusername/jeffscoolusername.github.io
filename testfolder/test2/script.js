@@ -62,18 +62,31 @@ $(document)
         var txcnt0 = 'loading';
         var unitName0 = 'loading';    
 
-        var namecg0 = 'loading';
-        var namecg1 = 'loading';
+        var coingeckoname0 = 'loading';
         var coingeckoprice0 = 'loading';
-        var coingeckoprice1 = 'loading';
         var coingeckopricechange24h0 = 'loading';
-        var coingeckopricechange24h1 = 'loading';
         var coingeckopricechange7d0 = 'loading';
-        var coingeckopricechange7d1 = 'loading';
         var coingeckopricechange30d0 = 'loading';
-        var coingeckopricechange30d1 = 'loading';
         var coingeckopricechange1y0 = 'loading';
+        var coingeckoname1 = 'loading';
+        var coingeckoprice1 = 'loading';
+        var coingeckopricechange24h1 = 'loading';
+        var coingeckopricechange7d1 = 'loading';
+        var coingeckopricechange30d1 = 'loading';
         var coingeckopricechange1y1 = 'loading';
+        var coingeckoname2 = 'loading';
+        var coingeckoprice2 = 'loading';
+        var coingeckopricechange24h2 = 'loading';
+        var coingeckopricechange7d2 = 'loading';
+        var coingeckopricechange30d2 = 'loading';
+        var coingeckopricechange1y2 = 'loading';
+        var coingeckoname3 = 'loading';
+        var coingeckoprice3 = 'loading';
+        var coingeckopricechange24h3 = 'loading';
+        var coingeckopricechange7d3 = 'loading';
+        var coingeckopricechange30d3 = 'loading';
+        var coingeckopricechange1y3 = 'loading';
+
 
         var tinymanprice0 = 'loading';
         var tinymanprice40 = 'loading';          
@@ -313,9 +326,42 @@ $(document)
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
+                    if (urlcoingecko00 === element) {
+                        coingeckoname0 = data42071.name;   
+                        coingeckoprice0 = data42071.market_data.current_price['usd'];     
+                        coingeckopricechange24h0 = data42071.market_data.price_change_percentage_24h;            
+                        coingeckopricechange7d0 = data42071.market_data.price_change_percentage_7d;    
+                        coingeckopricechange30d0 = data42071.market_data.price_change_percentage_30d;  
+                        coingeckopricechange1y0 = data42071.market_data.price_change_percentage_1y;   
+                    }
+                    if (urlcoingecko01 === element) {
+                        coingeckoname1 = data42071.name;   
+                        coingeckoprice1 = data42071.market_data.current_price['usd'];     
+                        coingeckopricechange24h1 = data42071.market_data.price_change_percentage_24h;            
+                        coingeckopricechange7d1 = data42071.market_data.price_change_percentage_7d;    
+                        coingeckopricechange30d1 = data42071.market_data.price_change_percentage_30d;  
+                        coingeckopricechange1y1 = data42071.market_data.price_change_percentage_1y;   
+                    }
+                    if (urlcoingecko02 === element) {
+                        coingeckoname2 = data42071.name;   
+                        coingeckoprice2 = data42071.market_data.current_price['usd'];     
+                        coingeckopricechange24h2 = data42071.market_data.price_change_percentage_24h;            
+                        coingeckopricechange7d2 = data42071.market_data.price_change_percentage_7d;    
+                        coingeckopricechange30d2 = data42071.market_data.price_change_percentage_30d;  
+                        coingeckopricechange1y2 = data42071.market_data.price_change_percentage_1y;   
+                    }
+                    if (urlcoingecko03 === element) {
+                        coingeckoname3 = data42071.name;   
+                        coingeckoprice3 = data42071.market_data.current_price['usd'];     
+                        coingeckopricechange24h3 = data42071.market_data.price_change_percentage_24h;            
+                        coingeckopricechange7d3 = data42071.market_data.price_change_percentage_7d;    
+                        coingeckopricechange30d3 = data42071.market_data.price_change_percentage_30d;  
+                        coingeckopricechange1y3 = data42071.market_data.price_change_percentage_1y;   
+                    }
+
     
-                    coingeckoname[0, 1, 2, 3] = data42071.name;         
-                    console.log(coingeckoname[0, 1, 2, 3]);                                                    
+                    //coingeckoname[0, 1, 2, 3] = data42071.name;         
+                    //console.log(coingeckoname[0, 1, 2, 3]);                                                    
                                         
                 }
     
@@ -465,7 +511,17 @@ $(document)
                         
                                         var jsObj3 = [
                                             {
-                                                'Name': namecg1,                      
+                                                'Name': coingeckoname0,                      
+                                                'Algo Price': coingeckoprice0,
+                                                '24h Change': coingeckopricechange24h0,
+                                                '7d Change': coingeckopricechange7d0,
+                                                '30d Change': coingeckopricechange30d0,
+                                                '1y Change': coingeckopricechange1y0
+                                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                                // ^ for subsequent pieces of the array
+                                            },
+                                            {
+                                                'Name': coingeckoname1,                      
                                                 'Algo Price': coingeckoprice1,
                                                 '24h Change': coingeckopricechange24h1,
                                                 '7d Change': coingeckopricechange7d1,
@@ -473,7 +529,28 @@ $(document)
                                                 '1y Change': coingeckopricechange1y1
                                                 //'Algo Price' : (coingeckprice40/coingeckoprice40)
                                                 // ^ for subsequent pieces of the array
+                                            },
+                                            {
+                                                'Name': coingeckoname2,                      
+                                                'Algo Price': coingeckoprice2,
+                                                '24h Change': coingeckopricechange24h2,
+                                                '7d Change': coingeckopricechange7d2,
+                                                '30d Change': coingeckopricechange30d2,
+                                                '1y Change': coingeckopricechange1y2
+                                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                                // ^ for subsequent pieces of the array
+                                            },
+                                            {
+                                                'Name': coingeckoname3,                      
+                                                'Algo Price': coingeckoprice3,
+                                                '24h Change': coingeckopricechange24h3,
+                                                '7d Change': coingeckopricechange7d3,
+                                                '30d Change': coingeckopricechange30d3,
+                                                '1y Change': coingeckopricechange1y3
+                                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                                // ^ for subsequent pieces of the array
                                             }
+
                                         ];
 
                                         var jsObj4 = [
