@@ -44,23 +44,7 @@ $(document)
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
 
         var url0 = algoexplorerapi + '397111682';
-        var urlprice0 = algochartsapi + '397111682' + '&asset_out=0';
-        var urlcgprice0 = coingeckoapi + 'algorand';
-        var urlcgprice1 = coingeckoapi + 'bitcoin';
-        var url40 = algoexplorerapi + '297995609';
-        var urlprice40 = algochartsapi + '297995609' + '&asset_out=0';
-                
-        var circSupply0 = 'loading';
-        var crtdAtRound0 = 'loading';
-        var creatTxId0 = 'loading';        
-        var decimals0 = 'loading';
-        var defaFroz0 = 'loading';
-        var index0 = 'loading';     
-        var name0 = 'loading';
-        var percCirc0 = 'loading';        
-        var total0 = 'loading';
-        var txcnt0 = 'loading';
-        var unitName0 = 'loading';    
+        var url1 = algoexplorerapi + '511484048';
 
         var coingeckoname0 = 'loading';
         var coingeckoprice0 = 'loading';
@@ -90,44 +74,35 @@ $(document)
         const a = ["https://api.rss2json.com/v1/api.json?rss_url=https://news.google.com/rss/search?q=algorand&hl=en-US&gl=US&ceid=US:en"];
 
         var newstitle0 = 123;
-        var pubdata0 = 123;
+        var newspubdat0 = 123;
         var newslink0 = 123;
         var newstitle1 = 123;
-        var pubdata1 = 123;
+        var newspubdat1 = 123;
         var newslink1 = 123;
         var newstitle2 = 123;
-        var pubdata2 = 123;
+        var newspubdat2 = 123;
         var newslink2 = 123;
         var newstitle3 = 123;
-        var pubdata3 = 123;
+        var newspubdat3 = 123;
         var newslink3 = 123;
         var newstitle4 = 123;
-        var pubdata4 = 123;
+        var newspubdat4 = 123;
         var newslink4 = 123;
         var newstitle5 = 123;
-        var pubdata5 = 123;
+        var newspubdat5 = 123;
         var newslink5 = 123;
         var newstitle6 = 123;
-        var pubdata6 = 123;
+        var newspubdat6 = 123;
         var newslink6 = 123;
         var newstitle7 = 123;
-        var pubdata7 = 123;
+        var newspubdat7 = 123;
         var newslink7 = 123;
         var newstitle8 = 123;
-        var pubdata8 = 123;
+        var newspubdat8 = 123;
         var newslink8 = 123;
         var newstitle9 = 123;
-        var pubdata9 = 123;
-        var newslink9 = 123;
-
-        var tinymanprice0 = 'loading';
-        var tinymanprice40 = 'loading';          
-        
-        var feedURL = "https://api.rss2json.com/v1/api.json?rss_url=https://news.google.com/rss/search?q=algorand&hl=en-US&gl=US&ceid=US:en";
-
-        var newstitlearray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];
-        var newspubdatarray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];
-        var newslinkarray = ['loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading', 'loading'];              
+        var newspubdat9 = 123;
+        var newslink9 = 123;            
 
         var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];       
 
@@ -136,9 +111,7 @@ $(document)
         var url00 = algochartsapi + asatokenarray[0] + asset0;
         var url01 = algochartsapi + asatokenarray[1] + asset0;
         var url02 = algochartsapi + asatokenarray[2] + asset0;
-        var url03 = algochartsapi + asatokenarray[3] + asset0;
-
-        var tinymanprice = ['loading', 'loading', 'loading', 'loading'];        
+        var url03 = algochartsapi + asatokenarray[3] + asset0;    
         
         var urlalgoexplorer00 = algoexplorerapi + asatokenarray[0];
         var urlalgoexplorer01 = algoexplorerapi + asatokenarray[1];
@@ -146,18 +119,6 @@ $(document)
         var urlalgoexplorer03 = algoexplorerapi + asatokenarray[3];
 
         const b = [url00, url01, url02, url03, urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03];
-
-        var algoexplorersupply = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorercreatedatround = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorercreationtxid = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorerdecimals = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorerdefaultfrozen = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorerindex = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorername = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorerpercentcirculation = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorertotal = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorerassettxcounter = ['loading', 'loading', 'loading', 'loading'];
-        var algoexplorerassetunitname = ['loading', 'loading', 'loading', 'loading'];
 
         var blockchainarray = ['algorand', 'bitcoin', 'cardano', 'solana'];
 
@@ -168,16 +129,11 @@ $(document)
         
         const c = [urlcoingecko00, urlcoingecko01, urlcoingecko02, urlcoingecko03];
 
-        var coingeckoname = ['loading', 'loading', 'loading', 'loading'];
-
         var tinymanwoof420 = 420;
         var tinymanwoof421 = 421;
         var tinymanwoof422 = 422;
         var tinymanwoof423 = 423;
 
-        var tinymanarray = [tinymanwoof420, tinymanwoof421]
-
-        var algoexplorersupply0 = 0;
         var algoexplorercreatedatround0 = 0;
         var algoexplorercreationtxid0 = 0;
         var algoexplorerdecimals0 = 0;
@@ -189,8 +145,7 @@ $(document)
         var algoexplorertotal0 = 0;
         var algoexplorerassettxcounter0 = 0;
         var algoexplorerassetunitname0 = 0;
-        
-        var algoexplorersupply1 = 0;
+
         var algoexplorercreatedatround1 = 0;
         var algoexplorercreationtxid1 = 0;
         var algoexplorerdecimals1 = 0;
@@ -202,7 +157,7 @@ $(document)
         var algoexplorertotal1 = 0;
         var algoexplorerassettxcounter1 = 0;
         var algoexplorerassetunitname1 = 0;
-        var algoexplorersupply2 = 0;
+
         var algoexplorercreatedatround2 = 0;
         var algoexplorercreationtxid2 = 0;
         var algoexplorerdecimals2 = 0;
@@ -214,7 +169,7 @@ $(document)
         var algoexplorertotal2 = 0;
         var algoexplorerassettxcounter2 = 0;
         var algoexplorerassetunitname2 = 0;
-        var algoexplorersupply3 = 0;
+        
         var algoexplorercreatedatround3 = 0;
         var algoexplorercreationtxid3 = 0;
         var algoexplorerdecimals3 = 0;
@@ -226,47 +181,6 @@ $(document)
         var algoexplorertotal3 = 0;
         var algoexplorerassettxcounter3 = 0;
         var algoexplorerassetunitname3 = 0;
-
-
-        /*$.ajax({
-            type: 'GET',
-            url: "https://api.rss2json.com/v1/api.json?rss_url=" + feedURL,
-            dataType: 'jsonp',
-            success: async function(result) {
-                
-                newstitlearray[0] = result.items[0].title;
-                newspubdatarray[0] = result.items[0].pubDate;
-                newslinkarray[0] = result.items[0].link;
-                newstitlearray[1] = result.items[1].title;
-                newspubdatarray[1] = result.items[1].pubDate;
-                newslinkarray[1] = result.items[1].link;
-                newstitlearray[2] = result.items[2].title;
-                newspubdatarray[2] = result.items[2].pubDate;
-                newslinkarray[2] = result.items[2].link;
-                newstitlearray[3] = result.items[3].title;
-                newspubdatarray[3] = result.items[3].pubDate;
-                newslinkarray[3] = result.items[3].link;
-                newstitlearray[4] = result.items[4].title;
-                newspubdatarray[4] = result.items[4].pubDate;
-                newslinkarray[4] = result.items[4].link;
-                newstitlearray[5] = result.items[5].title;
-                newspubdatarray[5] = result.items[5].pubDate;
-                newslinkarray[5] = result.items[5].link;
-                newstitlearray[6] = result.items[6].title;
-                newspubdatarray[6] = result.items[6].pubDate;
-                newslinkarray[6] = result.items[6].link;
-                newstitlearray[7] = result.items[7].title;
-                newspubdatarray[7] = result.items[7].pubDate;
-                newslinkarray[7] = result.items[7].link;
-                newstitlearray[8] = result.items[8].title;
-                newspubdatarray[8] = result.items[8].pubDate;
-                newslinkarray[8] = result.items[8].link;
-                newstitlearray[9] = result.items[9].title;
-                newspubdatarray[9] = result.items[9].pubDate;
-                newslinkarray[9] = result.items[9].link;
-    
-            }
-            }); */
 
         for (const element of a) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -304,10 +218,7 @@ $(document)
                     newslink8 = data42071.items[8].link;
                     newstitle9 = data42071.items[9].title;
                     newspubdat9 = data42071.items[9].pubDate;
-                    newslink9 = data42071.items[9].link;
-    
-                    //coingeckoname[0, 1, 2, 3] = data42071.name;         
-                    //console.log(coingeckoname[0, 1, 2, 3]);                                                    
+                    newslink9 = data42071.items[9].link;                                              
                                         
                 }
     
@@ -340,7 +251,6 @@ $(document)
                     if([urlalgoexplorer00,urlalgoexplorer01,urlalgoexplorer02,urlalgoexplorer03].includes(element)) {
                         if (urlalgoexplorer00 === element)
                         {
-                        algoexplorersupply0 = data42070.asset.params['circulating-supply'];      
                         algoexplorercreatedatround0 = data42070.asset['created-at-round'];    
                         algoexplorercreationtxid0 = data42070.asset['creation-txid'];  
                         algoexplorerdecimals0 = data42070.asset.params['decimals'];
@@ -355,7 +265,6 @@ $(document)
                         }
                         if (urlalgoexplorer01 === element)
                         {
-                        algoexplorersupply1 = data42070.asset.params['circulating-supply'];      
                         algoexplorercreatedatround1 = data42070.asset['created-at-round'];    
                         algoexplorercreationtxid1 = data42070.asset['creation-txid'];  
                         algoexplorerdecimals1 = data42070.asset.params['decimals'];
@@ -369,8 +278,7 @@ $(document)
                         algoexplorerassetunitname1 = data42070.asset.params['unit-name'];  
                         }
                         if (urlalgoexplorer02 === element)
-                        {
-                        algoexplorersupply2 = data42070.asset.params['circulating-supply'];      
+                        {  
                         algoexplorercreatedatround2 = data42070.asset['created-at-round'];    
                         algoexplorercreationtxid2 = data42070.asset['creation-txid'];  
                         algoexplorerdecimals2 = data42070.asset.params['decimals'];
@@ -384,8 +292,7 @@ $(document)
                         algoexplorerassetunitname2 = data42070.asset.params['unit-name'];  
                         }
                         if (urlalgoexplorer03 === element)
-                        {
-                        algoexplorersupply3 = data42070.asset.params['circulating-supply'];      
+                        {  
                         algoexplorercreatedatround3 = data42070.asset['created-at-round'];    
                         algoexplorercreationtxid3 = data42070.asset['creation-txid'];  
                         algoexplorerdecimals3 = data42070.asset.params['decimals'];
@@ -444,681 +351,687 @@ $(document)
                         coingeckopricechange30d3 = data42071.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
                         coingeckopricechange1y3 = data42071.market_data.price_change_percentage_1y - coingeckopricechange1y0;    
                     }
-
-    
-                    //coingeckoname[0, 1, 2, 3] = data42071.name;         
-                    //console.log(coingeckoname[0, 1, 2, 3]);                                                    
+                                                 
                                         
                 }
     
             });  
-        };                         
-
-        getJSON(url0, async function(err, data0) {
+        };        
+        
+        //clown hack but it seems to work well enough <:^)
+        getJSON(url1, async function(err, data999) {
             if (err !== null) {
-                return $.getJSON(url0);
+                return $.getJSON(url1);
             } else {
-
-                var jsObj0 = [
-                    {
-                        'Name': algoexplorername0,
-                        'Index': algoexplorerindex0,
-                        'Tinyman Price' : tinymanwoof420,
-                        '% in Circulation': algoexplorerpercentcirculation0,
-                        'Transactions Counter': algoexplorerassettxcounter0,
-                        'Created at Round': algoexplorercreatedatround0
-                    },
-                    {
-                        'Name': algoexplorername1,
-                        'Index': algoexplorerindex1,
-                        'Tinyman Price' : tinymanwoof421,
-                        '% in Circulation': algoexplorerpercentcirculation1,
-                        'Transactions Counter': algoexplorerassettxcounter1,
-                        'Created at Round': algoexplorercreatedatround1
-                    },
-                    {
-                        'Name': algoexplorername2,
-                        'Index': algoexplorerindex2,
-                        'Tinyman Price' : tinymanwoof422,
-                        '% in Circulation': algoexplorerpercentcirculation2,
-                        'Transactions Counter': algoexplorerassettxcounter2,
-                        'Created at Round': algoexplorercreatedatround2
-                    },
-                    {
-                        'Name': algoexplorername3,
-                        'Index': algoexplorerindex3,
-                        'Tinyman Price' : tinymanwoof423,
-                        '% in Circulation': algoexplorerpercentcirculation3,
-                        'Transactions Counter': algoexplorerassettxcounter3,
-                        'Created at Round': algoexplorercreatedatround3
-                    }
-                ];
+                getJSON(url0, async function(err, data0) {
+                    if (err !== null) {
+                        return $.getJSON(url0);
+                    } else {
         
-                var jsObj1 = [
-                    {
-                        'Name': algoexplorername0,                                                
-                        'Index': algoexplorerindex0,
-                        'Unit Name': algoexplorerassetunitname0,
-                        'Default Frozen': algoexplorerdefaultfrozen0
-                    },
-                    {
-                        'Name': algoexplorername1,                                                
-                        'Index': algoexplorerindex1,
-                        'Unit Name': algoexplorerassetunitname1,
-                        'Default Frozen': algoexplorerdefaultfrozen1
-                    },
-                    {
-                        'Name': algoexplorername2,                                                
-                        'Index': algoexplorerindex2,
-                        'Unit Name': algoexplorerassetunitname2,
-                        'Default Frozen': algoexplorerdefaultfrozen2
-                    },
-                    {
-                        'Name': algoexplorername3,                                                
-                        'Index': algoexplorerindex3,
-                        'Unit Name': algoexplorerassetunitname3,
-                        'Default Frozen': algoexplorerdefaultfrozen3
-                    }
-                ];
+                        var jsObj0 = [
+                            {
+                                'Name': algoexplorername0,
+                                'Index': algoexplorerindex0,
+                                'Tinyman Price' : tinymanwoof420,
+                                '% in Circulation': algoexplorerpercentcirculation0,
+                                'Transactions Counter': algoexplorerassettxcounter0,
+                                'Created at Round': algoexplorercreatedatround0
+                            },
+                            {
+                                'Name': algoexplorername1,
+                                'Index': algoexplorerindex1,
+                                'Tinyman Price' : tinymanwoof421,
+                                '% in Circulation': algoexplorerpercentcirculation1,
+                                'Transactions Counter': algoexplorerassettxcounter1,
+                                'Created at Round': algoexplorercreatedatround1
+                            },
+                            {
+                                'Name': algoexplorername2,
+                                'Index': algoexplorerindex2,
+                                'Tinyman Price' : tinymanwoof422,
+                                '% in Circulation': algoexplorerpercentcirculation2,
+                                'Transactions Counter': algoexplorerassettxcounter2,
+                                'Created at Round': algoexplorercreatedatround2
+                            },
+                            {
+                                'Name': algoexplorername3,
+                                'Index': algoexplorerindex3,
+                                'Tinyman Price' : tinymanwoof423,
+                                '% in Circulation': algoexplorerpercentcirculation3,
+                                'Transactions Counter': algoexplorerassettxcounter3,
+                                'Created at Round': algoexplorercreatedatround3
+                            }
+                        ];
+                
+                        var jsObj1 = [
+                            {
+                                'Name': algoexplorername0,                                                
+                                'Index': algoexplorerindex0,
+                                'Unit Name': algoexplorerassetunitname0,
+                                'Default Frozen': algoexplorerdefaultfrozen0
+                            },
+                            {
+                                'Name': algoexplorername1,                                                
+                                'Index': algoexplorerindex1,
+                                'Unit Name': algoexplorerassetunitname1,
+                                'Default Frozen': algoexplorerdefaultfrozen1
+                            },
+                            {
+                                'Name': algoexplorername2,                                                
+                                'Index': algoexplorerindex2,
+                                'Unit Name': algoexplorerassetunitname2,
+                                'Default Frozen': algoexplorerdefaultfrozen2
+                            },
+                            {
+                                'Name': algoexplorername3,                                                
+                                'Index': algoexplorerindex3,
+                                'Unit Name': algoexplorerassetunitname3,
+                                'Default Frozen': algoexplorerdefaultfrozen3
+                            }
+                        ];
+                
+                        var jsObj2 = [
+                            {
+                                'Name': algoexplorername0,         
+                                'Index': algoexplorerindex0,             
+                                'Circulating Supply': algoexplorercirculatingsupply0,
+                                'Total': algoexplorertotal0,
+                                'Decimals': algoexplorerdecimals0,
+                                'Creation TX': algoexplorercreationtxid0,
+                            },
+                            {
+                                'Name': algoexplorername1,         
+                                'Index': algoexplorerindex1,             
+                                'Circulating Supply': algoexplorercirculatingsupply1,
+                                'Total': algoexplorertotal1,
+                                'Decimals': algoexplorerdecimals1,
+                                'Creation TX': algoexplorercreationtxid1,
+                            },
+                            {
+                                'Name': algoexplorername2,         
+                                'Index': algoexplorerindex2,             
+                                'Circulating Supply': algoexplorercirculatingsupply2,
+                                'Total': algoexplorertotal2,
+                                'Decimals': algoexplorerdecimals2,
+                                'Creation TX': algoexplorercreationtxid2,
+                            },
+                            {
+                                'Name': algoexplorername3,         
+                                'Index': algoexplorerindex3,             
+                                'Circulating Supply': algoexplorercirculatingsupply3,
+                                'Total': algoexplorertotal3,
+                                'Decimals': algoexplorerdecimals3,
+                                'Creation TX': algoexplorercreationtxid3,
+                            }
+                        ];
+                
+                        var jsObj3 = [
+                            {
+                                'Name': coingeckoname0,                      
+                                'Algo Price': coingeckoprice0,
+                                '24h Change': coingeckopricechange24h0,
+                                '7d Change': coingeckopricechange7d0,
+                                '30d Change': coingeckopricechange30d0,
+                                '1y Change': coingeckopricechange1y0
+                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                // ^ for subsequent pieces of the array
+                            },
+                            {
+                                'Name': coingeckoname1,                      
+                                'Algo Price': coingeckoprice1,
+                                '24h Change': coingeckopricechange24h1,
+                                '7d Change': coingeckopricechange7d1,
+                                '30d Change': coingeckopricechange30d1,
+                                '1y Change': coingeckopricechange1y1
+                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                // ^ for subsequent pieces of the array
+                            },
+                            {
+                                'Name': coingeckoname2,                      
+                                'Algo Price': coingeckoprice2,
+                                '24h Change': coingeckopricechange24h2,
+                                '7d Change': coingeckopricechange7d2,
+                                '30d Change': coingeckopricechange30d2,
+                                '1y Change': coingeckopricechange1y2
+                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                // ^ for subsequent pieces of the array
+                            },
+                            {
+                                'Name': coingeckoname3,                      
+                                'Algo Price': coingeckoprice3,
+                                '24h Change': coingeckopricechange24h3,
+                                '7d Change': coingeckopricechange7d3,
+                                '30d Change': coingeckopricechange30d3,
+                                '1y Change': coingeckopricechange1y3
+                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                // ^ for subsequent pieces of the array
+                            }
+                        ];
+                
+                        var jsObj4 = [
+                            {
+                                'News Title': newstitle0,   
+                                'News Publish Date': newspubdat0,      
+                                'News Link': newslink0
+                            },
+                            {
+                                'News Title': newstitle1,   
+                                'News Publish Date': newspubdat1,      
+                                'News Link': newslink1
+                            },
+                            {
+                                'News Title': newstitle2,   
+                                'News Publish Date': newspubdat2,      
+                                'News Link': newslink2
+                            },
+                            {
+                                'News Title': newstitle3,   
+                                'News Publish Date': newspubdat3,      
+                                'News Link': newslink3
+                            },
+                            {
+                                'News Title': newstitle4,   
+                                'News Publish Date': newspubdat4,      
+                                'News Link': newslink4
+                            },
+                            {
+                                'News Title': newstitle5,   
+                                'News Publish Date': newspubdat5,      
+                                'News Link': newslink5
+                            },
+                            {
+                                'News Title': newstitle6,   
+                                'News Publish Date': newspubdat6,      
+                                'News Link': newslink6
+                            },
+                            {
+                                'News Title': newstitle7,   
+                                'News Publish Date': newspubdat7,      
+                                'News Link': newslink7
+                            },
+                            {
+                                'News Title': newstitle8,   
+                                'News Publish Date': newspubdat8,      
+                                'News Link': newslink8
+                            },
+                            {
+                                'News Title': newstitle9,   
+                                'News Publish Date': newspubdat9,      
+                                'News Link': newslink9
+                            },
         
-                var jsObj2 = [
-                    {
-                        'Name': algoexplorername0,         
-                        'Index': algoexplorerindex0,             
-                        'Circulating Supply': algoexplorercirculatingsupply0,
-                        'Total': algoexplorertotal0,
-                        'Decimals': algoexplorerdecimals0,
-                        'Creation TX': algoexplorercreationtxid0,
-                    },
-                    {
-                        'Name': algoexplorername1,         
-                        'Index': algoexplorerindex1,             
-                        'Circulating Supply': algoexplorercirculatingsupply1,
-                        'Total': algoexplorertotal1,
-                        'Decimals': algoexplorerdecimals1,
-                        'Creation TX': algoexplorercreationtxid1,
-                    },
-                    {
-                        'Name': algoexplorername2,         
-                        'Index': algoexplorerindex2,             
-                        'Circulating Supply': algoexplorercirculatingsupply2,
-                        'Total': algoexplorertotal2,
-                        'Decimals': algoexplorerdecimals2,
-                        'Creation TX': algoexplorercreationtxid2,
-                    },
-                    {
-                        'Name': algoexplorername3,         
-                        'Index': algoexplorerindex3,             
-                        'Circulating Supply': algoexplorercirculatingsupply3,
-                        'Total': algoexplorertotal3,
-                        'Decimals': algoexplorerdecimals3,
-                        'Creation TX': algoexplorercreationtxid3,
+                        ];              
+            
+                        var exampleTable1 = $('#example1')
+                        .DataTable({
+                            data: jsObj0,
+                            stateSave: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                            {
+                                extend: 'colvis',
+                                text: 'Column Visibility'
+                            },
+                            {
+                                text: 'Select All',
+                                action: function () {
+                                    exampleTable1.rows().select();
+                                }
+                            },
+                            {
+                                text: 'Select None',
+                                action: function () {
+                                    exampleTable1.rows().deselect();
+                                }
+                            },
+                            {
+                                text: 'Show All Rows',
+                                action: function ( e, dt, button, config ) {
+                                    exampleTable1.rows().deselect();
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                }
+                            },
+                            {
+                                text: 'Hide Unselected Rows',
+                                action: function ( e, dt, button, config ) {
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                }
+                            },
+                            ],
+                            "language": {
+                                "info": "Initial Rows : _TOTAL_",
+                                select: {
+                                            rows: {
+                                                _: "",
+                                                0: "",
+                                                1: ""
+                                            }
+                                        }
+                                },
+                            colReorder: true,
+                            paging: false,
+                            select: {
+                                style: 'multi'
+                            }, 
+                            //keys: true,
+                            'columns': [{
+                                    'data': 'Name'
+                                },
+                                {
+                                    'data': 'Index',
+                                    "render": function(data, type, row, meta){
+                                        if(type === 'display'){
+                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                        }
+                            
+                                        return data;
+                                        }
+                                },
+                                {
+                                    'data': 'Tinyman Price'
+                                },
+                                {
+                                    'data': '% in Circulation',
+                                    render: function(data, type, row, meta) {
+                                        return type === 'display' ?
+                                            '<progress value="' + data + '" max="100"></progress>' :
+                                            data;
+                                    }
+                                },
+                                {
+                                    'data': 'Transactions Counter'
+                                },
+                                {
+                                    'data': 'Created at Round'
+                                }
+                            ]
+                        });
+            
+                        var exampleTable2 = $('#example2')
+                        .DataTable({
+                            data: jsObj1,
+                            stateSave: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                            {
+                                extend: 'colvis',
+                                text: 'Column Visibility'
+                            },
+                            {
+                                text: 'Select All',
+                                action: function () {
+                                    exampleTable2.rows().select();
+                                }
+                            },
+                            {
+                                text: 'Select None',
+                                action: function () {
+                                    exampleTable2.rows().deselect();
+                                }
+                            },
+                            {
+                                text: 'Show All Rows',
+                                action: function ( e, dt, button, config ) {
+                                    exampleTable2.rows().deselect();
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                }
+                            },
+                            {
+                                text: 'Hide Unselected Rows',
+                                action: function ( e, dt, button, config ) {
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                }
+                            },
+                            ],
+                            "language": {
+                                "info": "Initial Rows : _TOTAL_",
+                                select: {
+                                            rows: {
+                                                _: "",
+                                                0: "",
+                                                1: ""
+                                            }
+                                        }
+                                },
+                            colReorder: true,
+                            paging: false,
+                            select: {
+                                style: 'multi'
+                            }, 
+                            //keys: true,
+                            'columns': [{
+                                    'data': 'Name'
+                                },
+                                {
+                                    'data': 'Index',
+                                    "render": function(data, type, row, meta){
+                                        if(type === 'display'){
+                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                        }
+                            
+                                        return data;
+                                        }
+                                },
+                                {
+                                    'data': 'Unit Name'
+                                },
+                                {
+                                    'data': 'Default Frozen'
+                                }
+                            ]
+                        });
+            
+                        var exampleTable3 = $('#example3')
+                        .DataTable({
+                            data: jsObj2,
+                            stateSave: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                            {
+                                extend: 'colvis',
+                                text: 'Column Visibility'
+                            },
+                            {
+                                text: 'Select All',
+                                action: function () {
+                                    exampleTable3.rows().select();
+                                }
+                            },
+                            {
+                                text: 'Select None',
+                                action: function () {
+                                    exampleTable3.rows().deselect();
+                                }
+                            },
+                            {
+                                text: 'Show All Rows',
+                                action: function ( e, dt, button, config ) {
+                                    exampleTable3.rows().deselect();
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                }
+                            },
+                            {
+                                text: 'Hide Unselected Rows',
+                                action: function ( e, dt, button, config ) {
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                }
+                            },
+                            ],
+                            "language": {
+                                "info": "Initial Rows : _TOTAL_",
+                                select: {
+                                            rows: {
+                                                _: "",
+                                                0: "",
+                                                1: ""
+                                            }
+                                        }
+                                },
+                            colReorder: true,
+                            paging: false,
+                            select: {
+                                style: 'multi'
+                            }, 
+                            //keys: true,
+                            'columns': [{
+                                    'data': 'Name'
+                                },
+                                {
+                                    'data': 'Index',
+                                    "render": function(data, type, row, meta){
+                                        if(type === 'display'){
+                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                        }
+                            
+                                        return data;
+                                        }
+                                },
+                                {
+                                    'data': 'Circulating Supply'
+                                },
+                                {
+                                    'data': 'Total'
+                                },
+                                {
+                                    'data': 'Decimals'
+                                },
+                                {
+                                    'data': 'Creation TX',
+                                    "render": function(data, type, row, meta){
+                                        if(type === 'display'){
+                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
+                                        }
+                            
+                                        return data;
+                                        }
+                                }
+                            ]
+                        });
+            
+                        var exampleTable4 = $('#example4')
+                        .DataTable({
+                            data: jsObj3,
+                            stateSave: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                            {
+                                extend: 'colvis',
+                                text: 'Column Visibility'
+                            },
+                            {
+                                text: 'Select All',
+                                action: function () {
+                                    exampleTable4.rows().select();
+                                }
+                            },
+                            {
+                                text: 'Select None',
+                                action: function () {
+                                    exampleTable4.rows().deselect();
+                                }
+                            },
+                            {
+                                text: 'Show All Rows',
+                                action: function ( e, dt, button, config ) {
+                                    exampleTable4.rows().deselect();
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                }
+                            },
+                            {
+                                text: 'Hide Unselected Rows',
+                                action: function ( e, dt, button, config ) {
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                }
+                            },
+                            ],
+                            "language": {
+                                "info": "Initial Rows : _TOTAL_",
+                                select: {
+                                            rows: {
+                                                _: "",
+                                                0: "",
+                                                1: ""
+                                            }
+                                        }
+                                },
+                            colReorder: true,
+                            paging: false,
+                            select: {
+                                style: 'multi'
+                            }, 
+                            //keys: true,
+                            'columns': [{
+                                    'data': 'Name'
+                                },
+                                {
+                                    'data': 'Algo Price'
+                                },
+                                {
+                                    'data': '24h Change',
+                                    render: function(data, type) {
+                                        var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                        
+                                        if (type === 'display') {
+                                            let color = 'black';
+                                            if (data < 0) {
+                                                color = 'red';
+                                            }
+                                            else if (data >= 0) {
+                                                color = 'green';
+                                            }
+                        
+                                            return '<span style="color:' + color + '">' + number + '</span>';
+                                        }
+                                            
+                                        return number;
+                                    }
+                                },
+                                {
+                                    'data': '7d Change',
+                                    render: function(data, type) {
+                                        var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                        
+                                        if (type === 'display') {
+                                            let color = 'black';
+                                            if (data < 0) {
+                                                color = 'red';
+                                            }
+                                            else if (data >= 0) {
+                                                color = 'green';
+                                            }
+                        
+                                            return '<span style="color:' + color + '">' + number + '</span>';
+                                        }
+                                            
+                                        return number;
+                                    }
+                                },
+                                {
+                                    'data': '30d Change',
+                                    render: function(data, type) {
+                                        var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                        
+                                        if (type === 'display') {
+                                            let color = 'black';
+                                            if (data < 0) {
+                                                color = 'red';
+                                            }
+                                            else if (data >= 0) {
+                                                color = 'green';
+                                            }
+                        
+                                            return '<span style="color:' + color + '">' + number + '</span>';
+                                        }
+                                            
+                                        return number;
+                                    }
+                                },
+                                {
+                                    'data': '1y Change',
+                                    render: function(data, type) {
+                                        var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                        
+                                        if (type === 'display') {
+                                            let color = 'black';
+                                            if (data < 0) {
+                                                color = 'red';
+                                            }
+                                            else if (data >= 0) {
+                                                color = 'green';
+                                            }
+                        
+                                            return '<span style="color:' + color + '">' + number + '</span>';
+                                        }
+                                            
+                                        return number;
+                                    }
+                                }
+                            ]
+                        });
+            
+                        var exampleTable5 = $('#example5')
+                        .DataTable({
+                            data: jsObj4,
+                            stateSave: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                            {
+                                extend: 'colvis',
+                                text: 'Column Visibility'
+                            },
+                            {
+                                text: 'Select All',
+                                action: function () {
+                                    exampleTable5.rows().select();
+                                }
+                            },
+                            {
+                                text: 'Select None',
+                                action: function () {
+                                    exampleTable5.rows().deselect();
+                                }
+                            },
+                            {
+                                text: 'Show All Rows',
+                                action: function ( e, dt, button, config ) {
+                                    exampleTable5.rows().deselect();
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                }
+                            },
+                            {
+                                text: 'Hide Unselected Rows',
+                                action: function ( e, dt, button, config ) {
+                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                }
+                            },
+                            ],
+                            "language": {
+                                "info": "Initial Rows : _TOTAL_",
+                                select: {
+                                            rows: {
+                                                _: "",
+                                                0: "",
+                                                1: ""
+                                            }
+                                        }
+                                },
+                            colReorder: true,
+                            "order": [[ 1, "desc" ]],
+                            paging: false,
+                            select: {
+                                style: 'multi'
+                            }, 
+                            //keys: true,
+                            'columns': [{
+                                    'data': 'News Title'
+                                },
+                                {
+                                    'data': 'News Publish Date'
+                                },
+                                {
+                                    'data': 'News Link',
+                                    "render": function(data, type, row, meta){
+                                        if(type === 'display'){
+                                            data = '<a target="_blank" rel="noopener noreferrer" href="' + data + '">' + data + '</a>';
+                                        }
+                            
+                                        return data;
+                                        }
+                                }
+                            ]
+                        });    
+                                         
                     }
-                ];
-        
-                var jsObj3 = [
-                    {
-                        'Name': coingeckoname0,                      
-                        'Algo Price': coingeckoprice0,
-                        '24h Change': coingeckopricechange24h0,
-                        '7d Change': coingeckopricechange7d0,
-                        '30d Change': coingeckopricechange30d0,
-                        '1y Change': coingeckopricechange1y0
-                        //'Algo Price' : (coingeckprice40/coingeckoprice40)
-                        // ^ for subsequent pieces of the array
-                    },
-                    {
-                        'Name': coingeckoname1,                      
-                        'Algo Price': coingeckoprice1,
-                        '24h Change': coingeckopricechange24h1,
-                        '7d Change': coingeckopricechange7d1,
-                        '30d Change': coingeckopricechange30d1,
-                        '1y Change': coingeckopricechange1y1
-                        //'Algo Price' : (coingeckprice40/coingeckoprice40)
-                        // ^ for subsequent pieces of the array
-                    },
-                    {
-                        'Name': coingeckoname2,                      
-                        'Algo Price': coingeckoprice2,
-                        '24h Change': coingeckopricechange24h2,
-                        '7d Change': coingeckopricechange7d2,
-                        '30d Change': coingeckopricechange30d2,
-                        '1y Change': coingeckopricechange1y2
-                        //'Algo Price' : (coingeckprice40/coingeckoprice40)
-                        // ^ for subsequent pieces of the array
-                    },
-                    {
-                        'Name': coingeckoname3,                      
-                        'Algo Price': coingeckoprice3,
-                        '24h Change': coingeckopricechange24h3,
-                        '7d Change': coingeckopricechange7d3,
-                        '30d Change': coingeckopricechange30d3,
-                        '1y Change': coingeckopricechange1y3
-                        //'Algo Price' : (coingeckprice40/coingeckoprice40)
-                        // ^ for subsequent pieces of the array
-                    }
-                ];
-        
-                var jsObj4 = [
-                    {
-                        'News Title': newstitle0,   
-                        'News Publish Date': newspubdat0,      
-                        'News Link': newslink0
-                    },
-                    {
-                        'News Title': newstitle1,   
-                        'News Publish Date': newspubdat1,      
-                        'News Link': newslink1
-                    },
-                    {
-                        'News Title': newstitle2,   
-                        'News Publish Date': newspubdat2,      
-                        'News Link': newslink2
-                    },
-                    {
-                        'News Title': newstitle3,   
-                        'News Publish Date': newspubdat3,      
-                        'News Link': newslink3
-                    },
-                    {
-                        'News Title': newstitle4,   
-                        'News Publish Date': newspubdat4,      
-                        'News Link': newslink4
-                    },
-                    {
-                        'News Title': newstitle5,   
-                        'News Publish Date': newspubdat5,      
-                        'News Link': newslink5
-                    },
-                    {
-                        'News Title': newstitle6,   
-                        'News Publish Date': newspubdat6,      
-                        'News Link': newslink6
-                    },
-                    {
-                        'News Title': newstitle7,   
-                        'News Publish Date': newspubdat7,      
-                        'News Link': newslink7
-                    },
-                    {
-                        'News Title': newstitle8,   
-                        'News Publish Date': newspubdat8,      
-                        'News Link': newslink8
-                    },
-                    {
-                        'News Title': newstitle9,   
-                        'News Publish Date': newspubdat9,      
-                        'News Link': newslink9
-                    },
-
-                ];              
-    
-                var exampleTable1 = $('#example1')
-                .DataTable({
-                    data: jsObj0,
-                    stateSave: true,
-                    dom: 'Bfrtip',
-                    buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                    {
-                        extend: 'colvis',
-                        text: 'Column Visibility'
-                    },
-                    {
-                        text: 'Select All',
-                        action: function () {
-                            exampleTable1.rows().select();
-                        }
-                    },
-                    {
-                        text: 'Select None',
-                        action: function () {
-                            exampleTable1.rows().deselect();
-                        }
-                    },
-                    {
-                        text: 'Show All Rows',
-                        action: function ( e, dt, button, config ) {
-                            exampleTable1.rows().deselect();
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                        }
-                    },
-                    {
-                        text: 'Hide Unselected Rows',
-                        action: function ( e, dt, button, config ) {
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                        }
-                    },
-                    ],
-                    "language": {
-                        "info": "Initial Rows : _TOTAL_",
-                        select: {
-                                    rows: {
-                                        _: "",
-                                        0: "",
-                                        1: ""
-                                    }
-                                }
-                        },
-                    colReorder: true,
-                    paging: false,
-                    select: {
-                        style: 'multi'
-                    }, 
-                    //keys: true,
-                    'columns': [{
-                            'data': 'Name'
-                        },
-                        {
-                            'data': 'Index',
-                            "render": function(data, type, row, meta){
-                                if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
-                                }
-                    
-                                return data;
-                                }
-                        },
-                        {
-                            'data': 'Tinyman Price'
-                        },
-                        {
-                            'data': '% in Circulation',
-                            render: function(data, type, row, meta) {
-                                return type === 'display' ?
-                                    '<progress value="' + data + '" max="100"></progress>' :
-                                    data;
-                            }
-                        },
-                        {
-                            'data': 'Transactions Counter'
-                        },
-                        {
-                            'data': 'Created at Round'
-                        }
-                    ]
                 });
-    
-                var exampleTable2 = $('#example2')
-                .DataTable({
-                    data: jsObj1,
-                    stateSave: true,
-                    dom: 'Bfrtip',
-                    buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                    {
-                        extend: 'colvis',
-                        text: 'Column Visibility'
-                    },
-                    {
-                        text: 'Select All',
-                        action: function () {
-                            exampleTable2.rows().select();
-                        }
-                    },
-                    {
-                        text: 'Select None',
-                        action: function () {
-                            exampleTable2.rows().deselect();
-                        }
-                    },
-                    {
-                        text: 'Show All Rows',
-                        action: function ( e, dt, button, config ) {
-                            exampleTable2.rows().deselect();
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                        }
-                    },
-                    {
-                        text: 'Hide Unselected Rows',
-                        action: function ( e, dt, button, config ) {
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                        }
-                    },
-                    ],
-                    "language": {
-                        "info": "Initial Rows : _TOTAL_",
-                        select: {
-                                    rows: {
-                                        _: "",
-                                        0: "",
-                                        1: ""
-                                    }
-                                }
-                        },
-                    colReorder: true,
-                    paging: false,
-                    select: {
-                        style: 'multi'
-                    }, 
-                    //keys: true,
-                    'columns': [{
-                            'data': 'Name'
-                        },
-                        {
-                            'data': 'Index',
-                            "render": function(data, type, row, meta){
-                                if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
-                                }
-                    
-                                return data;
-                                }
-                        },
-                        {
-                            'data': 'Unit Name'
-                        },
-                        {
-                            'data': 'Default Frozen'
-                        }
-                    ]
-                });
-    
-                var exampleTable3 = $('#example3')
-                .DataTable({
-                    data: jsObj2,
-                    stateSave: true,
-                    dom: 'Bfrtip',
-                    buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                    {
-                        extend: 'colvis',
-                        text: 'Column Visibility'
-                    },
-                    {
-                        text: 'Select All',
-                        action: function () {
-                            exampleTable3.rows().select();
-                        }
-                    },
-                    {
-                        text: 'Select None',
-                        action: function () {
-                            exampleTable3.rows().deselect();
-                        }
-                    },
-                    {
-                        text: 'Show All Rows',
-                        action: function ( e, dt, button, config ) {
-                            exampleTable3.rows().deselect();
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                        }
-                    },
-                    {
-                        text: 'Hide Unselected Rows',
-                        action: function ( e, dt, button, config ) {
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                        }
-                    },
-                    ],
-                    "language": {
-                        "info": "Initial Rows : _TOTAL_",
-                        select: {
-                                    rows: {
-                                        _: "",
-                                        0: "",
-                                        1: ""
-                                    }
-                                }
-                        },
-                    colReorder: true,
-                    paging: false,
-                    select: {
-                        style: 'multi'
-                    }, 
-                    //keys: true,
-                    'columns': [{
-                            'data': 'Name'
-                        },
-                        {
-                            'data': 'Index',
-                            "render": function(data, type, row, meta){
-                                if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
-                                }
-                    
-                                return data;
-                                }
-                        },
-                        {
-                            'data': 'Circulating Supply'
-                        },
-                        {
-                            'data': 'Total'
-                        },
-                        {
-                            'data': 'Decimals'
-                        },
-                        {
-                            'data': 'Creation TX',
-                            "render": function(data, type, row, meta){
-                                if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
-                                }
-                    
-                                return data;
-                                }
-                        }
-                    ]
-                });
-    
-                var exampleTable4 = $('#example4')
-                .DataTable({
-                    data: jsObj3,
-                    stateSave: true,
-                    dom: 'Bfrtip',
-                    buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                    {
-                        extend: 'colvis',
-                        text: 'Column Visibility'
-                    },
-                    {
-                        text: 'Select All',
-                        action: function () {
-                            exampleTable4.rows().select();
-                        }
-                    },
-                    {
-                        text: 'Select None',
-                        action: function () {
-                            exampleTable4.rows().deselect();
-                        }
-                    },
-                    {
-                        text: 'Show All Rows',
-                        action: function ( e, dt, button, config ) {
-                            exampleTable4.rows().deselect();
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                        }
-                    },
-                    {
-                        text: 'Hide Unselected Rows',
-                        action: function ( e, dt, button, config ) {
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                        }
-                    },
-                    ],
-                    "language": {
-                        "info": "Initial Rows : _TOTAL_",
-                        select: {
-                                    rows: {
-                                        _: "",
-                                        0: "",
-                                        1: ""
-                                    }
-                                }
-                        },
-                    colReorder: true,
-                    paging: false,
-                    select: {
-                        style: 'multi'
-                    }, 
-                    //keys: true,
-                    'columns': [{
-                            'data': 'Name'
-                        },
-                        {
-                            'data': 'Algo Price'
-                        },
-                        {
-                            'data': '24h Change',
-                            render: function(data, type) {
-                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
-                
-                                if (type === 'display') {
-                                    let color = 'black';
-                                    if (data < 0) {
-                                        color = 'red';
-                                    }
-                                    else if (data >= 0) {
-                                        color = 'green';
-                                    }
-                
-                                    return '<span style="color:' + color + '">' + number + '</span>';
-                                }
-                                    
-                                return number;
-                            }
-                        },
-                        {
-                            'data': '7d Change',
-                            render: function(data, type) {
-                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
-                
-                                if (type === 'display') {
-                                    let color = 'black';
-                                    if (data < 0) {
-                                        color = 'red';
-                                    }
-                                    else if (data >= 0) {
-                                        color = 'green';
-                                    }
-                
-                                    return '<span style="color:' + color + '">' + number + '</span>';
-                                }
-                                    
-                                return number;
-                            }
-                        },
-                        {
-                            'data': '30d Change',
-                            render: function(data, type) {
-                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
-                
-                                if (type === 'display') {
-                                    let color = 'black';
-                                    if (data < 0) {
-                                        color = 'red';
-                                    }
-                                    else if (data >= 0) {
-                                        color = 'green';
-                                    }
-                
-                                    return '<span style="color:' + color + '">' + number + '</span>';
-                                }
-                                    
-                                return number;
-                            }
-                        },
-                        {
-                            'data': '1y Change',
-                            render: function(data, type) {
-                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
-                
-                                if (type === 'display') {
-                                    let color = 'black';
-                                    if (data < 0) {
-                                        color = 'red';
-                                    }
-                                    else if (data >= 0) {
-                                        color = 'green';
-                                    }
-                
-                                    return '<span style="color:' + color + '">' + number + '</span>';
-                                }
-                                    
-                                return number;
-                            }
-                        }
-                    ]
-                });
-    
-                var exampleTable5 = $('#example5')
-                .DataTable({
-                    data: jsObj4,
-                    stateSave: true,
-                    dom: 'Bfrtip',
-                    buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print', 
-                    {
-                        extend: 'colvis',
-                        text: 'Column Visibility'
-                    },
-                    {
-                        text: 'Select All',
-                        action: function () {
-                            exampleTable5.rows().select();
-                        }
-                    },
-                    {
-                        text: 'Select None',
-                        action: function () {
-                            exampleTable5.rows().deselect();
-                        }
-                    },
-                    {
-                        text: 'Show All Rows',
-                        action: function ( e, dt, button, config ) {
-                            exampleTable5.rows().deselect();
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                        }
-                    },
-                    {
-                        text: 'Hide Unselected Rows',
-                        action: function ( e, dt, button, config ) {
-                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                        }
-                    },
-                    ],
-                    "language": {
-                        "info": "Initial Rows : _TOTAL_",
-                        select: {
-                                    rows: {
-                                        _: "",
-                                        0: "",
-                                        1: ""
-                                    }
-                                }
-                        },
-                    colReorder: true,
-                    "order": [[ 1, "desc" ]],
-                    paging: false,
-                    select: {
-                        style: 'multi'
-                    }, 
-                    //keys: true,
-                    'columns': [{
-                            'data': 'News Title'
-                        },
-                        {
-                            'data': 'News Publish Date'
-                        },
-                        {
-                            'data': 'News Link',
-                            "render": function(data, type, row, meta){
-                                if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="' + data + '">' + data + '</a>';
-                                }
-                    
-                                return data;
-                                }
-                        }
-                    ]
-                });    
-                                 
             }
-        });             
+
+        });
+
         
         $.extend($.fn.dataTable.defaults, {
             // Display
