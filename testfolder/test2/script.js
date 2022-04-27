@@ -423,26 +423,26 @@ $(document)
                     if (urlcoingecko01 === element) {
                         coingeckoname1 = data42071.name;   
                         coingeckoprice1 = data42071.market_data.current_price['usd'];     
-                        coingeckopricechange24h1 = data42071.market_data.price_change_percentage_24h;            
-                        coingeckopricechange7d1 = data42071.market_data.price_change_percentage_7d;    
-                        coingeckopricechange30d1 = data42071.market_data.price_change_percentage_30d;  
-                        coingeckopricechange1y1 = data42071.market_data.price_change_percentage_1y;   
+                        coingeckopricechange24h1 = data42071.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
+                        coingeckopricechange7d1 = data42071.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
+                        coingeckopricechange30d1 = data42071.market_data.price_change_percentage_30d - coingeckopricechange30d0;  
+                        coingeckopricechange1y1 = data42071.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
                     }
                     if (urlcoingecko02 === element) {
                         coingeckoname2 = data42071.name;   
                         coingeckoprice2 = data42071.market_data.current_price['usd'];     
-                        coingeckopricechange24h2 = data42071.market_data.price_change_percentage_24h;            
-                        coingeckopricechange7d2 = data42071.market_data.price_change_percentage_7d;    
-                        coingeckopricechange30d2 = data42071.market_data.price_change_percentage_30d;  
-                        coingeckopricechange1y2 = data42071.market_data.price_change_percentage_1y;   
+                        coingeckopricechange24h2 = data42071.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
+                        coingeckopricechange7d2 = data42071.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
+                        coingeckopricechange30d2 = data42071.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
+                        coingeckopricechange1y2 = data42071.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
                     }
                     if (urlcoingecko03 === element) {
                         coingeckoname3 = data42071.name;   
                         coingeckoprice3 = data42071.market_data.current_price['usd'];     
-                        coingeckopricechange24h3 = data42071.market_data.price_change_percentage_24h;            
-                        coingeckopricechange7d3 = data42071.market_data.price_change_percentage_7d;    
-                        coingeckopricechange30d3 = data42071.market_data.price_change_percentage_30d;  
-                        coingeckopricechange1y3 = data42071.market_data.price_change_percentage_1y;   
+                        coingeckopricechange24h3 = data42071.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
+                        coingeckopricechange7d3 = data42071.market_data.price_change_percentage_7d - coingeckopricechange7d0;     
+                        coingeckopricechange30d3 = data42071.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
+                        coingeckopricechange1y3 = data42071.market_data.price_change_percentage_1y - coingeckopricechange1y0;    
                     }
 
     
