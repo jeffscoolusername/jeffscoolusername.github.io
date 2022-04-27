@@ -198,6 +198,7 @@ $(document)
         var algoexplorerwalletround0 = 0;  
         //var algoexplorerwallettxtype0 = 0;   
         var algoexplorerwallettype0 = 0;      
+        var algoexplorerwalletTXID0 = 0; 
 
         for (const element of a) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -319,10 +320,11 @@ $(document)
                         {                
                             //console.log(data42070[0]);
                             algoexplorerwalletfrom0 = "Binance";   
-                            algoexplorerwalletamount0 = data42070[0].amount;   
+                            algoexplorerwalletamount0 = (data42070[0].amount / 1000000);   
                             //algoexplorerwalletassetID0 = data42070[0].assetID; 
                             algoexplorerwalletround0 = data42070[0].round; 
                             algoexplorerwallettype0 = data42070[0].type;      
+                            algoexplorerwalletTXID0 = data42070[0].txid;   
                         }
                     if (urlalgowalletexplorer01 === element)
                         {
@@ -603,7 +605,8 @@ $(document)
                                         'Amount': algoexplorerwalletamount0,
                                         //'Asset ID': algoexplorerwalletassetID0, 
                                         'Round': algoexplorerwalletround0, 
-                                        'TX Type': algoexplorerwallettype0                                   
+                                        'TX Type': algoexplorerwallettype0,
+                                        'TX ID': algoexplorerwalletTXID0,                               
                                     }
                                 ];
                     
@@ -1141,7 +1144,17 @@ $(document)
                                         },
                                         {
                                             'data': 'TX Type'
-                                        }                           
+                                        },
+                                        {
+                                            'data': 'TX ID',
+                                            "render": function(data, type, row, meta){
+                                                if(type === 'display'){
+                                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
+                                                }
+                                    
+                                                return data;
+                                                }
+                                        }                         
                                     ]
                                 }); 
                                                  
