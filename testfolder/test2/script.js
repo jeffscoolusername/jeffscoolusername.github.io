@@ -218,6 +218,57 @@ $(document)
         var algoexplorerassettxcounter3 = 0;
         var algoexplorerassetunitname3 = 0;
 
+        var algoexplorerwalletamount0_0 = 0;
+        var algoexplorerwalletround0_0 = 0;  
+        var algoexplorerwallettype0_0 = 0;      
+        var algoexplorerwalletTXID0_0 = 0; 
+
+        var algoexplorerwalletamount0_1 = 0;  
+        var algoexplorerwalletround0_1 = 0;  
+        var algoexplorerwallettype0_1 = 0;      
+        var algoexplorerwalletTXID0_1 = 0; 
+
+        var algoexplorerwalletamount0_2 = 0;  
+        var algoexplorerwalletround0_2 = 0;  
+        var algoexplorerwallettype0_2 = 0;      
+        var algoexplorerwalletTXID0_2 = 0; 
+
+        var algoexplorerwalletamount0_3 = 0;  
+        var algoexplorerwalletround0_3 = 0;  
+        var algoexplorerwallettype0_3 = 0;      
+        var algoexplorerwalletTXID0_3 = 0; 
+
+        var algoexplorerwalletamount0_4 = 0;  
+        var algoexplorerwalletround0_4 = 0;  
+        var algoexplorerwallettype0_4 = 0;      
+        var algoexplorerwalletTXID0_4 = 0; 
+
+        var algoexplorerwalletamount0_5 = 0;  
+        var algoexplorerwalletround0_5 = 0;  
+        var algoexplorerwallettype0_5 = 0;      
+        var algoexplorerwalletTXID0_5 = 0; 
+
+        var algoexplorerwalletamount0_6 = 0;  
+        var algoexplorerwalletround0_6 = 0;  
+        var algoexplorerwallettype0_6 = 0;      
+        var algoexplorerwalletTXID0_6 = 0; 
+
+        var algoexplorerwalletamount0_7 = 0;  
+        var algoexplorerwalletround0_7 = 0;  
+        var algoexplorerwallettype0_7 = 0;      
+        var algoexplorerwalletTXID0_7 = 0; 
+
+        var algoexplorerwalletamount0_8 = 0;  
+        var algoexplorerwalletround0_8 = 0;  
+        var algoexplorerwallettype0_8 = 0;      
+        var algoexplorerwalletTXID0_8 = 0; 
+
+        var algoexplorerwalletamount0_9 = 0;  
+        var algoexplorerwalletround0_9 = 0;  
+        var algoexplorerwallettype0_9 = 0;      
+        var algoexplorerwalletTXID0_9 = 0; 
+
+
         var algoexplorerwalletfrom0 = 0;
         var algoexplorerwalletamount0 = 0;  
         var algoexplorerwalletround0 = 0;  
@@ -363,10 +414,52 @@ $(document)
                     if (urlalgowalletexplorer00 === element)
                         {                
                             algoexplorerwalletfrom0 = "Binance";   
-                            algoexplorerwalletamount0 = (data42071[0].amount / 1000000);   
-                            algoexplorerwalletround0 = data42071[0].round; 
-                            algoexplorerwallettype0 = data42071[0].type;      
-                            algoexplorerwalletTXID0 = data42071[0].txid;   
+                            
+                            algoexplorerwalletamount0_0 = (data42071[0].amount / 1000000); 
+                            algoexplorerwalletround0_0 = data42071[0].round; 
+                            algoexplorerwallettype0_0 = data42071[0].type;      
+                            algoexplorerwalletTXID0_0 = data42071[0].txid;        
+
+                            algoexplorerwalletamount0_1 = (data42071[1].amount / 1000000); 
+                            algoexplorerwalletround0_1 = data42071[1].round; 
+                            algoexplorerwallettype0_1 = data42071[1].type;      
+                            algoexplorerwalletTXID0_1 = data42071[1].txid;        
+                            algoexplorerwalletamount0_2 = (data42071[2].amount / 1000000); 
+                            algoexplorerwalletround0_2 = data42071[2].round; 
+                            algoexplorerwallettype0_2 = data42071[2].type;      
+                            algoexplorerwalletTXID0_2 = data42071[2].txid;        
+                            algoexplorerwalletamount0_3 = (data42071[3].amount / 1000000); 
+                            algoexplorerwalletround0_3 = data42071[3].round; 
+                            algoexplorerwallettype0_3 = data42071[3].type;      
+                            algoexplorerwalletTXID0_3 = data42071[3].txid;        
+                            algoexplorerwalletamount0_4 = (data42071[4].amount / 1000000); 
+                            algoexplorerwalletround0_4 = data42071[4].round; 
+                            algoexplorerwallettype0_4 = data42071[4].type;      
+                            algoexplorerwalletTXID0_4 = data42071[4].txid;        
+                            algoexplorerwalletamount0_5 = (data42071[5].amount / 1000000); 
+                            algoexplorerwalletround0_5 = data42071[5].round; 
+                            algoexplorerwallettype0_5 = data42071[5].type;      
+                            algoexplorerwalletTXID0_5 = data42071[5].txid;        
+                            algoexplorerwalletamount0_6 = (data42071[6].amount / 1000000); 
+                            algoexplorerwalletround0_6 = data42071[6].round; 
+                            algoexplorerwallettype0_6 = data42071[6].type;      
+                            algoexplorerwalletTXID0_6 = data42071[6].txid;        
+                            algoexplorerwalletamount0_7 = (data42071[7].amount / 1000000); 
+                            algoexplorerwalletround0_7 = data42071[7].round; 
+                            algoexplorerwallettype0_7 = data42071[7].type;      
+                            algoexplorerwalletTXID0_7 = data42071[7].txid;        
+                            algoexplorerwalletamount0_8 = (data42071[8].amount / 1000000); 
+                            algoexplorerwalletround0_8 = data42071[8].round; 
+                            algoexplorerwallettype0_8 = data42071[8].type;      
+                            algoexplorerwalletTXID0_8 = data42071[8].txid;        
+                            algoexplorerwalletamount0_9 = (data42071[9].amount / 1000000); 
+                            algoexplorerwalletround0_9 = data42071[9].round; 
+                            algoexplorerwallettype0_9 = data42071[9].type;      
+                            algoexplorerwalletTXID0_9 = data42071[9].txid;        
+
+
+
+
                         }
                     if (urlalgowalletexplorer01 === element)
                         {
@@ -701,12 +794,85 @@ $(document)
                                                                         var jsObj5 = [
                                                                             {
                                                                                 'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0,
+                                                                                'Amount': algoexplorerwalletamount0_0,
                                                                                 //'Asset ID': algoexplorerwalletassetID0, 
-                                                                                'Round': algoexplorerwalletround0, 
-                                                                                'TX Type': algoexplorerwallettype0,
-                                                                                'TX ID': algoexplorerwalletTXID0                               
-                                                                            },
+                                                                                'Round': algoexplorerwalletround0_0, 
+                                                                                'TX Type': algoexplorerwallettype0_0,
+                                                                                'TX ID': algoexplorerwalletTXID0_0                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_1,
+                                                                                //'Asset ID': algoexplorerwalletassetID1, 
+                                                                                'Round': algoexplorerwalletround0_1, 
+                                                                                'TX Type': algoexplorerwallettype0_1,
+                                                                                'TX ID': algoexplorerwalletTXID0_1                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_2,
+                                                                                //'Asset ID': algoexplorerwalletassetID2, 
+                                                                                'Round': algoexplorerwalletround0_2, 
+                                                                                'TX Type': algoexplorerwallettype0_2,
+                                                                                'TX ID': algoexplorerwalletTXID0_2                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_3,
+                                                                                //'Asset ID': algoexplorerwalletassetID3, 
+                                                                                'Round': algoexplorerwalletround0_3, 
+                                                                                'TX Type': algoexplorerwallettype0_3,
+                                                                                'TX ID': algoexplorerwalletTXID0_3                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_4,
+                                                                                //'Asset ID': algoexplorerwalletassetID4, 
+                                                                                'Round': algoexplorerwalletround0_4, 
+                                                                                'TX Type': algoexplorerwallettype0_4,
+                                                                                'TX ID': algoexplorerwalletTXID0_4                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_5,
+                                                                                //'Asset ID': algoexplorerwalletassetID5, 
+                                                                                'Round': algoexplorerwalletround0_5, 
+                                                                                'TX Type': algoexplorerwallettype0_5,
+                                                                                'TX ID': algoexplorerwalletTXID0_5                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_6,
+                                                                                //'Asset ID': algoexplorerwalletassetID6, 
+                                                                                'Round': algoexplorerwalletround0_6, 
+                                                                                'TX Type': algoexplorerwallettype0_6,
+                                                                                'TX ID': algoexplorerwalletTXID0_6                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_7,
+                                                                                //'Asset ID': algoexplorerwalletassetID7, 
+                                                                                'Round': algoexplorerwalletround0_7, 
+                                                                                'TX Type': algoexplorerwallettype0_7,
+                                                                                'TX ID': algoexplorerwalletTXID0_7                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_8,
+                                                                                //'Asset ID': algoexplorerwalletassetID8, 
+                                                                                'Round': algoexplorerwalletround0_8, 
+                                                                                'TX Type': algoexplorerwallettype0_8,
+                                                                                'TX ID': algoexplorerwalletTXID0_8                               
+                                                                                },
+                                                                                {
+                                                                                'Wallet From': algoexplorerwalletfrom0,    
+                                                                                'Amount': algoexplorerwalletamount0_9,
+                                                                                //'Asset ID': algoexplorerwalletassetID9, 
+                                                                                'Round': algoexplorerwalletround0_9, 
+                                                                                'TX Type': algoexplorerwallettype0_9,
+                                                                                'TX ID': algoexplorerwalletTXID0_9                               
+                                                                                },
+                                                                                
                                                                             {
                                                                                 'Wallet From': algoexplorerwalletfrom1,    
                                                                                 'Amount': algoexplorerwalletamount1,
@@ -739,17 +905,17 @@ $(document)
                                                                                 'Amount': algoexplorerwalletamountinside0,
                                                                                 'Address': asatokenwalletarray[0]                            
                                                                             },
-{
+                                                                            {
                                                                                 'Wallet Name': algoexplorerwalletfrom1,    
                                                                                 'Amount': algoexplorerwalletamountinside1,
                                                                                 'Address': asatokenwalletarray[1]                            
                                                                             },
-{
+                                                                            {
                                                                                 'Wallet Name': algoexplorerwalletfrom2,    
                                                                                 'Amount': algoexplorerwalletamountinside2,
                                                                                 'Address': asatokenwalletarray[2]                            
                                                                             },
-{
+                                                                            {
                                                                                 'Wallet Name': algoexplorerwalletfrom3,    
                                                                                 'Amount': algoexplorerwalletamountinside3,
                                                                                 'Address': asatokenwalletarray[3]                           
