@@ -105,11 +105,17 @@ h1 {
 
   .dt-button {
     margin-top: 4px;
+    display:block;
+    float:left;
+    border:0;
     /*padding: 10px 1px 10px 1px !important*/
   }
 
   .input-sm {
     margin-top: 7px;
+    display:block;
+    float:left;
+    border:0;
     /*padding: 10px 1px 10px 1px !important*/
   }  
 
