@@ -813,13 +813,13 @@ $(document)
                                                                             // Instantiate and draw our chart, passing in some options.
                                                                             var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
                                                                             chart.draw(data, {
-                                                                                title: 'Whale ALGO TX Characterization',
+                                                                                title: 'Binance Wallet TX Characterization',
                                                                                 titleTextStyle: 
                                                                                     {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
                                                                                 width: '600', 
                                                                                 height: '300',
                                                                                 vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
-                                                                                hAxis: {title:'Whale Wallets', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
+                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
                                                                                 curveType: 'function',
                                                                                 colors: ['#8253E8'],
                                                                                 backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
