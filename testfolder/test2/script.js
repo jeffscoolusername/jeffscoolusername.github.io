@@ -789,6 +789,46 @@ $(document)
                                                                                 'Created at Round': algoexplorercreatedatround3
                                                                             }
                                                                         ];
+
+                                                                        function drawChart() {
+                                                                            /*var jsonData = $.ajax({
+                                                                            url: "http://82.158.163.34:880/preciosES",
+                                                                            dataType:"json",
+                                                                            async: false
+                                                                            }).responseText;*/
+                                                                            
+                                                                            /*var jsonData=[('Hora','Consumo Estimado'),(0,100),(1,50),(2,50),(3,50),(4,50),(5,50),(6,50),(7,50),(8,100),(9,100),(10,50),(11,50),(12,50),(13,50),(14,50),(15,50),(16,50),(17,50),(18,100),(19,100),(20,150),(21,150),(22,50),(23,100)];*/
+                                                                            var datatable = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount0_0}]}, 
+                                                                            {"c": [{"v": 1}, {"v": algoexplorerwalletamount0_1}]}, 
+                                                                            {"c": [{"v": 2}, {"v": algoexplorerwalletamount0_2}]}, 
+                                                                            {"c": [{"v": 3}, {"v": algoexplorerwalletamount0_3}]}, 
+                                                                            {"c": [{"v": 4}, {"v": algoexplorerwalletamount0_4}]}, 
+                                                                            {"c": [{"v": 5}, {"v": algoexplorerwalletamount0_5}]}, 
+                                                                            {"c": [{"v": 6}, {"v": algoexplorerwalletamount0_6}]}, 
+                                                                            {"c": [{"v": 7}, {"v": algoexplorerwalletamount0_7}]}, 
+                                                                            {"c": [{"v": 8}, {"v": algoexplorerwalletamount0_8}]}, 
+                                                                            {"c": [{"v": 9}, {"v": algoexplorerwalletamount0_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
+                                                                            // Create our data table out of JSON data loaded from server.
+                                                                            var data = new google.visualization.DataTable(datatable);
+                                                                            // Instantiate and draw our chart, passing in some options.
+                                                                            var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
+                                                                            chart.draw(data, {
+                                                                                title: 'Whale ALGO TX Characterization',
+                                                                                titleTextStyle: 
+                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
+                                                                                width: '600', 
+                                                                                height: '300',
+                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
+                                                                                hAxis: {title:'Whale Wallets', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
+                                                                                curveType: 'function',
+                                                                                colors: ['#8253E8'],
+                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
+                                                                            });
+                                                                            }
+                                                                            
+                                                                            google.load("visualization", "1", {packages:["corechart"]});
+                                                                            google.setOnLoadCallback(drawChart);
+                                                                            
                                                                 
                                                                         var jsObj1 = [
                                                                             {
