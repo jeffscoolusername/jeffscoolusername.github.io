@@ -1264,7 +1264,7 @@ $(document)
                                                                             },
                                                                             {
                                                                                 extend: 'colvis',
-                                                                                text: 'Column Visibility'
+                                                                                text: 'Columns'
                                                                             },
                                                                             {
                                                                                 text: 'Select All',
@@ -1307,6 +1307,7 @@ $(document)
                                                                             select: {
                                                                                 style: 'multi'
                                                                             }, 
+                                                                            rowReorder: true,
                                                                             //keys: true,
                                                                             'columns': [{
                                                                                     'data': 'Name'
@@ -1379,7 +1380,7 @@ $(document)
                                                                             },
                                                                             {
                                                                                 extend: 'colvis',
-                                                                                text: 'Column Visibility'
+                                                                                text: 'Columns'
                                                                             },
                                                                             {
                                                                                 text: 'Select All',
@@ -1422,6 +1423,7 @@ $(document)
                                                                             select: {
                                                                                 style: 'multi'
                                                                             }, 
+                                                                            rowReorder: true,
                                                                             //keys: true,
                                                                             'columns': [{
                                                                                     'data': 'Name'
@@ -1483,7 +1485,7 @@ $(document)
                                                                             }, 
                                                                             {
                                                                                 extend: 'colvis',
-                                                                                text: 'Column Visibility'
+                                                                                text: 'Columns'
                                                                             },
                                                                             {
                                                                                 text: 'Select All',
@@ -1526,6 +1528,7 @@ $(document)
                                                                             select: {
                                                                                 style: 'multi'
                                                                             }, 
+                                                                            rowReorder: true,
                                                                             //keys: true,
                                                                             'columns': [{
                                                                                     'data': 'Name'
@@ -1600,7 +1603,7 @@ $(document)
                                                                             },
                                                                             {
                                                                                 extend: 'colvis',
-                                                                                text: 'Column Visibility'
+                                                                                text: 'Columns'
                                                                             },
                                                                             {
                                                                                 text: 'Select All',
@@ -1643,6 +1646,7 @@ $(document)
                                                                             select: {
                                                                                 style: 'multi'
                                                                             }, 
+                                                                            rowReorder: true,
                                                                             //keys: true,
                                                                             'columns': [{
                                                                                     'data': 'Name'
@@ -1771,7 +1775,7 @@ $(document)
                                                                             },
                                                                             {
                                                                                 extend: 'colvis',
-                                                                                text: 'Column Visibility'
+                                                                                text: 'Columns'
                                                                             },
                                                                             {
                                                                                 text: 'Select All',
@@ -1815,6 +1819,7 @@ $(document)
                                                                             select: {
                                                                                 style: 'multi'
                                                                             }, 
+                                                                            rowReorder: true,
                                                                             //keys: true,
                                                                             'columns': [{
                                                                                     'data': 'News Title'
@@ -1873,7 +1878,7 @@ $(document)
                                                                             },
                                                                             {
                                                                                 extend: 'colvis',
-                                                                                text: 'Column Visibility'
+                                                                                text: 'Columns'
                                                                             },
                                                                             {
                                                                                 text: 'Select All',
@@ -1917,6 +1922,7 @@ $(document)
                                                                             select: {
                                                                                 style: 'multi'
                                                                             }, 
+                                                                            rowReorder: true,
                                                                             //keys: true,
                                                                             'columns': [
                                                                                 
@@ -1986,7 +1992,7 @@ $(document)
                                                                             }, 
                                                                             {
                                                                                 extend: 'colvis',
-                                                                                text: 'Column Visibility'
+                                                                                text: 'Columns'
                                                                             },
                                                                             {
                                                                                 text: 'Select All',
@@ -2024,12 +2030,14 @@ $(document)
                                                                                             }
                                                                                         }
                                                                                 },
+                                                                            rowReorder: true,
                                                                             colReorder: true,
                                                                             "order": [[ 1, "desc" ]],
                                                                             paging: false,
                                                                             select: {
                                                                                 style: 'multi'
                                                                             }, 
+                                                                            rowReorder: true,
                                                                             //keys: true,
                                                                             'columns': [
                                                                                 
