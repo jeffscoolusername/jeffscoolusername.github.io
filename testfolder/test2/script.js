@@ -1232,7 +1232,36 @@ $(document)
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
                                                                             buttons: [
-                                                                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                                            {
+                                                                                extend: "copy",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "csv",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "excel",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "pdfHtml5",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "print",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
                                                                             {
                                                                                 extend: 'colvis',
                                                                                 text: 'Column Visibility'
@@ -1261,14 +1290,6 @@ $(document)
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'createState',
-                                                                                text: 'Save'
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'savedStates',
-                                                                                text: 'Load Save'
                                                                             }
                                                                             ],
                                                                             "language": {
@@ -1326,7 +1347,36 @@ $(document)
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
                                                                             buttons: [
-                                                                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                                            {
+                                                                                extend: "copy",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "csv",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "excel",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "pdfHtml5",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "print",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
                                                                             {
                                                                                 extend: 'colvis',
                                                                                 text: 'Column Visibility'
@@ -1355,14 +1405,6 @@ $(document)
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'createState',
-                                                                                text: 'Save'
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'savedStates',
-                                                                                text: 'Load Save'
                                                                             }
                                                                             ],
                                                                             "language": {
@@ -1409,7 +1451,36 @@ $(document)
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
                                                                             buttons: [
-                                                                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                                            {
+                                                                                extend: "copy",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "csv",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "excel",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "pdfHtml5",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "print",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            }, 
                                                                             {
                                                                                 extend: 'colvis',
                                                                                 text: 'Column Visibility'
@@ -1438,14 +1509,6 @@ $(document)
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'createState',
-                                                                                text: 'Save'
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'savedStates',
-                                                                                text: 'Load Save'
                                                                             }
                                                                             ],
                                                                             "language": {
@@ -1505,7 +1568,36 @@ $(document)
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
                                                                             buttons: [
-                                                                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                                            {
+                                                                                extend: "copy",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "csv",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "excel",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "pdfHtml5",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "print",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
                                                                             {
                                                                                 extend: 'colvis',
                                                                                 text: 'Column Visibility'
@@ -1534,14 +1626,6 @@ $(document)
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'createState',
-                                                                                text: 'Save'
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'savedStates',
-                                                                                text: 'Load Save'
                                                                             }
                                                                             ],
                                                                             "language": {
@@ -1655,7 +1739,36 @@ $(document)
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
                                                                             buttons: [
-                                                                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                                            {
+                                                                                extend: "copy",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "csv",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "excel",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "pdfHtml5",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "print",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
                                                                             {
                                                                                 extend: 'colvis',
                                                                                 text: 'Column Visibility'
@@ -1684,14 +1797,6 @@ $(document)
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'createState',
-                                                                                text: 'Save'
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'savedStates',
-                                                                                text: 'Load Save'
                                                                             }
                                                                             ],
                                                                             "language": {
@@ -1736,7 +1841,36 @@ $(document)
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
                                                                             buttons: [
-                                                                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                                            {
+                                                                                extend: "copy",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "csv",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "excel",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "pdfHtml5",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "print",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
                                                                             {
                                                                                 extend: 'colvis',
                                                                                 text: 'Column Visibility'
@@ -1765,14 +1899,6 @@ $(document)
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'createState',
-                                                                                text: 'Save'
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'savedStates',
-                                                                                text: 'Load Save'
                                                                             }
                                                                             ],
                                                                             "language": {
@@ -1828,7 +1954,36 @@ $(document)
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
                                                                             buttons: [
-                                                                            'copy', 'csv', 'excel', 'pdf', 'print', 
+                                                                            {
+                                                                                extend: "copy",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "csv",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "excel",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "pdfHtml5",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                extend: "print",
+                                                                                exportOptions: {
+                                                                                modifier: { search: 'none', selected: true}
+                                                                                }
+                                                                            }, 
                                                                             {
                                                                                 extend: 'colvis',
                                                                                 text: 'Column Visibility'
@@ -1857,14 +2012,6 @@ $(document)
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'createState',
-                                                                                text: 'Save'
-                                                                            },                                                                             
-                                                                            {
-                                                                                extend: 'savedStates',
-                                                                                text: 'Load Save'
                                                                             }
                                                                             ],
                                                                             "language": {
