@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.5.5/css/colReorder.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.4/css/select.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/staterestore/1.1.0/css/stateRestore.dataTables.min.css" />
 
     <!-- <script>
   function onReady(callback) {
@@ -51,6 +52,7 @@
     <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js" type="text/javascript"></script>
     <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js" type="text/javascript"></script>
     <script src="https://cdn.datatables.net/select/1.3.4/js/dataTables.select.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/staterestore/1.1.0/js/dataTables.stateRestore.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -2985,18 +2987,26 @@
                         }
                     },
                     {
-                        text: 'Show All Rows',
+                        text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable0.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     },
                     {
-                        text: 'Hide Unselected Rows',
+                        text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
-                    },
+                    },                                                                             
+                    {
+                        extend: 'createState',
+                        text: 'Save'
+                    },                                                                             
+                    {
+                        extend: 'savedStates',
+                        text: 'Load Save'
+                    }
                     ],
                     "language": {
                     "info": "Initial Rows : _TOTAL_",
