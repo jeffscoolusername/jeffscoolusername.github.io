@@ -1250,18 +1250,26 @@ $(document)
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Show All Rows',
+                                                                                text: 'Show All',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     exampleTable1.rows().deselect();
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Hide Unselected Rows',
+                                                                                text: 'Hide Unselected',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'createState',
+                                                                                text: 'Save'
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'savedStates',
+                                                                                text: 'Load Save'
+                                                                            }
                                                                             ],
                                                                             "language": {
                                                                                 "info": "Initial Rows : _TOTAL_",
@@ -1336,18 +1344,26 @@ $(document)
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Show All Rows',
+                                                                                text: 'Show All',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     exampleTable2.rows().deselect();
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Hide Unselected Rows',
+                                                                                text: 'Hide Unselected',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'createState',
+                                                                                text: 'Save'
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'savedStates',
+                                                                                text: 'Load Save'
+                                                                            }
                                                                             ],
                                                                             "language": {
                                                                                 "info": "Initial Rows : _TOTAL_",
@@ -1411,18 +1427,26 @@ $(document)
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Show All Rows',
+                                                                                text: 'Show All',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     exampleTable3.rows().deselect();
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Hide Unselected Rows',
+                                                                                text: 'Hide Unselected',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'createState',
+                                                                                text: 'Save'
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'savedStates',
+                                                                                text: 'Load Save'
+                                                                            }
                                                                             ],
                                                                             "language": {
                                                                                 "info": "Initial Rows : _TOTAL_",
@@ -1499,18 +1523,26 @@ $(document)
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Show All Rows',
+                                                                                text: 'Show All',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     exampleTable4.rows().deselect();
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Hide Unselected Rows',
+                                                                                text: 'Hide Unselected',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'createState',
+                                                                                text: 'Save'
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'savedStates',
+                                                                                text: 'Load Save'
+                                                                            }
                                                                             ],
                                                                             "language": {
                                                                                 "info": "Initial Rows : _TOTAL_",
@@ -1641,18 +1673,26 @@ $(document)
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Show All Rows',
+                                                                                text: 'Show All',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     exampleTable5.rows().deselect();
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Hide Unselected Rows',
+                                                                                text: 'Hide Unselected',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'createState',
+                                                                                text: 'Save'
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'savedStates',
+                                                                                text: 'Load Save'
+                                                                            }
                                                                             ],
                                                                             "language": {
                                                                                 "info": "Initial Rows : _TOTAL_",
@@ -1714,18 +1754,26 @@ $(document)
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Show All Rows',
+                                                                                text: 'Show All',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     exampleTable6.rows().deselect();
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Hide Unselected Rows',
+                                                                                text: 'Hide Unselected',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'createState',
+                                                                                text: 'Save'
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'savedStates',
+                                                                                text: 'Load Save'
+                                                                            }
                                                                             ],
                                                                             "language": {
                                                                                 "info": "Initial Rows : _TOTAL_",
@@ -1798,18 +1846,26 @@ $(document)
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Show All Rows',
+                                                                                text: 'Show All',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     exampleTable7.rows().deselect();
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                                                                                 }
                                                                             },
                                                                             {
-                                                                                text: 'Hide Unselected Rows',
+                                                                                text: 'Hide Unselected',
                                                                                 action: function ( e, dt, button, config ) {
                                                                                     dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                                                                                 }
-                                                                            },
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'createState',
+                                                                                text: 'Save'
+                                                                            },                                                                             
+                                                                            {
+                                                                                extend: 'savedStates',
+                                                                                text: 'Load Save'
+                                                                            }
                                                                             ],
                                                                             "language": {
                                                                                 "info": "Initial Rows : _TOTAL_",
