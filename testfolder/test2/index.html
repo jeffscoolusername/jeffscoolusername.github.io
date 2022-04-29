@@ -2711,24 +2711,25 @@
                     </tbody>
 
                     <tfoot>
-                        <!--
-                        <thead>
-                            <tr>
-                                <th>Unit Name</th>
-                                <th>ID</th>
-                                <th>Algo Verified</th>
-                                <th>Name</th>
-                                <th>Date Created</th>
-                                <th>Work History</th>
-                                <th>Algo Grant</th>
-                                <th>Company</th>
-                                <th>Paper</th>
-                                <th>Roadmap</th>
-                                <th>Wallets</th>
-                                <th>Other Links</th>
-                            </tr>
-                        </thead>
-                        -->
+                        
+                        <!--<thead>-->
+                            <!--<tr>-->
+                                <tr>
+                                    <th>Unit Name</th>
+                                    <th>ID</th>
+                                    <th>Algo Verified</th>
+                                    <th>Name</th>
+                                    <th>Date Created</th>
+                                    <th>Work History</th>
+                                    <th>Algo Grant</th>
+                                    <th>Company</th>
+                                    <th>Paper</th>
+                                    <th>Roadmap</th>
+                                    <th>Wallets</th>
+                                    <th>Other Links</th>
+                                </tr>
+                            <!--</tr>-->
+                        <!--</thead>-->
                     </tfoot>
 
                 </table>
@@ -2977,6 +2978,20 @@
                 var exampleTable0 = $('#example0')
                 .DataTable({
                     dom: 'Bfrtip',
+                    initComplete: function () {
+                        // Apply the search
+                        this.api().columns().every( function () {
+                            var that = this;
+            
+                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                if ( that.search() !== this.value ) {
+                                    that
+                                        .search( this.value )
+                                        .draw();
+                                }
+                            } );
+                        } );
+                    },
                     buttons: [                    
                     {
                         extend: "copy",
@@ -3059,6 +3074,11 @@
                 });
 
             });
+
+            $('#example0 tfoot th').each( function () {
+                var title = $(this).text();
+                $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+            } );
             
         </script>
 
