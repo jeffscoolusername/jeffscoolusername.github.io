@@ -1348,6 +1348,20 @@ $(document)
                                                                             data: jsObj0,
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
+                                                                            initComplete: function () {
+                                                                                // Apply the search
+                                                                                this.api().columns().every( function () {
+                                                                                    var that = this;
+                                                                    
+                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                                                        if ( that.search() !== this.value ) {
+                                                                                            that
+                                                                                                .search( this.value )
+                                                                                                .draw();
+                                                                                        }
+                                                                                    } );
+                                                                                } );
+                                                                            },
                                                                             buttons: [
                                                                             {
                                                                                 extend: "copy",
@@ -1464,6 +1478,20 @@ $(document)
                                                                             data: jsObj1,
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
+                                                                            initComplete: function () {
+                                                                                // Apply the search
+                                                                                this.api().columns().every( function () {
+                                                                                    var that = this;
+                                                                    
+                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                                                        if ( that.search() !== this.value ) {
+                                                                                            that
+                                                                                                .search( this.value )
+                                                                                                .draw();
+                                                                                        }
+                                                                                    } );
+                                                                                } );
+                                                                            },
                                                                             buttons: [
                                                                             {
                                                                                 extend: "copy",
@@ -1569,6 +1597,20 @@ $(document)
                                                                             data: jsObj2,
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
+                                                                            initComplete: function () {
+                                                                                // Apply the search
+                                                                                this.api().columns().every( function () {
+                                                                                    var that = this;
+                                                                    
+                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                                                        if ( that.search() !== this.value ) {
+                                                                                            that
+                                                                                                .search( this.value )
+                                                                                                .draw();
+                                                                                        }
+                                                                                    } );
+                                                                                } );
+                                                                            },
                                                                             buttons: [
                                                                             {
                                                                                 extend: "copy",
@@ -1687,6 +1729,20 @@ $(document)
                                                                             data: jsObj3,
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
+                                                                            initComplete: function () {
+                                                                                // Apply the search
+                                                                                this.api().columns().every( function () {
+                                                                                    var that = this;
+                                                                    
+                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                                                        if ( that.search() !== this.value ) {
+                                                                                            that
+                                                                                                .search( this.value )
+                                                                                                .draw();
+                                                                                        }
+                                                                                    } );
+                                                                                } );
+                                                                            },
                                                                             buttons: [
                                                                             {
                                                                                 extend: "copy",
@@ -1859,6 +1915,20 @@ $(document)
                                                                             data: jsObj4,
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
+                                                                            initComplete: function () {
+                                                                                // Apply the search
+                                                                                this.api().columns().every( function () {
+                                                                                    var that = this;
+                                                                    
+                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                                                        if ( that.search() !== this.value ) {
+                                                                                            that
+                                                                                                .search( this.value )
+                                                                                                .draw();
+                                                                                        }
+                                                                                    } );
+                                                                                } );
+                                                                            },
                                                                             buttons: [
                                                                             {
                                                                                 extend: "copy",
@@ -1962,6 +2032,20 @@ $(document)
                                                                             data: jsObj5,
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
+                                                                            initComplete: function () {
+                                                                                // Apply the search
+                                                                                this.api().columns().every( function () {
+                                                                                    var that = this;
+                                                                    
+                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                                                        if ( that.search() !== this.value ) {
+                                                                                            that
+                                                                                                .search( this.value )
+                                                                                                .draw();
+                                                                                        }
+                                                                                    } );
+                                                                                } );
+                                                                            },
                                                                             buttons: [
                                                                             {
                                                                                 extend: "copy",
@@ -2076,6 +2160,20 @@ $(document)
                                                                             data: jsObj6,
                                                                             stateSave: true,
                                                                             dom: 'Bfrtip',
+                                                                            initComplete: function () {
+                                                                                // Apply the search
+                                                                                this.api().columns().every( function () {
+                                                                                    var that = this;
+                                                                    
+                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                                                        if ( that.search() !== this.value ) {
+                                                                                            that
+                                                                                                .search( this.value )
+                                                                                                .draw();
+                                                                                        }
+                                                                                    } );
+                                                                                } );
+                                                                            },
                                                                             buttons: [
                                                                             {
                                                                                 extend: "copy",
@@ -2288,7 +2386,7 @@ $(document)
               className: 'table-active' // https://datatables.net/reference/option/select.className
             },
             stateSave: true,
-          })        
+          });        
                                      
         if (location.hash) {
             $('a[href=\'' + location.hash + '\']').tab('show');
