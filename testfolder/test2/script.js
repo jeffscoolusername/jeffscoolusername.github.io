@@ -816,8 +816,80 @@ $(document)
                                                                                 title: 'Binance Wallet TX Characterization',
                                                                                 titleTextStyle: 
                                                                                     {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
-                                                                                width: '600', 
-                                                                                height: '300',
+                                                                                width: '390', 
+                                                                                height: '195',
+                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
+                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
+                                                                                curveType: 'function',
+                                                                                colors: ['#8253E8'],
+                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
+                                                                            });
+                                                                            }
+
+                                                                        function drawChart2() {
+                                                                            /*var jsonData = $.ajax({
+                                                                            url: "http://82.158.163.34:880/preciosES",
+                                                                            dataType:"json",
+                                                                            async: false
+                                                                            }).responseText;*/
+                                                                            
+                                                                            /*var jsonData=[('Hora','Consumo Estimado'),(0,100),(1,50),(2,50),(3,50),(4,50),(5,50),(6,50),(7,50),(8,100),(9,100),(10,50),(11,50),(12,50),(13,50),(14,50),(15,50),(16,50),(17,50),(18,100),(19,100),(20,150),(21,150),(22,50),(23,100)];*/
+                                                                            var datatable2 = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount1_0}]}, 
+                                                                            {"c": [{"v": 1}, {"v": algoexplorerwalletamount1_1}]}, 
+                                                                            {"c": [{"v": 2}, {"v": algoexplorerwalletamount1_2}]}, 
+                                                                            {"c": [{"v": 3}, {"v": algoexplorerwalletamount1_3}]}, 
+                                                                            {"c": [{"v": 4}, {"v": algoexplorerwalletamount1_4}]}, 
+                                                                            {"c": [{"v": 5}, {"v": algoexplorerwalletamount1_5}]}, 
+                                                                            {"c": [{"v": 6}, {"v": algoexplorerwalletamount1_6}]}, 
+                                                                            {"c": [{"v": 7}, {"v": algoexplorerwalletamount1_7}]}, 
+                                                                            {"c": [{"v": 8}, {"v": algoexplorerwalletamount1_8}]}, 
+                                                                            {"c": [{"v": 9}, {"v": algoexplorerwalletamount1_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
+                                                                            // Create our data table out of JSON data loaded from server.
+                                                                            var data2 = new google.visualization.DataTable(datatable2);
+                                                                            // Instantiate and draw our chart, passing in some options.
+                                                                            var chart2 = new google.visualization.LineChart(document.getElementById('chart_div3'));
+                                                                            chart2.draw(data2, {
+                                                                                title: 'AlgoStake Wallet TX Characterization',
+                                                                                titleTextStyle: 
+                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
+                                                                                width: '390', 
+                                                                                height: '195',
+                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
+                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
+                                                                                curveType: 'function',
+                                                                                colors: ['#8253E8'],
+                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
+                                                                            });
+                                                                            }
+                                                                            
+                                                                        function drawChart3() {
+                                                                            /*var jsonData = $.ajax({
+                                                                            url: "http://82.158.163.34:880/preciosES",
+                                                                            dataType:"json",
+                                                                            async: false
+                                                                            }).responseText;*/
+                                                                            
+                                                                            /*var jsonData=[('Hora','Consumo Estimado'),(0,100),(1,50),(2,50),(3,50),(4,50),(5,50),(6,50),(7,50),(8,100),(9,100),(10,50),(11,50),(12,50),(13,50),(14,50),(15,50),(16,50),(17,50),(18,100),(19,100),(20,150),(21,150),(22,50),(23,100)];*/
+                                                                            var datatable3 = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount2_0}]}, 
+                                                                            {"c": [{"v": 1}, {"v": algoexplorerwalletamount2_1}]}, 
+                                                                            {"c": [{"v": 2}, {"v": algoexplorerwalletamount2_2}]}, 
+                                                                            {"c": [{"v": 3}, {"v": algoexplorerwalletamount2_3}]}, 
+                                                                            {"c": [{"v": 4}, {"v": algoexplorerwalletamount2_4}]}, 
+                                                                            {"c": [{"v": 5}, {"v": algoexplorerwalletamount2_5}]}, 
+                                                                            {"c": [{"v": 6}, {"v": algoexplorerwalletamount2_6}]}, 
+                                                                            {"c": [{"v": 7}, {"v": algoexplorerwalletamount2_7}]}, 
+                                                                            {"c": [{"v": 8}, {"v": algoexplorerwalletamount2_8}]}, 
+                                                                            {"c": [{"v": 9}, {"v": algoexplorerwalletamount2_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
+                                                                            // Create our data table out of JSON data loaded from server.
+                                                                            var data3 = new google.visualization.DataTable(datatable3);
+                                                                            // Instantiate and draw our chart, passing in some options.
+                                                                            var chart3 = new google.visualization.LineChart(document.getElementById('chart_div4'));
+                                                                            chart3.draw(data3, {
+                                                                                title: 'Planet Watch Wallet TX Characterization',
+                                                                                titleTextStyle: 
+                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
+                                                                                width: '390', 
+                                                                                height: '195',
                                                                                 vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
                                                                                 hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
                                                                                 curveType: 'function',
@@ -828,6 +900,8 @@ $(document)
                                                                             
                                                                             google.load("visualization", "1", {packages:["corechart"]});
                                                                             google.setOnLoadCallback(drawChart);
+                                                                            google.setOnLoadCallback(drawChart2);
+                                                                            google.setOnLoadCallback(drawChart3);
                                                                             
                                                                 
                                                                         var jsObj1 = [
