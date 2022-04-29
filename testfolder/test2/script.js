@@ -57,6 +57,7 @@ $(document)
 
         var coingeckoname0 = '';
         var coingeckoprice0 = '';
+        var coingeckousdprice0 = '';
         var coingeckopricechange24h0 = '';
         var coingeckopricechange7d0 = '';
         var coingeckopricechange30d0 = '';
@@ -683,7 +684,8 @@ $(document)
                 } else {
                     if (urlcoingecko00 === element) {
                         coingeckoname0 = 'United States Dollar';   
-                        coingeckoprice0 = (1 / data42072.market_data.current_price['usd']);     
+                        coingeckoprice0 = data42072.market_data.current_price['usd'];     
+                        coingeckousdprice0 = (1 / data42072.market_data.current_price['usd']);
                         coingeckopricechange24h0 = data42072.market_data.price_change_percentage_24h*(-1);            
                         coingeckopricechange7d0 = data42072.market_data.price_change_percentage_7d*(-1);    
                         coingeckopricechange30d0 = data42072.market_data.price_change_percentage_30d*(-1);  
@@ -691,7 +693,7 @@ $(document)
                     }
                     if (urlcoingecko01 === element) {
                         coingeckoname1 = data42072.name;   
-                        coingeckoprice1 = data42072.market_data.current_price['usd'];     
+                        coingeckoprice1 = (data42072.market_data.current_price['usd'] / coingeckoprice0);     
                         coingeckopricechange24h1 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
                         coingeckopricechange7d1 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
                         coingeckopricechange30d1 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0;  
@@ -699,7 +701,7 @@ $(document)
                     }
                     if (urlcoingecko02 === element) {
                         coingeckoname2 = data42072.name;   
-                        coingeckoprice2 = data42072.market_data.current_price['usd'];     
+                        coingeckoprice2 = (data42072.market_data.current_price['usd'] / coingeckoprice0);     
                         coingeckopricechange24h2 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
                         coingeckopricechange7d2 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
                         coingeckopricechange30d2 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
@@ -707,7 +709,7 @@ $(document)
                     }
                     if (urlcoingecko03 === element) {
                         coingeckoname3 = data42072.name;   
-                        coingeckoprice3 = data42072.market_data.current_price['usd'];     
+                        coingeckoprice3 = (data42072.market_data.current_price['usd'] / coingeckoprice0);     
                         coingeckopricechange24h3 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
                         coingeckopricechange7d3 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;     
                         coingeckopricechange30d3 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
@@ -969,7 +971,7 @@ $(document)
                                                                         var jsObj3 = [
                                                                             {
                                                                                 'Name': coingeckoname0,                      
-                                                                                'Algo Price': coingeckoprice0,
+                                                                                'Algo Price': coingeckousdprice0,
                                                                                 '24h Change': coingeckopricechange24h0,
                                                                                 '7d Change': coingeckopricechange7d0,
                                                                                 '30d Change': coingeckopricechange30d0,
