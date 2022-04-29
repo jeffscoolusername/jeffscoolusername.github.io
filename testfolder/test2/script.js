@@ -723,7 +723,8 @@ $(document)
         };        
         
         //i realize this part of the code is programatically absurd but i'm just not quite good enough yet to figure out another solution
-        //if you know a better way plz help me here and make this less cringe        
+        //if you know a better way plz help me here and make this less cringe     
+        //ideas: call the below (minus the shell of a getJSON chain) at the end of the above stuff   
 
         getJSON(urlalgoexplorerunused07, async function(err, dataunused7) {
             if (err !== null) {
