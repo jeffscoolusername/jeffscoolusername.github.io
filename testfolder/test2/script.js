@@ -682,12 +682,12 @@ $(document)
                     return $.getJSON(element);
                 } else {
                     if (urlcoingecko00 === element) {
-                        coingeckoname0 = data42072.name;   
-                        coingeckoprice0 = data42072.market_data.current_price['usd'];     
-                        coingeckopricechange24h0 = data42072.market_data.price_change_percentage_24h;            
-                        coingeckopricechange7d0 = data42072.market_data.price_change_percentage_7d;    
-                        coingeckopricechange30d0 = data42072.market_data.price_change_percentage_30d;  
-                        coingeckopricechange1y0 = data42072.market_data.price_change_percentage_1y;   
+                        coingeckoname0 = 'United States Dollar';   
+                        coingeckoprice0 = (1 / data42072.market_data.current_price['usd']);     
+                        coingeckopricechange24h0 = data42072.market_data.price_change_percentage_24h*(-1);            
+                        coingeckopricechange7d0 = data42072.market_data.price_change_percentage_7d*(-1);    
+                        coingeckopricechange30d0 = data42072.market_data.price_change_percentage_30d*(-1);  
+                        coingeckopricechange1y0 = data42072.market_data.price_change_percentage_1y*(-1);   
                     }
                     if (urlcoingecko01 === element) {
                         coingeckoname1 = data42072.name;   
