@@ -962,12 +962,12 @@ $(document)
                                                                                 ['1',     algoexplorerwalletamount0_0],
                                                                                 ['2',      algoexplorerwalletamount0_1],
                                                                                 ['3',  algoexplorerwalletamount0_2],
-                                                                                ['3', algoexplorerwalletamount0_3],
-                                                                                ['4',    algoexplorerwalletamount0_4]
+                                                                                ['4', algoexplorerwalletamount0_3],
+                                                                                ['5',    algoexplorerwalletamount0_4]
                                                                               ]);
                                                                       
                                                                               var options222 = {
-                                                                                title: 'Binance Transaction Totals'
+                                                                                title: 'Binance Wallet TX Characterization'
                                                                               };
                                                                       
                                                                               var chart222 = new google.visualization.PieChart($('#piechart')[0]);
