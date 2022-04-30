@@ -376,6 +376,9 @@ $(document)
         var algoexplorerwalletTXID3= 0; 
 
         var algoexplorerwalletamountinside0 = 0;  
+        var algoexplorerwalletamountinside1 = 0;  
+        var algoexplorerwalletamountinside2 = 0;  
+        var algoexplorerwalletamountinside3 = 0;  
 
         for (const element of a) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -725,1628 +728,1596 @@ $(document)
         //i realize this part of the code is programatically absurd but i'm just not quite good enough yet to figure out another solution
         //if you know a better way plz help me here and make this less cringe     
         //ideas: call the below (minus the shell of a getJSON chain) at the end of the above stuff   
+        //current strategy: perform synchronous functions below vs async functions above (need fetch await instead most likely afaik)
 
-        getJSON(urlalgoexplorerunused07, async function(err, dataunused7) {
+        getJSON(urlalgoexplorerunused02, function(err, dataunused2) {
             if (err !== null) {
-                return $.getJSON(urlalgoexplorerunused07);
+                return $.getJSON(urlalgoexplorerunused02);
             } else { 
-                getJSON(urlalgoexplorerunused06, async function(err, dataunused6) {
+                getJSON(urlalgoexplorerunused01, function(err, dataunused1) {
                     if (err !== null) {
-                        return $.getJSON(urlalgoexplorerunused06);
+                        return $.getJSON(urlalgoexplorerunused01);
                     } else { 
-                        getJSON(urlalgoexplorerunused05, async function(err, dataunused5) {
+                        getJSON(urlalgoexplorerunused00, function(err, dataunused0) {
                             if (err !== null) {
-                                return $.getJSON(urlalgoexplorerunused05);
-                            } else {              
-                                getJSON(urlalgoexplorerunused04, async function(err, dataunused4) {
-                                    if (err !== null) {
-                                        return $.getJSON(urlalgoexplorerunused04);
-                                    } else { 
-                                        getJSON(urlalgoexplorerunused03, async function(err, dataunused3) {
-                                            if (err !== null) {
-                                                return $.getJSON(urlalgoexplorerunused03);
-                                            } else { 
-                                                getJSON(urlalgoexplorerunused02, async function(err, dataunused2) {
-                                                    if (err !== null) {
-                                                        return $.getJSON(urlalgoexplorerunused02);
-                                                    } else { 
-                                                        getJSON(urlalgoexplorerunused01, async function(err, dataunused1) {
-                                                            if (err !== null) {
-                                                                return $.getJSON(urlalgoexplorerunused01);
-                                                            } else { 
-                                                                getJSON(urlalgoexplorerunused00, async function(err, dataunused0) {
-                                                                    if (err !== null) {
-                                                                        return $.getJSON(urlalgoexplorerunused00);
-                                                                    } else {
-                                                                        var jsObj0 = [
-                                                                            {
-                                                                                'Name': algoexplorername0,
-                                                                                'Index': algoexplorerindex0,
-                                                                                'Tinyman Price' : tinymanwoof420,
-                                                                                '% in Circulation': algoexplorerpercentcirculation0,
-                                                                                'Transactions Counter': algoexplorerassettxcounter0,
-                                                                                'Created at Round': algoexplorercreatedatround0
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername1,
-                                                                                'Index': algoexplorerindex1,
-                                                                                'Tinyman Price' : tinymanwoof421,
-                                                                                '% in Circulation': algoexplorerpercentcirculation1,
-                                                                                'Transactions Counter': algoexplorerassettxcounter1,
-                                                                                'Created at Round': algoexplorercreatedatround1
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername2,
-                                                                                'Index': algoexplorerindex2,
-                                                                                'Tinyman Price' : tinymanwoof422,
-                                                                                '% in Circulation': algoexplorerpercentcirculation2,
-                                                                                'Transactions Counter': algoexplorerassettxcounter2,
-                                                                                'Created at Round': algoexplorercreatedatround2
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername3,
-                                                                                'Index': algoexplorerindex3,
-                                                                                'Tinyman Price' : tinymanwoof423,
-                                                                                '% in Circulation': algoexplorerpercentcirculation3,
-                                                                                'Transactions Counter': algoexplorerassettxcounter3,
-                                                                                'Created at Round': algoexplorercreatedatround3
-                                                                            }
-                                                                        ];
-
-                                                                        /*function drawChart() {
-
-                                                                            var datatable = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount0_0}]}, 
-                                                                            {"c": [{"v": 1}, {"v": algoexplorerwalletamount0_1}]}, 
-                                                                            {"c": [{"v": 2}, {"v": algoexplorerwalletamount0_2}]}, 
-                                                                            {"c": [{"v": 3}, {"v": algoexplorerwalletamount0_3}]}, 
-                                                                            {"c": [{"v": 4}, {"v": algoexplorerwalletamount0_4}]}, 
-                                                                            {"c": [{"v": 5}, {"v": algoexplorerwalletamount0_5}]}, 
-                                                                            {"c": [{"v": 6}, {"v": algoexplorerwalletamount0_6}]}, 
-                                                                            {"c": [{"v": 7}, {"v": algoexplorerwalletamount0_7}]}, 
-                                                                            {"c": [{"v": 8}, {"v": algoexplorerwalletamount0_8}]}, 
-                                                                            {"c": [{"v": 9}, {"v": algoexplorerwalletamount0_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
-                                                                            // Create our data table out of JSON data loaded from server.
-                                                                            var data = new google.visualization.DataTable(datatable);
-                                                                            // Instantiate and draw our chart, passing in some options.
-                                                                            var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
-                                                                            
-                                                                            chart.draw(data, options);
-                                                                            
-
-                                                                            var options = {
-                                                                                title: 'Binance Wallet TX Characterization',
-                                                                                chartArea: {width: '50%'},
-                                                                                animation: {
-                                                                                    duration: 1000
-                                                                                },
-                                                                                hAxis: {
-                                                                                title: 'Total Amount',
-                                                                                minValue: 0
-                                                                                },
-                                                                                vAxis: {
-                                                                                title: 'TX #'
-                                                                                }
-                                                                            };
-
-                                                                            $(window).resize(function() {
-                                                                                chart.draw(data, options);
-                                                                            });
-
-
-                                                                            };*/
-
-                                                                        function drawVisualization() {
-                                                                            // Create and populate the data table.
-                                                                            var data = google.visualization.arrayToDataTable([
-                                                                                ['Transactions', '1st TX', '2nd TX', '3rd TX', '4th TX', '5th TX', '6th TX', '7th TX', '8th TX', '9th TX', '10th TX'],
-                                                                                ['TX #', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9]
-                                                                            ]);                                                                                
-                                                                            
-                                                                            // Create and draw the visualization.
-                                                                            var chart = new google.visualization.ColumnChart(document.getElementById('visualization'));
-                                                                            
-                                                                            var options = {
-                                                                                title:"Binance Wallet TX Characterization",
-                                                                                chartArea: {width: '50%'},
-                                                                                hAxis: {
-                                                                                    title: "Transactions",
-                                                                                    minValue: 0
-                                                                                },
-                                                                                animation: {
-                                                                                    duration: 1000
-                                                                                },
-                                                                                vAxis: {                                                                                        
-                                                                                    title: 'Total Amount'
-                                                                                }
-                                                                            };                                                                                
-                                                                            
-                                                                            chart.draw(data, options);
-                                                                            
-                                                                            // you can handle the resizing here - no need to recreate your data and charts from scratch
-                                                                            $(window).resize(function() {
-                                                                                chart.draw(data, options);
-                                                                            });
-                                                                        };
-
-                                                                            google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
-
-                                                                            google.charts.setOnLoadCallback(drawVisualization);
-                                                                            //google.charts.setOnLoadCallback(drawChart);
-                                                                            google.charts.setOnLoadCallback(drawChart4);
-                                                                      
-                                                                            function drawChart4() {
-                                                                      
-                                                                              var data = google.visualization.arrayToDataTable([
-                                                                                ['Transaction', 'Amount of Algorand'],
-                                                                                ['1',     algoexplorerwalletamount0_0],
-                                                                                ['2',      algoexplorerwalletamount0_1],
-                                                                                ['3',  algoexplorerwalletamount0_2],
-                                                                                ['4', algoexplorerwalletamount0_3],
-                                                                                ['5',    algoexplorerwalletamount0_4],
-                                                                                ['6',    algoexplorerwalletamount0_5],
-                                                                                ['7',    algoexplorerwalletamount0_6],
-                                                                                ['8',    algoexplorerwalletamount0_7],
-                                                                                ['9',    algoexplorerwalletamount0_8],
-                                                                                ['10',    algoexplorerwalletamount0_9]
-                                                                              ]);
-                                                                      
-                                                                              var options222 = {
-                                                                                title:"Binance Wallet TX Characterization",
-                                                                                chartArea: {width: '50%'},
-                                                                                animation: {
-                                                                                    duration: 1000
-                                                                                },
-                                                                                hAxis: {
-                                                                                    title: 'Amount',
-                                                                                    minValue: 0
-                                                                                    },
-                                                                                    vAxis: {
-                                                                                    title: 'Wallet TX'
-                                                                                    }
-                                                                              };
-                                                                      
-                                                                              var chart222 = new google.visualization.PieChart($('#piechart')[0]);
-                                                                      
-                                                                              chart222.draw(data, options222);
-
-                                                                              $(window).resize(function() {
-                                                                                    chart222.draw(data, options222);
-                                                                                });
-                                                                            };
-
-                                                                            google.charts.load('current', {packages: ['corechart', 'bar']});
-                                                                            
-                                                                            google.charts.setOnLoadCallback(drawBasic);
-
-                                                                            function drawBasic() {
-
-                                                                                var data = google.visualization.arrayToDataTable([
-                                                                                    ['TX #', 'Wallet Amount',],
-                                                                                    ['TX #1', algoexplorerwalletamount0_0],
-                                                                                    ['TX #2', algoexplorerwalletamount0_1],
-                                                                                    ['TX #3', algoexplorerwalletamount0_2],
-                                                                                    ['TX #4', algoexplorerwalletamount0_3],
-                                                                                    ['TX #5', algoexplorerwalletamount0_4],
-                                                                                    ['TX #6', algoexplorerwalletamount0_5],
-                                                                                    ['TX #7', algoexplorerwalletamount0_6],
-                                                                                    ['TX #8', algoexplorerwalletamount0_7],
-                                                                                    ['TX #9', algoexplorerwalletamount0_8],
-                                                                                    ['TX #10', algoexplorerwalletamount0_9]
-                                                                                ]);
-
-                                                                                var options = {
-                                                                                    title: 'Binance Wallet TX Characterization',
-                                                                                    chartArea: {width: '50%'},
-                                                                                    animation: {
-                                                                                        duration: 1000
-                                                                                    },
-                                                                                    hAxis: {
-                                                                                    title: 'Total Amount',
-                                                                                    minValue: 0
-                                                                                    },
-                                                                                    vAxis: {
-                                                                                    title: 'TX #'
-                                                                                    }
-                                                                                };
-
-                                                                                var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-
-                                                                                chart.draw(data, options);
-
-                                                                                $(window).resize(function() {
-                                                                                    chart.draw(data, options);
-                                                                                });
-
-
-                                                                                };
-                                                                            
-                                                                
-                                                                        var jsObj1 = [
-                                                                            {
-                                                                                'Name': algoexplorername0,                                                
-                                                                                'Index': algoexplorerindex0,
-                                                                                'Unit Name': algoexplorerassetunitname0,
-                                                                                'Default Frozen': algoexplorerdefaultfrozen0
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername1,                                                
-                                                                                'Index': algoexplorerindex1,
-                                                                                'Unit Name': algoexplorerassetunitname1,
-                                                                                'Default Frozen': algoexplorerdefaultfrozen1
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername2,                                                
-                                                                                'Index': algoexplorerindex2,
-                                                                                'Unit Name': algoexplorerassetunitname2,
-                                                                                'Default Frozen': algoexplorerdefaultfrozen2
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername3,                                                
-                                                                                'Index': algoexplorerindex3,
-                                                                                'Unit Name': algoexplorerassetunitname3,
-                                                                                'Default Frozen': algoexplorerdefaultfrozen3
-                                                                            }
-                                                                        ];
-                                                                
-                                                                        var jsObj2 = [
-                                                                            {
-                                                                                'Name': algoexplorername0,         
-                                                                                'Index': algoexplorerindex0,             
-                                                                                'Circulating Supply': algoexplorercirculatingsupply0,
-                                                                                'Total': algoexplorertotal0,
-                                                                                'Decimals': algoexplorerdecimals0,
-                                                                                'Creation TX': algoexplorercreationtxid0
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername1,         
-                                                                                'Index': algoexplorerindex1,             
-                                                                                'Circulating Supply': algoexplorercirculatingsupply1,
-                                                                                'Total': algoexplorertotal1,
-                                                                                'Decimals': algoexplorerdecimals1,
-                                                                                'Creation TX': algoexplorercreationtxid1
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername2,         
-                                                                                'Index': algoexplorerindex2,             
-                                                                                'Circulating Supply': algoexplorercirculatingsupply2,
-                                                                                'Total': algoexplorertotal2,
-                                                                                'Decimals': algoexplorerdecimals2,
-                                                                                'Creation TX': algoexplorercreationtxid2
-                                                                            },
-                                                                            {
-                                                                                'Name': algoexplorername3,         
-                                                                                'Index': algoexplorerindex3,             
-                                                                                'Circulating Supply': algoexplorercirculatingsupply3,
-                                                                                'Total': algoexplorertotal3,
-                                                                                'Decimals': algoexplorerdecimals3,
-                                                                                'Creation TX': algoexplorercreationtxid3
-                                                                            }
-                                                                        ];
-                                                                
-                                                                        var jsObj3 = [
-                                                                            {
-                                                                                'Name': coingeckoname0,                      
-                                                                                'Algo Price': coingeckousdprice0,
-                                                                                '24h Change': coingeckopricechange24h0,
-                                                                                '7d Change': coingeckopricechange7d0,
-                                                                                '30d Change': coingeckopricechange30d0,
-                                                                                '1y Change': coingeckopricechange1y0
-                                                                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
-                                                                                // ^ for subsequent pieces of the array
-                                                                            },
-                                                                            {
-                                                                                'Name': coingeckoname1,                      
-                                                                                'Algo Price': coingeckoprice1,
-                                                                                '24h Change': coingeckopricechange24h1,
-                                                                                '7d Change': coingeckopricechange7d1,
-                                                                                '30d Change': coingeckopricechange30d1,
-                                                                                '1y Change': coingeckopricechange1y1
-                                                                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
-                                                                                // ^ for subsequent pieces of the array
-                                                                            },
-                                                                            {
-                                                                                'Name': coingeckoname2,                      
-                                                                                'Algo Price': coingeckoprice2,
-                                                                                '24h Change': coingeckopricechange24h2,
-                                                                                '7d Change': coingeckopricechange7d2,
-                                                                                '30d Change': coingeckopricechange30d2,
-                                                                                '1y Change': coingeckopricechange1y2
-                                                                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
-                                                                                // ^ for subsequent pieces of the array
-                                                                            },
-                                                                            {
-                                                                                'Name': coingeckoname3,                      
-                                                                                'Algo Price': coingeckoprice3,
-                                                                                '24h Change': coingeckopricechange24h3,
-                                                                                '7d Change': coingeckopricechange7d3,
-                                                                                '30d Change': coingeckopricechange30d3,
-                                                                                '1y Change': coingeckopricechange1y3
-                                                                                //'Algo Price' : (coingeckprice40/coingeckoprice40)
-                                                                                // ^ for subsequent pieces of the array
-                                                                            }
-                                                                        ];
-                                                                
-                                                                        var jsObj4 = [
-                                                                            {
-                                                                                'News Title': newstitle0,   
-                                                                                'News Publish Date': newspubdat0,      
-                                                                                'News Link': newslink0
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle1,   
-                                                                                'News Publish Date': newspubdat1,      
-                                                                                'News Link': newslink1
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle2,   
-                                                                                'News Publish Date': newspubdat2,      
-                                                                                'News Link': newslink2
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle3,   
-                                                                                'News Publish Date': newspubdat3,      
-                                                                                'News Link': newslink3
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle4,   
-                                                                                'News Publish Date': newspubdat4,      
-                                                                                'News Link': newslink4
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle5,   
-                                                                                'News Publish Date': newspubdat5,      
-                                                                                'News Link': newslink5
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle6,   
-                                                                                'News Publish Date': newspubdat6,      
-                                                                                'News Link': newslink6
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle7,   
-                                                                                'News Publish Date': newspubdat7,      
-                                                                                'News Link': newslink7
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle8,   
-                                                                                'News Publish Date': newspubdat8,      
-                                                                                'News Link': newslink8
-                                                                            },
-                                                                            {
-                                                                                'News Title': newstitle9,   
-                                                                                'News Publish Date': newspubdat9,      
-                                                                                'News Link': newslink9
-                                                                            },
-                                                                
-                                                                        ];          
-                                                                
-                                                                        var jsObj5 = [
-                                                                            {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_0,
-                                                                                //'Asset ID': algoexplorerwalletassetID0, 
-                                                                                'Round': algoexplorerwalletround0_0, 
-                                                                                'TX Type': algoexplorerwallettype0_0,
-                                                                                'TX ID': algoexplorerwalletTXID0_0                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_1,
-                                                                                //'Asset ID': algoexplorerwalletassetID1, 
-                                                                                'Round': algoexplorerwalletround0_1, 
-                                                                                'TX Type': algoexplorerwallettype0_1,
-                                                                                'TX ID': algoexplorerwalletTXID0_1                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_2,
-                                                                                //'Asset ID': algoexplorerwalletassetID2, 
-                                                                                'Round': algoexplorerwalletround0_2, 
-                                                                                'TX Type': algoexplorerwallettype0_2,
-                                                                                'TX ID': algoexplorerwalletTXID0_2                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_3,
-                                                                                //'Asset ID': algoexplorerwalletassetID3, 
-                                                                                'Round': algoexplorerwalletround0_3, 
-                                                                                'TX Type': algoexplorerwallettype0_3,
-                                                                                'TX ID': algoexplorerwalletTXID0_3                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_4,
-                                                                                //'Asset ID': algoexplorerwalletassetID4, 
-                                                                                'Round': algoexplorerwalletround0_4, 
-                                                                                'TX Type': algoexplorerwallettype0_4,
-                                                                                'TX ID': algoexplorerwalletTXID0_4                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_5,
-                                                                                //'Asset ID': algoexplorerwalletassetID5, 
-                                                                                'Round': algoexplorerwalletround0_5, 
-                                                                                'TX Type': algoexplorerwallettype0_5,
-                                                                                'TX ID': algoexplorerwalletTXID0_5                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_6,
-                                                                                //'Asset ID': algoexplorerwalletassetID6, 
-                                                                                'Round': algoexplorerwalletround0_6, 
-                                                                                'TX Type': algoexplorerwallettype0_6,
-                                                                                'TX ID': algoexplorerwalletTXID0_6                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_7,
-                                                                                //'Asset ID': algoexplorerwalletassetID7, 
-                                                                                'Round': algoexplorerwalletround0_7, 
-                                                                                'TX Type': algoexplorerwallettype0_7,
-                                                                                'TX ID': algoexplorerwalletTXID0_7                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_8,
-                                                                                //'Asset ID': algoexplorerwalletassetID8, 
-                                                                                'Round': algoexplorerwalletround0_8, 
-                                                                                'TX Type': algoexplorerwallettype0_8,
-                                                                                'TX ID': algoexplorerwalletTXID0_8                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamount0_9,
-                                                                                //'Asset ID': algoexplorerwalletassetID9, 
-                                                                                'Round': algoexplorerwalletround0_9, 
-                                                                                'TX Type': algoexplorerwallettype0_9,
-                                                                                'TX ID': algoexplorerwalletTXID0_9                               
-                                                                                },
-                                                                                
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_0,
-                                                                                //'Asset ID': algoexplorerwalletassetID0, 
-                                                                                'Round': algoexplorerwalletround1_0, 
-                                                                                'TX Type': algoexplorerwallettype1_0,
-                                                                                'TX ID': algoexplorerwalletTXID1_0                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_1,
-                                                                                //'Asset ID': algoexplorerwalletassetID1, 
-                                                                                'Round': algoexplorerwalletround1_1, 
-                                                                                'TX Type': algoexplorerwallettype1_1,
-                                                                                'TX ID': algoexplorerwalletTXID1_1                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_2,
-                                                                                //'Asset ID': algoexplorerwalletassetID2, 
-                                                                                'Round': algoexplorerwalletround1_2, 
-                                                                                'TX Type': algoexplorerwallettype1_2,
-                                                                                'TX ID': algoexplorerwalletTXID1_2                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_3,
-                                                                                //'Asset ID': algoexplorerwalletassetID3, 
-                                                                                'Round': algoexplorerwalletround1_3, 
-                                                                                'TX Type': algoexplorerwallettype1_3,
-                                                                                'TX ID': algoexplorerwalletTXID1_3                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_4,
-                                                                                //'Asset ID': algoexplorerwalletassetID4, 
-                                                                                'Round': algoexplorerwalletround1_4, 
-                                                                                'TX Type': algoexplorerwallettype1_4,
-                                                                                'TX ID': algoexplorerwalletTXID1_4                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_5,
-                                                                                //'Asset ID': algoexplorerwalletassetID5, 
-                                                                                'Round': algoexplorerwalletround1_5, 
-                                                                                'TX Type': algoexplorerwallettype1_5,
-                                                                                'TX ID': algoexplorerwalletTXID1_5                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_6,
-                                                                                //'Asset ID': algoexplorerwalletassetID6, 
-                                                                                'Round': algoexplorerwalletround1_6, 
-                                                                                'TX Type': algoexplorerwallettype1_6,
-                                                                                'TX ID': algoexplorerwalletTXID1_6                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_7,
-                                                                                //'Asset ID': algoexplorerwalletassetID7, 
-                                                                                'Round': algoexplorerwalletround1_7, 
-                                                                                'TX Type': algoexplorerwallettype1_7,
-                                                                                'TX ID': algoexplorerwalletTXID1_7                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_8,
-                                                                                //'Asset ID': algoexplorerwalletassetID8, 
-                                                                                'Round': algoexplorerwalletround1_8, 
-                                                                                'TX Type': algoexplorerwallettype1_8,
-                                                                                'TX ID': algoexplorerwalletTXID1_8                               
-                                                                                },
-                                                                                {
-                                                                                'Wallet From': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamount1_9,
-                                                                                //'Asset ID': algoexplorerwalletassetID9, 
-                                                                                'Round': algoexplorerwalletround1_9, 
-                                                                                'TX Type': algoexplorerwallettype1_9,
-                                                                                'TX ID': algoexplorerwalletTXID1_9                               
-                                                                                },
-                                                                                    
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_0,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_0, 
-                                                                            'TX Type': algoexplorerwallettype2_0,
-                                                                            'TX ID': algoexplorerwalletTXID2_0                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_1,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_1, 
-                                                                            'TX Type': algoexplorerwallettype2_1,
-                                                                            'TX ID': algoexplorerwalletTXID2_1                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_2,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_2, 
-                                                                            'TX Type': algoexplorerwallettype2_2,
-                                                                            'TX ID': algoexplorerwalletTXID2_2                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_3,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_3, 
-                                                                            'TX Type': algoexplorerwallettype2_3,
-                                                                            'TX ID': algoexplorerwalletTXID2_3                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_4,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_4, 
-                                                                            'TX Type': algoexplorerwallettype2_4,
-                                                                            'TX ID': algoexplorerwalletTXID2_4                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_5,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_5, 
-                                                                            'TX Type': algoexplorerwallettype2_5,
-                                                                            'TX ID': algoexplorerwalletTXID2_5                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_6,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_6, 
-                                                                            'TX Type': algoexplorerwallettype2_6,
-                                                                            'TX ID': algoexplorerwalletTXID2_6                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_7,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_7, 
-                                                                            'TX Type': algoexplorerwallettype2_7,
-                                                                            'TX ID': algoexplorerwalletTXID2_7                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_8,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_8, 
-                                                                            'TX Type': algoexplorerwallettype2_8,
-                                                                            'TX ID': algoexplorerwalletTXID2_8                               
-                                                                            },
-                                                                            {
-                                                                            'Wallet From': algoexplorerwalletfrom2,    
-                                                                            'Amount': algoexplorerwalletamount2_9,
-                                                                            //'Asset ID': algoexplorerwalletassetID0, 
-                                                                            'Round': algoexplorerwalletround2_9, 
-                                                                            'TX Type': algoexplorerwallettype2_9,
-                                                                            'TX ID': algoexplorerwalletTXID2_9                               
-                                                                            },
-
-                                                                            {
-                                                                                'Wallet From': algoexplorerwalletfrom3,    
-                                                                                'Amount': algoexplorerwalletamount3,
-                                                                                //'Asset ID': algoexplorerwalletassetID0, 
-                                                                                'Round': algoexplorerwalletround3, 
-                                                                                'TX Type': algoexplorerwallettype3,
-                                                                                'TX ID': algoexplorerwalletTXID3                               
-                                                                            }
-                                                                        ];
-
-                                                                        var jsObj6 = [
-                                                                            {
-                                                                                'Wallet Name': algoexplorerwalletfrom0,    
-                                                                                'Amount': algoexplorerwalletamountinside0,
-                                                                                'Address': asatokenwalletarray[0]                            
-                                                                            },
-                                                                            {
-                                                                                'Wallet Name': algoexplorerwalletfrom1,    
-                                                                                'Amount': algoexplorerwalletamountinside1,
-                                                                                'Address': asatokenwalletarray[1]                            
-                                                                            },
-                                                                            {
-                                                                                'Wallet Name': algoexplorerwalletfrom2,    
-                                                                                'Amount': algoexplorerwalletamountinside2,
-                                                                                'Address': asatokenwalletarray[2]                            
-                                                                            },
-                                                                            {
-                                                                                'Wallet Name': algoexplorerwalletfrom3,    
-                                                                                'Amount': algoexplorerwalletamountinside3,
-                                                                                'Address': asatokenwalletarray[3]                           
-                                                                            }
-                                                                        ];
-                                                                
-                                                                        var exampleTable1 = $('#example1')
-                                                                        .DataTable({
-                                                                            data: jsObj0,
-                                                                            stateSave: true,
-                                                                            dom: 'Bfrtip',
-                                                                            initComplete: function () {
-                                                                                // Apply the search
-                                                                                this.api().columns().every( function () {
-                                                                                    var that = this;
-                                                                    
-                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                                                                                        if ( that.search() !== this.value ) {
-                                                                                            that
-                                                                                                .search( this.value )
-                                                                                                .draw();
-                                                                                        }
-                                                                                    } );
-                                                                                } );
-                                                                            },
-                                                                            buttons: [
-                                                                            {
-                                                                                extend: "copy",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "csv",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "excel",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "pdfHtml5",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "print",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: 'colvis',
-                                                                                text: 'Columns'
-                                                                            },
-                                                                            {
-                                                                                text: 'Select All',
-                                                                                action: function () {
-                                                                                    exampleTable1.rows().select();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Select None',
-                                                                                action: function () {
-                                                                                    exampleTable1.rows().deselect();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Show All',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    exampleTable1.rows().deselect();
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Hide Unselected',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                                                                }
-                                                                            }
-                                                                            ],
-                                                                            "language": {
-                                                                                "info": "Initial Rows : _TOTAL_",
-                                                                                select: {
-                                                                                            rows: {
-                                                                                                _: "",
-                                                                                                0: "",
-                                                                                                1: ""
-                                                                                            }
-                                                                                        }
-                                                                                },
-                                                                            colReorder: true,
-                                                                            paging: false,
-                                                                            select: {
-                                                                                style: 'multi'
-                                                                            }, 
-                                                                            rowReorder: true,
-                                                                            //keys: true,
-                                                                            'columns': [{
-                                                                                    'data': 'Name'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Index',
-                                                                                    "render": function(data, type, row, meta){
-                                                                                        if(type === 'display'){
-                                                                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
-                                                                                        }
-                                                                            
-                                                                                        return data;
-                                                                                        }
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Tinyman Price'
-                                                                                },
-                                                                                {
-                                                                                    'data': '% in Circulation',
-                                                                                    render: function(data, type, row, meta) {
-                                                                                        return type === 'display' ?
-                                                                                            '<progress value="' + data + '" max="100"></progress>' :
-                                                                                            data;
-                                                                                    }
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Transactions Counter'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Created at Round'
-                                                                                }
-                                                                            ]
-                                                                        });  
-                                                                
-                                                                        var exampleTable2 = $('#example2')
-                                                                        .DataTable({
-                                                                            data: jsObj1,
-                                                                            stateSave: true,
-                                                                            dom: 'Bfrtip',
-                                                                            initComplete: function () {
-                                                                                // Apply the search
-                                                                                this.api().columns().every( function () {
-                                                                                    var that = this;
-                                                                    
-                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                                                                                        if ( that.search() !== this.value ) {
-                                                                                            that
-                                                                                                .search( this.value )
-                                                                                                .draw();
-                                                                                        }
-                                                                                    } );
-                                                                                } );
-                                                                            },
-                                                                            buttons: [
-                                                                            {
-                                                                                extend: "copy",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "csv",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "excel",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "pdfHtml5",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "print",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: 'colvis',
-                                                                                text: 'Columns'
-                                                                            },
-                                                                            {
-                                                                                text: 'Select All',
-                                                                                action: function () {
-                                                                                    exampleTable2.rows().select();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Select None',
-                                                                                action: function () {
-                                                                                    exampleTable2.rows().deselect();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Show All',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    exampleTable2.rows().deselect();
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Hide Unselected',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                                                                }
-                                                                            }
-                                                                            ],
-                                                                            "language": {
-                                                                                "info": "Initial Rows : _TOTAL_",
-                                                                                select: {
-                                                                                            rows: {
-                                                                                                _: "",
-                                                                                                0: "",
-                                                                                                1: ""
-                                                                                            }
-                                                                                        }
-                                                                                },
-                                                                            colReorder: true,
-                                                                            paging: false,
-                                                                            select: {
-                                                                                style: 'multi'
-                                                                            }, 
-                                                                            rowReorder: true,
-                                                                            //keys: true,
-                                                                            'columns': [{
-                                                                                    'data': 'Name'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Index',
-                                                                                    "render": function(data, type, row, meta){
-                                                                                        if(type === 'display'){
-                                                                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
-                                                                                        }
-                                                                            
-                                                                                        return data;
-                                                                                        }
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Unit Name'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Default Frozen'
-                                                                                }
-                                                                            ]
-                                                                        }); 
-                                                                
-                                                                        var exampleTable3 = $('#example3')
-                                                                        .DataTable({
-                                                                            data: jsObj2,
-                                                                            stateSave: true,
-                                                                            dom: 'Bfrtip',
-                                                                            initComplete: function () {
-                                                                                // Apply the search
-                                                                                this.api().columns().every( function () {
-                                                                                    var that = this;
-                                                                    
-                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                                                                                        if ( that.search() !== this.value ) {
-                                                                                            that
-                                                                                                .search( this.value )
-                                                                                                .draw();
-                                                                                        }
-                                                                                    } );
-                                                                                } );
-                                                                            },
-                                                                            buttons: [
-                                                                            {
-                                                                                extend: "copy",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "csv",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "excel",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "pdfHtml5",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "print",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            }, 
-                                                                            {
-                                                                                extend: 'colvis',
-                                                                                text: 'Columns'
-                                                                            },
-                                                                            {
-                                                                                text: 'Select All',
-                                                                                action: function () {
-                                                                                    exampleTable3.rows().select();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Select None',
-                                                                                action: function () {
-                                                                                    exampleTable3.rows().deselect();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Show All',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    exampleTable3.rows().deselect();
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Hide Unselected',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                                                                }
-                                                                            }
-                                                                            ],
-                                                                            "language": {
-                                                                                "info": "Initial Rows : _TOTAL_",
-                                                                                select: {
-                                                                                            rows: {
-                                                                                                _: "",
-                                                                                                0: "",
-                                                                                                1: ""
-                                                                                            }
-                                                                                        }
-                                                                                },
-                                                                            colReorder: true,
-                                                                            paging: false,
-                                                                            select: {
-                                                                                style: 'multi'
-                                                                            }, 
-                                                                            rowReorder: true,
-                                                                            //keys: true,
-                                                                            'columns': [{
-                                                                                    'data': 'Name'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Index',
-                                                                                    "render": function(data, type, row, meta){
-                                                                                        if(type === 'display'){
-                                                                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
-                                                                                        }
-                                                                            
-                                                                                        return data;
-                                                                                        }
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Circulating Supply'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Total'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Decimals'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Creation TX',
-                                                                                    "render": function(data, type, row, meta){
-                                                                                        if(type === 'display'){
-                                                                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
-                                                                                        }
-                                                                            
-                                                                                        return data;
-                                                                                        }
-                                                                                }
-                                                                            ]
-                                                                        }); 
-                                                                
-                                                                        var exampleTable4 = $('#example4')
-                                                                        .DataTable({
-                                                                            data: jsObj3,
-                                                                            stateSave: true,
-                                                                            dom: 'Bfrtip',
-                                                                            initComplete: function () {
-                                                                                // Apply the search
-                                                                                this.api().columns().every( function () {
-                                                                                    var that = this;
-                                                                    
-                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                                                                                        if ( that.search() !== this.value ) {
-                                                                                            that
-                                                                                                .search( this.value )
-                                                                                                .draw();
-                                                                                        }
-                                                                                    } );
-                                                                                } );
-                                                                            },
-                                                                            buttons: [
-                                                                            {
-                                                                                extend: "copy",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "csv",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "excel",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "pdfHtml5",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "print",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: 'colvis',
-                                                                                text: 'Columns'
-                                                                            },
-                                                                            {
-                                                                                text: 'Select All',
-                                                                                action: function () {
-                                                                                    exampleTable4.rows().select();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Select None',
-                                                                                action: function () {
-                                                                                    exampleTable4.rows().deselect();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Show All',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    exampleTable4.rows().deselect();
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Hide Unselected',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                                                                }
-                                                                            }
-                                                                            ],
-                                                                            "language": {
-                                                                                "info": "Initial Rows : _TOTAL_",
-                                                                                select: {
-                                                                                            rows: {
-                                                                                                _: "",
-                                                                                                0: "",
-                                                                                                1: ""
-                                                                                            }
-                                                                                        }
-                                                                                },
-                                                                            colReorder: true,
-                                                                            paging: false,
-                                                                            select: {
-                                                                                style: 'multi'
-                                                                            }, 
-                                                                            rowReorder: true,
-                                                                            //keys: true,
-                                                                            'columns': [{
-                                                                                    'data': 'Name'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Algo Price'
-                                                                                },
-                                                                                {
-                                                                                    'data': '24h Change',
-                                                                                    render: function(data, type) {
-                                                                                        var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
-                                                                        
-                                                                                        if (type === 'display') {
-                                                                                            let color = 'black';
-                                                                                            if (data < 0) {
-                                                                                                color = 'red';
-                                                                                            }
-                                                                                            else if (data >= 0) {
-                                                                                                color = 'green';
-                                                                                            }
-                                                                        
-                                                                                            return '<span style="color:' + color + '">' + number + '</span>';
-                                                                                        }
-                                                                                            
-                                                                                        return number;
-                                                                                    }
-                                                                                },
-                                                                                {
-                                                                                    'data': '7d Change',
-                                                                                    render: function(data, type) {
-                                                                                        var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
-                                                                        
-                                                                                        if (type === 'display') {
-                                                                                            let color = 'black';
-                                                                                            if (data < 0) {
-                                                                                                color = 'red';
-                                                                                            }
-                                                                                            else if (data >= 0) {
-                                                                                                color = 'green';
-                                                                                            }
-                                                                        
-                                                                                            return '<span style="color:' + color + '">' + number + '</span>';
-                                                                                        }
-                                                                                            
-                                                                                        return number;
-                                                                                    }
-                                                                                },
-                                                                                {
-                                                                                    'data': '30d Change',
-                                                                                    render: function(data, type) {
-                                                                                        var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
-                                                                        
-                                                                                        if (type === 'display') {
-                                                                                            let color = 'black';
-                                                                                            if (data < 0) {
-                                                                                                color = 'red';
-                                                                                            }
-                                                                                            else if (data >= 0) {
-                                                                                                color = 'green';
-                                                                                            }
-                                                                        
-                                                                                            return '<span style="color:' + color + '">' + number + '</span>';
-                                                                                        }
-                                                                                            
-                                                                                        return number;
-                                                                                    }
-                                                                                },
-                                                                                {
-                                                                                    'data': '1y Change',
-                                                                                    render: function(data, type) {
-                                                                                        var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
-                                                                        
-                                                                                        if (type === 'display') {
-                                                                                            let color = 'black';
-                                                                                            if (data < 0) {
-                                                                                                color = 'red';
-                                                                                            }
-                                                                                            else if (data >= 0) {
-                                                                                                color = 'green';
-                                                                                            }
-                                                                        
-                                                                                            return '<span style="color:' + color + '">' + number + '</span>';
-                                                                                        }
-                                                                                            
-                                                                                        return number;
-                                                                                    }
-                                                                                }
-                                                                            ]
-                                                                        }); 
-                                                                
-                                                                        var exampleTable5 = $('#example5')
-                                                                        .DataTable({
-                                                                            data: jsObj4,
-                                                                            stateSave: true,
-                                                                            dom: 'Bfrtip',
-                                                                            initComplete: function () {
-                                                                                // Apply the search
-                                                                                this.api().columns().every( function () {
-                                                                                    var that = this;
-                                                                    
-                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                                                                                        if ( that.search() !== this.value ) {
-                                                                                            that
-                                                                                                .search( this.value )
-                                                                                                .draw();
-                                                                                        }
-                                                                                    } );
-                                                                                } );
-                                                                            },
-                                                                            buttons: [
-                                                                            {
-                                                                                extend: "copy",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "csv",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "excel",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "pdfHtml5",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "print",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: 'colvis',
-                                                                                text: 'Columns'
-                                                                            },
-                                                                            {
-                                                                                text: 'Select All',
-                                                                                action: function () {
-                                                                                    exampleTable5.rows().select();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Select None',
-                                                                                action: function () {
-                                                                                    exampleTable5.rows().deselect();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Show All',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    exampleTable5.rows().deselect();
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Hide Unselected',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                                                                }
-                                                                            }
-                                                                            ],
-                                                                            "language": {
-                                                                                "info": "Initial Rows : _TOTAL_",
-                                                                                select: {
-                                                                                            rows: {
-                                                                                                _: "",
-                                                                                                0: "",
-                                                                                                1: ""
-                                                                                            }
-                                                                                        }
-                                                                                },
-                                                                            colReorder: true,
-                                                                            "order": [[ 1, "desc" ]],
-                                                                            paging: false,
-                                                                            select: {
-                                                                                style: 'multi'
-                                                                            }, 
-                                                                            rowReorder: true,
-                                                                            //keys: true,
-                                                                            'columns': [{
-                                                                                    'data': 'News Title'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'News Publish Date'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'News Link',
-                                                                                    "render": function(data, type, row, meta){
-                                                                                        if(type === 'display'){
-                                                                                            data = '<a target="_blank" rel="noopener noreferrer" href="' + data + '">' + data + '</a>';
-                                                                                        }
-                                                                            
-                                                                                        return data;
-                                                                                        }
-                                                                                }
-                                                                            ]
-                                                                        }); 
-                                                                
-                                                                        var exampleTable6 = $('#example6')
-                                                                        .DataTable({
-                                                                            data: jsObj5,
-                                                                            stateSave: true,
-                                                                            dom: 'Bfrtip',
-                                                                            initComplete: function () {
-                                                                                // Apply the search
-                                                                                this.api().columns().every( function () {
-                                                                                    var that = this;
-                                                                    
-                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                                                                                        if ( that.search() !== this.value ) {
-                                                                                            that
-                                                                                                .search( this.value )
-                                                                                                .draw();
-                                                                                        }
-                                                                                    } );
-                                                                                } );
-                                                                            },
-                                                                            buttons: [
-                                                                            {
-                                                                                extend: "copy",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "csv",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "excel",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "pdfHtml5",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "print",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: 'colvis',
-                                                                                text: 'Columns'
-                                                                            },
-                                                                            {
-                                                                                text: 'Select All',
-                                                                                action: function () {
-                                                                                    exampleTable6.rows().select();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Select None',
-                                                                                action: function () {
-                                                                                    exampleTable6.rows().deselect();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Show All',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    exampleTable6.rows().deselect();
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Hide Unselected',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                                                                }
-                                                                            }
-                                                                            ],
-                                                                            "language": {
-                                                                                "info": "Initial Rows : _TOTAL_",
-                                                                                select: {
-                                                                                            rows: {
-                                                                                                _: "",
-                                                                                                0: "",
-                                                                                                1: ""
-                                                                                            }
-                                                                                        }
-                                                                                },
-                                                                            colReorder: true,
-                                                                            "order": [[ 2, "desc" ]],
-                                                                            paging: false,
-                                                                            select: {
-                                                                                style: 'multi'
-                                                                            }, 
-                                                                            rowReorder: true,
-                                                                            //keys: true,
-                                                                            'columns': [
-                                                                                
-                                                                                {
-                                                                                    'data': 'Wallet From'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Amount'
-                                                                                }/*,
-                                                                                {
-                                                                                    'data': 'Asset ID'
-                                                                                }*/,
-                                                                                {
-                                                                                    'data': 'Round'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'TX Type'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'TX ID',
-                                                                                    "render": function(data, type, row, meta){
-                                                                                        if(type === 'display'){
-                                                                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
-                                                                                        }
-                                                                            
-                                                                                        return data;
-                                                                                        }
-                                                                                }                         
-                                                                            ]
-                                                                        });    
-
-                                                                        var exampleTable7 = $('#example7')
-                                                                        .DataTable({
-                                                                            data: jsObj6,
-                                                                            stateSave: true,
-                                                                            dom: 'Bfrtip',
-                                                                            initComplete: function () {
-                                                                                // Apply the search
-                                                                                this.api().columns().every( function () {
-                                                                                    var that = this;
-                                                                    
-                                                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                                                                                        if ( that.search() !== this.value ) {
-                                                                                            that
-                                                                                                .search( this.value )
-                                                                                                .draw();
-                                                                                        }
-                                                                                    } );
-                                                                                } );
-                                                                            },
-                                                                            buttons: [
-                                                                            {
-                                                                                extend: "copy",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "csv",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "excel",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "pdfHtml5",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                extend: "print",
-                                                                                exportOptions: {
-                                                                                modifier: { search: 'none', selected: true}
-                                                                                }
-                                                                            }, 
-                                                                            {
-                                                                                extend: 'colvis',
-                                                                                text: 'Columns'
-                                                                            },
-                                                                            {
-                                                                                text: 'Select All',
-                                                                                action: function () {
-                                                                                    exampleTable7.rows().select();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Select None',
-                                                                                action: function () {
-                                                                                    exampleTable7.rows().deselect();
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Show All',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    exampleTable7.rows().deselect();
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                text: 'Hide Unselected',
-                                                                                action: function ( e, dt, button, config ) {
-                                                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                                                                                }
-                                                                            }
-                                                                            ],
-                                                                            "language": {
-                                                                                "info": "Initial Rows : _TOTAL_",
-                                                                                select: {
-                                                                                            rows: {
-                                                                                                _: "",
-                                                                                                0: "",
-                                                                                                1: ""
-                                                                                            }
-                                                                                        }
-                                                                                },
-                                                                            rowReorder: true,
-                                                                            colReorder: true,
-                                                                            "order": [[ 1, "desc" ]],
-                                                                            paging: false,
-                                                                            select: {
-                                                                                style: 'multi'
-                                                                            }, 
-                                                                            rowReorder: true,
-                                                                            //keys: true,
-                                                                            'columns': [
-                                                                                
-                                                                                {
-                                                                                    'data': 'Wallet Name'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Amount'
-                                                                                },
-                                                                                {
-                                                                                    'data': 'Address',
-                                                                                    "render": function(data, type, row, meta){
-                                                                                        if(type === 'display'){
-                                                                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data + '</a>';
-                                                                                        }
-                                                                            
-                                                                                        return data;
-                                                                                        }
-                                                                                }                         
-                                                                            ]
-                                                                        });    
-                                                                    }
-                                                                });  
-                                                            }
-                                                        });  
-                                                    }
-                                                });
-                                            }
-                                        });
+                                return $.getJSON(urlalgoexplorerunused00);
+                            } else {
+                                var jsObj0 = [
+                                    {
+                                        'Name': algoexplorername0,
+                                        'Index': algoexplorerindex0,
+                                        'Tinyman Price' : tinymanwoof420,
+                                        '% in Circulation': algoexplorerpercentcirculation0,
+                                        'Transactions Counter': algoexplorerassettxcounter0,
+                                        'Created at Round': algoexplorercreatedatround0
+                                    },
+                                    {
+                                        'Name': algoexplorername1,
+                                        'Index': algoexplorerindex1,
+                                        'Tinyman Price' : tinymanwoof421,
+                                        '% in Circulation': algoexplorerpercentcirculation1,
+                                        'Transactions Counter': algoexplorerassettxcounter1,
+                                        'Created at Round': algoexplorercreatedatround1
+                                    },
+                                    {
+                                        'Name': algoexplorername2,
+                                        'Index': algoexplorerindex2,
+                                        'Tinyman Price' : tinymanwoof422,
+                                        '% in Circulation': algoexplorerpercentcirculation2,
+                                        'Transactions Counter': algoexplorerassettxcounter2,
+                                        'Created at Round': algoexplorercreatedatround2
+                                    },
+                                    {
+                                        'Name': algoexplorername3,
+                                        'Index': algoexplorerindex3,
+                                        'Tinyman Price' : tinymanwoof423,
+                                        '% in Circulation': algoexplorerpercentcirculation3,
+                                        'Transactions Counter': algoexplorerassettxcounter3,
+                                        'Created at Round': algoexplorercreatedatround3
                                     }
-                                });     
-                
-                            }
-                        });
-        
-                    }
-                });
+                                ];
 
+                                /*function drawChart() {
+
+                                    var datatable = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount0_0}]}, 
+                                    {"c": [{"v": 1}, {"v": algoexplorerwalletamount0_1}]}, 
+                                    {"c": [{"v": 2}, {"v": algoexplorerwalletamount0_2}]}, 
+                                    {"c": [{"v": 3}, {"v": algoexplorerwalletamount0_3}]}, 
+                                    {"c": [{"v": 4}, {"v": algoexplorerwalletamount0_4}]}, 
+                                    {"c": [{"v": 5}, {"v": algoexplorerwalletamount0_5}]}, 
+                                    {"c": [{"v": 6}, {"v": algoexplorerwalletamount0_6}]}, 
+                                    {"c": [{"v": 7}, {"v": algoexplorerwalletamount0_7}]}, 
+                                    {"c": [{"v": 8}, {"v": algoexplorerwalletamount0_8}]}, 
+                                    {"c": [{"v": 9}, {"v": algoexplorerwalletamount0_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
+                                    // Create our data table out of JSON data loaded from server.
+                                    var data = new google.visualization.DataTable(datatable);
+                                    // Instantiate and draw our chart, passing in some options.
+                                    var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
+                                    
+                                    chart.draw(data, options);
+                                    
+
+                                    var options = {
+                                        title: 'Binance Wallet TX Characterization',
+                                        chartArea: {width: '50%'},
+                                        animation: {
+                                            duration: 1000
+                                        },
+                                        hAxis: {
+                                        title: 'Total Amount',
+                                        minValue: 0
+                                        },
+                                        vAxis: {
+                                        title: 'TX #'
+                                        }
+                                    };
+
+                                    $(window).resize(function() {
+                                        chart.draw(data, options);
+                                    });
+
+
+                                    };*/
+
+                                function drawVisualization() {
+                                    // Create and populate the data table.
+                                    var data = google.visualization.arrayToDataTable([
+                                        ['Transactions', '1st TX', '2nd TX', '3rd TX', '4th TX', '5th TX', '6th TX', '7th TX', '8th TX', '9th TX', '10th TX'],
+                                        ['TX #', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9]
+                                    ]);                                                                                
+                                    
+                                    // Create and draw the visualization.
+                                    var chart = new google.visualization.ColumnChart(document.getElementById('visualization'));
+                                    
+                                    var options = {
+                                        title:"Binance Wallet TX Characterization",
+                                        chartArea: {width: '50%'},
+                                        hAxis: {
+                                            title: "Transactions",
+                                            minValue: 0
+                                        },
+                                        animation: {
+                                            duration: 1000
+                                        },
+                                        vAxis: {                                                                                        
+                                            title: 'Total Amount'
+                                        }
+                                    };                                                                                
+                                    
+                                    chart.draw(data, options);
+                                    
+                                    // you can handle the resizing here - no need to recreate your data and charts from scratch
+                                    $(window).resize(function() {
+                                        chart.draw(data, options);
+                                    });
+                                };
+
+                                    google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
+
+                                    google.charts.setOnLoadCallback(drawVisualization);
+                                    //google.charts.setOnLoadCallback(drawChart);
+                                    google.charts.setOnLoadCallback(drawChart4);
+                              
+                                    function drawChart4() {
+                              
+                                      var data = google.visualization.arrayToDataTable([
+                                        ['Transaction', 'Amount of Algorand'],
+                                        ['1',     algoexplorerwalletamount0_0],
+                                        ['2',      algoexplorerwalletamount0_1],
+                                        ['3',  algoexplorerwalletamount0_2],
+                                        ['4', algoexplorerwalletamount0_3],
+                                        ['5',    algoexplorerwalletamount0_4],
+                                        ['6',    algoexplorerwalletamount0_5],
+                                        ['7',    algoexplorerwalletamount0_6],
+                                        ['8',    algoexplorerwalletamount0_7],
+                                        ['9',    algoexplorerwalletamount0_8],
+                                        ['10',    algoexplorerwalletamount0_9]
+                                      ]);
+                              
+                                      var options222 = {
+                                        title:"Binance Wallet TX Characterization",
+                                        chartArea: {width: '50%'},
+                                        animation: {
+                                            duration: 1000
+                                        },
+                                        hAxis: {
+                                            title: 'Amount',
+                                            minValue: 0
+                                            },
+                                            vAxis: {
+                                            title: 'Wallet TX'
+                                            }
+                                      };
+                              
+                                      var chart222 = new google.visualization.PieChart($('#piechart')[0]);
+                              
+                                      chart222.draw(data, options222);
+
+                                      $(window).resize(function() {
+                                            chart222.draw(data, options222);
+                                        });
+                                    };
+
+                                    google.charts.load('current', {packages: ['corechart', 'bar']});
+                                    
+                                    google.charts.setOnLoadCallback(drawBasic);
+
+                                    function drawBasic() {
+
+                                        var data = google.visualization.arrayToDataTable([
+                                            ['TX #', 'Wallet Amount',],
+                                            ['TX #1', algoexplorerwalletamount0_0],
+                                            ['TX #2', algoexplorerwalletamount0_1],
+                                            ['TX #3', algoexplorerwalletamount0_2],
+                                            ['TX #4', algoexplorerwalletamount0_3],
+                                            ['TX #5', algoexplorerwalletamount0_4],
+                                            ['TX #6', algoexplorerwalletamount0_5],
+                                            ['TX #7', algoexplorerwalletamount0_6],
+                                            ['TX #8', algoexplorerwalletamount0_7],
+                                            ['TX #9', algoexplorerwalletamount0_8],
+                                            ['TX #10', algoexplorerwalletamount0_9]
+                                        ]);
+
+                                        var options = {
+                                            title: 'Binance Wallet TX Characterization',
+                                            chartArea: {width: '50%'},
+                                            animation: {
+                                                duration: 1000
+                                            },
+                                            hAxis: {
+                                            title: 'Total Amount',
+                                            minValue: 0
+                                            },
+                                            vAxis: {
+                                            title: 'TX #'
+                                            }
+                                        };
+
+                                        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+                                        chart.draw(data, options);
+
+                                        $(window).resize(function() {
+                                            chart.draw(data, options);
+                                        });
+
+
+                                        };
+                                    
+                        
+                                var jsObj1 = [
+                                    {
+                                        'Name': algoexplorername0,                                                
+                                        'Index': algoexplorerindex0,
+                                        'Unit Name': algoexplorerassetunitname0,
+                                        'Default Frozen': algoexplorerdefaultfrozen0
+                                    },
+                                    {
+                                        'Name': algoexplorername1,                                                
+                                        'Index': algoexplorerindex1,
+                                        'Unit Name': algoexplorerassetunitname1,
+                                        'Default Frozen': algoexplorerdefaultfrozen1
+                                    },
+                                    {
+                                        'Name': algoexplorername2,                                                
+                                        'Index': algoexplorerindex2,
+                                        'Unit Name': algoexplorerassetunitname2,
+                                        'Default Frozen': algoexplorerdefaultfrozen2
+                                    },
+                                    {
+                                        'Name': algoexplorername3,                                                
+                                        'Index': algoexplorerindex3,
+                                        'Unit Name': algoexplorerassetunitname3,
+                                        'Default Frozen': algoexplorerdefaultfrozen3
+                                    }
+                                ];
+                        
+                                var jsObj2 = [
+                                    {
+                                        'Name': algoexplorername0,         
+                                        'Index': algoexplorerindex0,             
+                                        'Circulating Supply': algoexplorercirculatingsupply0,
+                                        'Total': algoexplorertotal0,
+                                        'Decimals': algoexplorerdecimals0,
+                                        'Creation TX': algoexplorercreationtxid0
+                                    },
+                                    {
+                                        'Name': algoexplorername1,         
+                                        'Index': algoexplorerindex1,             
+                                        'Circulating Supply': algoexplorercirculatingsupply1,
+                                        'Total': algoexplorertotal1,
+                                        'Decimals': algoexplorerdecimals1,
+                                        'Creation TX': algoexplorercreationtxid1
+                                    },
+                                    {
+                                        'Name': algoexplorername2,         
+                                        'Index': algoexplorerindex2,             
+                                        'Circulating Supply': algoexplorercirculatingsupply2,
+                                        'Total': algoexplorertotal2,
+                                        'Decimals': algoexplorerdecimals2,
+                                        'Creation TX': algoexplorercreationtxid2
+                                    },
+                                    {
+                                        'Name': algoexplorername3,         
+                                        'Index': algoexplorerindex3,             
+                                        'Circulating Supply': algoexplorercirculatingsupply3,
+                                        'Total': algoexplorertotal3,
+                                        'Decimals': algoexplorerdecimals3,
+                                        'Creation TX': algoexplorercreationtxid3
+                                    }
+                                ];
+                        
+                                var jsObj3 = [
+                                    {
+                                        'Name': coingeckoname0,                      
+                                        'Algo Price': coingeckousdprice0,
+                                        '24h Change': coingeckopricechange24h0,
+                                        '7d Change': coingeckopricechange7d0,
+                                        '30d Change': coingeckopricechange30d0,
+                                        '1y Change': coingeckopricechange1y0
+                                        //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                        // ^ for subsequent pieces of the array
+                                    },
+                                    {
+                                        'Name': coingeckoname1,                      
+                                        'Algo Price': coingeckoprice1,
+                                        '24h Change': coingeckopricechange24h1,
+                                        '7d Change': coingeckopricechange7d1,
+                                        '30d Change': coingeckopricechange30d1,
+                                        '1y Change': coingeckopricechange1y1
+                                        //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                        // ^ for subsequent pieces of the array
+                                    },
+                                    {
+                                        'Name': coingeckoname2,                      
+                                        'Algo Price': coingeckoprice2,
+                                        '24h Change': coingeckopricechange24h2,
+                                        '7d Change': coingeckopricechange7d2,
+                                        '30d Change': coingeckopricechange30d2,
+                                        '1y Change': coingeckopricechange1y2
+                                        //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                        // ^ for subsequent pieces of the array
+                                    },
+                                    {
+                                        'Name': coingeckoname3,                      
+                                        'Algo Price': coingeckoprice3,
+                                        '24h Change': coingeckopricechange24h3,
+                                        '7d Change': coingeckopricechange7d3,
+                                        '30d Change': coingeckopricechange30d3,
+                                        '1y Change': coingeckopricechange1y3
+                                        //'Algo Price' : (coingeckprice40/coingeckoprice40)
+                                        // ^ for subsequent pieces of the array
+                                    }
+                                ];
+                        
+                                var jsObj4 = [
+                                    {
+                                        'News Title': newstitle0,   
+                                        'News Publish Date': newspubdat0,      
+                                        'News Link': newslink0
+                                    },
+                                    {
+                                        'News Title': newstitle1,   
+                                        'News Publish Date': newspubdat1,      
+                                        'News Link': newslink1
+                                    },
+                                    {
+                                        'News Title': newstitle2,   
+                                        'News Publish Date': newspubdat2,      
+                                        'News Link': newslink2
+                                    },
+                                    {
+                                        'News Title': newstitle3,   
+                                        'News Publish Date': newspubdat3,      
+                                        'News Link': newslink3
+                                    },
+                                    {
+                                        'News Title': newstitle4,   
+                                        'News Publish Date': newspubdat4,      
+                                        'News Link': newslink4
+                                    },
+                                    {
+                                        'News Title': newstitle5,   
+                                        'News Publish Date': newspubdat5,      
+                                        'News Link': newslink5
+                                    },
+                                    {
+                                        'News Title': newstitle6,   
+                                        'News Publish Date': newspubdat6,      
+                                        'News Link': newslink6
+                                    },
+                                    {
+                                        'News Title': newstitle7,   
+                                        'News Publish Date': newspubdat7,      
+                                        'News Link': newslink7
+                                    },
+                                    {
+                                        'News Title': newstitle8,   
+                                        'News Publish Date': newspubdat8,      
+                                        'News Link': newslink8
+                                    },
+                                    {
+                                        'News Title': newstitle9,   
+                                        'News Publish Date': newspubdat9,      
+                                        'News Link': newslink9
+                                    },
+                        
+                                ];          
+                        
+                                var jsObj5 = [
+                                    {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_0,
+                                        //'Asset ID': algoexplorerwalletassetID0, 
+                                        'Round': algoexplorerwalletround0_0, 
+                                        'TX Type': algoexplorerwallettype0_0,
+                                        'TX ID': algoexplorerwalletTXID0_0                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_1,
+                                        //'Asset ID': algoexplorerwalletassetID1, 
+                                        'Round': algoexplorerwalletround0_1, 
+                                        'TX Type': algoexplorerwallettype0_1,
+                                        'TX ID': algoexplorerwalletTXID0_1                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_2,
+                                        //'Asset ID': algoexplorerwalletassetID2, 
+                                        'Round': algoexplorerwalletround0_2, 
+                                        'TX Type': algoexplorerwallettype0_2,
+                                        'TX ID': algoexplorerwalletTXID0_2                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_3,
+                                        //'Asset ID': algoexplorerwalletassetID3, 
+                                        'Round': algoexplorerwalletround0_3, 
+                                        'TX Type': algoexplorerwallettype0_3,
+                                        'TX ID': algoexplorerwalletTXID0_3                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_4,
+                                        //'Asset ID': algoexplorerwalletassetID4, 
+                                        'Round': algoexplorerwalletround0_4, 
+                                        'TX Type': algoexplorerwallettype0_4,
+                                        'TX ID': algoexplorerwalletTXID0_4                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_5,
+                                        //'Asset ID': algoexplorerwalletassetID5, 
+                                        'Round': algoexplorerwalletround0_5, 
+                                        'TX Type': algoexplorerwallettype0_5,
+                                        'TX ID': algoexplorerwalletTXID0_5                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_6,
+                                        //'Asset ID': algoexplorerwalletassetID6, 
+                                        'Round': algoexplorerwalletround0_6, 
+                                        'TX Type': algoexplorerwallettype0_6,
+                                        'TX ID': algoexplorerwalletTXID0_6                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_7,
+                                        //'Asset ID': algoexplorerwalletassetID7, 
+                                        'Round': algoexplorerwalletround0_7, 
+                                        'TX Type': algoexplorerwallettype0_7,
+                                        'TX ID': algoexplorerwalletTXID0_7                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_8,
+                                        //'Asset ID': algoexplorerwalletassetID8, 
+                                        'Round': algoexplorerwalletround0_8, 
+                                        'TX Type': algoexplorerwallettype0_8,
+                                        'TX ID': algoexplorerwalletTXID0_8                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamount0_9,
+                                        //'Asset ID': algoexplorerwalletassetID9, 
+                                        'Round': algoexplorerwalletround0_9, 
+                                        'TX Type': algoexplorerwallettype0_9,
+                                        'TX ID': algoexplorerwalletTXID0_9                               
+                                        },
+                                        
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_0,
+                                        //'Asset ID': algoexplorerwalletassetID0, 
+                                        'Round': algoexplorerwalletround1_0, 
+                                        'TX Type': algoexplorerwallettype1_0,
+                                        'TX ID': algoexplorerwalletTXID1_0                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_1,
+                                        //'Asset ID': algoexplorerwalletassetID1, 
+                                        'Round': algoexplorerwalletround1_1, 
+                                        'TX Type': algoexplorerwallettype1_1,
+                                        'TX ID': algoexplorerwalletTXID1_1                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_2,
+                                        //'Asset ID': algoexplorerwalletassetID2, 
+                                        'Round': algoexplorerwalletround1_2, 
+                                        'TX Type': algoexplorerwallettype1_2,
+                                        'TX ID': algoexplorerwalletTXID1_2                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_3,
+                                        //'Asset ID': algoexplorerwalletassetID3, 
+                                        'Round': algoexplorerwalletround1_3, 
+                                        'TX Type': algoexplorerwallettype1_3,
+                                        'TX ID': algoexplorerwalletTXID1_3                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_4,
+                                        //'Asset ID': algoexplorerwalletassetID4, 
+                                        'Round': algoexplorerwalletround1_4, 
+                                        'TX Type': algoexplorerwallettype1_4,
+                                        'TX ID': algoexplorerwalletTXID1_4                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_5,
+                                        //'Asset ID': algoexplorerwalletassetID5, 
+                                        'Round': algoexplorerwalletround1_5, 
+                                        'TX Type': algoexplorerwallettype1_5,
+                                        'TX ID': algoexplorerwalletTXID1_5                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_6,
+                                        //'Asset ID': algoexplorerwalletassetID6, 
+                                        'Round': algoexplorerwalletround1_6, 
+                                        'TX Type': algoexplorerwallettype1_6,
+                                        'TX ID': algoexplorerwalletTXID1_6                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_7,
+                                        //'Asset ID': algoexplorerwalletassetID7, 
+                                        'Round': algoexplorerwalletround1_7, 
+                                        'TX Type': algoexplorerwallettype1_7,
+                                        'TX ID': algoexplorerwalletTXID1_7                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_8,
+                                        //'Asset ID': algoexplorerwalletassetID8, 
+                                        'Round': algoexplorerwalletround1_8, 
+                                        'TX Type': algoexplorerwallettype1_8,
+                                        'TX ID': algoexplorerwalletTXID1_8                               
+                                        },
+                                        {
+                                        'Wallet From': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamount1_9,
+                                        //'Asset ID': algoexplorerwalletassetID9, 
+                                        'Round': algoexplorerwalletround1_9, 
+                                        'TX Type': algoexplorerwallettype1_9,
+                                        'TX ID': algoexplorerwalletTXID1_9                               
+                                        },
+                                            
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_0,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_0, 
+                                    'TX Type': algoexplorerwallettype2_0,
+                                    'TX ID': algoexplorerwalletTXID2_0                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_1,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_1, 
+                                    'TX Type': algoexplorerwallettype2_1,
+                                    'TX ID': algoexplorerwalletTXID2_1                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_2,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_2, 
+                                    'TX Type': algoexplorerwallettype2_2,
+                                    'TX ID': algoexplorerwalletTXID2_2                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_3,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_3, 
+                                    'TX Type': algoexplorerwallettype2_3,
+                                    'TX ID': algoexplorerwalletTXID2_3                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_4,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_4, 
+                                    'TX Type': algoexplorerwallettype2_4,
+                                    'TX ID': algoexplorerwalletTXID2_4                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_5,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_5, 
+                                    'TX Type': algoexplorerwallettype2_5,
+                                    'TX ID': algoexplorerwalletTXID2_5                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_6,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_6, 
+                                    'TX Type': algoexplorerwallettype2_6,
+                                    'TX ID': algoexplorerwalletTXID2_6                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_7,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_7, 
+                                    'TX Type': algoexplorerwallettype2_7,
+                                    'TX ID': algoexplorerwalletTXID2_7                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_8,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_8, 
+                                    'TX Type': algoexplorerwallettype2_8,
+                                    'TX ID': algoexplorerwalletTXID2_8                               
+                                    },
+                                    {
+                                    'Wallet From': algoexplorerwalletfrom2,    
+                                    'Amount': algoexplorerwalletamount2_9,
+                                    //'Asset ID': algoexplorerwalletassetID0, 
+                                    'Round': algoexplorerwalletround2_9, 
+                                    'TX Type': algoexplorerwallettype2_9,
+                                    'TX ID': algoexplorerwalletTXID2_9                               
+                                    },
+
+                                    {
+                                        'Wallet From': algoexplorerwalletfrom3,    
+                                        'Amount': algoexplorerwalletamount3,
+                                        //'Asset ID': algoexplorerwalletassetID0, 
+                                        'Round': algoexplorerwalletround3, 
+                                        'TX Type': algoexplorerwallettype3,
+                                        'TX ID': algoexplorerwalletTXID3                               
+                                    }
+                                ];
+
+                                var jsObj6 = [
+                                    {
+                                        'Wallet Name': algoexplorerwalletfrom0,    
+                                        'Amount': algoexplorerwalletamountinside0,
+                                        'Address': asatokenwalletarray[0]                            
+                                    },
+                                    {
+                                        'Wallet Name': algoexplorerwalletfrom1,    
+                                        'Amount': algoexplorerwalletamountinside1,
+                                        'Address': asatokenwalletarray[1]                            
+                                    },
+                                    {
+                                        'Wallet Name': algoexplorerwalletfrom2,    
+                                        'Amount': algoexplorerwalletamountinside2,
+                                        'Address': asatokenwalletarray[2]                            
+                                    },
+                                    {
+                                        'Wallet Name': algoexplorerwalletfrom3,    
+                                        'Amount': algoexplorerwalletamountinside3,
+                                        'Address': asatokenwalletarray[3]                           
+                                    }
+                                ];
+                        
+                                var exampleTable1 = $('#example1')
+                                .DataTable({
+                                    data: jsObj0,
+                                    stateSave: true,
+                                    dom: 'Bfrtip',
+                                    initComplete: function () {
+                                        // Apply the search
+                                        this.api().columns().every( function () {
+                                            var that = this;
+                            
+                                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                if ( that.search() !== this.value ) {
+                                                    that
+                                                        .search( this.value )
+                                                        .draw();
+                                                }
+                                            } );
+                                        } );
+                                    },
+                                    buttons: [
+                                    {
+                                        extend: "copy",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "csv",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "excel",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "pdfHtml5",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "print",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: 'colvis',
+                                        text: 'Columns'
+                                    },
+                                    {
+                                        text: 'Select All',
+                                        action: function () {
+                                            exampleTable1.rows().select();
+                                        }
+                                    },
+                                    {
+                                        text: 'Select None',
+                                        action: function () {
+                                            exampleTable1.rows().deselect();
+                                        }
+                                    },
+                                    {
+                                        text: 'Show All',
+                                        action: function ( e, dt, button, config ) {
+                                            exampleTable1.rows().deselect();
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                        }
+                                    },
+                                    {
+                                        text: 'Hide Unselected',
+                                        action: function ( e, dt, button, config ) {
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                        }
+                                    }
+                                    ],
+                                    "language": {
+                                        "info": "Initial Rows : _TOTAL_",
+                                        select: {
+                                                    rows: {
+                                                        _: "",
+                                                        0: "",
+                                                        1: ""
+                                                    }
+                                                }
+                                        },
+                                    colReorder: true,
+                                    paging: false,
+                                    select: {
+                                        style: 'multi'
+                                    }, 
+                                    rowReorder: true,
+                                    //keys: true,
+                                    'columns': [{
+                                            'data': 'Name'
+                                        },
+                                        {
+                                            'data': 'Index',
+                                            "render": function(data, type, row, meta){
+                                                if(type === 'display'){
+                                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                                }
+                                    
+                                                return data;
+                                                }
+                                        },
+                                        {
+                                            'data': 'Tinyman Price'
+                                        },
+                                        {
+                                            'data': '% in Circulation',
+                                            render: function(data, type, row, meta) {
+                                                return type === 'display' ?
+                                                    '<progress value="' + data + '" max="100"></progress>' :
+                                                    data;
+                                            }
+                                        },
+                                        {
+                                            'data': 'Transactions Counter'
+                                        },
+                                        {
+                                            'data': 'Created at Round'
+                                        }
+                                    ]
+                                });  
+                        
+                                var exampleTable2 = $('#example2')
+                                .DataTable({
+                                    data: jsObj1,
+                                    stateSave: true,
+                                    dom: 'Bfrtip',
+                                    initComplete: function () {
+                                        // Apply the search
+                                        this.api().columns().every( function () {
+                                            var that = this;
+                            
+                                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                if ( that.search() !== this.value ) {
+                                                    that
+                                                        .search( this.value )
+                                                        .draw();
+                                                }
+                                            } );
+                                        } );
+                                    },
+                                    buttons: [
+                                    {
+                                        extend: "copy",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "csv",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "excel",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "pdfHtml5",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "print",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: 'colvis',
+                                        text: 'Columns'
+                                    },
+                                    {
+                                        text: 'Select All',
+                                        action: function () {
+                                            exampleTable2.rows().select();
+                                        }
+                                    },
+                                    {
+                                        text: 'Select None',
+                                        action: function () {
+                                            exampleTable2.rows().deselect();
+                                        }
+                                    },
+                                    {
+                                        text: 'Show All',
+                                        action: function ( e, dt, button, config ) {
+                                            exampleTable2.rows().deselect();
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                        }
+                                    },
+                                    {
+                                        text: 'Hide Unselected',
+                                        action: function ( e, dt, button, config ) {
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                        }
+                                    }
+                                    ],
+                                    "language": {
+                                        "info": "Initial Rows : _TOTAL_",
+                                        select: {
+                                                    rows: {
+                                                        _: "",
+                                                        0: "",
+                                                        1: ""
+                                                    }
+                                                }
+                                        },
+                                    colReorder: true,
+                                    paging: false,
+                                    select: {
+                                        style: 'multi'
+                                    }, 
+                                    rowReorder: true,
+                                    //keys: true,
+                                    'columns': [{
+                                            'data': 'Name'
+                                        },
+                                        {
+                                            'data': 'Index',
+                                            "render": function(data, type, row, meta){
+                                                if(type === 'display'){
+                                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                                }
+                                    
+                                                return data;
+                                                }
+                                        },
+                                        {
+                                            'data': 'Unit Name'
+                                        },
+                                        {
+                                            'data': 'Default Frozen'
+                                        }
+                                    ]
+                                }); 
+                        
+                                var exampleTable3 = $('#example3')
+                                .DataTable({
+                                    data: jsObj2,
+                                    stateSave: true,
+                                    dom: 'Bfrtip',
+                                    initComplete: function () {
+                                        // Apply the search
+                                        this.api().columns().every( function () {
+                                            var that = this;
+                            
+                                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                if ( that.search() !== this.value ) {
+                                                    that
+                                                        .search( this.value )
+                                                        .draw();
+                                                }
+                                            } );
+                                        } );
+                                    },
+                                    buttons: [
+                                    {
+                                        extend: "copy",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "csv",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "excel",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "pdfHtml5",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "print",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    }, 
+                                    {
+                                        extend: 'colvis',
+                                        text: 'Columns'
+                                    },
+                                    {
+                                        text: 'Select All',
+                                        action: function () {
+                                            exampleTable3.rows().select();
+                                        }
+                                    },
+                                    {
+                                        text: 'Select None',
+                                        action: function () {
+                                            exampleTable3.rows().deselect();
+                                        }
+                                    },
+                                    {
+                                        text: 'Show All',
+                                        action: function ( e, dt, button, config ) {
+                                            exampleTable3.rows().deselect();
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                        }
+                                    },
+                                    {
+                                        text: 'Hide Unselected',
+                                        action: function ( e, dt, button, config ) {
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                        }
+                                    }
+                                    ],
+                                    "language": {
+                                        "info": "Initial Rows : _TOTAL_",
+                                        select: {
+                                                    rows: {
+                                                        _: "",
+                                                        0: "",
+                                                        1: ""
+                                                    }
+                                                }
+                                        },
+                                    colReorder: true,
+                                    paging: false,
+                                    select: {
+                                        style: 'multi'
+                                    }, 
+                                    rowReorder: true,
+                                    //keys: true,
+                                    'columns': [{
+                                            'data': 'Name'
+                                        },
+                                        {
+                                            'data': 'Index',
+                                            "render": function(data, type, row, meta){
+                                                if(type === 'display'){
+                                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                                                }
+                                    
+                                                return data;
+                                                }
+                                        },
+                                        {
+                                            'data': 'Circulating Supply'
+                                        },
+                                        {
+                                            'data': 'Total'
+                                        },
+                                        {
+                                            'data': 'Decimals'
+                                        },
+                                        {
+                                            'data': 'Creation TX',
+                                            "render": function(data, type, row, meta){
+                                                if(type === 'display'){
+                                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
+                                                }
+                                    
+                                                return data;
+                                                }
+                                        }
+                                    ]
+                                }); 
+                        
+                                var exampleTable4 = $('#example4')
+                                .DataTable({
+                                    data: jsObj3,
+                                    stateSave: true,
+                                    dom: 'Bfrtip',
+                                    initComplete: function () {
+                                        // Apply the search
+                                        this.api().columns().every( function () {
+                                            var that = this;
+                            
+                                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                if ( that.search() !== this.value ) {
+                                                    that
+                                                        .search( this.value )
+                                                        .draw();
+                                                }
+                                            } );
+                                        } );
+                                    },
+                                    buttons: [
+                                    {
+                                        extend: "copy",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "csv",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "excel",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "pdfHtml5",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "print",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: 'colvis',
+                                        text: 'Columns'
+                                    },
+                                    {
+                                        text: 'Select All',
+                                        action: function () {
+                                            exampleTable4.rows().select();
+                                        }
+                                    },
+                                    {
+                                        text: 'Select None',
+                                        action: function () {
+                                            exampleTable4.rows().deselect();
+                                        }
+                                    },
+                                    {
+                                        text: 'Show All',
+                                        action: function ( e, dt, button, config ) {
+                                            exampleTable4.rows().deselect();
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                        }
+                                    },
+                                    {
+                                        text: 'Hide Unselected',
+                                        action: function ( e, dt, button, config ) {
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                        }
+                                    }
+                                    ],
+                                    "language": {
+                                        "info": "Initial Rows : _TOTAL_",
+                                        select: {
+                                                    rows: {
+                                                        _: "",
+                                                        0: "",
+                                                        1: ""
+                                                    }
+                                                }
+                                        },
+                                    colReorder: true,
+                                    paging: false,
+                                    select: {
+                                        style: 'multi'
+                                    }, 
+                                    rowReorder: true,
+                                    //keys: true,
+                                    'columns': [{
+                                            'data': 'Name'
+                                        },
+                                        {
+                                            'data': 'Algo Price'
+                                        },
+                                        {
+                                            'data': '24h Change',
+                                            render: function(data, type) {
+                                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                
+                                                if (type === 'display') {
+                                                    let color = 'black';
+                                                    if (data < 0) {
+                                                        color = 'red';
+                                                    }
+                                                    else if (data >= 0) {
+                                                        color = 'green';
+                                                    }
+                                
+                                                    return '<span style="color:' + color + '">' + number + '</span>';
+                                                }
+                                                    
+                                                return number;
+                                            }
+                                        },
+                                        {
+                                            'data': '7d Change',
+                                            render: function(data, type) {
+                                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                
+                                                if (type === 'display') {
+                                                    let color = 'black';
+                                                    if (data < 0) {
+                                                        color = 'red';
+                                                    }
+                                                    else if (data >= 0) {
+                                                        color = 'green';
+                                                    }
+                                
+                                                    return '<span style="color:' + color + '">' + number + '</span>';
+                                                }
+                                                    
+                                                return number;
+                                            }
+                                        },
+                                        {
+                                            'data': '30d Change',
+                                            render: function(data, type) {
+                                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                
+                                                if (type === 'display') {
+                                                    let color = 'black';
+                                                    if (data < 0) {
+                                                        color = 'red';
+                                                    }
+                                                    else if (data >= 0) {
+                                                        color = 'green';
+                                                    }
+                                
+                                                    return '<span style="color:' + color + '">' + number + '</span>';
+                                                }
+                                                    
+                                                return number;
+                                            }
+                                        },
+                                        {
+                                            'data': '1y Change',
+                                            render: function(data, type) {
+                                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                
+                                                if (type === 'display') {
+                                                    let color = 'black';
+                                                    if (data < 0) {
+                                                        color = 'red';
+                                                    }
+                                                    else if (data >= 0) {
+                                                        color = 'green';
+                                                    }
+                                
+                                                    return '<span style="color:' + color + '">' + number + '</span>';
+                                                }
+                                                    
+                                                return number;
+                                            }
+                                        }
+                                    ]
+                                }); 
+                        
+                                var exampleTable5 = $('#example5')
+                                .DataTable({
+                                    data: jsObj4,
+                                    stateSave: true,
+                                    dom: 'Bfrtip',
+                                    initComplete: function () {
+                                        // Apply the search
+                                        this.api().columns().every( function () {
+                                            var that = this;
+                            
+                                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                if ( that.search() !== this.value ) {
+                                                    that
+                                                        .search( this.value )
+                                                        .draw();
+                                                }
+                                            } );
+                                        } );
+                                    },
+                                    buttons: [
+                                    {
+                                        extend: "copy",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "csv",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "excel",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "pdfHtml5",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "print",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: 'colvis',
+                                        text: 'Columns'
+                                    },
+                                    {
+                                        text: 'Select All',
+                                        action: function () {
+                                            exampleTable5.rows().select();
+                                        }
+                                    },
+                                    {
+                                        text: 'Select None',
+                                        action: function () {
+                                            exampleTable5.rows().deselect();
+                                        }
+                                    },
+                                    {
+                                        text: 'Show All',
+                                        action: function ( e, dt, button, config ) {
+                                            exampleTable5.rows().deselect();
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                        }
+                                    },
+                                    {
+                                        text: 'Hide Unselected',
+                                        action: function ( e, dt, button, config ) {
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                        }
+                                    }
+                                    ],
+                                    "language": {
+                                        "info": "Initial Rows : _TOTAL_",
+                                        select: {
+                                                    rows: {
+                                                        _: "",
+                                                        0: "",
+                                                        1: ""
+                                                    }
+                                                }
+                                        },
+                                    colReorder: true,
+                                    "order": [[ 1, "desc" ]],
+                                    paging: false,
+                                    select: {
+                                        style: 'multi'
+                                    }, 
+                                    rowReorder: true,
+                                    //keys: true,
+                                    'columns': [{
+                                            'data': 'News Title'
+                                        },
+                                        {
+                                            'data': 'News Publish Date'
+                                        },
+                                        {
+                                            'data': 'News Link',
+                                            "render": function(data, type, row, meta){
+                                                if(type === 'display'){
+                                                    data = '<a target="_blank" rel="noopener noreferrer" href="' + data + '">' + data + '</a>';
+                                                }
+                                    
+                                                return data;
+                                                }
+                                        }
+                                    ]
+                                }); 
+                        
+                                var exampleTable6 = $('#example6')
+                                .DataTable({
+                                    data: jsObj5,
+                                    stateSave: true,
+                                    dom: 'Bfrtip',
+                                    initComplete: function () {
+                                        // Apply the search
+                                        this.api().columns().every( function () {
+                                            var that = this;
+                            
+                                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                if ( that.search() !== this.value ) {
+                                                    that
+                                                        .search( this.value )
+                                                        .draw();
+                                                }
+                                            } );
+                                        } );
+                                    },
+                                    buttons: [
+                                    {
+                                        extend: "copy",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "csv",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "excel",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "pdfHtml5",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "print",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: 'colvis',
+                                        text: 'Columns'
+                                    },
+                                    {
+                                        text: 'Select All',
+                                        action: function () {
+                                            exampleTable6.rows().select();
+                                        }
+                                    },
+                                    {
+                                        text: 'Select None',
+                                        action: function () {
+                                            exampleTable6.rows().deselect();
+                                        }
+                                    },
+                                    {
+                                        text: 'Show All',
+                                        action: function ( e, dt, button, config ) {
+                                            exampleTable6.rows().deselect();
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                        }
+                                    },
+                                    {
+                                        text: 'Hide Unselected',
+                                        action: function ( e, dt, button, config ) {
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                        }
+                                    }
+                                    ],
+                                    "language": {
+                                        "info": "Initial Rows : _TOTAL_",
+                                        select: {
+                                                    rows: {
+                                                        _: "",
+                                                        0: "",
+                                                        1: ""
+                                                    }
+                                                }
+                                        },
+                                    colReorder: true,
+                                    "order": [[ 2, "desc" ]],
+                                    paging: false,
+                                    select: {
+                                        style: 'multi'
+                                    }, 
+                                    rowReorder: true,
+                                    //keys: true,
+                                    'columns': [
+                                        
+                                        {
+                                            'data': 'Wallet From'
+                                        },
+                                        {
+                                            'data': 'Amount'
+                                        }/*,
+                                        {
+                                            'data': 'Asset ID'
+                                        }*/,
+                                        {
+                                            'data': 'Round'
+                                        },
+                                        {
+                                            'data': 'TX Type'
+                                        },
+                                        {
+                                            'data': 'TX ID',
+                                            "render": function(data, type, row, meta){
+                                                if(type === 'display'){
+                                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/tx/' + data + '">' + data + '</a>';
+                                                }
+                                    
+                                                return data;
+                                                }
+                                        }                         
+                                    ]
+                                });    
+
+                                var exampleTable7 = $('#example7')
+                                .DataTable({
+                                    data: jsObj6,
+                                    stateSave: true,
+                                    dom: 'Bfrtip',
+                                    initComplete: function () {
+                                        // Apply the search
+                                        this.api().columns().every( function () {
+                                            var that = this;
+                            
+                                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                if ( that.search() !== this.value ) {
+                                                    that
+                                                        .search( this.value )
+                                                        .draw();
+                                                }
+                                            } );
+                                        } );
+                                    },
+                                    buttons: [
+                                    {
+                                        extend: "copy",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "csv",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "excel",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "pdfHtml5",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    },
+                                    {
+                                        extend: "print",
+                                        exportOptions: {
+                                        modifier: { search: 'none', selected: true}
+                                        }
+                                    }, 
+                                    {
+                                        extend: 'colvis',
+                                        text: 'Columns'
+                                    },
+                                    {
+                                        text: 'Select All',
+                                        action: function () {
+                                            exampleTable7.rows().select();
+                                        }
+                                    },
+                                    {
+                                        text: 'Select None',
+                                        action: function () {
+                                            exampleTable7.rows().deselect();
+                                        }
+                                    },
+                                    {
+                                        text: 'Show All',
+                                        action: function ( e, dt, button, config ) {
+                                            exampleTable7.rows().deselect();
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                        }
+                                    },
+                                    {
+                                        text: 'Hide Unselected',
+                                        action: function ( e, dt, button, config ) {
+                                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                        }
+                                    }
+                                    ],
+                                    "language": {
+                                        "info": "Initial Rows : _TOTAL_",
+                                        select: {
+                                                    rows: {
+                                                        _: "",
+                                                        0: "",
+                                                        1: ""
+                                                    }
+                                                }
+                                        },
+                                    rowReorder: true,
+                                    colReorder: true,
+                                    "order": [[ 1, "desc" ]],
+                                    paging: false,
+                                    select: {
+                                        style: 'multi'
+                                    }, 
+                                    rowReorder: true,
+                                    //keys: true,
+                                    'columns': [
+                                        
+                                        {
+                                            'data': 'Wallet Name'
+                                        },
+                                        {
+                                            'data': 'Amount'
+                                        },
+                                        {
+                                            'data': 'Address',
+                                            "render": function(data, type, row, meta){
+                                                if(type === 'display'){
+                                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data + '</a>';
+                                                }
+                                    
+                                                return data;
+                                                }
+                                        }                         
+                                    ]
+                                });    
+                            }
+                        });  
+                    }
+                });  
             }
-        });                 
+        });             
         
         //construction site code above
         
