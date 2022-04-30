@@ -815,18 +815,14 @@ $(document)
                                                                             var data = new google.visualization.DataTable(datatable);
                                                                             // Instantiate and draw our chart, passing in some options.
                                                                             var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
-                                                                            chart.draw(data, {
-                                                                                title: 'Binance Wallet TX Characterization',
-                                                                                titleTextStyle: 
-                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
-                                                                                width: '390', 
-                                                                                height: '195',
-                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
-                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
-                                                                                curveType: 'function',
-                                                                                colors: ['#8253E8'],
-                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
+                                                                            chart.draw(data);
+
+                                                                            
+                                                                            $(window).resize(function() {
+                                                                                chart.draw(data);
                                                                             });
+
+
                                                                             };
 
                                                                         /*function drawChart2() {
@@ -972,7 +968,7 @@ $(document)
                                                                                 });
                                                                             };
 
-                                                                            google.load('visualization', '1', {packages: ['corechart'], callback: drawVisualization});                                                                            
+                                                                            google.load('visualization', {packages: ['corechart'], callback: drawVisualization});                                                                            
                                                                             //google.load("visualization", "1", {packages:["corechart"]});
                                                                             google.setOnLoadCallback(drawChart);
                                                                             //google.setOnLoadCallback(drawChart2);
@@ -998,13 +994,72 @@ $(document)
                                                                               ]);
                                                                       
                                                                               var options222 = {
-                                                                                title: 'Binance Wallet TX Characterization'
+                                                                                animation: {
+                                                                                    duration: 1000
+                                                                                },
+                                                                                hAxis: {
+                                                                                    title: 'Amount',
+                                                                                    minValue: 0
+                                                                                    },
+                                                                                    vAxis: {
+                                                                                    title: 'Wallet TX'
+                                                                                    }
                                                                               };
                                                                       
                                                                               var chart222 = new google.visualization.PieChart($('#piechart')[0]);
                                                                       
                                                                               chart222.draw(data, options222);
+
+                                                                              $(window).resize(function() {
+                                                                                    chart222.draw(data, options222);
+                                                                                });
                                                                             };
+
+                                                                            google.charts.load('current', {packages: ['corechart', 'bar']});
+                                                                            
+                                                                            google.charts.setOnLoadCallback(drawBasic);
+
+                                                                            function drawBasic() {
+
+                                                                                var data = google.visualization.arrayToDataTable([
+                                                                                    ['TX #', 'Wallet Amount',],
+                                                                                    ['TX #1', algoexplorerwalletamount0_0],
+                                                                                    ['TX #2', algoexplorerwalletamount0_1],
+                                                                                    ['TX #3', algoexplorerwalletamount0_2],
+                                                                                    ['TX #4', algoexplorerwalletamount0_3],
+                                                                                    ['TX #5', algoexplorerwalletamount0_4],
+                                                                                    ['TX #6', algoexplorerwalletamount0_5],
+                                                                                    ['TX #7', algoexplorerwalletamount0_6],
+                                                                                    ['TX #8', algoexplorerwalletamount0_7],
+                                                                                    ['TX #9', algoexplorerwalletamount0_8],
+                                                                                    ['TX #10', algoexplorerwalletamount0_9]
+                                                                                ]);
+
+                                                                                var options = {
+                                                                                    title: 'Binance Wallet TX Characterization',
+                                                                                    chartArea: {width: '50%'},
+                                                                                    animation: {
+                                                                                        duration: 1000
+                                                                                    },
+                                                                                    hAxis: {
+                                                                                    title: 'Total Amount',
+                                                                                    minValue: 0
+                                                                                    },
+                                                                                    vAxis: {
+                                                                                    title: 'TX #'
+                                                                                    }
+                                                                                };
+
+                                                                                var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+                                                                                chart.draw(data, options);
+
+                                                                                $(window).resize(function() {
+                                                                                    chart.draw(data, options);
+                                                                                });
+
+
+                                                                                };
                                                                             
                                                                 
                                                                         var jsObj1 = [
