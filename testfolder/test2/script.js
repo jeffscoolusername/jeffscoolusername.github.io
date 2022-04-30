@@ -963,7 +963,12 @@ $(document)
                                                                                 ['2',      algoexplorerwalletamount0_1],
                                                                                 ['3',  algoexplorerwalletamount0_2],
                                                                                 ['4', algoexplorerwalletamount0_3],
-                                                                                ['5',    algoexplorerwalletamount0_4]
+                                                                                ['5',    algoexplorerwalletamount0_4],
+                                                                                ['6',    algoexplorerwalletamount0_5],
+                                                                                ['7',    algoexplorerwalletamount0_6],
+                                                                                ['8',    algoexplorerwalletamount0_7],
+                                                                                ['9',    algoexplorerwalletamount0_8],
+                                                                                ['10',    algoexplorerwalletamount0_9]
                                                                               ]);
                                                                       
                                                                               var options222 = {
