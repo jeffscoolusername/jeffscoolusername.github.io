@@ -3085,7 +3085,13 @@
                 var title = $(this).text();
                 $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
             } );
-            
+
+            //chart test
+            //current issues from prior update : spams error messages if you don't open the site from the page with charts
+            setTimeout(function(){
+            $( "#example0" ).load( "jeffscoolusername.github.io/testfolder/test2/index.html #example0" );
+            }, 2000); //refresh every 2 seconds
+                        
         </script>
 
     </body>
