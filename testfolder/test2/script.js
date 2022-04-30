@@ -827,16 +827,10 @@ $(document)
                                                                                 colors: ['#8253E8'],
                                                                                 backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
                                                                             });
-                                                                            }
+                                                                            };
 
-                                                                        function drawChart2() {
-                                                                            /*var jsonData = $.ajax({
-                                                                            url: "http://82.158.163.34:880/preciosES",
-                                                                            dataType:"json",
-                                                                            async: false
-                                                                            }).responseText;*/
-                                                                            
-                                                                            /*var jsonData=[('Hora','Consumo Estimado'),(0,100),(1,50),(2,50),(3,50),(4,50),(5,50),(6,50),(7,50),(8,100),(9,100),(10,50),(11,50),(12,50),(13,50),(14,50),(15,50),(16,50),(17,50),(18,100),(19,100),(20,150),(21,150),(22,50),(23,100)];*/
+                                                                        /*function drawChart2() {
+
                                                                             var datatable2 = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount1_0}]}, 
                                                                             {"c": [{"v": 1}, {"v": algoexplorerwalletamount1_1}]}, 
                                                                             {"c": [{"v": 2}, {"v": algoexplorerwalletamount1_2}]}, 
@@ -863,7 +857,7 @@ $(document)
                                                                                 colors: ['#8253E8'],
                                                                                 backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
                                                                             });
-                                                                            }
+                                                                            };*/
                                                                             
                                                                         /*function drawChart3() {
 
@@ -950,13 +944,36 @@ $(document)
                                                                                 $(window).resize(function() {
                                                                                     chart.draw(data, options);
                                                                                 });
-                                                                            }
+                                                                            };
 
                                                                             google.load('visualization', '1', {packages: ['corechart'], callback: drawVisualization});                                                                            
                                                                             //google.load("visualization", "1", {packages:["corechart"]});
                                                                             google.setOnLoadCallback(drawChart);
-                                                                            google.setOnLoadCallback(drawChart2);
+                                                                            //google.setOnLoadCallback(drawChart2);
                                                                             /*google.setOnLoadCallback(drawChart3);*/
+
+                                                                            //google.charts.load('current', {packages:['corechart']});
+                                                                            google.charts.setOnLoadCallback(drawChart4);
+                                                                      
+                                                                            function drawChart4() {
+                                                                      
+                                                                              var data = google.visualization.arrayToDataTable([
+                                                                                ['Transaction', 'Amount of Algorand'],
+                                                                                ['1',     algoexplorerwalletamount0_0],
+                                                                                ['2',      algoexplorerwalletamount0_1],
+                                                                                ['3',  algoexplorerwalletamount0_2],
+                                                                                ['3', algoexplorerwalletamount0_3],
+                                                                                ['4',    algoexplorerwalletamount0_4]
+                                                                              ]);
+                                                                      
+                                                                              var options222 = {
+                                                                                title: 'Binance Transaction Totals'
+                                                                              };
+                                                                      
+                                                                              var chart222 = new google.visualization.PieChart($('#piechart')[0]);
+                                                                      
+                                                                              chart222.draw(data, options222);
+                                                                            };
                                                                             
                                                                 
                                                                         var jsObj1 = [
