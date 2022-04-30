@@ -936,8 +936,8 @@ $(document)
 
                                                                             google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
 
-                                                                            
-                                                                            google.setOnLoadCallback(drawChart);
+                                                                            google.charts.setOnLoadCallback(drawVisualization);
+                                                                            google.charts.setOnLoadCallback(drawChart);
                                                                             google.charts.setOnLoadCallback(drawChart4);
                                                                       
                                                                             function drawChart4() {
