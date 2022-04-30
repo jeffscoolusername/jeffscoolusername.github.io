@@ -906,51 +906,7 @@ $(document)
                                                                                 var data = google.visualization.arrayToDataTable([
                                                                                     ['Transactions', '1st TX', '2nd TX', '3rd TX', '4th TX', '5th TX', '6th TX', '7th TX', '8th TX', '9th TX', '10th TX'],
                                                                                     ['Total Amount', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9]
-                                                                                ]);
-                                                                                
-                                                                                // use a DataView to 0-out all the values in the data set for the initial draw
-                                                                                var view = new google.visualization.DataView(data);
-                                                                                view.setColumns([0, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(1),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(2),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(3),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(4),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(5),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(6),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(7),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(8),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(9),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(10),
-                                                                                    calc: function () {return 0;}
-                                                                                }]);
+                                                                                ]);                                                                                
                                                                                 
                                                                                 // Create and draw the visualization.
                                                                                 var chart = new google.visualization.ColumnChart(document.getElementById('visualization'));
@@ -959,24 +915,18 @@ $(document)
                                                                                     title:"Binance Wallet TX Characterization",
                                                                                     chartArea: {width: '50%'},
                                                                                     hAxis: {
-                                                                                        title: ""
+                                                                                        title: "Total Amount",
+                                                                                        minValue: 0
                                                                                     },
                                                                                     animation: {
                                                                                         duration: 1000
                                                                                     },
-                                                                                    vAxis: {
-                                                                                        // set these values to make the initial animation smoother
-                                                                                        minValue: 0,
-                                                                                        maxValue: 600
+                                                                                    vAxis: {                                                                                        
+                                                                                        title: 'TX #'
                                                                                     }
-                                                                                };
+                                                                                };                                                                                
                                                                                 
-                                                                                var runOnce = google.visualization.events.addListener(chart, 'ready', function () {
-                                                                                    google.visualization.events.removeListener(runOnce);
-                                                                                    chart.draw(data, options);
-                                                                                });
-                                                                                
-                                                                                chart.draw(view, options);
+                                                                                chart.draw(data, options);
                                                                                 
                                                                                 // you can handle the resizing here - no need to recreate your data and charts from scratch
                                                                                 $(window).resize(function() {
