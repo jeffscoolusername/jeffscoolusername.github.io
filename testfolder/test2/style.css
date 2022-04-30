@@ -127,6 +127,28 @@ h1 {
     margin:0 !important;
   }
 
+.info_div_name {
+    width:50%;
+    height:auto;
+    padding: 5px 0px 5px 10px;
+    float:left;
+}
+
+.info_div_time {
+    width:50%;
+    height:auto;
+    padding: 5px 10px 5px 0px;
+    float:right;
+}
+
+.info_div_note {
+  clear: both;
+  width: inherit;
+  height: auto;
+  position: static;
+  padding: 0px 10px 5px 10px;
+  } 
+
   tfoot input {
     width: 100%;
     padding: 3px;
