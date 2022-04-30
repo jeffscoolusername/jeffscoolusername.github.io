@@ -865,14 +865,8 @@ $(document)
                                                                             });
                                                                             }
                                                                             
-                                                                        function drawChart3() {
-                                                                            /*var jsonData = $.ajax({
-                                                                            url: "http://82.158.163.34:880/preciosES",
-                                                                            dataType:"json",
-                                                                            async: false
-                                                                            }).responseText;*/
-                                                                            
-                                                                            /*var jsonData=[('Hora','Consumo Estimado'),(0,100),(1,50),(2,50),(3,50),(4,50),(5,50),(6,50),(7,50),(8,100),(9,100),(10,50),(11,50),(12,50),(13,50),(14,50),(15,50),(16,50),(17,50),(18,100),(19,100),(20,150),(21,150),(22,50),(23,100)];*/
+                                                                        /*function drawChart3() {
+
                                                                             var datatable3 = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount2_0}]}, 
                                                                             {"c": [{"v": 1}, {"v": algoexplorerwalletamount2_1}]}, 
                                                                             {"c": [{"v": 2}, {"v": algoexplorerwalletamount2_2}]}, 
@@ -899,12 +893,70 @@ $(document)
                                                                                 colors: ['#8253E8'],
                                                                                 backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
                                                                             });
+                                                                            }*/
+
+                                                                            function drawVisualization() {
+                                                                                // Create and populate the data table.
+                                                                                var data = google.visualization.arrayToDataTable([
+                                                                                    ['Tracker', 'Binance', 'AlgoStake', 'PlanetWatch'],
+                                                                                    ['1st TX', algoexplorerwalletamount0_0, algoexplorerwalletamount1_0, algoexplorerwalletamount2_0],
+                                                                                    ['2nd TX', algoexplorerwalletamount0_1, algoexplorerwalletamount1_1, algoexplorerwalletamount2_1],
+                                                                                    ['3rd TX', algoexplorerwalletamount0_2, algoexplorerwalletamount1_2, algoexplorerwalletamount2_2]
+                                                                                ]);
+                                                                                
+                                                                                // use a DataView to 0-out all the values in the data set for the initial draw
+                                                                                var view = new google.visualization.DataView(data);
+                                                                                view.setColumns([0, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(1),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(2),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(3),
+                                                                                    calc: function () {return 0;}
+                                                                                }]);
+                                                                                
+                                                                                // Create and draw the visualization.
+                                                                                var chart = new google.visualization.ColumnChart(document.getElementById('visualization'));
+                                                                                
+                                                                                var options = {
+                                                                                    title:"Wallet TX vs Wallet TX vs Wallet TX",
+                                                                                    legend: 'bottom',
+                                                                                    hAxis: {
+                                                                                        title: ""
+                                                                                    },
+                                                                                    animation: {
+                                                                                        duration: 1000
+                                                                                    },
+                                                                                    vAxis: {
+                                                                                        // set these values to make the initial animation smoother
+                                                                                        minValue: 0,
+                                                                                        maxValue: 600
+                                                                                    }
+                                                                                };
+                                                                                
+                                                                                var runOnce = google.visualization.events.addListener(chart, 'ready', function () {
+                                                                                    google.visualization.events.removeListener(runOnce);
+                                                                                    chart.draw(data, options);
+                                                                                });
+                                                                                
+                                                                                chart.draw(view, options);
+                                                                                
+                                                                                // you can handle the resizing here - no need to recreate your data and charts from scratch
+                                                                                $(window).resize(function() {
+                                                                                    chart.draw(data, options);
+                                                                                });
                                                                             }
-                                                                            
-                                                                            google.load("visualization", "1", {packages:["corechart"]});
+
+                                                                            google.load('visualization', '1', {packages: ['corechart'], callback: drawVisualization});                                                                            
+                                                                            //google.load("visualization", "1", {packages:["corechart"]});
                                                                             google.setOnLoadCallback(drawChart);
                                                                             google.setOnLoadCallback(drawChart2);
-                                                                            google.setOnLoadCallback(drawChart3);
+                                                                            /*google.setOnLoadCallback(drawChart3);*/
                                                                             
                                                                 
                                                                         var jsObj1 = [
