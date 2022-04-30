@@ -941,7 +941,7 @@ $(document)
                                                                                 
                                                                                 var options = {
                                                                                     title:"Binance Wallet TX Characterization",
-                                                                                    legend: 'bottom',
+                                                                                    chartArea: {width: '50%'},
                                                                                     hAxis: {
                                                                                         title: ""
                                                                                     },
@@ -994,6 +994,8 @@ $(document)
                                                                               ]);
                                                                       
                                                                               var options222 = {
+                                                                                title:"Binance Wallet TX Characterization",
+                                                                                chartArea: {width: '50%'},
                                                                                 animation: {
                                                                                     duration: 1000
                                                                                 },
