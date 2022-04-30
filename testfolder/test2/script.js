@@ -892,10 +892,10 @@ $(document)
                                                                             function drawVisualization() {
                                                                                 // Create and populate the data table.
                                                                                 var data = google.visualization.arrayToDataTable([
-                                                                                    ['Tracker', 'Binance', 'AlgoStake', 'PlanetWatch'],
-                                                                                    ['1st TX', algoexplorerwalletamount0_0, algoexplorerwalletamount1_0, algoexplorerwalletamount2_0],
-                                                                                    ['2nd TX', algoexplorerwalletamount0_1, algoexplorerwalletamount1_1, algoexplorerwalletamount2_1],
-                                                                                    ['3rd TX', algoexplorerwalletamount0_2, algoexplorerwalletamount1_2, algoexplorerwalletamount2_2]
+                                                                                    ['Tracker', '1st TX', '2nd TX', '3rd TX', '4th TX', '5th TX', '6th TX', '7th TX', '8th TX', '9th TX', '10th TX'],
+                                                                                    ['Binance', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9],
+                                                                                    ['AlgoStake', algoexplorerwalletamount1_0, algoexplorerwalletamount1_1, algoexplorerwalletamount1_2, algoexplorerwalletamount1_3, algoexplorerwalletamount1_4, algoexplorerwalletamount1_5, algoexplorerwalletamount1_6, algoexplorerwalletamount1_7, algoexplorerwalletamount1_8, algoexplorerwalletamount1_9],
+                                                                                    ['PlanetWatch', algoexplorerwalletamount2_0, algoexplorerwalletamount2_1, algoexplorerwalletamount2_2, algoexplorerwalletamount2_3, algoexplorerwalletamount2_4, algoexplorerwalletamount2_5, algoexplorerwalletamount2_6, algoexplorerwalletamount2_7, algoexplorerwalletamount2_8, algoexplorerwalletamount2_9]
                                                                                 ]);
                                                                                 
                                                                                 // use a DataView to 0-out all the values in the data set for the initial draw
@@ -911,6 +911,34 @@ $(document)
                                                                                 }, {
                                                                                     type: 'number',
                                                                                     label: data.getColumnLabel(3),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(4),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(5),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(6),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(7),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(8),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(9),
+                                                                                    calc: function () {return 0;}
+                                                                                }, {
+                                                                                    type: 'number',
+                                                                                    label: data.getColumnLabel(10),
                                                                                     calc: function () {return 0;}
                                                                                 }]);
                                                                                 
