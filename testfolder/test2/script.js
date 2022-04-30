@@ -793,14 +793,8 @@ $(document)
                                                                             }
                                                                         ];
 
-                                                                        function drawChart() {
-                                                                            /*var jsonData = $.ajax({
-                                                                            url: "http://82.158.163.34:880/preciosES",
-                                                                            dataType:"json",
-                                                                            async: false
-                                                                            }).responseText;*/
-                                                                            
-                                                                            /*var jsonData=[('Hora','Consumo Estimado'),(0,100),(1,50),(2,50),(3,50),(4,50),(5,50),(6,50),(7,50),(8,100),(9,100),(10,50),(11,50),(12,50),(13,50),(14,50),(15,50),(16,50),(17,50),(18,100),(19,100),(20,150),(21,150),(22,50),(23,100)];*/
+                                                                        /*function drawChart() {
+
                                                                             var datatable = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount0_0}]}, 
                                                                             {"c": [{"v": 1}, {"v": algoexplorerwalletamount0_1}]}, 
                                                                             {"c": [{"v": 2}, {"v": algoexplorerwalletamount0_2}]}, 
@@ -839,105 +833,45 @@ $(document)
                                                                             });
 
 
-                                                                            };
-
-                                                                        /*function drawChart2() {
-
-                                                                            var datatable2 = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount1_0}]}, 
-                                                                            {"c": [{"v": 1}, {"v": algoexplorerwalletamount1_1}]}, 
-                                                                            {"c": [{"v": 2}, {"v": algoexplorerwalletamount1_2}]}, 
-                                                                            {"c": [{"v": 3}, {"v": algoexplorerwalletamount1_3}]}, 
-                                                                            {"c": [{"v": 4}, {"v": algoexplorerwalletamount1_4}]}, 
-                                                                            {"c": [{"v": 5}, {"v": algoexplorerwalletamount1_5}]}, 
-                                                                            {"c": [{"v": 6}, {"v": algoexplorerwalletamount1_6}]}, 
-                                                                            {"c": [{"v": 7}, {"v": algoexplorerwalletamount1_7}]}, 
-                                                                            {"c": [{"v": 8}, {"v": algoexplorerwalletamount1_8}]}, 
-                                                                            {"c": [{"v": 9}, {"v": algoexplorerwalletamount1_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
-                                                                            // Create our data table out of JSON data loaded from server.
-                                                                            var data2 = new google.visualization.DataTable(datatable2);
-                                                                            // Instantiate and draw our chart, passing in some options.
-                                                                            var chart2 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-                                                                            chart2.draw(data2, {
-                                                                                title: 'AlgoStake Wallet TX Characterization',
-                                                                                titleTextStyle: 
-                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
-                                                                                width: '390', 
-                                                                                height: '195',
-                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
-                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
-                                                                                curveType: 'function',
-                                                                                colors: ['#8253E8'],
-                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
-                                                                            });
                                                                             };*/
+
+                                                                        function drawVisualization() {
+                                                                            // Create and populate the data table.
+                                                                            var data = google.visualization.arrayToDataTable([
+                                                                                ['Transactions', '1st TX', '2nd TX', '3rd TX', '4th TX', '5th TX', '6th TX', '7th TX', '8th TX', '9th TX', '10th TX'],
+                                                                                ['Total Amount', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9]
+                                                                            ]);                                                                                
                                                                             
-                                                                        /*function drawChart3() {
-
-                                                                            var datatable3 = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount2_0}]}, 
-                                                                            {"c": [{"v": 1}, {"v": algoexplorerwalletamount2_1}]}, 
-                                                                            {"c": [{"v": 2}, {"v": algoexplorerwalletamount2_2}]}, 
-                                                                            {"c": [{"v": 3}, {"v": algoexplorerwalletamount2_3}]}, 
-                                                                            {"c": [{"v": 4}, {"v": algoexplorerwalletamount2_4}]}, 
-                                                                            {"c": [{"v": 5}, {"v": algoexplorerwalletamount2_5}]}, 
-                                                                            {"c": [{"v": 6}, {"v": algoexplorerwalletamount2_6}]}, 
-                                                                            {"c": [{"v": 7}, {"v": algoexplorerwalletamount2_7}]}, 
-                                                                            {"c": [{"v": 8}, {"v": algoexplorerwalletamount2_8}]}, 
-                                                                            {"c": [{"v": 9}, {"v": algoexplorerwalletamount2_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
-                                                                            // Create our data table out of JSON data loaded from server.
-                                                                            var data3 = new google.visualization.DataTable(datatable3);
-                                                                            // Instantiate and draw our chart, passing in some options.
-                                                                            var chart3 = new google.visualization.LineChart(document.getElementById('chart_div4'));
-                                                                            chart3.draw(data3, {
-                                                                                title: 'Planet Watch Wallet TX Characterization',
-                                                                                titleTextStyle: 
-                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
-                                                                                width: '390', 
-                                                                                height: '195',
-                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
-                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
-                                                                                curveType: 'function',
-                                                                                colors: ['#8253E8'],
-                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
-                                                                            });
-                                                                            }*/
-
-                                                                            function drawVisualization() {
-                                                                                // Create and populate the data table.
-                                                                                var data = google.visualization.arrayToDataTable([
-                                                                                    ['Transactions', '1st TX', '2nd TX', '3rd TX', '4th TX', '5th TX', '6th TX', '7th TX', '8th TX', '9th TX', '10th TX'],
-                                                                                    ['Total Amount', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9]
-                                                                                ]);                                                                                
-                                                                                
-                                                                                // Create and draw the visualization.
-                                                                                var chart = new google.visualization.ColumnChart(document.getElementById('visualization'));
-                                                                                
-                                                                                var options = {
-                                                                                    title:"Binance Wallet TX Characterization",
-                                                                                    chartArea: {width: '50%'},
-                                                                                    hAxis: {
-                                                                                        title: "Total Amount",
-                                                                                        minValue: 0
-                                                                                    },
-                                                                                    animation: {
-                                                                                        duration: 1000
-                                                                                    },
-                                                                                    vAxis: {                                                                                        
-                                                                                        title: 'TX #'
-                                                                                    }
-                                                                                };                                                                                
-                                                                                
+                                                                            // Create and draw the visualization.
+                                                                            var chart = new google.visualization.ColumnChart(document.getElementById('visualization'));
+                                                                            
+                                                                            var options = {
+                                                                                title:"Binance Wallet TX Characterization",
+                                                                                chartArea: {width: '50%'},
+                                                                                hAxis: {
+                                                                                    title: "Total Amount",
+                                                                                    minValue: 0
+                                                                                },
+                                                                                animation: {
+                                                                                    duration: 1000
+                                                                                },
+                                                                                vAxis: {                                                                                        
+                                                                                    title: 'TX #'
+                                                                                }
+                                                                            };                                                                                
+                                                                            
+                                                                            chart.draw(data, options);
+                                                                            
+                                                                            // you can handle the resizing here - no need to recreate your data and charts from scratch
+                                                                            $(window).resize(function() {
                                                                                 chart.draw(data, options);
-                                                                                
-                                                                                // you can handle the resizing here - no need to recreate your data and charts from scratch
-                                                                                $(window).resize(function() {
-                                                                                    chart.draw(data, options);
-                                                                                });
-                                                                            };
+                                                                            });
+                                                                        };
 
                                                                             google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
 
                                                                             google.charts.setOnLoadCallback(drawVisualization);
-                                                                            google.charts.setOnLoadCallback(drawChart);
+                                                                            //google.charts.setOnLoadCallback(drawChart);
                                                                             google.charts.setOnLoadCallback(drawChart4);
                                                                       
                                                                             function drawChart4() {
