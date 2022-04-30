@@ -853,12 +853,25 @@ $(document)
                                             $(window).resize(function() {
                                                 chart.draw(data, options);
                                             });
+
+                                            $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                                e.preventDefault()
+                                                var tab_name = this.getAttribute('href')
+                                                if (history.pushState) {
+                                                  //trash code
+                                                  if (tab_name === "#tab-table6") {                                                    
+                                                    chart.draw(data, options);
+                                                  }
+                                                  //trash code
+                                                }
+                                              });
                                         };
         
                                             google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
-        
+                                            google.charts.load('current', {packages: ['corechart', 'bar']});
+                                            
+                                            google.charts.setOnLoadCallback(drawBasic);
                                             google.charts.setOnLoadCallback(drawVisualization);
-                                            //google.charts.setOnLoadCallback(drawChart);
                                             google.charts.setOnLoadCallback(drawChart4);
                                       
                                             function drawChart4() {
@@ -899,11 +912,19 @@ $(document)
                                               $(window).resize(function() {
                                                     chart222.draw(data, options222);
                                                 });
+
+                                                $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                                    e.preventDefault()
+                                                    var tab_name = this.getAttribute('href')
+                                                    if (history.pushState) {
+                                                        //trash code
+                                                        if (tab_name === "#tab-table6") {                                                    
+                                                        chart222.draw(data, options222);
+                                                        }
+                                                        //trash code
+                                                    }
+                                                    });
                                             };
-        
-                                            google.charts.load('current', {packages: ['corechart', 'bar']});
-                                            
-                                            google.charts.setOnLoadCallback(drawBasic);
         
                                             function drawBasic() {
         
@@ -943,6 +964,18 @@ $(document)
                                                 $(window).resize(function() {
                                                     chart.draw(data, options);
                                                 });
+
+                                                $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                                    e.preventDefault()
+                                                    var tab_name = this.getAttribute('href')
+                                                    if (history.pushState) {
+                                                      //trash code
+                                                      if (tab_name === "#tab-table6") {                                                    
+                                                        chart.draw(data, options);
+                                                      }
+                                                      //trash code
+                                                    }
+                                                  });
         
         
                                                 };
@@ -2432,6 +2465,15 @@ $(document)
             var tab_name = this.getAttribute('href')
             if (history.pushState) {
               history.pushState(null, null, tab_name)
+              //trash code
+              if (tab_name === "#tab-table6") {
+                
+                //google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
+                //oogle.charts.load('current', {packages: ['corechart', 'bar']});
+
+                //window.location.reload(); //really low quality thing to add but here we are...
+              }
+              //trash code
             }
             else {
               location.hash = tab_name
@@ -2439,8 +2481,10 @@ $(document)
             localStorage.setItem('activeTab', tab_name)
           
             $(this).tab('show');
+
             return false;
           });
+
           $(window).on('popstate', function () {
             var anchor = location.hash ||
               $('a[data-toggle=\'tab\']').first().attr('href');
