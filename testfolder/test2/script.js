@@ -815,11 +815,27 @@ $(document)
                                                                             var data = new google.visualization.DataTable(datatable);
                                                                             // Instantiate and draw our chart, passing in some options.
                                                                             var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
-                                                                            chart.draw(data);
-
                                                                             
+                                                                            chart.draw(data, options);
+                                                                            
+
+                                                                            var options = {
+                                                                                title: 'Binance Wallet TX Characterization',
+                                                                                chartArea: {width: '50%'},
+                                                                                animation: {
+                                                                                    duration: 1000
+                                                                                },
+                                                                                hAxis: {
+                                                                                title: 'Total Amount',
+                                                                                minValue: 0
+                                                                                },
+                                                                                vAxis: {
+                                                                                title: 'TX #'
+                                                                                }
+                                                                            };
+
                                                                             $(window).resize(function() {
-                                                                                chart.draw(data);
+                                                                                chart.draw(data, options);
                                                                             });
 
 
@@ -968,13 +984,10 @@ $(document)
                                                                                 });
                                                                             };
 
-                                                                            google.load('visualization', {packages: ['corechart'], callback: drawVisualization});                                                                            
-                                                                            //google.load("visualization", "1", {packages:["corechart"]});
-                                                                            google.setOnLoadCallback(drawChart);
-                                                                            //google.setOnLoadCallback(drawChart2);
-                                                                            /*google.setOnLoadCallback(drawChart3);*/
+                                                                            google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
 
-                                                                            //google.charts.load('current', {packages:['corechart']});
+                                                                            
+                                                                            google.setOnLoadCallback(drawChart);
                                                                             google.charts.setOnLoadCallback(drawChart4);
                                                                       
                                                                             function drawChart4() {
