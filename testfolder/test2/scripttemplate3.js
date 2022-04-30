@@ -37,7 +37,7 @@ $(document)
                 this.addEventListener("mousewheel", handle, { passive: true });
             }
         };
-        window.alert = function() {};
+        //window.alert = function() {};
 
         var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
         var algochartsapi = 'https://algocharts.net/api/?asset_in=';
@@ -383,7 +383,7 @@ $(document)
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
-                    
+                   //let sanitychecknews0 = await fetch(getJSON(data42070));
                     newstitle0 = data42070.items[0].title;
                     newspubdat0 = data42070.items[0].pubDate;
                     newslink0 = data42070.items[0].link;
@@ -414,7 +414,7 @@ $(document)
                     newstitle9 = data42070.items[9].title;
                     newspubdat9 = data42070.items[9].pubDate;
                     newslink9 = data42070.items[9].link;                                              
-                                        
+                   // return sanitychecknews0;   
                 }
     
             });  
@@ -428,19 +428,28 @@ $(document)
                 } else {
 
                     if (url00 === element) {
+                        let sanitycheck0 = await fetch(url00);
                         tinymanwoof420 = data42071.data/*.toFixed(6)*/;    
+                        return sanitycheck0;                        
                     }
                     if (url01 === element) {
+                        let sanitycheck1 = await fetch(url01);
                         tinymanwoof421 = data42071.data;    
+                        return sanitycheck1;  
                     }
                     if (url02 === element) {
+                        let sanitycheck2 = await fetch(url02);
                         tinymanwoof422 = data42071.data;    
+                        return sanitycheck2;  
                     }
                     if (url03 === element) {
+                        let sanitycheck3 = await fetch(url03);
                         tinymanwoof423 = data42071.data;    
+                        return sanitycheck3;  
                     }                    
                     
                     if (urlalgoexplorer00 === element) {
+                        let sanitycheckalgoexplorer0 = await fetch(urlalgoexplorer00);
                         algoexplorercreatedatround0 = data42071.asset['created-at-round'];    
                         algoexplorercreationtxid0 = data42071.asset['creation-txid'];  
                         algoexplorerdecimals0 = data42071.asset.params['decimals'];
@@ -452,8 +461,10 @@ $(document)
                         algoexplorertotal0 = data42071.asset.params['total'];
                         algoexplorerassettxcounter0 = data42071.asset['asset-tx-counter']; 
                         algoexplorerassetunitname0 = data42071.asset.params['unit-name'];  
+                        return sanitycheckalgoexplorer0;                        
                         }
                     if (urlalgoexplorer01 === element) {
+                        let sanitycheckalgoexplorer1 = await fetch(urlalgoexplorer01);
                         algoexplorercreatedatround1 = data42071.asset['created-at-round'];    
                         algoexplorercreationtxid1 = data42071.asset['creation-txid'];  
                         algoexplorerdecimals1 = data42071.asset.params['decimals'];
@@ -465,8 +476,10 @@ $(document)
                         algoexplorertotal1 = data42071.asset.params['total'];
                         algoexplorerassettxcounter1 = data42071.asset['asset-tx-counter']; 
                         algoexplorerassetunitname1 = data42071.asset.params['unit-name'];  
+                        return sanitycheckalgoexplorer1;    
                         }
                     if (urlalgoexplorer02 === element) {  
+                        let sanitycheckalgoexplorer2 = await fetch(urlalgoexplorer02);
                         algoexplorercreatedatround2 = data42071.asset['created-at-round'];    
                         algoexplorercreationtxid2 = data42071.asset['creation-txid'];  
                         algoexplorerdecimals2 = data42071.asset.params['decimals'];
@@ -478,8 +491,10 @@ $(document)
                         algoexplorertotal2 = data42071.asset.params['total'];
                         algoexplorerassettxcounter2 = data42071.asset['asset-tx-counter']; 
                         algoexplorerassetunitname2 = data42071.asset.params['unit-name'];  
+                        return sanitycheckalgoexplorer2;    
                         }
                     if (urlalgoexplorer03 === element) {  
+                        let sanitycheckalgoexplorer3 = await fetch(urlalgoexplorer03);
                         algoexplorercreatedatround3 = data42071.asset['created-at-round'];    
                         algoexplorercreationtxid3 = data42071.asset['creation-txid'];  
                         algoexplorerdecimals3 = data42071.asset.params['decimals'];
@@ -491,10 +506,12 @@ $(document)
                         algoexplorertotal3 = data42071.asset.params['total'];
                         algoexplorerassettxcounter3 = data42071.asset['asset-tx-counter']; 
                         algoexplorerassetunitname3 = data42071.asset.params['unit-name'];  
+                        return sanitycheckalgoexplorer3;    
                         }                
 
                     if (urlalgowalletexplorer00 === element)
                         {                
+                            let sanitycheckalgowalletexplorer00 = await fetch(urlalgowalletexplorer00);
                             algoexplorerwalletfrom0 = "Binance";   
                             
                             algoexplorerwalletamount0_0 = (data42071[0].amount / 1000000); 
@@ -541,10 +558,11 @@ $(document)
 
 
 
-
+                            return sanitycheckalgowalletexplorer00;   
                         }
                     if (urlalgowalletexplorer01 === element)
                         {
+                            let sanitycheckalgowalletexplorer01 = await fetch(urlalgowalletexplorer01);
                             //console.log(data42071);
                             algoexplorerwalletfrom1 = "AlgoStake - Creator, Manager, Reserve";   
                             algoexplorerwalletamount1_0 = (data42071[0].amount / 1000000); 
@@ -588,10 +606,14 @@ $(document)
                             algoexplorerwalletround1_9 = data42071[9].round; 
                             algoexplorerwallettype1_9 = data42071[9].type;      
                             algoexplorerwalletTXID1_9 = data42071[9].txid;     
+
+                            return sanitycheckalgowalletexplorer01;   
  
                         }
                     if (urlalgowalletexplorer02 === element)
                         {  
+                            let sanitycheckalgowalletexplorer02 = await fetch(urlalgowalletexplorer02);
+
                             algoexplorerwalletfrom2 = "PlanetWatch - Creator, Manager, Reserve";   
                             algoexplorerwalletamount2_0 = (data42071[0].amount / 1000000); 
                             algoexplorerwalletround2_0 = data42071[0].round; 
@@ -635,40 +657,54 @@ $(document)
                             algoexplorerwalletround2_9 = data42071[9].round; 
                             algoexplorerwallettype2_9 = data42071[9].type;      
                             algoexplorerwalletTXID2_9 = data42071[9].txid; 
+
+                            return sanitycheckalgowalletexplorer02;   
  
                         }
                     if (urlalgowalletexplorer03 === element)
                         {  
+                            let sanitycheckalgowalletexplorer03 = await fetch(urlalgowalletexplorer03);
+
                             algoexplorerwalletfrom3 = "BirdBot - Creator, Manager, Reserve";   
                             algoexplorerwalletamount3 = (data42071[0].amount / 1000000);   
                             algoexplorerwalletround3 = data42071[0].round; 
                             algoexplorerwallettype3 = data42071[0].type;      
                             algoexplorerwalletTXID3 = data42071[0].txid;   
+
+                            return sanitycheckalgowalletexplorer03;   
                         }
 
                     if (urlalgowalletamountexplorer00 === element)
                     {                
+                        let sanitycheckalgowalletamountexplorer00 = await fetch(urlalgowalletamountexplorer00);
                         //algoexplorerwalletfrom0 = "Binance";   
                         algoexplorerwalletamountinside0 = (data42071.amount / 1000000);   
-                        //asatokenwalletarray[0] will be used later for identification                        
+                        //asatokenwalletarray[0] will be used later for identification    
+                        return sanitycheckalgowalletamountexplorer00;                     
                     }
                     if (urlalgowalletamountexplorer01 === element)
                     {                
+                        let sanitycheckalgowalletamountexplorer01 = await fetch(urlalgowalletamountexplorer01);
                         //algoexplorerwalletfrom1 = "Etc";   
                         algoexplorerwalletamountinside1 = (data42071.amount / 1000000); 
-                        //asatokenwalletarray[1] will be used later for identification                         
+                        //asatokenwalletarray[1] will be used later for identification      
+                        return sanitycheckalgowalletamountexplorer01;                     
                     }
                     if (urlalgowalletamountexplorer02 === element)
                     {                
+                        let sanitycheckalgowalletamountexplorer02 = await fetch(urlalgowalletamountexplorer02);
                         //algoexplorerwalletfrom0 = "Etc";   
                         algoexplorerwalletamountinside2 = (data42071.amount / 1000000);   
-                        //asatokenwalletarray[2] will be used later for identification                        
+                        //asatokenwalletarray[2] will be used later for identification      
+                        return sanitycheckalgowalletamountexplorer02;                     
                     }
                     if (urlalgowalletamountexplorer03 === element)
                     {                
+                        let sanitycheckalgowalletamountexplorer03 = await fetch(urlalgowalletamountexplorer03);
                         //algoexplorerwalletfrom0 = "Etc";   
                         algoexplorerwalletamountinside3 = (data42071.amount / 1000000);  
-                        //asatokenwalletarray[3] will be used later for identification                        
+                        //asatokenwalletarray[3] will be used later for identification       
+                        return sanitycheckalgowalletamountexplorer03;                        
                     }
 
                 }
@@ -683,6 +719,7 @@ $(document)
                     return $.getJSON(element);
                 } else {
                     if (urlcoingecko00 === element) {
+                        let sanitycheckcoingecko0 = await fetch(urlcoingecko00);
                         coingeckoname0 = 'United States Dollar';   
                         coingeckoprice0 = data42072.market_data.current_price['usd'];     
                         coingeckousdprice0 = (1 / data42072.market_data.current_price['usd']);
@@ -690,30 +727,37 @@ $(document)
                         coingeckopricechange7d0 = data42072.market_data.price_change_percentage_7d*(-1);    
                         coingeckopricechange30d0 = data42072.market_data.price_change_percentage_30d*(-1);  
                         coingeckopricechange1y0 = data42072.market_data.price_change_percentage_1y*(-1);   
+                        return sanitycheckcoingecko0;  
                     }
                     if (urlcoingecko01 === element) {
+                        let sanitycheckcoingecko1 = await fetch(urlcoingecko01);
                         coingeckoname1 = data42072.name;   
                         coingeckoprice1 = (data42072.market_data.current_price['usd'] / coingeckoprice0);     
                         coingeckopricechange24h1 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
                         coingeckopricechange7d1 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
                         coingeckopricechange30d1 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0;  
                         coingeckopricechange1y1 = data42072.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
+                        return sanitycheckcoingecko1;  
                     }
                     if (urlcoingecko02 === element) {
+                        let sanitycheckcoingecko2 = await fetch(urlcoingecko02);
                         coingeckoname2 = data42072.name;   
                         coingeckoprice2 = (data42072.market_data.current_price['usd'] / coingeckoprice0);     
                         coingeckopricechange24h2 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
                         coingeckopricechange7d2 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
                         coingeckopricechange30d2 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
                         coingeckopricechange1y2 = data42072.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
+                        return sanitycheckcoingecko2;  
                     }
                     if (urlcoingecko03 === element) {
+                        let sanitycheckcoingecko3 = await fetch(urlcoingecko03);
                         coingeckoname3 = data42072.name;   
                         coingeckoprice3 = (data42072.market_data.current_price['usd'] / coingeckoprice0);     
                         coingeckopricechange24h3 = data42072.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
                         coingeckopricechange7d3 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;     
                         coingeckopricechange30d3 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
                         coingeckopricechange1y3 = data42072.market_data.price_change_percentage_1y - coingeckopricechange1y0;    
+                        return sanitycheckcoingecko3;  
                     }
                                                  
                                         
@@ -793,14 +837,8 @@ $(document)
                                                                             }
                                                                         ];
 
-                                                                        function drawChart() {
-                                                                            /*var jsonData = $.ajax({
-                                                                            url: "http://82.158.163.34:880/preciosES",
-                                                                            dataType:"json",
-                                                                            async: false
-                                                                            }).responseText;*/
-                                                                            
-                                                                            /*var jsonData=[('Hora','Consumo Estimado'),(0,100),(1,50),(2,50),(3,50),(4,50),(5,50),(6,50),(7,50),(8,100),(9,100),(10,50),(11,50),(12,50),(13,50),(14,50),(15,50),(16,50),(17,50),(18,100),(19,100),(20,150),(21,150),(22,50),(23,100)];*/
+                                                                        /*function drawChart() {
+
                                                                             var datatable = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount0_0}]}, 
                                                                             {"c": [{"v": 1}, {"v": algoexplorerwalletamount0_1}]}, 
                                                                             {"c": [{"v": 2}, {"v": algoexplorerwalletamount0_2}]}, 
@@ -815,150 +853,69 @@ $(document)
                                                                             var data = new google.visualization.DataTable(datatable);
                                                                             // Instantiate and draw our chart, passing in some options.
                                                                             var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
-                                                                            chart.draw(data, {
+                                                                            
+                                                                            chart.draw(data, options);
+                                                                            
+
+                                                                            var options = {
                                                                                 title: 'Binance Wallet TX Characterization',
-                                                                                titleTextStyle: 
-                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
-                                                                                width: '390', 
-                                                                                height: '195',
-                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
-                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
-                                                                                curveType: 'function',
-                                                                                colors: ['#8253E8'],
-                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
-                                                                            });
+                                                                                chartArea: {width: '50%'},
+                                                                                animation: {
+                                                                                    duration: 1000
+                                                                                },
+                                                                                hAxis: {
+                                                                                title: 'Total Amount',
+                                                                                minValue: 0
+                                                                                },
+                                                                                vAxis: {
+                                                                                title: 'TX #'
+                                                                                }
                                                                             };
 
-                                                                        function drawChart2() {
-                                                                            /*var jsonData = $.ajax({
-                                                                            url: "http://82.158.163.34:880/preciosES",
-                                                                            dataType:"json",
-                                                                            async: false
-                                                                            }).responseText;*/
+                                                                            $(window).resize(function() {
+                                                                                chart.draw(data, options);
+                                                                            });
+
+
+                                                                            };*/
+
+                                                                        function drawVisualization() {
+                                                                            // Create and populate the data table.
+                                                                            var data = google.visualization.arrayToDataTable([
+                                                                                ['Transactions', '1st TX', '2nd TX', '3rd TX', '4th TX', '5th TX', '6th TX', '7th TX', '8th TX', '9th TX', '10th TX'],
+                                                                                ['TX #', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9]
+                                                                            ]);                                                                                
                                                                             
-                                                                            /*var jsonData=[('Hora','Consumo Estimado'),(0,100),(1,50),(2,50),(3,50),(4,50),(5,50),(6,50),(7,50),(8,100),(9,100),(10,50),(11,50),(12,50),(13,50),(14,50),(15,50),(16,50),(17,50),(18,100),(19,100),(20,150),(21,150),(22,50),(23,100)];*/
-                                                                            var datatable2 = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount1_0}]}, 
-                                                                            {"c": [{"v": 1}, {"v": algoexplorerwalletamount1_1}]}, 
-                                                                            {"c": [{"v": 2}, {"v": algoexplorerwalletamount1_2}]}, 
-                                                                            {"c": [{"v": 3}, {"v": algoexplorerwalletamount1_3}]}, 
-                                                                            {"c": [{"v": 4}, {"v": algoexplorerwalletamount1_4}]}, 
-                                                                            {"c": [{"v": 5}, {"v": algoexplorerwalletamount1_5}]}, 
-                                                                            {"c": [{"v": 6}, {"v": algoexplorerwalletamount1_6}]}, 
-                                                                            {"c": [{"v": 7}, {"v": algoexplorerwalletamount1_7}]}, 
-                                                                            {"c": [{"v": 8}, {"v": algoexplorerwalletamount1_8}]}, 
-                                                                            {"c": [{"v": 9}, {"v": algoexplorerwalletamount1_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
-                                                                            // Create our data table out of JSON data loaded from server.
-                                                                            var data2 = new google.visualization.DataTable(datatable2);
-                                                                            // Instantiate and draw our chart, passing in some options.
-                                                                            var chart2 = new google.visualization.LineChart(document.getElementById('chart_div3'));
-                                                                            chart2.draw(data2, {
-                                                                                title: 'AlgoStake Wallet TX Characterization',
-                                                                                titleTextStyle: 
-                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
-                                                                                width: '390', 
-                                                                                height: '195',
-                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
-                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
-                                                                                curveType: 'function',
-                                                                                colors: ['#8253E8'],
-                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
-                                                                            });
-                                                                            };
+                                                                            // Create and draw the visualization.
+                                                                            var chart = new google.visualization.ColumnChart(document.getElementById('visualization'));
                                                                             
-                                                                        /*function drawChart3() {
-
-                                                                            var datatable3 = {"rows": [{"c": [{"v": 0}, {"v": algoexplorerwalletamount2_0}]}, 
-                                                                            {"c": [{"v": 1}, {"v": algoexplorerwalletamount2_1}]}, 
-                                                                            {"c": [{"v": 2}, {"v": algoexplorerwalletamount2_2}]}, 
-                                                                            {"c": [{"v": 3}, {"v": algoexplorerwalletamount2_3}]}, 
-                                                                            {"c": [{"v": 4}, {"v": algoexplorerwalletamount2_4}]}, 
-                                                                            {"c": [{"v": 5}, {"v": algoexplorerwalletamount2_5}]}, 
-                                                                            {"c": [{"v": 6}, {"v": algoexplorerwalletamount2_6}]}, 
-                                                                            {"c": [{"v": 7}, {"v": algoexplorerwalletamount2_7}]}, 
-                                                                            {"c": [{"v": 8}, {"v": algoexplorerwalletamount2_8}]}, 
-                                                                            {"c": [{"v": 9}, {"v": algoexplorerwalletamount2_9}]} ], "cols": [{"type": "number", "label": "Wallet #"}, {"type": "number", "label": "TX Amount"}]}
-                                                                            // Create our data table out of JSON data loaded from server.
-                                                                            var data3 = new google.visualization.DataTable(datatable3);
-                                                                            // Instantiate and draw our chart, passing in some options.
-                                                                            var chart3 = new google.visualization.LineChart(document.getElementById('chart_div4'));
-                                                                            chart3.draw(data3, {
-                                                                                title: 'Planet Watch Wallet TX Characterization',
-                                                                                titleTextStyle: 
-                                                                                    {color: '#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'true'},
-                                                                                width: '390', 
-                                                                                height: '195',
-                                                                                vAxis: {title:'Total Algorand', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindow: {min: '0'}}, 
-                                                                                hAxis: {title:'Algorand TXs', textStyle:{color:'#000000', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, titleTextStyle:{color:'#8253E8', fontName: 'Roboto', fontSize: '16', bold: 'true', italic: 'false'}, viewWindowMode:'pretty'},
-                                                                                curveType: 'function',
-                                                                                colors: ['#8253E8'],
-                                                                                backgroundColor: {stroke: '#000000', strokeWidth: '5' ,fill: '#C7FFFF'},
+                                                                            var options = {
+                                                                                title:"Binance Wallet TX Characterization",
+                                                                                chartArea: {width: '50%'},
+                                                                                hAxis: {
+                                                                                    title: "Transactions",
+                                                                                    minValue: 0
+                                                                                },
+                                                                                animation: {
+                                                                                    duration: 1000
+                                                                                },
+                                                                                vAxis: {                                                                                        
+                                                                                    title: 'Total Amount'
+                                                                                }
+                                                                            };                                                                                
+                                                                            
+                                                                            chart.draw(data, options);
+                                                                            
+                                                                            // you can handle the resizing here - no need to recreate your data and charts from scratch
+                                                                            $(window).resize(function() {
+                                                                                chart.draw(data, options);
                                                                             });
-                                                                            }*/
+                                                                        };
 
-                                                                            function drawVisualization() {
-                                                                                // Create and populate the data table.
-                                                                                var data = google.visualization.arrayToDataTable([
-                                                                                    ['Tracker', 'Binance', 'AlgoStake', 'PlanetWatch'],
-                                                                                    ['1st TX', algoexplorerwalletamount0_0, algoexplorerwalletamount1_0, algoexplorerwalletamount2_0],
-                                                                                    ['2nd TX', algoexplorerwalletamount0_1, algoexplorerwalletamount1_1, algoexplorerwalletamount2_1],
-                                                                                    ['3rd TX', algoexplorerwalletamount0_2, algoexplorerwalletamount1_2, algoexplorerwalletamount2_2]
-                                                                                ]);
-                                                                                
-                                                                                // use a DataView to 0-out all the values in the data set for the initial draw
-                                                                                var view = new google.visualization.DataView(data);
-                                                                                view.setColumns([0, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(1),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(2),
-                                                                                    calc: function () {return 0;}
-                                                                                }, {
-                                                                                    type: 'number',
-                                                                                    label: data.getColumnLabel(3),
-                                                                                    calc: function () {return 0;}
-                                                                                }]);
-                                                                                
-                                                                                // Create and draw the visualization.
-                                                                                var chart = new google.visualization.ColumnChart(document.getElementById('visualization'));
-                                                                                
-                                                                                var options = {
-                                                                                    title:"Wallet TX vs Wallet TX vs Wallet TX",
-                                                                                    legend: 'bottom',
-                                                                                    hAxis: {
-                                                                                        title: ""
-                                                                                    },
-                                                                                    animation: {
-                                                                                        duration: 1000
-                                                                                    },
-                                                                                    vAxis: {
-                                                                                        // set these values to make the initial animation smoother
-                                                                                        minValue: 0,
-                                                                                        maxValue: 600
-                                                                                    }
-                                                                                };
-                                                                                
-                                                                                var runOnce = google.visualization.events.addListener(chart, 'ready', function () {
-                                                                                    google.visualization.events.removeListener(runOnce);
-                                                                                    chart.draw(data, options);
-                                                                                });
-                                                                                
-                                                                                chart.draw(view, options);
-                                                                                
-                                                                                // you can handle the resizing here - no need to recreate your data and charts from scratch
-                                                                                $(window).resize(function() {
-                                                                                    chart.draw(data, options);
-                                                                                });
-                                                                            };
+                                                                            google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
 
-                                                                            google.load('visualization', '1', {packages: ['corechart'], callback: drawVisualization});                                                                            
-                                                                            //google.load("visualization", "1", {packages:["corechart"]});
-                                                                            google.setOnLoadCallback(drawChart);
-                                                                            google.setOnLoadCallback(drawChart2);
-                                                                            /*google.setOnLoadCallback(drawChart3);*/
-
-                                                                            google.charts.load('current', {packages:['corechart']});
+                                                                            google.charts.setOnLoadCallback(drawVisualization);
+                                                                            //google.charts.setOnLoadCallback(drawChart);
                                                                             google.charts.setOnLoadCallback(drawChart4);
                                                                       
                                                                             function drawChart4() {
@@ -968,18 +925,84 @@ $(document)
                                                                                 ['1',     algoexplorerwalletamount0_0],
                                                                                 ['2',      algoexplorerwalletamount0_1],
                                                                                 ['3',  algoexplorerwalletamount0_2],
-                                                                                ['3', algoexplorerwalletamount0_3],
-                                                                                ['4',    algoexplorerwalletamount0_4]
+                                                                                ['4', algoexplorerwalletamount0_3],
+                                                                                ['5',    algoexplorerwalletamount0_4],
+                                                                                ['6',    algoexplorerwalletamount0_5],
+                                                                                ['7',    algoexplorerwalletamount0_6],
+                                                                                ['8',    algoexplorerwalletamount0_7],
+                                                                                ['9',    algoexplorerwalletamount0_8],
+                                                                                ['10',    algoexplorerwalletamount0_9]
                                                                               ]);
                                                                       
                                                                               var options222 = {
-                                                                                title: 'Binance Transaction Totals'
+                                                                                title:"Binance Wallet TX Characterization",
+                                                                                chartArea: {width: '50%'},
+                                                                                animation: {
+                                                                                    duration: 1000
+                                                                                },
+                                                                                hAxis: {
+                                                                                    title: 'Amount',
+                                                                                    minValue: 0
+                                                                                    },
+                                                                                    vAxis: {
+                                                                                    title: 'Wallet TX'
+                                                                                    }
                                                                               };
                                                                       
                                                                               var chart222 = new google.visualization.PieChart($('#piechart')[0]);
                                                                       
                                                                               chart222.draw(data, options222);
+
+                                                                              $(window).resize(function() {
+                                                                                    chart222.draw(data, options222);
+                                                                                });
                                                                             };
+
+                                                                            google.charts.load('current', {packages: ['corechart', 'bar']});
+                                                                            
+                                                                            google.charts.setOnLoadCallback(drawBasic);
+
+                                                                            function drawBasic() {
+
+                                                                                var data = google.visualization.arrayToDataTable([
+                                                                                    ['TX #', 'Wallet Amount',],
+                                                                                    ['TX #1', algoexplorerwalletamount0_0],
+                                                                                    ['TX #2', algoexplorerwalletamount0_1],
+                                                                                    ['TX #3', algoexplorerwalletamount0_2],
+                                                                                    ['TX #4', algoexplorerwalletamount0_3],
+                                                                                    ['TX #5', algoexplorerwalletamount0_4],
+                                                                                    ['TX #6', algoexplorerwalletamount0_5],
+                                                                                    ['TX #7', algoexplorerwalletamount0_6],
+                                                                                    ['TX #8', algoexplorerwalletamount0_7],
+                                                                                    ['TX #9', algoexplorerwalletamount0_8],
+                                                                                    ['TX #10', algoexplorerwalletamount0_9]
+                                                                                ]);
+
+                                                                                var options = {
+                                                                                    title: 'Binance Wallet TX Characterization',
+                                                                                    chartArea: {width: '50%'},
+                                                                                    animation: {
+                                                                                        duration: 1000
+                                                                                    },
+                                                                                    hAxis: {
+                                                                                    title: 'Total Amount',
+                                                                                    minValue: 0
+                                                                                    },
+                                                                                    vAxis: {
+                                                                                    title: 'TX #'
+                                                                                    }
+                                                                                };
+
+                                                                                var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+                                                                                chart.draw(data, options);
+
+                                                                                $(window).resize(function() {
+                                                                                    chart.draw(data, options);
+                                                                                });
+
+
+                                                                                };
                                                                             
                                                                 
                                                                         var jsObj1 = [
