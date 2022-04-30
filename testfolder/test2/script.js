@@ -839,7 +839,7 @@ $(document)
                                                                             // Create and populate the data table.
                                                                             var data = google.visualization.arrayToDataTable([
                                                                                 ['Transactions', '1st TX', '2nd TX', '3rd TX', '4th TX', '5th TX', '6th TX', '7th TX', '8th TX', '9th TX', '10th TX'],
-                                                                                ['Total Amount', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9]
+                                                                                ['TX #', algoexplorerwalletamount0_0, algoexplorerwalletamount0_1, algoexplorerwalletamount0_2, algoexplorerwalletamount0_3, algoexplorerwalletamount0_4, algoexplorerwalletamount0_5, algoexplorerwalletamount0_6, algoexplorerwalletamount0_7, algoexplorerwalletamount0_8, algoexplorerwalletamount0_9]
                                                                             ]);                                                                                
                                                                             
                                                                             // Create and draw the visualization.
@@ -849,14 +849,14 @@ $(document)
                                                                                 title:"Binance Wallet TX Characterization",
                                                                                 chartArea: {width: '50%'},
                                                                                 hAxis: {
-                                                                                    title: "Total Amount",
+                                                                                    title: "Transactions",
                                                                                     minValue: 0
                                                                                 },
                                                                                 animation: {
                                                                                     duration: 1000
                                                                                 },
                                                                                 vAxis: {                                                                                        
-                                                                                    title: 'TX #'
+                                                                                    title: 'Total Amount'
                                                                                 }
                                                                             };                                                                                
                                                                             
