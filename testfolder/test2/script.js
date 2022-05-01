@@ -866,6 +866,25 @@ $(document)
                                                 }
                                               });
                                         };
+
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href')
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table6") {      
+                                                /*google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
+                                                google.charts.load('current', {packages: ['corechart', 'bar']});
+                                                
+                                                google.charts.setOnLoadCallback(drawBasic);
+                                                google.charts.setOnLoadCallback(drawVisualization);
+                                                google.charts.setOnLoadCallback(drawChart4);*/
+                                                var myTable = $('#example6').DataTable().clear().rows.add(jsObj5).draw();    
+                                                //console.log('woof!');     
+                                              }
+                                              //trash code
+                                            }
+                                          });
         
                                             google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
                                             google.charts.load('current', {packages: ['corechart', 'bar']});
@@ -2555,13 +2574,13 @@ $(document)
             if (history.pushState) {
               history.pushState(null, null, tab_name)
               //trash code
-              if (tab_name === "#tab-table6") {
+              /*if (tab_name === "#tab-table6") {
                 
                 //google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
                 //oogle.charts.load('current', {packages: ['corechart', 'bar']});
 
                 //window.location.reload(); //really low quality thing to add but here we are...
-              }
+              }*/
               //trash code
             }
             else {
