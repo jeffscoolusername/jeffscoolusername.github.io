@@ -17,7 +17,7 @@ $(document)
         };
 
         //Hush
-        jQuery.event.special.touchstart = {
+        /*jQuery.event.special.touchstart = {
             setup: function( _, ns, handle ) {
                 this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
             }
@@ -37,7 +37,7 @@ $(document)
                 this.addEventListener("mousewheel", handle, { passive: true });
             }
         };
-        window.alert = function() {};
+        window.alert = function() {};*/
 
         var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
         var algochartsapi = 'https://algocharts.net/api/?asset_in=';
@@ -856,7 +856,7 @@ $(document)
 
                                             $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                                 e.preventDefault()
-                                                var tab_name = this.getAttribute('href')
+                                                var tab_name = this.getAttribute('href');
                                                 if (history.pushState) {
                                                   //trash code
                                                   if (tab_name === "#tab-table6") {                                                    
@@ -869,7 +869,7 @@ $(document)
 
                                         $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                             e.preventDefault()
-                                            var tab_name = this.getAttribute('href')
+                                            var tab_name = this.getAttribute('href');
                                             if (history.pushState) {
                                               //trash code              
                                               if (tab_name === "#tab-table6") {      
@@ -879,7 +879,7 @@ $(document)
                                                 google.charts.setOnLoadCallback(drawBasic);
                                                 google.charts.setOnLoadCallback(drawVisualization);
                                                 google.charts.setOnLoadCallback(drawChart4);*/
-                                                var myTable = $('#example6').DataTable().clear().rows.add(jsObj5).draw();    
+                                                $('#example6').DataTable().clear().rows.add(jsObj5).draw();    
                                                 //console.log('woof!');     
                                               }
                                               //trash code
@@ -934,7 +934,7 @@ $(document)
 
                                                 $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                                     e.preventDefault()
-                                                    var tab_name = this.getAttribute('href')
+                                                    var tab_name = this.getAttribute('href');
                                                     if (history.pushState) {
                                                         //trash code
                                                         if (tab_name === "#tab-table6") {                                                    
@@ -986,7 +986,7 @@ $(document)
 
                                                 $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                                     e.preventDefault()
-                                                    var tab_name = this.getAttribute('href')
+                                                    var tab_name = this.getAttribute('href');
                                                     if (history.pushState) {
                                                       //trash code
                                                       if (tab_name === "#tab-table6") {                                                    
@@ -1564,7 +1564,24 @@ $(document)
                                                     'data': 'Created at Round'
                                                 }
                                             ]
-                                        });  
+                                        })
+
+                                        $('#example1').DataTable().clear().rows.add(jsObj0).draw();    
+                                        
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href');
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table1") {      
+                                                $('#example1').DataTable().clear().rows.add(jsObj0).draw();    
+                                                //console.log('woof!');     
+                                              }
+                                              //trash code
+                                            }
+                                          });
+
+                                        ;  
                                 
                                         var exampleTable2 = $('#example2')
                                         .DataTable({
@@ -1684,14 +1701,16 @@ $(document)
                                                 }
                                             ]
                                         })
+
+                                        $('#example2').DataTable().clear().rows.add(jsObj1).draw();   
                                         
                                         $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                             e.preventDefault()
-                                            var tab_name = this.getAttribute('href')
+                                            var tab_name = this.getAttribute('href');
                                             if (history.pushState) {
                                               //trash code              
                                               if (tab_name === "#tab-table2") {      
-                                                var myTable = $('#example2').DataTable().clear().rows.add(jsObj1).draw();    
+                                                $('#example2').DataTable().clear().rows.add(jsObj1).draw();    
                                                 //console.log('woof!');     
                                               }
                                               //trash code
@@ -1831,14 +1850,16 @@ $(document)
                                                 }
                                             ]
                                         })
+
+                                        $('#example3').DataTable().clear().rows.add(jsObj2).draw();   
                                         
                                         $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                             e.preventDefault()
-                                            var tab_name = this.getAttribute('href')
+                                            var tab_name = this.getAttribute('href');
                                             if (history.pushState) {
                                               //trash code              
                                               if (tab_name === "#tab-table3") {      
-                                                var myTable = $('#example3').DataTable().clear().rows.add(jsObj2).draw();    
+                                              $('#example3').DataTable().clear().rows.add(jsObj2).draw();    
                                                 //console.log('woof!');     
                                               }
                                               //trash code
@@ -2032,14 +2053,16 @@ $(document)
                                                 }
                                             ]
                                         })
+
+                                        $('#example4').DataTable().clear().rows.add(jsObj3).draw();    
                                         
                                         $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                             e.preventDefault()
-                                            var tab_name = this.getAttribute('href')
+                                            var tab_name = this.getAttribute('href');
                                             if (history.pushState) {
                                               //trash code              
                                               if (tab_name === "#tab-table4") {      
-                                                var myTable = $('#example4').DataTable().clear().rows.add(jsObj3).draw();    
+                                                $('#example4').DataTable().clear().rows.add(jsObj3).draw();    
                                                 //console.log('woof!');     
                                               }
                                               //trash code
@@ -2164,14 +2187,24 @@ $(document)
                                                 }
                                             ]
                                         })
+
+                                        /*let response = await fetch(a);
+                                        response = await response.json(); // or text etc..
+                                        console.log(a);*/
+
+                                        //work in progress
+                                        /*await fetch(newslink9);
+                                        console.log(newslink9);*/
+
+                                        $('#example5').DataTable().clear().rows.add(jsObj4).draw();    
                                         
                                         $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                             e.preventDefault()
-                                            var tab_name = this.getAttribute('href')
+                                            var tab_name = this.getAttribute('href');
                                             if (history.pushState) {
                                               //trash code              
                                               if (tab_name === "#tab-table5") {      
-                                                var myTable = $('#example5').DataTable().clear().rows.add(jsObj4).draw();    
+                                                $('#example5').DataTable().clear().rows.add(jsObj4).draw();    
                                                 //console.log('woof!');     
                                               }
                                               //trash code
@@ -2310,11 +2343,11 @@ $(document)
                                         
                                         $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                             e.preventDefault()
-                                            var tab_name = this.getAttribute('href')
+                                            var tab_name = this.getAttribute('href');
                                             if (history.pushState) {
                                               //trash code              
                                               if (tab_name === "#tab-table6") {      
-                                                var myTable = $('#example6').DataTable().clear().rows.add(jsObj5).draw();    
+                                                $('#example6').DataTable().clear().rows.add(jsObj5).draw();    
                                                 //console.log('woof!');     
                                               }
                                               //trash code
@@ -2442,14 +2475,16 @@ $(document)
                                                 }                         
                                             ]
                                         })
+
+                                        $('#example7').DataTable().clear().rows.add(jsObj6).draw();  
                                         
                                         $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                                             e.preventDefault()
-                                            var tab_name = this.getAttribute('href')
+                                            var tab_name = this.getAttribute('href');
                                             if (history.pushState) {
                                               //trash code              
                                               if (tab_name === "#tab-table7") {      
-                                                var myTable = $('#example7').DataTable().clear().rows.add(jsObj6).draw();         
+                                                $('#example7').DataTable().clear().rows.add(jsObj6).draw();         
                                               }
                                               //trash code
                                             }
@@ -2570,7 +2605,7 @@ $(document)
           
           $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
             e.preventDefault()
-            var tab_name = this.getAttribute('href')
+            var tab_name = this.getAttribute('href');
             if (history.pushState) {
               history.pushState(null, null, tab_name)
               //trash code
