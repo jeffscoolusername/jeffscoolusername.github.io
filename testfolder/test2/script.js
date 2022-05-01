@@ -1959,6 +1959,7 @@ $(document)
                                                         }
                                                 },
                                             colReorder: true,
+                                            "order": [[ 1, "desc" ]],
                                             paging: false,
                                             select: {
                                                 style: 'multi'
@@ -2304,7 +2305,7 @@ $(document)
                                                         }
                                                 },
                                             colReorder: true,
-                                            "order": [[ 2, "desc" ]],
+                                            "order": [[ 1, "desc" ]],
                                             paging: false,
                                             select: {
                                                 style: 'multi'
@@ -2446,7 +2447,6 @@ $(document)
                                                             }
                                                         }
                                                 },
-                                            rowReorder: true,
                                             colReorder: true,
                                             "order": [[ 1, "desc" ]],
                                             paging: false,
