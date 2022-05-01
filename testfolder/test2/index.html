@@ -3044,7 +3044,23 @@
 
                 });
 
-            });
+            })
+            
+            //completely unecessary due to the current setup
+            /*$('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href')
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table1") {      
+                                                var myTable = $('#example1').DataTable().clear().rows.add(jsObj0).draw();    
+                                                console.log('woof!');     
+                                              }
+                                              //trash code
+                                            }
+                                          });*/
+            
+            ;
 
             $('#example0 tfoot th').each( function () {
                 var title = $(this).text();
