@@ -1664,7 +1664,22 @@ $(document)
                                                     'data': 'Default Frozen'
                                                 }
                                             ]
-                                        }); 
+                                        })
+                                        
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href')
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table2") {      
+                                                var myTable = $('#example2').DataTable().clear().rows.add(jsObj1).draw();    
+                                                //console.log('woof!');     
+                                              }
+                                              //trash code
+                                            }
+                                          });
+
+                                        ; 
                                 
                                         var exampleTable3 = $('#example3')
                                         .DataTable({
@@ -1796,7 +1811,22 @@ $(document)
                                                         }
                                                 }
                                             ]
-                                        }); 
+                                        })
+                                        
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href')
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table3") {      
+                                                var myTable = $('#example3').DataTable().clear().rows.add(jsObj2).draw();    
+                                                //console.log('woof!');     
+                                              }
+                                              //trash code
+                                            }
+                                          });
+                                        
+                                        ; 
                                 
                                         var exampleTable4 = $('#example4')
                                         .DataTable({
@@ -1982,7 +2012,22 @@ $(document)
                                                     }
                                                 }
                                             ]
-                                        }); 
+                                        })
+                                        
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href')
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table4") {      
+                                                var myTable = $('#example4').DataTable().clear().rows.add(jsObj3).draw();    
+                                                //console.log('woof!');     
+                                              }
+                                              //trash code
+                                            }
+                                          });                                        
+                                        
+                                        ; 
                                 
                                         var exampleTable5 = $('#example5')
                                         .DataTable({
@@ -2099,7 +2144,22 @@ $(document)
                                                         }
                                                 }
                                             ]
-                                        }); 
+                                        })
+                                        
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href')
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table5") {      
+                                                var myTable = $('#example5').DataTable().clear().rows.add(jsObj4).draw();    
+                                                //console.log('woof!');     
+                                              }
+                                              //trash code
+                                            }
+                                          });
+                                        
+                                        ; 
                                 
                                         var exampleTable6 = $('#example6')
                                         .DataTable({
@@ -2227,7 +2287,22 @@ $(document)
                                                         }
                                                 }                         
                                             ]
-                                        });    
+                                        })
+                                        
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href')
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table6") {      
+                                                var myTable = $('#example6').DataTable().clear().rows.add(jsObj5).draw();    
+                                                //console.log('woof!');     
+                                              }
+                                              //trash code
+                                            }
+                                          });
+                                        
+                                        ;    
         
                                         var exampleTable7 = $('#example7')
                                         .DataTable({
@@ -2347,7 +2422,21 @@ $(document)
                                                         }
                                                 }                         
                                             ]
-                                        });    
+                                        })
+                                        
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href')
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table7") {      
+                                                var myTable = $('#example7').DataTable().clear().rows.add(jsObj6).draw();         
+                                              }
+                                              //trash code
+                                            }
+                                          });
+                                        
+                                        ;    
                                     }
                                 });  
                             }
