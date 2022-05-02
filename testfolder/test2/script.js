@@ -83,36 +83,36 @@ $(document)
 
         const a = ["https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3Dalgorand%26hl%3Den-US%26gl%3DUS%26ceid%3DUS%3Aen"];
 
-        var newstitle0 = 123456789;
-        var newspubdat0 = 123456789;
-        var newslink0 = 123456789;
-        var newstitle1 = 123456789;
-        var newspubdat1 = 123456789;
-        var newslink1 = 123456789;
-        var newstitle2 = 123456789;
-        var newspubdat2 = 123456789;
-        var newslink2 = 123456789;
-        var newstitle3 = 123456789;
-        var newspubdat3 = 123456789;
-        var newslink3 = 123456789;
-        var newstitle4 = 123456789;
-        var newspubdat4 = 123456789;
-        var newslink4 = 123456789;
-        var newstitle5 = 123456789;
-        var newspubdat5 = 123456789;
-        var newslink5 = 123456789;
-        var newstitle6 = 123456789;
-        var newspubdat6 = 123456789;
-        var newslink6 = 123456789;
-        var newstitle7 = 123456789;
-        var newspubdat7 = 123456789;
-        var newslink7 = 123456789;
-        var newstitle8 = 123456789;
-        var newspubdat8 = 123456789;
-        var newslink8 = 123456789;
-        var newstitle9 = 123456789;
-        var newspubdat9 = 123456789;
-        var newslink9 = 123456789;            
+        var newstitle0 = 0;
+        var newspubdat0 = 0;
+        var newslink0 = 0;
+        var newstitle1 = 0;
+        var newspubdat1 = 0;
+        var newslink1 = 0;
+        var newstitle2 = 0;
+        var newspubdat2 = 0;
+        var newslink2 = 0;
+        var newstitle3 = 0;
+        var newspubdat3 = 0;
+        var newslink3 = 0;
+        var newstitle4 = 0;
+        var newspubdat4 = 0;
+        var newslink4 = 0;
+        var newstitle5 = 0;
+        var newspubdat5 = 0;
+        var newslink5 = 0;
+        var newstitle6 = 0;
+        var newspubdat6 = 0;
+        var newslink6 = 0;
+        var newstitle7 = 0;
+        var newspubdat7 = 0;
+        var newslink7 = 0;
+        var newstitle8 = 0;
+        var newspubdat8 = 0;
+        var newslink8 = 0;
+        var newstitle9 = 0;
+        var newspubdat9 = 0;
+        var newslink9 = 0;            
 
         var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];       
         var unusedasatokenarray = ['237913743', '307329013', '257805044', '276461096', '306034694', '287504952', '310079703', '284090786'];
@@ -375,10 +375,10 @@ $(document)
         var algoexplorerwallettype3 = 0;      
         var algoexplorerwalletTXID3= 0; 
 
-        var algoexplorerwalletamountinside0 = 0;  
-        var algoexplorerwalletamountinside1 = 0;  
-        var algoexplorerwalletamountinside2 = 0;  
-        var algoexplorerwalletamountinside3 = 0;  
+        var algoexplorerwalletamountinside0  = 123456789; 
+        var algoexplorerwalletamountinside1  = 123456789; 
+        var algoexplorerwalletamountinside2  = 123456789; 
+        var algoexplorerwalletamountinside3  = 123456789; 
 
         //#region old news crawls
         /*for (const element of a) { // You can use `let` instead of `const` if you like
