@@ -375,10 +375,10 @@ $(document)
         var algoexplorerwallettype3 = 0;      
         var algoexplorerwalletTXID3= 0; 
 
-        var algoexplorerwalletamountinside0  = 123456789; 
-        var algoexplorerwalletamountinside1  = 123456789; 
-        var algoexplorerwalletamountinside2  = 123456789; 
-        var algoexplorerwalletamountinside3  = 123456789; 
+        var algoexplorerwalletamountinside0 = 0;  
+        var algoexplorerwalletamountinside1 = 0;  
+        var algoexplorerwalletamountinside2 = 0;  
+        var algoexplorerwalletamountinside3 = 0;  
 
         //#region old news crawls
         /*for (const element of a) { // You can use `let` instead of `const` if you like
