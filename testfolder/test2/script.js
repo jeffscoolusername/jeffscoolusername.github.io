@@ -1870,8 +1870,7 @@ $(document)
                                 
                                         var exampleTable4 = $('#example4')
                                         .DataTable({
-                                            ajax: 'JSON3',
-                                            'processing': true,
+                                            data: jsObj3,
                                             stateSave: true,
                                             dom: 'Bfrtip',
                                             initComplete: function () {
