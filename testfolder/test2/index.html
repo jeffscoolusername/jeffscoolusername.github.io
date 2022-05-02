@@ -96,6 +96,9 @@
             <li>
                 <a href="#tab-table7" data-toggle="tab">Algo Whale Tracker</a>
             </li> 
+            <li>
+                <a href="#tab-table8" data-toggle="tab">External Text Data File</a>
+            </li> 
         </ul>
         <div class="tab-content">
             <div class="tab-pane" id="tab-table0">                
@@ -2900,6 +2903,30 @@
                     </tfoot>
                 </table>
             </div>
+            <div class="tab-pane" id="tab-table8">
+                <table id="example8" role="table" class="table table-striped table-bordered hover" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Extn.</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Extn.</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </div>
         <section class="footer">
             <div class="social">
@@ -3098,6 +3125,11 @@
             } );
 
             $('#example7 tfoot th').each( function () {
+                var title = $(this).text();
+                $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+            } );
+
+            $('#example8 tfoot th').each( function () {
                 var title = $(this).text();
                 $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
             } );
