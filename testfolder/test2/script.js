@@ -390,6 +390,8 @@ $(document)
                     const response = await fetch(element); //duct tape and chicken wire fix
                     const datafromresponse = await response.json(); //duct tape and chicken wire fix
 
+                    //console.log(datafromresponse.items[0].title);
+
                     newstitle0 = data42070.items[0].title;
                     newspubdat0 = data42070.items[0].pubDate;
                     newslink0 = data42070.items[0].link;
@@ -461,6 +463,7 @@ $(document)
                         algoexplorertotal0 = data42071.asset.params['total'];
                         algoexplorerassettxcounter0 = data42071.asset['asset-tx-counter']; 
                         algoexplorerassetunitname0 = data42071.asset.params['unit-name'];  
+                        //console.log(datafromresponse.asset.params['total']);
                         }
                     if (urlalgoexplorer01 === element) {
                         algoexplorercreatedatround1 = data42071.asset['created-at-round'];    
@@ -547,9 +550,7 @@ $(document)
                             algoexplorerwalletround0_9 = data42071[9].round; 
                             algoexplorerwallettype0_9 = data42071[9].type;      
                             algoexplorerwalletTXID0_9 = data42071[9].txid;        
-
-
-
+                            //console.log(datafromresponse[9].txid);
 
                         }
                     if (urlalgowalletexplorer01 === element)
@@ -659,7 +660,9 @@ $(document)
                     {                
                         //algoexplorerwalletfrom0 = "Binance";   
                         algoexplorerwalletamountinside0 = (data42071.amount / 1000000);   
-                        //asatokenwalletarray[0] will be used later for identification                        
+                        //asatokenwalletarray[0] will be used later for identification       
+                        //console.log(datafromresponse.amount / 1000000);
+                                         
                     }
                     if (urlalgowalletamountexplorer01 === element)
                     {                
@@ -702,7 +705,8 @@ $(document)
                         coingeckopricechange24h0 = data42072.market_data.price_change_percentage_24h*(-1);            
                         coingeckopricechange7d0 = data42072.market_data.price_change_percentage_7d*(-1);    
                         coingeckopricechange30d0 = data42072.market_data.price_change_percentage_30d*(-1);  
-                        coingeckopricechange1y0 = data42072.market_data.price_change_percentage_1y*(-1);   
+                        coingeckopricechange1y0 = data42072.market_data.price_change_percentage_1y*(-1); 
+                        //console.log(datafromresponse.market_data.current_price['usd']);  
                     }
                     if (urlcoingecko01 === element) {
                         coingeckoname1 = data42072.name;   
