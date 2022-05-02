@@ -81,7 +81,7 @@ $(document)
         var coingeckopricechange30d3 = '';
         var coingeckopricechange1y3 = '';
 
-        const a = ["https://api.rss2json.com/v1/api.json?rss_url=https://news.google.com/rss/search?q=algorand&hl=en-US&gl=US&ceid=US:en"];
+        const a = ["https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3Dalgorand%26hl%3Den-US%26gl%3DUS%26ceid%3DUS%3Aen"];
 
         var newstitle0 = 0;
         var newspubdat0 = 0;
