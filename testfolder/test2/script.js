@@ -768,7 +768,7 @@ $(document)
                                                             if (err !== null) {
                                                                 return $.getJSON(urlalgoexplorerunused01);
                                                             } else {
-                                                                getJSON(urlalgoexplorerunused00, /*async*/ function(err, dataunused0) {
+                                                                getJSON(urlalgoexplorerunused00, /*async*/ async function(err, dataunused0) {
                                                                     if (err !== null) {
                                                                         return $.getJSON(urlalgoexplorerunused00);
                                                                     } else {
@@ -777,7 +777,7 @@ $(document)
                                                                             fetch(a[0]).then(resp => resp.json()),
                                                                             fetch(b[0]).then(resp => resp.json()),
                                                                             fetch(c[0]).then(resp => resp.json()),
-                                                                          ]).then(console.log)
+                                                                          ]).then(console.log)*/
                                                         
                                                                         const responsea = await fetch(a[0]); //duct tape and chicken wire fix
                                                                         const datafromresponsea = await responsea.json(); //duct tape and chicken wire fix
