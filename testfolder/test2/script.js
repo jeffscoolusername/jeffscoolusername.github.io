@@ -691,6 +691,10 @@ $(document)
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {                    
+
+                    const response = await fetch(element); //duct tape and chicken wire fix
+                    const datafromresponse = await response.json(); //duct tape and chicken wire fix
+                    
                     if (urlcoingecko00 === element) {
                         coingeckoname0 = 'United States Dollar';   
                         coingeckoprice0 = data42072.market_data.current_price['usd'];     
@@ -723,8 +727,7 @@ $(document)
                         coingeckopricechange7d3 = data42072.market_data.price_change_percentage_7d - coingeckopricechange7d0;     
                         coingeckopricechange30d3 = data42072.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
                         coingeckopricechange1y3 = data42072.market_data.price_change_percentage_1y - coingeckopricechange1y0;    
-                    }
-                                                 
+                    }                                                 
                                         
                 }
     
