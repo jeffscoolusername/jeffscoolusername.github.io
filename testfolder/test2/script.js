@@ -387,6 +387,9 @@ $(document)
                     return $.getJSON(element);
                 } else {
                     
+                    const response = await fetch(element); //duct-tape and chicken wire fix
+                    await response.json(); //duct-tape and chicken wire fix
+
                     newstitle0 = data42070.items[0].title;
                     newspubdat0 = data42070.items[0].pubDate;
                     newslink0 = data42070.items[0].link;
@@ -429,6 +432,9 @@ $(document)
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
+
+                    const response = await fetch(element); //duct-tape and chicken wire fix
+                    await response.json(); //duct-tape and chicken wire fix
 
                     if (url00 === element) {
                         tinymanwoof420 = data42071.data/*.toFixed(6)*/;    
@@ -685,6 +691,8 @@ $(document)
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
+                    const response = await fetch(element); //duct-tape and chicken wire fix
+                    await response.json(); //duct-tape and chicken wire fix
                     if (urlcoingecko00 === element) {
                         coingeckoname0 = 'United States Dollar';   
                         coingeckoprice0 = data42072.market_data.current_price['usd'];     
@@ -2489,6 +2497,146 @@ $(document)
                                               //trash code
                                             }
                                           });
+                                        
+                                        ;    
+
+                                        //const response8888 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt');
+                                        //const data88888 = await response8888.json();
+
+                                        var exampleTable8 = $('#example8')
+                                        .DataTable({
+                                            /*data: jsObj7,*/
+                                            "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt',
+                                            //data: data88888,
+                                            stateSave: true,
+                                            dom: 'Bfrtip',
+                                            initComplete: function () {
+                                                // Apply the search
+                                                this.api().columns().every( function () {
+                                                    var that = this;
+                                    
+                                                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                                        if ( that.search() !== this.value ) {
+                                                            that
+                                                                .search( this.value )
+                                                                .draw();
+                                                        }
+                                                    } );
+                                                } );
+                                            },
+                                            buttons: [
+                                            {
+                                                extend: "copy",
+                                                exportOptions: {
+                                                modifier: { search: 'none', selected: true}
+                                                }
+                                            },
+                                            {
+                                                extend: "csv",
+                                                exportOptions: {
+                                                modifier: { search: 'none', selected: true}
+                                                }
+                                            },
+                                            {
+                                                extend: "excel",
+                                                exportOptions: {
+                                                modifier: { search: 'none', selected: true}
+                                                }
+                                            },
+                                            {
+                                                extend: "pdfHtml5",
+                                                exportOptions: {
+                                                modifier: { search: 'none', selected: true}
+                                                }
+                                            },
+                                            {
+                                                extend: "print",
+                                                exportOptions: {
+                                                modifier: { search: 'none', selected: true}
+                                                }
+                                            }, 
+                                            {
+                                                extend: 'colvis',
+                                                text: 'Columns'
+                                            },
+                                            {
+                                                text: 'Select All',
+                                                action: function () {
+                                                    exampleTable8.rows().select();
+                                                }
+                                            },
+                                            {
+                                                text: 'Select None',
+                                                action: function () {
+                                                    exampleTable8.rows().deselect();
+                                                }
+                                            },
+                                            {
+                                                text: 'Show All',
+                                                action: function ( e, dt, button, config ) {
+                                                    exampleTable8.rows().deselect();
+                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                                                }
+                                            },
+                                            {
+                                                text: 'Hide Unselected',
+                                                action: function ( e, dt, button, config ) {
+                                                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                                                }
+                                            }
+                                            ],
+                                            "language": {
+                                                "info": "Initial Rows : _TOTAL_",
+                                                select: {
+                                                            rows: {
+                                                                _: "",
+                                                                0: "",
+                                                                1: ""
+                                                            }
+                                                        }
+                                                },
+                                            colReorder: true,
+                                            "order": [[ 1, "desc" ]],
+                                            paging: false,
+                                            select: {
+                                                style: 'multi'
+                                            }, 
+                                            rowReorder: true,
+                                            //keys: true,
+                                            /*'columns': [
+                                                
+                                                {
+                                                    'data': 'Wallet Name'
+                                                },
+                                                {
+                                                    'data': 'Amount'
+                                                },
+                                                {
+                                                    'data': 'Address',
+                                                    "render": function(data, type, row, meta){
+                                                        if(type === 'display'){
+                                                            data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data + '</a>';
+                                                        }
+                                            
+                                                        return data;
+                                                        }
+                                                }                         
+                                            ]*/
+                                        })
+
+                                        /*$('#example7').DataTable().clear().rows.add(jsObj6).draw();  
+                                        
+                                        $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                                            e.preventDefault()
+                                            var tab_name = this.getAttribute('href');
+                                            if (history.pushState) {
+                                              //trash code              
+                                              if (tab_name === "#tab-table7") {      
+                                                $('#example7').DataTable().clear().rows.add(jsObj6).draw();         
+                                              }
+                                              //trash code
+                                            }
+                                          });*/
                                         
                                         ;    
                                     }
