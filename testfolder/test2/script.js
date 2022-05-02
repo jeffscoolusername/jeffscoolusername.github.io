@@ -166,10 +166,10 @@ $(document)
         
         const c = [urlcoingecko00, urlcoingecko01, urlcoingecko02, urlcoingecko03];
 
-        var tinymanwoof420 = 420;
-        var tinymanwoof421 = 421;
-        var tinymanwoof422 = 422;
-        var tinymanwoof423 = 423;
+        //var tinymanwoof420 = 420;
+        //var tinymanwoof421 = 421;
+        //var tinymanwoof422 = 422;
+        //var tinymanwoof423 = 423;
 
         var algoexplorercreatedatround0 = 0;
         var algoexplorercreationtxid0 = 0;
@@ -380,14 +380,15 @@ $(document)
         var algoexplorerwalletamountinside2 = 0;  
         var algoexplorerwalletamountinside3 = 0;  
 
-        for (const element of a) { // You can use `let` instead of `const` if you like
+        //#region old news call
+        /*for (const element of a) { // You can use `let` instead of `const` if you like
             //console.log(element);
             getJSON(element, async function(err, data42070) {
                 if (err !== null) {
                     return $.getJSON(element);
                 } else {
                     
-                    const response = await fetch(element); //duct tape and chicken wire fix
+                    const response = await fetch(a[0]); //duct tape and chicken wire fix
                     const datafromresponse = await response.json(); //duct tape and chicken wire fix
 
                     //console.log(datafromresponse.items[0].title);
@@ -426,7 +427,8 @@ $(document)
                 }
     
             });  
-        };  
+        };  */
+        //#endregion
 
         for (const element of b) { // You can use `let` instead of `const` if you like
             //console.log(element);
@@ -438,6 +440,7 @@ $(document)
                     const response = await fetch(element); //duct tape and chicken wire fix
                     const datafromresponse = await response.json(); //duct tape and chicken wire fix
 
+                    //#region no longer used
                     /*if (url00 === element) {
                         tinymanwoof420 = data42071.data;    
                     }
@@ -451,7 +454,7 @@ $(document)
                         tinymanwoof423 = data42071.data;    
                     }*/           
                     
-                    if (urlalgoexplorer00 === element) {
+                    /*if (urlalgoexplorer00 === element) {
                         algoexplorercreatedatround0 = data42071.asset['created-at-round'];    
                         algoexplorercreationtxid0 = data42071.asset['creation-txid'];  
                         algoexplorerdecimals0 = data42071.asset.params['decimals'];
@@ -503,17 +506,16 @@ $(document)
                         algoexplorertotal3 = data42071.asset.params['total'];
                         algoexplorerassettxcounter3 = data42071.asset['asset-tx-counter']; 
                         algoexplorerassetunitname3 = data42071.asset.params['unit-name'];  
-                        }                
+                        }               */ 
+                        
 
-                    if (urlalgowalletexplorer00 === element)
+                    /*if (urlalgowalletexplorer00 === element)
                         {                
-                            algoexplorerwalletfrom0 = "Binance";   
-                            
+                            algoexplorerwalletfrom0 = "Binance";                               
                             algoexplorerwalletamount0_0 = (data42071[0].amount / 1000000); 
                             algoexplorerwalletround0_0 = data42071[0].round; 
                             algoexplorerwallettype0_0 = data42071[0].type;      
-                            algoexplorerwalletTXID0_0 = data42071[0].txid;        
-
+                            algoexplorerwalletTXID0_0 = data42071[0].txid;      
                             algoexplorerwalletamount0_1 = (data42071[1].amount / 1000000); 
                             algoexplorerwalletround0_1 = data42071[1].round; 
                             algoexplorerwallettype0_1 = data42071[1].type;      
@@ -560,8 +562,7 @@ $(document)
                             algoexplorerwalletamount1_0 = (data42071[0].amount / 1000000); 
                             algoexplorerwalletround1_0 = data42071[0].round; 
                             algoexplorerwallettype1_0 = data42071[0].type;      
-                            algoexplorerwalletTXID1_0 = data42071[0].txid;     
-                            
+                            algoexplorerwalletTXID1_0 = data42071[0].txid;                                 
                             algoexplorerwalletamount1_1 = (data42071[1].amount / 1000000); 
                             algoexplorerwalletround1_1 = data42071[1].round; 
                             algoexplorerwallettype1_1 = data42071[1].type;      
@@ -654,7 +655,8 @@ $(document)
                             algoexplorerwalletround3 = data42071[0].round; 
                             algoexplorerwallettype3 = data42071[0].type;      
                             algoexplorerwalletTXID3 = data42071[0].txid;   
-                        }
+                        }*/
+                        //#endregion
 
                     if (urlalgowalletamountexplorer00 === element)
                     {                
@@ -789,7 +791,240 @@ $(document)
                                                                         const datafromresponseb = await responseb.json(); //duct tape and chicken wire fix
                                                                         const responsec = await fetch(c[0]); //duct tape and chicken wire fix
                                                                         const datafromresponsec = await responsec.json(); //duct tape and chicken wire fix*/
-                                                        
+                                                                        
+                                                                        //#region newsstuff
+                                                                        const responsenews = await fetch(a[0]); //duct tape and chicken wire fix
+                                                                        const datafromresponsenews = await responsenews.json(); //duct tape and chicken wire fix                                                    
+                                                                        //console.log(datafromresponsenews.items[0].title);                                                    
+                                                                        newstitle0 = datafromresponsenews.items[0].title;
+                                                                        newspubdat0 = datafromresponsenews.items[0].pubDate;
+                                                                        newslink0 = datafromresponsenews.items[0].link;
+                                                                        newstitle1 = datafromresponsenews.items[1].title;
+                                                                        newspubdat1 = datafromresponsenews.items[1].pubDate;
+                                                                        newslink1 = datafromresponsenews.items[1].link;
+                                                                        newstitle2 = datafromresponsenews.items[2].title;
+                                                                        newspubdat2 = datafromresponsenews.items[2].pubDate;
+                                                                        newslink2 = datafromresponsenews.items[2].link;
+                                                                        newstitle3 = datafromresponsenews.items[3].title;
+                                                                        newspubdat3 = datafromresponsenews.items[3].pubDate;
+                                                                        newslink3 = datafromresponsenews.items[3].link;
+                                                                        newstitle4 = datafromresponsenews.items[4].title;
+                                                                        newspubdat4 = datafromresponsenews.items[4].pubDate;
+                                                                        newslink4 = datafromresponsenews.items[4].link;
+                                                                        newstitle5 = datafromresponsenews.items[5].title;
+                                                                        newspubdat5 = datafromresponsenews.items[5].pubDate;
+                                                                        newslink5 = datafromresponsenews.items[5].link;
+                                                                        newstitle6 = datafromresponsenews.items[6].title;
+                                                                        newspubdat6 = datafromresponsenews.items[6].pubDate;
+                                                                        newslink6 = datafromresponsenews.items[6].link;
+                                                                        newstitle7 = datafromresponsenews.items[7].title;
+                                                                        newspubdat7 = datafromresponsenews.items[7].pubDate;
+                                                                        newslink7 = datafromresponsenews.items[7].link;
+                                                                        newstitle8 = datafromresponsenews.items[8].title;
+                                                                        newspubdat8 = datafromresponsenews.items[8].pubDate;
+                                                                        newslink8 = datafromresponsenews.items[8].link;
+                                                                        newstitle9 = datafromresponsenews.items[9].title;
+                                                                        newspubdat9 = datafromresponsenews.items[9].pubDate;
+                                                                        newslink9 = datafromresponsenews.items[9].link;     
+                                                                        //#endregion
+                                                                          
+                                                                        //#region algoexplorer stuff
+                                                                        const responsealgoexplorer0 = await fetch(b[0]); //duct tape and chicken wire fix
+                                                                        const datafromresponsealgoexplorer0 = await responsealgoexplorer0.json(); //duct tape and chicken wire fix   
+                                                                        //console.log(datafromresponsealgoexplorer0.asset['created-at-round']);     
+                                                                        algoexplorercreatedatround0 = datafromresponsealgoexplorer0.asset['created-at-round'];    
+                                                                        algoexplorercreationtxid0 = datafromresponsealgoexplorer0.asset['creation-txid'];  
+                                                                        algoexplorerdecimals0 = datafromresponsealgoexplorer0.asset.params['decimals'];
+                                                                        algoexplorerdefaultfrozen0 = datafromresponsealgoexplorer0.asset.params['default-frozen'];
+                                                                        algoexplorerindex0 = datafromresponsealgoexplorer0.asset['index'];
+                                                                        algoexplorername0 = datafromresponsealgoexplorer0.asset.params['name'];
+                                                                        algoexplorercirculatingsupply0 = datafromresponsealgoexplorer0.asset.params['circulating-supply'];
+                                                                        algoexplorerpercentcirculation0 = ((datafromresponsealgoexplorer0.asset.params['circulating-supply'] / datafromresponsealgoexplorer0.asset.params['total']) * 100).toFixed(6);
+                                                                        algoexplorertotal0 = datafromresponsealgoexplorer0.asset.params['total'];
+                                                                        algoexplorerassettxcounter0 = datafromresponsealgoexplorer0.asset['asset-tx-counter']; 
+                                                                        algoexplorerassetunitname0 = datafromresponsealgoexplorer0.asset.params['unit-name'];  
+                                                                        const responsealgoexplorer1 = await fetch(b[1]); //duct tape and chicken wire fix
+                                                                        const datafromresponsealgoexplorer1 = await responsealgoexplorer1.json(); //duct tape and chicken wire fix   
+                                                                        algoexplorercreatedatround1 = datafromresponsealgoexplorer1.asset['created-at-round'];    
+                                                                        algoexplorercreationtxid1 = datafromresponsealgoexplorer1.asset['creation-txid'];  
+                                                                        algoexplorerdecimals1 = datafromresponsealgoexplorer1.asset.params['decimals'];
+                                                                        algoexplorerdefaultfrozen1 = datafromresponsealgoexplorer1.asset.params['default-frozen'];
+                                                                        algoexplorerindex1 = datafromresponsealgoexplorer1.asset['index'];
+                                                                        algoexplorername1 = datafromresponsealgoexplorer1.asset.params['name'];
+                                                                        algoexplorercirculatingsupply1 = datafromresponsealgoexplorer1.asset.params['circulating-supply'];
+                                                                        algoexplorerpercentcirculation1 = ((datafromresponsealgoexplorer1.asset.params['circulating-supply'] / datafromresponsealgoexplorer1.asset.params['total']) * 100).toFixed(6);
+                                                                        algoexplorertotal1 = datafromresponsealgoexplorer1.asset.params['total'];
+                                                                        algoexplorerassettxcounter1 = datafromresponsealgoexplorer1.asset['asset-tx-counter']; 
+                                                                        algoexplorerassetunitname1 = datafromresponsealgoexplorer1.asset.params['unit-name'];  
+                                                                        const responsealgoexplorer2 = await fetch(b[2]); //duct tape and chicken wire fix
+                                                                        const datafromresponsealgoexplorer2 = await responsealgoexplorer2.json(); //duct tape and chicken wire fix  
+                                                                        algoexplorercreatedatround2 = datafromresponsealgoexplorer2.asset['created-at-round'];    
+                                                                        algoexplorercreationtxid2 = datafromresponsealgoexplorer2.asset['creation-txid'];  
+                                                                        algoexplorerdecimals2 = datafromresponsealgoexplorer2.asset.params['decimals'];
+                                                                        algoexplorerdefaultfrozen2 = datafromresponsealgoexplorer2.asset.params['default-frozen'];
+                                                                        algoexplorerindex2 = datafromresponsealgoexplorer2.asset['index'];
+                                                                        algoexplorername2 = datafromresponsealgoexplorer2.asset.params['name'];
+                                                                        algoexplorercirculatingsupply2 = datafromresponsealgoexplorer2.asset.params['circulating-supply'];
+                                                                        algoexplorerpercentcirculation2 = ((datafromresponsealgoexplorer2.asset.params['circulating-supply'] / datafromresponsealgoexplorer2.asset.params['total']) * 100).toFixed(6);
+                                                                        algoexplorertotal2 = datafromresponsealgoexplorer2.asset.params['total'];
+                                                                        algoexplorerassettxcounter2 = datafromresponsealgoexplorer2.asset['asset-tx-counter']; 
+                                                                        algoexplorerassetunitname2 = datafromresponsealgoexplorer2.asset.params['unit-name'];  
+                                                                        const responsealgoexplorer3 = await fetch(b[3]); //duct tape and chicken wire fix
+                                                                        const datafromresponsealgoexplorer3 = await responsealgoexplorer3.json(); //duct tape and chicken wire fix  
+                                                                        algoexplorercreatedatround3 = datafromresponsealgoexplorer3.asset['created-at-round'];    
+                                                                        algoexplorercreationtxid3 = datafromresponsealgoexplorer3.asset['creation-txid'];  
+                                                                        algoexplorerdecimals3 = datafromresponsealgoexplorer3.asset.params['decimals'];
+                                                                        algoexplorerdefaultfrozen3 = datafromresponsealgoexplorer3.asset.params['default-frozen'];
+                                                                        algoexplorerindex3 = datafromresponsealgoexplorer3.asset['index'];
+                                                                        algoexplorername3 = datafromresponsealgoexplorer3.asset.params['name'];
+                                                                        algoexplorercirculatingsupply3 = datafromresponsealgoexplorer3.asset.params['circulating-supply'];
+                                                                        algoexplorerpercentcirculation3 = ((datafromresponsealgoexplorer3.asset.params['circulating-supply'] / datafromresponsealgoexplorer3.asset.params['total']) * 100).toFixed(6);
+                                                                        algoexplorertotal3 = datafromresponsealgoexplorer3.asset.params['total'];
+                                                                        algoexplorerassettxcounter3 = datafromresponsealgoexplorer3.asset['asset-tx-counter']; 
+                                                                        algoexplorerassetunitname3 = datafromresponsealgoexplorer3.asset.params['unit-name'];  
+                                                                        //#endregion
+
+                                                                        //#region walletexplorer stuff
+                                                                        const responsewallet0 = await fetch(b[5]); //duct tape and chicken wire fix
+                                                                        const datafromresponsewallet0 = await responsewallet0.json(); //duct tape and chicken wire fix                                                    
+                                                                        algoexplorerwalletfrom0 = "Binance";                               
+                                                                        algoexplorerwalletamount0_0 = (datafromresponsewallet0[0].amount / 1000000); 
+                                                                        algoexplorerwalletround0_0 = datafromresponsewallet0[0].round; 
+                                                                        algoexplorerwallettype0_0 = datafromresponsewallet0[0].type;      
+                                                                        algoexplorerwalletTXID0_0 = datafromresponsewallet0[0].txid;      
+                                                                        algoexplorerwalletamount0_1 = (datafromresponsewallet0[1].amount / 1000000); 
+                                                                        algoexplorerwalletround0_1 = datafromresponsewallet0[1].round; 
+                                                                        algoexplorerwallettype0_1 = datafromresponsewallet0[1].type;      
+                                                                        algoexplorerwalletTXID0_1 = datafromresponsewallet0[1].txid;        
+                                                                        algoexplorerwalletamount0_2 = (datafromresponsewallet0[2].amount / 1000000); 
+                                                                        algoexplorerwalletround0_2 = datafromresponsewallet0[2].round; 
+                                                                        algoexplorerwallettype0_2 = datafromresponsewallet0[2].type;      
+                                                                        algoexplorerwalletTXID0_2 = datafromresponsewallet0[2].txid;        
+                                                                        algoexplorerwalletamount0_3 = (datafromresponsewallet0[3].amount / 1000000); 
+                                                                        algoexplorerwalletround0_3 = datafromresponsewallet0[3].round; 
+                                                                        algoexplorerwallettype0_3 = datafromresponsewallet0[3].type;      
+                                                                        algoexplorerwalletTXID0_3 = datafromresponsewallet0[3].txid;        
+                                                                        algoexplorerwalletamount0_4 = (datafromresponsewallet0[4].amount / 1000000); 
+                                                                        algoexplorerwalletround0_4 = datafromresponsewallet0[4].round; 
+                                                                        algoexplorerwallettype0_4 = datafromresponsewallet0[4].type;      
+                                                                        algoexplorerwalletTXID0_4 = datafromresponsewallet0[4].txid;        
+                                                                        algoexplorerwalletamount0_5 = (datafromresponsewallet0[5].amount / 1000000); 
+                                                                        algoexplorerwalletround0_5 = datafromresponsewallet0[5].round; 
+                                                                        algoexplorerwallettype0_5 = datafromresponsewallet0[5].type;      
+                                                                        algoexplorerwalletTXID0_5 = datafromresponsewallet0[5].txid;        
+                                                                        algoexplorerwalletamount0_6 = (datafromresponsewallet0[6].amount / 1000000); 
+                                                                        algoexplorerwalletround0_6 = datafromresponsewallet0[6].round; 
+                                                                        algoexplorerwallettype0_6 = datafromresponsewallet0[6].type;      
+                                                                        algoexplorerwalletTXID0_6 = datafromresponsewallet0[6].txid;        
+                                                                        algoexplorerwalletamount0_7 = (datafromresponsewallet0[7].amount / 1000000); 
+                                                                        algoexplorerwalletround0_7 = datafromresponsewallet0[7].round; 
+                                                                        algoexplorerwallettype0_7 = datafromresponsewallet0[7].type;      
+                                                                        algoexplorerwalletTXID0_7 = datafromresponsewallet0[7].txid;        
+                                                                        algoexplorerwalletamount0_8 = (datafromresponsewallet0[8].amount / 1000000); 
+                                                                        algoexplorerwalletround0_8 = datafromresponsewallet0[8].round; 
+                                                                        algoexplorerwallettype0_8 = datafromresponsewallet0[8].type;      
+                                                                        algoexplorerwalletTXID0_8 = datafromresponsewallet0[8].txid;        
+                                                                        algoexplorerwalletamount0_9 = (datafromresponsewallet0[9].amount / 1000000); 
+                                                                        algoexplorerwalletround0_9 = datafromresponsewallet0[9].round; 
+                                                                        algoexplorerwallettype0_9 = datafromresponsewallet0[9].type;      
+                                                                        algoexplorerwalletTXID0_9 = datafromresponsewallet0[9].txid;       
+                                                                        const responsewallet1 = await fetch(b[5]); //duct tape and chicken wire fix
+                                                                        const datafromresponsewallet1 = await responsewallet1.json(); //duct tape and chicken wire fix   
+                                                                        algoexplorerwalletfrom1 = "AlgoStake - Creator, Manager, Reserve";   
+                                                                        algoexplorerwalletamount1_0 = (datafromresponsewallet1[0].amount / 1000000); 
+                                                                        algoexplorerwalletround1_0 = datafromresponsewallet1[0].round; 
+                                                                        algoexplorerwallettype1_0 = datafromresponsewallet1[0].type;      
+                                                                        algoexplorerwalletTXID1_0 = datafromresponsewallet1[0].txid;                                 
+                                                                        algoexplorerwalletamount1_1 = (datafromresponsewallet1[1].amount / 1000000); 
+                                                                        algoexplorerwalletround1_1 = datafromresponsewallet1[1].round; 
+                                                                        algoexplorerwallettype1_1 = datafromresponsewallet1[1].type;      
+                                                                        algoexplorerwalletTXID1_1 = datafromresponsewallet1[1].txid;     
+                                                                        algoexplorerwalletamount1_2 = (datafromresponsewallet1[2].amount / 1000000); 
+                                                                        algoexplorerwalletround1_2 = datafromresponsewallet1[2].round; 
+                                                                        algoexplorerwallettype1_2 = datafromresponsewallet1[2].type;      
+                                                                        algoexplorerwalletTXID1_2 = datafromresponsewallet1[2].txid;     
+                                                                        algoexplorerwalletamount1_3 = (datafromresponsewallet1[3].amount / 1000000); 
+                                                                        algoexplorerwalletround1_3 = datafromresponsewallet1[3].round; 
+                                                                        algoexplorerwallettype1_3 = datafromresponsewallet1[3].type;      
+                                                                        algoexplorerwalletTXID1_3 = datafromresponsewallet1[3].txid;     
+                                                                        algoexplorerwalletamount1_4 = (datafromresponsewallet1[4].amount / 1000000); 
+                                                                        algoexplorerwalletround1_4 = datafromresponsewallet1[4].round; 
+                                                                        algoexplorerwallettype1_4 = datafromresponsewallet1[4].type;      
+                                                                        algoexplorerwalletTXID1_4 = datafromresponsewallet1[4].txid;     
+                                                                        algoexplorerwalletamount1_5 = (datafromresponsewallet1[5].amount / 1000000); 
+                                                                        algoexplorerwalletround1_5 = datafromresponsewallet1[5].round; 
+                                                                        algoexplorerwallettype1_5 = datafromresponsewallet1[5].type;      
+                                                                        algoexplorerwalletTXID1_5 = datafromresponsewallet1[5].txid;     
+                                                                        algoexplorerwalletamount1_6 = (datafromresponsewallet1[6].amount / 1000000); 
+                                                                        algoexplorerwalletround1_6 = datafromresponsewallet1[6].round; 
+                                                                        algoexplorerwallettype1_6 = datafromresponsewallet1[6].type;      
+                                                                        algoexplorerwalletTXID1_6 = datafromresponsewallet1[6].txid;     
+                                                                        algoexplorerwalletamount1_7 = (datafromresponsewallet1[7].amount / 1000000); 
+                                                                        algoexplorerwalletround1_7 = datafromresponsewallet1[7].round; 
+                                                                        algoexplorerwallettype1_7 = datafromresponsewallet1[7].type;      
+                                                                        algoexplorerwalletTXID1_7 = datafromresponsewallet1[7].txid;     
+                                                                        algoexplorerwalletamount1_8 = (datafromresponsewallet1[8].amount / 1000000); 
+                                                                        algoexplorerwalletround1_8 = datafromresponsewallet1[8].round; 
+                                                                        algoexplorerwallettype1_8 = datafromresponsewallet1[8].type;      
+                                                                        algoexplorerwalletTXID1_8 = datafromresponsewallet1[8].txid;     
+                                                                        algoexplorerwalletamount1_9 = (datafromresponsewallet1[9].amount / 1000000); 
+                                                                        algoexplorerwalletround1_9 = datafromresponsewallet1[9].round; 
+                                                                        algoexplorerwallettype1_9 = datafromresponsewallet1[9].type;      
+                                                                        algoexplorerwalletTXID1_9 = datafromresponsewallet1[9].txid;     
+                                                                        const responsewallet2 = await fetch(b[6]); //duct tape and chicken wire fix
+                                                                        const datafromresponsewallet2 = await responsewallet2.json(); //duct tape and chicken wire fix   
+                                                                        algoexplorerwalletfrom2 = "PlanetWatch - Creator, Manager, Reserve";   
+                                                                        algoexplorerwalletamount2_0 = (datafromresponsewallet2[0].amount / 1000000); 
+                                                                        algoexplorerwalletround2_0 = datafromresponsewallet2[0].round; 
+                                                                        algoexplorerwallettype2_0 = datafromresponsewallet2[0].type;      
+                                                                        algoexplorerwalletTXID2_0 = datafromresponsewallet2[0].txid; 
+                                                                        algoexplorerwalletamount2_1 = (datafromresponsewallet2[1].amount / 1000000); 
+                                                                        algoexplorerwalletround2_1 = datafromresponsewallet2[1].round; 
+                                                                        algoexplorerwallettype2_1 = datafromresponsewallet2[1].type;      
+                                                                        algoexplorerwalletTXID2_1 = datafromresponsewallet2[1].txid; 
+                                                                        algoexplorerwalletamount2_2 = (datafromresponsewallet2[2].amount / 1000000); 
+                                                                        algoexplorerwalletround2_2 = datafromresponsewallet2[2].round; 
+                                                                        algoexplorerwallettype2_2 = datafromresponsewallet2[2].type;      
+                                                                        algoexplorerwalletTXID2_2 = datafromresponsewallet2[2].txid; 
+                                                                        algoexplorerwalletamount2_3 = (datafromresponsewallet2[3].amount / 1000000); 
+                                                                        algoexplorerwalletround2_3 = datafromresponsewallet2[3].round; 
+                                                                        algoexplorerwallettype2_3 = datafromresponsewallet2[3].type;      
+                                                                        algoexplorerwalletTXID2_3 = datafromresponsewallet2[3].txid; 
+                                                                        algoexplorerwalletamount2_4 = (datafromresponsewallet2[4].amount / 1000000); 
+                                                                        algoexplorerwalletround2_4 = datafromresponsewallet2[4].round; 
+                                                                        algoexplorerwallettype2_4 = datafromresponsewallet2[4].type;      
+                                                                        algoexplorerwalletTXID2_4 = datafromresponsewallet2[4].txid; 
+                                                                        algoexplorerwalletamount2_5 = (datafromresponsewallet2[5].amount / 1000000); 
+                                                                        algoexplorerwalletround2_5 = datafromresponsewallet2[5].round; 
+                                                                        algoexplorerwallettype2_5 = datafromresponsewallet2[5].type;      
+                                                                        algoexplorerwalletTXID2_5 = datafromresponsewallet2[5].txid; 
+                                                                        algoexplorerwalletamount2_6 = (datafromresponsewallet2[6].amount / 1000000); 
+                                                                        algoexplorerwalletround2_6 = datafromresponsewallet2[6].round; 
+                                                                        algoexplorerwallettype2_6 = datafromresponsewallet2[6].type;      
+                                                                        algoexplorerwalletTXID2_6 = datafromresponsewallet2[6].txid; 
+                                                                        algoexplorerwalletamount2_7 = (datafromresponsewallet2[7].amount / 1000000); 
+                                                                        algoexplorerwalletround2_7 = datafromresponsewallet2[7].round; 
+                                                                        algoexplorerwallettype2_7 = datafromresponsewallet2[7].type;      
+                                                                        algoexplorerwalletTXID2_7 = datafromresponsewallet2[7].txid; 
+                                                                        algoexplorerwalletamount2_8 = (datafromresponsewallet2[8].amount / 1000000); 
+                                                                        algoexplorerwalletround2_8 = datafromresponsewallet2[8].round; 
+                                                                        algoexplorerwallettype2_8 = datafromresponsewallet2[8].type;      
+                                                                        algoexplorerwalletTXID2_8 = datafromresponsewallet2[8].txid; 
+                                                                        algoexplorerwalletamount2_9 = (datafromresponsewallet2[9].amount / 1000000); 
+                                                                        algoexplorerwalletround2_9 = datafromresponsewallet2[9].round; 
+                                                                        algoexplorerwallettype2_9 = datafromresponsewallet2[9].type;      
+                                                                        algoexplorerwalletTXID2_9 = datafromresponsewallet2[9].txid; 
+                                                                        const responsewallet3 = await fetch(b[7]); //duct tape and chicken wire fix
+                                                                        const datafromresponsewallet3 = await responsewallet3.json(); //duct tape and chicken wire fix   
+                                                                        algoexplorerwalletfrom3 = "BirdBot - Creator, Manager, Reserve";   
+                                                                        algoexplorerwalletamount3 = (datafromresponsewallet3[0].amount / 1000000);   
+                                                                        algoexplorerwalletround3 = datafromresponsewallet3[0].round; 
+                                                                        algoexplorerwallettype3 = datafromresponsewallet3[0].type;      
+                                                                        algoexplorerwalletTXID3 = datafromresponsewallet3[0].txid;   
+                                                                        //#endregion
+                                                                        
+
+
                                                                         var jsObj0 = [
                                                                             {
                                                                                 'Name': algoexplorername0,
