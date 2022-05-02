@@ -153,7 +153,7 @@ $(document)
         var urlalgowalletamountexplorer02 = algowalletamountexplorerapi + asatokenwalletarray[2];
         var urlalgowalletamountexplorer03 = algowalletamountexplorerapi + asatokenwalletarray[3];
 
-        const b = [url00, url01, url02, url03, urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03, urlalgowalletexplorer00, 
+        const b = [/*url00, url01, url02, url03, */urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03, urlalgowalletexplorer00, 
             urlalgowalletexplorer01, urlalgowalletexplorer02, urlalgowalletexplorer03, urlalgowalletamountexplorer00, urlalgowalletamountexplorer01,
             urlalgowalletamountexplorer02, urlalgowalletamountexplorer03];
 
@@ -436,8 +436,8 @@ $(document)
                     const response = await fetch(element); //duct tape and chicken wire fix
                     const datafromresponse = await response.json(); //duct tape and chicken wire fix
 
-                    if (url00 === element) {
-                        tinymanwoof420 = data42071.data/*.toFixed(6)*/;    
+                    /*if (url00 === element) {
+                        tinymanwoof420 = data42071.data;    
                     }
                     if (url01 === element) {
                         tinymanwoof421 = data42071.data;    
@@ -447,7 +447,7 @@ $(document)
                     }
                     if (url03 === element) {
                         tinymanwoof423 = data42071.data;    
-                    }                    
+                    }*/           
                     
                     if (urlalgoexplorer00 === element) {
                         algoexplorercreatedatround0 = data42071.asset['created-at-round'];    
@@ -692,7 +692,7 @@ $(document)
                     return $.getJSON(element);
                 } else {                    
 
-                    const response = await fetch(element); //duct tape and chicken wire fix
+                    const response = await fetch(urlcoingecko00); //duct tape and chicken wire fix
                     const datafromresponse = await response.json(); //duct tape and chicken wire fix
                     
                     if (urlcoingecko00 === element) {
@@ -790,7 +790,7 @@ $(document)
                                                                             {
                                                                                 'Name': algoexplorername0,
                                                                                 'Index': algoexplorerindex0,
-                                                                                'Tinyman Price' : tinymanwoof420,
+                                                                                //'Tinyman Price' : tinymanwoof420,
                                                                                 '% in Circulation': algoexplorerpercentcirculation0,
                                                                                 'Transactions Counter': algoexplorerassettxcounter0,
                                                                                 'Created at Round': algoexplorercreatedatround0
@@ -798,7 +798,7 @@ $(document)
                                                                             {
                                                                                 'Name': algoexplorername1,
                                                                                 'Index': algoexplorerindex1,
-                                                                                'Tinyman Price' : tinymanwoof421,
+                                                                                //'Tinyman Price' : tinymanwoof421,
                                                                                 '% in Circulation': algoexplorerpercentcirculation1,
                                                                                 'Transactions Counter': algoexplorerassettxcounter1,
                                                                                 'Created at Round': algoexplorercreatedatround1
@@ -806,7 +806,7 @@ $(document)
                                                                             {
                                                                                 'Name': algoexplorername2,
                                                                                 'Index': algoexplorerindex2,
-                                                                                'Tinyman Price' : tinymanwoof422,
+                                                                                //'Tinyman Price' : tinymanwoof422,
                                                                                 '% in Circulation': algoexplorerpercentcirculation2,
                                                                                 'Transactions Counter': algoexplorerassettxcounter2,
                                                                                 'Created at Round': algoexplorercreatedatround2
@@ -814,7 +814,7 @@ $(document)
                                                                             {
                                                                                 'Name': algoexplorername3,
                                                                                 'Index': algoexplorerindex3,
-                                                                                'Tinyman Price' : tinymanwoof423,
+                                                                                //'Tinyman Price' : tinymanwoof423,
                                                                                 '% in Circulation': algoexplorerpercentcirculation3,
                                                                                 'Transactions Counter': algoexplorerassettxcounter3,
                                                                                 'Created at Round': algoexplorercreatedatround3
@@ -1586,9 +1586,9 @@ $(document)
                                                                                         return data;
                                                                                         }
                                                                                 },
-                                                                                {
+                                                                                /*{
                                                                                     'data': 'Tinyman Price'
-                                                                                },
+                                                                                },*/
                                                                                 {
                                                                                     'data': '% in Circulation',
                                                                                     render: function(data, type, row, meta) {
