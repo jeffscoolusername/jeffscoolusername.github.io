@@ -57,7 +57,7 @@
             [
               "BANAAN","382781470","BANAAN","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "Algofi","469835031","BANK","TBD","Awarded","Registered","TBD","Yes" ],
+              "Algofi","469835031","BANK","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","TBD","Yes" ],
             [
               "AlgoBasics","615093377","BASIC","TBD","TBD","TBD","TBD","TBD" ],
             [
@@ -161,7 +161,7 @@
             [
               "SockHODLER","452047208","SOCKS","TBD","Awarded","TBD","Yes","TBD" ],
             [
-              "Algofi","465865291","STBL","TBD","Awarded","Registered","TBD","Yes" ],
+              "Algofi","465865291","STBL","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","TBD","Yes" ],
             [
               "AlgoStake","511484048","STKE","Yes","Applied","Registered","Yes","Yes" ],
             [
