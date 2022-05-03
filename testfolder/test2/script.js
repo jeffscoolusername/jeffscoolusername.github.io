@@ -2910,7 +2910,10 @@ $(document)
                         "render": function ( data, type, row, meta ) {
                             //var linkedIn = row[0];                   
                             //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
-                            return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
+                            if (data === "TBD")
+                            {return data;}
+                            else
+                            {return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';}
                         }
                     }],
                     rowReorder: true
