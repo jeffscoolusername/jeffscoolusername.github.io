@@ -40,7 +40,7 @@ $(document)
         window.alert = function() {};*/
 
         var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
-        //var algochartsapi = 'https://algocharts.net/api/?asset_in=';
+        var algochartsapi = 'https://algocharts.net/api/?asset_in=';
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
         var algowalletexplorerapi = 'https://api.algoexplorer.io/v1/account/';
         var algowalletamountexplorerapi = 'https://api.algoexplorer.io/v2/accounts/';
@@ -2809,7 +2809,7 @@ $(document)
                 var exampleTable8 = $('#example8')
                 .DataTable({
                     /*data: jsObj7,*/
-                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays2.txt',
+                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt',
                     //data: data88888,
                     //data: data,
                     stateSave: true,
@@ -2907,22 +2907,25 @@ $(document)
                     }, 
                     rowReorder: true,
                     //keys: true,
-                    'columns': [
+                    /*'columns': [
                         
                         {
-                            'data': 'Name'
+                            'data': 'Wallet Name'
                         },
                         {
-                            'data': 'LinkedIn',
+                            'data': 'Amount'
+                        },
+                        {
+                            'data': 'Address',
                             "render": function(data, type, row, meta){
                                 if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + data + '">' + data + '</a>';
+                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data + '</a>';
                                 }
                     
                                 return data;
                                 }
-                        }                       
-                    ]
+                        }                         
+                    ]*/
                 })
 
                 //const response = await fetch('https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt');
