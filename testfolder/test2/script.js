@@ -2900,24 +2900,38 @@ $(document)
                                 }
                         },
                     colReorder: true,
-                    "order": [[ 1, "desc" ]],
+                    "order": [[ 0, "desc" ]],
                     paging: false,
                     select: {
                         style: 'multi'
                     }, 
-                    "columnDefs": [{
-                        "targets": 1,
-                        "render": function ( data, type, row, meta ) {
-                            //var linkedIn = row[0];                   
-                            //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
-                            if (data === "TBD")
-                            {return data;}
-                            else
-                            {return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';}
-                        }
-                    }],
+                    "columnDefs": [
+                        {
+                            "targets": [1],
+                            "render": function ( data, type, row, meta ) {
+                                //var linkedIn = row[0];                   
+                                //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
+                                if (data === "TBD")
+                                {return data;}
+                                else
+                                {return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';}
+                            }
+                        }/*,
+                        {
+                           "targets": [2],
+                            "render": function ( data, type, row, meta ) {
+                                //var linkedIn = row[0];                   
+                                //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
+                                if (data === "TBD")
+                                {return data;}
+                                else
+                                {return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';}
+                            }
+                        }*/
+                
+                    ],
                     rowReorder: true
-                })
+                    })
 
                 //const response = await fetch('https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt');
                 //const data = await response.json();
