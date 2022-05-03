@@ -1,23 +1,36 @@
 {
-	[
-		'personname' : 'John Clarke',
-		'linkedin' : 'jaclarke1'
+	"name": [
+		[
+			"John Clarke"
+		],
+		[
+			"Owen Colegrove"
+		],
+		[
+			"Ibu Karel"
+		],
+		[
+			"Paul Collella"
+		],
+		[
+			"Matthew Lam"
+		]
 	],
-	[
-		'personname' : 'Owen Colegrove',
-		'linkedin' : 'owencolegrove'
-	],
-	[
-		'personname'  : 'Ibu Karel',
-		'linkedin' : 'ibukarel'
-	],
-	[
-		'personname'  : 'Paul Collella',
-		'linkedin' : 'paul-colella-b4bb6284'
-	],
-	[
-		'personname'  : 'Matthew Lam',
-		'linkedin' : 'matthewlam175'
+	"linkedin": [
+		[
+			"jaclarke1"
+		],
+		[
+			"owencolegrove"
+		],
+		[
+			"ibukarel"
+		],
+		[
+			"paul-colella-b4bb6284"
+		],
+		[
+			"matthewlam175"
+		]
 	]
-
 }
