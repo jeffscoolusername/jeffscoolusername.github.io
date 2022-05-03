@@ -1029,26 +1029,26 @@ $(document)
                 const datafromresponsecoinggecko1 = await responsecoinggecko1.json(); //duct tape and chicken wire fix    
                 coingeckoname1 = datafromresponsecoinggecko1.name;   
                 coingeckoprice1 = (datafromresponsecoinggecko1.market_data.current_price['usd'] / coingeckoprice0);     
-                coingeckopricechange24h1 = datafromresponsecoinggecko1.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
-                coingeckopricechange7d1 = datafromresponsecoinggecko1.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
-                coingeckopricechange30d1 = datafromresponsecoinggecko1.market_data.price_change_percentage_30d - coingeckopricechange30d0;  
-                coingeckopricechange1y1 = datafromresponsecoinggecko1.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
+                coingeckopricechange24h1 = datafromresponsecoinggecko1.market_data.price_change_percentage_24h + coingeckopricechange24h0;            
+                coingeckopricechange7d1 = datafromresponsecoinggecko1.market_data.price_change_percentage_7d + coingeckopricechange7d0;    
+                coingeckopricechange30d1 = datafromresponsecoinggecko1.market_data.price_change_percentage_30d + coingeckopricechange30d0;  
+                coingeckopricechange1y1 = datafromresponsecoinggecko1.market_data.price_change_percentage_1y + coingeckopricechange1y0;   
                 const responsecoinggecko2 = await fetch(c[2]); //duct tape and chicken wire fix
                 const datafromresponsecoinggecko2 = await responsecoinggecko2.json(); //duct tape and chicken wire fix    
                 coingeckoname2 = datafromresponsecoinggecko2.name;   
                 coingeckoprice2 = (datafromresponsecoinggecko2.market_data.current_price['usd'] / coingeckoprice0);     
-                coingeckopricechange24h2 = datafromresponsecoinggecko2.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
-                coingeckopricechange7d2 = datafromresponsecoinggecko2.market_data.price_change_percentage_7d - coingeckopricechange7d0;    
-                coingeckopricechange30d2 = datafromresponsecoinggecko2.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
-                coingeckopricechange1y2 = datafromresponsecoinggecko2.market_data.price_change_percentage_1y - coingeckopricechange1y0;   
+                coingeckopricechange24h2 = datafromresponsecoinggecko2.market_data.price_change_percentage_24h + coingeckopricechange24h0;            
+                coingeckopricechange7d2 = datafromresponsecoinggecko2.market_data.price_change_percentage_7d + coingeckopricechange7d0;    
+                coingeckopricechange30d2 = datafromresponsecoinggecko2.market_data.price_change_percentage_30d + coingeckopricechange30d0; 
+                coingeckopricechange1y2 = datafromresponsecoinggecko2.market_data.price_change_percentage_1y + coingeckopricechange1y0;   
                 const responsecoinggecko3 = await fetch(c[3]); //duct tape and chicken wire fix
                 const datafromresponsecoinggecko3 = await responsecoinggecko3.json(); //duct tape and chicken wire fix    
                 coingeckoname3 = datafromresponsecoinggecko3.name;   
                 coingeckoprice3 = (datafromresponsecoinggecko3.market_data.current_price['usd'] / coingeckoprice0);     
-                coingeckopricechange24h3 = datafromresponsecoinggecko3.market_data.price_change_percentage_24h - coingeckopricechange24h0;            
-                coingeckopricechange7d3 = datafromresponsecoinggecko3.market_data.price_change_percentage_7d - coingeckopricechange7d0;     
-                coingeckopricechange30d3 = datafromresponsecoinggecko3.market_data.price_change_percentage_30d - coingeckopricechange30d0; 
-                coingeckopricechange1y3 = datafromresponsecoinggecko3.market_data.price_change_percentage_1y - coingeckopricechange1y0;  
+                coingeckopricechange24h3 = datafromresponsecoinggecko3.market_data.price_change_percentage_24h + coingeckopricechange24h0;            
+                coingeckopricechange7d3 = datafromresponsecoinggecko3.market_data.price_change_percentage_7d + coingeckopricechange7d0;     
+                coingeckopricechange30d3 = datafromresponsecoinggecko3.market_data.price_change_percentage_30d + coingeckopricechange30d0; 
+                coingeckopricechange1y3 = datafromresponsecoinggecko3.market_data.price_change_percentage_1y + coingeckopricechange1y0;  
 
 
                 //#endregion
