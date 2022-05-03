@@ -1,24 +1,24 @@
 [
-	"data": [
-		{
-			"Name": "John Clarke",
-			"LinkedIn": "jaclarke1"
-		},
-		{
-			"Name": "Owen Colegrove",
-			"LinkedIn": "owencolegrove"
-		},
-		{
-			"Name": "Ibu Karel",
-			"LinkedIn": "ibukarel"
-		},
-		{
-			"Name": "Paul Collella",
-			"LinkedIn": "paul-colella-b4bb6284"
-		},
-		{
-			"Name": "Matthew Lam",
-			"LinkedIn": "matthewlam175"
-		}
-	]
+
+	{
+		"Name": "John Clarke",
+		"LinkedIn": "jaclarke1"
+	},
+	{
+		"Name": "Owen Colegrove",
+		"LinkedIn": "owencolegrove"
+	},
+	{
+		"Name": "Ibu Karel",
+		"LinkedIn": "ibukarel"
+	},
+	{
+		"Name": "Paul Collella",
+		"LinkedIn": "paul-colella-b4bb6284"
+	},
+	{
+		"Name": "Matthew Lam",
+		"LinkedIn": "matthewlam175"
+	}
+
 ]
