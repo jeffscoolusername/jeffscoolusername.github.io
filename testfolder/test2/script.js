@@ -2916,18 +2916,18 @@ $(document)
                                 else
                                 {return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';}
                             }
-                        }/*,
+                        },
                         {
-                           "targets": [2],
+                           "targets": [4],
                             "render": function ( data, type, row, meta ) {
                                 //var linkedIn = row[0];                   
                                 //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
                                 if (data === "TBD")
                                 {return data;}
                                 else
-                                {return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';}
+                                {return '<a target="_blank" rel="noopener noreferrer" href="' + data + '">' + 'Yes' + '</a>';}
                             }
-                        }*/
+                        }
                 
                     ],
                     rowReorder: true
