@@ -2918,18 +2918,7 @@ $(document)
                             }
                         },
                         {
-                           "targets": [4],
-                            "render": function ( data, type, row, meta ) {
-                                //var linkedIn = row[0];                   
-                                //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
-                                if (data === "TBD")
-                                {return data;}
-                                else
-                                {return '<a target="_blank" rel="noopener noreferrer" href="' + data + '">' + 'Yes' + '</a>';}
-                            }
-                        },
-                        {
-                           "targets": [7],
+                           "targets": [4, 7],
                             "render": function ( data, type, row, meta ) {
                                 //var linkedIn = row[0];                   
                                 //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
