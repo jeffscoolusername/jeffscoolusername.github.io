@@ -1,24 +1,24 @@
 [
 	"data": [
 		{
-			"Name": "John Clarke",
-			"LinkedIn": "jaclarke1"
+			"John Clarke",
+			"jaclarke1"
 		},
 		{
-			"Name": "Owen Colegrove",
-			"LinkedIn": "owencolegrove"
+			"Owen Colegrove",
+			"owencolegrove"
 		},
 		{
-			"Name": "Ibu Karel",
-			"LinkedIn": "ibukarel"
+			"Ibu Karel",
+			"ibukarel"
 		},
 		{
-			"Name": "Paul Collella",
-			"LinkedIn": "paul-colella-b4bb6284"
+			"Paul Collella",
+			"paul-colella-b4bb6284"
 		},
 		{
-			"Name": "Matthew Lam",
-			"LinkedIn": "matthewlam175"
+			"Matthew Lam",
+			"matthewlam175"
 		}
 	]
 
