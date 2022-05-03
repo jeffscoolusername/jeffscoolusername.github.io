@@ -40,7 +40,7 @@ $(document)
         window.alert = function() {};*/
 
         var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
-        var algochartsapi = 'https://algocharts.net/api/?asset_in=';
+        //var algochartsapi = 'https://algocharts.net/api/?asset_in=';
         var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
         var algowalletexplorerapi = 'https://api.algoexplorer.io/v1/account/';
         var algowalletamountexplorerapi = 'https://api.algoexplorer.io/v2/accounts/';
@@ -1176,7 +1176,7 @@ $(document)
                 };
 
                 //look into this later
-                $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+               /* $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                     e.preventDefault()
                     var tab_name = this.getAttribute('href');
                     if (history.pushState) {
@@ -1185,15 +1185,15 @@ $(document)
                         /*google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
                         google.charts.load('current', {packages: ['corechart', 'bar']});
                         
-                        google.charts.setOnLoadCallback(drawBasic);
-                        google.charts.setOnLoadCallback(drawVisualization);
-                        google.charts.setOnLoadCallback(drawChart4);*/
+                        //google.charts.setOnLoadCallback(drawBasic);
+                        //google.charts.setOnLoadCallback(drawVisualization);
+                        //google.charts.setOnLoadCallback(drawChart4);
                         $('#example6').DataTable().clear().rows.add(jsObj5).draw();    
                         
                       }
                       //trash code
                     }
-                  });
+                  });*/
 
                 google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
                 google.charts.load('current', {packages: ['corechart', 'bar']});
@@ -1848,6 +1848,7 @@ $(document)
                             'data': 'Index',
                             "render": function(data, type, row, meta){
                                 if(type === 'display'){
+                                    //console.log(data);
                                     data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';
                                 }
                     
@@ -1874,7 +1875,7 @@ $(document)
                     ]
                 })
 
-                $('#example1').DataTable().clear().rows.add(jsObj0).draw();    
+               /*$('#example1').DataTable().clear().rows.add(jsObj0).draw();    
                 
                 $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                     e.preventDefault()
@@ -1887,7 +1888,7 @@ $(document)
                       }
                       //trash code
                     }
-                  });
+                  });*/
 
                 ;  
         
@@ -2010,7 +2011,7 @@ $(document)
                     ]
                 })
 
-                $('#example2').DataTable().clear().rows.add(jsObj1).draw();   
+                /*$('#example2').DataTable().clear().rows.add(jsObj1).draw();   
                 
                 $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                     e.preventDefault()
@@ -2023,7 +2024,7 @@ $(document)
                       }
                       //trash code
                     }
-                  });
+                  });*/
 
                 ; 
         
@@ -2159,7 +2160,7 @@ $(document)
                     ]
                 })
 
-                $('#example3').DataTable().clear().rows.add(jsObj2).draw();   
+                /*$('#example3').DataTable().clear().rows.add(jsObj2).draw();   
                 
                 $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                     e.preventDefault()
@@ -2172,7 +2173,7 @@ $(document)
                       }
                       //trash code
                     }
-                  });
+                  });*/
                 
                 ; 
         
@@ -2365,7 +2366,7 @@ $(document)
 
                 //sleep(6000);
 
-                $('#example4').DataTable().clear().rows.add(jsObj3).draw();    
+                /*$('#example4').DataTable().clear().rows.add(jsObj3).draw();    
                 
                 $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                     e.preventDefault()
@@ -2378,7 +2379,7 @@ $(document)
                       }
                       //trash code
                     }
-                  });                                        
+                  });       */                                 
                 
                 ; 
         
@@ -2507,7 +2508,7 @@ $(document)
                 /*await fetch(newslink9);
                 console.log(newslink9);*/
 
-                $('#example5').DataTable().clear().rows.add(jsObj4).draw();    
+                /*$('#example5').DataTable().clear().rows.add(jsObj4).draw();    
                 
                 $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                     e.preventDefault()
@@ -2520,7 +2521,7 @@ $(document)
                       }
                       //trash code
                     }
-                  });
+                  });*/
                 
                 ; 
         
@@ -2652,7 +2653,7 @@ $(document)
                     ]
                 })
                 
-                $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                /*$('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                     e.preventDefault()
                     var tab_name = this.getAttribute('href');
                     if (history.pushState) {
@@ -2663,7 +2664,7 @@ $(document)
                       }
                       //trash code
                     }
-                  });
+                  });*/
                 
                 ;    
 
@@ -2786,7 +2787,7 @@ $(document)
                     ]
                 })
 
-                $('#example7').DataTable().clear().rows.add(jsObj6).draw();  
+                /*$('#example7').DataTable().clear().rows.add(jsObj6).draw();  
                 
                 $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
                     e.preventDefault()
@@ -2798,7 +2799,7 @@ $(document)
                       }
                       //trash code
                     }
-                  });
+                  });*/
                 
                 ;    
 
@@ -2808,7 +2809,7 @@ $(document)
                 var exampleTable8 = $('#example8')
                 .DataTable({
                     /*data: jsObj7,*/
-                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt',
+                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays2.txt',
                     //data: data88888,
                     //data: data,
                     stateSave: true,
@@ -2906,25 +2907,22 @@ $(document)
                     }, 
                     rowReorder: true,
                     //keys: true,
-                    /*'columns': [
+                    'columns': [
                         
                         {
-                            'data': 'Wallet Name'
+                            'data': 'Name'
                         },
                         {
-                            'data': 'Amount'
-                        },
-                        {
-                            'data': 'Address',
+                            'data': 'linkedin',
                             "render": function(data, type, row, meta){
                                 if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data + '</a>';
+                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + data + '">' + data + '</a>';
                                 }
                     
                                 return data;
                                 }
-                        }                         
-                    ]*/
+                        }                       
+                    ]
                 })
 
                 //const response = await fetch('https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt');
@@ -3085,15 +3083,6 @@ $(document)
             var tab_name = this.getAttribute('href');
             if (history.pushState) {
               history.pushState(null, null, tab_name)
-              //trash code
-              /*if (tab_name === "#tab-table6") {
-                
-                //google.load('visualization', {packages: ['corechart'], callback: drawVisualization});         
-                //oogle.charts.load('current', {packages: ['corechart', 'bar']});
-
-                //window.location.reload(); //really low quality thing to add but here we are...
-              }*/
-              //trash code
             }
             else {
               location.hash = tab_name
