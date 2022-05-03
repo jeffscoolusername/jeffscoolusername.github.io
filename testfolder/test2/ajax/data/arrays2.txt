@@ -97,9 +97,9 @@
             [
               "Dark Coin","601894079","DC","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "Defly","470842789","DEFLY","Yes","Awarded","TBD","TBD","Yes" ],
+              "Defly","470842789","DEFLY","Yes","https://algorand.foundation/grants-program/grant-awardees","TBD","TBD","Yes" ],
             [
-              "Dope Panda","391379500","DPANDA","TBD","Awarded","TBD","Yes","Yes" ],
+              "Dope Panda","391379500","DPANDA","TBD","https://algorand.foundation/grants-program/grant-awardees","TBD","Yes","Yes" ],
             [
               "Fight Token","591601798","FIGHT","TBD","TBD","TBD","TBD","Yes" ],
             [
@@ -111,15 +111,15 @@
             [
               "GARD","TBD","GARD","TBD","TBD","Registered","Yes","Yes" ],
             [
-              "AlgoGems","230946361","GEMS","Yes","Awarded","TBD","TBD","Yes" ],
+              "AlgoGems","230946361","GEMS","Yes","https://algorand.foundation/grants-program/grant-awardees","TBD","TBD","Yes" ],
             [
               "LegoMyAlgo","568835243","GoAlgo","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "AlgoMint","386192725","goBTC","TBD","Awarded","Registered","Yes","Yes" ],
+              "AlgoMint","386192725","goBTC","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","Yes","Yes" ],
             [
-              "AlgoMint","386195940","goETH","TBD","Awarded","Registered","Yes","Yes" ],
+              "AlgoMint","386195940","goETH","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","Yes","Yes" ],
             [
-              "AlgoMint","441139422","goMINT","TBD","Awarded","Registered","Yes","Yes" ],
+              "AlgoMint","441139422","goMINT","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","Yes","Yes" ],
             [
               "Nexus","403499324","GP","TBD","TBD","TBD","Yes","TBD" ],
             [
@@ -141,7 +141,7 @@
             [
               "Pari","461849439","PARI","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "PlanetWatch","7165954","Planets","Yes","Awarded","Registered","Yes","Yes" ],
+              "PlanetWatch","7165954","Planets","Yes","https://algorand.foundation/grants-program/grant-awardees","Registered","Yes","Yes" ],
             [
               "Parsec","415045633","PRSC","TBD","TBD","TBD","TBD","Yes" ],
             [
@@ -157,9 +157,9 @@
             [
               "SeedBomb","523605642","SEEDS","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "Smile Coin","300208676","SMILE","TBD","Awarded","TBD","Yes","Yes" ],
+              "Smile Coin","300208676","SMILE","TBD","https://algorand.foundation/grants-program/grant-awardees","TBD","Yes","Yes" ],
             [
-              "SockHODLER","452047208","SOCKS","TBD","Awarded","TBD","Yes","TBD" ],
+              "SockHODLER","452047208","SOCKS","TBD","https://algorand.foundation/grants-program/grant-awardees","TBD","Yes","TBD" ],
             [
               "Algofi","465865291","STBL","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","TBD","Yes" ],
             [
@@ -173,7 +173,7 @@
             [
               "TinyBots","421281844","TBOTS","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "TinyChart","378382099","TINY","TBD","Awarded","TBD","TBD","Yes" ],
+              "TinyChart","378382099","TINY","TBD","https://algorand.foundation/grants-program/grant-awardees","TBD","TBD","Yes" ],
             [
               "ToolsX","394014424","ToolsX","TBD","TBD","TBD","Yes","Yes" ],
             [
@@ -181,9 +181,9 @@
             [
               "USD Coin","31566704","USDC","TBD","TBD","Yes","Yes","TBD" ],
             [
-              "Webblen","509808838","WBLN","TBD","Awarded","Registered","Yes","Yes" ],
+              "Webblen","509808838","WBLN","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","Yes","Yes" ],
             [
-              "Xfinite","283820866","XET","TBD","Awarded","Registered","Yes","Yes" ],
+              "Xfinite","283820866","XET","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","Yes","Yes" ],
             [
               "Glitter Finance","607591690","XGLI","TBD","TBD","Yes","Yes","Roadmap" ],
             [
