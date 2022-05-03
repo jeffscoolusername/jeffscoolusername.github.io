@@ -2809,7 +2809,7 @@ $(document)
                 var exampleTable8 = $('#example8')
                 .DataTable({
                     /*data: jsObj7,*/
-                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt',
+                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays2.txt',
                     //data: data88888,
                     //data: data,
                     stateSave: true,
