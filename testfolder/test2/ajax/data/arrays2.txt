@@ -1,0 +1,22 @@
+[
+	{
+		"name": "John Clarke",
+		"linkedin": "jaclarke1"
+	},
+	{
+		"name": "Owen Colegrove",
+		"linkedin": "owencolegrove"
+	},
+	{
+		"name": "Ibu Karel",
+		"linkedin": "ibukarel"
+	},
+	{
+		"name": "Paul Collella",
+		"linkedin": "paul-colella-b4bb6284"
+	},
+	{
+		"name": "Matthew Lam",
+		"linkedin": "matthewlam175"
+	}
+]
