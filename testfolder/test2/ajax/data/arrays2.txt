@@ -1,24 +1,23 @@
 {
-	"data": [
-		[
-			"personname" : "John Clarke",
-			"linkedin" : "jaclarke1"
-		],
-		[
-			"personname" : "Owen Colegrove",
-			"linkedin" : "owencolegrove"
-		],
-		[
-			"personname" : "Ibu Karel",
-			"linkedin" : "ibukarel"
-		],
-		[
-			"personname" : "Paul Collella",
-			"linkedin" : "paul-colella-b4bb6284"
-		],
-		[
-			"personname" : "Matthew Lam",
-			"linkedin" : "matthewlam175"
-		]
+	[
+		'personname' : 'John Clarke',
+		'linkedin' : 'jaclarke1'
+	],
+	[
+		'personname' : 'Owen Colegrove',
+		'linkedin' : 'owencolegrove'
+	],
+	[
+		'personname'  : 'Ibu Karel',
+		'linkedin' : 'ibukarel'
+	],
+	[
+		'personname'  : 'Paul Collella',
+		'linkedin' : 'paul-colella-b4bb6284'
+	],
+	[
+		'personname'  : 'Matthew Lam',
+		'linkedin' : 'matthewlam175'
 	]
+
 }
