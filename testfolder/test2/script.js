@@ -2906,7 +2906,7 @@ $(document)
                         style: 'multi'
                     }, 
                     "columnDefs": [{
-                        "targets": 2,
+                        "targets": 1,
                         "render": function ( data, type, row, meta ) {
                             //var linkedIn = row[0];                   
                             //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
