@@ -1,25 +1,25 @@
 [
 	"data": [
-		{
+		[
 			"John Clarke",
 			"jaclarke1"
-		},
-		{
+		],
+		[
 			"Owen Colegrove",
 			"owencolegrove"
-		},
-		{
+		],
+		[
 			"Ibu Karel",
 			"ibukarel"
-		},
-		{
+		],
+		[
 			"Paul Collella",
 			"paul-colella-b4bb6284"
-		},
-		{
+		],
+		[
 			"Matthew Lam",
 			"matthewlam175"
-		}
+		]
 	]
 
 ]
