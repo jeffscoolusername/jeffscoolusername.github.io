@@ -1,196 +1,196 @@
 {
   "data": [
             [
-              "AVO","397111682","TBD","ALGO AVOCADO","Nov 4, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Creator, Manager, Reserve"  ],
+              "ALGO AVOCADO","397111682","AVO","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ABSKT","353409462","TBD","AlgoBasket","Oct 2, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","TinyChart"  ],
+              "AlgoBasket","353409462","ABSKT","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ACAT","430838314","TBD","Astrocat","Nov 19, 2021","TBD","TBD","TBD","Yes","TBD","Creator, Manager, Reserve","Discord, Instagram, Reddit, TinyChart, Twitter"  ],
+              "Astrocat","430838314","ACAT","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "ACORN","226265212","TBD","AlgoNuts","Jun 21, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Discord, Email, TinyChart, Twitter"  ],
+              "AlgoNuts","226265212","ACORN","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ACRES","555540865","TBD","80Acres","Jan 20, 2022","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Email, Phone, TinyChart"  ],
+              "80Acres","555540865","ACRES","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ADVENTUR","426526699","TBD","Adventure Coin","Nov 17, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Reddit, TinyChart, Twitter"  ],
+              "Adventure Coin","426526699","ADVENTUR","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "AFD","393495312","TBD","Algorand Faucet Drops","Nov 2, 2021","TBD","TBD","TBD","Yes","TBD","Creator, Reserve","Discord, TinyChart, Twitter"  ],
+              "Algorand Faucet Drops","393495312","AFD","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "AGNR","305992851","TBD","Algoneer","Aug 18, 2021","Team (1,2)","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Discord, Ecosystem, GitHub, Reddit, TinyChart"  ],
+              "Algoneer","305992851","AGNR","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "AGR","453816186","TBD","Aegir","Dec 3, 2021","TBD","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Email, TinyChart, Twitter"  ],
+              "Aegir","453816186","AGR","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "AIRSHO","457205263","TBD","AIRSHO Coin","Dec 6, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Reddit, TinyChart, Twitter"  ],
+              "AIRSHO Coin","457205263","AIRSHO","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "AKTA","523683256","TBD","Akita Inu","Jan 5, 2022","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Instagram, Reddit, TinyChart, Twitter"  ],
+              "Akita Inu","523683256","AKTA","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "AL","447852812","TBD","ALGO LITE","Nov 30, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","TinyChart"  ],
+              "ALGO LITE","447852812","AL","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ALC","445905873","TBD","Algo Leagues","Nov 28, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Discord, Tinychart"  ],
+              "Algo Leagues","445905873","ALC","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ALCH","310014962","TBD","AlcheCoin","Aug 23, 2021","TBD","TBD","TBD","Yes","TBD","Creator, Manager, Reserve","Discord, Telegram, TinyChart, Twitter"  ],
+              "AlcheCoin","310014962","ALCH","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "ALGF","463554836","TBD","AlgoFund","Dec 11, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Email, Reddit, Telegram, TinyChart, Twitter"  ],
+              "AlgoFund","463554836","ALGF","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "ALGR","227358511","TBD","ALGore","May 25, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","TinyChart"  ],
+              "ALGore","227358511","ALGR","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ANI","604643747","TBD","Anirand","Feb 14, 2022","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","TinyChart"  ],
+              "Anirand","604643747","ANI","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ANML","446220964","TBD","Animal Style","Nov 28, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Reserve","TinyChart"  ],
+              "Animal Style","446220964","ANML","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "AO","409604194","TBD","AlgOcean","Nov 10, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Email, GitHub, Reddit, TinyChart, Twitter"  ],
+              "AlgOcean","409604194","AO","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "AoA","466716175","TBD","Angels of Ares","Dec 15, 2021","TBD","TBD","TBD","Yes","TBD","Creator, Manager, Reserve","Discord, Telegram, TinyChart, Twitter"  ],
+              "Angels of Ares","466716175","AoA","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "APF","542132831","TBD","ASA Portfolio","Jan 13, 2022","TBD","TBD","TBD","Yes","TBD","Creator, Manager","Discord, Ecosystem, GitHub, Reddit, TinyChart, Twitter"  ],
+              "ASA Portfolio","542132831","APF","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "APPLE","397629052","TBD","Apple","Nov 4, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","TinyChart"  ],
+              "Apple","397629052","APPLE","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ARCC","163650","TBD","Asia Reserve Currency Coin","Jan 9, 2020","TBD","TBD","TBD","Yes","TBD","Clawback, Creator, Freeze, Manager, Reserve","Email, Medium, Telegram, TinyChart, Twitter"  ],
+              "Asia Reserve Currency Coin","163650","ARCC","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "ASASTATS","393537671","TBD","ASA Stats","Nov 2, 2021","Core Developer & Website Administrator (1,2)","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, Discord, GitHub, Reddit, TinyChart, Twitter"  ],
+              "ASA Stats","393537671","ASASTATS","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "AVCT","540605589","TBD","AlgoVegas Casino Token","Jan 12, 2022","TBD","TBD","TBD","Yes","TBD","Creator, Reserve","TinyChart, Twitter"  ],
+              "AlgoVegas Casino Token","540605589","AVCT","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "AWT","233939122","TBD","AlgoWorld Token","Jun 5, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Discord, Ecosystem, Email, GitHub, Telegram, TinyChart, Twitter"  ],
+              "AlgoWorld Token","233939122","AWT","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "BALGO","470335962","TBD","balgo","Dec 17, 2021","TBD","TBD","TBD","TBD","TBD","Clawback, Creator, Freeze, Manager, Reserve","TinyChart"  ],
+              "balgo","470335962","BALGO","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "BANAAN","382781470","TBD","BANAAN","Dec 20, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Tinychart"  ],
+              "BANAAN","382781470","BANAAN","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "BANK","469835031","TBD","Algofi","Dec 16, 2021","Co-Founder, Co-Founder, Community Manager, Founding Engineer, Product Manager, Software Engineer","Awarded","Registered","TBD","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Email, GitHub, LinkedIn, Medium, Reddit, Telegram, Tinychart, Tinychart, Twitter"  ],
+              "Algofi","469835031","BANK","TBD","Awarded","Registered","TBD","Yes" ],
             [
-              "BASIC","615093377","TBD","AlgoBasics","Feb 19, 2022","TBD","TBD","TBD","TBD","TBD","Clawback, Creator, Freeze, Manager, Reserve","TinyChart"  ],
+              "AlgoBasics","615093377","BASIC","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "BEAN","473180477","TBD","Coffee DAO","Dec 18, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Discord, Tinychart, Twitter"  ],
+              "Coffee DAO","473180477","BEAN","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "BIRDS","478549868","TBD","BirdBot","Dec 20, 2021","Co-Founder, Hardware Developer","Applied","TBD","Being Finalized","Yes","Creator, Developer, Liquidity, Manager, Reserve, Team","Discord, Ecosystem, GitHub, LinkedIn, Reddit, Tinychart, Twitter"  ],
+              "BirdBot","478549868","BIRDS","TBD","Applied","TBD","Finalizing","Yes" ],
             [
-              "BLAPU","401752010","TBD","Blapu","Nov 6, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","TinyChart"  ],
+              "Blapu","401752010","BLAPU","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "Block","251014570","TBD","Blocks","Jun 22, 2021","Creative Founder, Technical Founder","TBD","TBD","Yes","Yes","Clawback, Creator, Freeze, Manager, Reserve","Email, TinyChart, Twitter"  ],
+              "Blocks","251014570","Block","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "BOARD","342889824","TBD","Board","Sep 23, 2021","TBD","TBD","TBD","Yes, Yes","TBD","Creator, Manager, Reserve","Ecosystem, Medium, Telegram, TinyChart, Twitter"  ],
+              "Board","342889824","BOARD","TBD","TBD","TBD","Yes, Yes","TBD" ],
             [
-              "Bones","251014570","TBD","Bones ASA","Dec 29, 2021","TBD","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Reddit, TinyChart, Twitter"  ],
+              "Bones ASA","251014570","Bones","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "BULO","498684064","TBD","BULO Coin","Dec 26, 2021","TBD","TBD","TBD","Yes","TBD","Creator, Reserve","TinyChart"  ],
+              "BULO Coin","498684064","BULO","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "BUY","137020565","TBD","Buy Token","Feb 24, 2021","Blockchain Architect, Business Development Manager, CEO, Founder, Creative Ahead, CTO, COO, Customer Service Representative, Head of Sales and Marketing, Marketing Advisor, Sales & Marketing Consultant, Sales & Marketing Specialist, Sales Representative, Sales Specialist, Senior Advisor, Senior Advisor","TBD","Yes","Yes","Yes","Clawback, Creator, Freeze, Manager, Reserve","Email, LinkedIn, Phone, Telegram, TinyChart, Twitter"  ],
+              "Buy Token","137020565","BUY","TBD","TBD","Yes","Yes","Yes" ],
             [
-              "CHEERS","402495345","TBD","DrinkItWriteIt","Nov 7, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","TinyChart"  ],
+              "DrinkItWriteIt","402495345","CHEERS","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "Chips","388592191","Yes","Algo-Casino","Oct 29, 2021","Founder & CEO, Website Developer","TBD","TBD","TBD","Yes","CEO, Creator, Developer, Faucet, Manager, Reserve, Test, Test","Discord, Ecosystem, LinkedIn, Reddit, Tinychart, Twitter"  ],
+              "Algo-Casino","388592191","Chips","Yes","TBD","TBD","TBD","Yes" ],
             [
-              "Choice","297995609","TBD","Choice Coin","Aug 10, 2021","Co-Founder","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Ecosystem, GitHub, Medium, TinyChart, Twitter"  ],
+              "Choice Coin","297995609","Choice","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "CNDL","585221469","TBD","Candle","Feb 3, 2022","TBD","TBD","TBD","TBD","TBD","Clawback, Creator, Freeze, Manager, Reserve","TinyChart"  ],
+              "Candle","585221469","CNDL","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "COSG","571576867","TBD","Cosmic Gold","Jan 28, 2022","TBD","TBD","TBD","TBD","Yes","Creator","Discord, Medium, LinkedIn, Reddit, Telegram, TinyChart, Twitter"  ],
+              "Cosmic Gold","571576867","COSG","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "Coup🎫","281003266","TBD","NFT Grocery Store Coupon","July 20, 2021","TBD","TBD","TBD","TBD","TBD","Clawback, Creator, Freeze, Reserve, Manager","Discord, Email, Reddit, Telegram, TinyChart, Twitter"  ],
+              "NFT Grocery Store Coupon","281003266","Coup🎫","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "CRSD","435335235","TBD","Crescendo","Nov 21, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Reddit, TinyChart, Twitter"  ],
+              "Crescendo","435335235","CRSD","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "Cujo","511491168","TBD","Cujo Token","Dec 29, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Reddit, TinyChart, Twitter"  ],
+              "Cujo Token","511491168","Cujo","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "CURATOR","319473667","TBD","Algo Curator","Sep 2, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, TinyChart, Twitter"  ],
+              "Algo Curator","319473667","CURATOR","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "DC","601894079","TBD","Dark Coin","Feb 12, 2022","TBD","TBD","TBD","TBD","TBD","Creator, Manager","TinyChart"  ],
+              "Dark Coin","601894079","DC","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "DEFLY","470842789","Yes","Defly","Dec 17, 2021","CEO, Co-Founder, Founder, Founder","Awarded","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, Ecosystem, LinkedIn, Tinychart, Twitter"  ],
+              "Defly","470842789","DEFLY","Yes","Awarded","TBD","TBD","Yes" ],
             [
-              "DPANDA","391379500","TBD","Dope Panda","Oct 31, 2021","TBD","Awarded","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Email, Reddit, Tinychart, Telegram"  ],
+              "Dope Panda","391379500","DPANDA","TBD","Awarded","TBD","Yes","Yes" ],
             [
-              "FIGHT","591601798","TBD","Fight Token","Feb 7, 2022","Creative Founder, Technical Founder","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, TinyChart"  ],
+              "Fight Token","591601798","FIGHT","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "FISH","393155456","TBD","Clean Ocean","Nov 1, 2021","TBD","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, Facebook, Instagram, Reddit, TinyChart, Twitter"  ],
+              "Clean Ocean","393155456","FISH","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "FLAMINGO","406383570","TBD","Flamingo Coin","Nov 8, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Discord, Reddit, TinyChart"  ],
+              "Flamingo Coin","406383570","FLAMINGO","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "FMA","547405153","TBD","FairMeme","Jan 16, 2022","TBD","TBD","TBD","Yes","Yes","Creator, Freeze, Manager, Reserve","Discord, Ecosystem, GitHub, Medium, Telegram, TinyChart, Twitter"  ],
+              "FairMeme","547405153","FMA","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "GARD","TBD","TBD","GARD","TBD","Founder & CEO, Co-Founder & Technical Lead, Co-Founder & COO","TBD","Registered","Yes","Yes","TBD","Discord, Ecosystem, GitHub, Medium, Reddit, Twitter"  ],
+              "GARD","TBD","GARD","TBD","TBD","Registered","Yes","Yes" ],
             [
-              "GEMS","230946361","Yes","AlgoGems","June 1, 2021","CMO","Awarded","TBD","TBD","Yes","Burn, Creator, Manager, Reserve","Ecosystem, GitHub, Instagram, Medium, Reddit, Telegram, Tinychart, Twitter"  ],
+              "AlgoGems","230946361","GEMS","Yes","Awarded","TBD","TBD","Yes" ],
             [
-              "GoAlgo","568835243","TBD","LegoMyAlgo","Jan 27, 2022","TBD","TBD","TBD","TBD","TBD","Creator","Discord, Telegram, TinyChart, Twitter"  ],
+              "LegoMyAlgo","568835243","GoAlgo","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "goBTC","386192725","TBD","AlgoMint","Oct 27, 2021","Backend Software Engineer, Co-Founder, Co-Founder, CTO, CTO, COO, Software Engineer","Awarded","Registered","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Gitbook, LinkedIn, Medium, Reddit, Tinychart, Twitter"  ],
+              "AlgoMint","386192725","goBTC","TBD","Awarded","Registered","Yes","Yes" ],
             [
-              "goETH","386195940","TBD","AlgoMint","Oct 27, 2021","Backend Software Engineer, Co-Founder, Co-Founder, CTO, CTO, COO, Software Engineer","Awarded","Registered","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Gitbook, LinkedIn, Medium, Reddit, Tinychart, Twitter"  ],
+              "AlgoMint","386195940","goETH","TBD","Awarded","Registered","Yes","Yes" ],
             [
-              "goMINT","441139422","TBD","AlgoMint","Nov 5, 2021","Backend Software Engineer, Co-Founder, Co-Founder, CTO, CTO, COO, Software Engineer","Awarded","Registered","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Gitbook, LinkedIn, Medium, Reddit, Tinychart, Twitter"  ],
+              "AlgoMint","441139422","goMINT","TBD","Awarded","Registered","Yes","Yes" ],
             [
-              "GP","403499324","TBD","Nexus","Nov 7, 2021","TBD","TBD","TBD","Yes","TBD","Creator, Manager","Discord, Discord, Ecosystem, Ecosystem, Email, Reddit, TinyChart, Twitter"  ],
+              "Nexus","403499324","GP","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "HDL","137594422","TBD","Headline","Feb 25, 2021","CEO, Senior Project Manager","TBD","Registered","TBD","TBD","Creator, Manager, Reserve","Ecosystem, Email, GitHub, Reddit, Telegram, TinyChart Twitter"  ],
+              "Headline","137594422","HDL","TBD","TBD","Registered","TBD","TBD" ],
             [
-              "LOUD","567485181","TBD","LOUDDeFi","Jan 26, 2022","TBD","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Email, TinyChart, Twitter"  ],
+              "LOUDDeFi","567485181","LOUD","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "Nekos","404044168","TBD","NEKOIN","Nov 7, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Email, Email, Medium, Reddit, TinyChart, Twitter"  ],
+              "NEKOIN","404044168","Nekos","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "NFT","455356741","TBD","NFTrade","Dec 4, 2021","TBD","TBD","TBD","Yes","TBD","Creator, Manager, Reserve, Reserve, Vault","Discord, TinyChart Twitter"  ],
+              "NFTrade","455356741","NFT","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "NTR2","571931588","TBD","Neutral Token","Jan 28, 2022","TBD","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Email, Reddit, Telegram, TinyChart, Twitter"  ],
+              "Neutral Token","571931588","NTR2","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "NURD","330168845","TBD","KryptoNurd","Sep 12, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Ecosystem, TinyChart, Twitter, YouTube"  ],
+              "KryptoNurd","330168845","NURD","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "OGS","613608234","TBD","Orbital Gnome Strikers","Feb 19, 2022","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Discord, Reddit, TinyChart, Twitter"  ],
+              "Orbital Gnome Strikers","613608234","OGS","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "OPUL","287867876","Yes","Opulous","July 29, 2021","Business Operations, CEO, Chief Investment Officer, Community Manager, CMO, Co-Founder & COO, CTO, Graphic & Motion Designer, Head of Artist Services, Head of Content, Head of Legal, Head of Social Media, Office Manager","TBD","Yes","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Email, Instagram, Medium, TinyChart, Twitter"  ],
+              "Opulous","287867876","OPUL","Yes","TBD","Yes","Yes","Yes" ],
             [
-              "PARI","461849439","TBD","Pari","Dec 10, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Telegram, TinyChart Twitter"  ],
+              "Pari","461849439","PARI","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "Planets","7165954","Yes","PlanetWatch","Aug 27, 2020","Air Quality Specialist, CEO & Founder, Community Manager, CTO & Founder, Data Scientist, Senior Software Engineer Team Lead","Awarded","Registered","Yes","Yes","Creator, Manager, Reserve","Discord, Instagram, LinkedIn, Medium, Telegram, Tinychart, Twitter, YouTube"  ],
+              "PlanetWatch","7165954","Planets","Yes","Awarded","Registered","Yes","Yes" ],
             [
-              "PRSC","415045633","TBD","Parsec","Nov 12, 2021","TBD","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Reddit, TinyChart, Twitter"  ],
+              "Parsec","415045633","PRSC","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "Pup","394904431","TBD","AlgorandDoge","Nov 2, 2021","TBD","TBD","TBD","Yes","TBD","Creator, Manager","Discord, Email, Reddit, Telegram, Telegram, TinyChart, Twitter"  ],
+              "AlgorandDoge","394904431","Pup","TBD","TBD","TBD","Yes","TBD" ],
             [
-              "QUACK","444568464","TBD","Duckcoin","Nov 27, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Email, Instagram, Reddit, TinyChart, Twitter"  ],
+              "Duckcoin","444568464","QUACK","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "RCOIN","426980914","TBD","Raptor Coin","Nov 17, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, TinyChart, Twitter"  ],
+              "Raptor Coin","426980914","RCOIN","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "Roo","575353596","TBD","Wageroo","Jan 30, 2022","TBD","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Reddit, Email, TinyChart"  ],
+              "Wageroo","575353596","Roo","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "SCOUT","569120128","TBD","AlgoScout","Jan 27, 2022","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Ecosystem, Telegram, Telegram, Tinychart, Twitter"  ],
+              "AlgoScout","569120128","SCOUT","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "SEEDS","523605642","TBD","SeedBomb","Jan 4, 2022","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Ecosystem, Instagram, Reddit, TinyChart, Twitter"  ],
+              "SeedBomb","523605642","SEEDS","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "SMILE","300208676","TBD","Smile Coin","Aug 11, 2021","Co-Founder, Co-Founder, Co-Founder, Partnerships","Awarded","TBD","Yes","Yes","Creator, Freeze, Manager, Reserve","Discord, Ecosystem, Medium, Reddit, Telegram, Tinychart, Twitter"  ],
+              "Smile Coin","300208676","SMILE","TBD","Awarded","TBD","Yes","Yes" ],
             [
-              "SOCKS","452047208","TBD","SockHODLER","Dec 2, 2021","TBD","Awarded","TBD","Yes","TBD","Creator, Manager, Reserve","Discord, Ecosystem, Email, GitHub, Medium, Reddit, Tinychart, Twitter"  ],
+              "SockHODLER","452047208","SOCKS","TBD","Awarded","TBD","Yes","TBD" ],
             [
-              "STBL","465865291","TBD","Algofi","Dec 14, 2021","Co-Founder, Co-Founder, Community Manager, Founding Engineer, Product Manager, Software Engineer","Awarded","Registered","TBD","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Email, GitHub, LinkedIn, Medium, Reddit, Telegram, Tinychart, Tinychart, Twitter"  ],
+              "Algofi","465865291","STBL","TBD","Awarded","Registered","TBD","Yes" ],
             [
-              "STKE","511484048","Yes","AlgoStake","Dec 29, 2021","CEO/Dev/Product","Applied","Registered","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Reddit, Tinychart, Twitter"  ],
+              "AlgoStake","511484048","STKE","Yes","Applied","Registered","Yes","Yes" ],
             [
-              "SUPER","433379445","TBD","Super Algo Arcade","Nov 21, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Email, Reddit, TinyChart, Twitter,"  ],
+              "Super Algo Arcade","433379445","SUPER","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "SVANSY","388502764","TBD","Svansy Coin","Oct 29, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Audius, Bandcamp, Discord, Ecosystem, Instagram, Reddit, SoundCloud, Telegram, TinyChart, Twitter, YouTube"  ],
+              "Svansy Coin","388502764","SVANSY","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "Tacos","329110405","TBD","TacoCoin","Sep 11, 2021","TBD","TBD","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, Reddit, Telegram, TinyChart, Twitter"  ],
+              "TacoCoin","329110405","Tacos","TBD","TBD","TBD","TBD","Yes" ],
             [
-              "TBOTS","421281844","TBD","TinyBots","Nov 15, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Reserve, Manager","TinyChart"  ],
+              "TinyBots","421281844","TBOTS","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "TINY","378382099","TBD","TinyChart","Oct 21, 2021","Founder, Co-Founder","Awarded","TBD","TBD","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Email, GitHub, LinkedIn, Medium, Reddit, Tinychart, Twitter"  ],
+              "TinyChart","378382099","TINY","TBD","Awarded","TBD","TBD","Yes" ],
             [
-              "ToolsX","394014424","TBD","ToolsX","Nov 2, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Email, Telegram, TinyChart, Twitter"  ],
+              "ToolsX","394014424","ToolsX","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "TREES","444108880","TBD","CryptoTrees","Nov 27, 2021","TBD","TBD","TBD","Yes","Yes","Creator, Manager, Reserve","Discord, Ecosystem, Reddit, TinyChart, Twitter"  ],
+              "CryptoTrees","444108880","TREES","TBD","TBD","TBD","Yes","Yes" ],
             [
-              "USDC","31566704","TBD","USD Coin","Sep 4, 2020","Business Operations Manager, CEO, CCO, CRCO , COO, Director of Identity and Standards, Director, Alliance Development, EMEA Programs Director, Graduate Project Manager, Head of Business Development, Standards Coordinator","TBD","Yes","Yes","TBD","Creator, Freeze, Manager, Reserve","LinkedIn, TinyChart, Twitter"  ],
+              "USD Coin","31566704","USDC","TBD","TBD","Yes","Yes","TBD" ],
             [
-              "WBLN","509808838","TBD","Webblen","Dec 28, 2021","Co-Founder / CEO, CTO, CMO, CRO, Lead Developer, COO","Awarded","Registered","Yes","Yes","Creator, Manager, Reserve","Discord, Discord, Ecosystem, Facebook, Instagram, LinkedIn, Medium, Reddit, Telegram, Tinychart, Twitter, YouTube"  ],
+              "Webblen","509808838","WBLN","TBD","Awarded","Registered","Yes","Yes" ],
             [
-              "XET","283820866","TBD","Xfinite","July 23, 2021","Blockchain Architect, Blockchain Engineer, Chief Ecosystem Officer, CEO, Head of Communications, Head of Product, Lead Blockchain Architect, Manager UI/UX","Awarded","Registered","Yes","Yes","Creator, Manager","Discord, Ecosystem, Facebook, Instagram, LinkedIn, Medium, Telegram, Tinychart, Twitter"  ],
+              "Xfinite","283820866","XET","TBD","Awarded","Registered","Yes","Yes" ],
             [
-              "XGLI","607591690","TBD","Glitter Finance","Feb 15, 2022","Chief Operational Officer, Chief Strategy Officer, Executive Assistant, Founder & CEO, Frontend Solutions Developer, Management Director, Marketing Manager, Software Engineer, Principal Software Engineer, Product Manager & Head of Tokenomics","TBD","Yes","Yes","Roadmap","Clawback, Creator, Freeze, Manager, Reserve","Discord, Facebook, GitHub, Instagram, LinkedIn, Medium, Telegram, Tinychart, Twitter, YouTube"  ],
+              "Glitter Finance","607591690","XGLI","TBD","TBD","Yes","Yes","Roadmap" ],
             [
-              "YLDY","226701642","Yes","Yieldly","May 24, 2021","Co-Founder | CEO, COO, Communications, Head of Esports, Head of Marketing, Operations Manager, Social Media Manager","TBD","Registered","TBD","Yes","Creator, Manager","Discord, Ecosystem, GitHub, LinkedIn, Medium, Reddit, Tinychart, Twitter"  ],
+              "Yieldly","226701642","YLDY","Yes","TBD","Registered","TBD","Yes" ],
             [
-              "ZENI","317670428","TBD","Zenny","Sep 1, 2021","TBD","TBD","TBD","TBD","TBD","Creator, Manager, Reserve","Discord, TinyChart, Twitter"  ],
+              "Zenny","317670428","ZENI","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "ZONE","444035862","TBD","Zone","Nov 27, 2021","CTO, Founder & CEO, Graphic Designer, Head of Operations, Lead Operations Head, Lead Operations Manager, Technical Writer, UX/UI Designer, UX/UI Designer","TBD","Registered","Yes","Yes","Creator, Manager","Discord, Ecosystem, LinkedIn, Medium, Reddit, Tinychart, Twitter"  ]
-  ]
+              "Zone","444035862","ZONE","TBD","TBD","Registered","Yes","Yes" ]
+          ]
 }
