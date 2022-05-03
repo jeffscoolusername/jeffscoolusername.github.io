@@ -2905,27 +2905,15 @@ $(document)
                     select: {
                         style: 'multi'
                     }, 
-                    rowReorder: true,
-                    //keys: true,
-                    /*'columns': [
-                        
-                        {
-                            'data': 'Wallet Name'
-                        },
-                        {
-                            'data': 'Amount'
-                        },
-                        {
-                            'data': 'Address',
-                            "render": function(data, type, row, meta){
-                                if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data + '</a>';
-                                }
-                    
-                                return data;
-                                }
-                        }                         
-                    ]*/
+                    "columnDefs": [{
+                        "targets": 2,
+                        "render": function ( data, type, row, meta ) {
+                            //var linkedIn = row[0];                   
+                            //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
+                            return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + data + '">' + data + '</a>';
+                        }
+                    }],
+                    rowReorder: true
                 })
 
                 //const response = await fetch('https://jeffscoolusername.github.io/testfolder/test2/ajax/data/arrays.txt');
