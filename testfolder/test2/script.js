@@ -2913,7 +2913,7 @@ $(document)
                             'data': 'Name'
                         },
                         {
-                            'data': 'linkedin',
+                            'data': 'LinkedIn',
                             "render": function(data, type, row, meta){
                                 if(type === 'display'){
                                     data = '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + data + '">' + data + '</a>';
