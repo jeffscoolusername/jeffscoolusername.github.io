@@ -3072,7 +3072,7 @@ $(document)
                             }
                         },
                         {
-                           "targets": [4, 5, 6],
+                           "targets": [4, 5, 6, 7],
                             "render": function ( data, type, row, meta ) {
                                 if (data === "TBD")
                                 {return data;}
