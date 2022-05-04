@@ -57,7 +57,7 @@
             [
               "BANAAN","382781470","BANAAN","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "Algofi","469835031","BANK","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","TBD","https://blog.algofi.org/algofi-roadmap-update-dex-aeneas-rewards-nanoswap-bank-and-more-a3912874e097" ],
+              "Algofi","469835031","BANK","TBD","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/algofi-15e3","TBD","https://blog.algofi.org/algofi-roadmap-update-dex-aeneas-rewards-nanoswap-bank-and-more-a3912874e097" ],
             [
               "AlgoBasics","615093377","BASIC","TBD","TBD","TBD","TBD","TBD" ],
             [
@@ -161,7 +161,7 @@
             [
               "SockHODLER","452047208","SOCKS","TBD","https://algorand.foundation/grants-program/grant-awardees","TBD","https://sockhodler.gitbook.io/sockhodler-litepaper/","TBD" ],
             [
-              "Algofi","465865291","STBL","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","TBD","https://blog.algofi.org/algofi-roadmap-update-dex-aeneas-rewards-nanoswap-bank-and-more-a3912874e097" ],
+              "Algofi","465865291","STBL","TBD","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/algofi-15e3","TBD","https://blog.algofi.org/algofi-roadmap-update-dex-aeneas-rewards-nanoswap-bank-and-more-a3912874e097" ],
             [
               "AlgoStake","511484048","STKE","Yes","Applied","https://www.bizapedia.com/ca/algostake-llc.html","https://algostake.org/litepaper","https://algostake.org/roadmap" ],
             [
