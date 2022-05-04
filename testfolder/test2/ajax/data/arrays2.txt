@@ -75,7 +75,7 @@
             [
               "BULO Coin","498684064","BULO","TBD","TBD","TBD","https://bulocoin.site/assets/BULOpaper.pdf","TBD" ],
             [
-              "Buy Token","137020565","BUY","TBD","TBD","Yes","https://www.buying.com/catalog/view/theme/journal2/assets/documents/Buying.com_Whitepaper_v5.pdf","https://buying.com/index.php?route=common/roadmap" ],
+              "Buy Token","137020565","BUY","TBD","TBD","https://www.crunchbase.com/organization/buying-com","https://www.buying.com/catalog/view/theme/journal2/assets/documents/Buying.com_Whitepaper_v5.pdf","https://buying.com/index.php?route=common/roadmap" ],
             [
               "DrinkItWriteIt","402495345","CHEERS","TBD","TBD","TBD","TBD","TBD" ],
             [
@@ -109,17 +109,17 @@
             [
               "FairMeme","547405153","FMA","TBD","TBD","TBD","https://fairmeme.org/launchpad.pdf","https://fairmeme.org/" ],
             [
-              "GARD","TBD","GARD","TBD","TBD","Registered","https://www.algogard.com/white-paper.pdf","https://www.algogard.com/#roadmap" ],
+              "GARD","TBD","GARD","TBD","TBD","https://www.crunchbase.com/organization/tapera-inc","https://www.algogard.com/white-paper.pdf","https://www.algogard.com/#roadmap" ],
             [
               "AlgoGems","230946361","GEMS","Yes","https://algorand.foundation/grants-program/grant-awardees","TBD","TBD","https://algogemsnft.github.io/#/" ],
             [
               "LegoMyAlgo","568835243","GoAlgo","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "AlgoMint","386192725","goBTC","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","https://assets.website-files.com/622809ce00daec36f1c8c919/62413344b4f44a025ebb4867_Litepaper.%20Algomint_%20The%20Cross-Chain%20Liquidity%20Network.pdf","https://medium.com/algomint/algomint-2nd-feb-ama-roadmap-incentive-program-and-token-listing-81ce6af1047" ],
+              "AlgoMint","386192725","goBTC","TBD","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/algomint","https://assets.website-files.com/622809ce00daec36f1c8c919/62413344b4f44a025ebb4867_Litepaper.%20Algomint_%20The%20Cross-Chain%20Liquidity%20Network.pdf","https://medium.com/algomint/algomint-2nd-feb-ama-roadmap-incentive-program-and-token-listing-81ce6af1047" ],
             [
-              "AlgoMint","386195940","goETH","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","https://assets.website-files.com/622809ce00daec36f1c8c919/62413344b4f44a025ebb4867_Litepaper.%20Algomint_%20The%20Cross-Chain%20Liquidity%20Network.pdf","https://medium.com/algomint/algomint-2nd-feb-ama-roadmap-incentive-program-and-token-listing-81ce6af1047" ],
+              "AlgoMint","386195940","goETH","TBD","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/algomint","https://assets.website-files.com/622809ce00daec36f1c8c919/62413344b4f44a025ebb4867_Litepaper.%20Algomint_%20The%20Cross-Chain%20Liquidity%20Network.pdf","https://medium.com/algomint/algomint-2nd-feb-ama-roadmap-incentive-program-and-token-listing-81ce6af1047" ],
             [
-              "AlgoMint","441139422","goMINT","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","https://assets.website-files.com/622809ce00daec36f1c8c919/62413344b4f44a025ebb4867_Litepaper.%20Algomint_%20The%20Cross-Chain%20Liquidity%20Network.pdf","https://medium.com/algomint/algomint-2nd-feb-ama-roadmap-incentive-program-and-token-listing-81ce6af1047" ],
+              "AlgoMint","441139422","goMINT","TBD","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/algomint","https://assets.website-files.com/622809ce00daec36f1c8c919/62413344b4f44a025ebb4867_Litepaper.%20Algomint_%20The%20Cross-Chain%20Liquidity%20Network.pdf","https://medium.com/algomint/algomint-2nd-feb-ama-roadmap-incentive-program-and-token-listing-81ce6af1047" ],
             [
               "Nexus","403499324","GP","TBD","TBD","TBD","https://www.nexusasa.info/white-paper","TBD" ],
             [
@@ -137,11 +137,11 @@
             [
               "Orbital Gnome Strikers","613608234","OGS","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "Opulous","287867876","OPUL","Yes","TBD","Yes","https://opulous.org/Opulous.pdf","https://opulous.org/Opulous.pdf" ],
+              "Opulous","287867876","OPUL","Yes","TBD","https://www.crunchbase.com/organization/opulous","https://opulous.org/Opulous.pdf","https://opulous.org/Opulous.pdf" ],
             [
               "Pari","461849439","PARI","TBD","TBD","TBD","https://www.paritoken.com/static/media/litepaper.7b7bf601.pdf","https://www.paritoken.com/" ],
             [
-              "PlanetWatch","7165954","Planets","Yes","https://algorand.foundation/grants-program/grant-awardees","Registered","https://www.planetwatch.io/white-paper/index-h5.html?page=1","https://www.planetwatch.io/technical-roadmap/" ],
+              "PlanetWatch","7165954","Planets","Yes","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/planetwatch","https://www.planetwatch.io/white-paper/index-h5.html?page=1","https://www.planetwatch.io/technical-roadmap/" ],
             [
               "Parsec","415045633","PRSC","TBD","TBD","TBD","TBD","https://prsc.app/roadmap/" ],
             [
@@ -163,7 +163,7 @@
             [
               "Algofi","465865291","STBL","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","TBD","https://blog.algofi.org/algofi-roadmap-update-dex-aeneas-rewards-nanoswap-bank-and-more-a3912874e097" ],
             [
-              "AlgoStake","511484048","STKE","Yes","Applied","Registered","https://algostake.org/litepaper","https://algostake.org/roadmap" ],
+              "AlgoStake","511484048","STKE","Yes","Applied","https://www.bizapedia.com/ca/algostake-llc.html","https://algostake.org/litepaper","https://algostake.org/roadmap" ],
             [
               "Super Algo Arcade","433379445","SUPER","TBD","TBD","TBD","https://superalgoarcade.com/wp-content/uploads/2022/02/SuperWhitePaper-2.pdf","https://superalgorand.com/token-info/" ],
             [
@@ -179,18 +179,18 @@
             [
               "CryptoTrees","444108880","TREES","TBD","TBD","TBD","https://cryptotrees.earth/whitepaper/","https://cryptotrees.earth/roadmap/" ],
             [
-              "USD Coin","31566704","USDC","TBD","TBD","Yes","https://f.hubspotusercontent30.net/hubfs/9304636/PDF/centre-whitepaper.pdf","TBD" ],
+              "USD Coin","31566704","USDC","TBD","TBD","https://www.crunchbase.com/organization/centre","https://f.hubspotusercontent30.net/hubfs/9304636/PDF/centre-whitepaper.pdf","TBD" ],
             [
-              "Webblen","509808838","WBLN","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","https://uploads-ssl.webflow.com/5f6e2a062cd638f880f8ce94/60ca36eaf4bb134144698689_Webblen%20Whitepaper%20June%2021.pdf","https://www.webblen.io/company-overview" ],
+              "Webblen","509808838","WBLN","TBD","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/webblen","https://uploads-ssl.webflow.com/5f6e2a062cd638f880f8ce94/60ca36eaf4bb134144698689_Webblen%20Whitepaper%20June%2021.pdf","https://www.webblen.io/company-overview" ],
             [
-              "Xfinite","283820866","XET","TBD","https://algorand.foundation/grants-program/grant-awardees","Registered","https://www.xfinite.io/lite-paper/","https://www.xfinite.io/roadmap/" ],
+              "Xfinite","283820866","XET","TBD","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/xfinite","https://www.xfinite.io/lite-paper/","https://www.xfinite.io/roadmap/" ],
             [
-              "Glitter Finance","607591690","XGLI","TBD","TBD","Yes","https://drive.google.com/file/d/1n9t700Om9ekqpFlvH6rpg_vud3_oTkhd/view?usp=sharing","https://glitter.finance/" ],
+              "Glitter Finance","607591690","XGLI","TBD","TBD","https://www.crunchbase.com/organization/glitter-finance","https://drive.google.com/file/d/1n9t700Om9ekqpFlvH6rpg_vud3_oTkhd/view?usp=sharing","https://glitter.finance/" ],
             [
               "Yieldly","226701642","YLDY","Yes","TBD","Registered","TBD","https://yieldly.finance/" ],
             [
               "Zenny","317670428","ZENI","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "Zone","444035862","ZONE","TBD","TBD","Registered","https://docsend.com/view/j22evyxhdhc78d3w","https://docs.zone.game/roadmap" ]
+              "Zone","444035862","ZONE","TBD","TBD","https://www.crunchbase.com/organization/zone-af6d","https://docsend.com/view/j22evyxhdhc78d3w","https://docs.zone.game/roadmap" ]
           ]
 }
