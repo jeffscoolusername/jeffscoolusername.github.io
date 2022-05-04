@@ -1060,7 +1060,8 @@ $(document)
                         'Created at Round': algoexplorercreatedatround0,
                         'Transactions Counter': algoexplorerassettxcounter0,
                         //'Tinyman Price' : tinymanwoof420,
-                        '% in Circulation': algoexplorerpercentcirculation0
+                        '% in Circulation': algoexplorerpercentcirculation0,
+                        'Default Frozen': algoexplorerdefaultfrozen0
                     },
                     {
                         'Name': algoexplorername1,
@@ -1068,7 +1069,8 @@ $(document)
                         'Created at Round': algoexplorercreatedatround1,
                         'Transactions Counter': algoexplorerassettxcounter1,
                         //'Tinyman Price' : tinymanwoof421,
-                        '% in Circulation': algoexplorerpercentcirculation1                                               
+                        '% in Circulation': algoexplorerpercentcirculation1,
+                        'Default Frozen': algoexplorerdefaultfrozen1                                               
                     },
                     {
                         'Name': algoexplorername2,
@@ -1076,7 +1078,8 @@ $(document)
                         'Created at Round': algoexplorercreatedatround2,
                         'Transactions Counter': algoexplorerassettxcounter2,
                         //'Tinyman Price' : tinymanwoof422,
-                        '% in Circulation': algoexplorerpercentcirculation2
+                        '% in Circulation': algoexplorerpercentcirculation2,
+                        'Default Frozen': algoexplorerdefaultfrozen2
                                                 
                     },
                     {
@@ -1085,7 +1088,8 @@ $(document)
                         'Created at Round': algoexplorercreatedatround3,
                         'Transactions Counter': algoexplorerassettxcounter3,
                         //'Tinyman Price' : tinymanwoof423,
-                        '% in Circulation': algoexplorerpercentcirculation3                                               
+                        '% in Circulation': algoexplorerpercentcirculation3,
+                        'Default Frozen': algoexplorerdefaultfrozen3                                               
                     }
                 ];
 
@@ -1880,6 +1884,9 @@ $(document)
                                     '<progress value="' + data + '" max="100"></progress>' :
                                     data;
                             }
+                        },
+                        {
+                            'data': 'Default Frozen'
                         }
                     ]
                 })
