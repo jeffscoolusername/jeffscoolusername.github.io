@@ -1058,33 +1058,34 @@ $(document)
                         'Name': algoexplorername0,
                         'Index': algoexplorerindex0,
                         'Created at Round': algoexplorercreatedatround0,
+                        'Transactions Counter': algoexplorerassettxcounter0,
                         //'Tinyman Price' : tinymanwoof420,
-                        '% in Circulation': algoexplorerpercentcirculation0,
-                        'Transactions Counter': algoexplorerassettxcounter0
+                        '% in Circulation': algoexplorerpercentcirculation0
                     },
                     {
                         'Name': algoexplorername1,
                         'Index': algoexplorerindex1,
                         'Created at Round': algoexplorercreatedatround1,
+                        'Transactions Counter': algoexplorerassettxcounter1,
                         //'Tinyman Price' : tinymanwoof421,
-                        '% in Circulation': algoexplorerpercentcirculation1,
-                        'Transactions Counter': algoexplorerassettxcounter1                        
+                        '% in Circulation': algoexplorerpercentcirculation1                                               
                     },
                     {
                         'Name': algoexplorername2,
                         'Index': algoexplorerindex2,
                         'Created at Round': algoexplorercreatedatround2,
+                        'Transactions Counter': algoexplorerassettxcounter2,
                         //'Tinyman Price' : tinymanwoof422,
-                        '% in Circulation': algoexplorerpercentcirculation2,
-                        'Transactions Counter': algoexplorerassettxcounter2                        
+                        '% in Circulation': algoexplorerpercentcirculation2
+                                                
                     },
                     {
                         'Name': algoexplorername3,
                         'Index': algoexplorerindex3,
                         'Created at Round': algoexplorercreatedatround3,
+                        'Transactions Counter': algoexplorerassettxcounter3,
                         //'Tinyman Price' : tinymanwoof423,
-                        '% in Circulation': algoexplorerpercentcirculation3,
-                        'Transactions Counter': algoexplorerassettxcounter3                        
+                        '% in Circulation': algoexplorerpercentcirculation3                                               
                     }
                 ];
 
@@ -1866,6 +1867,9 @@ $(document)
                                 return data;
                                 }
                         },
+                        {
+                            'data': 'Transactions Counter'
+                        },
                         /*{
                             'data': 'Tinyman Price'
                         },*/
@@ -1876,9 +1880,6 @@ $(document)
                                     '<progress value="' + data + '" max="100"></progress>' :
                                     data;
                             }
-                        },
-                        {
-                            'data': 'Transactions Counter'
                         }
                     ]
                 })
