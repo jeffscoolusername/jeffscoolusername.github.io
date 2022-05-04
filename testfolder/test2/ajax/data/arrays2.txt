@@ -63,7 +63,7 @@
             [
               "Coffee DAO","473180477","BEAN","TBD","TBD","TBD","TBD","TBD" ],
             [
-              "BirdBot","478549868","BIRDS","TBD","Applied","TBD","Finalizing","https://www.reddit.com/r/BirdBotASA/comments/s3g7hl/improved_birdbot_token_vesting_positions_and/" ],
+              "BirdBot","478549868","BIRDS","TBD","TBD","TBD","Finalizing","https://www.reddit.com/r/BirdBotASA/comments/s3g7hl/improved_birdbot_token_vesting_positions_and/" ],
             [
               "Blapu","401752010","BLAPU","TBD","TBD","TBD","TBD","TBD" ],
             [
@@ -123,7 +123,7 @@
             [
               "Nexus","403499324","GP","TBD","TBD","TBD","https://www.nexusasa.info/white-paper","TBD" ],
             [
-              "Headline","137594422","HDL","TBD","TBD","Registered","TBD","TBD" ],
+              "Headline","137594422","HDL","TBD","TBD","https://www.crunchbase.com/organization/headline-inc","TBD","TBD" ],
             [
               "LOUDDeFi","567485181","LOUD","TBD","TBD","TBD","TBD","https://loudefi.com/roadmap/" ],
             [
@@ -163,7 +163,7 @@
             [
               "Algofi","465865291","STBL","TBD","https://algorand.foundation/grants-program/grant-awardees","https://www.crunchbase.com/organization/algofi-15e3","TBD","https://blog.algofi.org/algofi-roadmap-update-dex-aeneas-rewards-nanoswap-bank-and-more-a3912874e097" ],
             [
-              "AlgoStake","511484048","STKE","Yes","Applied","https://www.bizapedia.com/ca/algostake-llc.html","https://algostake.org/litepaper","https://algostake.org/roadmap" ],
+              "AlgoStake","511484048","STKE","Yes","TBD","https://www.bizapedia.com/ca/algostake-llc.html","https://algostake.org/litepaper","https://algostake.org/roadmap" ],
             [
               "Super Algo Arcade","433379445","SUPER","TBD","TBD","TBD","https://superalgoarcade.com/wp-content/uploads/2022/02/SuperWhitePaper-2.pdf","https://superalgorand.com/token-info/" ],
             [
@@ -187,7 +187,7 @@
             [
               "Glitter Finance","607591690","XGLI","TBD","TBD","https://www.crunchbase.com/organization/glitter-finance","https://drive.google.com/file/d/1n9t700Om9ekqpFlvH6rpg_vud3_oTkhd/view?usp=sharing","https://glitter.finance/" ],
             [
-              "Yieldly","226701642","YLDY","Yes","TBD","Registered","TBD","https://yieldly.finance/" ],
+              "Yieldly","226701642","YLDY","Yes","TBD","https://www.crunchbase.com/organization/yieldly","TBD","https://yieldly.finance/" ],
             [
               "Zenny","317670428","ZENI","TBD","TBD","TBD","TBD","TBD" ],
             [
