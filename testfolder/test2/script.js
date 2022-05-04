@@ -2966,6 +2966,133 @@ $(document)
                 
                 ;    
 
+                var exampleTable8 = $('#example9')
+                .DataTable({
+                    /*data: jsObj7,*/
+                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/asateams.txt',
+                    //data: data88888,
+                    //data: data,
+                    stateSave: true,
+                    dom: 'Bfrtip',
+                    initComplete: function () {
+                        // Apply the search
+                        this.api().columns().every( function () {
+                            var that = this;
+            
+                            $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                                if ( that.search() !== this.value ) {
+                                    that
+                                        .search( this.value )
+                                        .draw();
+                                }
+                            } );
+                        } );
+                    },
+                    buttons: [
+                    {
+                        extend: "copy",
+                        exportOptions: {
+                        modifier: { search: 'none', selected: true}
+                        }
+                    },
+                    {
+                        extend: "csv",
+                        exportOptions: {
+                        modifier: { search: 'none', selected: true}
+                        }
+                    },
+                    {
+                        extend: "excel",
+                        exportOptions: {
+                        modifier: { search: 'none', selected: true}
+                        }
+                    },
+                    {
+                        extend: "pdfHtml5",
+                        exportOptions: {
+                        modifier: { search: 'none', selected: true}
+                        }
+                    },
+                    {
+                        extend: "print",
+                        exportOptions: {
+                        modifier: { search: 'none', selected: true}
+                        }
+                    }, 
+                    {
+                        extend: 'colvis',
+                        text: 'Columns'
+                    },
+                    {
+                        text: 'Select All',
+                        action: function () {
+                            exampleTable8.rows().select();
+                        }
+                    },
+                    {
+                        text: 'Select None',
+                        action: function () {
+                            exampleTable8.rows().deselect();
+                        }
+                    },
+                    {
+                        text: 'Show All',
+                        action: function ( e, dt, button, config ) {
+                            exampleTable8.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                        }
+                    },
+                    {
+                        text: 'Hide Unselected',
+                        action: function ( e, dt, button, config ) {
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                        }
+                    }
+                    ],
+                    "language": {
+                        "info": "Initial Rows : _TOTAL_",
+                        select: {
+                                    rows: {
+                                        _: "",
+                                        0: "",
+                                        1: ""
+                                    }
+                                }
+                        },
+                    colReorder: true,
+                    "order": [[ 0, "desc" ]],
+                    paging: false,
+                    select: {
+                        style: 'multi'
+                    }, 
+                    "columnDefs": [
+                        {
+                            "targets": [1],
+                            "render": function ( data, type, row, meta ) {
+                                //var linkedIn = row[0];                   
+                                //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
+                                if (data === "TBD")
+                                {return data;}
+                                else
+                                {return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';}
+                            }
+                        },
+                        {
+                           "targets": [4, 5, 6, 7],
+                            "render": function ( data, type, row, meta ) {
+                                if (data === "TBD")
+                                {return data;}
+                                else
+                                {return '<a target="_blank" rel="noopener noreferrer" href="' + data + '">' + 'Yes' + '</a>';}
+                            }
+                        }
+                
+                    ],
+                    rowReorder: true
+                    })
+                
+                ;    
+
                 /*const getNewCases = async() => {
                     const response = await fetch('https://covid19.mathdro.id/api/daily/3-18-2020');
                     const data = await response.json();
