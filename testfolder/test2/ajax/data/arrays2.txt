@@ -109,7 +109,7 @@
             [
               "FairMeme","547405153","FMA","TBD","TBD","TBD","https://fairmeme.org/launchpad.pdf","https://fairmeme.org/" ],
             [
-              "GARD","TBD","GARD","TBD","TBD","https://www.crunchbase.com/organization/tapera-inc","https://www.algogard.com/white-paper.pdf","https://www.algogard.com/#roadmap" ],
+              "GARD","684649988","GARD","TBD","TBD","https://www.crunchbase.com/organization/tapera-inc","https://www.algogard.com/white-paper.pdf","https://www.algogard.com/#roadmap" ],
             [
               "AlgoGems","230946361","GEMS","Yes","https://algorand.foundation/grants-program/grant-awardees","TBD","TBD","https://algogemsnft.github.io/#/" ],
             [
