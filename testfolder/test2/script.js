@@ -2882,19 +2882,19 @@ $(document)
                     {
                         text: 'Select All',
                         action: function () {
-                            exampleTable8.rows().select();
+                            exampleTable9.rows().select();
                         }
                     },
                     {
                         text: 'Select None',
                         action: function () {
-                            exampleTable8.rows().deselect();
+                            exampleTable9.rows().deselect();
                         }
                     },
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
-                            exampleTable8.rows().deselect();
+                            exampleTable9.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     },
@@ -2966,16 +2966,12 @@ $(document)
                 
                 ;    
 
-                var exampleTable8 = $('#example9')
+                var exampleTable9 = $('#example9')
                 .DataTable({
-                    /*data: jsObj7,*/
                     "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/asateams.txt',
-                    //data: data88888,
-                    //data: data,
                     stateSave: true,
                     dom: 'Bfrtip',
                     initComplete: function () {
-                        // Apply the search
                         this.api().columns().every( function () {
                             var that = this;
             
@@ -3069,8 +3065,6 @@ $(document)
                         {
                             "targets": [2],
                             "render": function ( data, type, row, meta ) {
-                                //var linkedIn = row[0];                   
-                                //return '<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/' + itemID + '">' + itemID + '</a>';
                                 if (data === "TBD")
                                 {return data;}
                                 else
