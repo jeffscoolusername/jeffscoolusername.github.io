@@ -1020,7 +1020,7 @@ $(document)
                 const datafromresponsecoinggecko0 = await responsecoinggecko0.json(); //duct tape and chicken wire fix    
                 coingeckoname0 = 'United States Dollar';   
                 coingeckoprice0 = datafromresponsecoinggecko0.market_data.current_price['usd'];     
-                coingeckousdprice0 = (1 / datafromresponsecoinggecko0.market_data.current_price['usd']);
+                coingeckousdprice0 = (1 / datafromresponsecoinggecko0.market_data.current_price['usd']).toFixed(2);
                 coingeckopricechange24h0 = datafromresponsecoinggecko0.market_data.price_change_percentage_24h*(-1);            
                 coingeckopricechange7d0 = datafromresponsecoinggecko0.market_data.price_change_percentage_7d*(-1);    
                 coingeckopricechange30d0 = datafromresponsecoinggecko0.market_data.price_change_percentage_30d*(-1);  
@@ -1028,7 +1028,7 @@ $(document)
                 const responsecoinggecko1 = await fetch(c[1]); //duct tape and chicken wire fix
                 const datafromresponsecoinggecko1 = await responsecoinggecko1.json(); //duct tape and chicken wire fix    
                 coingeckoname1 = datafromresponsecoinggecko1.name;   
-                coingeckoprice1 = (datafromresponsecoinggecko1.market_data.current_price['usd'] / coingeckoprice0);     
+                coingeckoprice1 = (datafromresponsecoinggecko1.market_data.current_price['usd'] / coingeckoprice0).toFixed(2);     
                 coingeckopricechange24h1 = datafromresponsecoinggecko1.market_data.price_change_percentage_24h + coingeckopricechange24h0;            
                 coingeckopricechange7d1 = datafromresponsecoinggecko1.market_data.price_change_percentage_7d + coingeckopricechange7d0;    
                 coingeckopricechange30d1 = datafromresponsecoinggecko1.market_data.price_change_percentage_30d + coingeckopricechange30d0;  
@@ -1036,7 +1036,7 @@ $(document)
                 const responsecoinggecko2 = await fetch(c[2]); //duct tape and chicken wire fix
                 const datafromresponsecoinggecko2 = await responsecoinggecko2.json(); //duct tape and chicken wire fix    
                 coingeckoname2 = datafromresponsecoinggecko2.name;   
-                coingeckoprice2 = (datafromresponsecoinggecko2.market_data.current_price['usd'] / coingeckoprice0);     
+                coingeckoprice2 = (datafromresponsecoinggecko2.market_data.current_price['usd'] / coingeckoprice0).toFixed(2);     
                 coingeckopricechange24h2 = datafromresponsecoinggecko2.market_data.price_change_percentage_24h + coingeckopricechange24h0;            
                 coingeckopricechange7d2 = datafromresponsecoinggecko2.market_data.price_change_percentage_7d + coingeckopricechange7d0;    
                 coingeckopricechange30d2 = datafromresponsecoinggecko2.market_data.price_change_percentage_30d + coingeckopricechange30d0; 
@@ -1044,7 +1044,7 @@ $(document)
                 const responsecoinggecko3 = await fetch(c[3]); //duct tape and chicken wire fix
                 const datafromresponsecoinggecko3 = await responsecoinggecko3.json(); //duct tape and chicken wire fix    
                 coingeckoname3 = datafromresponsecoinggecko3.name;   
-                coingeckoprice3 = (datafromresponsecoinggecko3.market_data.current_price['usd'] / coingeckoprice0);     
+                coingeckoprice3 = (datafromresponsecoinggecko3.market_data.current_price['usd'] / coingeckoprice0).toFixed(2);     
                 coingeckopricechange24h3 = datafromresponsecoinggecko3.market_data.price_change_percentage_24h + coingeckopricechange24h0;            
                 coingeckopricechange7d3 = datafromresponsecoinggecko3.market_data.price_change_percentage_7d + coingeckopricechange7d0;     
                 coingeckopricechange30d3 = datafromresponsecoinggecko3.market_data.price_change_percentage_30d + coingeckopricechange30d0; 
@@ -1060,7 +1060,7 @@ $(document)
                         'Created at Round': algoexplorercreatedatround0,
                         'Transactions Counter': algoexplorerassettxcounter0,
                         //'Tinyman Price' : tinymanwoof420,
-                        '% in Circulation': algoexplorerpercentcirculation0,
+                        '% in Circulation': algoexplorerpercentcirculation0.slice(0, 4),
                         'Default Frozen': algoexplorerdefaultfrozen0
                     },
                     {
@@ -1069,7 +1069,7 @@ $(document)
                         'Created at Round': algoexplorercreatedatround1,
                         'Transactions Counter': algoexplorerassettxcounter1,
                         //'Tinyman Price' : tinymanwoof421,
-                        '% in Circulation': algoexplorerpercentcirculation1,
+                        '% in Circulation': algoexplorerpercentcirculation1.slice(0, 4),
                         'Default Frozen': algoexplorerdefaultfrozen1                                               
                     },
                     {
@@ -1078,7 +1078,7 @@ $(document)
                         'Created at Round': algoexplorercreatedatround2,
                         'Transactions Counter': algoexplorerassettxcounter2,
                         //'Tinyman Price' : tinymanwoof422,
-                        '% in Circulation': algoexplorerpercentcirculation2,
+                        '% in Circulation': algoexplorerpercentcirculation2.slice(0, 4),
                         'Default Frozen': algoexplorerdefaultfrozen2
                                                 
                     },
@@ -1088,7 +1088,7 @@ $(document)
                         'Created at Round': algoexplorercreatedatround3,
                         'Transactions Counter': algoexplorerassettxcounter3,
                         //'Tinyman Price' : tinymanwoof423,
-                        '% in Circulation': algoexplorerpercentcirculation3,
+                        '% in Circulation': algoexplorerpercentcirculation3.slice(0, 4),
                         'Default Frozen': algoexplorerdefaultfrozen3                                               
                     }
                 ];
@@ -1878,12 +1878,12 @@ $(document)
                             'data': 'Tinyman Price'
                         },*/
                         {
-                            'data': '% in Circulation',
+                            'data': '% in Circulation'/*,
                             render: function(data, type, row, meta) {
                                 return type === 'display' ?
                                     '<progress value="' + data + '" max="100"></progress>' :
                                     data;
-                            }
+                            }*/
                         },
                         {
                             'data': 'Default Frozen'
@@ -2794,7 +2794,7 @@ $(document)
                             'data': 'Address',
                             "render": function(data, type, row, meta){
                                 if(type === 'display'){
-                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data + '</a>';
+                                    data = '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/address/' + data + '">' + data.slice(0, 10) + "..." + '</a>';
                                 }
                     
                                 return data;
