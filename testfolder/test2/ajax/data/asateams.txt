@@ -16,6 +16,6 @@
             [
               "Matthew Lam","Algofi","465865291","Product Manager","https://www.linkedin.com/in/matthewlam175/","TBD","TBD" ],
             [
-              "Maksim Ivanov","Algofi","465865291","Software Engineer","https://www.linkedin.com/in/maksivanov/","TBD","TBD" ]
+              "Maksim Ivanov","Algofi","465865291","Software Engineer","https://www.linkedin.com/in/maksivanov/","TBD","https://medium.com/@maks.ivanov" ]
         ]
 }
