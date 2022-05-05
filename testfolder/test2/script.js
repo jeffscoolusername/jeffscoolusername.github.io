@@ -1206,6 +1206,85 @@ $(document)
                 google.charts.setOnLoadCallback(drawBasic);
                 google.charts.setOnLoadCallback(drawVisualization);
                 google.charts.setOnLoadCallback(drawChart4);
+                google.charts.setOnLoadCallback(drawChart4Duplicate);
+                google.charts.setOnLoadCallback(drawChart4Duplicate2);
+
+                google.charts.setOnLoadCallback(drawChart);
+                google.charts.setOnLoadCallback(drawChartDuplicate);
+
+                function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['% Change', 'Age'],
+                    [coingeckopricechange24h1, 1], [coingeckopricechange7d1, 7], [coingeckopricechange30d1, 30], [coingeckopricechange1y1, 365]]);
+
+                var options = {
+                    title: 'Days vs. % Change to BTC',
+                    hAxis: {title: '% Change'},
+                    vAxis: {title: 'Days'},
+                    animation: {
+                        duration: 1000
+                    },
+                    legend: 'none',
+                    trendlines: { 0: {} }    // Draw a trendline for data series 0.
+                };
+
+                var chart = new google.visualization.ScatterChart(document.getElementById('chart_divtrend'));
+                chart.draw(data, options);
+
+                $(window).resize(function() {
+                    chart.draw(data, options);
+                });
+
+                $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                    e.preventDefault()
+                    var tab_name = this.getAttribute('href');
+                    if (history.pushState) {
+                        //trash code
+                        if (tab_name === "#tab-table4") {                                                    
+                        chart.draw(data, options);
+                        }
+                        //trash code
+                    }
+                    });
+
+                }
+
+                function drawChartDuplicate() {
+                    var data = google.visualization.arrayToDataTable([
+                        ['% Change', 'Age'],
+                        [coingeckopricechange24h0, 1], [coingeckopricechange7d0, 7], [coingeckopricechange30d0, 30], [coingeckopricechange1y0, 365]]);
+    
+                    var options = {
+                        title: 'Days vs. % Change to USD',
+                        hAxis: {title: '% Change'},
+                        vAxis: {title: 'Days'},
+                        animation: {
+                            duration: 1000
+                        },
+                        legend: 'none',
+                        trendlines: { 0: {} }    // Draw a trendline for data series 0.
+                    };
+    
+                    var chart = new google.visualization.ScatterChart(document.getElementById('chart_divtrend2'));
+                    chart.draw(data, options);
+    
+                    $(window).resize(function() {
+                        chart.draw(data, options);
+                    });
+    
+                    $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                        e.preventDefault()
+                        var tab_name = this.getAttribute('href');
+                        if (history.pushState) {
+                            //trash code
+                            if (tab_name === "#tab-table4") {                                                    
+                            chart.draw(data, options);
+                            }
+                            //trash code
+                        }
+                        });
+    
+                    }
             
                 function drawChart4() {
             
@@ -1252,6 +1331,98 @@ $(document)
                         if (history.pushState) {
                             //trash code
                             if (tab_name === "#tab-table6") {                                                    
+                            chart222.draw(data, options222);
+                            }
+                            //trash code
+                        }
+                        });
+                };
+
+                function drawChart4Duplicate() {
+            
+                    var data = google.visualization.arrayToDataTable([
+                    ['Wallet', 'Amount of Algorand'],
+                    ['Binance',     algoexplorerwalletamountinside0],
+                    ['AlgoStake',      algoexplorerwalletamountinside1],
+                    ['PlanetWatch',  algoexplorerwalletamountinside2],
+                    ['BirdBot', algoexplorerwalletamountinside3]
+                    ]);
+            
+                    var options222 = {
+                    title:"Whale Wallets Algo Amount",
+                    //chartArea: {width: '50%'},
+                    animation: {
+                        duration: 1000
+                    },
+                    hAxis: {
+                        title: 'Amount',
+                        minValue: 0
+                        },
+                        vAxis: {
+                        title: 'Wallet'
+                        }
+                    };
+            
+                    var chart222 = new google.visualization.PieChart($('#piechart2')[0]);
+            
+                    chart222.draw(data, options222);
+
+                    $(window).resize(function() {
+                        chart222.draw(data, options222);
+                    });
+
+                    $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                        e.preventDefault()
+                        var tab_name = this.getAttribute('href');
+                        if (history.pushState) {
+                            //trash code
+                            if (tab_name === "#tab-table7") {                                                    
+                            chart222.draw(data, options222);
+                            }
+                            //trash code
+                        }
+                        });
+                };
+
+                function drawChart4Duplicate2() {
+            
+                    var data = google.visualization.arrayToDataTable([
+                    ['Wallet', 'Amount of Algorand'],
+                    [algoexplorername0,     algoexplorerassettxcounter0],
+                    [algoexplorername1,      algoexplorerassettxcounter1],
+                    [algoexplorername2,  algoexplorerassettxcounter2],
+                    [algoexplorername3, algoexplorerassettxcounter3]
+                    ]);
+            
+                    var options222 = {
+                    title:"ASA # of TX Comparison",
+                    //chartArea: {width: '50%'},
+                    animation: {
+                        duration: 1000
+                    },
+                    hAxis: {
+                        title: 'Amount',
+                        minValue: 0
+                        },
+                        vAxis: {
+                        title: 'Wallet'
+                        }
+                    };
+            
+                    var chart222 = new google.visualization.PieChart($('#piechart3')[0]);
+            
+                    chart222.draw(data, options222);
+
+                    $(window).resize(function() {
+                        chart222.draw(data, options222);
+                    });
+
+                    $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                        e.preventDefault()
+                        var tab_name = this.getAttribute('href');
+                        if (history.pushState) {
+                            //trash code
+                            if (tab_name === "#tab-table1") {                                                    
                             chart222.draw(data, options222);
                             }
                             //trash code
