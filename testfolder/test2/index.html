@@ -2393,19 +2393,19 @@
                         {
                             text: 'Select All',
                             action: function () {
-                                table.rows().select();
+                                $table.rows().select();
                             }
                         },
                         {
                             text: 'Select None',
                             action: function () {
-                                table.rows().deselect();
+                                $table.rows().deselect();
                             }
                         },
                         {
                             text: 'Show All',
                             action: function ( e, dt, button, config ) {
-                                table.rows().deselect();
+                                $table.rows().deselect();
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
                         },
