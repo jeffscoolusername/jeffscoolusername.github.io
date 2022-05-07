@@ -4,7 +4,7 @@ CsvToHtmlTable = {
     init: function (options) {
         options = options || {};
         var csv_path = options.csv_path || "";
-        var el = options.element || "table-csv0";
+        var el = options.element || "table-csv0"; // this part also
         var allow_download = options.allow_download || false;
         var csv_options = options.csv_options || {};
         var datatables_options = options.datatables_options || {};
@@ -17,8 +17,8 @@ CsvToHtmlTable = {
         });
 
         var $table = $("<table role='table' class='table table-striped table-bordered hover display nowrap' id='" + el + "-table'></table>"); //causing issues somehow...
-        var $containerElement = $("#" + el);
-        $containerElement.empty().append($table);
+        var $containerElement = $("#" + el); // this too
+        $containerElement.empty().append($table); //this as well
 
         $.when($.get(csv_path)).then(
             function (data) {
