@@ -4,7 +4,7 @@ CsvToHtmlTable = {
     init: function (options) {
         options = options || {};
         var csv_path = options.csv_path || "";
-        var el = options.element || "table-csv0"; // this part also
+        var el = options.element || "table-csv0"; 
         var allow_download = options.allow_download || false;
         var csv_options = options.csv_options || {};
         var datatables_options = options.datatables_options || {};
@@ -16,14 +16,14 @@ CsvToHtmlTable = {
             customTemplates[colIdx] = func;
         });
 
-        var $table = $("<table role='table' class='table table-striped table-bordered hover display nowrap' id='" + el + "-table'></table>"); //causing issues somehow...
-        var $containerElement = $("#" + el); // this too
-        $containerElement.empty().append($table); //this as well
+        var $table = $("<table role='table' class='table table-striped table-bordered hover display nowrap' id='" + el + "-table'></table>"); 
+        var $containerElement = $("#" + el); 
+        $containerElement.empty().append($table); 
 
         $.when($.get(csv_path)).then(
             function (data) {
                 var csvData = $.csv.toArrays(data, csv_options);
-                var $tableHead = $("<thead></thead>");
+                var $tableHead = $("<thead></thead>"); //add this but for tableFoot
                 var csvHeaderRow = csvData[0];
                 var $tableHeadRow = $("<tr></tr>");
                 for (var headerIdx = 0; headerIdx < csvHeaderRow.length; headerIdx++) {
