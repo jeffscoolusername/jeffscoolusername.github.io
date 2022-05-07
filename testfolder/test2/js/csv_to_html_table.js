@@ -17,8 +17,8 @@ CsvToHtmlTable = {
         });
 
         var $table = $("<table role='table' class='table table-striped table-bordered hover' id='#table-csv0' width='100%'></table>"); //causing issues somehow...
-        var $containerElement = $("#" + el);
-        $containerElement.empty().append($table);
+        //var $containerElement = $("#" + el);
+        //$containerElement.empty().append($table);
 
         $.when($.get(csv_path)).then(
             function (data) {
@@ -52,9 +52,9 @@ CsvToHtmlTable = {
 
                 $table.DataTable(datatables_options);
 
-                if (allow_download) {
+                /*if (allow_download) {
                     $containerElement.append("<p><a class='btn btn-info' href='" + csv_path + "'><i class='glyphicon glyphicon-download'></i> Download as CSV</a></p>");
-                }
+                }*/
             });
     }
 };
