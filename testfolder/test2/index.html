@@ -2320,8 +2320,7 @@
             CsvToHtmlTable.init({
             csv_path: "data/testsheet1.csv",
             element: "table-csv0",
-            stateSave: true,
-            dom: 'Bfrtip',
+            stateSave: true,           
             initComplete: function () {
                 this.api().columns().every( function () {
                     var that = this;
@@ -2334,71 +2333,8 @@
                         }
                     } );
                 } );
-            },
-            buttons: [
-            {
-                extend: "copy",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            },
-            {
-                extend: "csv",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            },
-            {
-                extend: "excel",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            },
-            {
-                extend: "pdfHtml5",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            },
-            {
-                extend: "print",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            }, 
-            {
-                extend: 'colvis',
-                text: 'Columns'
-            },
-            {
-                text: 'Select All',
-                action: function () {
-                    exampleTable8.rows().select();
-                }
-            },
-            {
-                text: 'Select None',
-                action: function () {
-                    exampleTable8.rows().deselect();
-                }
-            },
-            {
-                text: 'Show All',
-                action: function ( e, dt, button, config ) {
-                    exampleTable8.rows().deselect();
-                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                }
-            },
-            {
-                text: 'Hide Unselected',
-                action: function ( e, dt, button, config ) {
-                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                }
-            }
-            ],
-            //allow_download: false,
-            colReorder: true,
-            rowReorder: true,
+            },            
+            allow_download: false,            
             csv_options: {
                 separator: ",",
                 delimiter: '"'
@@ -2417,7 +2353,71 @@
                                 }
                         },
             datatables_options: {
-                paging: false
+                paging: false,
+                dom: 'Bfrtip',
+                colReorder: true,
+                rowReorder: true,
+                buttons: [
+                {
+                    extend: "copy",
+                    exportOptions: {
+                    modifier: { search: 'none', selected: true}
+                    }
+                },
+                {
+                    extend: "csv",
+                    exportOptions: {
+                    modifier: { search: 'none', selected: true}
+                    }
+                },
+                {
+                    extend: "excel",
+                    exportOptions: {
+                    modifier: { search: 'none', selected: true}
+                    }
+                },
+                {
+                    extend: "pdfHtml5",
+                    exportOptions: {
+                    modifier: { search: 'none', selected: true}
+                    }
+                },
+                {
+                    extend: "print",
+                    exportOptions: {
+                    modifier: { search: 'none', selected: true}
+                    }
+                }, 
+                {
+                    extend: 'colvis',
+                    text: 'Columns'
+                },
+                {
+                    text: 'Select All',
+                    action: function () {
+                        exampleTable8.rows().select();
+                    }
+                },
+                {
+                    text: 'Select None',
+                    action: function () {
+                        exampleTable8.rows().deselect();
+                    }
+                },
+                {
+                    text: 'Show All',
+                    action: function ( e, dt, button, config ) {
+                        exampleTable8.rows().deselect();
+                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                    }
+                },
+                {
+                    text: 'Hide Unselected',
+                    action: function ( e, dt, button, config ) {
+                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                    }
+                }
+                ]
             },
             custom_formatting: [[2, format_link]]
             });
