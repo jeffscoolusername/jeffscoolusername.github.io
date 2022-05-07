@@ -30,7 +30,7 @@ CsvToHtmlTable = {
                 var $tableFootRow = $("<tr></tr>"); //added
                 for (var headerIdx = 0; headerIdx < csvHeaderRow.length; headerIdx++) {
                     $tableHeadRow.append($("<th></th>").text(csvHeaderRow[headerIdx]));
-                }
+                } //add this but for TableFootRow ?
                 $tableHead.append($tableHeadRow);
                 $tableHead.append($tableFootRow); //added
 
