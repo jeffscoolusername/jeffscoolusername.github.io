@@ -3053,19 +3053,19 @@ $(document)
                     {
                         text: 'Select All',
                         action: function () {
-                            exampleTable9.rows().select();
+                            exampleTable8.rows().select();
                         }
                     },
                     {
                         text: 'Select None',
                         action: function () {
-                            exampleTable9.rows().deselect();
+                            exampleTable8.rows().deselect();
                         }
                     },
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
-                            exampleTable9.rows().deselect();
+                            exampleTable8.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     },
