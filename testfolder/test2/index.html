@@ -2075,15 +2075,15 @@
                     <thead>
                         <tr>
                             <th>Title</th>
-                            <th>Publish Date</th>
-                            <th>Link</th>
+                            <th>Date</th>
+                            <th>URL</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>Title</th>
-                            <th>Publish Date</th>
-                            <th>Link</th>
+                            <th>Date</th>
+                            <th>URL</th>
                         </tr>
                         </tr>
                     </tfoot>
@@ -2137,7 +2137,7 @@
             $(document).ready(function() {
                 var exampleTable0 = $('#example0')
                 .DataTable({
-                    dom: '<"top"f><"data-table"rt<"bottom"Blip>>', 
+                    dom: 'Bfrtip',
                     initComplete: function () {
                         // Apply the search
                         this.api().columns().every( function () {
@@ -2339,22 +2339,19 @@
                 separator: ",",
                 delimiter: '"'
             },
-            select: {
-                        style: 'multi'
-                    }, 
-            "language": {
-                        "info": "Initial Rows : _TOTAL_",
-                        select: {
-                                    rows: {
-                                        _: "",
-                                        0: "",
-                                        1: ""
-                                    }
-                                }
-                        },
             datatables_options: {
                 paging: false,
                 dom: 'Bfrtip',
+                select: {
+                            rows: {
+                                _: "",
+                                0: "",
+                                1: ""
+                            }
+                        }
+                },
+                "language": {
+                            "info": "Initial Rows : _TOTAL_",                
                 colReorder: true,
                 rowReorder: true,
                 buttons: [
