@@ -2338,84 +2338,84 @@
             csv_options: {
                 separator: ",",
                 delimiter: '"'
-            },
-            datatables_options: {
-                paging: false,
-                dom: 'Bfrtip',
-                select: {
-                            rows: {
-                                _: "",
-                                0: "",
-                                1: ""
-                            }
-                        }
-                },
-                "language": {
-                            "info": "Initial Rows : _TOTAL_",                
-                colReorder: true,
-                rowReorder: true,
-                buttons: [
-                {
-                    extend: "copy",
-                    exportOptions: {
-                    modifier: { search: 'none', selected: true}
-                    }
-                },
-                {
-                    extend: "csv",
-                    exportOptions: {
-                    modifier: { search: 'none', selected: true}
-                    }
-                },
-                {
-                    extend: "excel",
-                    exportOptions: {
-                    modifier: { search: 'none', selected: true}
-                    }
-                },
-                {
-                    extend: "pdfHtml5",
-                    exportOptions: {
-                    modifier: { search: 'none', selected: true}
-                    }
-                },
-                {
-                    extend: "print",
-                    exportOptions: {
-                    modifier: { search: 'none', selected: true}
-                    }
-                }, 
-                {
-                    extend: 'colvis',
-                    text: 'Columns'
-                },
-                {
-                    text: 'Select All',
-                    action: function () {
-                        table.rows().select();
-                    }
-                },
-                {
-                    text: 'Select None',
-                    action: function () {
-                        table.rows().deselect();
-                    }
-                },
-                {
-                    text: 'Show All',
-                    action: function ( e, dt, button, config ) {
-                        table.rows().deselect();
-                        dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                    }
-                },
-                {
-                    text: 'Hide Unselected',
-                    action: function ( e, dt, button, config ) {
-                        dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                    }
+            },            
+            dom: 'Bfrtip',
+            "language": {
+                        "info": "Initial Rows : _TOTAL_",
+                        select: {
+                                    rows: {
+                                        _: "",
+                                        0: "",
+                                        1: ""
+                                    }
+                                }
+                        },
+            colReorder: true,
+            rowReorder: true,
+            buttons: [
+            {
+                extend: "copy",
+                exportOptions: {
+                modifier: { search: 'none', selected: true}
                 }
-                ]
             },
+            {
+                extend: "csv",
+                exportOptions: {
+                modifier: { search: 'none', selected: true}
+                }
+            },
+            {
+                extend: "excel",
+                exportOptions: {
+                modifier: { search: 'none', selected: true}
+                }
+            },
+            {
+                extend: "pdfHtml5",
+                exportOptions: {
+                modifier: { search: 'none', selected: true}
+                }
+            },
+            {
+                extend: "print",
+                exportOptions: {
+                modifier: { search: 'none', selected: true}
+                }
+            }, 
+            {
+                extend: 'colvis',
+                text: 'Columns'
+            },
+            {
+                text: 'Select All',
+                action: function () {
+                    table.rows().select();
+                }
+            },
+            {
+                text: 'Select None',
+                action: function () {
+                    table.rows().deselect();
+                }
+            },
+            {
+                text: 'Show All',
+                action: function ( e, dt, button, config ) {
+                    table.rows().deselect();
+                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                }
+            },
+            {
+                text: 'Hide Unselected',
+                action: function ( e, dt, button, config ) {
+                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                }
+            }
+            ],
+            datatables_options: {
+                paging: false  
+            },            
             custom_formatting: [[2, format_link]]
             });
             
