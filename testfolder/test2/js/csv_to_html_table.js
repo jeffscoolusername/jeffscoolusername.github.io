@@ -26,6 +26,7 @@ CsvToHtmlTable = {
                 var $tableHead = $("<thead></thead>"); //add this but for tableFoot
                 var $tableFoot = $("<tfoot></tfoot>"); //added
                 var csvHeaderRow = csvData[0];
+                var csvFooterRow = csvData[0]; //added
                 var $tableHeadRow = $("<tr></tr>"); //add this but for tableFootRow
                 var $tableFootRow = $("<tr></tr>"); //added
                 for (var headerIdx = 0; headerIdx < csvHeaderRow.length; headerIdx++) {
@@ -33,6 +34,9 @@ CsvToHtmlTable = {
                 } //add this but for TableFootRow ?
                 $tableHead.append($tableHeadRow);
                 
+                for (var footerIdx = 0; footerIdx < csvFooterRow.length; footerIdx++) {
+                    $tableFootRow.append($("<th></th>").text(csvFooterRow[footerIdx]));
+                } //add this but for TableFootRow ?
                 $tableFoot.append($tableFootRow); //added
 
                 $table.append($tableHead);
