@@ -44,8 +44,9 @@ CsvToHtmlTable = {
                 var $tableBody = $("<tbody></tbody>");
 
                 $('#table-csv0 tfoot th').each( function () {
-                    var title = csvData[0]
-                    $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+                    //var title = csvData[0]
+                    //$(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+                    $(this).html( '<input type="text" placeholder="Search '+'" />' );
                 } );
 
                 for (var rowIdx = 1; rowIdx < csvData.length; rowIdx++) {
