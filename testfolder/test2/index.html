@@ -2121,7 +2121,7 @@
             $(document).ready(function() {
                 var exampleTable0 = $('#example0')
                 .DataTable({
-                    dom: 'Bfrtip',
+                    dom: '<"top"f><"data-table"rt<"bottom"Blip>>', 
                     initComplete: function () {
                         // Apply the search
                         this.api().columns().every( function () {
