@@ -2414,7 +2414,17 @@
             }
             ],
             datatables_options: {
-                paging: false  
+                paging: false,
+                "language": {
+                        "info": "Initial Rows : _TOTAL_",
+                        select: {
+                                    rows: {
+                                        _: "",
+                                        0: "",
+                                        1: ""
+                                    }
+                                }
+                        }  
             },            
             custom_formatting: [[2, format_link]]
             });
