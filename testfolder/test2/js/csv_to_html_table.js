@@ -16,7 +16,7 @@ CsvToHtmlTable = {
             customTemplates[colIdx] = func;
         });
 
-        var $table = $("<table role='table' class='table table-striped table-bordered hover' id='#table-csv0'></table>"); //causing issues somehow...
+        var $table = $("<table role='table' class='table table-striped table-bordered hover' id='#table-csv0' width='100%'></table>"); //causing issues somehow...
         var $containerElement = $("#" + el);
         $containerElement.empty().append($table);
 
