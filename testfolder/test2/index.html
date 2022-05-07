@@ -2394,13 +2394,13 @@
                         },
                         {
                             text: 'Select All',
-                            action: function () {
+                            action: function (e, dt, button, config ) {
                                 dt.rows().select();
                             }
                         },
                         {
                             text: 'Select None',
-                            action: function () {
+                            action: function (e, dt, button, config ) {
                                 dt.rows().deselect();
                             }
                         },
