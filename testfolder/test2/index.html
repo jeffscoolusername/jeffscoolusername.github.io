@@ -2331,6 +2331,17 @@
                 paging: false,
                 "language": {
                         "info": "Initial Rows : _TOTAL_",
+                        select: {
+                                    rows: {
+                                        _: "",
+                                        0: "",
+                                        1: ""
+                                    }
+                                }
+                        },
+                select: {
+                    style: 'multi'
+                        },
                 dom: 'Bfrtip',
                 stateSave: true,           
                 initComplete: function () {
@@ -2345,16 +2356,7 @@
                             }
                         } );
                     } );
-                }, 
-                select: {
-                            rows: {
-                                _: "",
-                                0: "",
-                                1: ""
-                            },
-                            style: 'multi'
-                        }
-                },
+                },                 
                 buttons: [
                         {
                             extend: "copy",
@@ -2393,19 +2395,19 @@
                         {
                             text: 'Select All',
                             action: function () {
-                                $table.rows().select();
+                                CsvToHtmlTable.rows().select();
                             }
                         },
                         {
                             text: 'Select None',
                             action: function () {
-                                $table.rows().deselect();
+                                CsvToHtmlTable.rows().deselect();
                             }
                         },
                         {
                             text: 'Show All',
                             action: function ( e, dt, button, config ) {
-                                $table.rows().deselect();
+                                CsvToHtmlTable.rows().deselect();
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
                         },
@@ -2415,8 +2417,8 @@
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                             }
                         }
-                        ]
-            },            
+                        ]   
+                },                         
             custom_formatting: [[2, format_link]]
             });
             
