@@ -1214,7 +1214,7 @@ $(document)
 
                 function drawChart() {
                 var data = google.visualization.arrayToDataTable([
-                    ['% Change', 'Age'],
+                    ['% Change', 'Days'],
                     [coingeckopricechange24h1, 1], [coingeckopricechange7d1, 7], [coingeckopricechange30d1, 30], [coingeckopricechange1y1, 365]]);
 
                 var options = {
@@ -1251,7 +1251,7 @@ $(document)
 
                 function drawChartDuplicate() {
                     var data = google.visualization.arrayToDataTable([
-                        ['% Change', 'Age'],
+                        ['% Change', 'Days'],
                         [coingeckopricechange24h0, 1], [coingeckopricechange7d0, 7], [coingeckopricechange30d0, 30], [coingeckopricechange1y0, 365]]);
     
                     var options = {
