@@ -2308,7 +2308,7 @@
 
             $('#table-csv0 tfoot th').each( function () {
                 var title = $(this).text();
-                $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+                $(this).html( '<input type="text" placeholder="Search '+'test'+'" />' );
             } );
 
             function format_link(link) {
@@ -2356,18 +2356,7 @@
                             }
                         } );
                     } );
-                },    
-                'columns': [
-                        {
-                            'data': 'Title'
-                        },   
-                        {
-                            'data': 'Date'
-                        },                       
-                        {
-                            'data': 'URL'
-                        }
-                    ],             
+                },                 
                 buttons: [
                         {
                             extend: "copy",
