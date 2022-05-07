@@ -2395,19 +2395,19 @@
                         {
                             text: 'Select All',
                             action: function () {
-                                CsvToHtmlTable.rows().select();
+                                dt.rows().select();
                             }
                         },
                         {
                             text: 'Select None',
                             action: function () {
-                                CsvToHtmlTable.rows().deselect();
+                                dt.rows().deselect();
                             }
                         },
                         {
                             text: 'Show All',
                             action: function ( e, dt, button, config ) {
-                                CsvToHtmlTable.rows().deselect();
+                                dt.rows().deselect();
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
                         },
