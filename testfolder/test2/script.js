@@ -3193,19 +3193,19 @@ $(document)
                     {
                         text: 'Select All',
                         action: function () {
-                            exampleTable8.rows().select();
+                            exampleTable9.rows().select();
                         }
                     },
                     {
                         text: 'Select None',
                         action: function () {
-                            exampleTable8.rows().deselect();
+                            exampleTable9.rows().deselect();
                         }
                     },
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
-                            exampleTable8.rows().deselect();
+                            exampleTable9.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     },
