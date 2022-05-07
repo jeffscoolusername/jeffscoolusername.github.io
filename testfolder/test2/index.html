@@ -2319,112 +2319,102 @@
 
             CsvToHtmlTable.init({
             csv_path: "data/testsheet1.csv",
-            element: "table-csv0",
-            stateSave: true,           
-            initComplete: function () {
-                this.api().columns().every( function () {
-                    var that = this;
-    
-                    $( 'input', this.footer() ).on( 'keyup change clear', function () {
-                        if ( that.search() !== this.value ) {
-                            that
-                                .search( this.value )
-                                .draw();
-                        }
-                    } );
-                } );
-            },            
+            element: "table-csv0",                       
             allow_download: false,            
             csv_options: {
                 separator: ",",
                 delimiter: '"'
-            },            
-            dom: 'Bfrtip',
-            "language": {
-                        "info": "Initial Rows : _TOTAL_",
-                        select: {
-                                    rows: {
-                                        _: "",
-                                        0: "",
-                                        1: ""
-                                    }
-                                }
-                        },
+            },           
             colReorder: true,
-            rowReorder: true,
-            buttons: [
-            {
-                extend: "copy",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            },
-            {
-                extend: "csv",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            },
-            {
-                extend: "excel",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            },
-            {
-                extend: "pdfHtml5",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            },
-            {
-                extend: "print",
-                exportOptions: {
-                modifier: { search: 'none', selected: true}
-                }
-            }, 
-            {
-                extend: 'colvis',
-                text: 'Columns'
-            },
-            {
-                text: 'Select All',
-                action: function () {
-                    table.rows().select();
-                }
-            },
-            {
-                text: 'Select None',
-                action: function () {
-                    table.rows().deselect();
-                }
-            },
-            {
-                text: 'Show All',
-                action: function ( e, dt, button, config ) {
-                    table.rows().deselect();
-                    dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
-                }
-            },
-            {
-                text: 'Hide Unselected',
-                action: function ( e, dt, button, config ) {
-                    dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
-                }
-            }
-            ],
+            rowReorder: true,            
             datatables_options: {
                 paging: false,
                 "language": {
                         "info": "Initial Rows : _TOTAL_",
-                        select: {
-                                    rows: {
-                                        _: "",
-                                        0: "",
-                                        1: ""
-                                    }
-                                }
-                        }  
+                dom: 'Bfrtip',
+                stateSave: true,           
+                initComplete: function () {
+                    this.api().columns().every( function () {
+                        var that = this;
+        
+                        $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                            if ( that.search() !== this.value ) {
+                                that
+                                    .search( this.value )
+                                    .draw();
+                            }
+                        } );
+                    } );
+                }, 
+                select: {
+                            rows: {
+                                _: "",
+                                0: "",
+                                1: ""
+                            }
+                        }
+                },
+                buttons: [
+                        {
+                            extend: "copy",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        },
+                        {
+                            extend: "csv",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        },
+                        {
+                            extend: "excel",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        },
+                        {
+                            extend: "pdfHtml5",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        },
+                        {
+                            extend: "print",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        }, 
+                        {
+                            extend: 'colvis',
+                            text: 'Columns'
+                        },
+                        {
+                            text: 'Select All',
+                            action: function () {
+                                table.rows().select();
+                            }
+                        },
+                        {
+                            text: 'Select None',
+                            action: function () {
+                                table.rows().deselect();
+                            }
+                        },
+                        {
+                            text: 'Show All',
+                            action: function ( e, dt, button, config ) {
+                                table.rows().deselect();
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                            }
+                        },
+                        {
+                            text: 'Hide Unselected',
+                            action: function ( e, dt, button, config ) {
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                            }
+                        }
+                        ]
             },            
             custom_formatting: [[2, format_link]]
             });
