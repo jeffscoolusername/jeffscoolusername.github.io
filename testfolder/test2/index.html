@@ -58,6 +58,7 @@
     <script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
     <script src="js/csv_to_html_table.js"></script>
     <script src="js/csv_to_html_table2.js"></script>
+    <script src="js/csv_to_html_table3.js"></script>
     <script src="js/jquery.csv.min.js"></script>
 
 </head>
@@ -110,7 +111,10 @@
             </li>      
             <li>
                 <a href="#tab-table11" data-toggle="tab">Spreadsheet Table - Algo Prices</a>
-            </li>           
+            </li>       
+            <li>
+                <a href="#tab-table12" data-toggle="tab">Spreadsheet Table - Algo Whales</a>
+            </li>      
             <!--<li>
                 <a href="#tab-table9" data-toggle="tab">External Text Data File #2</a>
             </li>-->
@@ -2115,6 +2119,24 @@
                     </tfoot>
                 </div>
             </div>
+            <div class="tab-pane" id="tab-table12">
+                <div id="table-csv2">
+                    <thead>
+                        <tr>
+                            <th>Wallet Name</th>
+                            <th>Amount</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Wallet Name</th>
+                            <th>Amount</th>
+                            <th>Address</th>
+                        </tr>
+                    </tfoot>
+                </div>
+            </div>
         </div>
         <section class="footer">
             <div class="social">
@@ -2553,6 +2575,112 @@
                         ]   
                 },                         
             //custom_formatting: [[2, format_link]]
+            });
+
+            CsvToHtmlTable3.init({
+            csv_path: "data/testsheet3.csv",
+            element: "table-csv2",                       
+            allow_download: false,            
+            csv_options: {
+                separator: ",",
+                delimiter: '"'
+            },         
+            datatables_options: {
+                paging: false,
+                "order": [[ 1, "desc" ]],
+                colReorder: true,
+                rowReorder: true,  
+                "language": {
+                        "info": "Initial Rows : _TOTAL_",
+                        select: {
+                                    rows: {
+                                        _: "",
+                                        0: "",
+                                        1: ""
+                                    }
+                                }
+                        },
+                select: {
+                    style: 'multi'
+                        },
+                dom: 'Bfrtip',
+                stateSave: true,           
+                initComplete: function () {
+                    this.api().columns().every( function () {
+                        var that = this;
+        
+                        $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                            if ( that.search() !== this.value ) {
+                                that
+                                    .search( this.value )
+                                    .draw();
+                            }
+                        } );
+                    } );
+                },                 
+                buttons: [
+                        {
+                            extend: "copy",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        },
+                        {
+                            extend: "csv",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        },
+                        {
+                            extend: "excel",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        },
+                        {
+                            extend: "pdfHtml5",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        },
+                        {
+                            extend: "print",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true}
+                            }
+                        }, 
+                        {
+                            extend: 'colvis',
+                            text: 'Columns'
+                        },
+                        {
+                            text: 'Select All',
+                            action: function (e, dt, button, config ) {
+                                dt.rows().select();
+                            }
+                        },
+                        {
+                            text: 'Select None',
+                            action: function (e, dt, button, config ) {
+                                dt.rows().deselect();
+                            }
+                        },
+                        {
+                            text: 'Show All',
+                            action: function ( e, dt, button, config ) {
+                                dt.rows().deselect();
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                            }
+                        },
+                        {
+                            text: 'Hide Unselected',
+                            action: function ( e, dt, button, config ) {
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                            }
+                        }
+                        ]   
+                },                         
+            custom_formatting: [[2, format_link]]
             });
             
         </script>
