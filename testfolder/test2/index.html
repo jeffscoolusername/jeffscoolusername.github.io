@@ -2365,10 +2365,6 @@
             else return "";
             }
 
-            function format_explorer_link(link) {            
-                return "<a href='https://algoexplorer.io/address/" + link + "' target='_blank'>" + "</a>";
-            }
-
             CsvToHtmlTable.init({
             csv_path: "data/testsheet1.csv",
             element: "table-csv0",                       
@@ -2684,7 +2680,7 @@
                         }
                         ]   
                 },                         
-            custom_formatting: [[2, format_explorer_link]]
+            custom_formatting: [[2, format_link]]
             });
             
         </script>
