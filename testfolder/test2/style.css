@@ -231,17 +231,21 @@ h1 {
   }
 }
 
-body {
+/*body {
     background-color: #010101;
   }
   
 .row {
   overflow: hidden;
-}  
+}*/  
 
 /* JsFiddle Example only/don't use */
 .logo-carousel {
   margin-top: 32px;
+}
+
+@media (max-width: 720px) {
+  .container { display: none; }
 }
 
 
