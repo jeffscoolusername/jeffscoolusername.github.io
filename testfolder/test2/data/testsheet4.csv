@@ -1,5 +1,5 @@
-"Name","Index","Creation Rnd","# of TX","% in Circ","Ecosys Votes","Def Frozen"
-"AlgoGems",230946361,14153187,450370,99.997957,33,false
-"AlgoStake",511484048,18325882,549029,12.462827,45,false
-"Yieldly",226701642,13995800,5086415,100,220,false
-"Defly Token",470842789,18072492,250069,43.668517,23,false
+"Name","Index","Creation Rnd","# of TX","% in Circ","Ecosys Votes","Daily Users",,,,"Def Frozen"
+"AlgoGems",230946361,14153187,450625,99.997957,33,,,,,false
+"AlgoStake",511484048,18325882,549505,12.462927,45,,,,,false
+"Yieldly",226701642,13995800,5089184,100,220,,,,,false
+"Defly Token",470842789,18072492,250543,43.668517,23,,,,,false
