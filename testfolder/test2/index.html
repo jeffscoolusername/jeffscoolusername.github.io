@@ -2345,6 +2345,16 @@
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example0 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
+                        }
                     }
                     ],
                     "language": {
@@ -2572,6 +2582,16 @@
                             action: function ( e, dt, button, config ) {
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                             }
+                        },
+                        {
+                            text: 'Reset Filters/Columns',
+                            action: function ( e, dt, button, config ) {
+                                // Reset Column filtering
+                                $('#table-csv0 tfoot input').val('').change();
+                                
+                                // Reset column order
+                                dt.colReorder.reset();
+                            }
                         }
                         ]   
                 },                         
@@ -2698,6 +2718,16 @@
                             action: function ( e, dt, button, config ) {
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                             }
+                        },
+                        {
+                            text: 'Reset Filters/Columns',
+                            action: function ( e, dt, button, config ) {
+                                // Reset Column filtering
+                                $('#table-csv1 tfoot input').val('').change();
+                                
+                                // Reset column order
+                                dt.colReorder.reset();
+                            }
                         }
                         ]   
                 },                         
@@ -2803,6 +2833,16 @@
                             text: 'Hide Unselected',
                             action: function ( e, dt, button, config ) {
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                            }
+                        },
+                        {
+                            text: 'Reset Filters/Columns',
+                            action: function ( e, dt, button, config ) {
+                                // Reset Column filtering
+                                $('#table-csv2 tfoot input').val('').change();
+                                
+                                // Reset column order
+                                dt.colReorder.reset();
                             }
                         }
                         ]   
@@ -2910,6 +2950,16 @@
                             action: function ( e, dt, button, config ) {
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                             }
+                        },
+                        {
+                            text: 'Reset Filters/Columns',
+                            action: function ( e, dt, button, config ) {
+                                // Reset Column filtering
+                                $('#table-csv3 tfoot input').val('').change();
+                                
+                                // Reset column order
+                                dt.colReorder.reset();
+                            }
                         }
                         ]   
                 },                         
@@ -3015,6 +3065,16 @@
                             text: 'Hide Unselected',
                             action: function ( e, dt, button, config ) {
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                            }
+                        },
+                        {
+                            text: 'Reset Filters/Columns',
+                            action: function ( e, dt, button, config ) {
+                                // Reset Column filtering
+                                $('#table-csv4 tfoot input').val('').change();
+                                
+                                // Reset column order
+                                dt.colReorder.reset();
                             }
                         }
                         ]   
