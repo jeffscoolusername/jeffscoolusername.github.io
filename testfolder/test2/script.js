@@ -1998,6 +1998,16 @@ $(document)
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example1 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
+                        }
                     }
                     ],
                     "language": {
@@ -2157,6 +2167,16 @@ $(document)
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example2 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
+                        }
                     }
                     ],
                     "language": {
@@ -2292,6 +2312,16 @@ $(document)
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                        }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example3 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
                         }
                     }
                     ],
@@ -2441,6 +2471,16 @@ $(document)
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                        }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example4 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
                         }
                     }
                     ],
@@ -2648,6 +2688,16 @@ $(document)
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example5 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
+                        }
                     }
                     ],
                     "language": {
@@ -2789,6 +2839,16 @@ $(document)
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                        }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example6 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
                         }
                     }
                     ],
@@ -2933,6 +2993,16 @@ $(document)
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example7 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
+                        }
                     }
                     ],
                     "language": {
@@ -3074,6 +3144,16 @@ $(document)
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
                         }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example8 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
+                        }
                     }
                     ],
                     "language": {
@@ -3213,6 +3293,16 @@ $(document)
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
                             dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                        }
+                    },
+                    {
+                        text: 'Reset Filters/Columns',
+                        action: function ( e, dt, button, config ) {
+                            // Reset Column filtering
+                            $('#example9 tfoot input').val('').change();
+                            
+                            // Reset column order
+                            dt.colReorder.reset();
                         }
                     }
                     ],
