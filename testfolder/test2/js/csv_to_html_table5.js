@@ -56,8 +56,10 @@ CsvToHtmlTable5 = {
                         var cellTemplateFunc = customTemplates[colIdx];
                         if (cellTemplateFunc) {
                             $tableBodyRowTd.html(cellTemplateFunc(csvData[rowIdx][colIdx]));
+                            //console.log($tableBodyRowTd.html(cellTemplateFunc(csvData[rowIdx][colIdx])));
                         } else {
                             $tableBodyRowTd.text(csvData[rowIdx][colIdx]);
+                            //console.log($tableBodyRowTd.text(csvData[rowIdx][colIdx]));
                         }
                         $tableBodyRow.append($tableBodyRowTd);
                         $tableBody.append($tableBodyRow);
@@ -70,6 +72,10 @@ CsvToHtmlTable5 = {
                 if (allow_download) {
                     $containerElement.append("<p><a class='btn btn-info' href='" + csv_path + "'><i class='glyphicon glyphicon-download'></i> Download as CSV</a></p>");
                 }
+
+                //var test = document.querySelector("#table-csv4-table > tbody > tr:nth-child(2) > td:nth-child(2)");
+                //console.log(test);
+
             });
     }
 };
