@@ -3087,7 +3087,7 @@ $(document)
                                 }
                         },
                     colReorder: true,
-                    "order": [[ 0, "desc" ]],
+                    "order": [[ 0, "asc" ]],
                     paging: false,
                     select: {
                         style: 'multi'
@@ -3227,7 +3227,7 @@ $(document)
                                 }
                         },
                     colReorder: true,
-                    "order": [[ 0, "desc" ]],
+                    "order": [[ 0, "asc" ]],
                     paging: false,
                     select: {
                         style: 'multi'
