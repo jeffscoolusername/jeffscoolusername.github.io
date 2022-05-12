@@ -1,16 +1,6 @@
 "Name","User Title","Date","Excerpt","Topic"
-"Tsachi","Algorand Inc",2022-03-08,"Admittedly, there is a way to catchup from an archival node. But you’ll need to do some tweaking: 
-Configure the node as a relay by setting the NetAddress field. 
-Once a catchpoint file is generated, you’ll be able to observe the catchpoint label in the “goal node status”. 
-Then, when starting the n&hellip;","algorand-catchpoints"
-"Tsachi","Algorand Inc",2022-03-14,"It’s required in order to ensure the callee would be designed to support being called by other contract. 
-( otherwise, there could be exceptions where this would defeat existing contract’s security attributes ).","contract-to-contract-calls-only-possible-between-v6-contracts-not-backwards-compatible"
-"Tsachi","Algorand Inc",2022-03-12,"Yes. A delayed transaction can cause that - but please note that were referring to a pretty long time here. I.e. in the order of hours. 
-Alternatively, you might have your transaction being created by a node that wasn’t caught up… which explains the large rounds gap.","what-causes-this-error"
-"Tsachi","Algorand Inc",2022-03-08,"The reasoning for the tree-directory structure under the “catchpoints” file is that on certain file systems, storing large number of files in a single directory makes the access time slower. 
-This is not the case when you have several tens or hundreds of files, but it’s definitely the case when the &hellip;","algorand-catchpoints"
-"Tsachi","Algorand Inc",2022-03-08,"No - it won’t expose your node in any way. The only way for you to “expose” is to have your relay listed as one of the SRV records. As long as that’s not the case, consider this to be your own private relay…","algorand-catchpoints"
-"Tsachi","Algorand Inc",2022-03-08,"Admittedly, there is a way to catchup from an archival node. But you’ll need to do some tweaking: 
-Configure the node as a relay by setting the NetAddress field. 
-Once a catchpoint file is generated, you’ll be able to observe the catchpoint label in the “goal node status”. 
-Then, when starting the n&hellip;","algorand-catchpoints"
+"Tsachi","Algorand Inc",2022-03-14,"It’s required in order to ensure the callee would be designed to support be...","contract-to-contract-calls-onl..."
+"Tsachi","Algorand Inc",2022-03-12,"Yes. A delayed transaction can cause that - but please note that were refer...","what-causes-this-error..."
+"Tsachi","Algorand Inc",2022-03-08,"The reasoning for the tree-directory structure under the “catchpoints” file...","algorand-catchpoints..."
+"Tsachi","Algorand Inc",2022-03-08,"No - it won’t expose your node in any way. The only way for you to “expose”...","algorand-catchpoints..."
+"Tsachi","Algorand Inc",2022-03-08,"Admittedly, there is a way to catchup from an archival node. But you’ll nee...","algorand-catchpoints..."
