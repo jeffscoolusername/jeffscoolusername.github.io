@@ -2000,13 +2000,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example1 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -2169,13 +2172,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example2 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -2315,13 +2321,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example3 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -2474,13 +2483,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example4 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -2690,13 +2702,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example5 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -2842,13 +2857,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example6 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -2995,13 +3013,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example7 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -3146,13 +3167,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example8 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -3296,13 +3320,16 @@ $(document)
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example9 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
