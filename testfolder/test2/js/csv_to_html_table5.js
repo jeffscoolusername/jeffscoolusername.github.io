@@ -75,6 +75,35 @@ CsvToHtmlTable5 = {
 
                 //var test = document.querySelector("#table-csv4-table > tbody > tr:nth-child(2) > td:nth-child(2)");
                 //console.log(test);
+                //console.log($tableBody[0].childNodes[0]);
+                //console.log($tableBody[0].childNodes[1]);
+                //console.log($tableBody[0].childNodes[2].childNodes[0].innerText); //FINALLY !!! 
+
+                /*$(function() {
+                    $('tr td:nth-child(2).sorting_1').each(function() {
+                    var cellValue = $(this).text();
+                      console.log(cellValue)
+                    //do something with cellValue 
+                    if(cellValue) {
+                      //not null  
+                    } else {
+                      //null
+                    }
+                  });
+                });*/
+
+                /*$(function() {
+                    $('tr td:nth-child(2)').each(function() {
+                    var cellValue = $(this).text();
+                      console.log(cellValue)
+                    //do something with cellValue 
+                    if(cellValue) {
+                      //not null  
+                    } else {
+                      //null
+                    }
+                  });
+                });*/                
 
             });
     }
