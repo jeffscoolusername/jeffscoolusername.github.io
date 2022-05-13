@@ -2128,6 +2128,9 @@
                 </div>
             </div>
             <div class="tab-pane" id="tab-table11">
+                <div>
+                    <div id="chart_divtrend42777" class="info_div_name3"></div>
+                    </div>
                 <div id="table-csv1">
                     <thead>
                         <tr>
@@ -3141,7 +3144,7 @@
                 //console.log(feeshname0);
 
                 var feeshcategory0 = document.querySelector("#table-csv3-table > thead > tr > th:nth-child(8)").innerHTML;
-                console.log(feeshcategory0);
+                //console.log(feeshcategory0);
 
                 var data = google.visualization.arrayToDataTable([
                     ['ASA Name', feeshcategory0,],
@@ -3190,6 +3193,60 @@
 
 
             };    
+
+            google.charts.setOnLoadCallback(drawChart777);
+
+            function drawChart777() {
+                var feesh7770 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(3) > span").innerHTML;
+                var feesh7771 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(4) > span").innerHTML;
+                var feesh7772 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(5) > span").innerHTML;
+                //console.log(feesh0);
+
+                //document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(3) > span")
+
+                var feeshname7770 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td.dtr-control").innerHTML;
+                //var feeshname7771 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(2) > td:nth-child(1)").innerHTML;
+                //var feeshname7772 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(3) > td:nth-child(1)").innerHTML;
+                //console.log(feeshname0);
+
+                //var feeshcategory7770 = document.querySelector("#table-csv1-table > thead > tr > th:nth-child(8)").innerHTML;
+                //console.log(feeshcategory7770);
+
+                var data = google.visualization.arrayToDataTable([
+                    ['% Change', 'Time'],
+                    [parseInt(feesh7770), 1], [parseInt(feesh7771), 24], [parseInt(feesh7772), 168]]);
+
+                var options = {
+                    title: 'Hours vs. % Change to ' + feeshname7770,
+                    hAxis: {title: '% Change'},
+                    vAxis: {title: 'Hours'},
+                    animation: {
+                        duration: 1000
+                    },
+                    legend: 'none',
+                    trendlines: { 0: {} }    // Draw a trendline for data series 0.
+                };
+
+                var chart = new google.visualization.ScatterChart(document.getElementById('chart_divtrend42777'));
+                chart.draw(data, options);
+
+                $(window).resize(function() {
+                    chart.draw(data, options);
+                });
+
+                $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                    e.preventDefault()
+                    var tab_name = this.getAttribute('href');
+                    if (history.pushState) {
+                        //trash code
+                        if (tab_name === "#tab-table11") {                                                    
+                        chart.draw(data, options);
+                        }
+                        //trash code
+                    }
+                    });
+
+                }
             
         </script>
 
