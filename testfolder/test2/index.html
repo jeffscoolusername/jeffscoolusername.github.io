@@ -2348,13 +2348,16 @@
                         }
                     },
                     {
-                        text: 'Reset Filters/Columns',
+                        text: 'Clear/Reset',
                         action: function ( e, dt, button, config ) {
                             // Reset Column filtering
                             $('#example0 tfoot input').val('').change();
                             
                             // Reset column order
                             dt.colReorder.reset();
+
+                            // Redraw table (and reset main search filter)
+                            dt.search('').draw();
                         }
                     }
                     ],
@@ -2585,13 +2588,16 @@
                             }
                         },
                         {
-                            text: 'Reset Filters/Columns',
+                            text: 'Clear/Reset',
                             action: function ( e, dt, button, config ) {
                                 // Reset Column filtering
                                 $('#table-csv0 tfoot input').val('').change();
                                 
                                 // Reset column order
                                 dt.colReorder.reset();
+
+                                // Redraw table (and reset main search filter)
+                                dt.search('').draw();
                             }
                         }
                         ]   
@@ -2721,13 +2727,16 @@
                             }
                         },
                         {
-                            text: 'Reset Filters/Columns',
+                            text: 'Clear/Reset',
                             action: function ( e, dt, button, config ) {
                                 // Reset Column filtering
                                 $('#table-csv1 tfoot input').val('').change();
                                 
                                 // Reset column order
                                 dt.colReorder.reset();
+
+                                // Redraw table (and reset main search filter)
+                                dt.search('').draw();
                             }
                         }
                         ]   
@@ -2837,13 +2846,16 @@
                             }
                         },
                         {
-                            text: 'Reset Filters/Columns',
+                            text: 'Clear/Reset',
                             action: function ( e, dt, button, config ) {
                                 // Reset Column filtering
                                 $('#table-csv2 tfoot input').val('').change();
                                 
                                 // Reset column order
                                 dt.colReorder.reset();
+
+                                // Redraw table (and reset main search filter)
+                                dt.search('').draw();
                             }
                         }
                         ]   
@@ -2953,13 +2965,16 @@
                             }
                         },
                         {
-                            text: 'Reset Filters/Columns',
+                            text: 'Clear/Reset',
                             action: function ( e, dt, button, config ) {
                                 // Reset Column filtering
                                 $('#table-csv3 tfoot input').val('').change();
                                 
                                 // Reset column order
                                 dt.colReorder.reset();
+
+                                // Redraw table (and reset main search filter)
+                                dt.search('').draw();
                             }
                         }
                         ]   
@@ -3069,13 +3084,16 @@
                             }
                         },
                         {
-                            text: 'Reset Filters/Columns',
+                            text: 'Clear/Reset',
                             action: function ( e, dt, button, config ) {
                                 // Reset Column filtering
                                 $('#table-csv4 tfoot input').val('').change();
                                 
                                 // Reset column order
                                 dt.colReorder.reset();
+
+                                // Redraw table (and reset main search filter)
+                                dt.search('').draw();
                             }
                         }
                         ]   
