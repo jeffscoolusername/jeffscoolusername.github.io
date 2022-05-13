@@ -1985,14 +1985,14 @@ $(document)
                         action: function () {
                             exampleTable1.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable1.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -2010,6 +2010,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -2157,14 +2160,14 @@ $(document)
                         action: function () {
                             exampleTable2.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable2.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -2182,6 +2185,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -2306,14 +2312,14 @@ $(document)
                         action: function () {
                             exampleTable3.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable3.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -2331,6 +2337,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -2468,14 +2477,14 @@ $(document)
                         action: function () {
                             exampleTable4.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable4.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -2493,6 +2502,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -2687,14 +2699,14 @@ $(document)
                         action: function () {
                             exampleTable5.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable5.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -2712,6 +2724,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -2842,14 +2857,14 @@ $(document)
                         action: function () {
                             exampleTable6.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable6.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -2867,6 +2882,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -2998,14 +3016,14 @@ $(document)
                         action: function () {
                             exampleTable7.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable7.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -3023,6 +3041,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -3152,14 +3173,14 @@ $(document)
                         action: function () {
                             exampleTable8.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable8.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -3177,6 +3198,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -3305,14 +3329,14 @@ $(document)
                         action: function () {
                             exampleTable9.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable9.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -3330,6 +3354,9 @@ $(document)
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
