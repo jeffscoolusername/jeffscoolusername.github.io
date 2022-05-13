@@ -2333,14 +2333,14 @@
                         action: function () {
                             exampleTable0.rows().deselect();
                         }
-                    },
+                    },/*
                     {
                         text: 'Show All',
                         action: function ( e, dt, button, config ) {
                             exampleTable0.rows().deselect();
                             dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
-                    },
+                    },*/
                     {
                         text: 'Hide Unselected',
                         action: function ( e, dt, button, config ) {
@@ -2358,6 +2358,9 @@
 
                             // Redraw table (and reset main search filter)
                             dt.search('').draw();
+
+                            dt.rows().deselect();
+                            dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                         }
                     }
                     ],
@@ -2573,14 +2576,14 @@
                             action: function (e, dt, button, config ) {
                                 dt.rows().deselect();
                             }
-                        },
+                        },/*
                         {
                             text: 'Show All',
                             action: function ( e, dt, button, config ) {
                                 dt.rows().deselect();
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
-                        },
+                        },*/
                         {
                             text: 'Hide Unselected',
                             action: function ( e, dt, button, config ) {
@@ -2598,6 +2601,9 @@
 
                                 // Redraw table (and reset main search filter)
                                 dt.search('').draw();
+
+                                dt.rows().deselect();
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
                         }
                         ]   
@@ -2712,14 +2718,14 @@
                             action: function (e, dt, button, config ) {
                                 dt.rows().deselect();
                             }
-                        },
+                        },/*
                         {
                             text: 'Show All',
                             action: function ( e, dt, button, config ) {
                                 dt.rows().deselect();
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
-                        },
+                        },*/
                         {
                             text: 'Hide Unselected',
                             action: function ( e, dt, button, config ) {
@@ -2737,6 +2743,9 @@
 
                                 // Redraw table (and reset main search filter)
                                 dt.search('').draw();
+
+                                dt.rows().deselect();
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
                         }
                         ]   
@@ -2831,14 +2840,14 @@
                             action: function (e, dt, button, config ) {
                                 dt.rows().deselect();
                             }
-                        },
+                        },/*
                         {
                             text: 'Show All',
                             action: function ( e, dt, button, config ) {
                                 dt.rows().deselect();
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
-                        },
+                        },*/
                         {
                             text: 'Hide Unselected',
                             action: function ( e, dt, button, config ) {
@@ -2856,6 +2865,9 @@
 
                                 // Redraw table (and reset main search filter)
                                 dt.search('').draw();
+
+                                dt.rows().deselect();
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
                         }
                         ]   
@@ -2950,14 +2962,14 @@
                             action: function (e, dt, button, config ) {
                                 dt.rows().deselect();
                             }
-                        },
+                        },/*
                         {
                             text: 'Show All',
                             action: function ( e, dt, button, config ) {
                                 dt.rows().deselect();
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
-                        },
+                        },*/
                         {
                             text: 'Hide Unselected',
                             action: function ( e, dt, button, config ) {
@@ -2975,6 +2987,9 @@
 
                                 // Redraw table (and reset main search filter)
                                 dt.search('').draw();
+
+                                dt.rows().deselect();
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
                         }
                         ]   
@@ -3069,14 +3084,14 @@
                             action: function (e, dt, button, config ) {
                                 dt.rows().deselect();
                             }
-                        },
+                        },/*
                         {
                             text: 'Show All',
                             action: function ( e, dt, button, config ) {
                                 dt.rows().deselect();
                                 dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
-                        },
+                        },*/
                         {
                             text: 'Hide Unselected',
                             action: function ( e, dt, button, config ) {
@@ -3094,6 +3109,9 @@
 
                                 // Redraw table (and reset main search filter)
                                 dt.search('').draw();
+
+                                dt.rows().deselect();
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
                             }
                         }
                         ]   
