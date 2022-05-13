@@ -3140,8 +3140,11 @@
                 var feeshname3 = document.querySelector("#table-csv3-table > tbody > tr:nth-child(4) > td:nth-child(1)").innerHTML;
                 //console.log(feeshname0);
 
+                var feeshcategory0 = document.querySelector("#table-csv3-table > thead > tr > th:nth-child(8)").innerHTML;
+                console.log(feeshcategory0);
+
                 var data = google.visualization.arrayToDataTable([
-                    ['ASA Name', 'Daily Unique Receivers',],
+                    ['ASA Name', feeshcategory0,],
                     [feeshname0, parseInt(feesh0)],
                     [feeshname1, parseInt(feesh1)],
                     [feeshname2, parseInt(feesh2)],
@@ -3151,7 +3154,7 @@
                 //console.log(document.querySelector("#table-csv3-table > tbody > tr:nth-child(1) > td:nth-child(8)"));
 
                 var options = {
-                    title: 'Top Daily Unique Receivers Characterization',
+                    title: feeshcategory0 + ' Characterization',
                     chartArea: {width: '50%'},
                     animation: {
                         duration: 1000
