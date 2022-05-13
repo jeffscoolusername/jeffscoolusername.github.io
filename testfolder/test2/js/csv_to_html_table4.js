@@ -70,6 +70,9 @@ CsvToHtmlTable4 = {
                 if (allow_download) {
                     $containerElement.append("<p><a class='btn btn-info' href='" + csv_path + "'><i class='glyphicon glyphicon-download'></i> Download as CSV</a></p>");
                 }
+
+                //console.log($tableBody[0].childNodes[2].childNodes[7].innerText); //FINALLY !!!                 
+
             });
     }
 };
