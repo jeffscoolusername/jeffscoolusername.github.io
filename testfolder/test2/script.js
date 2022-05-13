@@ -39,53 +39,9 @@ $(document)
         };
         window.alert = function() {};*/
 
-        var coingeckoapi = 'https://api.coingecko.com/api/v3/coins/';
-        var algoexplorerapi = 'https://indexer.algoexplorerapi.io/v2/assets/';
-        var algowalletexplorerapi = 'https://api.algoexplorer.io/v1/account/';
-        var algowalletamountexplorerapi = 'https://api.algoexplorer.io/v2/accounts/';
-
-        const a = ["https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3Dalgorand%26hl%3Den-US%26gl%3DUS%26ceid%3DUS%3Aen"];
-       
-        var asatokenarray = ['397111682', '353409462', '430838314', '226265212'];       
-        var unusedasatokenarray = ['237913743', '307329013', '257805044', '276461096', '306034694', '287504952', '310079703', '284090786'];
-        var asatokenwalletarray = ['SP745JJR4KPRQEXJZHVIEN736LYTL2T2DFMG3OIIFJBV66K73PHNMDCZVM', 'SSV6SKTMN3IOJO6SWUAT5ERZOBC5K44CQPOH5O7NSXJLGFGU73WUQ7DPGA', 
-        'BY6UJNZ2MD3AZC2K2KQJW7W7OWPGGIBNOSZGFZQ6L426BTGO5G2FOI6VPI', 'I6OCQ7C2KVDVT6ARZAG5JNWBJLVVF6PLEBTCJP7CCK3DKTLSNUFXDMWTCQ'];    
-
-        var asset0 = '&asset_out=0';        
-        
-        var urlalgoexplorer00 = algoexplorerapi + asatokenarray[0];
-        var urlalgoexplorer01 = algoexplorerapi + asatokenarray[1];
-        var urlalgoexplorer02 = algoexplorerapi + asatokenarray[2];
-        var urlalgoexplorer03 = algoexplorerapi + asatokenarray[3];
-
-        var urlalgoexplorerunused00 = algoexplorerapi + unusedasatokenarray[0];
-
-        var walletmodifier0 = '/transactions/latest/10';   
-        //var walletamountmodifier0 = 'assets/31566704';   //not necessasry
-
-        var urlalgowalletexplorer00 = algowalletexplorerapi + asatokenwalletarray[0] + walletmodifier0; //binance
-        var urlalgowalletexplorer01 = algowalletexplorerapi + asatokenwalletarray[1] + walletmodifier0; //algostake
-        var urlalgowalletexplorer02 = algowalletexplorerapi + asatokenwalletarray[2] + walletmodifier0;
-        var urlalgowalletexplorer03 = algowalletexplorerapi + asatokenwalletarray[3] + walletmodifier0;
-
-        var urlalgowalletamountexplorer00 = algowalletamountexplorerapi + asatokenwalletarray[0]; //binance
-        var urlalgowalletamountexplorer01 = algowalletamountexplorerapi + asatokenwalletarray[1]; //algostake
-        var urlalgowalletamountexplorer02 = algowalletamountexplorerapi + asatokenwalletarray[2];
-        var urlalgowalletamountexplorer03 = algowalletamountexplorerapi + asatokenwalletarray[3];
-
-        const b = [/*url00, url01, url02, url03, */urlalgoexplorer00, urlalgoexplorer01, urlalgoexplorer02, urlalgoexplorer03, urlalgowalletexplorer00, 
-            urlalgowalletexplorer01, urlalgowalletexplorer02, urlalgowalletexplorer03, urlalgowalletamountexplorer00, urlalgowalletamountexplorer01,
-            urlalgowalletamountexplorer02, urlalgowalletamountexplorer03];
-
-        var blockchainarray = ['algorand', 'bitcoin', 'cardano', 'solana'];
-
-        var urlcoingecko00 = coingeckoapi + blockchainarray[0];
-        var urlcoingecko01 = coingeckoapi + blockchainarray[1];
-        var urlcoingecko02 = coingeckoapi + blockchainarray[2];
-        var urlcoingecko03 = coingeckoapi + blockchainarray[3];
-        
-        const c = [urlcoingecko00, urlcoingecko01, urlcoingecko02, urlcoingecko03];
         //merge these into the csv to html version     
+
+        var dataunused0 = 'https://github.com/';
         
         getJSON(urlalgoexplorerunused00, /*async*/ async function(err, dataunused0) {
             if (err !== null) {
