@@ -744,11 +744,7 @@ $(document)
         };        */
         //#endregion
         
-        //i realize this part of the code is programatically absurd but i'm just not quite good enough yet to figure out another solution
-        //if you know a better way plz help me here and make this less cringe     
-        //ideas: call the web crawl at the end of the above stuff   
-        //current strategy: perform synchronous functions below vs async functions above (need fetch await instead most likely afaik)
-        //also added an await fetch above         
+        //merge these into the csv to html version     
         
         getJSON(urlalgoexplorerunused00, /*async*/ async function(err, dataunused0) {
             if (err !== null) {
