@@ -55,3 +55,8 @@ These tasks are old and I suspect at least one i...","https://forum.algorand.org
 "liz","Algorand Inc",2021-07-26,"Yes, please go ahead and submit it to the July 16 - Aug 15 b...","https://forum.algorand.org/t/community-code-solutions-tutorials-vote-july-2021/3823/3"
 "liz","Algorand Inc",2021-06-21,"Hi Joseph, 
 Check out the atomic transfer docs here: <a href...","https://forum.algorand.org/t/how-to-read-atomic-swap-data-on-the-blockchain/3597/2"
+"Ben","Algorand Inc",2022-05-11,"Yes, you’ve been able to do this since Teal 6 or AVM 1.1, it...","https://forum.algorand.org/t/can-you-do-inner-app-calls-yet/6856/2"
+"Ben","Algorand Inc",2022-05-09,"You may be interested to read through <a href=""https://githu...","https://forum.algorand.org/t/does-algorand-have-the-capability-to-make-its-nfts-dynamic-like-chainlinks/6808/3"
+"Ben","Algorand Inc",2022-05-09,"In the goal app call you’re specifying str: as the encoding,...","https://forum.algorand.org/t/pyteal-app-localput-does-not-work-as-i-expected/6815/2"
+"Ben","Algorand Inc",2022-05-07,"You should pass the address as the 32 byte version not the 5...","https://forum.algorand.org/t/passing-address-through-note-field/6768/2"
+"Ben","Algorand Inc",2022-05-06,"<a href=""https://github.com/algorand/algorand-sdk-testing/is...","https://forum.algorand.org/t/is-it-possible-to-decompile-application-approval-program/6756/6"
