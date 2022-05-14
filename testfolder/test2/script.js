@@ -77,31 +77,36 @@ $(document)
                     {
                         extend: "copy",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     },
                     {
                         extend: "csv",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     },
                     {
                         extend: "excel",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     },
                     {
                         extend: "pdfHtml5",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     },
                     {
                         extend: "print",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     }, 
                     {
@@ -209,31 +214,36 @@ $(document)
                     {
                         extend: "copy",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     },
                     {
                         extend: "csv",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     },
                     {
                         extend: "excel",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     },
                     {
                         extend: "pdfHtml5",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     },
                     {
                         extend: "print",
                         exportOptions: {
-                        modifier: { search: 'none', selected: true}
+                        modifier: { search: 'none', selected: true},
+                        columns: [ ':visible' ]
                         }
                     }, 
                     {
