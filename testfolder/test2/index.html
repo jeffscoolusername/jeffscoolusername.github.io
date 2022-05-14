@@ -60,7 +60,7 @@
                 <li>
                     <a href='index.html' class="logo">AlgoTables</a>
                     <p class="normal">Tables for Algorand</p>                
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="container">
                           <section class="logo-carousel slider" data-arrows="false">
                             <div class="slide"><a href="https://www.reddit.com/r/algorand/" target="_blank" rel="noopener noreferrer"><img src="logoipsum-logo-1.svg"></a></div>
@@ -73,8 +73,7 @@
                             <div class="slide"><a href="https://algoexplorer.io/top-statistics" target="_blank" rel="noopener noreferrer"><img src="logoipsum-logo-10.svg"></a></div>
                           </section>
                         </div>
-                      </div>
-                          
+                    </div>-->                          
                 </li>
             </ul>
         </section>
@@ -1987,6 +1986,9 @@
                 </div>
             </div>
             <div class="tab-pane" id="tab-table12">
+                <div>
+                    <div id="chart_divtrend42999" class="info_div_name3"></div>
+                    </div>
                 <div id="table-csv2">
                     <thead>
                         <tr>
@@ -2941,7 +2943,67 @@
                     }
                     });
 
-                }
+            }
+
+            google.charts.setOnLoadCallback(drawChart999);
+
+            function drawChart999() {
+                var feesh9990 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(1) > td.sorting_1").innerHTML;
+                var feesh9991 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(2) > td.sorting_1").innerHTML;
+                var feesh9992 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(3) > td.sorting_1").innerHTML;
+                var feesh9993 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(4) > td.sorting_1").innerHTML;
+                //console.log(feesh9990);
+
+                var feeshname9990 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(1) > td.dtr-control").innerHTML;
+                var feeshname9991 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(2) > td.dtr-control").innerHTML;
+                var feeshname9992 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(3) > td.dtr-control").innerHTML;
+                var feeshname9993 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(4) > td.dtr-control").innerHTML;
+                //console.log(feeshname9990);
+
+                var data = google.visualization.arrayToDataTable([
+                    ['Name', 'Amount'],
+                    [feeshname9990, parseInt(feesh9990)],
+                    [feeshname9991, parseInt(feesh9991)],
+                    [feeshname9992, parseInt(feesh9992)],
+                    [feeshname9993, parseInt(feesh9993)]
+                ]);
+
+                var options = {
+                    title: 'Amount of Algorand',
+                    animation: {
+                        duration: 1000
+                    },
+                    legend: 'none',
+                };
+
+                /*var options = {
+                    title: "Density of Precious Metals, in g/cm^3",
+                    width: 600,
+                    height: 400,
+                    bar: {groupWidth: "95%"},
+                    legend: { position: "none" },
+                };*/
+
+                var chart = new google.visualization.ColumnChart(document.getElementById('chart_divtrend42999'));
+                chart.draw(data, options);
+
+                $(window).resize(function() {
+                    chart.draw(data, options);
+                });
+
+                $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                    e.preventDefault()
+                    var tab_name = this.getAttribute('href');
+                    if (history.pushState) {
+                        //trash code
+                        if (tab_name === "#tab-table12") {                                                    
+                        chart.draw(data, options);
+                        }
+                        //trash code
+                    }
+                    });
+
+            }
             
         </script>
 
