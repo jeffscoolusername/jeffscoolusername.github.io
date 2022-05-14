@@ -2828,6 +2828,8 @@
 
             function drawBasic42069() {
 
+                sleep(100); //hacky... but it works?
+
                 var feesh0 = document.querySelector("#table-csv3-table > tbody > tr:nth-child(1) > td:nth-child(8)").innerHTML;
                 var feesh1 = document.querySelector("#table-csv3-table > tbody > tr:nth-child(2) > td:nth-child(8)").innerHTML;
                 var feesh2 = document.querySelector("#table-csv3-table > tbody > tr:nth-child(3) > td:nth-child(8)").innerHTML;
@@ -2866,7 +2868,7 @@
                     vAxis: {
                     title: 'ASA Name'
                     }
-                };
+                }
 
                 var chart = new google.visualization.BarChart(document.getElementById('chart_div42069'));
 
@@ -2889,11 +2891,14 @@
                 });
 
 
-            };    
+            }    
 
             google.charts.setOnLoadCallback(drawChart777);
 
             function drawChart777() {
+
+                sleep(100); //hacky... but it works?
+
                 var feesh7770 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(3) > span").innerHTML;
                 var feesh7771 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(4) > span").innerHTML;
                 var feesh7772 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(5) > span").innerHTML;
@@ -2948,6 +2953,9 @@
             google.charts.setOnLoadCallback(drawChart999);
 
             function drawChart999() {
+
+                sleep(100); //hacky... but it works?
+
                 var feesh9990 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(1) > td.sorting_1").innerHTML;
                 var feesh9991 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(2) > td.sorting_1").innerHTML;
                 var feesh9992 = document.querySelector("#table-csv2-table > tbody > tr:nth-child(3) > td.sorting_1").innerHTML;
@@ -3004,6 +3012,15 @@
                     });
 
             }
+
+            function sleep(milliseconds) {
+                const date = Date.now();
+                let currentDate = null;
+                do {
+                    currentDate = Date.now();
+                } while (currentDate - date < milliseconds);
+            }
+
             
         </script>
 
