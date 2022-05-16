@@ -2,20 +2,20 @@
   "data": 
         [
             [
-              "Pax Somnius","Algoneer","305992851","Team","TBD","https://github.com/paxsomnius","https://twitter.com/PSomnius","TBD" ],
+              "Pax","Somnius","Algoneer","305992851","Team","TBD","https://github.com/paxsomnius","https://twitter.com/PSomnius","TBD" ],
             [
-              "Ivica Paleka","ASA Stats","393537671","Core Developer & Website Administrator","TBD","https://github.com/ipaleka","https://stackoverflow.com/users/11703358/ipaleka","TBD" ],
+              "Ivica","Paleka","ASA Stats","393537671","Core Developer & Website Administrator","TBD","https://github.com/ipaleka","https://stackoverflow.com/users/11703358/ipaleka","TBD" ],
             [
-              "John Clarke","Algofi","465865291","Co-Founder","https://www.linkedin.com/in/jaclarke1/","https://github.com/johnclarke96","https://twitter.com/jaclarke__","TBD" ],
+              "John","Clarke","Algofi","465865291","Co-Founder","https://www.linkedin.com/in/jaclarke1/","https://github.com/johnclarke96","https://twitter.com/jaclarke__","TBD" ],
             [
-              "Owen Colegrove","Algofi","465865291","Co-Founder","https://www.linkedin.com/in/owencolegrove/","TBD","https://twitter.com/stblbuild","https://owen-colegrove.medium.com/" ],
+              "Owen","Colegrove","Algofi","465865291","Co-Founder","https://www.linkedin.com/in/owencolegrove/","TBD","https://twitter.com/stblbuild","https://owen-colegrove.medium.com/" ],
             [
-              "ibu Karel","Algofi","465865291","Community Manager","https://www.linkedin.com/in/ibukarel/","TBD","TBD","TBD" ],
+              "ibu","Karel","Algofi","465865291","Community Manager","https://www.linkedin.com/in/ibukarel/","TBD","TBD","TBD" ],
             [
-              "Paul Colella","Algofi","465865291","Founding Engineer","https://www.linkedin.com/in/paul-colella-b4bb6284/","TBD","TBD","TBD" ],
+              "Paul","Colella","Algofi","465865291","Founding Engineer","https://www.linkedin.com/in/paul-colella-b4bb6284/","TBD","TBD","TBD" ],
             [
-              "Matthew Lam","Algofi","465865291","Product Manager","https://www.linkedin.com/in/matthewlam175/","TBD","TBD","TBD" ],
+              "Matthew","Lam","Algofi","465865291","Product Manager","https://www.linkedin.com/in/matthewlam175/","TBD","TBD","TBD" ],
             [
-              "Maksim Ivanov","Algofi","465865291","Software Engineer","https://www.linkedin.com/in/maksivanov/","TBD","https://medium.com/@maks.ivanov","TBD" ]
+              "Maksim","Ivanov","Algofi","465865291","Software Engineer","https://www.linkedin.com/in/maksivanov/","TBD","https://medium.com/@maks.ivanov","TBD" ]
         ]
 }
