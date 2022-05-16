@@ -103,6 +103,9 @@
             <li>
                 <a href="#tab-table14" data-toggle="tab">ALGO Devs</a>
             </li>
+            <li>
+                <a href="#tab-table15" data-toggle="tab">F & G Index</a>
+            </li>
         </ul>
         <div class="tab-content">            
             <div class="tab-pane active" id="tab-table13">
@@ -2030,6 +2033,27 @@
                     </tfoot>
                 </div>
             </div>
+            <div class="tab-pane" id="tab-table15">
+                <!--<div>
+                    <div id="chart_divtrend42888" class="info_div_name3"></div>
+                    </div>-->
+                <div id="table-csv5">
+                    <thead>
+                        <tr>
+                            <th>Score</th>
+                            <th>Classification</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Score</th>
+                            <th>Classification</th>
+                            <th>Date</th>
+                        </tr>
+                    </tfoot>
+                </div>
+            </div>
         </div>
         <section class="footer">
             <div class="social">
@@ -2854,6 +2878,146 @@
             custom_formatting: [[4, format_link]]
             });
 
+            CsvToHtmlTable6.init({
+            csv_path: "https://jeffscoolusername.github.io/testfolder/test2/data/testsheet6.csv",
+            element: "table-csv5",                       
+            allow_download: false,            
+            csv_options: {
+                separator: ",",
+                delimiter: '"'
+            },         
+            datatables_options: {
+                paging: false,
+                "order": [[ 1, "desc" ]],
+                colReorder: true,
+                rowReorder: true,  
+                columnDefs: [{
+                            targets: [2,3,4],
+                            render: function(data, type) {
+                                                var number = $.fn.dataTable.render.number( ',', '.', 2). display(data);
+                                
+                                                if (type === 'display') {
+                                                    let color = 'black';
+                                                    if (data < 0) {
+                                                        color = 'red';
+                                                    }
+                                                    else if (data >= 0) {
+                                                        color = 'green';
+                                                    }
+                                
+                                                    return '<span style="color:' + color + '">' + number + '</span>';
+                                                }
+                                                    
+                                                return number;
+                                            }
+                                }],
+                "language": {
+                        "info": "Initial Rows : _TOTAL_",
+                        select: {
+                                    rows: {
+                                        _: "",
+                                        0: "",
+                                        1: ""
+                                    }
+                                }
+                        },
+                select: {
+                    style: 'multi'
+                        },
+                dom: 'Bfrtip',
+                stateSave: true,           
+                initComplete: function () {
+                    this.api().columns().every( function () {
+                        var that = this;
+        
+                        $( 'input', this.footer() ).on( 'keyup change clear', function () {
+                            if ( that.search() !== this.value ) {
+                                that
+                                    .search( this.value )
+                                    .draw();
+                            }
+                        } );
+                    } );
+                },                 
+                buttons: [
+                        {
+                            extend: "copy",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true},
+                            columns: [ ':visible' ]
+                            }
+                        },
+                        {
+                            extend: "csv",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true},
+                            columns: [ ':visible' ]
+                            }
+                        },
+                        {
+                            extend: "excel",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true},
+                            columns: [ ':visible' ]
+                            }
+                        },
+                        {
+                            extend: "pdfHtml5",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true},
+                            columns: [ ':visible' ]
+                            }
+                        },
+                        {
+                            extend: "print",
+                            exportOptions: {
+                            modifier: { search: 'none', selected: true},
+                            columns: [ ':visible' ]
+                            }
+                        }, 
+                        {
+                            extend: 'colvis',
+                            text: 'Columns'
+                        },
+                        {
+                            text: 'Select All',
+                            action: function (e, dt, button, config ) {
+                                dt.rows().select();
+                            }
+                        },
+                        {
+                            text: 'Select None',
+                            action: function (e, dt, button, config ) {
+                                dt.rows().deselect();
+                            }
+                        },
+                        {
+                            text: 'Hide Unselected',
+                            action: function ( e, dt, button, config ) {
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"none"});
+                            }
+                        },
+                        {
+                            text: 'Clear/Reset',
+                            action: function ( e, dt, button, config ) {
+                                // Reset Column filtering
+                                $('#table-csv5 tfoot input').val('').change();
+                                
+                                // Reset column order
+                                dt.colReorder.reset();
+
+                                // Redraw table (and reset main search filter)
+                                dt.search('').draw();
+
+                                dt.rows().deselect();
+                                dt.rows({ selected: false }).nodes().to$().css({"display":"table-row"});
+                            }
+                        }
+                        ]   
+                },                         
+            //custom_formatting: [[2, format_link]]
+            });
+            
             google.charts.load('current', {packages: ['corechart', 'bar']});
 
             google.charts.setOnLoadCallback(drawBasic42069);
@@ -2986,6 +3150,55 @@
                     });
 
             }
+
+            /*google.charts.setOnLoadCallback(drawChart888);
+            
+            async function drawChart888() {
+
+            const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table15'); //duct tape and chicken wire fix
+            const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table15'); //duct tape and chicken wire fix
+
+            var feesh8880 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(3) > span").innerHTML;
+            var feesh8881 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(4) > span").innerHTML;
+            var feesh8882 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(5) > span").innerHTML;
+
+            var feeshname8880 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td.dtr-control").innerHTML;
+
+            var data = google.visualization.arrayToDataTable([
+                ['% Change', 'Time'],
+                [parseInt(feesh8880), 1], [parseInt(feesh8881), 24], [parseInt(feesh8882), 168]]);
+
+            var options = {
+                title: 'Hours vs. % Change to ' + feeshname8880,
+                hAxis: {title: '% Change'},
+                vAxis: {title: 'Hours'},
+                animation: {
+                    duration: 1000
+                },
+                legend: 'none',
+                trendlines: { 0: {} }    // Draw a trendline for data series 0.
+            };
+
+            var chart = new google.visualization.ScatterChart(document.getElementById('chart_divtrend42888'));
+            chart.draw(data, options);
+
+            $(window).resize(function() {
+                chart.draw(data, options);
+            });
+
+            $('body').on('click', 'a[data-toggle=\'tab\']', function (e) {
+                e.preventDefault()
+                var tab_name = this.getAttribute('href');
+                if (history.pushState) {
+                    //trash code
+                    if (tab_name === "#tab-table15") {                                                    
+                    chart.draw(data, options);
+                    }
+                    //trash code
+                }
+                });
+
+            }*/
 
             google.charts.setOnLoadCallback(drawChart999);
 
