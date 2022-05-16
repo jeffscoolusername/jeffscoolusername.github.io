@@ -296,14 +296,14 @@ $(document)
                                 }
                         },
                     colReorder: true,
-                    "order": [[ 0, "asc" ]],
+                    "order": [[ 1, "asc" ]],
                     paging: false,
                     select: {
                         style: 'multi'
                     }, 
                     "columnDefs": [
                         {
-                            "targets": [2],
+                            "targets": [3],
                             "render": function ( data, type, row, meta ) {
                                 if (data === "TBD")
                                 {return data;}
@@ -312,7 +312,7 @@ $(document)
                             }
                         },
                         {
-                           "targets": [4, 5, 6, 7],
+                           "targets": [5, 6, 7, 8],
                             "render": function ( data, type, row, meta ) {
                                 if (data === "TBD")
                                 {return data;}
