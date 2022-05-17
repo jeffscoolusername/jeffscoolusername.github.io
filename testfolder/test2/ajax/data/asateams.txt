@@ -70,6 +70,20 @@
             [
               "Mukul","Jain","Xfinite","283820866","Blockchain Architect","https://www.linkedin.com/in/mukul-jain-ab94504a/","TBD","TBD","TBD" ],
             [
-              "Vasireddy","Prakash","Xfinite","283820866","Blockchain Engineer","https://www.linkedin.com/in/vasireddy-denny-sai-prakash-769b4711b/","TBD","TBD","TBD" ]
+              "Vasireddy","Prakash","Xfinite","283820866","Blockchain Engineer","https://www.linkedin.com/in/vasireddy-denny-sai-prakash-769b4711b/","TBD","TBD","TBD" ],
+            [
+              "Santosh","Yellajosula","Xfinite","283820866","Chief Ecosystem Officer","https://www.linkedin.com/in/santoshyellajosula/","TBD","TBD","TBD" ],
+            [
+              "S","Singh","Xfinite","283820866","CEO","https://www.linkedin.com/in/swaneet/","TBD","TBD","TBD" ],
+            [
+              "Gokul","Kumaravelu","Xfinite","283820866","Head Of Communications","https://www.linkedin.com/in/gokul-kumaravelu/","TBD","TBD","TBD" ],
+            [
+              "Chetan","Saxena","Xfinite","283820866","Head of Product","https://www.linkedin.com/in/chetan-saxena-09a7649/","TBD","TBD","TBD" ],
+            [
+              "Shantanu","Chandra","Xfinite","283820866","Lead Blockchain Architect","https://www.linkedin.com/in/chandshantanu/","TBD","TBD","TBD" ],
+            [
+              "Deepak","Dhanavade","Xfinite","283820866","Manager UI UX","https://www.linkedin.com/in/deepak-dhanavade-1aa4398b/","TBD","TBD","TBD" ],
+            [
+              "Kai","S","Xfinite","509808838","Webblen","https://www.linkedin.com/in/kaiss/","TBD","TBD","TBD" ]
         ]
 }
