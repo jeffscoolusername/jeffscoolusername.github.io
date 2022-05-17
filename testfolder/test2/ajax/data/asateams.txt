@@ -28,6 +28,8 @@
             [
               "Dikshit","Salian","Zone","444035862","Graphic Designer","https://www.linkedin.com/in/dikshit-salian-a8736b1b7/","TBD","TBD","TBD" ],
             [
-              "Milap","Pathak","Zone","444035862","Head Of Operations","https://www.linkedin.com/in/milappathak/","TBD","TBD","TBD" ]
+              "Milap","Pathak","Zone","444035862","Head Of Operations","https://www.linkedin.com/in/milappathak/","TBD","TBD","TBD" ],
+            [
+              "Mannu","Verma","Zone","444035862","Lead Operations Head","https://www.linkedin.com/in/imannu/","TBD","TBD","TBD" ]
         ]
 }
