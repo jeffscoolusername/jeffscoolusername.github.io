@@ -54,6 +54,8 @@
             [
               "Khalid","Hassan","Glitter Finance","607591690","COO","https://www.linkedin.com/in/khalid-mamoun-ibrahim-hassan-1a8b611/","TBD","TBD","TBD" ],
             [
-              "Gelena","Dobrovitsky","Glitter Finance","607591690","CSO","https://www.linkedin.com/in/gelena-dobrovitsky/","TBD","TBD","TBD" ]
+              "Gelena","Dobrovitsky","Glitter Finance","607591690","CSO","https://www.linkedin.com/in/gelena-dobrovitsky/","TBD","TBD","TBD" ],
+            [
+              "João","Loureiro","Glitter Finance","607591690","Executive Assistant","https://www.linkedin.com/in/jo%C3%A3o-bernardo-loureiro/","TBD","TBD","TBD" ]
         ]
 }
