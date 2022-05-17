@@ -32,6 +32,8 @@
             [
               "Mannu","Verma","Zone","444035862","Lead Operations Head","https://www.linkedin.com/in/imannu/","TBD","TBD","TBD" ],
             [
-              "Vishvam","Vyas","Zone","444035862","Lead Operations Manager","https://www.linkedin.com/in/vishvam-vyas-b481aa181/","TBD","TBD","TBD" ]
+              "Vishvam","Vyas","Zone","444035862","Lead Operations Manager","https://www.linkedin.com/in/vishvam-vyas-b481aa181/","TBD","TBD","TBD" ],
+            [
+              "Pradeep","Singh","Zone","444035862","Technical Writer","https://www.linkedin.com/in/pradeep-singh-942705194/","TBD","TBD","TBD" ]
         ]
 }
