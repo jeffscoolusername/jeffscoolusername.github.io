@@ -2265,8 +2265,8 @@
                 var willthiswork = ((data888880.data.cryptoVoted.goodPercent * 100).toFixed(2) + '%');
                 const response99991 = await fetch('https://api.coinmarketcap.com/data-api/v3/price-prediction/query/half-year?cryptoId=4030'); 
                 const data888881 = await response99991.json();
-                var willthiswork2 = ('$'+ (data888881.data.predictions[0].medianPrice).toFixed(2));
-                var willthiswork3 = ('$' + (data888881.data.predictions[0].avgPrice).toFixed(2));
+                var willthiswork2 = ('$'+ (data888881.data.predictions[0].medianPrice).toFixed(4));
+                var willthiswork3 = ('$' + (data888881.data.predictions[0].avgPrice).toFixed(4));
                 //const response99992 = await fetch('https://new-metrics.algorand.org/api/live-statistics/'); //make this a seperate async function
                 //const data888882 = await response99991.json();
                 //console.log(data888882);
