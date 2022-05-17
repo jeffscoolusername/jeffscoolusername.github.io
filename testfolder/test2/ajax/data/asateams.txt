@@ -24,6 +24,8 @@
             [
               "Kodiswaran Babu","Janardhanan","Zone","444035862","CTO","https://www.linkedin.com/in/kodis/","TBD","TBD","TBD" ],
             [
-              "Adi","Mishra","Zone","444035862","Founder & CEO","https://www.linkedin.com/in/adi-k-mishra-95004254/","TBD","TBD","TBD" ]
+              "Adi","Mishra","Zone","444035862","Founder & CEO","https://www.linkedin.com/in/adi-k-mishra-95004254/","TBD","TBD","TBD" ],
+            [
+              "Dikshit","Salian","Zone","444035862","Graphic Designer","https://www.linkedin.com/in/dikshit-salian-a8736b1b7/,"TBD","TBD","TBD" ]
         ]
 }
