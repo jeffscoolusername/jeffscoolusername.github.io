@@ -56,6 +56,8 @@
             [
               "Gelena","Dobrovitsky","Glitter Finance","607591690","CSO","https://www.linkedin.com/in/gelena-dobrovitsky/","TBD","TBD","TBD" ],
             [
-              "João","Loureiro","Glitter Finance","607591690","Executive Assistant","https://www.linkedin.com/in/jo%C3%A3o-bernardo-loureiro/","TBD","TBD","TBD" ]
+              "João","Loureiro","Glitter Finance","607591690","Executive Assistant","https://www.linkedin.com/in/jo%C3%A3o-bernardo-loureiro/","TBD","TBD","TBD" ],
+            [
+              "David","Dobrovitsky","Glitter Finance","607591690","Founder and CEO","https://www.linkedin.com/in/ilya-dobrovitsky/","TBD","TBD","TBD" ]
         ]
 }
