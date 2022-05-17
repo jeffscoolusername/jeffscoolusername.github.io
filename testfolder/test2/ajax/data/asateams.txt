@@ -16,6 +16,8 @@
             [
               "Matthew","Lam","Algofi","465865291","Product Manager","https://www.linkedin.com/in/matthewlam175/","TBD","TBD","TBD" ],
             [
-              "Maksim","Ivanov","Algofi","465865291","Software Engineer","https://www.linkedin.com/in/maksivanov/","TBD","https://medium.com/@maks.ivanov","TBD" ]
+              "Maksim","Ivanov","Algofi","465865291","Software Engineer","https://www.linkedin.com/in/maksivanov/","TBD","https://medium.com/@maks.ivanov","TBD" ],
+            [
+              "Brian","Haney","Choice Coin","297995609","Co-Founder","TBD","https://github.com/Bhaney44","https://scholar.google.com/citations?user=6_XhYkQAAAAJ&hl=en","TBD" ]
         ]
 }
