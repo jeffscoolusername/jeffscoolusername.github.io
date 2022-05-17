@@ -52,6 +52,8 @@
             [
               "Emily","Conway","Yieldly","226701642","Social Media Manager","https://www.linkedin.com/in/emily-conway-a38a6a224/","TBD","TBD","TBD" ],
             [
-              "Khalid","Hassan","Glitter Finance","607591690","COO","https://www.linkedin.com/in/khalid-mamoun-ibrahim-hassan-1a8b611/","TBD","TBD","TBD" ]
+              "Khalid","Hassan","Glitter Finance","607591690","COO","https://www.linkedin.com/in/khalid-mamoun-ibrahim-hassan-1a8b611/","TBD","TBD","TBD" ],
+            [
+              "Gelena","Dobrovitsky","Glitter Finance","607591690","CSO","https://www.linkedin.com/in/gelena-dobrovitsky/","TBD","TBD","TBD" ]
         ]
 }
