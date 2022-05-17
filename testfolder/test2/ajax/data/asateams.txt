@@ -48,6 +48,8 @@
             [
               "Benjamin","Le Roux","Yieldly","226701642","Head of Marketing","https://www.linkedin.com/in/benleroux/","TBD","TBD","TBD" ],
             [
-              "Nina","Stammbach","Yieldly","226701642","Operations Manager","https://www.linkedin.com/in/ninastammbach/","TBD","TBD","TBD" ]
+              "Nina","Stammbach","Yieldly","226701642","Operations Manager","https://www.linkedin.com/in/ninastammbach/","TBD","TBD","TBD" ],
+            [
+              "Emily","Conway","Yieldly","226701642","Social Media Manager","https://www.linkedin.com/in/emily-conway-a38a6a224/","TBD","TBD","TBD" ]
         ]
 }
