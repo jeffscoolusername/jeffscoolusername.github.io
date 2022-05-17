@@ -40,6 +40,10 @@
             [
               "Sebastian","Quinn","Yieldly","226701642","Co-Founder | CEO","https://www.linkedin.com/in/sebastian-quinn-645457b3/","TBD","TBD","TBD" ],
             [
-              "Kristy","Bayley","Yieldly","226701642","COO","https://www.linkedin.com/in/kristybayley/","TBD","TBD","TBD" ]
+              "Kristy","Bayley","Yieldly","226701642","COO","https://www.linkedin.com/in/kristybayley/","TBD","TBD","TBD" ],
+            [
+              "Timothy","Han","Yieldly","226701642","Head Of Communications","https://www.linkedin.com/in/timothyhan-sg/","TBD","TBD","TBD" ],
+            [
+              "Dimitris","Farmakis","Yieldly","226701642","Head Of Esports","https://www.linkedin.com/in/dimfarmakis/","TBD","TBD","TBD" ]
         ]
 }
