@@ -18,6 +18,8 @@
             [
               "Maksim","Ivanov","Algofi","465865291","Software Engineer","https://www.linkedin.com/in/maksivanov/","TBD","https://medium.com/@maks.ivanov","TBD" ],
             [
-              "Brian","Haney","Choice Coin","297995609","Co-Founder","TBD","https://github.com/Bhaney44","https://scholar.google.com/citations?user=6_XhYkQAAAAJ&hl=en","TBD" ]
+              "Brian","Haney","Choice Coin","297995609","Co-Founder","TBD","https://github.com/Bhaney44","https://scholar.google.com/citations?user=6_XhYkQAAAAJ&hl=en","TBD" ],
+            [
+              "Scott","Novell","AlgoStake","511484048","CEO/Dev/Product","https://www.linkedin.com/in/scottnovell/","TBD","TBD","TBD" ]
         ]
 }
