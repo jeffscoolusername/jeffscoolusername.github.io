@@ -3173,13 +3173,16 @@
 
 
                 var data = google.visualization.arrayToDataTable([                
-                ['Week 1', parseInt(feesh8881), parseInt(feesh8882), parseInt(feesh8883), parseInt(feesh8884)],
-                ['Week 2', parseInt(feesh8888), parseInt(feesh8889), parseInt(feesh88810), parseInt(feesh88811)],
-                ['Week 3', parseInt(feesh88815), parseInt(feesh88816), parseInt(feesh88817), parseInt(feesh88818)],
-                ['Week 4', parseInt(feesh88822), parseInt(feesh88823), parseInt(feesh88824), parseInt(feesh88825)]], true);
-
+                ['22 to 29 Days Ago', parseInt(feesh88822), parseInt(feesh88824), parseInt(feesh88826), parseInt(feesh88828)],
+                ['15 to 21 Days Ago', parseInt(feesh88815), parseInt(feesh88817), parseInt(feesh88819), parseInt(feesh88821)],
+                ['8 to 14 Days Ago', parseInt(feesh8888), parseInt(feesh88810), parseInt(feesh88812), parseInt(feesh88814)],
+                ['1 to 7 Days Ago', parseInt(feesh8881), parseInt(feesh8883), parseInt(feesh8885), parseInt(feesh8887)]], true);
+                
                 var options = {
-                legend:'none'
+                    animation: {
+                        duration: 1000
+                    },
+                    legend: 'none'
                 };
 
                 //document.querySelector("#table-csv5-table > tbody > tr.odd.selected > td.sorting_1")
