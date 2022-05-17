@@ -34,6 +34,8 @@
             [
               "Vishvam","Vyas","Zone","444035862","Lead Operations Manager","https://www.linkedin.com/in/vishvam-vyas-b481aa181/","TBD","TBD","TBD" ],
             [
-              "Pradeep","Singh","Zone","444035862","Technical Writer","https://www.linkedin.com/in/pradeep-singh-942705194/","TBD","TBD","TBD" ]
+              "Pradeep","Singh","Zone","444035862","Technical Writer","https://www.linkedin.com/in/pradeep-singh-942705194/","TBD","TBD","TBD" ],
+            [
+              "Aslam","K","Zone","444035862","UX/UI Designer","https://www.linkedin.com/in/aslam009/","TBD","TBD","TBD" ]
         ]
 }
