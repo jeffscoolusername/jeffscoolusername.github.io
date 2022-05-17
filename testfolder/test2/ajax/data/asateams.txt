@@ -44,6 +44,10 @@
             [
               "Timothy","Han","Yieldly","226701642","Head Of Communications","https://www.linkedin.com/in/timothyhan-sg/","TBD","TBD","TBD" ],
             [
-              "Dimitris","Farmakis","Yieldly","226701642","Head Of Esports","https://www.linkedin.com/in/dimfarmakis/","TBD","TBD","TBD" ]
+              "Dimitris","Farmakis","Yieldly","226701642","Head Of Esports","https://www.linkedin.com/in/dimfarmakis/","TBD","TBD","TBD" ],
+            [
+              "Benjamin","Le Roux","Yieldly","226701642","Head of Marketing","https://www.linkedin.com/in/benleroux/","TBD","TBD","TBD" ],
+            [
+              "Nina","Stammbach","Yieldly","226701642","Operations Manager","https://www.linkedin.com/in/ninastammbach/","TBD","TBD","TBD" ]
         ]
 }
