@@ -60,7 +60,8 @@
             <ul class="list">
                 <li>
                     <a href='index.html' class="logo">ALGO Tables</a>
-                    <p class="normal">Tables for Algorand</p>                
+                    <p class="normal">Tables for Algorand</p>       
+                    <p class="normal">CMC Vote : % | CMC Monthly Median Price Pred. : $ | CMC Monthly Avg Price Pred. :</p>  
                     <!--<div class="row">
                         <div class="container">
                           <section class="logo-carousel slider" data-arrows="false">
@@ -78,7 +79,6 @@
                 </li>
             </ul>
         </section>
-
         <ul class="nav nav-tabs" role="tablist">   
             <li>
                 <a href="#tab-table13" data-toggle="tab">ASA Status</a>
@@ -2058,7 +2058,7 @@
         </div>
         <section class="footer">
             <div class="social">
-                The information given is not guaranteed to be correct (but I tried!) - Last Updated: May 14, 2022
+                The information given is not guaranteed to be correct (but I tried!) - Last Updated: May 17, 2022
             </div>
 
             <ul class="list">
@@ -2090,7 +2090,7 @@
                     <a href="https://algoexplorer.io/address/AT5FZJ3SMNUA5EBVFB65TJ4T4T6KJZUFTXQFRXITQKXFBIGHJLPETATYUM" target="_blank" rel="noopener noreferrer">Buy Jeff a Coffee</a>
                 </li>
             </ul>
-            <p class="copyright">ALGO Tables © 2022 | All Prices are in ALGO</p>
+            <p class="copyright">ALGO Tables © 2022</p>
             <p class="copyright">Powered by <a href="https://algoexplorer.io/" target="_blank" rel="noopener noreferrer">AlgoExplorer</a>,
                 <!--<a href="https://algocharts.net/" target="_blank" rel="noopener noreferrer">AlgoCharts</a>,-->
                 <a href="https://developers.google.com/chart" target="_blank" rel="noopener noreferrer">Google Charts</a>,
@@ -2258,6 +2258,21 @@
                 return "<a href='" + link + "' target='_blank'>" + link.slice(0, 30) + '...' + "</a>";
             else return "";
             }
+
+            async function feesh12345679() { 
+                const response99990 = await fetch('https://api.coinmarketcap.com/data-api/v3/cryptocurrency/vote?id=4030&votedId=ff75ebb99c174c4cb75ceacd3d58cd29-fe2f1cab14ba6f8358061b83ac67a7b2'); 
+                const data888880 = await response99990.json();
+                var willthiswork = ((data888880.data.cryptoVoted.goodPercent * 100).toFixed(2) + '%');
+                const response99991 = await fetch('https://api.coinmarketcap.com/data-api/v3/price-prediction/query/half-year?cryptoId=4030'); 
+                const data888881 = await response99991.json();
+                var willthiswork2 = ('$'+ data888881.data.predictions[0].medianPrice);
+                var willthiswork3 = ('$' + data888881.data.predictions[0].avgPrice);
+                const response99992 = await fetch('https://new-metrics.algorand.org/api/live-statistics/'); 
+                const data888882 = await response99991.json();
+                console.log(data888882);
+                document.querySelector("body > div > section.header > ul > li > p:nth-child(3)").innerHTML = 'CMC Vote : ' + willthiswork + ' | CMC Monthly Median Price Pred. : ' + willthiswork2 + ' | CMC Monthly Avg Price Pred. : ' + willthiswork3;
+                }
+            feesh12345679();
 
             CsvToHtmlTable.init({
             csv_path: "https://jeffscoolusername.github.io/testfolder/test2/data/testsheet1.csv",
@@ -3005,8 +3020,8 @@
 
             async function drawBasic42069() {
 
-                const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table13'); //duct tape and chicken wire fix
-                const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table13'); //duct tape and chicken wire fix
+                const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table13'); 
+                const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table13'); 
                 
                 //sleep(400); //hacky... but it works?
 
@@ -3077,8 +3092,8 @@
 
             async function drawChart777() {
 
-                const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table11'); //duct tape and chicken wire fix
-                const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table11'); //duct tape and chicken wire fix
+                const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table11'); 
+                const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table11'); 
                 //sleep(400); //hacky... but it works?
 
                 var feesh7770 = document.querySelector("#table-csv1-table > tbody > tr:nth-child(1) > td:nth-child(3) > span").innerHTML;
@@ -3136,8 +3151,8 @@
             
             async function drawChart888() {
 
-                const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table15'); //duct tape and chicken wire fix
-                const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table15'); //duct tape and chicken wire fix
+                const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table15'); 
+                const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table15'); 
 
                 var feeshname8880 = 'Score';
                 var feesh8881 = document.querySelector("#table-csv5-table > tbody > tr:nth-child(1) > td.dtr-control").innerHTML;
@@ -3238,8 +3253,8 @@
 
             async function drawChart999() {
 
-                const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table12'); //duct tape and chicken wire fix
-                const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table12'); //duct tape and chicken wire fix
+                const response0 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table12'); 
+                const response1 = await fetch('https://jeffscoolusername.github.io/testfolder/test2/index.html#tab-table12'); 
                 
                 //sleep(400); //hacky... but it works?
 
