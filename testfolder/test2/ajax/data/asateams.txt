@@ -38,6 +38,8 @@
             [
               "Aslam","K","Zone","444035862","UX/UI Designer","https://www.linkedin.com/in/aslam009/","TBD","TBD","TBD" ],
             [
-              "Sebastian","Quinn","Yieldly","226701642","Co-Founder | CEO","https://www.linkedin.com/in/sebastian-quinn-645457b3/","TBD","TBD","TBD" ]
+              "Sebastian","Quinn","Yieldly","226701642","Co-Founder | CEO","https://www.linkedin.com/in/sebastian-quinn-645457b3/","TBD","TBD","TBD" ],
+            [
+              "Kristy","Bayley","Yieldly","226701642","COO","https://www.linkedin.com/in/kristybayley/","TBD","TBD","TBD" ]
         ]
 }
