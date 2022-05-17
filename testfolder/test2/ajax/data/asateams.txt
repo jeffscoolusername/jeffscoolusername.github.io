@@ -64,6 +64,8 @@
             [
               "Pradyumn","Singh","Glitter Finance","607591690","Marketing Manager","https://www.linkedin.com/in/pradyumn-singh-15020812a/","TBD","TBD","TBD" ],
             [
-              "Farhad","Shabani","Glitter Finance","607591690","Software Engineer","https://www.linkedin.com/in/farhad-shabani/","TBD","TBD","TBD" ]
+              "Farhad","Shabani","Glitter Finance","607591690","Software Engineer","https://www.linkedin.com/in/farhad-shabani/","TBD","TBD","TBD" ],
+            [
+              "Titus","Adenugba","Glitter Finance","607591690","Product Manager & Head of Tokenomics","https://www.linkedin.com/in/titusadenugba/","TBD","TBD","TBD" ]
         ]
 }
