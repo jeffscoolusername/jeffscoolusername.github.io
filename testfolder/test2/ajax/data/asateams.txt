@@ -60,6 +60,8 @@
             [
               "David","Dobrovitsky","Glitter Finance","607591690","Founder and CEO","https://www.linkedin.com/in/ilya-dobrovitsky/","TBD","TBD","TBD" ],
             [
-              "Inês","Veiga","Glitter Finance","607591690","Management Director","https://www.linkedin.com/in/in%C3%AAs-veiga-570091157/","TBD","TBD","TBD" ]
+              "Inês","Veiga","Glitter Finance","607591690","Management Director","https://www.linkedin.com/in/in%C3%AAs-veiga-570091157/","TBD","TBD","TBD" ],
+            [
+              "Pradyumn","Singh","Glitter Finance","607591690","Marketing Manager","https://www.linkedin.com/in/pradyumn-singh-15020812a/","TBD","TBD","TBD" ]
         ]
 }
