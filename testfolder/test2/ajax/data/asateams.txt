@@ -66,6 +66,8 @@
             [
               "Farhad","Shabani","Glitter Finance","607591690","Software Engineer","https://www.linkedin.com/in/farhad-shabani/","TBD","TBD","TBD" ],
             [
-              "Titus","Adenugba","Glitter Finance","607591690","Product Manager & Head of Tokenomics","https://www.linkedin.com/in/titusadenugba/","TBD","TBD","TBD" ]
+              "Titus","Adenugba","Glitter Finance","607591690","Product Manager & Head of Tokenomics","https://www.linkedin.com/in/titusadenugba/","TBD","TBD","TBD" ],
+            [
+              "Mukul","Jain","Xfinite","283820866","Blockchain Architect","https://www.linkedin.com/in/mukul-jain-ab94504a/","TBD","TBD","TBD" ]
         ]
 }
