@@ -22,6 +22,8 @@
             [
               "Scott","Novell","AlgoStake","511484048","CEO/Dev/Product","https://www.linkedin.com/in/scottnovell/","TBD","TBD","TBD" ],
             [
-              "Kodiswaran Babu","Janardhanan","Zone","444035862","CTO","https://www.linkedin.com/in/kodis/","TBD","TBD","TBD" ]
+              "Kodiswaran Babu","Janardhanan","Zone","444035862","CTO","https://www.linkedin.com/in/kodis/","TBD","TBD","TBD" ],
+            [
+              "Adi","Mishra","Zone","444035862","Founder & CEO","https://www.linkedin.com/in/adi-k-mishra-95004254/","TBD","TBD","TBD" ]
         ]
 }
