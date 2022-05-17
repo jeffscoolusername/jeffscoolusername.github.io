@@ -20,6 +20,8 @@
             [
               "Brian","Haney","Choice Coin","297995609","Co-Founder","TBD","https://github.com/Bhaney44","https://scholar.google.com/citations?user=6_XhYkQAAAAJ&hl=en","TBD" ],
             [
-              "Scott","Novell","AlgoStake","511484048","CEO/Dev/Product","https://www.linkedin.com/in/scottnovell/","TBD","TBD","TBD" ]
+              "Scott","Novell","AlgoStake","511484048","CEO/Dev/Product","https://www.linkedin.com/in/scottnovell/","TBD","TBD","TBD" ],
+            [
+              "Kodiswaran Babu","Janardhanan","Zone","444035862","CTO","https://www.linkedin.com/in/kodis/","TBD","TBD","TBD" ]
         ]
 }
