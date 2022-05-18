@@ -84,6 +84,14 @@
             [
               "Deepak","Dhanavade","Xfinite","283820866","Manager UI UX","https://www.linkedin.com/in/deepak-dhanavade-1aa4398b/","TBD","TBD","TBD" ],
             [
-              "Kai","S","Xfinite","509808838","Webblen","https://www.linkedin.com/in/kaiss/","TBD","TBD","TBD" ]
+              "Kai","S","Webblen","509808838","Co-Founder/CEO","https://www.linkedin.com/in/kaiss/","TBD","TBD","TBD" ],
+            [
+              "Carter","Razink","Webblen","509808838","CTO, Co-Founder","https://www.linkedin.com/in/carter-razink-5ab926139/","TBD","TBD","TBD" ],
+            [
+              "Nathaniel","Thoreson","Webblen","509808838","Director of Marketing & Co-Founder","https://www.linkedin.com/in/nathaniel-j-thoreson-617501120/","TBD","TBD","TBD" ],
+            [
+              "Qomoo","A","Webblen","509808838","CRO","https://www.linkedin.com/in/qomooatomsa/","TBD","TBD","TBD" ],
+            [
+              "Jack","Maring","Webblen","509808838","Flutter Mobile Developer","https://www.linkedin.com/in/jack-maring-556aa9175/","TBD","TBD","TBD" ]
         ]
 }
