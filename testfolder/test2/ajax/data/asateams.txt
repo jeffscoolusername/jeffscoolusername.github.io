@@ -142,6 +142,8 @@
             [
               "Shannon","Hughes","Centre","31566704","Head Of Business Development","https://www.linkedin.com/in/shannonappleby/","TBD","TBD","TBD" ],
             [
-              "Juan","Caballero ","Centre","31566704","Standards Coordinator","https://www.linkedin.com/in/juan-caballero/","TBD","TBD","TBD" ]
+              "Juan","Caballero","Centre","31566704","Standards Coordinator","https://www.linkedin.com/in/juan-caballero/","TBD","TBD","TBD" ],
+            [
+              "Michael","Cotton","Algomint","441139422","Co-Founder","https://www.linkedin.com/in/michael-cotton-aus/","TBD","TBD","TBD" ]
         ]
 }
