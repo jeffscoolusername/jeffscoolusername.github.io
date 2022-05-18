@@ -120,6 +120,8 @@
             [
               "Davide","Caiulo","Planet","27165954","Data Scientist","https://www.linkedin.com/in/dcaiulo/","TBD","TBD","TBD" ],
             [
-              "Roberto","Falzone","Planet","27165954","Senior Software Engineer Team Lead","https://www.linkedin.com/in/roberto-falzone-2619531b6/,"TBD","TBD","TBD" ]
+              "Roberto","Falzone","Planet","27165954","Senior Software Engineer Team Lead","https://www.linkedin.com/in/roberto-falzone-2619531b6/","TBD","TBD","TBD" ],
+            [
+              "Jessica","Gardner","Centre","31566704","Business Operations Manager","https://www.linkedin.com/in/jgardner1/","TBD","TBD","TBD" ]
         ]
 }
