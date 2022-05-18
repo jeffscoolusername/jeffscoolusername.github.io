@@ -106,6 +106,20 @@
             [
               "Sergio","Treviño","Smile","300208676","Co-Founder","https://www.linkedin.com/in/sergiotrevino/","TBD","TBD","TBD" ],
             [
-              "Eric","Franka","Smile","300208676","Head Of Partnerships","https://www.linkedin.com/in/eric-franka-bb65048a/","TBD","TBD","TBD" ]
+              "Eric","Franka","Smile","300208676","Head Of Partnerships","https://www.linkedin.com/in/eric-franka-bb65048a/","TBD","TBD","TBD" ],
+            [
+              "Greg","Raczek","TinyChart","378382099","Founder","https://www.linkedin.com/in/grzracz/","TBD","TBD","TBD" ],
+            [
+              "Gabriella","Motta","Planet","27165954","Air Quality Specialist","https://www.linkedin.com/in/gabriella-motta-4855333/","TBD","TBD","TBD" ],
+            [
+              "Claudio","Parrinello","Planet","27165954","CEO","https://www.linkedin.com/in/claudio-parrinello-077384/","TBD","TBD","TBD" ],
+            [
+              "Sara","Di Civita","Planet","27165954","Customer Service Manager","https://www.linkedin.com/in/sara-di-civita-220811130/","TBD","TBD","TBD" ],
+            [
+              "Ivan","D'Ettorr","Planet","27165954","CITO","https://www.linkedin.com/in/ivan-d-ettorre-12137058/","TBD","TBD","TBD" ],
+            [
+              "Davide","Caiulo","Planet","27165954","Data Scientist","https://www.linkedin.com/in/dcaiulo/","TBD","TBD","TBD" ],
+            [
+              "Roberto","Falzone","Planet","27165954","Senior Software Engineer Team Lead","https://www.linkedin.com/in/roberto-falzone-2619531b6/,"TBD","TBD","TBD" ]
         ]
 }
