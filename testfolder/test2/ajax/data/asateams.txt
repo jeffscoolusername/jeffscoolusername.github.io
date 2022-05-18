@@ -92,6 +92,10 @@
             [
               "Qomoo","A","Webblen","509808838","CRO","https://www.linkedin.com/in/qomooatomsa/","TBD","TBD","TBD" ],
             [
-              "Jack","Maring","Webblen","509808838","Flutter Mobile Developer","https://www.linkedin.com/in/jack-maring-556aa9175/","TBD","TBD","TBD" ]
+              "Jack","Maring","Webblen","509808838","Flutter Mobile Developer","https://www.linkedin.com/in/jack-maring-556aa9175/","TBD","TBD","TBD" ],
+            [
+              "Tyler","Odenthal","Webblen","478549868","Founder","https://www.linkedin.com/in/tyler-odenthal/","TBD","TBD","TBD" ],
+            [
+              "Cathal","Gallagher","Chips","388592191","Founder","https://www.linkedin.com/in/Cathal-Gallagher/","TBD","TBD","TBD" ]
         ]
 }
