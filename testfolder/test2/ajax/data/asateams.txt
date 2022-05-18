@@ -174,6 +174,12 @@
             [
               "Aaron","Martinez","HEADLINE","137594422","CEO","https://www.linkedin.com/in/ussaaron/","TBD","TBD","TBD" ],
             [
-              "Brian","Scherlen","HEADLINE","137594422","Senior Project Manager","https://www.linkedin.com/in/brian-scherlen-2091b0209/","TBD","TBD","TBD" ]
+              "Brian","Scherlen","HEADLINE","137594422","Senior Project Manager","https://www.linkedin.com/in/brian-scherlen-2091b0209/","TBD","TBD","TBD" ],
+            [
+              "Lee","Parsons","Opulous","287867876","CEO","https://www.linkedin.com/in/leparsons/","TBD","TBD","TBD" ],
+            [
+              "Miles","Carroll","Opulous","287867876","Co-Founder & COO","https://www.linkedin.com/in/carrollmiles/","TBD","TBD","TBD" ],
+            [
+              "Fernando","Cruz","Opulous","287867876","Chief Marketing Officer","https://www.linkedin.com/in/frcrz/","TBD","TBD","TBD" ]
         ]
 }
