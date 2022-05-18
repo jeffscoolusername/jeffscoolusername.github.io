@@ -104,6 +104,8 @@
             [
               "Nick","Bucheleres","Smile","300208676","CEO/CTO, Co-Founder","https://www.linkedin.com/in/nickeleres/","TBD","TBD","TBD" ],
             [
-              "Sergio","Treviño","Smile","300208676","Co-Founder","https://www.linkedin.com/in/sergiotrevino/","TBD","TBD","TBD" ]
+              "Sergio","Treviño","Smile","300208676","Co-Founder","https://www.linkedin.com/in/sergiotrevino/","TBD","TBD","TBD" ],
+            [
+              "Eric","Franka","Smile","300208676","Head Of Partnerships","https://www.linkedin.com/in/eric-franka-bb65048a/","TBD","TBD","TBD" ]
         ]
 }
