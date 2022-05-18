@@ -96,6 +96,14 @@
             [
               "Tyler","Odenthal","Webblen","478549868","Founder","https://www.linkedin.com/in/tyler-odenthal/","TBD","TBD","TBD" ],
             [
-              "Cathal","Gallagher","Chips","388592191","Founder","https://www.linkedin.com/in/Cathal-Gallagher/","TBD","TBD","TBD" ]
+              "Cathal","Gallagher","Chips","388592191","Founder","https://www.linkedin.com/in/Cathal-Gallagher/","TBD","TBD","TBD" ],
+            [
+              "Ali","El-Assy","Smile","300208676","Co-Founder","https://www.linkedin.com/in/alielassy/","TBD","TBD","TBD" ],
+            [
+              "Ali","El-Assy","Smile","300208676","Co-Founder","https://www.linkedin.com/in/alielassy/","TBD","TBD","TBD" ],
+            [
+              "Nick","Bucheleres","Smile","300208676","CEO/CTO, Co-Founder","https://www.linkedin.com/in/nickeleres/","TBD","TBD","TBD" ],
+            [
+              "Sergio","Treviño","Smile","300208676","Co-Founder","https://www.linkedin.com/in/sergiotrevino/","TBD","TBD","TBD" ]
         ]
 }
