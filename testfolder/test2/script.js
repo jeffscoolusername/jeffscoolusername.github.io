@@ -194,7 +194,7 @@ $(document)
 
                 var exampleTable9 = $('#example9')
                 .DataTable({
-                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/asateams.txt',
+                    "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/ecosystemteams.txt',
                     stateSave: true,
                     dom: 'Bfrtip',
                     initComplete: function () {
