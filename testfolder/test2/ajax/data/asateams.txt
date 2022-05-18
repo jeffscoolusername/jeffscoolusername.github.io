@@ -130,6 +130,10 @@
             [
               "Mark","duBose","Centre","31566704","Chief Risk and Compliance Officer","https://www.linkedin.com/in/mark-dubose/","TBD","TBD","TBD" ],
             [
-              "Danielle","Harold","Centre","31566704","COO","https://www.linkedin.com/in/danielleharold/","TBD","TBD","TBD" ]
+              "Danielle","Harold","Centre","31566704","COO","https://www.linkedin.com/in/danielleharold/","TBD","TBD","TBD" ],
+            [
+              "Kim","Duffy","Centre","31566704","Director of Identity and Standards","https://www.linkedin.com/in/kimdhamilton/","TBD","TBD","TBD" ],
+            [
+              "Mihir","C","Centre","31566704","Director, Alliance Development","https://www.linkedin.com/in/mihirchokshi/","TBD","TBD","TBD" ]
         ]
 }
