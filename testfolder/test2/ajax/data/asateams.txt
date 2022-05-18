@@ -180,6 +180,20 @@
             [
               "Miles","Carroll","Opulous","287867876","Co-Founder & COO","https://www.linkedin.com/in/carrollmiles/","TBD","TBD","TBD" ],
             [
-              "Fernando","Cruz","Opulous","287867876","Chief Marketing Officer","https://www.linkedin.com/in/frcrz/","TBD","TBD","TBD" ]
+              "Fernando","Cruz","Opulous","287867876","Chief Marketing Officer","https://www.linkedin.com/in/frcrz/","TBD","TBD","TBD" ],
+            [
+              "Marc","Aché","Opulous","287867876","CTO","https://www.linkedin.com/in/marcache/","TBD","TBD","TBD" ],
+            [
+              "Jay","Moore","Opulous","287867876","Chief Investment Officer","https://www.linkedin.com/in/jayrmoore/","TBD","TBD","TBD" ],
+            [
+              "Clara","Lo","Opulous","287867876","Head Of Operations","https://www.linkedin.com/in/clara-lo-876136173/","TBD","TBD","TBD" ],
+            [
+              "Joe","Mason","Opulous","287867876","Head of Artist Services","https://www.linkedin.com/in/joe-mason-48501876/","TBD","TBD","TBD" ],
+            [
+              "Tom","Napper","Opulous","287867876","Head of Social Media","https://www.linkedin.com/in/tom-p-napper/","TBD","TBD","TBD" ],
+            [
+              "Jenny","Wong","Opulous","287867876","Head Of Legal","https://www.linkedin.com/in/jenny-wong-3ab0063/","TBD","TBD","TBD" ],
+            [
+              "Isabelle","Korman","Opulous","287867876","Head Of Content","https://www.linkedin.com/in/isabelle-korman/","TBD","TBD","TBD" ]
         ]
 }
