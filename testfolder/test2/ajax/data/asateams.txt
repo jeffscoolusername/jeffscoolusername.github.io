@@ -144,6 +144,8 @@
             [
               "Juan","Caballero","Centre","31566704","Standards Coordinator","https://www.linkedin.com/in/juan-caballero/","TBD","TBD","TBD" ],
             [
-              "Michael","Cotton","Algomint","441139422","Co-Founder","https://www.linkedin.com/in/michael-cotton-aus/","TBD","TBD","TBD" ]
+              "Michael","Cotton","Algomint","441139422","Co-Founder","https://www.linkedin.com/in/michael-cotton-aus/","TBD","TBD","TBD" ],
+            [
+              "AJ","Milne","Algomint","441139422","Co-Founder","https://www.linkedin.com/in/astleymilne/","TBD","TBD","TBD" ]
         ]
 }
