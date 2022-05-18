@@ -156,6 +156,14 @@
             [
               "Kumar","Gaurav","Algomint","441139422","Software Engineer","https://www.linkedin.com/in/arkhaminferno/","TBD","TBD","TBD" ],
             [
-              "Wilder","Stubbs","Algogems","230946361","CMO","https://www.linkedin.com/in/wilder-stubbs-536498229/","TBD","TBD","TBD" ]
+              "Wilder","Stubbs","Algogems","230946361","CMO","https://www.linkedin.com/in/wilder-stubbs-536498229/","TBD","TBD","TBD" ],
+            [
+              "Otto","Kreidl","Blockshake","470842789","CEO","https://www.linkedin.com/in/otto-kreidl-962841148/","TBD","TBD","TBD" ],
+            [
+              "Kevin","Wellenzohn","Blockshake","470842789","TBD","TBD","TBD","https://www.ifi.uzh.ch/en/dbtg/Staff/wellenzohn.html","TBD" ],
+            [
+              "Stefan","Hechenberger","Blockshake","470842789","TBD","TBD","TBD","https://en.wikipedia.org/wiki/Stefan_Hechenberger","TBD" ],
+            [
+              "Hannes","Mitterer","Blockshake","470842789","Co-Founder","TBD","TBD","https://www.linkedin.com/in/hannes-mitterer-656722211/","TBD" ]
         ]
 }
