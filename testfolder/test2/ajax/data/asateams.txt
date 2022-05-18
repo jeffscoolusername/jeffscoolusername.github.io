@@ -194,6 +194,12 @@
             [
               "Jenny","Wong","Opulous","287867876","Head Of Legal","https://www.linkedin.com/in/jenny-wong-3ab0063/","TBD","TBD","TBD" ],
             [
-              "Isabelle","Korman","Opulous","287867876","Head Of Content","https://www.linkedin.com/in/isabelle-korman/","TBD","TBD","TBD" ]
+              "Isabelle","Korman","Opulous","287867876","Head Of Content","https://www.linkedin.com/in/isabelle-korman/","TBD","TBD","TBD" ],
+            [
+              "Shirlyn","Tan","Opulous","287867876","Office Manager","https://www.linkedin.com/in/shirlyntanvox/","TBD","TBD","TBD" ],
+            [
+              "Ivam","Costa","Opulous","287867876","Community Manager","https://www.linkedin.com/in/ivam-c%C3%A9sar-costa-a7a133149/","TBD","TBD","TBD" ],
+            [
+              "Jesse","Hof","Opulous","287867876","Graphic & Motion Designer","https://www.linkedin.com/in/jesse-hof-a0a882219/","TBD","TBD","TBD" ]
         ]
 }
