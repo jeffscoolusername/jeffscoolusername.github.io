@@ -302,7 +302,7 @@ $(document)
                         style: 'multi'
                     }, 
                     "columnDefs": [
-                        {
+                        /*{
                             "targets": [3],
                             "render": function ( data, type, row, meta ) {
                                 if (data === "TBD")
@@ -310,9 +310,9 @@ $(document)
                                 else
                                 {return '<a target="_blank" rel="noopener noreferrer" href="https://algoexplorer.io/asset/' + data + '">' + data + '</a>';}
                             }
-                        },
+                        },*/
                         {
-                           "targets": [5, 6, 7, 8],
+                           "targets": [4, 5, 6, 7],
                             "render": function ( data, type, row, meta ) {
                                 if (data === "TBD")
                                 {return data;}
