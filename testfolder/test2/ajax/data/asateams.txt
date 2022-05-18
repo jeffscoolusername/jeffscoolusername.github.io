@@ -122,6 +122,12 @@
             [
               "Roberto","Falzone","Planet","27165954","Senior Software Engineer Team Lead","https://www.linkedin.com/in/roberto-falzone-2619531b6/","TBD","TBD","TBD" ],
             [
-              "Jessica","Gardner","Centre","31566704","Business Operations Manager","https://www.linkedin.com/in/jgardner1/","TBD","TBD","TBD" ]
+              "Jessica","Gardner","Centre","31566704","Business Operations Manager","https://www.linkedin.com/in/jgardner1/","TBD","TBD","TBD" ],
+            [
+              "David","Puth","Centre","31566704","CEO","https://www.linkedin.com/in/david-puth/","TBD","TBD","TBD" ],
+            [
+              "John","Shipman","Centre","31566704","Chief Commercial Officer","https://www.linkedin.com/in/john-shipman-196a93/","TBD","TBD","TBD" ],
+            [
+              "Mark","duBose","Centre","31566704","Chief Risk and Compliance Officer","https://www.linkedin.com/in/mark-dubose/","TBD","TBD","TBD" ]
         ]
 }
