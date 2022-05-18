@@ -154,6 +154,8 @@
             [
               "Misa","Z.","Algomint","441139422","Interim CEO","https://www.linkedin.com/in/misazhangsydney/","TBD","TBD","TBD" ],
             [
-              "Kumar","Gaurav","Algomint","441139422","Software Engineer","https://www.linkedin.com/in/arkhaminferno/","TBD","TBD","TBD" ]
+              "Kumar","Gaurav","Algomint","441139422","Software Engineer","https://www.linkedin.com/in/arkhaminferno/","TBD","TBD","TBD" ],
+            [
+              "Wilder","Stubbs","Algogems","230946361","CMO","https://www.linkedin.com/in/wilder-stubbs-536498229/","TBD","TBD","TBD" ]
         ]
 }
