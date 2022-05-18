@@ -84,7 +84,7 @@
             [
               "Deepak","Dhanavade","Xfinite","283820866","Manager UI UX","https://www.linkedin.com/in/deepak-dhanavade-1aa4398b/","TBD","TBD","TBD" ],
             [
-              "Kai","S","Webblen","509808838","Co-Founder/CEO","https://www.linkedin.com/in/kaiss/","TBD","TBD","TBD" ],
+              "Kai","S.","Webblen","509808838","Co-Founder/CEO","https://www.linkedin.com/in/kaiss/","TBD","TBD","TBD" ],
             [
               "Carter","Razink","Webblen","509808838","CTO, Co-Founder","https://www.linkedin.com/in/carter-razink-5ab926139/","TBD","TBD","TBD" ],
             [
@@ -134,7 +134,7 @@
             [
               "Kim","Duffy","Centre","31566704","Director of Identity and Standards","https://www.linkedin.com/in/kimdhamilton/","TBD","TBD","TBD" ],
             [
-              "Mihir","C","Centre","31566704","Director, Alliance Development","https://www.linkedin.com/in/mihirchokshi/","TBD","TBD","TBD" ],
+              "Mihir","C.","Centre","31566704","Director, Alliance Development","https://www.linkedin.com/in/mihirchokshi/","TBD","TBD","TBD" ],
             [
               "Jeff","Handler","Centre","31566704","Solutions Architect","https://www.linkedin.com/in/jeffreyhandler/","TBD","TBD","TBD" ],
             [
@@ -146,6 +146,14 @@
             [
               "Michael","Cotton","Algomint","441139422","Co-Founder","https://www.linkedin.com/in/michael-cotton-aus/","TBD","TBD","TBD" ],
             [
-              "AJ","Milne","Algomint","441139422","Co-Founder","https://www.linkedin.com/in/astleymilne/","TBD","TBD","TBD" ]
+              "AJ","Milne","Algomint","441139422","Co-Founder","https://www.linkedin.com/in/astleymilne/","TBD","TBD","TBD" ],
+            [
+              "Herry","Xu","Algomint","441139422","CTO","https://www.linkedin.com/in/herry-xu/","TBD","TBD","TBD" ],
+            [
+              "Nissan","Dookeran","Algomint","441139422","CTO","https://www.linkedin.com/in/nissandookeran/","TBD","TBD","TBD" ],
+            [
+              "Misa","Z.","Algomint","441139422","Interim CEO","https://www.linkedin.com/in/misazhangsydney/","TBD","TBD","TBD" ],
+            [
+              "Kumar","Gaurav","Algomint","441139422","Software Engineer","https://www.linkedin.com/in/arkhaminferno/","TBD","TBD","TBD" ]
         ]
 }
