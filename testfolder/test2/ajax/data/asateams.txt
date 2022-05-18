@@ -36,7 +36,7 @@
             [
               "Pradeep","Singh","Zone","444035862","Technical Writer","https://www.linkedin.com/in/pradeep-singh-942705194/","TBD","TBD","TBD" ],
             [
-              "Aslam","K","Zone","444035862","UX/UI Designer","https://www.linkedin.com/in/aslam009/","TBD","TBD","TBD" ],
+              "Aslam","K.","Zone","444035862","UX/UI Designer","https://www.linkedin.com/in/aslam009/","TBD","TBD","TBD" ],
             [
               "Sebastian","Quinn","Yieldly","226701642","Co-Founder | CEO","https://www.linkedin.com/in/sebastian-quinn-645457b3/","TBD","TBD","TBD" ],
             [
@@ -90,7 +90,7 @@
             [
               "Nathaniel","Thoreson","Webblen","509808838","Director of Marketing & Co-Founder","https://www.linkedin.com/in/nathaniel-j-thoreson-617501120/","TBD","TBD","TBD" ],
             [
-              "Qomoo","A","Webblen","509808838","CRO","https://www.linkedin.com/in/qomooatomsa/","TBD","TBD","TBD" ],
+              "Qomoo","A.","Webblen","509808838","CRO","https://www.linkedin.com/in/qomooatomsa/","TBD","TBD","TBD" ],
             [
               "Jack","Maring","Webblen","509808838","Flutter Mobile Developer","https://www.linkedin.com/in/jack-maring-556aa9175/","TBD","TBD","TBD" ],
             [
