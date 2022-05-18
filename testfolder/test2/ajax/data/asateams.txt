@@ -164,6 +164,16 @@
             [
               "Stefan","Hechenberger","Blockshake","470842789","TBD","TBD","TBD","https://en.wikipedia.org/wiki/Stefan_Hechenberger","TBD" ],
             [
-              "Hannes","Mitterer","Blockshake","470842789","Co-Founder","TBD","TBD","https://www.linkedin.com/in/hannes-mitterer-656722211/","TBD" ]
+              "Hannes","Mitterer","Blockshake","470842789","Co-Founder","https://www.linkedin.com/in/hannes-mitterer-656722211/","TBD","TBD","TBD" ],
+            [
+              "Rylie","Rueda","GARD","684649988","Founder & CEO","https://www.linkedin.com/in/rylierueda/","TBD","TBD","TBD" ],
+            [
+              "David","McCabe","GARD","684649988","Blockchain Development Lead","https://www.linkedin.com/in/david-p-mccabe/","TBD","TBD","TBD" ],
+            [
+              "Ryan","Soscia","GARD","684649988","Co-Founder & COO","https://www.linkedin.com/in/ryanmsoscia/","TBD","TBD","TBD" ],
+            [
+              "Aaron","Martinez","HEADLINE","137594422","CEO","https://www.linkedin.com/in/ussaaron/","TBD","TBD","TBD" ],
+            [
+              "Brian","Scherlen","HEADLINE","137594422","Senior Project Manager","https://www.linkedin.com/in/brian-scherlen-2091b0209/","TBD","TBD","TBD" ]
         ]
 }
