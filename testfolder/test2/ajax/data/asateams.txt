@@ -134,6 +134,14 @@
             [
               "Kim","Duffy","Centre","31566704","Director of Identity and Standards","https://www.linkedin.com/in/kimdhamilton/","TBD","TBD","TBD" ],
             [
-              "Mihir","C","Centre","31566704","Director, Alliance Development","https://www.linkedin.com/in/mihirchokshi/","TBD","TBD","TBD" ]
+              "Mihir","C","Centre","31566704","Director, Alliance Development","https://www.linkedin.com/in/mihirchokshi/","TBD","TBD","TBD" ],
+            [
+              "Jeff","Handler","Centre","31566704","Solutions Architect","https://www.linkedin.com/in/jeffreyhandler/","TBD","TBD","TBD" ],
+            [
+              "Kevin","Mills","Centre","31566704","Graduate Project Manager","https://www.linkedin.com/in/kfmills/","TBD","TBD","TBD" ],
+            [
+              "Shannon","Hughes","Centre","31566704","Head Of Business Development","https://www.linkedin.com/in/shannonappleby/","TBD","TBD","TBD" ],
+            [
+              "Juan","Caballero ","Centre","31566704","Standards Coordinator","https://www.linkedin.com/in/juan-caballero/","TBD","TBD","TBD" ]
         ]
 }
