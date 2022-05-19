@@ -200,6 +200,10 @@
             [
               "Ivam","Costa","Opulous","Community Manager","https://www.linkedin.com/in/ivam-c%C3%A9sar-costa-a7a133149/","TBD","TBD","TBD" ],
             [
-              "Jesse","Hof","Opulous","Graphic & Motion Designer","https://www.linkedin.com/in/jesse-hof-a0a882219/","TBD","TBD","TBD" ]
+              "Jesse","Hof","Opulous","Graphic & Motion Designer","https://www.linkedin.com/in/jesse-hof-a0a882219/","TBD","TBD","TBD" ],
+            [
+              "Tejas","Kothari","UpsideFinance","Co-Founder","https://www.linkedin.com/in/tetek/","TBD","TBD","TBD" ],
+            [
+              "Nishant","Pandav","UpsideFinance","Co-Founder","https://www.linkedin.com/in/npanium/","TBD","TBD","TBD" ]
         ]
 }
