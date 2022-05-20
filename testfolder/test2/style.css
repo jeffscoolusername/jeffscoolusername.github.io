@@ -248,6 +248,16 @@ h1 {
   .container { display: none; }
 }
 
+#example0_info {
+  visibility: hidden;
+  display: none;
+}
+
+#example0_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
+
 
 /*#example8 {
   padding-left: 50px;
