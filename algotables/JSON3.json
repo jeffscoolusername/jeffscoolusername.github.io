@@ -1,0 +1,34 @@
+[
+    {
+        "Name": "coingeckoname0",                      
+        "Algo Price": "coingeckousdprice0",
+        "24h Change": "coingeckopricechange24h0",
+        "7d Change": "coingeckopricechange7d0",
+        "30d Change": "coingeckopricechange30d0",
+        "1y Change": "coingeckopricechange1y0"
+    },
+    {
+        "Name": "coingeckoname1",                      
+        "Algo Price": "coingeckoprice1",
+        "24h Change": "coingeckopricechange24h1",
+        "7d Change": "coingeckopricechange7d1",
+        "30d Change": "coingeckopricechange30d1",
+        "1y Change": "coingeckopricechange1y1"
+    },
+    {
+        "Name": "coingeckoname2",                      
+        "Algo Price": "coingeckoprice2",
+        "24h Change": "coingeckopricechange24h2",
+        "7d Change": "coingeckopricechange7d2",
+        "30d Change": "coingeckopricechange30d2",
+        "1y Change": "coingeckopricechange1y2"
+    },
+    {
+        "Name": "coingeckoname3",                      
+        "Algo Price": "coingeckoprice3",
+        "24h Change": "coingeckopricechange24h3",
+        "7d Change": "coingeckopricechange7d3",
+        "30d Change": "coingeckopricechange30d3",
+        "1y Change": "coingeckopricechange1y3"
+    }
+]
