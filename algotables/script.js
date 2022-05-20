@@ -41,20 +41,20 @@ $(document)
 
         //convert below to use spreadsheets
 
-        var urlalgoexplorerunused00 = 'https://jeffscoolusername.github.io/ajax/data/arrays.txt';
+        var urlalgoexplorerunused00 = 'https://jeffscoolusername.github.io/algotables/ajax/data/arrays.txt';
 
         getJSON(urlalgoexplorerunused00, /*async*/ async function(err, dataunused0) {
             if (err !== null) {
                 return $.getJSON(urlalgoexplorerunused00);
             } else {                
 
-                //const response8888 = await fetch('https://jeffscoolusername.github.io/ajax/data/arrays.txt');
+                //const response8888 = await fetch('https://jeffscoolusername.github.io/algotables/ajax/data/arrays.txt');
                 //const data88888 = await response8888.json();
 
                 var exampleTable8 = $('#example8')
                 .DataTable({
                     /*data: jsObj7,*/
-                    "ajax": 'https://jeffscoolusername.github.io/ajax/data/arrays2.txt',
+                    "ajax": 'https://jeffscoolusername.github.io/algotables/ajax/data/arrays2.txt',
                     //data: data88888,
                     //data: data,
                     stateSave: true,
@@ -194,7 +194,7 @@ $(document)
 
                 var exampleTable9 = $('#example9')
                 .DataTable({
-                    "ajax": 'https://jeffscoolusername.github.io/ajax/data/ecosystemteams.txt',
+                    "ajax": 'https://jeffscoolusername.github.io/algotables/ajax/data/ecosystemteams.txt',
                     stateSave: true,
                     dom: 'Qlfrtip' + 'Bfrtip',
                     initComplete: function () {
