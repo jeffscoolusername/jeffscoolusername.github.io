@@ -58,7 +58,7 @@ $(document)
                     //data: data88888,
                     //data: data,
                     stateSave: true,
-                    dom: 'Bfrtip',
+                    dom: 'Qlfrtip' + 'Bfrtip',
                     initComplete: function () {
                         // Apply the search
                         this.api().columns().every( function () {
@@ -196,7 +196,7 @@ $(document)
                 .DataTable({
                     "ajax": 'https://jeffscoolusername.github.io/testfolder/test2/ajax/data/ecosystemteams.txt',
                     stateSave: true,
-                    dom: 'Bfrtip',
+                    dom: 'Qlfrtip' + 'Bfrtip',
                     initComplete: function () {
                         this.api().columns().every( function () {
                             var that = this;
