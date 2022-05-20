@@ -252,8 +252,79 @@ h1 {
   visibility: hidden;
   display: none;
 }
+#example8_info {
+  visibility: hidden;
+  display: none;
+}
+#example9_info {
+  visibility: hidden;
+  display: none;
+}
+
+#table-csv0-table_info {
+  visibility: hidden;
+  display: none;
+}
+
+#table-csv1-table_info {
+  visibility: hidden;
+  display: none;
+}
+
+#table-csv2-table_info {
+  visibility: hidden;
+  display: none;
+}
+
+#table-csv3-table_info {
+  visibility: hidden;
+  display: none;
+}
+
+#table-csv4-table_info {
+  visibility: hidden;
+  display: none;
+}
+
+#table-csv5-table_info {
+  visibility: hidden;
+  display: none;
+}
+
+#table-csv0-table_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
+#table-csv1-table_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
+#table-csv2-table_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
+#table-csv3-table_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
+#table-csv4-table_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
+#table-csv5-table_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
 
 #example0_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
+#example8_wrapper > div:nth-child(5) > label > input {
+  visibility: hidden;
+  display: none;
+}
+#example9_wrapper > div:nth-child(5) > label > input {
   visibility: hidden;
   display: none;
 }
